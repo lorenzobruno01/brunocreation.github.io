@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bruno Création — Atelier Familial Artisanal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --creme:#FAF6EF; --creme2:#F2EAD8; --creme3:#E8DCC8;
+  --bois:#7C4A1E; --bois2:#A0622A; --bois-clair:#C8926A;
+  --terre:#3A2210; --sable:#D4B896; --charbon:#2C1F14;
+  --fil:#C05A8A; --fil2:#E088B2; --fil-pale:#FDF0F7; --fil-fonce:#8A3060;
+  --print:#2E6FA8; --print2:#5A9FD4; --print-pale:#EBF4FB; --print-fonce:#1A4A72;
+  --bois-art:#7C4A1E; --bois-pale:#FBF4EC; --bois-fonce:#4A2C0E;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Nunito',sans-serif;background:var(--creme);color:var(--charbon);overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:0.6;}
+
+/* PAGES */
+.page{display:none;} .page.active{display:block;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 6%;height:68px;background:rgba(250,246,239,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(124,74,30,0.12);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:var(--terre);cursor:pointer;display:flex;align-items:baseline;gap:4px;letter-spacing:0.04em;}
+.nav-logo em{font-style:italic;color:var(--bois2);font-weight:400;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--sable);text-decoration:none;font-weight:700;transition:color .2s;position:relative;cursor:pointer;}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1.5px;background:currentColor;transform:scaleX(0);transition:transform .2s;}
+.nav-links a:hover::after,.nav-links a.active-link::after{transform:scaleX(1);}
+.nav-links a:hover,.nav-links a.active-link{color:var(--bois2);}
+.nav-links a.nav-fil{color:var(--fil);} .nav-links a.nav-print{color:var(--print);} .nav-links a.nav-bois{color:var(--bois2);} .nav-links a.nav-atelier{color:var(--bois-clair);}
+.nav-links a.nav-shop{background:var(--bois);color:#fff!important;padding:8px 18px;border-radius:30px;transition:background .2s,transform .2s;}
+.nav-links a.nav-shop:hover{background:var(--bois2);transform:translateY(-1px);}
+.nav-links a.nav-shop::after{display:none;}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:100px 6% 70px;background:radial-gradient(ellipse 80% 60% at 15% 90%,rgba(192,90,138,.10) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 85% 10%,rgba(46,111,168,.10) 0%,transparent 60%),radial-gradient(ellipse 100% 80% at 50% 50%,rgba(200,146,106,.18) 0%,transparent 70%),var(--creme);}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:var(--bois);color:#fff;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.18em;padding:7px 20px;border-radius:40px;margin-bottom:2rem;font-weight:700;}
+.hero-eyebrow span{opacity:0.6;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,8vw,6.5rem);font-weight:700;line-height:1.0;color:var(--terre);margin-bottom:1.2rem;}
+.hero h1 em{font-style:italic;color:var(--bois2);} .hero h1 .big{display:block;font-size:1.1em;}
+.hero-sub{font-size:1.05rem;color:var(--bois-clair);max-width:500px;margin:0 auto 0.8rem;line-height:1.75;font-weight:300;}
+.hero-family{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:var(--sable);margin-bottom:2.5rem;letter-spacing:0.05em;}
+.hero-family strong{color:var(--bois2);font-style:normal;}
+.hero-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:1.5rem;}
+.hero-pill{display:flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-size:0.85rem;font-weight:700;letter-spacing:0.04em;cursor:pointer;border:none;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s;}
+.hero-pill:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 12px 30px rgba(0,0,0,.15);}
+.pill-isabelle{background:var(--fil);color:#fff;} .pill-salvatore{background:var(--print);color:#fff;} .pill-lorenzo{background:var(--bois);color:#fff;}
+.hero-shop-btn{display:inline-flex;align-items:center;gap:8px;background:var(--terre);color:#fff;padding:14px 32px;border-radius:50px;font-size:0.9rem;font-weight:700;letter-spacing:0.06em;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s;margin-top:0.5rem;font-family:'Nunito',sans-serif;}
+.hero-shop-btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(58,34,16,.2);}
+.hero-scroll{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--bois-clair);animation:nudge 2.2s ease-in-out infinite;margin-top:2rem;display:block;}
+@keyframes nudge{0%,100%{transform:translateY(0)}55%{transform:translateY(7px)}}
+
+/* DIVIDER */
+.divider{display:flex;align-items:center;gap:1.5rem;padding:0 6%;margin:0 0 -20px;}
+.divider-line{flex:1;height:1px;background:var(--creme3);} .divider-icon{font-size:1.1rem;color:var(--sable);}
+
+/* UNIVERS */
+.univers-section{padding:80px 6%;}
+.univers-wrap{display:grid;grid-template-columns:1fr 1fr;border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(58,34,16,.12);min-height:580px;margin-bottom:56px;}
+.univers-wrap.reverse .univers-content{order:2;} .univers-wrap.reverse .univers-visual{order:1;}
+.univers-content{padding:56px 50px;display:flex;flex-direction:column;justify-content:center;background:#fff;position:relative;}
+.univers-content::before{content:'';position:absolute;top:0;bottom:0;width:4px;}
+.univers-content.isa-side::before{left:0;background:var(--fil);}
+.univers-content.sal-side::before{left:0;background:var(--print);}
+.univers-content.lor-side::before{left:0;background:var(--bois-art);}
+.univers-wrap.reverse .univers-content.isa-side::before,.univers-wrap.reverse .univers-content.sal-side::before,.univers-wrap.reverse .univers-content.lor-side::before{left:auto;right:0;}
+.univers-tag{display:inline-flex;align-items:center;gap:6px;font-size:0.68rem;text-transform:uppercase;letter-spacing:0.18em;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:1rem;align-self:flex-start;}
+.ti{background:var(--fil-pale);color:var(--fil-fonce);} .ts{background:var(--print-pale);color:var(--print-fonce);} .tl{background:var(--bois-pale);color:var(--bois-fonce);}
+.univers-prenom{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;line-height:1;margin-bottom:0.4rem;}
+.univers-role{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;margin-bottom:1.4rem;}
+.ci{color:var(--fil);} .cs{color:var(--print);} .cl{color:var(--bois-art);}
+.univers-desc{font-size:0.95rem;line-height:1.82;color:#5a4a3a;margin-bottom:1.8rem;}
+.univers-quote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--sable);border-left:3px solid var(--creme3);padding-left:16px;margin-bottom:1.8rem;line-height:1.6;}
+.btn-u{align-self:flex-start;padding:13px 28px;border-radius:10px;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:none;font-family:'Nunito',sans-serif;}
+.btn-u:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.15);}
+.bi-btn{background:var(--fil);color:#fff;} .bs-btn{background:var(--print);color:#fff;} .bl-btn{background:var(--bois);color:#fff;}
+.univers-visual{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;background:var(--creme3);}
+.v-img{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:3rem;position:relative;overflow:hidden;cursor:pointer;transition:transform .3s;}
+.v-img:hover{transform:scale(1.03);z-index:2;} .v-img.tall{grid-row:1/3;}
+.v-label{position:absolute;bottom:10px;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.5);font-weight:700;}
+.bi1{background:#C05A8A;} .bi2{background:#A03870;} .bi3{background:#D580A8;}
+.bs1{background:#2E6FA8;} .bs2{background:#1A4A72;} .bs3{background:#5A9FD4;}
+.bl1{background:#7C4A1E;} .bl2{background:#4A2C0E;} .bl3{background:#A07040;}
+
+/* MINI SHOP */
+.shop-wrap{background:#fff;border-radius:18px;padding:44px 44px 36px;box-shadow:0 8px 40px rgba(58,34,16,.07);margin-bottom:20px;}
+.shop-top{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:1.8rem;flex-wrap:wrap;gap:1rem;border-bottom:1px solid var(--creme3);padding-bottom:1.2rem;}
+.shop-tag{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.18em;font-weight:700;margin-bottom:0.3rem;display:block;}
+.shop-top h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;line-height:1.1;}
+.voir-tout{font-size:0.82rem;font-weight:700;cursor:pointer;padding:8px 18px;border-radius:8px;border:1.5px solid currentColor;background:transparent;transition:background .2s,color .2s;font-family:'Nunito',sans-serif;}
+.vt-i{color:var(--fil);} .vt-i:hover{background:var(--fil);color:#fff;}
+.vt-s{color:var(--print);} .vt-s:hover{background:var(--print);color:#fff;}
+.vt-l{color:var(--bois);} .vt-l:hover{background:var(--bois);color:#fff;}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.product-card{border-radius:14px;border:1px solid var(--creme3);overflow:hidden;transition:transform .25s,box-shadow .25s;background:var(--creme);}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(58,34,16,.12);}
+.product-img{height:150px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative;}
+.product-badge{position:absolute;top:10px;right:10px;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;padding:3px 9px;border-radius:10px;background:rgba(255,255,255,.9);color:var(--charbon);}
+.product-body{padding:14px 16px 16px;}
+.product-name{font-weight:700;font-size:0.92rem;margin-bottom:5px;color:var(--terre);}
+.product-desc{font-size:0.78rem;color:#7a6858;line-height:1.45;margin-bottom:12px;}
+.product-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.product-price{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;}
+.pi{color:var(--fil);} .ps{color:var(--print);} .pl{color:var(--bois-art);}
+.cmd-btn{padding:8px 16px;border-radius:8px;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:0.75rem;font-weight:700;color:#fff;transition:opacity .2s,transform .15s;text-decoration:none;display:inline-block;}
+.cmd-btn:hover{opacity:.88;transform:scale(1.03);}
+.ci-btn{background:var(--fil);} .cs-btn{background:var(--print);} .cl-btn{background:var(--bois);}
+
+/* ATELIER */
+.atelier-card{background:var(--terre);border-radius:20px;overflow:hidden;box-shadow:0 24px 70px rgba(58,34,16,.2);}
+.atelier-inner{display:grid;grid-template-columns:1fr 1fr;min-height:500px;}
+.atelier-text{padding:60px 56px;display:flex;flex-direction:column;justify-content:center;}
+.atelier-eyebrow{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.2em;color:var(--bois-clair);font-weight:700;margin-bottom:1rem;}
+.atelier-text h2{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:#fff;margin-bottom:1.2rem;line-height:1.1;}
+.atelier-text h2 em{font-style:italic;color:var(--bois-clair);}
+.atelier-text p{font-size:0.95rem;line-height:1.82;color:rgba(255,255,255,.65);margin-bottom:1rem;}
+.atelier-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.4rem;}
+.atelier-pill{padding:6px 16px;border-radius:20px;font-size:0.75rem;font-weight:700;letter-spacing:0.05em;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);}
+.ap-fil{border-color:rgba(192,90,138,.5);color:var(--fil2);} .ap-print{border-color:rgba(46,111,168,.5);color:var(--print2);} .ap-bois{border-color:rgba(200,146,106,.5);color:var(--bois-clair);}
+.atelier-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;}
+.atelier-photo{display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative;}
+.atelier-photo.tall{grid-row:1/3;}
+.ap1{background:linear-gradient(135deg,#5a3010,#8B5E3C);} .ap2{background:linear-gradient(135deg,#8A3060,#C05A8A);} .ap3{background:linear-gradient(135deg,#1A4A72,#2E6FA8);}
+.atelier-photo-hint{position:absolute;bottom:8px;font-size:0.58rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,.35);}
+
+/* ══ PAGE BOUTIQUE ══ */
+#page-boutique{padding-top:68px;}
+.boutique-hero{background:var(--terre);padding:70px 6% 60px;text-align:center;position:relative;overflow:hidden;}
+.boutique-hero::before{content:'BOUTIQUE';position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);font-family:'Cormorant Garamond',serif;font-size:8rem;font-weight:700;color:rgba(255,255,255,.04);white-space:nowrap;pointer-events:none;}
+.boutique-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:#fff;margin-bottom:0.6rem;line-height:1.1;}
+.boutique-hero h1 em{font-style:italic;color:var(--bois-clair);}
+.boutique-hero p{font-size:1rem;color:rgba(255,255,255,.55);max-width:480px;margin:0 auto;line-height:1.7;}
+
+/* Filtres */
+.boutique-filters{background:#fff;border-bottom:1px solid var(--creme3);padding:18px 6%;position:sticky;top:68px;z-index:100;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.filters-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.15em;font-weight:700;color:var(--sable);margin-right:2px;flex-shrink:0;}
+.filter-btn{padding:7px 16px;border-radius:30px;font-size:0.78rem;font-weight:700;border:1.5px solid var(--creme3);background:transparent;cursor:pointer;color:#7a6858;letter-spacing:0.04em;transition:all .2s;font-family:'Nunito',sans-serif;}
+.filter-btn:hover{border-color:var(--bois2);color:var(--bois2);}
+.filter-btn.on{border-color:transparent;color:#fff;}
+.filter-btn.on.fa{background:var(--terre);}
+.filter-btn.on.fi{background:var(--fil);}
+.filter-btn.on.fs{background:var(--print);}
+.filter-btn.on.fl{background:var(--bois);}
+.filter-btn.on.fd{background:#6B8E5A;}
+.filter-btn.on.fm{background:var(--bois2);}
+.filter-btn.on.fac{background:var(--fil-fonce);}
+.filter-sep{width:1px;height:22px;background:var(--creme3);flex-shrink:0;}
+
+/* Grille */
+.boutique-grid-wrap{padding:36px 6% 80px;}
+.boutique-count{font-size:0.82rem;color:var(--sable);margin-bottom:1.5rem;font-weight:600;letter-spacing:0.05em;}
+.boutique-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;}
+.boutique-card{border-radius:16px;border:1px solid var(--creme3);overflow:hidden;background:#fff;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;}
+.boutique-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(58,34,16,.13);}
+.boutique-card.hidden{display:none;}
+.bc-img{height:200px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;}
+.bc-artisan{position:absolute;top:12px;left:12px;font-size:0.62rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:700;padding:4px 10px;border-radius:14px;background:rgba(255,255,255,.92);}
+.bc-cat{position:absolute;top:12px;right:12px;font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;padding:4px 10px;border-radius:14px;background:rgba(0,0,0,.35);color:rgba(255,255,255,.9);}
+.bc-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column;}
+.bc-name{font-weight:700;font-size:0.95rem;color:var(--terre);margin-bottom:6px;}
+.bc-desc{font-size:0.8rem;color:#7a6858;line-height:1.5;margin-bottom:auto;padding-bottom:14px;}
+.bc-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:14px;border-top:1px solid var(--creme3);}
+.bc-price{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;}
+.bc-btn{padding:9px 18px;border-radius:8px;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;color:#fff;transition:opacity .2s,transform .15s;text-decoration:none;display:inline-block;}
+.bc-btn:hover{opacity:.85;transform:scale(1.03);}
+.card-i .bc-price{color:var(--fil);}   .card-i .bc-btn{background:var(--fil);}   .card-i .bc-artisan{color:var(--fil-fonce);}
+.card-s .bc-price{color:var(--print);} .card-s .bc-btn{background:var(--print);} .card-s .bc-artisan{color:var(--print-fonce);}
+.card-l .bc-price{color:var(--bois);}  .card-l .bc-btn{background:var(--bois);}  .card-l .bc-artisan{color:var(--bois-fonce);}
+.no-res{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--sable);}
+.no-res span{font-size:3rem;display:block;margin-bottom:1rem;}
+.reset-btn{margin-top:1rem;padding:8px 20px;border-radius:20px;background:var(--bois);color:#fff;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-weight:700;}
+
+/* FOOTER */
+footer{background:var(--charbon);color:rgba(255,255,255,.55);padding:60px 6% 36px;position:relative;overflow:hidden;}
+footer::before{content:'BRUNO CRÉATION';position:absolute;bottom:-30px;left:-10px;font-family:'Cormorant Garamond',serif;font-size:9rem;font-weight:700;color:rgba(255,255,255,.025);white-space:nowrap;pointer-events:none;}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.footer-brand .logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:#fff;display:block;margin-bottom:0.6rem;}
+.footer-brand .logo em{font-style:italic;color:var(--bois-clair);font-weight:400;}
+.footer-brand p{font-size:0.83rem;line-height:1.7;max-width:280px;}
+.footer-email{display:inline-block;margin-top:1rem;color:var(--bois-clair);font-size:0.83rem;font-weight:700;text-decoration:none;}
+.footer-col h4{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,.3);margin-bottom:1rem;font-weight:700;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem;}
+.footer-col ul li a{font-size:0.84rem;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s;cursor:pointer;}
+.footer-col ul li a:hover{color:var(--bois-clair);}
+.footer-family{display:flex;gap:1.5rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.07);padding-top:1.5rem;align-items:center;justify-content:space-between;}
+.footer-names{display:flex;gap:1.2rem;flex-wrap:wrap;}
+.footer-names span{font-size:0.8rem;font-weight:700;}
+.fn-i{color:var(--fil2);} .fn-s{color:var(--print2);} .fn-l{color:var(--bois-clair);}
+.footer-copy{font-size:0.72rem;color:rgba(255,255,255,.2);}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .univers-wrap{grid-template-columns:1fr;}
+  .univers-wrap.reverse .univers-content,.univers-wrap.reverse .univers-visual{order:unset;}
+  .univers-visual{min-height:260px;}
+  .atelier-inner{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr;}
+  .products-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .products-grid{grid-template-columns:1fr;}
+  .univers-content{padding:36px 28px;}
+  .shop-wrap{padding:28px 22px;}
+  .atelier-text{padding:40px 32px;}
+  .boutique-grid{grid-template-columns:1fr 1fr;}
+  .nav-links{gap:1rem;}
+}
+@media(max-width:480px){.boutique-grid{grid-template-columns:1fr;}}
+[id]{scroll-margin-top:76px;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo" onclick="goPage('main')">Bruno <em>Création</em></span>
+  <ul class="nav-links">
+    <li><a onclick="goPage('main','isabelle')"  class="nav-fil">Isabelle</a></li>
+    <li><a onclick="goPage('main','salvatore')" class="nav-print">Salvatore</a></li>
+    <li><a onclick="goPage('main','lorenzo')"   class="nav-bois">Lorenzo</a></li>
+    <li><a onclick="goPage('main','atelier')"   class="nav-atelier">L'Atelier</a></li>
+    <li><a onclick="goPage('boutique')" class="nav-shop" id="nav-shop">🛒 La Boutique</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════
+     PAGE PRINCIPALE
+══════════════════════════════════ -->
+<div id="page-main" class="page active" style="padding-top:68px;">
+
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow"><span>✦</span> Atelier familial artisanal <span>✦</span></div>
+    <h1>Bruno<em><span class="big">Création</span></em></h1>
+    <p class="hero-sub">Un atelier, une famille, trois savoir-faire uniques. Chaque pièce est faite à la main, avec amour et passion.</p>
+    <p class="hero-family"><strong>Salvatore</strong> &amp; <strong>Isabelle</strong> — mari et femme — et leur fils <strong>Lorenzo</strong></p>
+    <div class="hero-pills">
+      <button class="hero-pill pill-isabelle"  onclick="goPage('main','isabelle')">🧶 Isabelle — Crochet</button>
+      <button class="hero-pill pill-salvatore" onclick="goPage('main','salvatore')">⚙️ Salvatore — Impression 3D</button>
+      <button class="hero-pill pill-lorenzo"   onclick="goPage('main','lorenzo')">🪵 Lorenzo — Bois</button>
+    </div>
+    <button class="hero-shop-btn" onclick="goPage('boutique')">🛒 Voir toute la boutique</button>
+    <span class="hero-scroll">↓ Découvrir</span>
+  </div>
+</section>
+
+<!-- ISABELLE -->
+<section class="univers-section" id="isabelle">
+  <div class="univers-wrap">
+    <div class="univers-content isa-side">
+      <span class="univers-tag ti">🧶 Crochet &amp; Tricot</span>
+      <h2 class="univers-prenom ci">Isabelle</h2>
+      <p class="univers-role ci">L'âme douce de l'atelier</p>
+      <p class="univers-desc">Avec ses fils colorés et son crochet, Isabelle crée des pièces qui réchauffent le cœur. Chaque création naît d'un coup de cœur pour une couleur ou une texture. Accessoires, décoration, pièces pour bébé — son univers est celui de la douceur et du soin du détail.</p>
+      <blockquote class="univers-quote">"Je croche comme je respire — avec lenteur, attention et beaucoup d'amour."</blockquote>
+      <button class="btn-u bi-btn" onclick="goPage('boutique','isabelle')">Voir ses créations →</button>
+    </div>
+    <div class="univers-visual">
+      <div class="v-img tall bi1">🧶<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bi2">🌸<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bi3">🎀<span class="v-label">Photo à ajouter</span></div>
+    </div>
+  </div>
+  <div class="shop-wrap">
+    <div class="shop-top">
+      <div><span class="shop-tag ci">Quelques créations d'Isabelle</span><h3 style="color:var(--fil);">Au crochet</h3></div>
+      <button class="voir-tout vt-i" onclick="goPage('boutique','isabelle')">Voir tout →</button>
+    </div>
+    <div class="products-grid">
+      <div class="product-card"><div class="product-img bi2">🌸<span class="product-badge">Fait main</span></div><div class="product-body"><div class="product-name">Fleur décorative</div><div class="product-desc">Petite fleur au crochet, plusieurs coloris disponibles.</div><div class="product-footer"><span class="product-price pi">12 €</span><a href="mailto:contact@brunocreation.fr?subject=Fleur décorative" class="cmd-btn ci-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bi1">🎀<span class="product-badge">Populaire</span></div><div class="product-body"><div class="product-name">Pochette en lin</div><div class="product-desc">Pochette tressée à la main, anse incluse.</div><div class="product-footer"><span class="product-price pi">28 €</span><a href="mailto:contact@brunocreation.fr?subject=Pochette" class="cmd-btn ci-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bi3">🧸<span class="product-badge">Sur-mesure</span></div><div class="product-body"><div class="product-name">Doudou personnalisé</div><div class="product-desc">Création unique avec prénom brodé à la demande.</div><div class="product-footer"><span class="product-price pi">35 €</span><a href="mailto:contact@brunocreation.fr?subject=Doudou" class="cmd-btn ci-btn">✉️ Commander</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">⚙️</div><div class="divider-line"></div></div>
+
+<!-- SALVATORE -->
+<section class="univers-section" id="salvatore" style="padding-top:60px;">
+  <div class="univers-wrap reverse">
+    <div class="univers-visual">
+      <div class="v-img tall bs1">⚙️<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bs2">🔧<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bs3">🚀<span class="v-label">Photo à ajouter</span></div>
+    </div>
+    <div class="univers-content sal-side">
+      <span class="univers-tag ts">⚙️ Impression 3D</span>
+      <h2 class="univers-prenom cs">Salvatore</h2>
+      <p class="univers-role cs">L'ingénieux de la famille</p>
+      <p class="univers-desc">Salvatore transforme des fichiers numériques en objets réels. Figurines, pièces fonctionnelles, décorations géométriques — il maîtrise la technologie avec une vraie sensibilité artistique. Chaque projet est réfléchi, précis et pensé pour durer.</p>
+      <blockquote class="univers-quote">"L'impression 3D, c'est de la magie rendue accessible. Je crée des objets qui n'existaient pas la veille."</blockquote>
+      <button class="btn-u bs-btn" onclick="goPage('boutique','salvatore')">Voir ses créations →</button>
+    </div>
+  </div>
+  <div class="shop-wrap">
+    <div class="shop-top">
+      <div><span class="shop-tag cs">Quelques créations de Salvatore</span><h3 style="color:var(--print);">En impression 3D</h3></div>
+      <button class="voir-tout vt-s" onclick="goPage('boutique','salvatore')">Voir tout →</button>
+    </div>
+    <div class="products-grid">
+      <div class="product-card"><div class="product-img bs3">🚀<span class="product-badge">Déco</span></div><div class="product-body"><div class="product-name">Figurine spatiale</div><div class="product-desc">Rocket en PLA, finition mate, ~12 cm, plusieurs coloris.</div><div class="product-footer"><span class="product-price ps">18 €</span><a href="mailto:contact@brunocreation.fr?subject=Figurine" class="cmd-btn cs-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bs2">🔑<span class="product-badge">Perso.</span></div><div class="product-body"><div class="product-name">Porte-clés personnalisé</div><div class="product-desc">Vos initiales imprimées en 3D. Clip métal inclus.</div><div class="product-footer"><span class="product-price ps">8 €</span><a href="mailto:contact@brunocreation.fr?subject=Porte-clés" class="cmd-btn cs-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bs1">🏺<span class="product-badge">Design</span></div><div class="product-body"><div class="product-name">Vase géométrique</div><div class="product-desc">Motif alvéolé, parfait pour fleurs séchées.</div><div class="product-footer"><span class="product-price ps">35 €</span><a href="mailto:contact@brunocreation.fr?subject=Vase" class="cmd-btn cs-btn">✉️ Commander</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="divider-line"></div><div class="divider-icon">🪵</div><div class="divider-line"></div></div>
+
+<!-- LORENZO -->
+<section class="univers-section" id="lorenzo" style="padding-top:60px;">
+  <div class="univers-wrap">
+    <div class="univers-content lor-side">
+      <span class="univers-tag tl">🪵 Travail du bois</span>
+      <h2 class="univers-prenom cl">Lorenzo</h2>
+      <p class="univers-role cl">Le fils — la relève de l'atelier</p>
+      <p class="univers-desc">Lorenzo a grandi entouré de copeaux de bois et d'odeurs de résine. Aujourd'hui, il façonne la matière avec précision et sensibilité. Planches, objets sculptés, mobilier — il révèle la beauté naturelle du bois dans chaque pièce qu'il crée.</p>
+      <blockquote class="univers-quote">"Le bois est vivant. Chaque planche a son histoire — je me contente de la continuer."</blockquote>
+      <button class="btn-u bl-btn" onclick="goPage('boutique','lorenzo')">Voir ses créations →</button>
+    </div>
+    <div class="univers-visual">
+      <div class="v-img tall bl1">🪵<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bl2">🌿<span class="v-label">Photo à ajouter</span></div>
+      <div class="v-img bl3">🪑<span class="v-label">Photo à ajouter</span></div>
+    </div>
+  </div>
+  <div class="shop-wrap">
+    <div class="shop-top">
+      <div><span class="shop-tag cl">Quelques créations de Lorenzo</span><h3 style="color:var(--bois-art);">En bois</h3></div>
+      <button class="voir-tout vt-l" onclick="goPage('boutique','lorenzo')">Voir tout →</button>
+    </div>
+    <div class="products-grid">
+      <div class="product-card"><div class="product-img bl1">🍽️<span class="product-badge">Chêne / Noyer</span></div><div class="product-body"><div class="product-name">Planche de service</div><div class="product-desc">Bois massif, huile naturelle. Gravure possible.</div><div class="product-footer"><span class="product-price pl">45 €</span><a href="mailto:contact@brunocreation.fr?subject=Planche" class="cmd-btn cl-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bl3">🕯️<span class="product-badge">Tourné main</span></div><div class="product-body"><div class="product-name">Bougeoir en bois</div><div class="product-desc">Tourné à la main, finition cire naturelle.</div><div class="product-footer"><span class="product-price pl">22 €</span><a href="mailto:contact@brunocreation.fr?subject=Bougeoir" class="cmd-btn cl-btn">✉️ Commander</a></div></div></div>
+      <div class="product-card"><div class="product-img bl2">🏠<span class="product-badge">Sur-mesure</span></div><div class="product-body"><div class="product-name">Création sur-mesure</div><div class="product-desc">Mobilier, décoration, gravure personnalisée.</div><div class="product-footer"><span class="product-price pl">Sur devis</span><a href="mailto:contact@brunocreation.fr?subject=Sur-mesure bois" class="cmd-btn cl-btn">✉️ Contacter</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ATELIER -->
+<section id="atelier" style="padding:80px 6%;">
+  <div class="atelier-card">
+    <div class="atelier-inner">
+      <div class="atelier-text">
+        <p class="atelier-eyebrow">📍 Notre espace • Notre histoire</p>
+        <h2><em>L'Atelier</em><br>Bruno Création</h2>
+        <p>Notre atelier, c'est l'endroit où tout prend vie. Un espace partagé entre trois univers distincts, où les idées circulent librement entre une mère qui croche, un père qui imprime et un fils qui sculpte le bois.</p>
+        <p>On entend le bourdonnement des imprimantes 3D, le clic régulier des crochets d'Isabelle, le frottement des rabots de Lorenzo. C'est bruyant, joyeux, et profondément vivant.</p>
+        <p>Nous documentons notre quotidien — les ratés qui nous apprennent, les nouvelles techniques, les projets fous.</p>
+        <div class="atelier-pills">
+          <span class="atelier-pill ap-fil">🧶 Crochet</span>
+          <span class="atelier-pill ap-print">⚙️ Impression 3D</span>
+          <span class="atelier-pill ap-bois">🪵 Bois</span>
+          <span class="atelier-pill">❤️ Famille</span>
+          <span class="atelier-pill">✂️ Fait-main</span>
+        </div>
+      </div>
+      <div class="atelier-photos">
+        <div class="atelier-photo tall ap1">🔨<span class="atelier-photo-hint">Photo à ajouter</span></div>
+        <div class="atelier-photo ap2">🧶<span class="atelier-photo-hint">Photo à ajouter</span></div>
+        <div class="atelier-photo ap3">🖨️<span class="atelier-photo-hint">Photo à ajouter</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo">Bruno <em>Création</em></span><p>Un atelier familial artisanal où Salvatore, Isabelle et Lorenzo donnent vie à leurs passions avec patience et savoir-faire.</p><a href="mailto:contact@brunocreation.fr" class="footer-email">📧 contact@brunocreation.fr</a></div>
+    <div class="footer-col"><h4>L'Atelier</h4><ul><li><a onclick="goPage('main','isabelle')">Isabelle — Crochet</a></li><li><a onclick="goPage('main','salvatore')">Salvatore — Impression 3D</a></li><li><a onclick="goPage('main','lorenzo')">Lorenzo — Bois</a></li><li><a onclick="goPage('main','atelier')">Notre atelier</a></li></ul></div>
+    <div class="footer-col"><h4>La Boutique</h4><ul><li><a onclick="goPage('boutique','isabelle')">Créations Isabelle</a></li><li><a onclick="goPage('boutique','salvatore')">Créations Salvatore</a></li><li><a onclick="goPage('boutique','lorenzo')">Créations Lorenzo</a></li><li><a onclick="goPage('boutique')">Toute la boutique</a></li></ul></div>
+  </div>
+  <div class="footer-family"><div class="footer-names"><span class="fn-i">🧶 Isabelle</span><span class="fn-s">⚙️ Salvatore</span><span class="fn-l">🪵 Lorenzo</span></div><span class="footer-copy">© 2025 Bruno Création — Fait avec ❤️ en famille</span></div>
+</footer>
+</div>
+
+<!-- ══════════════════════════════════
+     PAGE BOUTIQUE
+══════════════════════════════════ -->
+<div id="page-boutique" class="page">
+  <div class="boutique-hero">
+    <h1>La <em>Boutique</em></h1>
+    <p>Toutes nos créations réunies — crochet, impression 3D et bois. Filtrez par artisan ou par type.</p>
+  </div>
+
+  <div class="boutique-filters">
+    <span class="filters-label">Artisan</span>
+    <button class="filter-btn fa on" data-g="artisan" data-v="all">Tous</button>
+    <button class="filter-btn fi"    data-g="artisan" data-v="isabelle">🧶 Isabelle</button>
+    <button class="filter-btn fs"    data-g="artisan" data-v="salvatore">⚙️ Salvatore</button>
+    <button class="filter-btn fl"    data-g="artisan" data-v="lorenzo">🪵 Lorenzo</button>
+    <div class="filter-sep"></div>
+    <span class="filters-label">Type</span>
+    <button class="filter-btn fa on" data-g="cat" data-v="all">Tout</button>
+    <button class="filter-btn fd"    data-g="cat" data-v="deco">Décoration</button>
+    <button class="filter-btn fm"    data-g="cat" data-v="mesure">Sur-mesure</button>
+    <button class="filter-btn fac"   data-g="cat" data-v="accessoire">Accessoires</button>
+  </div>
+
+  <div class="boutique-grid-wrap">
+    <div class="boutique-count" id="b-count">12 créations</div>
+    <div class="boutique-grid" id="b-grid">
+
+      <!-- ISABELLE -->
+      <div class="boutique-card card-i" data-a="isabelle" data-c="deco">
+        <div class="bc-img bi2">🌸<span class="bc-artisan" style="color:var(--fil-fonce)">🧶 Isabelle</span><span class="bc-cat">Décoration</span></div>
+        <div class="bc-body"><div class="bc-name">Fleur décorative</div><div class="bc-desc">Petite fleur au crochet, plusieurs coloris disponibles. Idéale en broche ou pour décorer un espace.</div><div class="bc-footer"><span class="bc-price">12 €</span><a href="mailto:contact@brunocreation.fr?subject=Fleur décorative" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-i" data-a="isabelle" data-c="accessoire">
+        <div class="bc-img bi1">🎀<span class="bc-artisan" style="color:var(--fil-fonce)">🧶 Isabelle</span><span class="bc-cat">Accessoire</span></div>
+        <div class="bc-body"><div class="bc-name">Pochette en lin crochetée</div><div class="bc-desc">Pochette tressée à la main. Anse incluse, plusieurs couleurs au choix.</div><div class="bc-footer"><span class="bc-price">28 €</span><a href="mailto:contact@brunocreation.fr?subject=Pochette lin" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-i" data-a="isabelle" data-c="mesure">
+        <div class="bc-img bi3">🧸<span class="bc-artisan" style="color:var(--fil-fonce)">🧶 Isabelle</span><span class="bc-cat">Sur-mesure</span></div>
+        <div class="bc-body"><div class="bc-name">Doudou personnalisé</div><div class="bc-desc">Création unique avec prénom brodé. Choisissez ensemble les couleurs, le motif et la taille.</div><div class="bc-footer"><span class="bc-price">À partir de 35 €</span><a href="mailto:contact@brunocreation.fr?subject=Doudou personnalisé" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-i" data-a="isabelle" data-c="accessoire">
+        <div class="bc-img" style="background:#E088B2;">🧣<span class="bc-artisan" style="color:var(--fil-fonce)">🧶 Isabelle</span><span class="bc-cat">Accessoire</span></div>
+        <div class="bc-body"><div class="bc-name">Snood / Tour de cou</div><div class="bc-desc">Chaud et doux, tricoté main en laine naturelle. Coloris au choix parmi une large palette.</div><div class="bc-footer"><span class="bc-price">32 €</span><a href="mailto:contact@brunocreation.fr?subject=Snood" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <!-- SALVATORE -->
+      <div class="boutique-card card-s" data-a="salvatore" data-c="deco">
+        <div class="bc-img bs3">🚀<span class="bc-artisan" style="color:var(--print-fonce)">⚙️ Salvatore</span><span class="bc-cat">Décoration</span></div>
+        <div class="bc-body"><div class="bc-name">Figurine spatiale</div><div class="bc-desc">Rocket miniature en PLA, finition mate. Plusieurs coloris, environ 12 cm de hauteur.</div><div class="bc-footer"><span class="bc-price">18 €</span><a href="mailto:contact@brunocreation.fr?subject=Figurine spatiale" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-s" data-a="salvatore" data-c="accessoire">
+        <div class="bc-img bs2">🔑<span class="bc-artisan" style="color:var(--print-fonce)">⚙️ Salvatore</span><span class="bc-cat">Accessoire</span></div>
+        <div class="bc-body"><div class="bc-name">Porte-clés personnalisé</div><div class="bc-desc">Vos initiales ou un mini logo imprimé en 3D. Solide et léger, clip métal inclus.</div><div class="bc-footer"><span class="bc-price">8 €</span><a href="mailto:contact@brunocreation.fr?subject=Porte-clés" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-s" data-a="salvatore" data-c="deco">
+        <div class="bc-img bs1">🏺<span class="bc-artisan" style="color:var(--print-fonce)">⚙️ Salvatore</span><span class="bc-cat">Décoration</span></div>
+        <div class="bc-body"><div class="bc-name">Vase géométrique</div><div class="bc-desc">Design moderne au motif alvéolé. Parfait pour fleurs séchées, finition satinée.</div><div class="bc-footer"><span class="bc-price">35 €</span><a href="mailto:contact@brunocreation.fr?subject=Vase géométrique" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-s" data-a="salvatore" data-c="mesure">
+        <div class="bc-img" style="background:#204E80;">🖨️<span class="bc-artisan" style="color:var(--print-fonce)">⚙️ Salvatore</span><span class="bc-cat">Sur-mesure</span></div>
+        <div class="bc-body"><div class="bc-name">Impression sur commande</div><div class="bc-desc">Vous avez un fichier 3D ou une idée ? Salvatore imprime vos propres designs ou crée de A à Z.</div><div class="bc-footer"><span class="bc-price">Sur devis</span><a href="mailto:contact@brunocreation.fr?subject=Impression commande" class="bc-btn">✉️ Demander</a></div></div>
+      </div>
+
+      <!-- LORENZO -->
+      <div class="boutique-card card-l" data-a="lorenzo" data-c="deco">
+        <div class="bc-img bl1">🍽️<span class="bc-artisan" style="color:var(--bois-fonce)">🪵 Lorenzo</span><span class="bc-cat">Décoration</span></div>
+        <div class="bc-body"><div class="bc-name">Planche de service</div><div class="bc-desc">Chêne ou noyer massif, huile naturelle. Gravure personnalisée possible en option.</div><div class="bc-footer"><span class="bc-price">45 €</span><a href="mailto:contact@brunocreation.fr?subject=Planche service" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-l" data-a="lorenzo" data-c="deco">
+        <div class="bc-img bl3">🕯️<span class="bc-artisan" style="color:var(--bois-fonce)">🪵 Lorenzo</span><span class="bc-cat">Décoration</span></div>
+        <div class="bc-body"><div class="bc-name">Bougeoir en bois</div><div class="bc-desc">Tourné à la main, finition à la cire naturelle. Plusieurs essences disponibles.</div><div class="bc-footer"><span class="bc-price">22 €</span><a href="mailto:contact@brunocreation.fr?subject=Bougeoir" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-l" data-a="lorenzo" data-c="mesure">
+        <div class="bc-img bl2">🏠<span class="bc-artisan" style="color:var(--bois-fonce)">🪵 Lorenzo</span><span class="bc-cat">Sur-mesure</span></div>
+        <div class="bc-body"><div class="bc-name">Création sur-mesure</div><div class="bc-desc">Mobilier, décoration, gravure personnalisée. Lorenzo étudie tous vos projets avec plaisir.</div><div class="bc-footer"><span class="bc-price">Sur devis</span><a href="mailto:contact@brunocreation.fr?subject=Sur-mesure bois" class="bc-btn">✉️ Demander</a></div></div>
+      </div>
+
+      <div class="boutique-card card-l" data-a="lorenzo" data-c="accessoire">
+        <div class="bc-img" style="background:#6B3C14;">🥄<span class="bc-artisan" style="color:var(--bois-fonce)">🪵 Lorenzo</span><span class="bc-cat">Accessoire</span></div>
+        <div class="bc-body"><div class="bc-name">Ustensiles en bois</div><div class="bc-desc">Cuillères, spatules et petits ustensiles sculptés à la main. Bois alimentaire, huile de lin.</div><div class="bc-footer"><span class="bc-price">14 €</span><a href="mailto:contact@brunocreation.fr?subject=Ustensiles bois" class="bc-btn">✉️ Commander</a></div></div>
+      </div>
+
+      <div class="no-res" id="no-res" style="display:none;"><span>🔍</span>Aucune création ne correspond à ces filtres.<br><button class="reset-btn" onclick="resetF()">Réinitialiser les filtres</button></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="logo">Bruno <em>Création</em></span><p>Un atelier familial artisanal où Salvatore, Isabelle et Lorenzo donnent vie à leurs passions.</p><a href="mailto:contact@brunocreation.fr" class="footer-email">📧 contact@brunocreation.fr</a></div>
+      <div class="footer-col"><h4>L'Atelier</h4><ul><li><a onclick="goPage('main','isabelle')">Isabelle — Crochet</a></li><li><a onclick="goPage('main','salvatore')">Salvatore — 3D</a></li><li><a onclick="goPage('main','lorenzo')">Lorenzo — Bois</a></li><li><a onclick="goPage('main','atelier')">Notre atelier</a></li></ul></div>
+      <div class="footer-col"><h4>Filtrer</h4><ul><li><a onclick="goPage('boutique','isabelle')">Créations Isabelle</a></li><li><a onclick="goPage('boutique','salvatore')">Créations Salvatore</a></li><li><a onclick="goPage('boutique','lorenzo')">Créations Lorenzo</a></li><li><a onclick="goPage('boutique')">Tout voir</a></li></ul></div>
+    </div>
+    <div class="footer-family"><div class="footer-names"><span class="fn-i">🧶 Isabelle</span><span class="fn-s">⚙️ Salvatore</span><span class="fn-l">🪵 Lorenzo</span></div><span class="footer-copy">© 2025 Bruno Création — Fait avec ❤️ en famille</span></div>
+  </footer>
+</div>
+
+<script>
+// ── NAVIGATION ──
+function goPage(page, anchor) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  window.scrollTo(0, 0);
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active-link'));
+  if (page === 'boutique') document.getElementById('nav-shop').classList.add('active-link');
+  if (page === 'boutique') {
+    anchor ? preFilter(anchor) : resetF();
+  }
+  if (page === 'main' && anchor) {
+    setTimeout(() => { const el = document.getElementById(anchor); if (el) el.scrollIntoView({behavior:'smooth'}); }, 60);
+  }
+}
+
+// ── FILTRES ──
+let gA = 'all', gC = 'all';
+
+function preFilter(artisan) {
+  gA = artisan; gC = 'all';
+  document.querySelectorAll('[data-g="artisan"]').forEach(b => { b.classList.remove('on'); if(b.dataset.v===artisan) b.classList.add('on'); });
+  document.querySelectorAll('[data-g="cat"]').forEach(b => { b.classList.remove('on'); if(b.dataset.v==='all') b.classList.add('on'); });
+  applyF();
+}
+
+function resetF() {
+  gA = 'all'; gC = 'all';
+  document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('on'); if(b.dataset.v==='all') b.classList.add('on'); });
+  applyF();
+}
+
+function applyF() {
+  let n = 0;
+  document.querySelectorAll('.boutique-card').forEach(c => {
+    const ok = (gA==='all' || c.dataset.a===gA) && (gC==='all' || c.dataset.c===gC);
+    c.classList.toggle('hidden', !ok);
+    if (ok) n++;
+  });
+  document.getElementById('b-count').textContent = n + ' création' + (n > 1 ? 's' : '');
+  document.getElementById('no-res').style.display = n === 0 ? 'block' : 'none';
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const g = btn.dataset.g, v = btn.dataset.v;
+    document.querySelectorAll('[data-g="'+g+'"]').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    if (g === 'artisan') gA = v; else gC = v;
+    applyF();
+  });
+});
+</script>
+</body>
+</html>
