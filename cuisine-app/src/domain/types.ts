@@ -274,4 +274,9 @@ export interface Settings {
   apiKey?: string;
   model?: string;
   householdName?: string;
+  /** profils nutritionnels du foyer (besoins journaliers) */
+  profiles?: Array<{ id: string; name: string; sex: 'homme' | 'femme'; weight: number; kcal: number; proteinPerKg: number }>;
+  activeProfile?: string;
+  /** créer automatiquement une recette par l'IA quand une recherche ne donne rien */
+  autoCreate?: boolean;
 }

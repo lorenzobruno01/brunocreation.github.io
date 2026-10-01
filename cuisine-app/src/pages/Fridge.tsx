@@ -4,6 +4,7 @@ import { useLibrary, useUserData } from '../hooks/library';
 import { IngredientPicker } from '../components/IngredientPicker';
 import { RecipeCard } from '../components/RecipeCard';
 import { Empty, useProgressive } from '../components/ui';
+import { BooleanSearch } from '../components/BooleanSearch';
 import { filterByMode, matchRecipes, availableCount, type MatchMode, type MatchResult } from '../domain/matching';
 import { setFridge } from '../db/db';
 import { MEAL_TYPES } from '../domain/labels';
@@ -15,7 +16,7 @@ export function Fridge() {
   const [mode, setMode] = useState<MatchMode>('maintenant');
   const [usePantry, setUsePantry] = useState(true);
   const [meal, setMeal] = useState<MealType | null>(null);
-  const [tab, setTab] = useState<'choix' | 'resultats'>(fridge.size ? 'resultats' : 'choix');
+  const [tab, setTab] = useState<'choix' | 'resultats' | 'avance'>(fridge.size ? 'resultats' : 'choix');
 
   const usage = useMemo(() => {
     const m = new Map<string, number>();
@@ -51,7 +52,7 @@ export function Fridge() {
 
       <div className="sticky-bar">
         <div className="row between">
-          <div className="segmented grow" style={{ maxWidth: 420 }}>
+          <div className="segmented grow" style={{ maxWidth: 560 }}>
             <button className={tab === 'choix' ? 'on' : ''} onClick={() => setTab('choix')}>
               🧺 Mes ingrédients
               <span className="cnt">{fridge.size} sélectionné{fridge.size > 1 ? 's' : ''}</span>
@@ -59,6 +60,10 @@ export function Fridge() {
             <button className={tab === 'resultats' ? 'on' : ''} onClick={() => setTab('resultats')} disabled={!fridge.size}>
               🍽️ Recettes
               <span className="cnt">{counts.tout} correspondance{counts.tout > 1 ? 's' : ''}</span>
+            </button>
+            <button className={tab === 'avance' ? 'on' : ''} onClick={() => setTab('avance')}>
+              🔀 ET / OU
+              <span className="cnt">recherche précise</span>
             </button>
           </div>
           {fridge.size > 0 && (
@@ -69,7 +74,7 @@ export function Fridge() {
         </div>
       </div>
 
-      {fridge.size > 0 && (
+      {fridge.size > 0 && tab !== 'avance' && (
         <div className="chips" style={{ margin: '4px 0 12px' }}>
           {[...fridge].map((id) => {
             const i = lookup(id);
@@ -82,7 +87,9 @@ export function Fridge() {
         </div>
       )}
 
-      {tab === 'choix' ? (
+      {tab === 'avance' ? (
+        <BooleanSearch />
+      ) : tab === 'choix' ? (
         <>
           <IngredientPicker selected={fridge} onToggle={toggle} marked={pantry} markedLabel="placard" usage={usage} />
           {fridge.size > 0 && (

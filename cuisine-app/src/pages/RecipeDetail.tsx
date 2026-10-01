@@ -14,6 +14,7 @@ import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
 import { AiRecipeActions } from '../components/AiRecipeActions';
+import { NutritionPanel } from '../components/NutritionPanel';
 import type { IndexedRecipe } from '../domain/types';
 
 export function RecipeDetail() {
@@ -206,6 +207,8 @@ export function RecipeDetail() {
               </button>
             </div>
           </section>
+
+          <NutritionPanel recipe={recipe} />
 
           <AiRecipeActions recipe={recipe} servings={n} />
 

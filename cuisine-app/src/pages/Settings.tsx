@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary } from '../hooks/library';
-import { MODELS } from '../ai/light';
+import { AiError, loadAi, MODELS } from '../ai/light';
+import { DEFAULT_PROFILES, type NutritionProfile } from '../domain/micronutrients';
 import { useToast } from '../components/ui';
 
 export function Settings() {
@@ -11,6 +12,22 @@ export function Settings() {
   const [show, setShow] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   const toast = useToast();
+  const [testing, setTesting] = useState<string | null>(null);
+  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
+  const setProfile = (i: number, patch: Partial<NutritionProfile>) => saveSettings({ profiles: profiles.map((p, k) => (k === i ? { ...p, ...patch } : p)) });
+
+  const test = async () => {
+    const k = key.trim() || settings.apiKey;
+    if (!k) return setTesting('❌ Saisissez d’abord une clé.');
+    setTesting('⏳ Test en cours…');
+    try {
+      const { testConnection } = await loadAi();
+      const r = await testConnection(k, settings.model ?? 'claude-opus-5-5');
+      setTesting(`✅ ${r}`);
+    } catch (e) {
+      setTesting(`❌ ${e instanceof AiError ? e.message : String(e)}`);
+    }
+  };
 
   const download = async () => {
     const json = await exportData(false);
@@ -75,7 +92,53 @@ export function Settings() {
       </section>
 
       <section className="card pad stack">
+        <h2 style={{ margin: 0 }}>🔬 Profils nutritionnels</h2>
+        <p className="small muted" style={{ margin: 0 }}>Utilisés pour calculer les % des besoins journaliers (vitamines, minéraux, acides aminés…) sur chaque recette.</p>
+        {profiles.map((p, i) => (
+          <div key={p.id} className="form-grid" style={{ alignItems: 'end' }}>
+            <div className="field">
+              <label>Prénom</label>
+              <input className="input" value={p.name} onChange={(e) => setProfile(i, { name: e.target.value })} />
+            </div>
+            <div className="field">
+              <label>Sexe</label>
+              <select className="select" value={p.sex} onChange={(e) => setProfile(i, { sex: e.target.value as 'homme' | 'femme' })}>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+              </select>
+            </div>
+            <div className="field">
+              <label>Poids (kg)</label>
+              <input className="input" type="number" inputMode="numeric" value={p.weight} onChange={(e) => setProfile(i, { weight: Number(e.target.value) || p.weight })} />
+            </div>
+            <div className="field">
+              <label>Objectif kcal / jour</label>
+              <input className="input" type="number" inputMode="numeric" value={p.kcal} onChange={(e) => setProfile(i, { kcal: Number(e.target.value) || p.kcal })} />
+            </div>
+            <div className="field">
+              <label>Protéines (g / kg)</label>
+              <input className="input" type="number" inputMode="decimal" step="0.1" value={p.proteinPerKg} onChange={(e) => setProfile(i, { proteinPerKg: Number(e.target.value) || p.proteinPerKg })} />
+            </div>
+          </div>
+        ))}
+        <p className="small muted" style={{ margin: 0 }}>Repères prise de masse : environ 35–45 kcal/kg et 1,6–2 g de protéines/kg par jour.</p>
+      </section>
+
+      <section className="card pad stack">
         <h2 style={{ margin: 0 }}>✨ Assistant IA (Claude)</h2>
+        <details className="callout info">
+          <summary style={{ cursor: 'pointer', fontWeight: 800 }}>📖 Comment connecter l’IA (5 minutes)</summary>
+          <ol className="small" style={{ margin: '8px 0 0', paddingLeft: 18 }}>
+            <li>Allez sur <a href="https://console.anthropic.com" target="_blank" rel="noreferrer">console.anthropic.com</a> et créez un compte (e-mail).</li>
+            <li>Menu <strong>Billing</strong> (Facturation) : ajoutez une carte et achetez un petit crédit (ex. 5 $). C’est du prépayé : pas d’abonnement, pas de mauvaise surprise.</li>
+            <li>Menu <strong>API Keys</strong> → <strong>Create Key</strong> → nommez-la « Notre Cuisine » → copiez la clé (elle commence par <span className="kbd">sk-ant-</span>, elle ne s’affiche qu’une fois).</li>
+            <li>Collez-la ci-dessous, <strong>Enregistrer</strong>, puis <strong>Tester la connexion</strong>.</li>
+            <li>À faire sur chaque téléphone (la clé n’est pas incluse dans les sauvegardes, par sécurité).</li>
+          </ol>
+          <p className="small" style={{ margin: '8px 0 0' }}>
+            Coût indicatif avec Opus 5.5 : ~0,15 à 0,25 $ pour créer une recette seule, ~0,60 $ pour 10 recettes, ~0,10 $ pour adapter une recette ou composer une semaine. Sonnet 5.5 coûte environ deux fois moins. Vous pouvez fixer une limite de dépense mensuelle dans la console (Limits).
+          </p>
+        </details>
         <p className="small muted" style={{ margin: 0 }}>
           Pour générer, adapter et planifier, l’application appelle l’API Anthropic directement depuis ce navigateur avec votre clé. La clé reste stockée sur cet appareil uniquement (elle n’est jamais incluse dans les sauvegardes). Créez une clé sur <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noreferrer">console.anthropic.com</a> ; l’usage est facturé sur votre compte API.
         </p>
@@ -88,6 +151,7 @@ export function Settings() {
             </button>
           </div>
         </div>
+        {testing && <div className="small">{testing}</div>}
         <div className="field">
           <label htmlFor="model">Modèle</label>
           <select id="model" className="select" value={settings.model} onChange={(e) => saveSettings({ model: e.target.value })}>
@@ -107,6 +171,9 @@ export function Settings() {
             }}
           >
             Enregistrer
+          </button>
+          <button className="btn" onClick={test}>
+            🔌 Tester la connexion
           </button>
           {settings.apiKey && (
             <button
