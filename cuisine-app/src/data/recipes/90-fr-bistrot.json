@@ -17,15 +17,15 @@
     "ingredients": [
       {
         "id": "boeuf-entrecote",
-        "qty": 420,
+        "qty": 350,
         "unit": "g",
-        "note": "1 grosse entrecôte de 3 cm d'épaisseur"
+        "note": "1 belle entrecôte de 3 cm d'épaisseur"
       },
       {
         "id": "os-a-moelle",
-        "qty": 2,
+        "qty": 1,
         "unit": "piece",
-        "note": "tronçons de 5 cm"
+        "note": "tronçon de 8 cm"
       },
       {
         "id": "echalote",
@@ -46,20 +46,20 @@
       },
       {
         "id": "beurre",
-        "qty": 35,
+        "qty": 20,
         "unit": "g",
         "note": "froid, en dés"
       },
       {
         "id": "pomme-de-terre",
-        "qty": 600,
+        "qty": 500,
         "unit": "g",
         "note": "grenailles"
       },
       {
         "id": "graisse-canard",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac"
       },
       {
         "id": "thym",
@@ -85,8 +85,8 @@
     ],
     "steps": [
       "Préchauffez le four à 200 °C. Coupez les grenailles en deux, enrobez-les de graisse de canard, de thym et de sel, et rôtissez-les 35 min sur une plaque en les retournant à mi-cuisson : elles doivent être dorées et croustillantes.",
-      "Faites tremper les os à moelle 10 min dans l'eau froide salée, puis pochez-les 8 min dans une petite casserole d'eau frémissante. Poussez la moelle hors de l'os avec le manche d'une cuillère et coupez-la en rondelles.",
-      "Sortez l'entrecôte du réfrigérateur 30 min avant. Faites chauffer une poêle en fonte à feu vif avec 10 g de beurre jusqu'à ce qu'il mousse et commence à blondir.",
+      "Faites tremper l'os à moelle 10 min dans l'eau froide salée, puis pochez-le 8 min dans une petite casserole d'eau frémissante. Poussez la moelle hors de l'os avec le manche d'une cuillère et coupez-la en rondelles.",
+      "Sortez l'entrecôte du réfrigérateur 30 min avant. Faites chauffer une poêle en fonte à feu vif avec 5 g de beurre jusqu'à ce qu'il mousse et commence à blondir.",
       "Saisissez l'entrecôte 3 à 4 min par face pour une cuisson saignante (5 min pour à point), en arrosant de beurre moussant. Réservez-la sur une planche sous une feuille de papier aluminium 5 min.",
       "Dans la même poêle à feu moyen, faites suer les échalotes 2 min dans le gras de cuisson. Versez le vin rouge et faites réduire de trois quarts (environ 6 min), puis ajoutez le bouillon et réduisez encore 3 min jusqu'à consistance sirupeuse.",
       "Hors du feu, incorporez le reste du beurre froid en fouettant, puis les rondelles de moelle. Poivrez généreusement.",
@@ -295,12 +295,12 @@
       },
       {
         "id": "beurre",
-        "qty": 70,
+        "qty": 55,
         "unit": "g"
       },
       {
         "id": "pomme-de-terre-farineuse",
-        "qty": 1000,
+        "qty": 900,
         "unit": "g"
       },
       {
@@ -347,7 +347,7 @@
       "À feu moyen, faites fondre les oignons 5 min dans la cocotte. Remettez la viande, ajoutez le pied de veau, l'ail écrasé, le thym et le laurier.",
       "Versez le vin blanc, laissez bouillir 2 min, puis ajoutez le bouillon. Couvrez et laissez mijoter 2 h à tout petit frémissement (ou au four à 150 °C).",
       "Ajoutez les carottes, salez, poivrez et poursuivez 1 h 15 à couvert : la viande doit se défaire à la cuillère et les carottes être fondantes. Retirez le pied de veau, détachez-en la chair gélatineuse et remettez-la dans la sauce.",
-      "Pendant la dernière demi-heure, cuisez les pommes de terre épluchées 25 min dans l'eau salée, écrasez-les au presse-purée avec 50 g de beurre, le lait chaud et la muscade.",
+      "Pendant la dernière demi-heure, cuisez les pommes de terre épluchées 25 min dans l'eau salée, écrasez-les au presse-purée avec 35 g de beurre, le lait chaud et la muscade.",
       "Rectifiez l'assaisonnement de la sauce (réduisez-la 5 min à découvert si elle est trop liquide), parsemez de persil et servez sur la purée."
     ],
     "tags": [
@@ -599,9 +599,9 @@
     "tips": "Le miroton est né pour accommoder les restes de bœuf bouilli : idéal le surlendemain d'un pot-au-feu."
   },
   {
-    "id": "fr2-roti-boeuf-boulangere",
-    "name": "Rôti de bœuf du dimanche et pommes boulangère",
-    "description": "Un rôti saisi puis cuit rosé au-dessus de pommes de terre fondantes qui confisent dans le bouillon, les oignons et les sucs de la viande.",
+    "id": "fr2-roti-boeuf-gratin-dauphinois",
+    "name": "Rôti de bœuf du dimanche, gratin dauphinois",
+    "description": "Un rôti de bœuf saisi au beurre et rôti rosé, tranché finement avec son jus, accompagné d'un vrai gratin dauphinois au lait, à la crème et à l'ail.",
     "emoji": "🥩",
     "category": "plat",
     "mealTypes": [
@@ -609,55 +609,58 @@
       "diner"
     ],
     "cuisine": "francaise",
-    "prepTime": 20,
-    "cookTime": 75,
+    "prepTime": 25,
+    "cookTime": 90,
     "restTime": 10,
-    "difficulty": "tres-facile",
+    "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
         "id": "boeuf-rosbif",
         "qty": 900,
         "unit": "g",
-        "note": "rôti ficelé, bardé finement"
+        "note": "rôti ficelé, finement bardé"
       },
       {
         "id": "pomme-de-terre",
-        "qty": 1200,
+        "qty": 1000,
         "unit": "g",
-        "note": "à chair ferme, en rondelles de 3 mm"
+        "note": "à chair ferme, en rondelles de 3 mm, non lavées"
       },
       {
-        "id": "oignon",
-        "qty": 3,
-        "unit": "piece",
-        "note": "émincés"
-      },
-      {
-        "id": "bouillon-boeuf",
-        "qty": 350,
+        "id": "lait",
+        "qty": 400,
         "unit": "ml"
       },
       {
-        "id": "beurre",
-        "qty": 60,
-        "unit": "g"
+        "id": "creme-liquide",
+        "qty": 200,
+        "unit": "ml"
       },
       {
         "id": "ail",
-        "qty": 4,
-        "unit": "gousse",
-        "note": "en chemise"
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece"
       },
       {
         "id": "thym",
-        "qty": 4,
+        "qty": 3,
         "unit": "brin"
-      },
-      {
-        "id": "laurier",
-        "qty": 2,
-        "unit": "feuille"
       },
       {
         "id": "moutarde",
@@ -677,118 +680,105 @@
       }
     ],
     "steps": [
-      "Sortez le rôti 1 h avant. Préchauffez le four à 190 °C.",
-      "Faites revenir les oignons 8 min dans 20 g de beurre à feu moyen. Dans un grand plat beurré, alternez rondelles de pommes de terre et oignons, salez, poivrez, glissez le thym et le laurier. Versez le bouillon chaud à hauteur et parsemez de 20 g de beurre en noisettes.",
-      "Enfournez les pommes de terre seules 35 min.",
-      "Pendant ce temps, salez le rôti et saisissez-le dans une poêle avec le reste du beurre à feu vif, 2 min sur chaque face, jusqu'à ce qu'il soit bien coloré.",
-      "Posez le rôti directement sur les pommes de terre avec l'ail en chemise et poursuivez la cuisson 30 à 35 min (cœur à 52 °C pour rosé, 58 °C pour à point).",
-      "Sortez le rôti, enveloppez-le de papier aluminium et laissez-le reposer 10 min ; laissez les pommes de terre au four éteint.",
-      "Tranchez finement, arrosez du jus rendu et servez avec les pommes boulangère et la moutarde."
+      "Sortez le rôti 1 h avant. Préchauffez le four à 160 °C.",
+      "Gratin : dans une casserole, portez le lait, la crème, 2 gousses d'ail écrasées, la muscade, 1 cuillère à café de sel et du poivre à frémissement. Ajoutez les rondelles de pommes de terre et laissez frémir 10 min en remuant délicatement : l'amidon épaissit le liquide.",
+      "Frottez un plat à gratin avec la dernière gousse d'ail et 10 g de beurre. Versez-y les pommes de terre et leur crème, lissez et enfournez 1 h 15, jusqu'à ce que le dessus soit doré et que la pointe d'un couteau traverse sans résistance.",
+      "40 min avant la fin du gratin, salez le rôti et saisissez-le dans une cocotte avec 20 g de beurre à feu vif, 2 min sur chaque face, jusqu'à ce qu'il soit bien coloré. Ajoutez l'échalote coupée en deux et le thym.",
+      "Montez le four à 200 °C (le gratin finit de dorer) et enfournez le rôti dans sa cocotte 25 à 30 min (cœur à 52 °C pour rosé, 58 °C pour à point).",
+      "Laissez reposer le rôti 10 min sous aluminium. Déglacez la cocotte avec 4 cuillères d'eau et le reste du beurre en grattant les sucs pour faire un jus.",
+      "Tranchez finement, arrosez de jus et servez avec le gratin et la moutarde."
     ],
     "tags": [
       "week-end",
       "familial",
       "four",
       "riche en protéines",
-      "réconfortant"
+      "calorique"
     ],
     "seasons": [],
     "technique": "roti",
     "flavors": [
       "umami",
-      "reconfortant"
+      "cremeux"
     ],
     "tips": "Les restes de rôti froid font d'excellents sandwichs au pain de campagne avec cornichons et moutarde."
   },
   {
-    "id": "fr2-quenelles-brochet-nantua",
-    "name": "Quenelles de brochet maison sauce Nantua, riz",
-    "description": "Le grand classique lyonnais : quenelles moelleuses de poisson à la panade, pochées puis gonflées au four dans une sauce Nantua crémeuse aux crustacés. Riz blanc à côté.",
-    "emoji": "🐟",
+    "id": "fr2-roti-dinde-marrons",
+    "name": "Rôti de dinde aux marrons et aux pommes",
+    "description": "Le rôti des fêtes de grand-mère, tous les jours : filet de dinde bardé de lard, rôti en cocotte au vin blanc avec marrons glacés au jus, pommes fruits et petits oignons.",
+    "emoji": "🌰",
     "category": "plat",
     "mealTypes": [
       "dejeuner",
       "diner"
     ],
     "cuisine": "francaise",
-    "prepTime": 40,
-    "cookTime": 45,
-    "restTime": 60,
-    "difficulty": "intermediaire",
+    "prepTime": 20,
+    "cookTime": 70,
+    "restTime": 10,
+    "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
-        "id": "cabillaud",
+        "id": "dinde-escalope",
+        "qty": 1000,
+        "unit": "g",
+        "note": "rôti de dinde (filet) ficelé"
+      },
+      {
+        "id": "bacon",
+        "qty": 8,
+        "unit": "piece",
+        "note": "fines tranches pour barder"
+      },
+      {
+        "id": "chataigne",
         "qty": 500,
         "unit": "g",
-        "note": "chair de brochet ou de merlan, sans arêtes"
+        "note": "marrons cuits sous vide"
       },
       {
-        "id": "lait",
-        "qty": 250,
-        "unit": "ml"
-      },
-      {
-        "id": "farine",
-        "qty": 90,
-        "unit": "g",
-        "note": "dont 25 g pour la sauce"
-      },
-      {
-        "id": "beurre",
-        "qty": 110,
-        "unit": "g"
-      },
-      {
-        "id": "oeuf",
-        "qty": 3,
-        "unit": "piece"
-      },
-      {
-        "id": "crevette",
-        "qty": 300,
-        "unit": "g",
-        "note": "entières, ou écrevisses"
-      },
-      {
-        "id": "echalote",
+        "id": "pomme",
         "qty": 2,
-        "unit": "piece"
+        "unit": "piece",
+        "note": "en quartiers"
       },
       {
-        "id": "concentre-tomate",
-        "qty": 1,
-        "unit": "cas"
+        "id": "oignon-nouveau",
+        "qty": 8,
+        "unit": "piece",
+        "note": "ou petits oignons grelots"
       },
       {
         "id": "vin-blanc",
-        "qty": 100,
-        "unit": "ml"
-      },
-      {
-        "id": "fumet-poisson",
-        "qty": 400,
-        "unit": "ml"
-      },
-      {
-        "id": "creme-liquide",
         "qty": 150,
         "unit": "ml"
       },
       {
-        "id": "riz-blanc",
+        "id": "bouillon-volaille",
         "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
         "unit": "g"
       },
       {
-        "id": "muscade",
-        "qty": 1,
-        "unit": "pincee"
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
       },
       {
-        "id": "piment-espelette",
-        "qty": 1,
-        "unit": "pincee"
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "sauge",
+        "qty": 4,
+        "unit": "feuille"
       },
       {
         "id": "sel",
@@ -802,28 +792,27 @@
       }
     ],
     "steps": [
-      "Panade : portez le lait à ébullition avec 40 g de beurre, versez d'un coup 65 g de farine et remuez vivement à la spatule 2 min sur feu moyen jusqu'à ce que la pâte se détache des parois. Laissez tiédir et incorporez les œufs un à un.",
-      "Mixez la chair de poisson très finement avec 1 cuillère à café de sel, la muscade et du poivre, puis mélangez-la à la panade jusqu'à obtenir une farce lisse. Réservez 1 h au réfrigérateur.",
-      "Sauce Nantua : décortiquez les crevettes. Faites revenir les têtes et carapaces 3 min dans 20 g de beurre avec les échalotes et le concentré, déglacez au vin blanc, ajoutez le fumet et laissez frémir 15 min. Filtrez en pressant bien.",
-      "Faites un roux avec 25 g de beurre et 25 g de farine, versez le fumet filtré en fouettant et laissez épaissir 5 min. Ajoutez la crème, le piment et les queues de crevettes. Rectifiez l'assaisonnement.",
-      "Façonnez la farce en quenelles avec deux cuillères à soupe trempées dans l'eau chaude. Pochez-les par petites séries 8 min dans de l'eau salée frémissante (jamais bouillante) : elles remontent à la surface. Égouttez.",
-      "Préchauffez le four à 200 °C. Disposez les quenelles dans un plat beurré, nappez de sauce et enfournez 20 min : elles doivent doubler de volume et dorer légèrement. Pendant ce temps, cuisez le riz 12 min à l'eau salée.",
-      "Servez aussitôt, les quenelles retombant vite, avec le riz et le reste du beurre fondu sur le riz."
+      "Salez et poivrez le rôti, enveloppez-le des tranches de bacon et glissez les feuilles de sauge dessous ; maintenez avec de la ficelle.",
+      "Dans une cocotte, faites mousser 25 g de beurre à feu moyen-vif et dorez le rôti 8 min sur toutes les faces, jusqu'à ce que le lard soit croustillant.",
+      "Ajoutez les petits oignons et le thym, versez le vin blanc et 150 ml de bouillon. Couvrez et laissez cuire 45 min à feu doux (ou au four à 170 °C), en retournant le rôti à mi-cuisson ; le cœur doit atteindre 70 °C.",
+      "Pendant ce temps, faites dorer les quartiers de pomme 6 min dans 15 g de beurre. Ajoutez les marrons, le reste du bouillon et du beurre, et laissez-les glacer 10 min à feu moyen en les roulant délicatement, jusqu'à ce qu'ils soient brillants.",
+      "Sortez le rôti et laissez-le reposer 10 min sous aluminium. Faites réduire le jus de la cocotte 3 min à feu vif, ajoutez la crème et laissez bouillonner 1 min.",
+      "Tranchez le rôti, nappez de sauce et servez avec les marrons, les pommes et les petits oignons."
     ],
     "tags": [
       "week-end",
-      "four",
+      "familial",
       "riche en protéines",
-      "familial"
+      "réconfortant"
     ],
     "seasons": [
       "automne",
       "hiver"
     ],
-    "technique": "four",
+    "technique": "roti",
     "flavors": [
-      "cremeux",
-      "iode"
+      "reconfortant",
+      "fruite"
     ]
   },
   {
@@ -1324,7 +1313,7 @@
     "ingredients": [
       {
         "id": "porc-echine",
-        "qty": 1000,
+        "qty": 900,
         "unit": "g",
         "note": "rôti dans l'échine, ficelé"
       },
@@ -1352,7 +1341,7 @@
       },
       {
         "id": "pomme-de-terre-farineuse",
-        "qty": 1000,
+        "qty": 900,
         "unit": "g"
       },
       {
@@ -1362,7 +1351,7 @@
       },
       {
         "id": "beurre",
-        "qty": 60,
+        "qty": 45,
         "unit": "g"
       },
       {
@@ -1390,7 +1379,7 @@
       "Préchauffez le four à 180 °C. Salez et poivrez le rôti, faites-le dorer 8 min dans un plat allant sur le feu (ou une cocotte) avec 10 g de beurre à feu vif.",
       "Disposez autour les oignons, le thym et le laurier. Versez le vin blanc et le bouillon et enfournez 1 h, en arrosant toutes les 20 min.",
       "Ajoutez les pruneaux dans le jus et poursuivez 30 min : le cœur du rôti doit atteindre 68 °C et le jus être sirupeux.",
-      "Pendant ce temps, cuisez les pommes de terre épluchées 25 min dans l'eau salée, égouttez-les et écrasez-les avec 50 g de beurre et le lait chaud jusqu'à obtenir une purée lisse.",
+      "Pendant ce temps, cuisez les pommes de terre épluchées 25 min dans l'eau salée, égouttez-les et écrasez-les avec 35 g de beurre et le lait chaud jusqu'à obtenir une purée lisse.",
       "Laissez reposer le rôti 10 min sous aluminium, puis tranchez-le.",
       "Servez les tranches nappées de jus aux pruneaux et d'oignons fondus, avec la purée."
     ],
@@ -1630,101 +1619,309 @@
     ]
   },
   {
-    "id": "fr2-chou-farci-auvergnat",
-    "name": "Chou farci à l'auvergnate, pommes de terre à la vapeur",
-    "description": "Un chou vert entier reconstitué feuille à feuille autour d'une farce de chair à saucisse, veau et lardons, braisé longuement dans le bouillon. Le plat du dimanche en hiver.",
-    "emoji": "🥬",
+    "id": "fr2-carre-agneau-persille",
+    "name": "Carré d'agneau en croûte persillée, grenailles à l'ail et haricots verts",
+    "description": "Le carré d'agneau de brasserie : saisi, couvert d'une croûte de chapelure, persil, ail et moutarde, rôti rosé. Grenailles confites à l'ail et haricots verts au beurre.",
+    "emoji": "🐑",
+    "category": "plat",
+    "mealTypes": [
+      "diner",
+      "dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 40,
+    "restTime": 5,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-cotelette",
+        "qty": 550,
+        "unit": "g",
+        "note": "1 carré de 6 à 8 côtes, manchonné"
+      },
+      {
+        "id": "panure",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 6,
+        "unit": "gousse",
+        "note": "dont 4 en chemise"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 450,
+        "unit": "g",
+        "note": "grenailles"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Enrobez les grenailles coupées en deux de graisse de canard avec l'ail en chemise, le thym et du sel, et enfournez 35 min en remuant à mi-cuisson.",
+      "Mixez la chapelure, le persil, 2 gousses d'ail et 15 g de beurre mou en une pâte verte. Salez, poivrez.",
+      "Salez le carré et saisissez-le côté gras 4 min dans une poêle à feu moyen-vif, puis 1 min sur chaque autre face, jusqu'à ce que le gras soit doré.",
+      "Badigeonnez le côté gras de moutarde et pressez la croûte persillée dessus en une couche régulière.",
+      "Enfournez le carré à côté des grenailles 15 à 18 min (cœur à 55 °C pour rosé). Laissez reposer 5 min sous aluminium avant de découper entre les côtes.",
+      "Pendant ce temps, cuisez les haricots verts 7 min dans l'eau bouillante salée, égouttez et roulez-les dans le reste du beurre.",
+      "Partagez les côtes avec les grenailles et les haricots verts, en écrasant l'ail confit sur les pommes de terre."
+    ],
+    "tags": [
+      "week-end",
+      "four",
+      "riche en protéines",
+      "calorique"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "herbace",
+      "grille"
+    ]
+  },
+  {
+    "id": "fr2-choucroute-de-la-mer",
+    "name": "Choucroute de la mer au beurre blanc",
+    "description": "La version alsacienne marine : choucroute braisée au riesling, haddock, saumon et cabillaud cuits à la vapeur dessus, pommes de terre et beurre blanc à l'échalote.",
+    "emoji": "🐟",
     "category": "plat",
     "mealTypes": [
       "dejeuner",
       "diner"
     ],
     "cuisine": "francaise",
-    "prepTime": 45,
-    "cookTime": 120,
+    "prepTime": 25,
+    "cookTime": 75,
     "difficulty": "intermediaire",
-    "servings": 6,
+    "servings": 4,
     "ingredients": [
       {
-        "id": "chou-vert",
-        "qty": 1,
-        "unit": "piece",
-        "note": "chou de Milan"
-      },
-      {
-        "id": "porc-hache",
-        "qty": 500,
+        "id": "choucroute",
+        "qty": 1000,
         "unit": "g",
-        "note": "chair à saucisse"
+        "note": "crue, rincée et essorée"
       },
       {
-        "id": "veau-hache",
-        "qty": 400,
-        "unit": "g"
-      },
-      {
-        "id": "lardons",
-        "qty": 150,
-        "unit": "g"
-      },
-      {
-        "id": "oeuf",
-        "qty": 2,
-        "unit": "piece"
-      },
-      {
-        "id": "pain-levain",
-        "qty": 2,
-        "unit": "piece",
-        "note": "tranches rassises trempées dans le lait"
-      },
-      {
-        "id": "lait",
-        "qty": 100,
-        "unit": "ml"
-      },
-      {
-        "id": "oignon",
-        "qty": 2,
-        "unit": "piece",
-        "note": "hachés"
-      },
-      {
-        "id": "ail",
-        "qty": 3,
-        "unit": "gousse"
-      },
-      {
-        "id": "persil",
-        "qty": 20,
+        "id": "haddock",
+        "qty": 300,
         "unit": "g",
-        "note": "haché"
+        "note": "en 4 morceaux"
       },
       {
-        "id": "carotte",
-        "qty": 3,
-        "unit": "piece",
-        "note": "en rondelles"
+        "id": "saumon",
+        "qty": 300,
+        "unit": "g",
+        "note": "en 4 morceaux"
       },
       {
-        "id": "bouillon-boeuf",
-        "qty": 600,
-        "unit": "ml"
+        "id": "cabillaud",
+        "qty": 300,
+        "unit": "g",
+        "note": "en 4 morceaux"
       },
       {
         "id": "pomme-de-terre",
-        "qty": 1200,
-        "unit": "g"
+        "qty": 900,
+        "unit": "g",
+        "note": "à chair ferme"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 350,
+        "unit": "ml",
+        "note": "riesling, dont 100 ml pour le beurre blanc"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "echalote",
+        "qty": 2,
+        "unit": "piece",
+        "note": "ciselées très finement"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 2,
+        "unit": "cas"
       },
       {
         "id": "beurre",
-        "qty": 40,
+        "qty": 150,
+        "unit": "g",
+        "note": "froid, en dés, pour le beurre blanc"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "baies de genièvre ou carvi"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de vin blanc"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande cocotte, faites fondre l'oignon 5 min dans la graisse de canard à feu moyen. Ajoutez la choucroute, le laurier, le carvi, 250 ml de riesling et 200 ml d'eau. Couvrez et laissez braiser 1 h à feu doux en remuant de temps en temps.",
+      "30 min avant la fin, cuisez les pommes de terre épluchées 25 min à la vapeur.",
+      "Beurre blanc : dans une petite casserole, faites réduire les échalotes avec le reste du vin et le vinaigre à feu moyen jusqu'à ce qu'il ne reste qu'une cuillère à soupe de liquide (8 min). À feu très doux, incorporez le beurre froid dé par dé en fouettant sans cesse : la sauce doit être mousseuse et nappante, sans jamais bouillir. Salez, poivrez et gardez au bain-marie tiède.",
+      "Salez légèrement les poissons. Posez-les sur la choucroute, couvrez et laissez cuire à la vapeur 8 à 10 min à feu doux : la chair doit être nacrée et s'effeuiller.",
+      "Dressez la choucroute dans des assiettes chaudes, déposez un morceau de chaque poisson, les pommes de terre, et nappez de beurre blanc."
+    ],
+    "tags": [
+      "week-end",
+      "fermenté",
+      "riche en protéines",
+      "sans gluten",
+      "calorique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "acidule",
+      "iode",
+      "fume"
+    ]
+  },
+  {
+    "id": "fr2-jambon-madere-epinards",
+    "name": "Jambon braisé sauce madère, épinards au beurre et pommes vapeur",
+    "description": "Le plat de bistrot d'antan : épaisses tranches de jambon à l'os réchauffées dans une sauce brune au madère et aux champignons, épinards fondus au beurre et pommes vapeur.",
+    "emoji": "🍖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "jambon-blanc",
+        "qty": 340,
+        "unit": "g",
+        "note": "2 tranches épaisses de jambon à l'os"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 120,
+        "unit": "ml",
+        "note": "madère"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "champignon",
+        "qty": 150,
+        "unit": "g",
+        "note": "émincés"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselée"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "fecule-mais",
+        "qty": 1,
+        "unit": "cac",
+        "note": "délayée dans un peu d'eau froide"
+      },
+      {
+        "id": "beurre",
+        "qty": 45,
         "unit": "g"
       },
       {
-        "id": "thym",
-        "qty": 2,
-        "unit": "brin"
+        "id": "epinard",
+        "qty": 200,
+        "unit": "g",
+        "note": "frais, équeutés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g"
       },
       {
         "id": "muscade",
@@ -1743,278 +1940,29 @@
       }
     ],
     "steps": [
-      "Retirez les feuilles abîmées du chou et blanchissez-le entier 10 min dans une grande marmite d'eau bouillante salée. Égouttez tête en bas et laissez tiédir.",
-      "Farce : faites revenir les lardons et les oignons 5 min dans 10 g de beurre. Mélangez avec la chair à saucisse, le veau, le pain essoré, les œufs, l'ail, le persil, la muscade, 1 cuillère à café de sel et du poivre.",
-      "Posez un grand torchon humide (ou une étamine) dans un saladier. Détachez les feuilles du chou une à une et tapissez-en le saladier, puis alternez couches de farce et de feuilles en finissant par des feuilles. Refermez le torchon et ficelez en boule.",
-      "Dans une grande cocotte, faites fondre le reste du beurre, ajoutez les carottes, posez le chou, versez le bouillon et ajoutez le thym. Couvrez et laissez cuire 1 h 45 à frémissement (ou au four à 160 °C), en arrosant de temps en temps.",
-      "30 min avant la fin, cuisez les pommes de terre épluchées 25 min à la vapeur.",
-      "Déballez le chou sur un plat, découpez-le en parts comme un gâteau et servez avec les pommes de terre, les carottes et un peu de bouillon de cuisson."
+      "Cuisez les pommes de terre épluchées 25 min à la vapeur.",
+      "Sauce : faites revenir l'échalote et les champignons 5 min dans 15 g de beurre à feu moyen. Ajoutez le concentré de tomate, puis le madère, et faites réduire de moitié (3 min).",
+      "Versez le bouillon, laissez frémir 5 min, puis liez avec la fécule délayée en remuant : la sauce doit napper la cuillère. Poivrez.",
+      "Glissez les tranches de jambon dans la sauce, couvrez et laissez-les se réchauffer 6 à 8 min à feu très doux, sans bouillir, en les retournant une fois.",
+      "Pendant ce temps, faites tomber les épinards 2 min dans 20 g de beurre à feu vif, salez et ajoutez la muscade.",
+      "Ajoutez le reste du beurre à la sauce hors du feu et servez le jambon nappé, avec les épinards et les pommes vapeur."
     ],
     "tags": [
-      "week-end",
+      "rapide",
       "familial",
-      "réconfortant",
-      "batch cooking",
-      "calorique"
+      "riche en protéines",
+      "sans gluten"
     ],
     "seasons": [
       "automne",
-      "hiver"
+      "hiver",
+      "printemps"
     ],
     "technique": "braise",
     "flavors": [
-      "reconfortant",
-      "umami"
-    ],
-    "tips": "Les restes se réchauffent en tranches dorées à la poêle."
-  },
-  {
-    "id": "fr2-grand-aioli-morue",
-    "name": "Grand aïoli provençal à la morue",
-    "description": "Le repas du vendredi en Provence : morue pochée, œufs durs, pommes de terre, carottes, haricots verts et chou-fleur, servis tièdes avec un aïoli monté au mortier.",
-    "emoji": "🧄",
-    "category": "plat",
-    "mealTypes": [
-      "dejeuner",
-      "diner"
-    ],
-    "cuisine": "francaise",
-    "prepTime": 30,
-    "cookTime": 30,
-    "restTime": 1440,
-    "difficulty": "facile",
-    "servings": 4,
-    "ingredients": [
-      {
-        "id": "morue-salee",
-        "qty": 350,
-        "unit": "g",
-        "note": "dessalée 24 h"
-      },
-      {
-        "id": "oeuf",
-        "qty": 4,
-        "unit": "piece"
-      },
-      {
-        "id": "jaune-oeuf",
-        "qty": 2,
-        "unit": "piece",
-        "note": "pour l'aïoli"
-      },
-      {
-        "id": "ail",
-        "qty": 4,
-        "unit": "gousse",
-        "note": "germe retiré"
-      },
-      {
-        "id": "huile-olive",
-        "qty": 200,
-        "unit": "ml"
-      },
-      {
-        "id": "citron",
-        "qty": 0.5,
-        "unit": "piece"
-      },
-      {
-        "id": "pomme-de-terre",
-        "qty": 1000,
-        "unit": "g",
-        "note": "à chair ferme"
-      },
-      {
-        "id": "carotte",
-        "qty": 4,
-        "unit": "piece"
-      },
-      {
-        "id": "haricots-verts",
-        "qty": 300,
-        "unit": "g"
-      },
-      {
-        "id": "chou-fleur",
-        "qty": 0.5,
-        "unit": "piece",
-        "note": "en bouquets"
-      },
-      {
-        "id": "laurier",
-        "qty": 1,
-        "unit": "feuille"
-      },
-      {
-        "id": "thym",
-        "qty": 2,
-        "unit": "brin"
-      },
-      {
-        "id": "sel",
-        "qty": 1,
-        "unit": "au-gout"
-      },
-      {
-        "id": "poivre",
-        "qty": 1,
-        "unit": "au-gout"
-      }
-    ],
-    "steps": [
-      "La veille : dessalez la morue 24 h dans un grand volume d'eau froide, peau vers le haut, en changeant l'eau 3 ou 4 fois.",
-      "Aïoli : pilez l'ail avec une pincée de sel au mortier jusqu'à obtenir une pâte. Ajoutez les jaunes, puis versez l'huile d'olive en très mince filet en tournant sans arrêt, jusqu'à obtenir une sauce ferme qui tient au pilon. Ajoutez quelques gouttes de citron et réservez au frais.",
-      "Cuisez les œufs 10 min à l'eau bouillante, refroidissez et écalez-les.",
-      "Cuisez séparément à l'eau salée les pommes de terre entières (25 min), les carottes (15 min), le chou-fleur (8 min) et les haricots verts (7 min). Ils doivent rester légèrement fermes.",
-      "Placez la morue dans une casserole d'eau froide avec le laurier et le thym. Portez doucement à frémissement, puis laissez pocher 8 min sans bouillir : elle doit s'effeuiller en lamelles nacrées.",
-      "Dressez sur un grand plat la morue, les œufs coupés en deux et tous les légumes tièdes, poivrez, et servez avec l'aïoli au centre."
-    ],
-    "tags": [
-      "préparation à l’avance",
-      "familial",
-      "riche en protéines",
-      "sans gluten",
-      "week-end"
-    ],
-    "seasons": [
-      "printemps",
-      "ete"
-    ],
-    "technique": "poche",
-    "flavors": [
-      "herbace",
-      "iode"
-    ],
-    "tips": "L'aïoli se fait aussi au fouet ; s'il tranche, recommencez avec un jaune neuf et incorporez-y l'aïoli raté petit à petit."
-  },
-  {
-    "id": "fr2-cassoulet-castelnaudary",
-    "name": "Cassoulet de Castelnaudary au confit de canard",
-    "description": "Le cassoulet maison : lingots fondants cuits avec couenne et aromates, confit de canard, saucisse de Toulouse et échine de porc, gratinés lentement au four jusqu'à la croûte brune.",
-    "emoji": "🫘",
-    "category": "mijote",
-    "mealTypes": [
-      "dejeuner",
-      "diner"
-    ],
-    "cuisine": "francaise",
-    "prepTime": 40,
-    "cookTime": 180,
-    "difficulty": "intermediaire",
-    "servings": 6,
-    "ingredients": [
-      {
-        "id": "haricots-blancs",
-        "qty": 900,
-        "unit": "g",
-        "note": "lingots cuits (ou 400 g secs trempés la veille)"
-      },
-      {
-        "id": "canard-cuisse",
-        "qty": 3,
-        "unit": "piece",
-        "note": "confites, coupées en deux"
-      },
-      {
-        "id": "saucisse-toulouse",
-        "qty": 4,
-        "unit": "piece"
-      },
-      {
-        "id": "porc-echine",
-        "qty": 500,
-        "unit": "g",
-        "note": "en gros cubes"
-      },
-      {
-        "id": "tomates-concassees",
-        "qty": 200,
-        "unit": "g"
-      },
-      {
-        "id": "oignon",
-        "qty": 2,
-        "unit": "piece"
-      },
-      {
-        "id": "carotte",
-        "qty": 1,
-        "unit": "piece"
-      },
-      {
-        "id": "ail",
-        "qty": 6,
-        "unit": "gousse"
-      },
-      {
-        "id": "bouillon-volaille",
-        "qty": 1000,
-        "unit": "ml"
-      },
-      {
-        "id": "graisse-canard",
-        "qty": 2,
-        "unit": "cas"
-      },
-      {
-        "id": "pain-levain",
-        "qty": 2,
-        "unit": "piece",
-        "note": "tranches, pour le pain de campagne servi à côté"
-      },
-      {
-        "id": "thym",
-        "qty": 3,
-        "unit": "brin"
-      },
-      {
-        "id": "laurier",
-        "qty": 2,
-        "unit": "feuille"
-      },
-      {
-        "id": "girofle",
-        "qty": 2,
-        "unit": "pincee",
-        "note": "2 clous piqués dans un oignon"
-      },
-      {
-        "id": "sel",
-        "qty": 1,
-        "unit": "au-gout"
-      },
-      {
-        "id": "poivre",
-        "qty": 1,
-        "unit": "au-gout"
-      }
-    ],
-    "steps": [
-      "Dans une cocotte, faites dorer les cubes d'échine 8 min dans la graisse de canard à feu vif. Ajoutez un oignon haché, la carotte, 4 gousses d'ail écrasées et les tomates, laissez revenir 5 min.",
-      "Ajoutez les haricots, l'oignon piqué de girofle, le thym, le laurier et le bouillon à hauteur. Laissez mijoter 1 h à couvert à petit frémissement : les haricots doivent devenir fondants sans éclater.",
-      "Pendant ce temps, faites dorer les saucisses 8 min dans une poêle à feu moyen, puis les morceaux de confit 5 min côté peau. Coupez les saucisses en tronçons.",
-      "Préchauffez le four à 150 °C. Frottez une cassole (ou un grand plat en terre) avec les 2 gousses d'ail restantes. Retirez l'oignon piqué et les herbes. Alternez haricots et viandes dans la cassole en finissant par les haricots ; le jus doit affleurer.",
-      "Enfournez 2 h. Toutes les 30 min, enfoncez la croûte brune qui se forme avec le dos d'une cuillère et ajoutez un peu de bouillon si le cassoulet s'assèche. Il doit rester moelleux sous une croûte dorée.",
-      "Laissez reposer 10 min et servez directement dans la cassole, avec le pain de campagne."
-    ],
-    "tags": [
-      "week-end",
-      "mijoté",
-      "batch cooking",
-      "calorique",
-      "prise de masse",
-      "préparation à l’avance"
-    ],
-    "seasons": [
-      "automne",
-      "hiver"
-    ],
-    "technique": "four",
-    "flavors": [
-      "reconfortant",
-      "umami"
-    ],
-    "tips": "Le cassoulet est meilleur réchauffé : préparez-le la veille et redonnez-lui 1 h au four à 150 °C. Les légumineuses ici sont le plat principal : servez simplement une salade verte à côté."
+      "umami",
+      "reconfortant"
+    ]
   },
   {
     "id": "fr2-poulet-roti-dimanche",
@@ -2381,7 +2329,7 @@
       },
       {
         "id": "beurre-clarifie",
-        "qty": 40,
+        "qty": 30,
         "unit": "g"
       },
       {
@@ -3452,7 +3400,7 @@
       },
       {
         "id": "huile-olive",
-        "qty": 3,
+        "qty": 2,
         "unit": "cas"
       },
       {
