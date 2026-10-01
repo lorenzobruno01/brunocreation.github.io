@@ -133,7 +133,7 @@
     "prepTime": 30,
     "cookTime": 180,
     "restTime": 2880,
-    "difficulty": "intermediaire",
+    "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
@@ -2383,7 +2383,7 @@
     "cuisine": "europe-centrale",
     "prepTime": 40,
     "cookTime": 150,
-    "difficulty": "intermediaire",
+    "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
@@ -2526,5 +2526,2336 @@
       "reconfortant"
     ],
     "tips": "Faites mariner la viande la veille dans le vin avec le genièvre pour un goût plus profond. Le ragoût se congèle très bien."
+  },
+  {
+    "id": "eu-konigsberger-klopse",
+    "name": "Königsberger Klopse, boulettes pochées sauce aux câpres",
+    "description": "Tendres boulettes de veau et porc relevées d'anchois, pochées dans le bouillon puis nappées d'une sauce blanche citronnée aux câpres liée au jaune d'œuf, avec des pommes de terre à l'eau.",
+    "emoji": "🫙",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "veau-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "porc-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 60,
+        "unit": "g",
+        "note": "petit pain rassis"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselé très fin"
+      },
+      {
+        "id": "anchois",
+        "qty": 4,
+        "unit": "piece",
+        "note": "filets hachés"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "zeste et jus"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1000,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "capres",
+        "qty": 40,
+        "unit": "g",
+        "note": "égouttées"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1000,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites tremper le pain 10 min dans de l'eau froide, puis pressez-le fermement. Mélangez-le avec les viandes, l'œuf, l'oignon, les anchois hachés, le zeste de citron, 1 cac de sel et du poivre. Pétrissez 2 min jusqu'à ce que la farce soit homogène.",
+      "Avec les mains mouillées, formez 12 boulettes de 5 cm. Portez le bouillon à frémissement avec 1 feuille de laurier si vous en avez.",
+      "Plongez les boulettes dans le bouillon frémissant (jamais bouillant) et pochez-les 15 min : elles remontent à la surface et sont fermes. Sortez-les à l'écumoire et gardez au chaud. Réservez 600 ml de bouillon.",
+      "Pendant ce temps, cuisez les pommes de terre épluchées 20 min à l'eau salée.",
+      "Sauce : faites fondre le beurre, ajoutez la farine et fouettez 2 min à feu moyen sans colorer. Versez le bouillon chaud petit à petit en fouettant, laissez épaissir 5 min. Ajoutez les câpres, la crème et 2 cas de jus de citron.",
+      "Hors du feu, délayez le jaune d'œuf avec 3 cas de sauce, reversez dans la casserole en fouettant, sans plus faire bouillir. Remettez les boulettes 2 min dans la sauce, parsemez de persil et servez avec les pommes de terre."
+    ],
+    "tags": [
+      "familial",
+      "réconfortant",
+      "riche en protéines",
+      "économique"
+    ],
+    "seasons": [],
+    "technique": "poche",
+    "flavors": [
+      "acidule",
+      "cremeux",
+      "umami"
+    ],
+    "tips": "La sauce doit être franchement acidulée : goûtez et ajustez citron et câpres. En Allemagne, on sert souvent une salade de betteraves à côté."
+  },
+  {
+    "id": "eu-papet-vaudois-saucisse-choux",
+    "name": "Papet vaudois et saucisse aux choux",
+    "description": "Le plat emblématique du canton de Vaud : poireaux et pommes de terre longuement étuvés au vin blanc et à la crème, sur lesquels on pose la saucisse aux choux à pocher doucement.",
+    "emoji": "🌭",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 20,
+    "cookTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "saucisse-morteau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "saucisses aux choux vaudoises (ou Morteau)"
+      },
+      {
+        "id": "poireau",
+        "qty": 5,
+        "unit": "piece",
+        "note": "en tronçons de 2 cm"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "en gros cubes"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml",
+        "note": "chasselas"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas",
+        "note": "pour servir"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Lavez soigneusement les poireaux (entre les feuilles) et coupez-les en tronçons, en gardant une partie du vert tendre.",
+      "Dans une grande cocotte, faites fondre le beurre à feu moyen et faites suer l'oignon et les poireaux 8 min en remuant, sans coloration.",
+      "Ajoutez les pommes de terre, le vin blanc et le bouillon, salez peu (la saucisse est salée) et poivrez. Portez à frémissement.",
+      "Piquez les saucisses en 3 endroits avec une aiguille et posez-les sur les légumes. Couvrez et laissez étuver 45 min à feu doux, sans jamais faire bouillir pour que les saucisses n'éclatent pas.",
+      "Sortez les saucisses, versez la crème sur les légumes et écrasez-les grossièrement à la cuillère : le papet doit être onctueux mais avec des morceaux.",
+      "Tranchez les saucisses en rondelles épaisses, posez-les sur le papet et servez avec la moutarde."
+    ],
+    "tags": [
+      "réconfortant",
+      "économique",
+      "familial",
+      "mijoté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "fume",
+      "reconfortant"
+    ],
+    "tips": "À défaut de saucisse aux choux, une saucisse de Morteau ou de Montbéliard fait très bien l'affaire."
+  },
+  {
+    "id": "eu-boulets-liegeois-frites",
+    "name": "Boulets à la liégeoise et frites au four",
+    "description": "Grosses boulettes bœuf-porc dorées au beurre puis mijotées dans la célèbre sauce « lapin » au sirop de Liège, oignons et raisins, servies avec des frites cuites au four dans la graisse de bœuf.",
+    "emoji": "🍟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 30,
+    "cookTime": 60,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "porc-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 80,
+        "unit": "g",
+        "note": "rassis"
+      },
+      {
+        "id": "lait",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "1 ciselé pour la farce, 2 émincés"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "confiture",
+        "qty": 70,
+        "unit": "g",
+        "note": "sirop de Liège (pommes-poires)"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 1,
+        "unit": "piece",
+        "note": "tranche de pain d’épices ou de seigle, émiettée"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 1000,
+        "unit": "g"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 40,
+        "unit": "g",
+        "note": "blanc de bœuf ou graisse de canard"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites tremper le pain dans le lait 10 min, pressez-le légèrement. Mélangez avec les viandes, l'œuf, l'oignon ciselé, 1 cac de sel, poivre et une pincée de muscade. Formez 8 grosses boulettes.",
+      "Dans une cocotte, faites mousser le beurre à feu moyen-vif et dorez les boulets 8 min en les roulant, jusqu'à une croûte brune. Réservez-les.",
+      "Faites revenir les oignons émincés 10 min à feu moyen jusqu'à ce qu'ils soient bien dorés. Ajoutez le vinaigre, le sirop de Liège, les raisins, le pain émietté, le thym, le laurier, le girofle et le bouillon.",
+      "Remettez les boulets, couvrez et laissez mijoter 35 min à feu doux en les retournant à mi-cuisson. La sauce doit être brune, brillante et nappante.",
+      "Frites : préchauffez le four à 220 °C. Coupez les pommes de terre en bâtonnets de 1 cm, rincez-les, séchez-les très bien. Mélangez-les avec la graisse fondue et le sel, étalez-les sans les superposer sur deux plaques.",
+      "Enfournez 35 à 40 min en les retournant à mi-cuisson, jusqu'à ce qu'elles soient dorées et croustillantes. Servez avec les boulets et beaucoup de sauce."
+    ],
+    "tags": [
+      "familial",
+      "réconfortant",
+      "calorique",
+      "mijoté",
+      "batch cooking",
+      "prise de masse"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "sucre",
+      "acidule",
+      "umami"
+    ],
+    "tips": "Le sirop de Liège se trouve en épicerie belge ; à défaut, mélangez compote de pommes très réduite et un peu de mélasse."
+  },
+  {
+    "id": "eu-waterzooi-gantois-poissons",
+    "name": "Waterzooi gantois aux poissons et crevettes grises",
+    "description": "La soupe-repas de Gand : lotte, cabillaud et crevettes pochés dans un bouillon de légumes en julienne, lié à la crème et au jaune d'œuf, servi avec des pommes de terre vapeur.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 30,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "lotte",
+        "qty": 400,
+        "unit": "g",
+        "note": "en tronçons"
+      },
+      {
+        "id": "cabillaud",
+        "qty": 400,
+        "unit": "g",
+        "note": "ou sandre, en gros cubes"
+      },
+      {
+        "id": "crevette",
+        "qty": 200,
+        "unit": "g",
+        "note": "crevettes grises décortiquées"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 800,
+        "unit": "ml"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre épluchées 25 min à la vapeur et gardez-les au chaud.",
+      "Dans une grande sauteuse, faites fondre le beurre à feu doux et faites suer la julienne de poireau, carotte et céleri 8 min, sans coloration.",
+      "Versez le fumet avec le thym, portez à frémissement et laissez cuire 5 min. Salez, poivrez.",
+      "Ajoutez la lotte, laissez frémir 4 min, puis le cabillaud 4 min de plus : la chair doit devenir nacrée et se détacher en lamelles. Ajoutez les crevettes hors du feu.",
+      "Fouettez la crème avec les jaunes d'œufs et le jus d'un demi-citron. Versez une louche de bouillon chaud dessus en fouettant, puis reversez le tout dans la sauteuse à feu très doux en remuant 2 min, sans bouillir : le bouillon doit devenir velouté.",
+      "Servez dans des assiettes creuses avec les pommes de terre, parsemé de persil ciselé, avec le reste du citron en quartiers."
+    ],
+    "tags": [
+      "riche en protéines",
+      "familial",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "cremeux",
+      "herbace"
+    ],
+    "tips": "Version d'origine au poulet : remplacez les poissons par 4 hauts de cuisse et le fumet par du bouillon de volaille."
+  },
+  {
+    "id": "eu-chicons-au-gratin",
+    "name": "Chicons au gratin, jambon et béchamel au gruyère, purée",
+    "description": "Le classique belge : endives braisées enroulées dans du jambon, nappées de béchamel et de fromage râpé gratiné, avec une purée de pommes de terre.",
+    "emoji": "🥬",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 25,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "endive",
+        "qty": 6,
+        "unit": "piece",
+        "note": "chicons"
+      },
+      {
+        "id": "jambon-blanc",
+        "qty": 6,
+        "unit": "piece",
+        "note": "tranches"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "gruyère râpé"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 35,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 450,
+        "unit": "ml",
+        "note": "350 ml pour la béchamel, 100 ml pour la purée"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Retirez le petit cône amer à la base des endives. Faites-les braiser 20 min à couvert dans une poêle avec 10 g de beurre, le jus de citron et 3 cas d'eau à feu moyen, en les retournant, jusqu'à ce qu'elles soient tendres et légèrement dorées. Égouttez-les bien en les pressant.",
+      "Béchamel : faites fondre 30 g de beurre, ajoutez la farine et fouettez 2 min. Versez 350 ml de lait froid en fouettant et laissez épaissir 5 min à feu moyen. Ajoutez la muscade, la moitié du fromage, sel et poivre.",
+      "Préchauffez le four à 200 °C. Enroulez chaque endive dans une tranche de jambon et rangez-les dans un plat beurré.",
+      "Nappez de béchamel, parsemez du reste de fromage et enfournez 25 min, jusqu'à ce que le dessus soit doré et bouillonnant.",
+      "Pendant ce temps, cuisez les pommes de terre épluchées 25 min à l'eau salée, écrasez-les avec 100 ml de lait chaud et le reste de beurre.",
+      "Servez les chicons bien chauds avec la purée."
+    ],
+    "tags": [
+      "familial",
+      "four",
+      "réconfortant",
+      "économique",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "Bien égoutter les endives après braisage est le secret : sinon la béchamel devient liquide."
+  },
+  {
+    "id": "eu-lapin-kriek-stoemp-carottes",
+    "name": "Lapin à la kriek et aux griottes, stoemp aux carottes",
+    "description": "Lapin braisé à la bière aux cerises avec lardons, moutarde et griottes, et son stoemp bruxellois, écrasé de pommes de terre et carottes au beurre.",
+    "emoji": "🐇",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 25,
+    "cookTime": 75,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "lapin",
+        "qty": 1200,
+        "unit": "g",
+        "note": "en morceaux (cuisses et râble)"
+      },
+      {
+        "id": "biere",
+        "qty": 330,
+        "unit": "ml",
+        "note": "kriek (bière aux cerises)"
+      },
+      {
+        "id": "cerise",
+        "qty": 150,
+        "unit": "g",
+        "note": "griottes dénoyautées"
+      },
+      {
+        "id": "lardons",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 900,
+        "unit": "g"
+      },
+      {
+        "id": "carotte",
+        "qty": 400,
+        "unit": "g",
+        "note": "en rondelles"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Salez et poivrez les morceaux de lapin, badigeonnez-les de moutarde et farinez-les légèrement.",
+      "Dans une cocotte, faites fondre les lardons puis 20 g de beurre à feu moyen-vif. Dorez le lapin 4 min par face en 2 fournées. Réservez.",
+      "Faites revenir les oignons 6 min dans la cocotte. Versez la kriek en grattant les sucs, ajoutez thym et laurier, remettez le lapin. Couvrez et laissez braiser 1 h à feu doux.",
+      "Stoemp : cuisez les pommes de terre épluchées et les carottes ensemble 25 min à l'eau salée. Égouttez et écrasez grossièrement au presse-purée avec le lait chaud, 40 g de beurre, la muscade, sel et poivre.",
+      "10 min avant la fin, ajoutez les griottes au lapin et faites réduire la sauce à découvert jusqu'à ce qu'elle soit sirupeuse.",
+      "Servez le lapin et sa sauce avec le stoemp."
+    ],
+    "tags": [
+      "week-end",
+      "familial",
+      "réconfortant",
+      "riche en protéines",
+      "mijoté"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "fruite",
+      "acidule",
+      "umami"
+    ],
+    "tips": "Hors saison, remplacez les griottes par 12 pruneaux et la kriek par une bière brune : c'est le lapin aux pruneaux classique."
+  },
+  {
+    "id": "eu-stamppot-boerenkool-rookworst",
+    "name": "Stamppot boerenkool, écrasé au chou frisé et saucisse fumée",
+    "description": "L'hiver néerlandais dans l'assiette : pommes de terre écrasées avec du chou frisé, des lardons et du beurre, une saucisse fumée posée dessus et un puits de jus au milieu.",
+    "emoji": "🥔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saucisse-morteau",
+        "qty": 280,
+        "unit": "g",
+        "note": "rookworst ou saucisse fumée"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 400,
+        "unit": "g",
+        "note": "chou frisé (boerenkool), effeuillé et émincé"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 700,
+        "unit": "g",
+        "note": "en morceaux"
+      },
+      {
+        "id": "lardons",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 100,
+        "unit": "ml",
+        "note": "pour le jus"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez les pommes de terre dans une grande casserole, couvrez d'eau salée et posez le chou émincé par-dessus. Portez à ébullition et cuisez 20 min à couvert, à feu moyen.",
+      "Pendant ce temps, faites chauffer la saucisse 20 min dans de l'eau frémissante (sans bouillir).",
+      "Faites dorer les lardons 6 min à sec dans une poêle jusqu'à ce qu'ils soient croustillants. Déglacez la poêle avec le bouillon pour obtenir un petit jus.",
+      "Égouttez pommes de terre et chou, écrasez-les grossièrement au presse-purée avec le lait chaud et le beurre. Incorporez les lardons et la moutarde, poivrez généreusement.",
+      "Servez en dôme, creusez un puits au centre pour le jus, et posez la saucisse coupée en tronçons."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "réconfortant",
+      "familial",
+      "sans gluten"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "fume",
+      "reconfortant"
+    ],
+    "tips": "Le chou frisé est meilleur après les premières gelées : plus sucré et plus tendre."
+  },
+  {
+    "id": "eu-irish-stew-orge",
+    "name": "Irish stew à l’agneau, aux poireaux et à l’orge",
+    "description": "Le ragoût irlandais tout simple : collier d'agneau mijoté avec pommes de terre fondantes et fermes, poireaux, oignons et orge perlé, dans un bouillon parfumé au thym.",
+    "emoji": "☘️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 1000,
+        "unit": "g",
+        "note": "collier ou épaule, en morceaux"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 500,
+        "unit": "g",
+        "note": "en gros cubes (elles épaississent le bouillon)"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "à chair ferme, en quartiers"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en tronçons"
+      },
+      {
+        "id": "orge",
+        "qty": 60,
+        "unit": "g",
+        "note": "orge perlé"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1000,
+        "unit": "ml",
+        "note": "ou eau"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dégraissez grossièrement l'agneau, salez-le et poivrez-le. Rangez-le dans une grande cocotte avec les oignons, les pommes de terre farineuses et l'orge rincé.",
+      "Versez le bouillon froid juste à hauteur, ajoutez le thym. Portez lentement à frémissement en écumant.",
+      "Couvrez et laissez mijoter 1 h à feu très doux : le liquide doit à peine frémir.",
+      "Ajoutez les pommes de terre fermes et les poireaux, et poursuivez 45 min : les pommes de terre farineuses se sont défaites et ont épaissi le bouillon, les fermes restent entières, l'agneau se détache à la fourchette.",
+      "Rectifiez l'assaisonnement, retirez le thym et servez dans des assiettes creuses parsemé de persil."
+    ],
+    "tags": [
+      "mijoté",
+      "batch cooking",
+      "économique",
+      "familial",
+      "réconfortant",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "Encore meilleur le lendemain. Servez avec du pain de seigle beurré et une bière brune."
+  },
+  {
+    "id": "eu-sunday-roast-yorkshire",
+    "name": "Sunday roast beef, Yorkshire puddings et gravy",
+    "description": "Le rôti du dimanche anglais : bœuf saisi et rosé, pommes de terre rôties croustillantes dans la graisse, Yorkshire puddings soufflés, carottes rôties, gravy au vin et sauce raifort.",
+    "emoji": "🥩",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 30,
+    "cookTime": 90,
+    "restTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-rosbif",
+        "qty": 1000,
+        "unit": "g",
+        "note": "rôti ficelé (faux-filet ou tende de tranche)"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 1000,
+        "unit": "g",
+        "note": "en gros morceaux"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 45,
+        "unit": "g",
+        "note": "graisse de bœuf ou d’oie"
+      },
+      {
+        "id": "farine",
+        "qty": 150,
+        "unit": "g",
+        "note": "130 g pour les Yorkshire, 20 g pour les pommes de terre et le gravy"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "carotte",
+        "qty": 400,
+        "unit": "g",
+        "note": "en bâtonnets"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "raifort",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas",
+        "note": "anglaise"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Pâte à Yorkshire : fouettez 130 g de farine, les œufs, le lait et une pincée de sel jusqu'à une pâte lisse comme une pâte à crêpes épaisse. Laissez reposer 30 min à température ambiante. Sortez la viande du réfrigérateur en même temps.",
+      "Préchauffez le four à 220 °C. Frottez le rôti de moutarde, sel et poivre. Saisissez-le 2 min par face dans une poêle très chaude, puis posez-le sur les quartiers d'oignon et le thym dans un plat. Rôtissez 35 à 40 min pour un cœur rosé (52 °C à cœur).",
+      "Pendant ce temps, faites blanchir les pommes de terre 8 min à l'eau salée, égouttez et secouez-les dans la casserole avec 1 cas de farine pour ébouriffer les bords. Faites chauffer 30 g de graisse dans un plat au four, ajoutez-y les pommes de terre et les carottes et rôtissez 50 min en les retournant une fois.",
+      "Sortez le bœuf, couvrez-le d'aluminium et laissez-le reposer 20 min. Montez le four à 230 °C. Répartissez le reste de graisse dans 8 empreintes d'un moule à muffins et chauffez 5 min jusqu'à ce qu'elle fume.",
+      "Versez la pâte dans la graisse brûlante (elle doit grésiller) et enfournez 20 min sans ouvrir la porte : les puddings doivent gonfler et devenir dorés et croustillants.",
+      "Gravy : posez le plat de cuisson sur le feu, saupoudrez le reste de farine sur les sucs, déglacez au vin, puis ajoutez le bouillon et le jus de repos. Laissez réduire 5 min en fouettant, filtrez.",
+      "Mélangez le raifort et la crème. Tranchez le bœuf finement et servez avec pommes de terre, carottes, Yorkshire puddings, gravy et sauce raifort."
+    ],
+    "tags": [
+      "week-end",
+      "four",
+      "familial",
+      "calorique",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "grille",
+      "umami",
+      "piquant"
+    ],
+    "tips": "Le secret des Yorkshire puddings : une graisse fumante et un four qu'on n'ouvre pas pendant la cuisson."
+  },
+  {
+    "id": "eu-bangers-mash-onion-gravy",
+    "name": "Bangers and mash, gravy aux oignons et petits pois",
+    "description": "Saucisses de porc dorées lentement, purée beurrée onctueuse et un gravy aux oignons fondus et au thym, avec des petits pois à la menthe : le classique des pubs anglais.",
+    "emoji": "🌭",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 40,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saucisse-toulouse",
+        "qty": 320,
+        "unit": "g",
+        "note": "saucisses de porc type Cumberland"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés finement"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les saucisses dans une poêle à feu doux-moyen 20 à 25 min en les retournant souvent, jusqu'à ce qu'elles soient dorées partout et cuites à cœur (sans les piquer).",
+      "Pendant ce temps, faites fondre 10 g de beurre dans une casserole et ajoutez les oignons avec une pincée de sel. Faites-les fondre 20 min à feu moyen-doux en remuant, jusqu'à ce qu'ils soient bruns et confits.",
+      "Saupoudrez les oignons de farine, mélangez 1 min, puis versez le bouillon, ajoutez le thym et la moutarde. Laissez épaissir 5 min à frémissement.",
+      "Cuisez les pommes de terre épluchées 20 min à l'eau salée, égouttez-les et écrasez-les avec le lait chaud et 15 g de beurre.",
+      "Cuisez les petits pois 4 min à l'eau bouillante, égouttez-les avec le reste de beurre et la menthe ciselée.",
+      "Servez les saucisses sur la purée, nappées de gravy aux oignons, avec les petits pois."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "familial",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "sucre"
+    ],
+    "tips": "Pour un gravy plus profond, déglacez la poêle des saucisses avec un trait de bière brune avant de l'ajouter aux oignons."
+  },
+  {
+    "id": "eu-fish-chips-four-mushy-peas",
+    "name": "Fish and chips au four, mushy peas et sauce tartare",
+    "description": "Dos de cabillaud épais en croûte dorée au four, grosses frites à la graisse de canard, purée de petits pois à la menthe et sauce tartare maison au yaourt et cornichons.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 25,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "cabillaud",
+        "qty": 360,
+        "unit": "g",
+        "note": "2 dos épais"
+      },
+      {
+        "id": "farine",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "panure",
+        "qty": 60,
+        "unit": "g",
+        "note": "panko ou chapelure grossière"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g",
+        "note": "fondu"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 250,
+        "unit": "g",
+        "note": "surgelés"
+      },
+      {
+        "id": "menthe",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 30,
+        "unit": "g",
+        "note": "hachés"
+      },
+      {
+        "id": "capres",
+        "qty": 1,
+        "unit": "cas",
+        "note": "hachées"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de malt pour servir"
+      },
+      {
+        "id": "persil",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Coupez les pommes de terre en grosses frites de 1,5 cm, rincez-les et séchez-les soigneusement. Mélangez-les avec la graisse de canard fondue et du sel, étalez-les sur une plaque et enfournez 20 min.",
+      "Pendant ce temps, épongez le poisson, salez-le. Passez-le dans la farine, l'œuf battu puis la chapelure mélangée à 20 g de beurre fondu, en appuyant pour bien couvrir.",
+      "Retournez les frites, posez le poisson sur une plaque recouverte de papier cuisson et enfournez le tout 15 à 18 min : la croûte doit être dorée et la chair se détacher en gros flocons nacrés.",
+      "Mushy peas : cuisez les petits pois 5 min à l'eau salée, égouttez et écrasez-les grossièrement à la fourchette avec le reste du beurre, la menthe ciselée, sel et poivre.",
+      "Sauce tartare : mélangez le yaourt, les cornichons, les câpres, le persil ciselé et 1 cac de jus de citron.",
+      "Servez le poisson avec les frites arrosées de vinaigre, les mushy peas, la sauce tartare et des quartiers de citron."
+    ],
+    "tags": [
+      "familial",
+      "four",
+      "riche en protéines",
+      "riche en glucides"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "grille",
+      "acidule"
+    ],
+    "tips": "Pour une croûte encore plus croustillante, faites dorer la chapelure 3 min à sec dans une poêle avant de paner."
+  },
+  {
+    "id": "eu-haggis-maison-neeps-tatties",
+    "name": "Haggis maison en terrine, neeps and tatties",
+    "description": "Une version accessible du haggis écossais : foie, cœur et agneau hachés avec flocons d'avoine grillés, oignons et épices, cuits en terrine, servis avec purée de rutabaga et écrasé de pommes de terre.",
+    "emoji": "🏴",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 35,
+    "cookTime": 100,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "foie-agneau",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "coeur-boeuf",
+        "qty": 250,
+        "unit": "g",
+        "note": "cœur d’agneau de préférence, paré"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "flocons-avoine",
+        "qty": 120,
+        "unit": "g",
+        "note": "gros flocons ou avoine concassée"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "ciselés"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 50,
+        "unit": "g",
+        "note": "suif ou saindoux"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "coriandre-graines",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "navet",
+        "qty": 600,
+        "unit": "g",
+        "note": "rutabaga (neeps), en cubes"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites griller les flocons d'avoine à sec dans une poêle 4 min à feu moyen, jusqu'à ce qu'ils sentent la noisette. Réservez.",
+      "Pochez le foie et le cœur 10 min dans le bouillon frémissant. Égouttez (gardez le bouillon) et hachez-les finement au couteau ou au mixeur.",
+      "Faites fondre les oignons 6 min dans la graisse. Mélangez les abats, l'agneau haché, l'avoine, les oignons et leur graisse, la muscade, la coriandre, le piment, 1,5 cac de sel et beaucoup de poivre. Mouillez avec 200 ml de bouillon : la farce doit être humide.",
+      "Préchauffez le four à 160 °C. Tassez la farce dans une terrine beurrée, couvrez d'aluminium et posez-la dans un plat rempli d'eau chaude à mi-hauteur. Enfournez 1 h 30 : la terrine doit être ferme et bouillante sur les bords.",
+      "40 min avant la fin, cuisez le rutabaga et les pommes de terre épluchées dans deux casseroles d'eau salée, 25 min chacune. Écrasez le rutabaga avec 20 g de beurre et beaucoup de poivre ; écrasez les pommes de terre avec le lait chaud, le reste de beurre et la ciboulette.",
+      "Servez le haggis à la cuillère avec les neeps et les tatties, arrosé d'un peu de bouillon chaud ou d'une sauce au whisky."
+    ],
+    "tags": [
+      "abats",
+      "week-end",
+      "riche en protéines",
+      "économique",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Les restes se tranchent froids et se dorent à la poêle au petit-déjeuner avec un œuf."
+  },
+  {
+    "id": "eu-cornish-pasty-maison",
+    "name": "Cornish pasty maison au bœuf, pomme de terre et rutabaga",
+    "description": "Le chausson des mineurs de Cornouailles : une pâte brisée au beurre et saindoux bien croustillante, garnie de bavette, pomme de terre, rutabaga et oignon cuits ensemble dans leur propre jus.",
+    "emoji": "🥟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 40,
+    "cookTime": 55,
+    "restTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "farine",
+        "qty": 270,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 70,
+        "unit": "g",
+        "note": "froid, en dés"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 50,
+        "unit": "g",
+        "note": "saindoux froid"
+      },
+      {
+        "id": "eau",
+        "qty": 80,
+        "unit": "ml",
+        "note": "glacée"
+      },
+      {
+        "id": "boeuf-bavette",
+        "qty": 500,
+        "unit": "g",
+        "note": "ou onglet, en dés de 1 cm"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "navet",
+        "qty": 150,
+        "unit": "g",
+        "note": "rutabaga, en fines lamelles"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselé"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece",
+        "note": "pour la dorure"
+      },
+      {
+        "id": "laitue",
+        "qty": 150,
+        "unit": "g",
+        "note": "salade verte pour servir"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Pâte : sablez la farine, 1/2 cac de sel, le beurre et le saindoux du bout des doigts jusqu'à obtenir une texture de sable grossier. Ajoutez l'eau glacée et rassemblez en boule sans pétrir. Filmez et laissez reposer 30 min au frais.",
+      "Préchauffez le four à 200 °C. Assaisonnez séparément le bœuf, les pommes de terre et le rutabaga avec sel et beaucoup de poivre.",
+      "Divisez la pâte en 4, étalez chaque part en disque de 20 cm sur 4 mm. Sur une moitié, disposez en couches : pommes de terre, rutabaga, oignon, bœuf, puis à nouveau un peu de pommes de terre.",
+      "Rabattez la pâte en demi-lune, soudez les bords en les pinçant et en les torsadant (le « crimp »). Posez sur une plaque, badigeonnez d'œuf battu et percez un petit trou sur le dessus.",
+      "Enfournez 20 min à 200 °C, puis baissez à 170 °C et poursuivez 35 min : la pâte doit être dorée profond et la farce bouillonner par le trou.",
+      "Laissez reposer 10 min et servez avec la salade verte assaisonnée de vinaigre."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "lunch box",
+      "four",
+      "familial",
+      "riche en protéines",
+      "calorique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Les pasties se transportent très bien et se mangent tièdes ou froids. Ils se congèlent crus : enfournez-les directement 1 h à 180 °C."
+  },
+  {
+    "id": "eu-lancashire-hotpot",
+    "name": "Lancashire hotpot à l’agneau et aux rognons",
+    "description": "Agneau et rognons mijotés au four sous un toit de pommes de terre en tranches fines qui deviennent dorées et croustillantes au-dessus, fondantes en dessous.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 30,
+    "cookTime": 150,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 800,
+        "unit": "g",
+        "note": "collier ou épaule désossée, en gros cubes"
+      },
+      {
+        "id": "rognon",
+        "qty": 200,
+        "unit": "g",
+        "note": "rognons d’agneau, parés et coupés en quatre"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "en tranches de 3 mm"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 300,
+        "unit": "g",
+        "note": "chou rouge, en pickles rapides ou braisé"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 160 °C. Faites fondre 20 g de beurre dans une cocotte allant au four et dorez l'agneau salé en 2 fournées, 4 min chacune. Ajoutez les rognons 1 min. Réservez.",
+      "Faites revenir oignons et carottes 6 min dans la cocotte. Saupoudrez de farine, mélangez 1 min, versez le bouillon en grattant, ajoutez thym et laurier.",
+      "Remettez la viande et les rognons, mélangez. Recouvrez entièrement de tranches de pommes de terre en écailles qui se chevauchent, salez, poivrez et badigeonnez du reste de beurre fondu.",
+      "Couvrez et enfournez 1 h 45. Retirez le couvercle, montez le four à 200 °C et poursuivez 30 à 40 min jusqu'à ce que les pommes de terre du dessus soient dorées et croustillantes.",
+      "Pendant ce temps, émincez très finement le chou rouge, mélangez-le avec le vinaigre et 1 cac de sel et laissez-le mariner au moins 30 min en remuant de temps en temps.",
+      "Servez le hotpot bien chaud avec le chou rouge mariné, comme dans le Lancashire."
+    ],
+    "tags": [
+      "four",
+      "mijoté",
+      "abats",
+      "familial",
+      "réconfortant",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "acidule"
+    ],
+    "tips": "Sans rognons, ajoutez 200 g d'agneau en plus ; mais les rognons donnent au jus tout son caractère."
+  },
+  {
+    "id": "eu-haddock-poche-colcannon",
+    "name": "Haddock poché au lait, colcannon et œuf poché",
+    "description": "Haddock fumé poché doucement dans le lait au laurier, posé sur un colcannon irlandais (purée au chou et à la ciboule) et coiffé d'un œuf poché, avec le lait de cuisson en sauce.",
+    "emoji": "🥚",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "haddock",
+        "qty": 400,
+        "unit": "g",
+        "note": "en 2 pavés"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 200,
+        "unit": "g",
+        "note": "chou de Milan ou kale, émincé fin"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 4,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre épluchées 20 min à l'eau salée. Pendant ce temps, faites fondre 20 g de beurre dans une poêle et faites tomber le chou 5 min à feu moyen avec les oignons nouveaux.",
+      "Mettez le haddock dans une sauteuse avec le lait et le laurier. Portez doucement à frémissement, puis coupez le feu, couvrez et laissez pocher 6 à 8 min : la chair doit se détacher en feuillets.",
+      "Égouttez les pommes de terre, écrasez-les avec 150 ml de lait de cuisson chaud et 10 g de beurre, puis incorporez le chou et les oignons. Poivrez (le poisson est déjà salé).",
+      "Œufs pochés : portez une casserole d'eau à frémissement avec le vinaigre. Cassez chaque œuf dans une tasse, créez un tourbillon et faites-les glisser au centre ; pochez 3 min. Égouttez sur du papier absorbant.",
+      "Faites réduire 100 ml de lait de cuisson 3 min avec le reste du beurre pour une sauce légère.",
+      "Servez le colcannon, le haddock dessus, l'œuf poché au sommet, nappé de sauce et parsemé de persil."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "fume",
+      "lacte",
+      "reconfortant"
+    ],
+    "tips": "Le colcannon restant se transforme en galettes dorées à la poêle le lendemain."
+  },
+  {
+    "id": "eu-stekt-stromming-potatismos",
+    "name": "Stekt strömming, harengs dorés au seigle, purée et airelles",
+    "description": "Le classique suédois : filets de hareng ouverts, garnis d'aneth et de beurre, enrobés de farine de seigle et dorés au beurre, servis avec une purée crémeuse, des airelles et du beurre fondu.",
+    "emoji": "🐠",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "hareng",
+        "qty": 6,
+        "unit": "piece",
+        "note": "filets frais, ouverts en papillon"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 45,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "airelles",
+        "qty": 60,
+        "unit": "g",
+        "note": "airelles écrasées (lingon)"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "en fines rondelles"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre épluchées 20 min à l'eau salée. Égouttez et écrasez-les avec le lait chaud et 15 g de beurre. Gardez au chaud.",
+      "Retirez les arêtes visibles des filets de hareng. Salez et poivrez la face chair, parsemez la moitié des filets d'aneth ciselé et d'une noisette de beurre, puis recouvrez-les avec les autres filets, peau à l'extérieur.",
+      "Enrobez ces « sandwichs » de farine de seigle des deux côtés en tapotant l'excédent.",
+      "Faites mousser 20 g de beurre dans une grande poêle à feu moyen-vif. Faites dorer les harengs 3 min par face, jusqu'à ce que la croûte soit dorée et la chair opaque à cœur.",
+      "Faites fondre le reste de beurre jusqu'à ce qu'il soit noisette. Servez les harengs avec la purée arrosée de beurre fondu, les airelles, les rondelles d'oignon rouge et un quartier de citron."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "printemps",
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "fruite",
+      "herbace"
+    ],
+    "tips": "À Stockholm, ces harengs se mangent aussi froids, marinés une nuit dans un vinaigre doux à l'oignon et à la carotte."
+  },
+  {
+    "id": "eu-stjerneskud-danois",
+    "name": "Stjerneskud, l’étoile filante danoise",
+    "description": "Le grand smørrebrød de Copenhague en assiette complète : un filet de plie pané doré et un filet poché sur pain beurré, couverts de crevettes, asperges, saumon fumé, œufs de lump et sauce à l'aneth.",
+    "emoji": "⭐",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 25,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sole",
+        "qty": 320,
+        "unit": "g",
+        "note": "4 filets de plie ou de limande"
+      },
+      {
+        "id": "crevette",
+        "qty": 150,
+        "unit": "g",
+        "note": "crevettes décortiquées"
+      },
+      {
+        "id": "asperge",
+        "qty": 8,
+        "unit": "piece",
+        "note": "blanches ou vertes"
+      },
+      {
+        "id": "saumon-fume",
+        "qty": 2,
+        "unit": "piece",
+        "note": "tranches"
+      },
+      {
+        "id": "oeufs-poisson",
+        "qty": 30,
+        "unit": "g",
+        "note": "œufs de lump ou de truite"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 4,
+        "unit": "piece",
+        "note": "tranches"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "panure",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "laitue",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Épluchez les asperges blanches (ou cassez la base des vertes) et cuisez-les 8 min à l'eau salée bouillante. Égouttez et coupez-les en deux.",
+      "Sauce : mélangez la crème fraîche, l'aneth ciselé, 1 cac de jus de citron, sel et poivre.",
+      "Pochez 2 filets de plie roulés 5 min dans de l'eau frémissante salée citronnée, jusqu'à ce qu'ils soient opaques. Égouttez.",
+      "Passez les 2 autres filets dans la farine, l'œuf battu puis la chapelure. Faites-les dorer 2 à 3 min par face dans 15 g de beurre à feu moyen-vif.",
+      "Toastez légèrement le pain, beurrez-le avec le reste de beurre et couvrez de laitue. Posez par-dessus un filet poché et un filet pané côte à côte.",
+      "Garnissez d'une généreuse rangée de crevettes, des asperges, de la sauce à l'aneth, d'une tranche de saumon fumé roulée et des œufs de lump. Servez avec un quartier de citron."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "week-end",
+      "léger"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "frais",
+      "herbace"
+    ],
+    "tips": "C'est le plat du déjeuner danois par excellence : on le mange au couteau et à la fourchette, avec une bière bien fraîche."
+  },
+  {
+    "id": "eu-maquereau-sauce-groseilles",
+    "name": "Maquereau grillé, sauce aux groseilles et pommes de terre nouvelles au cresson",
+    "description": "Le duo anglais par excellence : maquereau entier grillé à la peau croustillante et une sauce acidulée aux groseilles et au beurre qui coupe le gras, avec des pommes de terre nouvelles et du cresson.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "entiers, vidés, ~300 g chacun"
+      },
+      {
+        "id": "myrtille",
+        "qty": 150,
+        "unit": "g",
+        "note": "groseilles à maquereau ou groseilles"
+      },
+      {
+        "id": "sucre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "nouvelles"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g",
+        "note": "cresson"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre nouvelles en robe 18 min à l'eau salée. Égouttez et coupez-les en deux.",
+      "Sauce : mettez les groseilles, le sucre et 2 cas d'eau dans une petite casserole. Cuisez 6 min à feu moyen jusqu'à ce qu'elles éclatent. Hors du feu, incorporez 20 g de beurre et une pincée de sel ; la sauce doit être acidulée.",
+      "Préchauffez le gril du four (ou une poêle-gril) à feu vif. Entaillez la peau des maquereaux 3 fois de chaque côté, huilez-les, salez et poivrez l'intérieur et l'extérieur.",
+      "Faites griller les maquereaux 5 à 6 min de chaque côté à 10 cm du gril : la peau doit être boursouflée et dorée, la chair se détacher de l'arête.",
+      "Enrobez les pommes de terre chaudes de crème fraîche, du reste de beurre et de ciboulette ciselée. Mêlez-les au cresson arrosé de jus de citron.",
+      "Servez les maquereaux avec la sauce aux groseilles et les pommes de terre au cresson."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "iode",
+      "acidule",
+      "grille"
+    ],
+    "tips": "Hors saison, une compote de rhubarbe peu sucrée remplace très bien les groseilles."
+  },
+  {
+    "id": "eu-laxpudding-beurre-fondu",
+    "name": "Laxpudding, gratin suédois au saumon, beurre fondu et petits pois",
+    "description": "Couches de pommes de terre fines, de saumon fumé et d'aneth prises dans un flan aux œufs, dorées au four, servies avec du beurre fondu et des petits pois : le réconfort des tables suédoises.",
+    "emoji": "🍽️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 25,
+    "cookTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "saumon-fume",
+        "qty": 300,
+        "unit": "g",
+        "note": "ou gravlax, en tranches"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "cuites en robe la veille, en tranches de 5 mm"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g",
+        "note": "20 g pour l’oignon et le plat, 40 g fondus pour servir"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Faites fondre l'oignon dans 10 g de beurre 6 min à feu doux. Beurrez un plat à gratin.",
+      "Disposez une couche de pommes de terre, puis la moitié du saumon, de l'oignon et de l'aneth ciselé, poivrez. Recommencez et terminez par une couche de pommes de terre.",
+      "Fouettez les œufs, le lait, la crème, la muscade et une petite pincée de sel (le saumon est salé). Versez sur le gratin.",
+      "Enfournez 45 à 50 min, jusqu'à ce que le flan soit pris (la lame d'un couteau ressort propre) et le dessus doré. Laissez reposer 5 min.",
+      "Cuisez les petits pois 4 min à l'eau bouillante salée. Faites fondre le reste du beurre.",
+      "Servez des parts de laxpudding arrosées de beurre fondu, avec les petits pois."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "réconfortant",
+      "préparation à l’avance",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "fume",
+      "herbace",
+      "cremeux"
+    ],
+    "tips": "Un excellent recyclage de pommes de terre de la veille ; les restes se mangent froids en lunch box."
+  },
+  {
+    "id": "eu-farikal-agneau-chou",
+    "name": "Fårikål, agneau au chou et au poivre noir",
+    "description": "Le plat national norvégien d'automne : agneau sur l'os et chou blanc superposés et mijotés lentement avec une poignée de poivre en grains, servis avec des pommes de terre vapeur.",
+    "emoji": "🐑",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 15,
+    "cookTime": 150,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 1200,
+        "unit": "g",
+        "note": "épaule ou collier sur l’os, en gros morceaux"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 1000,
+        "unit": "g",
+        "note": "chou blanc, en quartiers épais"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "en grains entiers"
+      },
+      {
+        "id": "farine",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "eau",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1000,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Coupez le chou en quartiers épais de 4 cm en gardant un morceau de trognon pour qu'ils se tiennent.",
+      "Dans une grande cocotte, alternez couches d'agneau (côté gras vers le bas pour la première) et de chou. Entre chaque couche, saupoudrez un peu de farine, de sel et de grains de poivre.",
+      "Versez l'eau, portez à ébullition à feu moyen, puis couvrez et laissez mijoter 2 h 15 à feu très doux, sans remuer. La viande doit se détacher de l'os et le chou être fondant et translucide.",
+      "30 min avant la fin, cuisez les pommes de terre épluchées 25 min à la vapeur, puis roulez-les dans le beurre et le persil.",
+      "Servez l'agneau et le chou bien chauds avec le bouillon poivré et les pommes de terre."
+    ],
+    "tags": [
+      "mijoté",
+      "économique",
+      "familial",
+      "réconfortant",
+      "batch cooking"
+    ],
+    "seasons": [
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "reconfortant"
+    ],
+    "tips": "Comme tous les ragoûts, le fårikål est encore meilleur réchauffé le lendemain. Avertissez vos convives : les grains de poivre restent entiers !"
   }
 ]
