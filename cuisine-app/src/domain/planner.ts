@@ -2,11 +2,45 @@
 // Génération de menu hebdomadaire (§35) — variété, saison,
 // favoris, historique, ingrédients disponibles, anti-gaspillage.
 // ─────────────────────────────────────────────────────────────
-import type { IndexedRecipe, PlanEntry, Season, Slot } from './types';
+import type { Cuisine, Difficulty, IndexedRecipe, PlanEntry, ProteinGroup, Season, Slot } from './types';
+import { CUISINES } from './labels';
 import { similarity } from './similarity';
 import { currentSeason } from './season';
 
+/** Critères choisis par l'utilisateur pour la génération */
+export interface PlannerConstraints {
+  maxTimeWeek?: number; // minutes, jours de semaine
+  maxTimeWeekend?: number;
+  difficulties?: Difficulty[];
+  excludeProteins?: ProteinGroup[];
+  cuisines?: Cuisine[]; // uniquement ces cuisines
+  regions?: string[]; // ou ces régions (europe, mediterranee…)
+  minProtein?: number; // g / portion
+  minKcal?: number;
+  maxKcal?: number;
+  favoritesOnly?: boolean;
+  seasonOnly?: boolean; // uniquement de saison
+  coldLunch?: boolean; // midi en semaine : repas froids / lunch box
+  minFish?: number; // nb minimum de repas de poisson
+  maxAbats?: number;
+}
+
+export function passesConstraints(r: IndexedRecipe, c: PlannerConstraints, weekend: boolean, favorites: Set<string>, season: Season): boolean {
+  const max = weekend ? c.maxTimeWeekend : c.maxTimeWeek;
+  if (max && r.totalTime > max) return false;
+  if (c.difficulties?.length && !c.difficulties.includes(r.difficulty)) return false;
+  if (c.excludeProteins?.length && r.mainProtein && c.excludeProteins.includes(r.mainProtein)) return false;
+  if ((c.cuisines?.length || c.regions?.length) && !(c.cuisines?.includes(r.cuisine) || c.regions?.includes(CUISINES[r.cuisine]?.region))) return false;
+  if (c.minProtein && r.nutrition.protein < c.minProtein) return false;
+  if (c.minKcal && r.nutrition.kcal < c.minKcal) return false;
+  if (c.maxKcal && r.nutrition.kcal > c.maxKcal) return false;
+  if (c.favoritesOnly && !favorites.has(r.id)) return false;
+  if (c.seasonOnly && r.seasons.length && !r.seasons.includes(season)) return false;
+  return true;
+}
+
 export interface PlannerContext {
+  constraints?: PlannerConstraints;
   recipes: IndexedRecipe[];
   favorites: Set<string>;
   /** recipeId → date ISO de dernière réalisation */
@@ -83,9 +117,18 @@ export function generateWeek(ctx: PlannerContext, categoryOf: (id: string) => st
         continue;
       }
       let best: { r: IndexedRecipe; s: number } | undefined;
+      const c = ctx.constraints ?? {};
+      const fishSoFar = chosen.filter((x) => x.mainProtein === 'poisson-gras' || x.mainProtein === 'poisson-blanc' || x.mainProtein === 'fruits-de-mer').length;
+      const abatsSoFar = chosen.filter((x) => x.mainProtein === 'abats').length;
+      const slotsLeft = ctx.dates.length * ctx.slots.length - result.length;
+      // Deux passes : critères stricts, puis assouplis si aucun plat ne convient
+      for (let pass = 0; pass < 2 && !best; pass++)
       for (const r of ctx.recipes) {
         if (!isMainMeal(r, slot)) continue;
         if (chosen.some((c) => c.id === r.id)) continue;
+        if (pass === 0 && !passesConstraints(r, c, weekend, ctx.favorites, season)) continue;
+        if (c.maxAbats != null && r.mainProtein === 'abats' && abatsSoFar >= c.maxAbats) continue;
+        const isFish = r.mainProtein === 'poisson-gras' || r.mainProtein === 'poisson-blanc' || r.mainProtein === 'fruits-de-mer';
         let s = rand() * 30;
         // Saison
         if (r.seasons.length === 0) s += 4;
@@ -134,6 +177,8 @@ export function generateWeek(ctx: PlannerContext, categoryOf: (id: string) => st
           const shared = r.mainIngredientIds.filter((id) => plannedIngredients.has(id)).length;
           s += shared * 5;
         }
+        if (c.minFish && isFish && fishSoFar < c.minFish) s += 25 + (c.minFish - fishSoFar >= slotsLeft ? 100 : 0);
+        if (c.coldLunch && !weekend && slot === 'midi' && (r.tags.includes('repas froid') || r.tags.includes('lunch box') || r.category === 'salade-composee')) s += 30;
         if (!best || s > best.s) best = { r, s };
       }
       if (!best) continue;

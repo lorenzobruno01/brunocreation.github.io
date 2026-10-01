@@ -1448,3 +1448,28 @@ hr.sep {
 .recognized .tag + .tag {
   margin-left: 4px;
 }
+.nbar {
+  padding: 3px 0;
+}
+.bool-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 14px;
+  border: 1.5px dashed var(--line);
+}
+.bool-op {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin: 2px 4px;
+}
+.bool-or {
+  font-weight: 900;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}

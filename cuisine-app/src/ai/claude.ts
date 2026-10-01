@@ -352,3 +352,24 @@ Explique brièvement tes choix (2–4 phrases).`;
     .map((p) => ({ key: `${p.date}|${p.slot}`, date: p.date, slot: p.slot, recipeId: p.recipeId, servings: o.servings }));
   return { plan, explanation: res.explanation };
 }
+
+// ── Test de connexion (requête minimale) ──────────────────
+
+export async function testConnection(apiKey: string, model: string): Promise<string> {
+  try {
+    const msg = await client(apiKey).messages.create({
+      model,
+      max_tokens: 1000,
+      messages: [{ role: 'user', content: 'Réponds uniquement : « Connexion réussie ».' }],
+    });
+    return msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim() || 'Connexion réussie';
+  } catch (e) {
+    if (e instanceof Anthropic.AuthenticationError) throw new AiError('Clé API invalide (vérifiez qu’elle commence par sk-ant- et qu’elle est active).');
+    if (e instanceof Anthropic.PermissionDeniedError) throw new AiError('Cette clé n’a pas accès à ce modèle.');
+    if (e instanceof Anthropic.RateLimitError) throw new AiError('Limite atteinte ou crédit épuisé : vérifiez la facturation sur console.anthropic.com.');
+    if (e instanceof Anthropic.BadRequestError) throw new AiError(`Requête refusée : ${e.message} (crédit insuffisant ?)`);
+    if (e instanceof Anthropic.APIConnectionError) throw new AiError('Impossible de joindre l’API (connexion internet ?).');
+    if (e instanceof Anthropic.APIError) throw new AiError(`Erreur ${e.status ?? ''} : ${e.message}`);
+    throw e;
+  }
+}

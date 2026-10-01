@@ -1,9 +1,24 @@
-import type { Ingredient, IndexedRecipe, Nutrition, ProteinGroup, Recipe } from './types';
+import type { Ingredient, IndexedRecipe, Nutrition, ProteinGroup, Recipe, RecipeIngredient } from './types';
 import { toGrams } from './units';
 import { norm } from './text';
 import { CUISINES, MEAL_TYPES, CATEGORIES, TECHNIQUES, PROTEINS } from './labels';
 
 export type IngredientLookup = (id: string) => Ingredient | undefined;
+
+/** Grammes réellement consommés d'une ligne d'ingrédient (os, coquilles, graisse de cuisson…) */
+export function gramsEaten(ri: RecipeIngredient, ing: Ingredient): number {
+  let g = toGrams(ri.qty, ri.unit, ing);
+  if (g == null) return 0;
+  // Matières grasses de cuisson / friture : on compte ~80 % (une partie reste dans la poêle)
+  if (ing.category === 'matiere-grasse' && ri.unit !== 'g') g *= 0.8;
+  // Os, carcasses : on ne consomme qu'une fraction (bouillon / moelle)
+  if (ing.id === 'os-boeuf' || ing.id === 'carcasse-poulet') g *= 0.15;
+  if (ing.id === 'os-a-moelle') g *= 0.25;
+  // Os, coquilles, arêtes : seule la partie comestible compte
+  if (ing.edible) g *= ing.edible;
+  if (ing.edibleWhole && ri.unit === 'piece') g *= ing.edibleWhole;
+  return g;
+}
 
 /** Nutrition par portion, calculée à partir de la base d'ingrédients */
 export function computeNutrition(recipe: Recipe, lookup: IngredientLookup): Nutrition {
@@ -12,17 +27,7 @@ export function computeNutrition(recipe: Recipe, lookup: IngredientLookup): Nutr
   for (const ri of recipe.ingredients) {
     const ing = lookup(ri.id);
     if (!ing) continue;
-    let g = toGrams(ri.qty, ri.unit, ing);
-    if (g == null) continue;
-    // Matières grasses de cuisson / friture : on compte ~80 % (une partie reste dans la poêle)
-    if (ing.category === 'matiere-grasse' && ri.unit !== 'g') g *= 0.8;
-    // Os, carcasses : on ne consomme qu'une fraction (bouillon / moelle)
-    if (ing.id === 'os-boeuf' || ing.id === 'carcasse-poulet') g *= 0.15;
-    if (ing.id === 'os-a-moelle') g *= 0.25;
-    // Os, coquilles, arêtes : seule la partie comestible compte
-    if (ing.edible) g *= ing.edible;
-    if (ing.edibleWhole && ri.unit === 'piece') g *= ing.edibleWhole;
-    const f = g / 100;
+    const f = gramsEaten(ri, ing) / 100;
     total.kcal += ing.kcal * f;
     total.protein += ing.protein * f;
     total.carbs += ing.carbs * f;

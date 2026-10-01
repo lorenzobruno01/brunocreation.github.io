@@ -6,6 +6,7 @@ import { FiltersPanel } from '../components/FiltersPanel';
 import { Empty, SearchInput, Sheet, useDebounced, useProgressive } from '../components/ui';
 import { countActiveFilters, EMPTY_FILTERS, searchRecipes, type Filters, type SortKey } from '../domain/search';
 import { matchRecipes } from '../domain/matching';
+import { matchBoolean, parseIngredientQuery, describeQuery } from '../domain/ingredientQuery';
 import { MEAL_TYPES } from '../domain/labels';
 import type { MealType } from '../domain/types';
 
@@ -23,7 +24,7 @@ function loadFilters(): Filters {
 const EXAMPLES = ['saumon', 'pommes de terre', 'dîner rapide', 'italien', 'œufs fromage', 'foie', 'week-end', 'agneau', 'kéfir'];
 
 export function Recipes() {
-  const { recipes, lookup } = useLibrary();
+  const { recipes, lookup, ingredients } = useLibrary();
   const { favorites, fridge, pantry } = useUserData();
   const [params, setParams] = useSearchParams();
   const [q, setQ] = useState(params.get('q') ?? '');
@@ -48,14 +49,23 @@ export function Recipes() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dq]);
 
-  const { results, parsed } = useMemo(() => {
-    const res = searchRecipes(recipes, dq, filters, favorites, sort);
+  const { results, parsed, boolLabel } = useMemo(() => {
+    // « saumon ou bœuf et patates », « œufs sans lardons » → recherche booléenne sur les ingrédients
+    if (/ (ou|sans) /i.test(` ${dq} `)) {
+      const b = parseIngredientQuery(dq, ingredients);
+      if (!b.unknown.length && b.query.groups.length) {
+        const base = searchRecipes(recipes, '', filters, favorites, sort);
+        const ok = new Set(matchBoolean(base.results, b.query).map((m) => m.recipe.id));
+        return { results: base.results.filter((r) => ok.has(r.id)), parsed: base.parsed, boolLabel: describeQuery(b.query) };
+      }
+    }
+    const res = { ...searchRecipes(recipes, dq, filters, favorites, sort), boolLabel: '' };
     if (filters.maxMissing == null) return res;
     const available = new Set([...fridge, ...pantry]);
     const matches = matchRecipes(res.results, new Set(), available, lookup);
     const ok = new Set(matches.filter((m) => m.missing.length + m.missingMinor.length <= filters.maxMissing!).map((m) => m.recipe.id));
     return { ...res, results: res.results.filter((r) => ok.has(r.id)) };
-  }, [recipes, dq, filters, favorites, sort, fridge, pantry, lookup]);
+  }, [recipes, dq, filters, favorites, sort, fridge, pantry, lookup, ingredients]);
 
   const { visible, sentinel } = useProgressive(results, 24);
   const active = countActiveFilters(filters);
@@ -90,6 +100,7 @@ export function Recipes() {
       <div className="row between" style={{ margin: '6px 0 14px' }}>
         <div className="small muted">
           <strong style={{ color: 'var(--ink)' }}>{results.length}</strong> recette{results.length > 1 ? 's' : ''}
+          {boolLabel && <span className="tag primary" style={{ marginLeft: 4 }}>{boolLabel}</span>}
           {parsed.recognized.length > 0 && <> · compris : {parsed.recognized.map((w) => <span key={w} className="tag primary" style={{ marginLeft: 4 }}>{w}</span>)}</>}
         </div>
         <select className="select" style={{ width: 'auto', minHeight: 38 }} value={sort} onChange={(e) => setSort(e.target.value as SortKey)} aria-label="Trier">

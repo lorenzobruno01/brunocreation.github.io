@@ -12,7 +12,9 @@ import { formatDateFr, formatDuration } from '../components/format';
 import { PROTEINS } from '../domain/labels';
 import { AiError, loadAi } from '../ai/light';
 import type { PlanEntry, Slot } from '../domain/types';
-import { isMainMeal } from '../domain/planner';
+import { isMainMeal, passesConstraints, type PlannerConstraints } from '../domain/planner';
+import { ConstraintsEditor, loadConstraints } from '../components/ConstraintsEditor';
+import { currentSeason } from '../domain/season';
 
 function loadBool(key: string, def: boolean) {
   try {
@@ -76,7 +78,7 @@ export function Planner() {
     });
   };
 
-  const generate = async (opts: { replaceAll: boolean; share: boolean }) => {
+  const generate = async (opts: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints }) => {
     const locked = opts.replaceAll ? [] : plan;
     const entries = generateWeek(
       {
@@ -89,6 +91,7 @@ export function Planner() {
         slots,
         servings: settings.defaultServings,
         shareIngredients: opts.share,
+        constraints: opts.constraints,
       },
       (id) => lookup(id)?.category,
     );
@@ -275,8 +278,17 @@ export function Planner() {
           onLocal={generate}
           hasPlan={plan.length > 0}
           aiEnabled={!!settings.apiKey}
-          onAi={async (instruction, setStatus) => {
-            const candidates = recipes.filter((r) => slots.some((s) => isMainMeal(r, s)));
+          onAi={async (instructionIn, setStatus) => {
+            let instruction = instructionIn;
+            const cons = loadConstraints();
+            const candidates = recipes.filter((r) => slots.some((s) => isMainMeal(r, s)) && passesConstraints(r, { ...cons, maxTimeWeek: Math.max(cons.maxTimeWeek ?? 0, cons.maxTimeWeekend ?? 0) || undefined }, true, favorites, currentSeason()));
+            const extra = [
+              cons.maxTimeWeek ? `en semaine, plats de ${cons.maxTimeWeek} min maximum` : '',
+              cons.maxTimeWeekend ? `le week-end, ${cons.maxTimeWeekend} min maximum` : '',
+              cons.minFish ? `au moins ${cons.minFish} repas de poisson` : '',
+              cons.coldLunch ? 'midis de semaine en repas froids / lunch box' : '',
+            ].filter(Boolean).join(' ; ');
+            instruction = [instruction, extra].filter(Boolean).join('. ');
             try {
               setStatus('L’IA compose votre semaine…');
               const { planWeekAI } = await loadAi();
@@ -360,13 +372,14 @@ function GenerateSheet({
   aiEnabled,
 }: {
   onClose: () => void;
-  onLocal: (o: { replaceAll: boolean; share: boolean }) => void;
+  onLocal: (o: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints }) => void;
   onAi: (instruction: string, setStatus: (s: string | null) => void) => Promise<string>;
   hasPlan: boolean;
   aiEnabled: boolean;
 }) {
   const [replaceAll, setReplaceAll] = useState(!hasPlan);
   const [share, setShare] = useState(true);
+  const [constraints, setConstraints] = useState<PlannerConstraints>(loadConstraints);
   const [instruction, setInstruction] = useState('');
   const [status, setStatus] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -383,7 +396,8 @@ function GenerateSheet({
         <label className="row nowrap">
           <input type="checkbox" checked={share} onChange={(e) => setShare(e.target.checked)} /> ♻️ Anti-gaspillage : réutiliser les mêmes produits frais
         </label>
-        <button className="btn primary lg" onClick={() => onLocal({ replaceAll, share })}>
+        <ConstraintsEditor value={constraints} onChange={setConstraints} />
+        <button className="btn primary lg" onClick={() => onLocal({ replaceAll, share, constraints })}>
           Générer instantanément
         </button>
         <hr className="sep" />

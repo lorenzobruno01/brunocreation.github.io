@@ -27,6 +27,9 @@ try {
   /* stockage indisponible */
 }
 
+// Demande au navigateur de ne pas effacer la base locale (recettes ajoutées, planning…)
+navigator.storage?.persist?.().catch(() => {});
+
 function ScrollTop() {
   const { pathname } = useLocation();
   useEffect(() => window.scrollTo(0, 0), [pathname]);

@@ -95,6 +95,7 @@ PHILOSOPHIE ALIMENTAIRE DU FOYER (règle fondamentale, non négociable) :
 - Oxalates : ne pas construire les recettes autour de grandes quantités d'épinards, d'amandes, de cacao, de betterave.
 - Digestion : globalement modéré en FODMAP quand c'est pertinent, mais l'ail et l'oignon sont tolérés et s'utilisent normalement. Éviter d'empiler les aliments difficiles à digérer dans un même repas (légumineuses + chou + crucifères crus…).
 - Matières grasses de cuisson : beurre, beurre clarifié/ghee, graisse de canard, saindoux, huile d'olive, huile de coco.
+- Goûts du foyer : privilégier nettement les CLASSIQUES français et européens (environ deux tiers des recettes : bistrot, terroir, familial, Italie, Espagne, Europe centrale…), la cuisine du monde venant en complément.
 - Simplicité : majorité « très facile » ou « facile », minorité « intermédiaire ».
 - Instructions précises : températures, temps, repères visuels concrets. Jamais « cuire jusqu'à ce que ce soit prêt ».
 `.trim();
