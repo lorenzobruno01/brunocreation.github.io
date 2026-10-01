@@ -1,0 +1,11 @@
+{
+  "name": "Notre Cuisine",
+  "short_name": "Cuisine",
+  "description": "Bibliothèque culinaire personnelle : recettes, ingrédients, menus et courses.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf5ec",
+  "theme_color": "#c2552d",
+  "lang": "fr",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

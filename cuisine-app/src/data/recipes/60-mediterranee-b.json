@@ -1,0 +1,2056 @@
+[
+  {
+    "id": "med-paella-valenciana",
+    "name": "Paella valenciana au poulet, lapin et haricots",
+    "description": "La paella d’origine, sans fruits de mer : poulet et lapin dorés, haricots plats et blancs, tomate râpée, safran et romarin, avec le socarrat croustillant au fond du plat.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 55,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-cuisse",
+        "qty": 3,
+        "unit": "piece",
+        "note": "coupées en 6 morceaux chacune"
+      },
+      {
+        "id": "lapin",
+        "qty": 500,
+        "unit": "g",
+        "note": "en petits morceaux"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 320,
+        "unit": "g",
+        "note": "bomba ou riz rond espagnol"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 250,
+        "unit": "g",
+        "note": "haricots plats, en tronçons"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 150,
+        "unit": "g",
+        "note": "cuits (garrofó ou lingots)"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "doux"
+      },
+      {
+        "id": "safran",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "eau",
+        "qty": 1200,
+        "unit": "ml"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Chauffez l’huile dans une paellera de 38-40 cm à feu moyen-vif. Salez la viande et dorez-la 15 min en la retournant, en commençant par le centre puis en la repoussant vers les bords : elle doit être bien brune partout.",
+      "Ajoutez les haricots plats au centre et faites-les revenir 4 min. Faites un puits, versez la tomate râpée et le paprika, et laissez compoter 3 min sans brûler le paprika.",
+      "Versez l’eau, ajoutez les haricots blancs, le safran et 2 cuillères à café de sel. Laissez frémir 20 min : ce bouillon doit être bien goûteux et légèrement trop salé.",
+      "Répartissez le riz en croix puis étalez-le uniformément à la spatule. À partir de ce moment, ne remuez plus jamais.",
+      "Cuisez 10 min à feu vif, puis 8 min à feu doux. Posez les brins de romarin sur le dessus les 5 dernières minutes.",
+      "Montez à feu vif 1 à 2 min pour former le socarrat : le riz crépite et une odeur de grillé (pas de brûlé) se dégage. Couvrez d’un torchon et laissez reposer 5 min avant de servir."
+    ],
+    "tags": [
+      "week-end",
+      "familial",
+      "sans gluten",
+      "calorique",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "herbace",
+      "grille"
+    ],
+    "tips": "Une paellera fine et large est indispensable : la couche de riz ne doit pas dépasser 1 cm."
+  },
+  {
+    "id": "med-pisto-manchego-huevos-chorizo",
+    "name": "Pisto manchego aux œufs, chorizo et manchego",
+    "description": "La ratatouille de la Manche, courgette, poivrons et tomate longuement compotés à l’huile d’olive, avec des rondelles de chorizo grillées, des œufs cuits dans la sauce et du manchego râpé.",
+    "emoji": "🍳",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 15,
+    "cookTime": 35,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "courgette",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés de 1 cm"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece",
+        "note": "un rouge, un vert, en dés"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "chorizo",
+        "qty": 80,
+        "unit": "g",
+        "note": "en rondelles fines"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 4,
+        "unit": "tranche"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande poêle, faites griller les rondelles de chorizo 3 min à sec à feu moyen jusqu’à ce qu’elles rendent leur graisse orangée. Réservez-les en laissant la graisse.",
+      "Ajoutez l’huile, l’oignon et les poivrons, et faites-les fondre 10 min à feu moyen en remuant.",
+      "Ajoutez la courgette et l’ail, poursuivez 5 min, puis le paprika 20 secondes et les tomates. Salez et laissez compoter 15 min à feu doux à découvert : le pisto doit être épais et confit, sans jus.",
+      "Remettez le chorizo, creusez 4 puits et cassez-y les œufs. Couvrez et cuisez 5-6 min à feu doux : les blancs doivent être pris et les jaunes encore coulants.",
+      "Pendant ce temps, grillez le pain. Parsemez le pisto de manchego, poivrez et servez directement dans la poêle avec le pain pour tremper les jaunes."
+    ],
+    "tags": [
+      "une poêle",
+      "économique",
+      "familial",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "reconfortant",
+      "fume",
+      "umami"
+    ],
+    "tips": "Le pisto se prépare en grande quantité et se garde 4 jours au frais : il suffit de le réchauffer et d’y cuire les œufs."
+  },
+  {
+    "id": "med-albondigas-salsa-almendras",
+    "name": "Albóndigas en salsa d’amandes et safran, riz blanc",
+    "description": "Boulettes de bœuf tendres mijotées dans une sauce au vin blanc, tomate, safran et amandes pilées à l’ail, servies avec un riz blanc pour saucer.",
+    "emoji": "🧆",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 30,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "panure",
+        "qty": 50,
+        "unit": "g",
+        "note": "mie de pain rassis"
+      },
+      {
+        "id": "lait",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 350,
+        "unit": "ml"
+      },
+      {
+        "id": "amande",
+        "qty": 50,
+        "unit": "g",
+        "note": "émondées"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Imbibez la panure du lait 5 min. Mélangez avec le bœuf, l’œuf, 2 gousses d’ail hachées, la moitié du persil, 1 cuillère à café de sel et du poivre. Formez 24 boulettes de la taille d’une noix et roulez-les dans la farine.",
+      "Dans une cocotte, dorez les boulettes en deux fournées dans l’huile à feu moyen-vif, 5 min, en les roulant : elles doivent être brunes mais pas cuites à cœur. Réservez.",
+      "Dans la même huile, faites revenir les amandes et les 2 gousses d’ail restantes 2 min jusqu’à ce qu’elles soient blondes. Retirez-les et pilez-les au mortier avec le safran et le reste de persil.",
+      "Faites fondre l’oignon 6 min dans la cocotte, ajoutez le paprika 20 secondes, puis le vin blanc (2 min de réduction), les tomates et le bouillon.",
+      "Ajoutez la pâte d’amandes, remettez les boulettes, couvrez et laissez mijoter 25 min à feu doux : la sauce doit être onctueuse et napper le dos d’une cuillère.",
+      "Pendant ce temps, cuisez le riz 12 min à l’eau salée (ou selon le paquet). Servez les albóndigas et leur sauce sur le riz."
+    ],
+    "tags": [
+      "batch cooking",
+      "familial",
+      "mijoté",
+      "réconfortant",
+      "préparation à l’avance"
+    ],
+    "seasons": [],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "epice"
+    ],
+    "tips": "Les boulettes se congèlent dans leur sauce : doublez la recette."
+  },
+  {
+    "id": "med-gambas-ajillo-arroz",
+    "name": "Gambas al ajillo et riz blanc",
+    "description": "Crevettes saisies dans une huile d’olive bouillonnante à l’ail et au piment, finies au persil et au citron, versées avec toute leur huile parfumée sur un riz blanc.",
+    "emoji": "🦐",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 10,
+    "cookTime": 18,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "crevette",
+        "qty": 450,
+        "unit": "g",
+        "note": "gambas crues décortiquées, queue gardée"
+      },
+      {
+        "id": "ail",
+        "qty": 8,
+        "unit": "gousse",
+        "note": "en lamelles"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "guindilla, en rondelles"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 180,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 30,
+        "unit": "ml",
+        "note": "fino ou vin blanc sec"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez le riz 12 min à l’eau bouillante salée, égouttez et gardez au chaud couvert.",
+      "Épongez soigneusement les crevettes et salez-les.",
+      "Dans une cassolette ou une poêle en terre, chauffez l’huile avec l’ail et le piment à feu moyen 3 min : l’ail doit tout juste commencer à blondir.",
+      "Montez à feu vif, ajoutez les crevettes en une couche et cuisez 1 min 30, retournez-les, ajoutez le paprika et le vin, et cuisez encore 1 min : elles doivent être roses et juste opaques.",
+      "Hors du feu, ajoutez le persil et un jus de demi-citron. Servez immédiatement sur le riz en versant toute l’huile à l’ail par-dessus, avec le reste du citron en quartiers."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "riche en protéines",
+      "sans gluten",
+      "sportif"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "piquant",
+      "herbace"
+    ],
+    "tips": "Ne laissez pas l’ail brunir : il deviendrait amer et gâcherait l’huile."
+  },
+  {
+    "id": "med-fabada-asturiana",
+    "name": "Fabada asturiana au jarret, chorizo et morcilla",
+    "description": "Le grand mijoté des Asturies, version généreuse en viande : jarret de porc, chorizo et boudin noir fondant dans des haricots blancs crémeux au safran.",
+    "emoji": "🫘",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 20,
+    "cookTime": 150,
+    "restTime": 720,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "porc-jarret",
+        "qty": 900,
+        "unit": "g",
+        "note": "demi-sel, avec l’os"
+      },
+      {
+        "id": "chorizo",
+        "qty": 250,
+        "unit": "g",
+        "note": "à cuire, en tronçons"
+      },
+      {
+        "id": "boudin-noir",
+        "qty": 2,
+        "unit": "piece",
+        "note": "morcilla asturienne fumée si possible"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 600,
+        "unit": "g",
+        "note": "poids cuit, soit 250 g secs (fabes ou lingots) trempés une nuit"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "coupé en deux"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 6,
+        "unit": "tranche"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille, mettez les haricots secs à tremper dans 3 fois leur volume d’eau froide. Faites dessaler le jarret dans un grand volume d’eau.",
+      "Dans une grande cocotte, posez les haricots égouttés, le jarret, l’oignon, l’ail, le laurier et l’huile. Couvrez d’eau froide de 3 cm, portez à ébullition à feu moyen et écumez.",
+      "Réglez à frémissement très doux, ajoutez le chorizo et laissez cuire 1 h 30 à couvert. Pour éviter que les haricots n’éclatent, « effrayez-les » toutes les 30 min avec un demi-verre d’eau froide au lieu de remuer.",
+      "Ajoutez la morcilla, le safran et le paprika délayés dans un peu de bouillon, et poursuivez 45 min à 1 h : les haricots doivent être fondants et le bouillon crémeux et orangé. Secouez la cocotte plutôt que de remuer.",
+      "Retirez le jarret, effilochez la chair en gros morceaux et remettez-la. Goûtez avant de saler (le jarret et le chorizo salent déjà). Laissez reposer 30 min hors du feu.",
+      "Servez en assiettes creuses avec une tranche de chaque viande et le pain au levain grillé."
+    ],
+    "tags": [
+      "mijoté",
+      "week-end",
+      "batch cooking",
+      "calorique",
+      "réconfortant",
+      "riche en collagène"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "fume",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Comme tous les mijotés de légumineuses, elle est meilleure le lendemain ; servez une salade verte bien acidulée à côté."
+  },
+  {
+    "id": "med-rinones-al-jerez",
+    "name": "Riñones al jerez et riz blanc",
+    "description": "Rognons de veau saisis vivement puis nappés d’une sauce à l’oignon, ail et xérès sec réduite en quelques minutes : un classique des bars de Madrid, servi sur riz.",
+    "emoji": "🍷",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 10,
+    "cookTime": 20,
+    "restTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "rognon",
+        "qty": 450,
+        "unit": "g",
+        "note": "de veau, dégraissé, en morceaux de 2 cm"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "pour le trempage"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselé finement"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse",
+        "note": "hachées"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml",
+        "note": "xérès sec (fino ou amontillado)"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "doux"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites tremper les morceaux de rognons 30 min dans de l’eau froide additionnée du vinaigre, puis rincez et séchez-les très soigneusement.",
+      "Lancez le riz : 12 min à l’eau bouillante salée, égouttez et gardez au chaud.",
+      "Chauffez 1 cuillère d’huile dans une poêle à feu très vif. Saisissez les rognons 2 min sans les remuer, puis 1 min de plus : ils doivent être dorés et rosés à cœur. Versez-les dans une passoire pour égoutter leur jus amer.",
+      "Dans la même poêle à feu moyen, faites fondre l’oignon dans le reste d’huile 6 min, ajoutez l’ail et le laurier 1 min, puis la farine et le paprika 30 secondes en remuant.",
+      "Versez le xérès, laissez bouillonner 3 min jusqu’à ce que la sauce épaississe et nappe la cuillère.",
+      "Remettez les rognons 1 min juste pour les réchauffer (au-delà, ils durcissent), salez, poivrez, parsemez de persil et servez sur le riz."
+    ],
+    "tags": [
+      "abats",
+      "rapide",
+      "une poêle",
+      "riche en protéines",
+      "économique"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "acidule"
+    ],
+    "tips": "La cuisson courte est la clé : un rognon trop cuit devient caoutchouteux."
+  },
+  {
+    "id": "med-merluza-salsa-verde",
+    "name": "Merluza en salsa verde, palourdes et petits pois",
+    "description": "Tranches de merlu cuites doucement dans une sauce basque au persil et à l’ail liée à la gélatine du poisson, avec palourdes, petits pois, œufs durs et pommes de terre.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "cabillaud",
+        "qty": 400,
+        "unit": "g",
+        "note": "merlu en tranches de 3 cm, avec peau"
+      },
+      {
+        "id": "palourde",
+        "qty": 300,
+        "unit": "g",
+        "note": "dégorgées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en rondelles de 1 cm"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse",
+        "note": "hachées finement"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g",
+        "note": "haché très fin"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les rondelles de pommes de terre 15 min à l’eau salée frémissante et les œufs 10 min dans une autre casserole. Écalez les œufs et coupez-les en quatre.",
+      "Salez les tranches de merlu 10 min avant la cuisson.",
+      "Dans une cazuela ou une sauteuse large, chauffez l’huile avec l’ail à feu doux 2 min sans coloration. Ajoutez la farine et remuez 1 min, puis le vin blanc et le fumet en filet en remuant.",
+      "Posez les tranches de merlu côté peau dans la sauce frémissante, ajoutez les palourdes et les petits pois. Cuisez 4 min, retournez le poisson et poursuivez 3-4 min en secouant la cazuela d’avant en arrière : la sauce doit épaissir et blanchir légèrement grâce à la gélatine.",
+      "Quand les palourdes sont ouvertes et que la chair du merlu se détache en lamelles nacrées, ajoutez le persil, les pommes de terre et les œufs, et secouez encore 1 min.",
+      "Servez directement dans la cazuela."
+    ],
+    "tags": [
+      "léger",
+      "riche en protéines",
+      "familial",
+      "une poêle"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "herbace",
+      "iode"
+    ],
+    "tips": "Le mouvement de va-et-vient (le « pil-pil ») est ce qui lie la sauce : ne remuez pas à la cuillère, vous casseriez le poisson."
+  },
+  {
+    "id": "med-rabo-de-toro",
+    "name": "Rabo de toro, pommes de terre rôties",
+    "description": "La queue de bœuf à la cordouane, braisée 4 heures au vin rouge avec poivron et légumes jusqu’à ce que la viande glisse de l’os dans une sauce brillante et collante.",
+    "emoji": "🐂",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 30,
+    "cookTime": 240,
+    "difficulty": "facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boeuf-queue",
+        "qty": 1500,
+        "unit": "g",
+        "note": "tronçonnée"
+      },
+      {
+        "id": "farine",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "hachés"
+      },
+      {
+        "id": "carotte",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 500,
+        "unit": "ml",
+        "note": "corsé, ou moitié vin, moitié oloroso"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "2 clous"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1200,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Salez et poivrez les tronçons, roulez-les dans la farine. Dans une grande cocotte, chauffez 2 cuillères d’huile à feu vif et dorez-les en deux fournées, 3 min par face, jusqu’à une croûte brun foncé. Réservez.",
+      "Baissez à feu moyen, faites suer oignons, carottes, poivron, poireau et ail 10 min en grattant les sucs. Ajoutez le concentré 1 min.",
+      "Versez le vin rouge, portez à ébullition 5 min pour évaporer l’alcool, puis ajoutez le bouillon, laurier, thym et girofle. Remettez la viande : elle doit être presque couverte.",
+      "Couvrez et enfournez à 150 °C pendant 3 h 30 à 4 h, en retournant les morceaux à mi-cuisson. La viande doit se détacher de l’os à la seule pression d’une fourchette.",
+      "1 h avant la fin, mélangez les pommes de terre avec le reste d’huile et du sel et rôtissez-les sur la grille du haut ; montez à 210 °C pour les 20 dernières minutes, une fois la cocotte sortie.",
+      "Retirez la viande, mixez ou passez la sauce au chinois, et réduisez-la 10 min à feu vif jusqu’à ce qu’elle soit brillante et nappante. Remettez la viande et servez avec les pommes de terre."
+    ],
+    "tags": [
+      "week-end",
+      "mijoté",
+      "riche en collagène",
+      "réconfortant",
+      "batch cooking",
+      "calorique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Préparez-le la veille : une fois refroidi, la graisse figée se retire facilement à la cuillère."
+  },
+  {
+    "id": "med-ensalada-patatas-ventresca",
+    "name": "Ensalada de patatas à la ventrèche de thon",
+    "description": "Pommes de terre tièdes, œufs mollets, piquillos, olives et oignon rouge à l’huile d’olive et au vinaigre de Xérès, couronnés de ventrèche de thon fondante.",
+    "emoji": "🥔",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "chair ferme"
+      },
+      {
+        "id": "thon-conserve",
+        "qty": 200,
+        "unit": "g",
+        "note": "ventrèche à l’huile d’olive"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 120,
+        "unit": "g",
+        "note": "piquillos, en lanières"
+      },
+      {
+        "id": "olive",
+        "qty": 50,
+        "unit": "g",
+        "note": "manzanilla"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de Xérès"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre entières en robe des champs 20 min à l’eau salée : la lame d’un couteau doit s’enfoncer sans résistance. Pendant ce temps, cuisez les œufs 7 min à l’eau bouillante, puis plongez-les dans l’eau glacée.",
+      "Fouettez l’huile, le vinaigre de Xérès, du sel et du poivre.",
+      "Pelez les pommes de terre encore chaudes, coupez-les en gros morceaux et arrosez-les immédiatement de la moitié de la vinaigrette : chaudes, elles l’absorbent mieux.",
+      "Ajoutez l’oignon rouge, les piquillos et les olives, mélangez délicatement.",
+      "Dressez, posez la ventrèche en gros pétales, les œufs mollets coupés en deux, le persil, et versez le reste de vinaigrette."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "acidule",
+      "frais",
+      "umami"
+    ],
+    "tips": "Se garde 2 jours au frais (œufs à part) : sortez-la 20 min avant de manger pour que l’huile se détende."
+  },
+  {
+    "id": "med-calamares-tinta-arroz",
+    "name": "Calamares en su tinta et riz blanc",
+    "description": "Encornets mijotés dans une sauce noire et brillante à l’encre, oignon confit, tomate et vin blanc, à la mode basque, servis sur un riz blanc qui contraste.",
+    "emoji": "🦑",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 20,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "calamar",
+        "qty": 600,
+        "unit": "g",
+        "note": "encornets nettoyés + 2 sachets d’encre de seiche (4 g)"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "vert idéalement, en dés"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 180,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les corps des encornets en anneaux de 1,5 cm et les tentacules en deux. Épongez-les.",
+      "Dans une sauteuse, faites fondre oignons, poivron et ail dans l’huile à feu doux 15 min : ils doivent être très tendres et dorés.",
+      "Ajoutez les calamars à feu moyen-vif et faites-les revenir 3 min. Ajoutez la tomate râpée et le laurier, cuisez 3 min.",
+      "Délayez l’encre dans le fumet, versez avec le vin blanc, couvrez et laissez mijoter 30 min à feu doux : les calamars doivent être tendres sous la dent et la sauce noire et nappante.",
+      "Pendant ce temps, cuisez le riz 12 min à l’eau salée. Pour une sauce plus lisse, mixez une louche de sauce et remettez-la.",
+      "Servez les calamars avec le riz moulé en dôme à côté."
+    ],
+    "tags": [
+      "mijoté",
+      "riche en protéines",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [],
+    "technique": "mijote",
+    "flavors": [
+      "iode",
+      "umami"
+    ],
+    "tips": "L’encre se trouve en sachets chez le poissonnier ou en épicerie fine ; elle tache, prévoyez un tablier."
+  },
+  {
+    "id": "med-chuletillas-cordero-brasa",
+    "name": "Chuletillas d’agneau à la braise, pain grillé et piquillos",
+    "description": "Petites côtelettes d’agneau de lait grillées à feu vif avec ail et romarin, servies avec des piquillos tièdes, une salade de tomates et du pain grillé huilé.",
+    "emoji": "🍖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 10,
+    "cookTime": 12,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-cotelette",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 160,
+        "unit": "g",
+        "note": "en tranches épaisses"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 150,
+        "unit": "g",
+        "note": "piquillos"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "fleur de sel"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Sortez les côtelettes 20 min avant. Frottez-les d’une gousse d’ail écrasée, de romarin effeuillé et d’un filet d’huile, sans sel.",
+      "Chauffez un barbecue à braise vive ou une plancha jusqu’à ce qu’elle fume légèrement.",
+      "Grillez les côtelettes 2 min par face pour un rosé, en tenant les côtés gras contre la grille 30 secondes pour les rendre croustillants. Salez de fleur de sel à la sortie.",
+      "Grillez les tranches de pain 1 min par face, frottez-les avec la seconde gousse d’ail et arrosez d’huile. Réchauffez les piquillos 2 min sur le gril.",
+      "Servez les côtelettes avec le pain, les piquillos et les tomates en tranches salées et arrosées du reste d’huile. Mangez-les avec les doigts."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "sportif"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "herbace"
+    ],
+    "tips": "Ajoutez des pommes de terre cuites à l’eau la veille, coupées en deux et grillées, pour plus de glucides."
+  },
+  {
+    "id": "med-bacalhau-a-bras",
+    "name": "Bacalhau à Brás",
+    "description": "Morue effilochée, pommes de terre allumettes dorées et oignons fondus liés au dernier moment d’œufs baveux, finis aux olives noires et au persil : le plat de Lisbonne.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 20,
+    "cookTime": 20,
+    "restTime": 1440,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "morue-salee",
+        "qty": 200,
+        "unit": "g",
+        "note": "poids sec, ≈ 350 g une fois dessalée"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g",
+        "note": "en très fines allumettes"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés finement"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "olive",
+        "qty": 40,
+        "unit": "g",
+        "note": "noires"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dessalez la morue 24 h dans l’eau froide au réfrigérateur en changeant l’eau 3 à 4 fois. Retirez peau et arêtes et effilochez-la finement avec les doigts.",
+      "Rincez les allumettes de pommes de terre, séchez-les parfaitement dans un torchon. Faites-les dorer en deux fournées dans 4 cuillères d’huile très chaude, 5-6 min, en remuant : elles doivent être blondes et croustillantes. Égouttez sur papier absorbant.",
+      "Dans une grande poêle, faites fondre les oignons et l’ail dans le reste d’huile 8 min à feu moyen, jusqu’à ce qu’ils soient translucides et dorés.",
+      "Ajoutez la morue et faites-la revenir 3 min, puis ajoutez les pommes de terre et mélangez.",
+      "Baissez à feu doux, versez les œufs battus avec du poivre et remuez sans arrêt 1 à 2 min : retirez du feu quand le mélange est encore crémeux et baveux, il finit de cuire dans l’assiette.",
+      "Parsemez de persil et d’olives, servez immédiatement."
+    ],
+    "tags": [
+      "riche en protéines",
+      "une poêle",
+      "familial",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "friture-legere",
+    "flavors": [
+      "umami",
+      "iode",
+      "reconfortant"
+    ],
+    "tips": "Goûtez la morue après dessalage : si elle est encore trop salée, laissez-la quelques heures de plus dans l’eau. N’ajoutez pas de sel."
+  },
+  {
+    "id": "med-salada-bacalhau-grao",
+    "name": "Salada de bacalhau com grão",
+    "description": "Morue pochée en gros pétales, pois chiches, pommes de terre et œufs durs, oignon rouge et persil, dans une vinaigrette à l’huile d’olive et à l’ail : la salade-repas portugaise.",
+    "emoji": "🥗",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 15,
+    "cookTime": 20,
+    "restTime": 1440,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "morue-salee",
+        "qty": 170,
+        "unit": "g",
+        "note": "poids sec, dessalée 24 h"
+      },
+      {
+        "id": "pois-chiches",
+        "qty": 200,
+        "unit": "g",
+        "note": "cuits, rincés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse",
+        "note": "râpée"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de vin"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dessalez la morue 24 h au réfrigérateur en changeant l’eau 3 fois.",
+      "Cuisez les pommes de terre épluchées en morceaux 15 min à l’eau frémissante, et les œufs 10 min dans une autre casserole.",
+      "Pochez la morue 6-8 min dans une eau à peine frémissante (elle ne doit jamais bouillir) : elle est cuite quand elle se sépare en feuillets nacrés. Égouttez, retirez peau et arêtes et détachez de gros pétales.",
+      "Fouettez l’huile, le vinaigre, l’ail et du poivre.",
+      "Dans un grand plat, mélangez pois chiches, pommes de terre tièdes, oignon rouge, tomates cerises et la moitié de la vinaigrette. Posez la morue et les œufs en quartiers, arrosez du reste et parsemez de persil."
+    ],
+    "tags": [
+      "repas froid",
+      "lunch box",
+      "préparation à l’avance",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "frais",
+      "acidule",
+      "iode"
+    ],
+    "tips": "Meilleure après 1 h de repos au frais pour que les saveurs se mêlent. Se garde 2 jours."
+  },
+  {
+    "id": "med-carne-porco-alentejana",
+    "name": "Carne de porco à alentejana",
+    "description": "Cubes d’échine marinés au vin blanc, ail et paprika, saisis au saindoux puis mariés aux palourdes, avec des pommes de terre dorées et beaucoup de coriandre.",
+    "emoji": "🐖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 25,
+    "cookTime": 40,
+    "restTime": 240,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-echine",
+        "qty": 800,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "palourde",
+        "qty": 800,
+        "unit": "g",
+        "note": "dégorgées"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "ail",
+        "qty": 6,
+        "unit": "gousse",
+        "note": "écrasées"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cas",
+        "note": "ou 2 c. à soupe de massa de pimentão"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "en cubes de 2 cm"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 2,
+        "unit": "cas",
+        "note": "saindoux (banha)"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "coriandre",
+        "qty": 25,
+        "unit": "g",
+        "note": "hachée"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g",
+        "note": "pickles portugais (pickles de légumes)",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Marinez le porc avec le vin blanc, l’ail, le paprika, le laurier et 1 cuillère à café de sel au moins 4 h au frais (idéalement une nuit).",
+      "Préchauffez le four à 220 °C. Mélangez les pommes de terre avec l’huile d’olive et du sel et rôtissez-les 35 min en les retournant à mi-cuisson : elles doivent être dorées et croustillantes.",
+      "Égouttez la viande en gardant la marinade. Dans une grande sauteuse, chauffez le saindoux à feu vif et saisissez le porc en deux fournées, 5 min, jusqu’à ce qu’il soit bien doré.",
+      "Remettez toute la viande, versez la marinade et laissez réduire 10 min à feu moyen : il doit rester une sauce courte et concentrée.",
+      "Ajoutez les palourdes, couvrez et cuisez 4-5 min à feu vif en secouant la sauteuse, jusqu’à ce qu’elles soient toutes ouvertes.",
+      "Mélangez avec les pommes de terre, parsemez de coriandre et servez avec le citron et les pickles."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "calorique"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "umami",
+      "herbace"
+    ],
+    "tips": "L’alliance terre-mer est la signature de l’Alentejo : le jus des palourdes et la graisse du porc font la sauce."
+  },
+  {
+    "id": "med-frango-piri-piri",
+    "name": "Frango piri-piri grillé et riz à la tomate",
+    "description": "Poulet en crapaudine mariné dans une sauce au piment, ail, citron et paprika, grillé à la braise et badigeonné en continu, avec un riz à la tomate et une salade fraîche.",
+    "emoji": "🌶️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 20,
+    "cookTime": 45,
+    "restTime": 180,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-entier",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ouvert en crapaudine"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 4,
+        "unit": "piece",
+        "note": "piments oiseaux rouges"
+      },
+      {
+        "id": "ail",
+        "qty": 5,
+        "unit": "gousse"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece",
+        "note": "jus"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille",
+        "note": "émietté"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 260,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselé"
+      },
+      {
+        "id": "laitue",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mixez piments, ail, jus de citron, paprika, vinaigre, laurier, 3 cuillères d’huile et 2 cuillères à café de sel en sauce lisse. Gardez-en un tiers pour le service.",
+      "Entaillez les cuisses et les blancs en profondeur, massez le poulet avec le reste de sauce et laissez mariner 3 h au frais (ou une nuit).",
+      "Grillez le poulet sur un barbecue à feu indirect moyen (ou au four à 210 °C), peau vers le haut, 35 min, en le badigeonnant de marinade toutes les 10 min. Finissez 8-10 min côté peau au-dessus des braises pour la rendre croustillante et légèrement noircie par endroits. Le jus doit couler clair à la jointure de la cuisse.",
+      "Riz : faites fondre l’oignon dans 1 cuillère d’huile 4 min, ajoutez la tomate râpée 3 min, puis le riz et 520 ml d’eau salée. Couvrez et cuisez 15 min à feu doux, reposez 5 min.",
+      "Découpez le poulet, servez avec le riz, la laitue assaisonnée et la sauce piri-piri réservée."
+    ],
+    "tags": [
+      "barbecue",
+      "préparation à l’avance",
+      "familial",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "piquant",
+      "grille",
+      "acidule"
+    ],
+    "tips": "Dosez le nombre de piments selon votre tolérance ; la sauce se garde une semaine au frais."
+  },
+  {
+    "id": "med-arroz-de-marisco",
+    "name": "Arroz de marisco",
+    "description": "Le riz portugais aux fruits de mer, juteux et presque soupeux : crevettes, moules et langoustines dans un bouillon tomaté au vin blanc, piment et coriandre fraîche.",
+    "emoji": "🦞",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "crevette",
+        "qty": 400,
+        "unit": "g",
+        "note": "crues, décortiquées, têtes gardées"
+      },
+      {
+        "id": "moule",
+        "qty": 800,
+        "unit": "g",
+        "note": "grattées"
+      },
+      {
+        "id": "langoustine",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 320,
+        "unit": "g",
+        "note": "carolino ou riz rond"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece",
+        "note": "concassées"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 1200,
+        "unit": "ml"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "coriandre",
+        "qty": 25,
+        "unit": "g",
+        "note": "hachée"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Ouvrez les moules 3 min à couvert à feu vif avec le vin blanc. Filtrez leur jus et ajoutez-le au fumet ; décoquillez la moitié des moules.",
+      "Faites revenir les têtes de crevettes 3 min dans 1 cuillère d’huile en les écrasant, ajoutez le fumet et laissez infuser 10 min à frémissement, puis filtrez.",
+      "Dans une cocotte large, faites suer oignon, poivron, ail et piment dans le reste d’huile 8 min. Ajoutez les tomates et le laurier et laissez compoter 5 min.",
+      "Ajoutez le riz, nacrez 1 min, puis versez 1 l de fumet chaud. Cuisez 12 min à frémissement en remuant de temps en temps.",
+      "Ajoutez les langoustines et les crevettes, poursuivez 4 min, puis les moules et le reste de fumet : le riz doit être tendre et baigner dans un jus abondant, comme un risotto très lâche.",
+      "Hors du feu, parsemez généreusement de coriandre et servez immédiatement, avant que le riz n’absorbe tout le jus."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "week-end"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "iode",
+      "herbace",
+      "piquant"
+    ],
+    "tips": "Servez dans des assiettes creuses : la consistance juteuse (malandrinho) est ce qui le distingue d’une paella."
+  },
+  {
+    "id": "med-bifana-porc-vin-ail",
+    "name": "Bifanas : sandwich de porc mariné au vin et à l’ail",
+    "description": "Fines tranches de porc marinées au vin blanc, ail et paprika, mijotées minute dans leur jus et glissées dans un petit pain croustillant avec de la moutarde.",
+    "emoji": "🥪",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 10,
+    "cookTime": 12,
+    "restTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "porc-filet-mignon",
+        "qty": 400,
+        "unit": "g",
+        "note": "en tranches de 5 mm, aplaties"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse",
+        "note": "écrasées"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 2,
+        "unit": "cas",
+        "note": "saindoux"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 240,
+        "unit": "g",
+        "note": "2 grands petits pains croustillants"
+      },
+      {
+        "id": "moutarde",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez le vin blanc, l’ail, le paprika, le laurier émietté et une pincée de sel. Marinez les tranches de porc au moins 2 h au frais.",
+      "Égouttez la viande en gardant la marinade. Chauffez le saindoux à feu vif dans une grande poêle et saisissez les tranches 1 min par face, en deux fournées.",
+      "Remettez toute la viande, versez la marinade et laissez mijoter 5 min à feu moyen : le jus doit réduire de moitié et devenir légèrement sirupeux.",
+      "Ouvrez les petits pains, trempez rapidement l’intérieur dans le jus de cuisson.",
+      "Garnissez de plusieurs tranches de porc, d’une cuillère de jus, de moutarde et de piment émincé si vous aimez. Servez chaud."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "riche en protéines",
+      "économique",
+      "sportif"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "acidule"
+    ],
+    "tips": "L’échine en tranches fines fonctionne aussi, plus fondante et plus économique."
+  },
+  {
+    "id": "med-sardinhas-assadas",
+    "name": "Sardinhas assadas, pommes de terre et salade de poivrons",
+    "description": "Sardines entières grillées au gros sel sur la braise comme aux fêtes de Lisbonne, avec pommes de terre à l’huile d’olive et une salade de poivrons grillés à l’ail.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 8,
+        "unit": "piece",
+        "note": "très fraîches, non vidées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "petites, avec la peau"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse",
+        "note": "en lamelles"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "vinaigre de vin"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 2,
+        "unit": "tranche",
+        "note": "ou broa (pain de maïs)"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "gros sel"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Couvrez les sardines de gros sel 20 min avant la cuisson, puis secouez-les. Cuisez les pommes de terre 20 min à l’eau salée.",
+      "Grillez les poivrons entiers sur la braise ou sous le gril du four 12-15 min en les tournant, jusqu’à ce que la peau soit noircie. Enfermez-les 10 min dans un saladier couvert, puis pelez-les et coupez-les en lanières.",
+      "Assaisonnez les poivrons avec l’ail, 2 cuillères d’huile, le vinaigre et du sel.",
+      "Grillez les sardines sur une grille bien chaude et huilée, 3-4 min par face : la peau doit être cloquée et dorée, la chair se détacher de l’arête.",
+      "Servez les sardines posées sur les tranches de pain (qui s’imbibent de leur jus), avec les pommes de terre arrosées du reste d’huile et de persil, et la salade de poivrons."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "sans gluten",
+      "riche en protéines",
+      "économique"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "iode"
+    ],
+    "tips": "Les sardines de juin à septembre sont les plus grasses et les meilleures. On ne les vide pas : c’est la tradition et cela garde la chair moelleuse."
+  },
+  {
+    "id": "med-polvo-lagareiro",
+    "name": "Polvo à lagareiro et batatas a murro",
+    "description": "Poulpe poché puis rôti au four, noyé d’huile d’olive à l’ail, avec des petites pommes de terre cuites en robe, écrasées d’un coup de poing et dorées.",
+    "emoji": "🐙",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 20,
+    "cookTime": 100,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulpe",
+        "qty": 1500,
+        "unit": "g",
+        "note": "congelé puis décongelé"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1000,
+        "unit": "g",
+        "note": "petites, grenailles"
+      },
+      {
+        "id": "ail",
+        "qty": 8,
+        "unit": "gousse",
+        "note": "en lamelles"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "pour la cuisson du poulpe"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "gros sel"
+      }
+    ],
+    "steps": [
+      "Plongez le poulpe dans une grande casserole d’eau bouillante avec l’oignon et le laurier. Laissez frémir 50-60 min : un couteau doit s’enfoncer facilement dans la partie la plus épaisse d’un tentacule. Égouttez.",
+      "Pendant ce temps, frottez les pommes de terre lavées de gros sel et rôtissez-les entières 40 min à 200 °C sur une plaque.",
+      "Sortez les pommes de terre, écrasez-les d’un coup sec du plat de la main (protégée d’un torchon) pour les ouvrir.",
+      "Coupez le poulpe en tentacules, posez-le avec les pommes de terre dans un plat à rôtir. Chauffez l’huile avec l’ail 3 min à feu doux, sans laisser brunir, et versez le tout sur le poulpe et les pommes de terre.",
+      "Enfournez 20-25 min à 220 °C : les tentacules doivent être grillés et croustillants sur les bords.",
+      "Parsemez de persil et servez arrosé de l’huile du plat, avec du citron si vous aimez."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "sans gluten",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "roti",
+    "flavors": [
+      "iode",
+      "grille",
+      "herbace"
+    ],
+    "tips": "Congeler le poulpe 48 h attendrit ses fibres : achetez-le surgelé, c’est plus simple et aussi bon."
+  }
+]

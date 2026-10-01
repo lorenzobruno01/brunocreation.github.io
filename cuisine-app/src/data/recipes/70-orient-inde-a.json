@@ -1,0 +1,2749 @@
+[
+  {
+    "id": "ori-shawarma-boeuf-maison",
+    "name": "Shawarma de bœuf maison, sauce tahini",
+    "description": "Fines lanières de bavette marinées aux épices du Levant, saisies à feu très vif puis roulées dans un pain libanais tiède avec sauce tahini, tomates, oignon rouge et pickles.",
+    "emoji": "🌯",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 15,
+    "cookTime": 10,
+    "restTime": 60,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-bavette",
+        "qty": 400,
+        "unit": "g",
+        "note": "coupée en fines lanières contre le grain"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 60,
+        "unit": "g",
+        "note": "pour la marinade"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "jus"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "cardamome",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "tahini",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 3,
+        "unit": "piece",
+        "note": "pains libanais fins"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé finement"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g",
+        "note": "ou pickles de navet"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez le yaourt, la moitié du jus de citron, 2 gousses d'ail râpées, le cumin, le paprika, la cannelle, la cardamome, 1 c. à soupe d'huile, du sel et du poivre. Enrobez les lanières de bavette et laissez mariner 1 h au frais (jusqu'à une nuit).",
+      "Sauce tahini : fouettez le tahini avec le reste du jus de citron, la dernière gousse d'ail râpée et 3 à 4 c. à soupe d'eau froide jusqu'à une texture de crème liquide. Salez.",
+      "Faites chauffer une grande poêle en fonte à feu très vif avec le reste d'huile jusqu'à ce qu'elle fume légèrement.",
+      "Saisissez la viande en 2 fournées, sans remuer pendant 1 min 30, puis 1 min en remuant : les bords doivent être bien caramélisés et l'intérieur encore rosé.",
+      "Réchauffez les pains 30 s de chaque côté dans la poêle chaude, juste le temps qu'ils soient souples.",
+      "Garnissez chaque pain de viande, tomates, oignon rouge, persil et pickles, nappez généreusement de sauce tahini, roulez serré et servez aussitôt."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "une poêle",
+      "prise de masse",
+      "calorique"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "epice",
+      "umami",
+      "acidule"
+    ],
+    "tips": "Congelez la bavette 20 min avant de la trancher : les lanières seront beaucoup plus fines et régulières."
+  },
+  {
+    "id": "ori-kafta-saniyeh-pommes-de-terre",
+    "name": "Kafta bil saniyeh aux pommes de terre",
+    "description": "Galettes de kafta au bœuf, persil et sept épices, cuites au four sur un lit de pommes de terre et de tomates qui confisent dans une sauce tomate parfumée.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 25,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 700,
+        "unit": "g",
+        "note": "15 % de matière grasse"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpé et pressé"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 2,
+        "unit": "cac",
+        "note": "ou baharat (sept épices)"
+      },
+      {
+        "id": "cannelle",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "en rondelles de 5 mm"
+      },
+      {
+        "id": "tomate",
+        "qty": 4,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "eau",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Mélangez à la main le bœuf haché, l'oignon râpé bien pressé, le persil, les épices, 1 c. à café de sel et du poivre pendant 2 min, jusqu'à ce que la farce devienne collante.",
+      "Formez 12 galettes ovales de 1,5 cm d'épaisseur.",
+      "Huilez un grand plat à four. Disposez les rondelles de pommes de terre en couche, arrosez de 2 c. à soupe d'huile, salez et enfournez 15 min pour les précuire.",
+      "Pendant ce temps, mélangez les tomates concassées, l'ail écrasé, l'eau, le reste d'huile, sel et poivre.",
+      "Sortez le plat, alternez dessus les galettes de kafta et les rondelles de tomate en rangées serrées, puis versez la sauce tomate sur l'ensemble.",
+      "Enfournez 35 min : la sauce doit bouillonner, les pommes de terre se percer sans résistance et la kafta être dorée sur le dessus. Laissez reposer 5 min avant de servir."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "batch cooking",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "reconfortant",
+      "umami"
+    ],
+    "tips": "Se garde 3 jours au frais et se réchauffe très bien au four, couvert, 20 min à 160 °C."
+  },
+  {
+    "id": "ori-chich-taouk-riz-toum",
+    "name": "Chich taouk, riz au beurre et toum au yaourt",
+    "description": "Brochettes de blanc de poulet marinées au yaourt, citron et paprika, grillées à feu vif, avec un riz basmati au beurre et une sauce toum à l'ail bien relevée.",
+    "emoji": "🍢",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 15,
+    "cookTime": 15,
+    "restTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "poulet-blanc",
+        "qty": 450,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 180,
+        "unit": "g",
+        "note": "80 g marinade + 100 g toum"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 5,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "origan",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g",
+        "note": "basmati"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "cornichon",
+        "qty": 50,
+        "unit": "g",
+        "note": "pickles"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Marinade : mélangez 80 g de yaourt, le jus d'un demi-citron, 3 gousses d'ail écrasées, le paprika, le concentré de tomate, l'origan, 1 c. à soupe d'huile, sel et poivre. Enrobez le poulet et laissez 2 h au frais.",
+      "Toum express : mixez 2 gousses d'ail avec une pincée de sel, le reste du jus de citron et 2 c. à soupe d'huile jusqu'à une pâte blanche, puis incorporez 100 g de yaourt.",
+      "Rincez le riz jusqu'à ce que l'eau soit claire. Faites-le nacrer 1 min dans le beurre, ajoutez 1,5 fois son volume d'eau salée, couvrez et cuisez 12 min à feu très doux, puis laissez gonfler 5 min hors du feu.",
+      "Enfilez le poulet sur des brochettes sans trop serrer les morceaux.",
+      "Grillez sur une plancha, un gril en fonte ou au barbecue bien chaud 10 à 12 min en tournant toutes les 3 min : les cubes doivent être marqués et le jus clair quand on les pique.",
+      "Servez les brochettes sur le riz avec la toum, les tomates en quartiers et les pickles."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "préparation à l’avance",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "acidule",
+      "lacte"
+    ],
+    "tips": "La marinade au yaourt peut se faire la veille : le poulet n'en sera que plus tendre."
+  },
+  {
+    "id": "ori-mujaddara-cotelettes-agneau",
+    "name": "Mujaddara et côtelettes d'agneau au cumin",
+    "description": "Le réconfort levantin : riz et lentilles parfumés au cumin, couronnés d'oignons frits croustillants, servis avec des côtelettes d'agneau grillées et un yaourt frais au concombre.",
+    "emoji": "🍖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 15,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "lentilles-vertes",
+        "qty": 70,
+        "unit": "g",
+        "note": "lentilles brunes ou vertes"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 90,
+        "unit": "g",
+        "note": "basmati"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés finement"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "cumin",
+        "qty": 1.5,
+        "unit": "cac"
+      },
+      {
+        "id": "agneau-cotelette",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g",
+        "note": "râpé et pressé"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez les lentilles et cuisez-les 15 min dans 600 ml d'eau non salée frémissante : elles doivent rester un peu fermes. Ne les égouttez pas.",
+      "Pendant ce temps, faites frire les oignons dans l'huile d'olive à feu moyen-vif 15 à 20 min en remuant souvent, jusqu'à ce qu'ils soient brun foncé et croustillants. Réservez-en la moitié sur du papier absorbant.",
+      "Ajoutez le riz rincé et le cumin aux lentilles avec leur eau (il doit rester 2 cm d'eau au-dessus), salez, couvrez et cuisez 15 min à feu doux. Incorporez la moitié des oignons restés dans la poêle et laissez reposer 5 min couvert.",
+      "Mélangez le yaourt, le concombre pressé, l'ail râpé, la menthe ciselée et une pincée de sel.",
+      "Salez et poivrez les côtelettes. Saisissez-les dans la poêle des oignons, encore grasse, à feu vif 2 à 3 min par face pour un cœur rosé.",
+      "Servez la mujaddara parsemée des oignons croustillants, avec les côtelettes et le yaourt au concombre."
+    ],
+    "tags": [
+      "économique",
+      "réconfortant",
+      "riche en glucides",
+      "familial",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "reconfortant",
+      "epice",
+      "grille"
+    ],
+    "tips": "La mujaddara se garde 3 jours et se mange aussi tiède, en lunch box, avec un œuf mollet à la place de l'agneau."
+  },
+  {
+    "id": "ori-maqluba-agneau-aubergine",
+    "name": "Maqluba d'agneau, aubergines et chou-fleur",
+    "description": "Le célèbre riz « renversé » palestinien : couches d'agneau mijoté, d'aubergines et de chou-fleur rôtis et de riz épicé, démoulées d'un coup sur le plat et couronnées de pignons dorés.",
+    "emoji": "🍚",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 40,
+    "cookTime": 110,
+    "difficulty": "intermediaire",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 900,
+        "unit": "g",
+        "note": "en morceaux de 5 cm"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 450,
+        "unit": "g",
+        "note": "basmati, trempé 30 min"
+      },
+      {
+        "id": "aubergine",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en rondelles de 1 cm"
+      },
+      {
+        "id": "chou-fleur",
+        "qty": 500,
+        "unit": "g",
+        "note": "en fleurettes"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 2,
+        "unit": "cac",
+        "note": "ou baharat"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "cardamome",
+        "qty": 4,
+        "unit": "pincee",
+        "note": "ou 4 gousses écrasées"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "eau",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "pignons",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "amande",
+        "qty": 40,
+        "unit": "g",
+        "note": "effilées"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 300,
+        "unit": "g",
+        "note": "pour servir"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez l'agneau dans une cocotte avec 1,5 L d'eau, l'oignon coupé en deux, le laurier, la cardamome et 1 c. à café de sel. Portez à ébullition, écumez, puis laissez frémir 1 h à couvert : la viande doit être tendre. Gardez le bouillon.",
+      "Pendant ce temps, préchauffez le four à 220 °C. Étalez aubergines et chou-fleur sur 2 plaques, arrosez de 5 c. à soupe d'huile, salez, et rôtissez 25 min jusqu'à ce qu'ils soient bien dorés.",
+      "Égouttez le riz et mélangez-le avec le ras el hanout, le curcuma, la cannelle, l'ail haché, sel et poivre.",
+      "Huilez le fond d'une grande cocotte à bord haut. Disposez les rondelles de tomate au fond, puis l'agneau, puis les aubergines et le chou-fleur, en tassant légèrement. Recouvrez du riz épicé.",
+      "Versez doucement le bouillon chaud filtré jusqu'à 2 cm au-dessus du riz (environ 900 ml). Posez une assiette retournée sur le riz pour le maintenir.",
+      "Portez à frémissement, couvrez et cuisez 40 min à feu très doux, sans ouvrir. Laissez ensuite reposer 15 min hors du feu, couvercle fermé.",
+      "Dorez les pignons et les amandes à sec 3 min à feu moyen. Posez un grand plat sur la cocotte, retournez d'un geste franc et soulevez la cocotte. Parsemez de pignons et d'amandes, servez avec le yaourt."
+    ],
+    "tags": [
+      "week-end",
+      "familial",
+      "mijoté",
+      "calorique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "reconfortant",
+      "umami"
+    ],
+    "tips": "Le repos de 15 min avant de démouler est essentiel : le riz se raffermit et la maqluba se tient comme un gâteau."
+  },
+  {
+    "id": "ori-kibbeh-au-four",
+    "name": "Kibbeh au four, farce agneau-pignons",
+    "description": "Deux couches de pâte de boulgour fin et d'agneau enfermant une farce d'agneau aux oignons, pignons et sept épices, cuites au four jusqu'à une croûte dorée et croustillante.",
+    "emoji": "🥧",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 45,
+    "cookTime": 45,
+    "difficulty": "intermediaire",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boulgour",
+        "qty": 250,
+        "unit": "g",
+        "note": "boulgour fin"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 900,
+        "unit": "g",
+        "note": "500 g pour la pâte (maigre) + 400 g pour la farce"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "1 râpé pour la pâte, 2 hachés pour la farce"
+      },
+      {
+        "id": "pignons",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g",
+        "note": "fondu"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 2,
+        "unit": "cac",
+        "note": "ou sept épices libanaises"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g",
+        "note": "séchée, pour la pâte"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le boulgour, couvrez-le d'eau froide 15 min, puis pressez-le fortement dans les mains pour l'essorer.",
+      "Pâte : mixez par à-coups 500 g d'agneau, l'oignon râpé, le cumin, la menthe, 1 c. à café de sel et un peu de poivre, puis pétrissez avec le boulgour 3 min en vous mouillant les mains d'eau glacée, jusqu'à une pâte lisse et homogène.",
+      "Farce : faites revenir les 2 oignons hachés dans 15 g de beurre 6 min à feu moyen, ajoutez 400 g d'agneau et émiettez-le 8 min jusqu'à ce qu'il soit bien doré. Ajoutez cannelle, ras el hanout, sel, poivre et les pignons dorés à sec 3 min.",
+      "Préchauffez le four à 190 °C. Beurrez un plat de 25 × 30 cm. Étalez la moitié de la pâte au fond en pressant avec les mains mouillées sur 1 cm d'épaisseur.",
+      "Répartissez la farce, puis couvrez du reste de pâte en l'aplatissant par morceaux entre vos paumes mouillées et en soudant les raccords.",
+      "Découpez en losanges jusqu'au fond avec un couteau, enfoncez un pignon au centre si vous le souhaitez, et arrosez de 45 g de beurre fondu.",
+      "Enfournez 40 à 45 min, jusqu'à une surface brun doré et croustillante sur les bords. Servez avec le yaourt mélangé au concombre en petits dés."
+    ],
+    "tags": [
+      "week-end",
+      "four",
+      "familial",
+      "batch cooking",
+      "calorique"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Se congèle découpé en parts, cru ou cuit. Excellent froid le lendemain en lunch box."
+  },
+  {
+    "id": "ori-sayadieh-cabillaud",
+    "name": "Sayadieh, riz du pêcheur au cabillaud",
+    "description": "Riz brun ambré cuit dans un fumet parfumé aux oignons caramélisés et au cumin, coiffé de cabillaud fondant, de pignons et d'amandes, avec une sauce tahini citronnée.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 20,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "cabillaud",
+        "qty": 800,
+        "unit": "g",
+        "note": "dos, ou merlu, en 4 pavés"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 300,
+        "unit": "g",
+        "note": "basmati rincé"
+      },
+      {
+        "id": "oignon",
+        "qty": 4,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 650,
+        "unit": "ml"
+      },
+      {
+        "id": "pignons",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "amande",
+        "qty": 30,
+        "unit": "g",
+        "note": "effilées"
+      },
+      {
+        "id": "tahini",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, faites revenir les oignons dans 4 c. à soupe d'huile à feu moyen 20 à 25 min en remuant, jusqu'à ce qu'ils soient brun acajou (pas noirs). Retirez-en un quart pour la garniture.",
+      "Ajoutez le cumin et la cannelle, remuez 30 s, puis versez le fumet. Mixez grossièrement si vous voulez un riz bien brun, puis portez à ébullition.",
+      "Ajoutez le riz, salez, couvrez et cuisez 12 min à feu très doux. Préchauffez le four à 200 °C.",
+      "Salez, poivrez les pavés de cabillaud et posez-les sur le riz. Enfournez la cocotte couverte 15 min : le poisson doit être nacré et s'effeuiller sous la fourchette.",
+      "Pendant ce temps, dorez pignons et amandes 3 min dans une poêle avec le reste d'huile. Fouettez le tahini avec le jus de citron, l'ail râpé, une pincée de sel et 4 c. à soupe d'eau.",
+      "Servez le riz et le poisson parsemés des oignons réservés, des pignons, des amandes et du persil, avec la sauce tahini à part."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "réconfortant",
+      "four",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "iode",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "ori-kibdeh-foie-agneau-pita",
+    "name": "Kibdeh, foie d'agneau à l'ail et à la grenade",
+    "description": "Dés de foie d'agneau saisis minute à l'ail, au piment et à la coriandre, déglacés au citron et à la grenade, à rouler dans du pain libanais avec un yaourt frais.",
+    "emoji": "🫀",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 10,
+    "cookTime": 8,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-agneau",
+        "qty": 300,
+        "unit": "g",
+        "note": "en dés de 2 cm, parés"
+      },
+      {
+        "id": "ail",
+        "qty": 5,
+        "unit": "gousse",
+        "note": "émincées"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "vert, émincé"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "grenade",
+        "qty": 60,
+        "unit": "g",
+        "note": "graines (ou 1 c. à soupe de mélasse de grenade)"
+      },
+      {
+        "id": "coriandre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "radis",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Épongez soigneusement les dés de foie avec du papier absorbant (ils doivent être secs pour saisir). Ne salez pas encore.",
+      "Coupez tomates et radis, mélangez-les avec la menthe ciselée et une pincée de sel. Réchauffez les pains 1 min au four à 200 °C, enveloppés dans un torchon.",
+      "Chauffez l'huile dans une grande poêle à feu très vif. Saisissez le foie en une seule couche 2 min sans y toucher, puis retournez et cuisez 1 min.",
+      "Ajoutez l'ail, le piment et le cumin, sautez 1 min : l'ail doit blondir sans brûler, et le foie rester rosé à cœur.",
+      "Hors du feu, arrosez du jus de citron, ajoutez la grenade et la coriandre hachée, salez et poivrez.",
+      "Servez aussitôt avec les pains chauds, le yaourt et la salade de tomates-radis : chacun garnit son pain."
+    ],
+    "tags": [
+      "rapide",
+      "abats",
+      "une poêle",
+      "riche en protéines",
+      "économique"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "umami"
+    ],
+    "tips": "Un foie trop cuit devient sableux : retirez-le du feu dès qu'il est ferme en surface mais encore rose à l'intérieur."
+  },
+  {
+    "id": "ori-lahm-bi-ajeen-agneau",
+    "name": "Lahm bi ajeen express, pizzas libanaises à l'agneau",
+    "description": "Pains libanais couverts d'une farce crue d'agneau haché, tomate, oignon, sept épices et pignons, cuits très chaud au four jusqu'à ce que les bords croustillent, avec yaourt et salade de concombre à la menthe.",
+    "emoji": "🫓",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 15,
+    "cookTime": 12,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pain-pita",
+        "qty": 3,
+        "unit": "piece",
+        "note": "pains libanais épais"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "1 très finement hachée et égouttée, 1 pour la salade"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "haché très fin"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou sept épices libanaises"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 0.5,
+        "unit": "cac",
+        "note": "ou piment d'Alep"
+      },
+      {
+        "id": "pignons",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 250 °C (ou au maximum) avec une plaque à l'intérieur.",
+      "Mélangez à la fourchette l'agneau cru, une tomate hachée bien égouttée, l'oignon, le concentré, les épices, le piment, le persil haché, ¾ c. à café de sel et du poivre : la farce doit être souple et tartinable.",
+      "Étalez la farce en couche fine (5 mm) sur les pains jusqu'aux bords, parsemez de pignons et arrosez d'un filet d'huile.",
+      "Posez les pains sur la plaque brûlante et enfournez 10 à 12 min : la viande doit être cuite et légèrement grillée, les bords du pain croustillants.",
+      "Pendant ce temps, coupez le concombre et la seconde tomate en dés, ajoutez la menthe ciselée, le jus de citron et une pincée de sel.",
+      "Coupez les lahm bi ajeen en parts, servez avec le yaourt et la salade : on roule chaque part autour d'une cuillerée de yaourt."
+    ],
+    "tags": [
+      "rapide",
+      "four",
+      "familial",
+      "économique",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "umami",
+      "lacte"
+    ],
+    "tips": "La farce se prépare la veille ; elle se garde 24 h au frais, filmée au contact."
+  },
+  {
+    "id": "ori-fattoush-poulet-grille",
+    "name": "Fattoush au poulet grillé et pita croustillante",
+    "description": "La salade libanaise croquante — romaine, tomates, concombre, radis, menthe, sumac et éclats de pita grillée — avec des hauts de cuisse de poulet marinés et grillés.",
+    "emoji": "🥗",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 20,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "laitue",
+        "qty": 175,
+        "unit": "g",
+        "note": "romaine"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "radis",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sumac",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "grenade",
+        "qty": 60,
+        "unit": "g",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Frottez le poulet avec 1 c. à soupe d'huile, le paprika, la moitié du sumac, sel et poivre.",
+      "Préchauffez le four à 200 °C. Coupez les pains en carrés de 3 cm, arrosez-les d'1 c. à soupe d'huile et enfournez 8 min, jusqu'à ce qu'ils soient dorés et cassants.",
+      "Grillez le poulet sur une poêle-gril ou une plancha très chaude 5 à 6 min par face, jusqu'à de belles marques et un jus clair. Laissez reposer 3 min puis tranchez.",
+      "Vinaigrette : fouettez le jus du citron, l'ail râpé, le reste du sumac, 2 c. à soupe d'huile, sel et poivre.",
+      "Coupez la romaine en lanières, tomates et concombre en dés, radis en rondelles, oignons nouveaux émincés ; ajoutez menthe et persil ciselés.",
+      "Au dernier moment, mélangez légumes, vinaigrette et pita croustillante. Disposez le poulet tranché dessus et parsemez de grenade."
+    ],
+    "tags": [
+      "rapide",
+      "léger",
+      "riche en protéines",
+      "barbecue",
+      "familial"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "acidule",
+      "frais",
+      "grille"
+    ],
+    "tips": "En lunch box, transportez la pita grillée à part et mélangez au moment de manger pour qu'elle reste croustillante."
+  },
+  {
+    "id": "ori-taboule-kefta-boeuf",
+    "name": "Taboulé libanais et keftas de bœuf grillées",
+    "description": "Un vrai taboulé très vert, persil, menthe, tomate et un peu de boulgour, servi avec des keftas de bœuf au cumin grillées et une sauce yaourt à l'ail.",
+    "emoji": "🌿",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 20,
+    "cookTime": 10,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "râpé"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 0.5,
+        "unit": "cac",
+        "note": "ou piment d'Alep"
+      },
+      {
+        "id": "persil",
+        "qty": 2,
+        "unit": "botte",
+        "note": "plat, finement ciselé"
+      },
+      {
+        "id": "menthe",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "boulgour",
+        "qty": 100,
+        "unit": "g",
+        "note": "fin"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en petits dés"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Couvrez le boulgour de 150 ml d'eau bouillante salée, couvrez et laissez gonfler 15 min, puis égrainez à la fourchette.",
+      "Mélangez le bœuf, l'oignon râpé, le cumin, la cannelle, le piment, 1 c. à café de sel et du poivre. Formez 8 keftas allongées autour de brochettes ou en cigares.",
+      "Ciselez très finement le persil et la menthe (au couteau, pas au mixeur), coupez les tomates en petits dés et émincez les oignons nouveaux.",
+      "Mélangez herbes, tomates, oignons et boulgour avec le jus de 1,5 citron, 2 c. à soupe d'huile, sel et poivre.",
+      "Badigeonnez les keftas du reste d'huile et grillez-les sur une poêle-gril très chaude 8 à 10 min en les tournant 3 fois : elles doivent être bien colorées et juste rosées à cœur.",
+      "Mélangez le yaourt avec l'ail râpé, le jus du demi-citron restant et une pincée de sel. Servez les keftas sur le taboulé avec la sauce."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "lunch box",
+      "préparation à l’avance"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "herbace",
+      "acidule",
+      "grille"
+    ],
+    "tips": "Le taboulé se garde 2 jours au frais ; ajoutez les tomates le jour même si vous le préparez à l'avance."
+  },
+  {
+    "id": "ori-bowl-shawarma-dinde",
+    "name": "Bowl shawarma de dinde, riz au curcuma",
+    "description": "Un bowl de lunch box : dinde épicée façon shawarma rôtie au four, riz au curcuma, crudités croquantes, pickles roses et sauce tahini-yaourt.",
+    "emoji": "🥙",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "dinde-escalope",
+        "qty": 400,
+        "unit": "g",
+        "note": "en lanières"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "cac",
+        "note": "moitié dinde, moitié riz"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 140,
+        "unit": "g",
+        "note": "basmati"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 120,
+        "unit": "g",
+        "note": "chou rouge ou blanc, très finement émincé"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "cornichon",
+        "qty": 50,
+        "unit": "g",
+        "note": "pickles de navet roses"
+      },
+      {
+        "id": "tahini",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 230 °C (chaleur tournante). Mélangez la dinde avec le cumin, le paprika, la moitié du curcuma, la cannelle, 2 c. à soupe d'huile, le jus d'un demi-citron, sel et poivre.",
+      "Rincez le riz, mettez-le dans une casserole avec le reste de curcuma, 1,5 fois son volume d'eau et une pincée de sel. Portez à ébullition, couvrez et cuisez 12 min à feu très doux.",
+      "Étalez la dinde en une seule couche sur une plaque et enfournez 10 à 12 min, jusqu'à ce que les bords soient grillés et le centre juste cuit (blanc et juteux).",
+      "Massez le chou avec une pincée de sel, le reste d'huile et un filet de citron 1 min pour l'assouplir. Coupez concombre, tomates cerises et oignon rouge.",
+      "Sauce : fouettez tahini, yaourt, ail râpé, le jus restant du citron et 2 c. à soupe d'eau.",
+      "Montez les bowls : riz, dinde, crudités et pickles en sections, sauce par-dessus et persil ciselé."
+    ],
+    "tags": [
+      "rapide",
+      "lunch box",
+      "riche en protéines",
+      "four",
+      "préparation à l’avance"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "frais",
+      "acidule"
+    ],
+    "tips": "Se prépare en 2 boîtes la veille : gardez la sauce dans un petit pot à part."
+  },
+  {
+    "id": "ori-iskender-agneau",
+    "name": "Iskender kebab d'agneau, yaourt et beurre au paprika",
+    "description": "Le classique de Bursa : fines tranches de gigot d'agneau marinées et saisies, posées sur des cubes de pide, nappées de sauce tomate, de yaourt à l'ail et de beurre noisette au piment.",
+    "emoji": "🍖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 30,
+    "cookTime": 25,
+    "restTime": 240,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-gigot",
+        "qty": 800,
+        "unit": "g",
+        "note": "désossé, tranché très finement (3 mm)"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpé, pour son jus"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 4,
+        "unit": "piece",
+        "note": "pide ou pain plat, en cubes"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece",
+        "note": "idéalement poivrons verts longs"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Pressez l'oignon râpé dans un torchon pour en récupérer le jus. Mélangez ce jus avec l'origan, le cumin, l'huile et du poivre, enrobez les tranches d'agneau et laissez mariner 4 h au frais (ou une nuit).",
+      "Sauce tomate : faites fondre 20 g de beurre, ajoutez le concentré, remuez 1 min, puis les tomates concassées, sel et poivre. Laissez réduire 15 min à feu doux.",
+      "Préchauffez le four à 200 °C. Disposez les cubes de pain sur une plaque, arrosez-les de 20 g de beurre fondu et enfournez 6 min. Mettez les poivrons entiers sur une autre plaque 15 min, jusqu'à ce que la peau cloque.",
+      "Mélangez le yaourt avec l'ail râpé et une pincée de sel.",
+      "Salez la viande. Saisissez-la par petites fournées dans une poêle en fonte très chaude, 1 min de chaque côté, juste le temps qu'elle colore.",
+      "Dans une petite casserole, faites mousser les 40 g de beurre restants avec le paprika et le piment 1 min à feu moyen, jusqu'à ce qu'il soit rouge et parfumé.",
+      "Dressez dans chaque assiette : pain grillé, quelques cuillerées de sauce tomate, l'agneau, le yaourt sur le côté et les poivrons. Versez le beurre pimenté grésillant sur la viande devant les convives."
+    ],
+    "tags": [
+      "week-end",
+      "préparation à l’avance",
+      "riche en protéines",
+      "calorique",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "lacte",
+      "umami",
+      "piquant"
+    ],
+    "tips": "Pour trancher finement le gigot, placez-le 1 h au congélateur avant de le couper au couteau bien aiguisé."
+  },
+  {
+    "id": "ori-adana-kebab-lavash",
+    "name": "Adana kebab, lavash et salade d'oignons au sumac",
+    "description": "Longues brochettes d'agneau haché au poivron et piment, grillées au barbecue, servies dans du pain plat avec tomates et piments grillés et un oignon rouge au sumac et persil.",
+    "emoji": "🔥",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 20,
+    "cookTime": 15,
+    "restTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-hache",
+        "qty": 400,
+        "unit": "g",
+        "note": "bien gras, idéalement haché au couteau"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "très finement haché et pressé"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 2,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en fines demi-lunes"
+      },
+      {
+        "id": "sumac",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 2,
+        "unit": "piece",
+        "note": "verts doux"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 2,
+        "unit": "piece",
+        "note": "lavash ou pain plat fin"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Pétrissez énergiquement l'agneau avec le poivron pressé, le piment, le paprika, le cumin, l'ail râpé et 1 c. à café de sel pendant 3 à 4 min, jusqu'à ce que la viande soit collante. Réfrigérez 30 min.",
+      "Allumez le barbecue (ou un gril en fonte) : les braises doivent être recouvertes de cendre blanche.",
+      "Mains mouillées, moulez la viande en longs boudins plats de 2 cm d'épaisseur autour de brochettes plates, en pinçant la surface avec les doigts pour faire des crêtes.",
+      "Mélangez l'oignon rouge avec le sumac, le persil haché, le jus de citron et une pincée de sel.",
+      "Grillez tomates et piments entiers 8 à 10 min jusqu'à ce que la peau noircisse par endroits. Grillez les brochettes 6 à 8 min en les tournant toutes les 2 min : elles doivent être croûtées et juste cuites à cœur.",
+      "Passez les pains 20 s sur la grille, posez-les sur les brochettes pour qu'ils s'imprègnent du jus, puis servez avec les légumes grillés et l'oignon au sumac."
+    ],
+    "tags": [
+      "barbecue",
+      "riche en protéines",
+      "calorique",
+      "prise de masse"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "piquant",
+      "grille",
+      "fume"
+    ],
+    "tips": "La graisse est le secret de l'adana : un haché trop maigre glisse des brochettes et se dessèche."
+  },
+  {
+    "id": "ori-hunkar-begendi",
+    "name": "Hünkar beğendi, agneau sur crème d'aubergine fumée",
+    "description": "« Le délice du sultan » : un ragoût d'agneau à la tomate servi sur une béchamel onctueuse d'aubergines grillées au fromage, avec un pilaf de riz au beurre.",
+    "emoji": "🍆",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 30,
+    "cookTime": 100,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 700,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "aubergine",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 70,
+        "unit": "g",
+        "note": "20 g ragoût, 35 g béchamel, 15 g riz"
+      },
+      {
+        "id": "farine",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 350,
+        "unit": "ml"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "ou kaşar râpé"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, faites dorer l'agneau dans 20 g de beurre à feu vif 6 à 8 min. Ajoutez les oignons hachés et l'ail, faites suer 5 min, puis le concentré, les tomates râpées, le thym et 250 ml d'eau chaude. Salez, couvrez et laissez mijoter 1 h 30 à feu doux : la viande doit s'écraser facilement.",
+      "Grillez les aubergines entières directement sur la flamme du gaz, au barbecue ou sous le gril du four (position maximale) 15 à 20 min en les tournant, jusqu'à ce que la peau soit noire et la chair complètement affaissée.",
+      "Ouvrez-les, récupérez la chair à la cuillère, arrosez-la du jus de citron et hachez-la au couteau. Laissez égoutter 10 min dans une passoire.",
+      "Béchamel : faites fondre 35 g de beurre, ajoutez la farine et remuez 2 min à feu moyen. Versez le lait chaud en fouettant et cuisez 5 min jusqu'à ce que la sauce nappe la cuillère.",
+      "Incorporez la chair d'aubergine, le fromage râpé, la muscade, sel et poivre. Laissez cuire 5 min en remuant : la crème doit être épaisse et fumée.",
+      "Pilaf : rincez le riz, faites-le nacrer dans 15 g de beurre, ajoutez 250 ml d'eau salée, couvrez et cuisez 12 min à feu très doux, puis 5 min de repos.",
+      "Étalez la crème d'aubergine dans les assiettes, creusez un puits et versez-y le ragoût d'agneau. Servez avec le pilaf."
+    ],
+    "tags": [
+      "week-end",
+      "mijoté",
+      "réconfortant",
+      "calorique",
+      "familial"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "fume",
+      "cremeux",
+      "umami"
+    ],
+    "tips": "Le ragoût est encore meilleur préparé la veille ; ne faites que la crème d'aubergine au dernier moment."
+  },
+  {
+    "id": "ori-karniyarik-pilav",
+    "name": "Karnıyarık, aubergines farcies au bœuf",
+    "description": "Aubergines rôties fendues en deux et gonflées d'une farce de bœuf haché, tomate et poivron, gratinées au four et servies avec un pilaf au beurre et du yaourt.",
+    "emoji": "🍆",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 20,
+    "cookTime": 45,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "aubergine",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "boeuf-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "1 en dés, 1 en rondelles"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ou poivron vert, en dés"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Épluchez les aubergines en bandes alternées (une bande pelée, une non), badigeonnez-les de 2 c. à soupe d'huile, salez et rôtissez-les entières 20 min, jusqu'à ce qu'elles soient souples et dorées.",
+      "Pendant ce temps, faites revenir l'oignon dans le reste d'huile 4 min à feu moyen, ajoutez le bœuf et émiettez-le 6 min jusqu'à ce qu'il soit doré. Ajoutez le poivron, l'ail, la tomate en dés, le concentré, le paprika et le piment, et laissez cuire 5 min. Salez, poivrez, ajoutez le persil.",
+      "Fendez les aubergines sur la longueur sans les ouvrir complètement et écartez la chair avec une cuillère pour former une barque.",
+      "Remplissez-les généreusement de farce, posez une rondelle de tomate dessus et versez 100 ml d'eau chaude au fond du plat.",
+      "Baissez le four à 190 °C et enfournez 20 min, jusqu'à ce que le dessus soit grillé et le jus bouillonnant.",
+      "Pendant la cuisson, nacrez le riz rincé dans le beurre 1 min, ajoutez 1,5 fois son volume d'eau salée, couvrez et cuisez 12 min à feu très doux. Servez les aubergines avec le pilaf et le yaourt."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "lacte"
+    ]
+  },
+  {
+    "id": "ori-manti-yaourt-beurre-pimente",
+    "name": "Mantı simplifiés, yaourt à l'ail et beurre pimenté",
+    "description": "Petits raviolis turcs à l'agneau, pliés en baluchons, pochés puis noyés sous un yaourt à l'ail et un beurre mousseux au piment et à la menthe séchée.",
+    "emoji": "🥟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 60,
+    "cookTime": 15,
+    "restTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "farine",
+        "qty": 260,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "eau",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 400,
+        "unit": "g",
+        "note": "ou mi-agneau mi-bœuf"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpé et pressé"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g",
+        "note": "très finement ciselé"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 500,
+        "unit": "g",
+        "note": "à température ambiante"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 2,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "menthe",
+        "qty": 3,
+        "unit": "g",
+        "note": "séchée"
+      },
+      {
+        "id": "sumac",
+        "qty": 1,
+        "unit": "cac",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Pâte : mélangez la farine, l'œuf, l'eau et 1 c. à café de sel, pétrissez 8 min jusqu'à une pâte lisse et ferme. Couvrez et laissez reposer 30 min.",
+      "Farce : mélangez l'agneau, l'oignon pressé, le persil, ½ c. à café de sel et du poivre.",
+      "Mélangez le yaourt avec l'ail râpé et une pincée de sel ; laissez-le à température ambiante.",
+      "Étalez la pâte en 2 fois, très finement (1 mm), sur un plan fariné. Coupez des carrés de 4 cm, déposez une noisette de farce au centre et pincez les 4 coins ensemble pour former un petit baluchon.",
+      "Plongez les mantı dans une grande casserole d'eau bouillante salée et cuisez 8 à 10 min après la remontée à la surface : la pâte doit être tendre et la farce cuite.",
+      "Pendant ce temps, faites mousser le beurre à feu moyen, ajoutez le concentré de tomate, le piment et la menthe, remuez 1 min jusqu'à ce que le beurre soit rouge vif.",
+      "Égouttez les mantı, répartissez-les dans des assiettes creuses, nappez de yaourt à l'ail puis arrosez de beurre pimenté. Saupoudrez de sumac."
+    ],
+    "tags": [
+      "week-end",
+      "réconfortant",
+      "familial",
+      "calorique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "lacte",
+      "piquant",
+      "reconfortant"
+    ],
+    "tips": "Congelez les mantı crus à plat sur une plaque farinée, puis en sachet : ils se cuisent directement surgelés (+3 min)."
+  },
+  {
+    "id": "ori-etli-kuru-fasulye-pilav",
+    "name": "Etli kuru fasulye, bœuf mijoté aux haricots blancs",
+    "description": "Le plat de cantine préféré des Turcs : bœuf fondant mijoté dans une sauce tomate-poivron au beurre et au piment, avec quelques haricots blancs, servi sur un pilaf de riz au beurre.",
+    "emoji": "🫘",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 20,
+    "cookTime": 120,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-paleron",
+        "qty": 600,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 500,
+        "unit": "g",
+        "note": "cuits, égouttés"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "hachés"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ou poivron vert, en dés"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas",
+        "note": "ou biber salçası"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g",
+        "note": "30 g ragoût + 20 g pilaf"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 800,
+        "unit": "ml",
+        "note": "chaud"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, chauffez l'huile et 15 g de beurre à feu vif. Saisissez le bœuf en 2 fournées 4 min chacune, jusqu'à une croûte brune. Réservez.",
+      "Baissez à feu moyen, faites suer oignons et poivron 6 min dans le reste du beurre de cuisson (15 g). Ajoutez le concentré, le paprika et le piment, remuez 1 min jusqu'à ce que le concentré fonce légèrement.",
+      "Remettez la viande, ajoutez les tomates râpées et le bouillon chaud. Portez à frémissement, couvrez et laissez mijoter 1 h 30 à feu doux : le bœuf doit se couper à la cuillère.",
+      "Ajoutez les haricots blancs, salez, poivrez et poursuivez 20 min à découvert : la sauce doit réduire et napper.",
+      "Pendant ce temps, rincez le riz, nacrez-le 1 min dans 20 g de beurre, ajoutez 420 ml d'eau salée, couvrez et cuisez 12 min à feu très doux, puis laissez gonfler 10 min.",
+      "Servez le ragoût à côté du pilaf, parsemé de persil, avec des cornichons ou un piment vert si vous aimez."
+    ],
+    "tags": [
+      "mijoté",
+      "week-end",
+      "batch cooking",
+      "réconfortant",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "epice"
+    ],
+    "tips": "Encore meilleur réchauffé le lendemain ; se congèle 3 mois. Avec des haricots secs, faites-les tremper une nuit et cuire 1 h avant."
+  },
+  {
+    "id": "ori-tavuk-sis-bulgur-pilavi",
+    "name": "Tavuk şiş et pilaf de boulgour à la tomate",
+    "description": "Brochettes de hauts de cuisse de poulet marinées au yaourt et à la pâte de piment, grillées avec poivrons et oignons, sur un pilaf de boulgour à la tomate et une salade çoban.",
+    "emoji": "🍢",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 15,
+    "cookTime": 15,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 450,
+        "unit": "g",
+        "note": "en morceaux de 4 cm"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas",
+        "note": "1 marinade, 1 pilaf (ou biber salçası)"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en carrés"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "boulgour",
+        "qty": 120,
+        "unit": "g",
+        "note": "gros"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez le yaourt, 1 c. à soupe de concentré, le piment, le cumin, l'ail écrasé, 1 c. à soupe d'huile, sel et poivre. Enrobez le poulet et laissez mariner 1 h au frais.",
+      "Pilaf : faites fondre le beurre, ajoutez le reste de concentré et remuez 1 min. Ajoutez le boulgour, nacrez 1 min, versez le bouillon chaud, salez. Couvrez et cuisez 12 min à feu doux, puis laissez gonfler 10 min hors du feu avec un torchon sous le couvercle.",
+      "Enfilez sur des brochettes en alternant poulet, poivron et oignon. Badigeonnez du reste d'huile.",
+      "Grillez au barbecue ou sur une poêle-gril bien chaude 12 à 14 min en tournant toutes les 3 min : le poulet doit être bien marqué et le jus clair.",
+      "Salade çoban : coupez tomates et concombre en petits dés, ajoutez le persil, une pincée de sel et un filet d'huile.",
+      "Servez les brochettes sur le pilaf avec la salade."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "epice",
+      "umami"
+    ]
+  },
+  {
+    "id": "ori-levrek-izgara-roquette",
+    "name": "Levrek ızgara, bar grillé et pommes de terre au citron",
+    "description": "Filets de bar grillés côté peau jusqu'à ce qu'elle craque, servis avec des pommes de terre écrasées à l'huile d'olive et au citron et une salade de roquette, oignon rouge et sumac.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "bar",
+        "qty": 400,
+        "unit": "g",
+        "note": "4 filets avec la peau (ou 2 bars entiers de 400 g)"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "à chair ferme"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sumac",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les pommes de terre en morceaux de 4 cm et cuisez-les 15 à 18 min dans l'eau bouillante salée, jusqu'à ce qu'un couteau s'y enfonce sans résistance.",
+      "Pendant ce temps, entaillez légèrement la peau des filets 3 fois, séchez-les bien, salez et badigeonnez-les d'1 c. à soupe d'huile.",
+      "Préparez la salade : roquette, oignon rouge en fines lamelles, tomates en quartiers, sumac, sel et 1 c. à soupe d'huile.",
+      "Chauffez une poêle-gril ou une plancha à feu vif. Posez les filets côté peau, pressez-les 10 s avec une spatule et cuisez 4 min sans y toucher, jusqu'à ce que la chair soit opaque aux trois quarts. Retournez 1 min.",
+      "Égouttez les pommes de terre, écrasez-les grossièrement à la fourchette avec le beurre, 2 c. à soupe d'huile, l'ail râpé, le zeste et la moitié du jus de citron, le persil, sel et poivre.",
+      "Servez le bar peau croustillante vers le haut, avec les pommes de terre, la salade et des quartiers de citron."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "iode",
+      "acidule",
+      "grille"
+    ],
+    "tips": "Au barbecue, grillez les bars entiers 7 à 8 min par face dans une grille à poisson."
+  },
+  {
+    "id": "ori-arnavut-cigeri",
+    "name": "Arnavut ciğeri, foie d'agneau à l'albanaise",
+    "description": "Petits dés de foie d'agneau farinés au cumin et au piment, frits minute dans l'huile d'olive, servis avec des pommes de terre croustillantes et une salade d'oignon rouge, persil et sumac.",
+    "emoji": "🫀",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-agneau",
+        "qty": 300,
+        "unit": "g",
+        "note": "en dés de 1,5 cm, parés"
+      },
+      {
+        "id": "farine",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en dés de 1,5 cm"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en fines demi-lunes"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sumac",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 1,
+        "unit": "piece",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez les demi-lunes d'oignon à l'eau froide, essorez, puis mélangez-les avec le persil haché, le sumac, le jus de citron et une pincée de sel.",
+      "Chauffez 3 c. à soupe d'huile dans une grande poêle à feu moyen-vif et faites dorer les dés de pommes de terre 15 min en remuant toutes les 3 min, jusqu'à ce qu'ils soient croustillants. Salez, réservez au chaud.",
+      "Rincez le foie à l'eau froide, égouttez-le dans une passoire (il doit rester juste humide) puis mélangez la farine, le cumin et le piment, et enrobez-en les dés en secouant l'excédent.",
+      "Ajoutez le reste d'huile dans la poêle à feu vif. Quand elle est très chaude, jetez-y le foie en une couche et sautez 3 min : les dés doivent être croustillants dehors et encore rosés dedans.",
+      "Salez le foie hors du feu, mélangez-le aux pommes de terre et servez aussitôt avec la salade d'oignon au sumac, la tomate en quartiers et le pain."
+    ],
+    "tags": [
+      "rapide",
+      "abats",
+      "économique",
+      "une poêle",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "friture-legere",
+    "flavors": [
+      "epice",
+      "acidule",
+      "umami"
+    ],
+    "tips": "Ne farinez le foie qu'au dernier moment, sinon la farine détrempe et la croûte ne croustille pas."
+  },
+  {
+    "id": "ori-kisir-brochettes-agneau",
+    "name": "Kısır et brochettes d'agneau grillées",
+    "description": "Salade turque de boulgour fin à la tomate, au piment, à la grenade et aux herbes, servie avec des brochettes de gigot d'agneau marinées à l'origan, parfaite tiède ou froide.",
+    "emoji": "🥗",
+    "category": "salade-composee",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 20,
+    "cookTime": 10,
+    "restTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-gigot",
+        "qty": 400,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "boulgour",
+        "qty": 120,
+        "unit": "g",
+        "note": "fin"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas",
+        "note": "ou biber salçası"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou pul biber"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "concombre",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "grenade",
+        "qty": 60,
+        "unit": "g",
+        "note": "graines (ou mélasse de grenade)"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez l'agneau avec l'origan, le cumin, 1 c. à soupe d'huile et du poivre. Laissez mariner 30 min à température ambiante.",
+      "Versez 180 ml d'eau bouillante salée sur le boulgour, couvrez et laissez gonfler 15 min. Incorporez aussitôt le concentré de tomate et le piment pendant qu'il est chaud : il doit devenir uniformément rouge.",
+      "Coupez tomates et concombre en petits dés, émincez les oignons nouveaux, ciselez persil et menthe.",
+      "Mélangez le boulgour refroidi avec les légumes, les herbes, le jus du citron, 2 c. à soupe d'huile et la grenade. Salez et goûtez : la salade doit être acidulée et légèrement piquante.",
+      "Enfilez l'agneau sur des brochettes, salez et grillez au barbecue ou sur une poêle-gril très chaude 6 à 8 min en tournant 4 fois, pour une viande dorée et rosée à cœur.",
+      "Servez les brochettes sur le kısır, arrosées du reste d'huile."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "lunch box",
+      "préparation à l’avance",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "grille"
+    ],
+    "tips": "Le kısır est meilleur après 1 h au frais : préparez-le le matin, grillez l'agneau au dernier moment."
+  }
+]

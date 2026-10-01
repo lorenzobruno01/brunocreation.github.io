@@ -1,0 +1,2595 @@
+[
+  {
+    "id": "pdju-bol-kefir-pomme-kasha-grillee",
+    "name": "Bol de kéfir, pomme râpée et kasha grillée au miel",
+    "description": "Un grand bol de kéfir de lait frais, une pomme croquante râpée, du sarrasin grillé façon kasha qui croustille et un filet de miel. Acidulé, croquant, prêt en 5 minutes.",
+    "emoji": "🥣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 5,
+    "cookTime": 4,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "kefir",
+        "qty": 500,
+        "unit": "ml",
+        "note": "bien frais"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g",
+        "note": "pour épaissir"
+      },
+      {
+        "id": "sarrasin",
+        "qty": 60,
+        "unit": "g",
+        "note": "graines décortiquées"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "type reinette, râpée avec la peau"
+      },
+      {
+        "id": "noix",
+        "qty": 30,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Faites fondre le beurre dans une petite poêle à feu moyen. Ajoutez les graines de sarrasin et faites-les griller 3 à 4 min en remuant sans cesse, jusqu'à ce qu'elles brunissent légèrement et sentent la noisette. Débarrassez sur une assiette.",
+      "Fouettez le kéfir avec le yaourt grec et la cannelle dans un saladier, 20 secondes, pour obtenir une texture de yaourt à boire épais.",
+      "Râpez les pommes avec la peau à la grosse râpe, directement au-dessus du saladier, et mélangez aussitôt pour qu'elles ne noircissent pas.",
+      "Répartissez dans deux grands bols. Parsemez du sarrasin grillé encore tiède et des noix concassées.",
+      "Arrosez chaque bol d'une cuillère à soupe de miel et servez immédiatement, pendant que le sarrasin croustille."
+    ],
+    "tags": [
+      "rapide",
+      "fermenté",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "acidule",
+      "lacte",
+      "grille"
+    ],
+    "tips": "Grillez 300 g de sarrasin d'un coup : il se garde 3 semaines dans un bocal hermétique."
+  },
+  {
+    "id": "pdju-smoothie-kefir-banane-avoine-dattes",
+    "name": "Smoothie épais kéfir, banane, avoine et dattes",
+    "description": "Un smoothie à boire ou à la cuillère : kéfir, banane bien mûre, flocons d'avoine, dattes et une pointe de cardamome. Un vrai repas liquide pour les matins pressés.",
+    "emoji": "🥤",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 5,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "kefir",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "banane",
+        "qty": 2,
+        "unit": "piece",
+        "note": "bien mûres, idéalement congelées en rondelles"
+      },
+      {
+        "id": "flocons-avoine",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "id": "datte",
+        "qty": 4,
+        "unit": "piece",
+        "note": "dénoyautées"
+      },
+      {
+        "id": "skyr",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "noisette",
+        "qty": 25,
+        "unit": "g",
+        "note": "torréfiées"
+      },
+      {
+        "id": "cardamome",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Mettez les flocons d'avoine, les noisettes et les dattes dénoyautées dans le bol du blender avec 150 ml de kéfir. Laissez gonfler 3 min pour que l'avoine se mixe sans grumeaux.",
+      "Ajoutez les bananes en rondelles, le skyr, le reste du kéfir et la cardamome.",
+      "Mixez 60 secondes à pleine puissance, jusqu'à ce qu'il ne reste aucun morceau de datte visible et que le mélange nappe une cuillère.",
+      "Goûtez : si les bananes étaient peu mûres, ajoutez une datte de plus et mixez à nouveau 15 secondes.",
+      "Versez dans deux grands verres et buvez aussitôt (le smoothie épaissit en reposant ; détendez-le d'un trait de kéfir si besoin)."
+    ],
+    "tags": [
+      "rapide",
+      "prise de masse",
+      "fermenté",
+      "sportif",
+      "riche en glucides"
+    ],
+    "seasons": [],
+    "technique": "mixe",
+    "flavors": [
+      "lacte",
+      "sucre",
+      "cremeux"
+    ],
+    "tips": "Bananes congelées = texture de milk-shake glacé. Une pincée de cannelle remplace la cardamome."
+  },
+  {
+    "id": "pdju-overnight-oats-kefir-myrtilles-citron",
+    "name": "Overnight oats au kéfir, myrtilles et zeste de citron",
+    "description": "Des flocons d'avoine trempés toute la nuit dans le kéfir et le fromage blanc, avec des myrtilles qui éclatent, du lin et du zeste de citron. Frais, acidulé, prêt au réveil.",
+    "emoji": "🫐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 8,
+    "cookTime": 0,
+    "restTime": 480,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "flocons-avoine",
+        "qty": 100,
+        "unit": "g",
+        "note": "gros flocons"
+      },
+      {
+        "id": "kefir",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 250,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "graines-lin",
+        "qty": 15,
+        "unit": "g",
+        "note": "moulues"
+      },
+      {
+        "id": "myrtille",
+        "qty": 200,
+        "unit": "g",
+        "note": "fraîches ou surgelées"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "zeste et 1 c. à soupe de jus"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 20,
+        "unit": "g",
+        "note": "pour servir"
+      }
+    ],
+    "steps": [
+      "La veille au soir, mélangez dans un saladier l'avoine, le lin moulu, le kéfir, le fromage blanc, le miel, le zeste et le jus de citron.",
+      "Incorporez délicatement 150 g de myrtilles (si elles sont surgelées, inutile de les décongeler : elles colorent joliment la préparation).",
+      "Répartissez dans deux bocaux de 500 ml, fermez et placez au réfrigérateur au moins 8 h.",
+      "Le matin, la texture doit être épaisse comme un riz au lait. Si elle est trop compacte, ajoutez 2 c. à soupe de kéfir et remuez.",
+      "Garnissez du reste des myrtilles et des graines de courge grillées à sec 2 min à la poêle, puis dégustez froid."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "fermenté",
+      "repas froid",
+      "lunch box"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "acidule",
+      "fruite",
+      "frais"
+    ],
+    "tips": "Se garde 48 h au frais. En hiver, remplacez les myrtilles par une poire en dés et une pincée de gingembre."
+  },
+  {
+    "id": "pdju-skyr-mangue-kiwi-citron-vert-coco",
+    "name": "Skyr à la mangue, kiwi, citron vert et coco grillée",
+    "description": "Un bol de skyr épais et frais, surmonté de mangue juteuse, de kiwi, de noix de coco grillée et d'un zeste de citron vert. Tropical, très protéiné et prêt en un instant.",
+    "emoji": "🥭",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "latino-americaine",
+    "prepTime": 8,
+    "cookTime": 2,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "skyr",
+        "qty": 450,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 50,
+        "unit": "ml",
+        "note": "pour assouplir le skyr"
+      },
+      {
+        "id": "mangue",
+        "qty": 1,
+        "unit": "piece",
+        "note": "bien mûre, en cubes"
+      },
+      {
+        "id": "kiwi",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en demi-rondelles"
+      },
+      {
+        "id": "noix-coco",
+        "qty": 25,
+        "unit": "g",
+        "note": "en copeaux"
+      },
+      {
+        "id": "noix-cajou",
+        "qty": 30,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Faites griller les copeaux de coco et les noix de cajou dans une poêle sèche à feu moyen, 2 min en remuant, jusqu'à ce que la coco soit blonde. Retirez aussitôt du feu.",
+      "Fouettez le skyr avec la crème liquide, le miel et le zeste du citron vert 30 secondes, pour une texture lisse et brillante.",
+      "Coupez la mangue en cubes de 2 cm et le kiwi en demi-rondelles. Arrosez-les du jus d'un demi citron vert.",
+      "Étalez le skyr dans deux bols creux, disposez les fruits par-dessus et parsemez de coco et de cajou tièdes."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "acidule",
+      "frais"
+    ]
+  },
+  {
+    "id": "pdju-faisselle-compotee-rhubarbe-fraise",
+    "name": "Faisselle, compotée minute rhubarbe-fraise et pain d'épices émietté",
+    "description": "De la faisselle bien égouttée nappée d'une compotée tiède de rhubarbe et de fraises, relevée de gingembre. Le duo acidulé du printemps sur un lit lacté.",
+    "emoji": "🍓",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "fromage-blanc",
+        "qty": 500,
+        "unit": "g",
+        "note": "faisselle entière, égouttée"
+      },
+      {
+        "id": "rhubarbe",
+        "qty": 200,
+        "unit": "g",
+        "note": "en tronçons de 1 cm"
+      },
+      {
+        "id": "fraise",
+        "qty": 200,
+        "unit": "g",
+        "note": "équeutées, coupées en deux"
+      },
+      {
+        "id": "gingembre",
+        "qty": 5,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "sucre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 2,
+        "unit": "tranche",
+        "note": "grillées, pour accompagner"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g",
+        "note": "cru, pour les tartines"
+      },
+      {
+        "id": "pistache",
+        "qty": 20,
+        "unit": "g",
+        "note": "concassées"
+      }
+    ],
+    "steps": [
+      "Mettez la rhubarbe, le sucre, le gingembre et 2 c. à soupe d'eau dans une petite casserole. Couvrez et laissez cuire 6 min à feu moyen-doux : les tronçons doivent commencer à s'effilocher.",
+      "Ajoutez les fraises coupées, poursuivez 3 à 4 min à découvert : elles doivent ramollir sans se défaire complètement. Retirez du feu et laissez tiédir 2 min.",
+      "Pendant ce temps, faites griller les tranches de seigle et beurrez-les.",
+      "Retournez la faisselle égouttée dans deux bols, nappez de compotée tiède et parsemez de pistaches. Servez avec les tartines beurrées."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "léger",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "acidule",
+      "lacte",
+      "fruite"
+    ],
+    "tips": "La compotée se garde 4 jours au frais : doublez les quantités."
+  },
+  {
+    "id": "pdju-yaourt-grec-raisins-rotis-noix-miel",
+    "name": "Yaourt grec, raisins rôtis au thym, noix et miel de châtaignier",
+    "description": "Des grappes de raisin rôties au four jusqu'à devenir confites et éclatées, posées tièdes sur un yaourt grec épais avec noix et miel corsé. Un petit-déjeuner de vendanges.",
+    "emoji": "🍇",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 5,
+    "cookTime": 18,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "raisin",
+        "qty": 300,
+        "unit": "g",
+        "note": "noir, en petites grappes"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 450,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "noix",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas",
+        "note": "de châtaignier"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 2,
+        "unit": "tranche",
+        "note": "grillées"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Posez les petites grappes de raisin sur une plaque couverte de papier cuisson, arrosez d'huile d'olive et parsemez de feuilles de thym.",
+      "Enfournez 15 à 18 min : les grains doivent être fripés, certains éclatés, avec un jus sirupeux qui caramélise sur la plaque.",
+      "Pendant la cuisson, ajoutez les noix sur un coin de la plaque pour les 5 dernières minutes afin de les torréfier.",
+      "Étalez le yaourt grec dans deux assiettes creuses en formant un creux au centre avec le dos d'une cuillère.",
+      "Déposez les raisins tièdes et leur jus, les noix concassées, arrosez de miel et servez avec le pain grillé."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "week-end"
+    ],
+    "seasons": [
+      "automne"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "grille"
+    ]
+  },
+  {
+    "id": "pdju-porridge-avoine-poire-cardamome",
+    "name": "Porridge crémeux à la poire fondante et cardamome",
+    "description": "Un porridge d'avoine cuit au lait entier, enrichi d'un œuf fouetté pour une texture de crème, avec des quartiers de poire caramélisés au beurre et une pointe de cardamome.",
+    "emoji": "🍐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 4,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "flocons-avoine",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 500,
+        "unit": "ml",
+        "note": "entier, idéalement cru"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poire",
+        "qty": 2,
+        "unit": "piece",
+        "note": "mûres, en quartiers"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "cardamome",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "noisette",
+        "qty": 20,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Versez le lait, l'avoine, la cardamome et le sel dans une casserole. Portez à frémissement à feu moyen puis baissez à feu doux et laissez cuire 6 min en remuant souvent.",
+      "En parallèle, faites mousser le beurre dans une poêle à feu moyen-vif. Ajoutez les quartiers de poire et 1 c. à soupe de sirop d'érable, faites-les dorer 3 min par face jusqu'à ce qu'ils soient translucides et caramélisés.",
+      "Battez les œufs à la fourchette dans un bol. Hors du feu, versez-les dans le porridge en un filet en fouettant vivement.",
+      "Remettez 1 min à feu très doux en remuant sans arrêt : le porridge épaissit et devient soyeux. Ne laissez pas bouillir, sinon l'œuf grumèle.",
+      "Servez dans des bols chauds, garni des poires, de leur jus, des noisettes et du reste de sirop d'érable."
+    ],
+    "tags": [
+      "rapide",
+      "réconfortant",
+      "économique",
+      "riche en glucides"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "cremeux",
+      "reconfortant",
+      "epice"
+    ]
+  },
+  {
+    "id": "pdju-kasha-au-lait-pommes-cannelle",
+    "name": "Kasha de sarrasin au lait, pommes sautées et crème crue",
+    "description": "Le porridge russe : sarrasin grillé mijoté au lait jusqu'à devenir tendre et crémeux, coiffé de pommes poêlées à la cannelle et d'une cuillère de crème crue. Sans gluten et très rassasiant.",
+    "emoji": "🍎",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 5,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sarrasin",
+        "qty": 120,
+        "unit": "g",
+        "note": "grillé (kasha)"
+      },
+      {
+        "id": "lait",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en lamelles"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml",
+        "note": "crue de préférence"
+      },
+      {
+        "id": "cottage",
+        "qty": 150,
+        "unit": "g",
+        "note": "ou fromage blanc"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Rincez le sarrasin. Mettez-le dans une casserole avec le lait et le sel, portez à frémissement à feu moyen en surveillant (le lait monte vite).",
+      "Baissez à feu doux, couvrez à moitié et laissez cuire 15 à 18 min en remuant toutes les 3 min, jusqu'à ce que les grains soient tendres et le lait presque absorbé.",
+      "Pendant ce temps, faites fondre le beurre dans une poêle à feu moyen. Faites sauter les lamelles de pomme 6 à 8 min avec la cannelle, jusqu'à ce qu'elles soient dorées sur les bords mais encore légèrement fermes.",
+      "Hors du feu, incorporez le cottage cheese à la kasha pour la rendre plus riche.",
+      "Servez en bols, couvrez de pommes, d'une cuillère de crème crue et d'un filet de miel."
+    ],
+    "tags": [
+      "sans gluten",
+      "réconfortant",
+      "économique",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "reconfortant",
+      "lacte",
+      "epice"
+    ]
+  },
+  {
+    "id": "pdju-kheer-riz-au-lait-safran-pistaches",
+    "name": "Riz au lait du matin façon kheer, safran, cardamome et dattes",
+    "description": "Un riz au lait indien parfumé au safran et à la cardamome, cuit la veille et servi froid ou tiède avec dattes et pistaches. Doux, onctueux, profondément réconfortant.",
+    "emoji": "🍚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "indienne",
+    "prepTime": 5,
+    "cookTime": 40,
+    "restTime": 240,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 1200,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "cardamome",
+        "qty": 4,
+        "unit": "pincee",
+        "note": "ou 5 gousses écrasées"
+      },
+      {
+        "id": "sucre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "datte",
+        "qty": 8,
+        "unit": "piece",
+        "note": "en lamelles"
+      },
+      {
+        "id": "pistache",
+        "qty": 40,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 300,
+        "unit": "g",
+        "note": "pour servir"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Rincez le riz jusqu'à ce que l'eau soit claire. Faites-le nacrer 1 min dans le ghee à feu moyen dans une grande casserole à fond épais.",
+      "Versez le lait, la cardamome et le safran. Portez à ébullition à feu moyen en remuant, puis baissez à feu très doux.",
+      "Laissez cuire 35 min à petits frémissements en remuant toutes les 5 min et en raclant bien le fond : le riz doit être fondant et le lait réduit d'un tiers, nappant.",
+      "Hors du feu, ajoutez le sucre, la crème et la moitié des dattes. Le riz épaissit en refroidissant : il doit rester légèrement coulant à chaud.",
+      "Laissez refroidir, couvrez et réservez au réfrigérateur (au moins 4 h ou toute la nuit).",
+      "Le matin, servez chaque portion avec une grosse cuillère de yaourt grec, le reste des dattes et les pistaches."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "réconfortant",
+      "sans gluten",
+      "riche en glucides",
+      "batch cooking"
+    ],
+    "seasons": [],
+    "technique": "mijote",
+    "flavors": [
+      "lacte",
+      "epice",
+      "cremeux"
+    ],
+    "tips": "Se garde 3 jours au frais. Délicieux aussi avec de la mangue en été."
+  },
+  {
+    "id": "pdju-bircher-muesli-pomme-noisettes",
+    "name": "Bircher muesli pomme, noisettes et yaourt",
+    "description": "La recette suisse d'origine : avoine trempée la veille dans le lait, pomme entière râpée au dernier moment, yaourt entier, citron et noisettes. Croquant, frais et naturellement sucré.",
+    "emoji": "🥄",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 10,
+    "cookTime": 0,
+    "restTime": 480,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "flocons-avoine",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 3,
+        "unit": "piece",
+        "note": "au lait entier"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "acidulée"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "jus"
+      },
+      {
+        "id": "noisette",
+        "qty": 30,
+        "unit": "g",
+        "note": "torréfiées et concassées"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "La veille, mélangez l'avoine, le lait et les raisins secs dans un saladier. Couvrez et laissez au réfrigérateur toute la nuit : les flocons absorbent tout le lait.",
+      "Le matin, incorporez les yaourts, le skyr et le miel à l'avoine gonflée.",
+      "Râpez les pommes entières (peau comprise, sans le trognon) à la grosse râpe et arrosez-les aussitôt du jus de citron pour éviter l'oxydation.",
+      "Mélangez les pommes râpées au muesli : la texture doit être humide et légère, pas compacte. Ajoutez un trait de lait si besoin.",
+      "Servez en bols, parsemé de noisettes concassées."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "économique",
+      "repas froid",
+      "léger"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "cru",
+    "flavors": [
+      "frais",
+      "fruite",
+      "lacte"
+    ],
+    "tips": "La pomme se râpe toujours au dernier moment : c'est le secret du vrai Bircher."
+  },
+  {
+    "id": "pdju-polenta-sucree-prunes-rotis",
+    "name": "Polenta crémeuse au lait et quetsches rôties au miel",
+    "description": "Une polenta fine cuite au lait et à la vanille jusqu'à devenir soyeuse, servie chaude sous des quetsches rôties au four et leur jus pourpre. Le réconfort de la fin d'été.",
+    "emoji": "🟣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 8,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "polenta",
+        "qty": 90,
+        "unit": "g",
+        "note": "fine, précuite ou instantanée"
+      },
+      {
+        "id": "lait",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac",
+        "note": "extrait"
+      },
+      {
+        "id": "prune",
+        "qty": 10,
+        "unit": "piece",
+        "note": "quetsches, coupées en deux et dénoyautées"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "mascarpone",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "ricotta",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Disposez les demi-quetsches face coupée vers le haut dans un plat, arrosez d'1 c. à soupe de miel, parsemez de cannelle et de 10 g de beurre en noisettes. Enfournez 12 à 15 min, jusqu'à ce qu'elles s'affaissent et rendent un jus sirupeux.",
+      "Pendant ce temps, portez le lait, la vanille et le sel à frémissement dans une casserole à feu moyen.",
+      "Versez la polenta en pluie en fouettant sans arrêt. Baissez à feu doux et remuez 5 min à la cuillère en bois : elle doit être épaisse mais encore coulante (ajoutez un peu de lait si elle fige).",
+      "Hors du feu, incorporez le reste du beurre, le mascarpone et le reste du miel.",
+      "Versez la polenta dans des assiettes creuses, déposez des cuillerées de ricotta, puis les quetsches chaudes et leur jus."
+    ],
+    "tags": [
+      "réconfortant",
+      "sans gluten",
+      "calorique",
+      "four"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "cremeux",
+      "fruite",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "pdju-quinoa-lait-coco-ananas-citron-vert",
+    "name": "Quinoa au lait de coco, ananas rôti et citron vert",
+    "description": "Un porridge de quinoa cuit dans le lait de coco et le lait, parfumé au gingembre, servi avec de l'ananas caramélisé à la poêle et du yaourt. Exotique et sans gluten.",
+    "emoji": "🍍",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "latino-americaine",
+    "prepTime": 8,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "quinoa",
+        "qty": 110,
+        "unit": "g",
+        "note": "bien rincé"
+      },
+      {
+        "id": "lait-coco",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "gingembre",
+        "qty": 5,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "ananas",
+        "qty": 300,
+        "unit": "g",
+        "note": "chair, en tranches"
+      },
+      {
+        "id": "huile-coco",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sucre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "noix-cajou",
+        "qty": 20,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Rincez le quinoa 1 min sous l'eau froide dans une passoire fine (pour retirer l'amertume).",
+      "Mettez-le dans une casserole avec le lait de coco, le lait et le gingembre. Portez à frémissement, puis couvrez et cuisez 18 min à feu doux en remuant 2 ou 3 fois : les grains doivent montrer leur petit germe blanc et baigner dans une crème épaisse.",
+      "Pendant ce temps, chauffez l'huile de coco dans une poêle à feu vif. Saupoudrez les tranches d'ananas de sucre et faites-les caraméliser 2 à 3 min par face, jusqu'à ce qu'elles soient dorées.",
+      "Hors du feu, ajoutez le zeste du citron vert au quinoa.",
+      "Servez le quinoa chaud dans des bols, avec une belle cuillère de yaourt grec, l'ananas caramélisé, un filet de jus de citron vert et les noix de cajou."
+    ],
+    "tags": [
+      "sans gluten",
+      "une poêle",
+      "riche en glucides",
+      "week-end"
+    ],
+    "seasons": [
+      "hiver",
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "fruite",
+      "cremeux",
+      "acidule"
+    ]
+  },
+  {
+    "id": "pdju-tartines-seigle-beurre-cru-miel-kefir",
+    "name": "Tartines de seigle, beurre cru et miel, verre de kéfir",
+    "description": "Le petit-déjeuner paysan dans sa plus belle simplicité : seigle dense grillé, beurre cru épais, miel crémeux et fleur de sel, avec un grand verre de kéfir et une clémentine.",
+    "emoji": "🍯",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 5,
+    "cookTime": 3,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pain-seigle",
+        "qty": 6,
+        "unit": "tranche",
+        "note": "pain de seigle dense"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g",
+        "note": "cru, à température ambiante"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas",
+        "note": "crémeux"
+      },
+      {
+        "id": "kefir",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "fromage-frais-chevre",
+        "qty": 60,
+        "unit": "g",
+        "note": "frais et doux"
+      },
+      {
+        "id": "clementine",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "fleur de sel"
+      }
+    ],
+    "steps": [
+      "Sortez le beurre 15 min à l'avance pour qu'il s'étale sans déchirer le pain.",
+      "Faites griller les tranches de seigle 2 à 3 min au grille-pain, jusqu'à ce que les bords soient croustillants.",
+      "Tartinez 4 tranches de beurre épais, ajoutez un filet de miel et quelques grains de fleur de sel. Tartinez les 2 autres de chèvre frais et d'un trait de miel.",
+      "Servez avec un grand verre de kéfir bien frais par personne et les clémentines épluchées."
+    ],
+    "tags": [
+      "rapide",
+      "fermenté",
+      "calorique",
+      "économique"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "lacte",
+      "sucre",
+      "acidule"
+    ]
+  },
+  {
+    "id": "pdju-pain-perdu-levain-pommes-caramel",
+    "name": "Pain perdu au levain, pommes caramélisées et crème crue",
+    "description": "D'épaisses tranches de pain au levain rassis trempées dans un appareil généreux aux œufs et au lait, dorées au beurre, avec des pommes caramélisées et une cuillère de crème crue.",
+    "emoji": "🍞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pain-levain",
+        "qty": 4,
+        "unit": "tranche",
+        "note": "épaisses de 2 cm, rassis de la veille"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 35,
+        "unit": "g"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "sucre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Fouettez les œufs, le lait, la vanille, la cannelle et 10 g de sucre dans un plat creux.",
+      "Faites fondre 15 g de beurre dans une poêle à feu moyen-vif. Ajoutez les quartiers de pomme et le reste du sucre, laissez caraméliser 6 à 8 min en les retournant, jusqu'à ce qu'ils soient dorés et entourés d'un caramel blond. Réservez au chaud.",
+      "Trempez les tranches de pain 30 secondes de chaque côté dans l'appareil : elles doivent être imbibées à cœur sans se désagréger.",
+      "Essuyez la poêle, faites-y mousser le reste du beurre à feu moyen. Faites dorer les tranches 3 min par face, jusqu'à ce qu'elles soient brun doré et légèrement gonflées.",
+      "Mélangez la crème crue et le fromage blanc. Servez le pain perdu chaud, couvert de pommes caramélisées et d'une cuillère de crème."
+    ],
+    "tags": [
+      "prise de masse",
+      "week-end",
+      "une poêle",
+      "réconfortant",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "reconfortant",
+      "sucre",
+      "lacte"
+    ],
+    "tips": "Plus le pain est rassis et dense, meilleur est le pain perdu : un levain de 2 jours est idéal."
+  },
+  {
+    "id": "pdju-tartines-ricotta-figues-miel-noix",
+    "name": "Tartines de levain, ricotta, figues fraîches et miel",
+    "description": "Du pain au levain grillé couvert de ricotta crémeuse, de figues fraîches juteuses, de miel et de noix concassées. Simple, généreux, et beau comme tout.",
+    "emoji": "🫓",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 8,
+    "cookTime": 3,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pain-levain",
+        "qty": 4,
+        "unit": "tranche",
+        "note": "larges"
+      },
+      {
+        "id": "ricotta",
+        "qty": 250,
+        "unit": "g",
+        "note": "bien égouttée"
+      },
+      {
+        "id": "figue",
+        "qty": 6,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "noix",
+        "qty": 25,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece",
+        "note": "zeste"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "fleur de sel"
+      }
+    ],
+    "steps": [
+      "Badigeonnez légèrement les tranches de pain d'huile d'olive et faites-les griller 3 min dans une poêle à feu vif ou au grille-pain, jusqu'à ce qu'elles soient dorées et croustillantes en surface.",
+      "Battez la ricotta à la fourchette avec le zeste de citron et une pincée de fleur de sel : elle doit devenir lisse et aérienne.",
+      "Étalez généreusement la ricotta sur le pain chaud.",
+      "Disposez les quartiers de figue, parsemez de noix et arrosez de miel juste avant de servir."
+    ],
+    "tags": [
+      "rapide",
+      "familial",
+      "week-end"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdju-pancakes-ricotta-citron-framboises",
+    "name": "Pancakes moelleux à la ricotta, citron et framboises",
+    "description": "Des pancakes ultra-moelleux où la ricotta et les blancs montés remplacent une bonne partie de la farine. Parfumés au citron, servis avec framboises et sirop d'érable.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "ricotta",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "blancs et jaunes séparés"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "farine",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "zeste + 1 c. à soupe de jus"
+      },
+      {
+        "id": "sucre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g",
+        "note": "pour la cuisson"
+      },
+      {
+        "id": "framboise",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g",
+        "note": "pour servir"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Fouettez la ricotta, les jaunes, le lait, le sucre, le zeste et le jus de citron jusqu'à obtenir une crème lisse. Incorporez la farine et la levure tamisées, sans trop travailler.",
+      "Montez les blancs en neige ferme avec la pincée de sel : ils doivent former un bec lorsqu'on soulève le fouet.",
+      "Incorporez les blancs en trois fois à la spatule, en soulevant la pâte, pour garder un maximum d'air.",
+      "Chauffez une poêle antiadhésive à feu moyen-doux et graissez-la d'une noisette de beurre. Déposez 2 c. à soupe de pâte par pancake, sans étaler.",
+      "Cuisez 2 à 3 min, jusqu'à ce que des bulles se forment et que les bords soient mats, puis retournez délicatement et cuisez encore 2 min. Comptez 3 ou 4 fournées en rebeurrant la poêle.",
+      "Servez empilés, avec les framboises, une cuillère de yaourt grec et un filet de sirop d'érable."
+    ],
+    "tags": [
+      "week-end",
+      "prise de masse",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "lacte",
+      "acidule",
+      "fruite"
+    ]
+  },
+  {
+    "id": "pdju-pancakes-sarrasin-kefir-compote-pommes",
+    "name": "Pancakes de sarrasin au kéfir et compote de pommes tiède",
+    "description": "Des pancakes rustiques au goût de noisette, à la farine de sarrasin et au kéfir qui les rend aériens, servis avec une compote de pommes maison tiède et une cuillère de crème.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-sarrasin",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "kefir",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 1,
+        "unit": "cac",
+        "note": "bicarbonate"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g",
+        "note": "dont 15 g fondu dans la pâte"
+      },
+      {
+        "id": "pomme",
+        "qty": 3,
+        "unit": "piece",
+        "note": "pelées, en dés"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Mettez les dés de pomme, la cannelle et 3 c. à soupe d'eau dans une casserole. Couvrez et cuisez 10 min à feu doux : les pommes doivent s'écraser à la fourchette. Écrasez grossièrement et gardez au chaud.",
+      "Fouettez les œufs, le kéfir et 15 g de beurre fondu. Ajoutez la farine de sarrasin, le bicarbonate et le sel, mélangez juste assez pour une pâte épaisse sans grumeaux. Laissez reposer 5 min : des bulles apparaissent.",
+      "Chauffez une poêle à feu moyen avec une noisette de beurre. Versez une petite louche de pâte par pancake (10 cm de diamètre).",
+      "Cuisez 2 min, jusqu'à ce que la surface soit criblée de petits trous, retournez et cuisez 1 min 30. Poursuivez avec le reste de la pâte en rebeurrant.",
+      "Servez les pancakes chauds avec la compote tiède, la crème fraîche et le sirop d'érable."
+    ],
+    "tags": [
+      "sans gluten",
+      "fermenté",
+      "économique",
+      "week-end",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "reconfortant",
+      "fruite",
+      "grille"
+    ]
+  },
+  {
+    "id": "pdju-pancakes-banane-oeufs-avoine",
+    "name": "Galettes express banane-œufs-avoine, skyr et kiwi",
+    "description": "Trois ingrédients écrasés à la fourchette, cuits au beurre en petites galettes caramélisées, servis avec du skyr et du kiwi. Le petit-déjeuner chaud le plus rapide qui soit.",
+    "emoji": "🍌",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "banane",
+        "qty": 2,
+        "unit": "piece",
+        "note": "très mûres, tachetées"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "flocons-avoine",
+        "qty": 60,
+        "unit": "g",
+        "note": "petits flocons"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "kiwi",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Écrasez les bananes en purée fine à la fourchette dans un saladier. Ajoutez les œufs, l'avoine et la cannelle, fouettez 30 secondes. Laissez gonfler 2 min.",
+      "Chauffez la moitié du beurre dans une grande poêle à feu moyen (pas plus fort : la banane brûle vite).",
+      "Déposez des cuillerées de pâte pour former des galettes de 8 cm. Cuisez 2 min, jusqu'à ce que le dessous soit bien doré et les bords pris, retournez et cuisez 1 min 30.",
+      "Renouvelez avec le reste du beurre et de la pâte.",
+      "Servez aussitôt avec le skyr, les kiwis en rondelles et un filet de miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sportif",
+      "une poêle",
+      "économique"
+    ],
+    "seasons": [
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "pdju-crepes-froment-clementines-fromage-blanc",
+    "name": "Crêpes de froment au beurre, clémentines et fromage blanc au miel",
+    "description": "Des crêpes fines et dentelées au beurre noisette, garnies de fromage blanc au miel et de suprêmes de clémentine poêlés. Un dimanche matin d'hiver tout en fraîcheur.",
+    "emoji": "🍊",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 20,
+    "restTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine",
+        "qty": 125,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g",
+        "note": "dont 15 g en beurre noisette pour la pâte"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "clementine",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Faites cuire 15 g de beurre dans une petite casserole à feu moyen 3 min, jusqu'à ce qu'il soit brun clair et sente la noisette.",
+      "Dans un saladier, fouettez la farine, le sel et les œufs, puis versez le lait petit à petit en fouettant pour éviter les grumeaux. Ajoutez le beurre noisette et la vanille. Laissez reposer 30 min.",
+      "Pelez 4 clémentines à vif et détaillez-les en suprêmes ; pressez la cinquième. Faites-les chauffer 2 min à feu moyen dans 5 g de beurre avec le jus et 1 c. à soupe de miel.",
+      "Mélangez le fromage blanc avec le reste du miel.",
+      "Chauffez une crêpière à feu moyen-vif, graissez-la avec un papier imbibé du beurre restant. Versez une petite louche, étalez en tournant la poêle, cuisez 1 min jusqu'à ce que les bords dorent et se décollent, retournez 30 secondes.",
+      "Garnissez chaque crêpe de fromage blanc au miel et de suprêmes de clémentine, pliez en quatre et nappez du jus."
+    ],
+    "tags": [
+      "week-end",
+      "familial",
+      "calorique",
+      "prise de masse"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "frais",
+      "reconfortant"
+    ],
+    "tips": "La pâte se prépare la veille et se garde 24 h au frais : il suffit de la refouetter."
+  },
+  {
+    "id": "pdju-galettes-sarrasin-poires-caramel-beurre-sale",
+    "name": "Galettes de blé noir sucrées, poires poêlées et caramel au beurre salé",
+    "description": "La galette bretonne côté sucré : fine pâte de sarrasin croustillante sur les bords, poires dorées, caramel au beurre salé maison et une cuillère de crème épaisse.",
+    "emoji": "🫓",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 20,
+    "restTime": 60,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-sarrasin",
+        "qty": 125,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "eau",
+        "qty": 150,
+        "unit": "ml",
+        "note": "froide"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 35,
+        "unit": "g",
+        "note": "demi-sel"
+      },
+      {
+        "id": "poire",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en lamelles"
+      },
+      {
+        "id": "sucre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 200,
+        "unit": "g",
+        "note": "battu, pour servir"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Mélangez la farine de sarrasin et le sel, creusez un puits, ajoutez 1 œuf puis l'eau et le lait progressivement en fouettant. La pâte doit napper la cuillère comme une crème liquide. Laissez reposer 1 h au frais.",
+      "Caramel : faites fondre le sucre à sec dans une petite casserole à feu moyen, sans remuer, jusqu'à ce qu'il soit ambré (4 à 5 min). Hors du feu, ajoutez 10 g de beurre demi-sel puis la crème liquide chaude en fouettant. Remettez 1 min à feu doux.",
+      "Faites dorer les lamelles de poire 4 min dans 5 g de beurre à feu moyen-vif, jusqu'à ce qu'elles soient translucides.",
+      "Chauffez une crêpière ou une grande poêle à feu vif et beurrez-la. Versez une louche de pâte, étalez très finement en tournant la poêle. Cuisez 2 min, jusqu'à ce que le dessous soit brun doré et les bords croustillants.",
+      "Retournez la galette, cassez la moitié de l'œuf restant battu sur toute la surface, étalez au dos de la louche et laissez prendre 1 min.",
+      "Disposez les poires au centre, nappez de caramel, rabattez les bords en carré et servez avec la crème épaisse et le fromage blanc battu."
+    ],
+    "tags": [
+      "week-end",
+      "sans gluten",
+      "calorique",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "grille",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "Le caramel se garde 2 semaines au frais en bocal ; tiédissez-le 20 s avant usage."
+  },
+  {
+    "id": "pdju-vafler-gaufres-kefir-skyr-confiture",
+    "name": "Vafler : gaufres norvégiennes au kéfir, skyr et confiture de framboises",
+    "description": "Les gaufres-cœurs norvégiennes, fines et moelleuses, à la pâte au kéfir et à la cardamome, servies avec skyr épais et confiture de framboises maison.",
+    "emoji": "🧇",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 15,
+    "cookTime": 20,
+    "restTime": 15,
+    "difficulty": "intermediaire",
+    "servings": 3,
+    "ingredients": [
+      {
+        "id": "farine",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "kefir",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g",
+        "note": "fondu"
+      },
+      {
+        "id": "sucre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "cardamome",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "skyr",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "confiture",
+        "qty": 75,
+        "unit": "g",
+        "note": "de framboises"
+      },
+      {
+        "id": "framboise",
+        "qty": 150,
+        "unit": "g",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Fouettez les œufs et le sucre 1 min jusqu'à ce que le mélange blanchisse légèrement.",
+      "Ajoutez la farine, la levure, la cardamome et le sel en alternant avec le kéfir, puis incorporez le beurre fondu tiède. La pâte doit être lisse et épaisse comme une pâte à crêpes épaisse. Laissez reposer 15 min.",
+      "Préchauffez le gaufrier (idéalement à cœurs) à puissance moyenne-haute et badigeonnez-le légèrement de beurre.",
+      "Versez une louche de pâte au centre, fermez et cuisez 2 à 3 min, jusqu'à ce que la vapeur cesse presque et que les gaufres soient dorées mais souples (les vafler ne sont pas croustillantes).",
+      "Déposez-les sur une grille pour qu'elles ne ramollissent pas, sans les empiler.",
+      "Servez tièdes, tartinées de skyr et de confiture de framboises, avec quelques framboises fraîches."
+    ],
+    "tags": [
+      "week-end",
+      "fermenté",
+      "prise de masse",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "grill",
+    "flavors": [
+      "lacte",
+      "epice",
+      "fruite"
+    ],
+    "tips": "Les vafler se mangent aussi froides, pliées en deux : parfaites pour un petit-déjeuner à emporter."
+  },
+  {
+    "id": "pdju-dutch-baby-pommes-cannelle",
+    "name": "Dutch baby aux pommes et à la cannelle",
+    "description": "Une grande crêpe soufflée au four dans une poêle en fonte brûlante, qui gonfle de façon spectaculaire, avec des pommes caramélisées au centre, servie avec crème et sirop d'érable.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 10,
+    "cookTime": 22,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece",
+        "note": "à température ambiante"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml",
+        "note": "à température ambiante"
+      },
+      {
+        "id": "farine",
+        "qty": 90,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sucre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "jus"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Placez une poêle en fonte de 26 cm dans le four et préchauffez à 220 °C pendant 15 min : la poêle doit être brûlante.",
+      "Mixez ou fouettez énergiquement les œufs, le lait, la farine, la vanille et le sel 1 min, jusqu'à obtenir une pâte lisse et mousseuse.",
+      "Dans une autre poêle, faites sauter les pommes 5 min à feu moyen-vif avec 15 g de beurre, la cannelle et le sucre, jusqu'à ce qu'elles soient dorées.",
+      "Sortez la poêle chaude avec une manique, ajoutez le reste du beurre et faites-le tourner jusqu'à ce qu'il mousse. Versez aussitôt la pâte, répartissez les pommes au centre.",
+      "Enfournez 18 à 20 min sans ouvrir la porte : la crêpe doit être très gonflée, brun doré sur les bords et prise au centre.",
+      "Servez immédiatement (elle retombe vite), arrosé de jus de citron et de sirop d'érable, avec la crème fraîche."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "prise de masse",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "reconfortant",
+      "epice",
+      "sucre"
+    ]
+  },
+  {
+    "id": "pdju-clafoutis-matin-cerises-fromage-blanc",
+    "name": "Clafoutis du matin aux cerises et fromage blanc",
+    "description": "Un clafoutis épais et peu sucré, riche en œufs et en fromage blanc, garni de cerises entières. Cuit la veille, il se découpe froid en grosses parts pour le petit-déjeuner.",
+    "emoji": "🍒",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 40,
+    "restTime": 120,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "cerise",
+        "qty": 500,
+        "unit": "g",
+        "note": "équeutées, non dénoyautées"
+      },
+      {
+        "id": "oeuf",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 400,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "farine",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "amande",
+        "qty": 40,
+        "unit": "g",
+        "note": "en poudre"
+      },
+      {
+        "id": "sucre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g",
+        "note": "dont un peu pour le plat"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 180 °C. Beurrez généreusement un plat à gratin de 25 cm et répartissez-y les cerises en une couche.",
+      "Faites fondre le reste du beurre. Fouettez les œufs et le sucre 1 min, puis ajoutez le fromage blanc, la vanille et le sel.",
+      "Incorporez la farine et la poudre d'amande, puis détendez avec le lait et le beurre fondu jusqu'à obtenir une pâte lisse et fluide.",
+      "Versez la pâte sur les cerises et enfournez 35 à 40 min : le clafoutis doit être gonflé, doré et la lame d'un couteau planté au centre doit ressortir sèche.",
+      "Laissez refroidir à température ambiante, puis couvrez et réservez au réfrigérateur au moins 2 h.",
+      "Le matin, découpez en 4 grosses parts et servez froid ou tiédi 10 s au micro-ondes."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "four",
+      "riche en protéines",
+      "familial",
+      "batch cooking"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "sucre"
+    ],
+    "tips": "Les noyaux donnent un léger goût d'amande et empêchent le jus de colorer la pâte. Variante : abricots ou prunes coupés en deux."
+  },
+  {
+    "id": "pdju-gateau-semoule-raisins-orange",
+    "name": "Gâteau de semoule à l'orange et aux raisins blonds",
+    "description": "Le gâteau de semoule de grand-mère, nappé de caramel, parfumé au zeste d'orange et aux raisins secs, riche en œufs. Préparé la veille, il se tranche froid au petit-déjeuner.",
+    "emoji": "🍮",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert",
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 40,
+    "restTime": 240,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "semoule",
+        "qty": 120,
+        "unit": "g",
+        "note": "fine"
+      },
+      {
+        "id": "lait",
+        "qty": 900,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "sucre",
+        "qty": 70,
+        "unit": "g",
+        "note": "dont 40 g pour le caramel"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 60,
+        "unit": "g",
+        "note": "blonds"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece",
+        "note": "zeste + jus pour tremper les raisins"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 300,
+        "unit": "g",
+        "note": "pour servir"
+      }
+    ],
+    "steps": [
+      "Faites gonfler les raisins secs 10 min dans le jus d'orange tiède. Préchauffez le four à 180 °C.",
+      "Caramel : faites fondre 40 g de sucre à sec dans un moule à manqué de 20 cm (ou une casserole) à feu moyen jusqu'à couleur ambrée, puis tournez le moule pour en napper le fond.",
+      "Portez le lait, la vanille et le zeste d'orange à ébullition. Versez la semoule en pluie en fouettant, baissez à feu doux et cuisez 5 min en remuant, jusqu'à ce que la semoule épaississe nettement.",
+      "Hors du feu, ajoutez le beurre, le reste du sucre et les raisins égouttés. Laissez tiédir 5 min, puis incorporez les œufs battus un à un.",
+      "Versez dans le moule caramélisé et enfournez 30 min au bain-marie : le dessus doit être doré et ferme au toucher.",
+      "Laissez refroidir puis réfrigérez au moins 4 h. Démoulez sur un plat et servez en tranches avec le yaourt grec."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "four",
+      "économique",
+      "familial",
+      "réconfortant"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "reconfortant",
+      "sucre"
+    ]
+  },
+  {
+    "id": "pdju-compote-chaude-coings-pommes-fromage-blanc",
+    "name": "Compote chaude coings-pommes au miel, fromage blanc et châtaignes",
+    "description": "Une compote rustique de coings et de pommes mijotée au miel et à la vanille jusqu'à devenir rose, versée bien chaude sur du fromage blanc, avec des châtaignes émiettées.",
+    "emoji": "🍏",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 15,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "coing",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pelés, épépinés, en dés"
+      },
+      {
+        "id": "pomme",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "miel",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "jus"
+      },
+      {
+        "id": "eau",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 1000,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "chataigne",
+        "qty": 200,
+        "unit": "g",
+        "note": "cuites, émiettées"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 80,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Mettez les dés de coing, l'eau, la vanille et le jus de citron dans une casserole. Couvrez et laissez cuire 20 min à feu doux : les coings doivent devenir tendres et commencer à rosir.",
+      "Ajoutez les pommes et 3 c. à soupe de miel, poursuivez 12 à 15 min à couvert, puis écrasez grossièrement à la fourchette en gardant des morceaux.",
+      "Pendant ce temps, faites dorer les châtaignes émiettées dans le beurre 3 min à feu moyen, avec le reste du miel, jusqu'à ce qu'elles soient caramélisées.",
+      "Mélangez le fromage blanc et la crème fraîche, répartissez dans 4 bols.",
+      "Versez la compote bien chaude au centre et parsemez de châtaignes caramélisées. Servez aussitôt, le contraste chaud-froid fait tout."
+    ],
+    "tags": [
+      "sans gluten",
+      "réconfortant",
+      "batch cooking",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "reconfortant"
+    ],
+    "tips": "La compote se garde 5 jours au frais : réchauffez-en seulement une portion chaque matin."
+  },
+  {
+    "id": "pdju-granola-maison-noisettes-miel-yaourt",
+    "name": "Granola maison noisettes, coco et miel, yaourt et agrumes",
+    "description": "Un granola en grosses grappes croustillantes à l'avoine, aux noisettes, à la coco et aux graines de courge, lié au miel et au beurre. Servi sur un yaourt grec avec orange et pamplemousse.",
+    "emoji": "🥣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "flocons-avoine",
+        "qty": 250,
+        "unit": "g",
+        "note": "gros flocons"
+      },
+      {
+        "id": "noisette",
+        "qty": 80,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "noix-coco",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g",
+        "note": "ou huile de coco"
+      },
+      {
+        "id": "blanc-oeuf",
+        "qty": 1,
+        "unit": "piece",
+        "note": "pour les grappes"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 1200,
+        "unit": "g",
+        "note": "200 g par bol"
+      },
+      {
+        "id": "orange",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en suprêmes"
+      },
+      {
+        "id": "pamplemousse",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en suprêmes"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 160 °C (chaleur tournante 150 °C). Faites fondre le beurre avec le miel, la cannelle et le sel à feu doux, 1 min.",
+      "Dans un grand saladier, mélangez avoine, noisettes, graines de courge et coco. Versez le mélange beurre-miel et remuez jusqu'à ce que tout soit enrobé. Ajoutez le blanc d'œuf battu en mousse et mélangez.",
+      "Étalez sur une plaque couverte de papier cuisson en une couche de 1 cm, en tassant avec le dos d'une spatule.",
+      "Enfournez 25 à 30 min en tournant la plaque à mi-cuisson, sans remuer, jusqu'à ce que le granola soit uniformément doré.",
+      "Laissez refroidir complètement sur la plaque (il durcit en refroidissant), puis cassez en grappes. Conservez en bocal hermétique.",
+      "Pour chaque bol, versez 200 g de yaourt grec, ajoutez les suprêmes d'agrumes et une grosse poignée de granola."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "batch cooking",
+      "prise de masse",
+      "four",
+      "calorique"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "grille",
+      "sucre",
+      "acidule"
+    ],
+    "tips": "Le granola se conserve 3 semaines en bocal. Changez les fruits au fil des saisons : pêches en été, poires en automne."
+  },
+  {
+    "id": "pdju-scones-yaourt-creme-confiture-fraises",
+    "name": "Scones au yaourt, crème épaisse, confiture et fraises",
+    "description": "Des scones britanniques dorés, friables et légers grâce au yaourt, ouverts encore tièdes et garnis de crème épaisse, de confiture et de fraises fraîches. Un brunch de week-end.",
+    "emoji": "🫖",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "farine",
+        "qty": 260,
+        "unit": "g"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 70,
+        "unit": "g",
+        "note": "très froid, en dés"
+      },
+      {
+        "id": "sucre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "dont 1 jaune pour dorer"
+      },
+      {
+        "id": "lait",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 150,
+        "unit": "ml",
+        "note": "très épaisse"
+      },
+      {
+        "id": "confiture",
+        "qty": 80,
+        "unit": "g",
+        "note": "de fraises"
+      },
+      {
+        "id": "fraise",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 300,
+        "unit": "g",
+        "note": "pour servir"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Mélangez farine, levure, sucre et sel. Ajoutez le beurre très froid et sablez du bout des doigts 2 min, jusqu'à obtenir une chapelure grossière avec quelques morceaux de beurre visibles.",
+      "Fouettez le yaourt, 2 œufs et le lait. Versez sur le sablage et mélangez à la fourchette juste assez pour former une pâte grumeleuse : ne la pétrissez pas, sinon les scones seront durs.",
+      "Sur un plan fariné, aplatissez à la main en un disque de 3 cm d'épaisseur. Découpez 8 scones à l'emporte-pièce de 6 cm en enfonçant d'un coup sans tourner.",
+      "Posez-les serrés sur une plaque couverte de papier cuisson et dorez le dessus au jaune d'œuf battu.",
+      "Enfournez 13 à 15 min : ils doivent avoir doublé de hauteur, être bien dorés dessus et sonner creux en tapotant dessous.",
+      "Laissez tiédir 5 min, ouvrez-les à la main et garnissez de crème épaisse, confiture et fraises. Servez avec le skyr à côté."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "calorique",
+      "prise de masse"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "fruite",
+      "sucre"
+    ],
+    "tips": "Les scones crus se congèlent découpés : enfournez-les directement surgelés 18 min."
+  },
+  {
+    "id": "pdju-peches-roties-ricotta-fouettee-thym",
+    "name": "Pêches et abricots rôtis au miel et thym, ricotta fouettée",
+    "description": "Des pêches et abricots rôtis au four avec miel et thym jusqu'à être juteux et dorés, servis tièdes sur une ricotta fouettée au yaourt, avec pistaches et pain grillé.",
+    "emoji": "🍑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dessert"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 10,
+    "cookTime": 18,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "peche",
+        "qty": 2,
+        "unit": "piece",
+        "note": "coupées en deux, dénoyautées"
+      },
+      {
+        "id": "abricot",
+        "qty": 4,
+        "unit": "piece",
+        "note": "coupés en deux"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "ricotta",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "pistache",
+        "qty": 25,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 2,
+        "unit": "tranche",
+        "note": "grillées"
+      },
+      {
+        "id": "cardamome",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Disposez pêches et abricots face coupée vers le haut dans un plat. Déposez une noisette de beurre dans chaque creux, arrosez de 1 c. à soupe de miel et parsemez de feuilles de thym.",
+      "Enfournez 15 à 18 min : les fruits doivent être tendres sous la pointe d'un couteau, légèrement caramélisés sur les bords et baigner dans leur jus.",
+      "Pendant ce temps, fouettez la ricotta, le yaourt grec, la cardamome et le reste du miel 1 min au fouet, jusqu'à obtenir une crème lisse et aérienne.",
+      "Étalez la ricotta fouettée dans deux assiettes, déposez les fruits tièdes et nappez de leur jus.",
+      "Parsemez de pistaches et servez avec le pain grillé pour saucer."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "week-end",
+      "léger"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "fruite",
+      "cremeux",
+      "herbace"
+    ]
+  }
+]
