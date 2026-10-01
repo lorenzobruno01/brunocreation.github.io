@@ -8,7 +8,7 @@ Published by GitHub Pages at **`/cuisine/`** (for example `https://brunocreation
 
 | Area | Features |
 |---|---|
-| Library | 353 initial recipes (62 breakfasts, 239 lunches, 222 dinners, 53 snacks, 48 desserts, 82 soups, stews and sides), 20 cuisines, cards, detailed recipe pages |
+| Library | 593 recipes (about 78 % French and European classics), 20 cuisines, cards, detailed recipe pages with vitamins, minerals, electrolytes and amino acids as % of daily needs |
 | Search | Full-text search by name, ingredient, cuisine or tag, with phrases understood (« dîner rapide », « italien », « œufs fromage »), plus 12 combinable filters |
 | Ingredients → recipes | « J'ai ces ingrédients »: instant ingredient search, 3 modes (cook now, almost nothing missing, show everything), equivalent substitutes, staples ignored |
 | Recipes → shopping | Selected recipes or the week's plan go into one list: quantities scaled to servings, identical ingredients merged, units converted, pantry items removed, list sorted by aisle with checkboxes, anti-waste warnings with suggested recipes |
