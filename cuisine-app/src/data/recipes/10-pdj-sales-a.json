@@ -333,8 +333,8 @@
       "Versez les œufs et remuez vivement 20 secondes à la fourchette en secouant la poêle, puis laissez prendre 1 min : le dessus doit rester crémeux.",
       "Parsemez la moitié du comté au centre, puis repliez l'omelette en trois en inclinant la poêle et faites-la glisser sur l'assiette, pliure dessous.",
       "Frottez la surface avec un petit morceau de beurre pour la faire briller. Recommencez pour la seconde omelette.",
-      "Servez avec les pommes de terre sautées et la mâche assaisonnée d'beurre clarifié, de sel et de poivre.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Servez avec les pommes de terre sautées et la mâche assaisonnée d'beurre clarifié, de sel et de poivre."
     ],
     "tags": [
       "riche en protéines",
@@ -629,6 +629,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -637,7 +643,8 @@
       "Dans la même poêle, faites griller le bacon 2 min par face jusqu'à ce qu'il soit croustillant, puis le boudin 2 min par face. Réservez au four.",
       "Posez les demi-tomates face coupée dans la graisse avec les champignons et le beurre ; faites dorer 5 min à feu vif, salez, poivrez. Réservez.",
       "Ajoutez le reste de graisse, faites dorer la tranche de pain coupée en deux 1 min par face, puis cassez les œufs et cuisez-les 3 min à feu moyen en arrosant le jaune de graisse chaude : blanc pris, jaune brillant.",
-      "Dressez sur deux grandes assiettes chaudes et servez avec un thé noir."
+      "Dressez sur deux grandes assiettes chaudes et servez avec un thé noir.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "prise de masse",

@@ -1348,6 +1348,12 @@
         "id": "eau",
         "qty": 800,
         "unit": "ml"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 500,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1355,7 +1361,8 @@
       "Plongez les poires dans le sirop frémissant, couvrez d'un papier sulfurisé et pochez 20 à 25 min à feu doux : une pointe de couteau doit entrer sans résistance. Laissez-les refroidir dans le sirop.",
       "Crème anglaise : chauffez le lait avec l'autre moitié de la vanille. Fouettez les jaunes avec 40 g de sucre, versez le lait chaud, remettez sur feu doux et remuez à la spatule 4 à 5 min jusqu'à ce que la crème nappe la spatule (82 °C), sans bouillir. Filtrez et refroidissez.",
       "Sauce chocolat : portez la crème à frémissement, versez sur le chocolat haché, attendez 1 min et lissez. Détendez avec 2 c. à soupe de sirop de pochage.",
-      "Dressez la crème anglaise froide au fond de coupes, posez une poire égouttée, nappez de sauce chocolat chaude et parsemez d'amandes grillées."
+      "Dressez la crème anglaise froide au fond de coupes, posez une poire égouttée, nappez de sauce chocolat chaude et parsemez d'amandes grillées.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "préparation à l’avance",
@@ -1521,6 +1528,12 @@
         "id": "sel",
         "qty": 5,
         "unit": "g"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 1400,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1528,7 +1541,8 @@
       "Crème d'amande : crémez 70 g de beurre mou avec le sucre 2 min, ajoutez la poudre d'amande, 10 g de farine, 2 œufs un à un et le rhum. Mélangez jusqu'à obtenir une crème homogène et réservez 20 min au frais pour la raffermir.",
       "Coupez la pâte en deux, étalez chaque moitié sur 3 mm et détaillez 2 disques de 26 cm. Étalez la crème d'amande sur le premier en laissant 2 cm de bord, glissez la fève. Mouillez le bord à l'eau, couvrez du second disque et soudez fermement. Réservez 30 min au frais.",
       "Préchauffez le four à 200 °C. Dorez à l'œuf battu, rayez des arcs au dos d'un couteau et percez 5 petites cheminées. Enfournez 10 min à 200 °C puis 30 min à 180 °C : la galette doit être bien gonflée et d'un brun doré uniforme.",
-      "Laissez tiédir 20 min sur une grille avant de servir."
+      "Laissez tiédir 20 min sur une grille avant de servir.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1687,6 +1701,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 1170,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1695,7 +1715,8 @@
       "Versez le beurre noisette tiède en filet en fouettant. Laissez reposer la pâte 30 min au frais.",
       "Préchauffez le four à 200 °C. Beurrez 12 moules à financiers (ou à muffins), remplissez aux deux tiers et enfoncez 1 à 2 framboises dans chacun.",
       "Enfournez 12 à 15 min : les bords doivent être bien dorés et le centre bombé et souple au toucher.",
-      "Démoulez après 5 min et laissez refroidir sur une grille."
+      "Démoulez après 5 min et laissez refroidir sur une grille.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",

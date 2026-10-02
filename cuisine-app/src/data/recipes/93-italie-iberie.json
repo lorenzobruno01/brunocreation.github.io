@@ -528,6 +528,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -535,7 +541,8 @@
       "Mélangez le jus d'un citron, 50 ml d'huile, le piment, le poivre concassé, l'ail et le romarin effeuillé. Massez-en le poulet dessus et dessous, salez généreusement et laissez mariner 1 h à température ambiante (ou une nuit au frais).",
       "Préchauffez le four à 230 °C. Étalez les rondelles de pommes de terre dans une grande plaque, arrosez du reste d'huile, salez et posez le poulet dessus, peau vers le haut.",
       "Posez une poêle en fonte ou une plaque lourde sur le poulet pendant les 20 premières minutes pour qu'il reste bien à plat et dore uniformément. Retirez le poids et poursuivez 30 à 35 min.",
-      "Le poulet est cuit quand le jus de la cuisse est clair et la peau d'un brun profond et craquante (74 °C à cœur). Laissez reposer 10 min, découpez en 8 morceaux et servez sur les pommes de terre, parsemé de persil et avec le second citron en quartiers."
+      "Le poulet est cuit quand le jus de la cuisse est clair et la peau d'un brun profond et craquante (74 °C à cœur). Laissez reposer 10 min, découpez en 8 morceaux et servez sur les pommes de terre, parsemé de persil et avec le second citron en quartiers.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -914,6 +921,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 120,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -922,7 +935,8 @@
       "Pendant ce temps, cuisez les pommes de terre dans une louche de bouillon et de l'eau salée, 25 min, jusqu'à ce qu'elles soient tendres à cœur.",
       "Salsa verde : hachez finement au couteau le persil, les câpres, les anchois, l'ail, les œufs durs et la mie de pain pressée. Liez avec l'huile, salez peu et poivrez ; elle doit être épaisse et brillante.",
       "Sortez la langue, retirez sa peau épaisse tant qu'elle est chaude (elle s'enlève comme un gant), puis tranchez-la en biais en tranches de 1 cm, ainsi que le bœuf. Désossez le poulet.",
-      "Dressez les viandes tranchées sur un grand plat chaud avec légumes et pommes de terre, arrosez d'une louche de bouillon brûlant pour qu'elles restent juteuses, et servez la salsa verde à part."
+      "Dressez les viandes tranchées sur un grand plat chaud avec légumes et pommes de terre, arrosez d'une louche de bouillon brûlant pour qu'elles restent juteuses, et servez la salsa verde à part.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -1725,6 +1739,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1732,7 +1752,8 @@
       "Pendant ce temps, rincez et séchez les bars. Entaillez la peau 3 fois de chaque côté, salez l'intérieur et garnissez le ventre de rondelles de citron, de lamelles d'ail et de tiges de persil.",
       "Sortez le plat, posez les poissons sur les pommes de terre, éparpillez tomates cerises, olives et câpres autour, arrosez de vin blanc et du reste d'huile.",
       "Enfournez 20 à 25 min : la chair doit se détacher de l'arête centrale et être opaque jusqu'à l'os, et l'œil du poisson blanchi. Les pommes de terre sont dorées sur les bords.",
-      "Parsemez de persil haché, levez les filets à table et servez avec les pommes de terre et le jus du plat."
+      "Parsemez de persil haché, levez les filets à table et servez avec les pommes de terre et le jus du plat.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -2487,6 +2508,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2495,7 +2522,8 @@
       "Remettez le poulet, versez le vin blanc, laissez réduire 3 min, puis ajoutez le bouillon et le laurier. Couvrez et laissez mijoter 35 min à feu doux.",
       "Pendant ce temps, rôtissez les cubes de pommes de terre au four à 210 °C avec le reste d'huile et du sel, 35 min, jusqu'à ce qu'ils soient dorés.",
       "Au mortier ou au mixeur, pilez amandes, ail grillé, ail cru restant, safran, persil et les jaunes des œufs durs avec une louche de sauce, jusqu'à une pâte lisse. Incorporez-la à la cocotte et laissez épaissir 10 min à découvert.",
-      "Servez le poulet nappé de sauce, parsemé des blancs d'œufs hachés, avec les pommes de terre."
+      "Servez le poulet nappé de sauce, parsemé des blancs d'œufs hachés, avec les pommes de terre.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2797,6 +2825,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 50,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2804,7 +2838,8 @@
       "Dans une cocotte, faites revenir oignon et poivron dans l'huile 8 min à feu moyen jusqu'à ce qu'ils soient tendres. Ajoutez l'ail et le chorizo et faites-le revenir 3 min jusqu'à ce qu'il rende son huile rouge.",
       "Ajoutez les pommes de terre, mélangez 2 min pour les enrober, puis le paprika hors du feu (il brûle vite). Couvrez d'eau tout juste à hauteur, ajoutez le laurier et salez légèrement.",
       "Laissez mijoter 25 à 30 min à feu moyen-doux sans remuer, en secouant simplement la cocotte : les pommes de terre doivent être tendres et le bouillon épaissi. Hors du feu, laissez reposer 5 min.",
-      "Pendant ce temps, pochez les œufs 3 min dans une eau frémissante vinaigrée. Servez dans des assiettes creuses, un œuf poché sur le dessus."
+      "Pendant ce temps, pochez les œufs 3 min dans une eau frémissante vinaigrée. Servez dans des assiettes creuses, un œuf poché sur le dessus.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "économique",
@@ -3006,6 +3041,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 50,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3013,7 +3054,8 @@
       "Dans une sauteuse, chauffez 3 c. à soupe d'huile à feu moyen et faites dorer l'ail 3 à 4 min jusqu'à ce qu'il soit blond (pas brun). Retirez-le à l'écumoire et réservez.",
       "Montez à feu vif, salez les médaillons et saisissez-les 2 min par face dans l'huile parfumée : ils doivent être dorés et légèrement rosés au centre.",
       "Versez le whisky (attention, il peut s'enflammer) et laissez réduire 1 min, puis ajoutez le bouillon, le jus de citron et l'ail doré. Laissez bouillonner 3 à 4 min jusqu'à ce que la sauce ait réduit de moitié et enrobe la viande.",
-      "Poivrez, parsemez de persil et servez avec les frites, qu'on trempe dans la sauce."
+      "Poivrez, parsemez de persil et servez avec les frites, qu'on trempe dans la sauce.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3110,6 +3152,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3117,7 +3165,8 @@
       "Dans une cocotte, faites fondre oignon et poivrons dans l'huile 10 min à feu moyen jusqu'à ce qu'ils soient tendres et légèrement colorés. Ajoutez l'ail 1 min, puis les tomates et le paprika, et laissez réduire 5 min.",
       "Ajoutez les pommes de terre cassées, mélangez, puis couvrez de fumet chaud. Portez à ébullition et laissez mijoter 20 à 25 min à feu moyen, jusqu'à ce qu'elles soient tendres et que le bouillon ait épaissi ; écrasez 2 ou 3 morceaux contre la paroi pour lier.",
       "Hors du feu, posez les dés de thon sur les pommes de terre, enfoncez-les légèrement, couvrez et laissez 5 min : la chaleur résiduelle les cuit juste, ils restent roses au centre et moelleux.",
-      "Parsemez de persil et servez aussitôt dans des assiettes creuses avec beaucoup de bouillon."
+      "Parsemez de persil et servez aussitôt dans des assiettes creuses avec beaucoup de bouillon.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "sans gluten",
@@ -3219,6 +3268,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 50,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3226,7 +3281,8 @@
       "Patatas panaderas : préchauffez le four à 190 °C. Mélangez pommes de terre et oignon avec 2 c. à soupe d'huile et du sel, étalez dans un plat, ajoutez 80 ml d'eau, couvrez d'aluminium et cuisez 30 min, puis 15 min à découvert jusqu'à ce qu'elles soient fondantes et dorées sur les bords.",
       "Séchez les ris, salez-les et farinez-les légèrement. Chauffez le reste d'huile à feu moyen-vif dans une poêle et dorez-les 6 à 8 min en les retournant, jusqu'à ce qu'ils soient croustillants et blonds sur toutes les faces.",
       "Ajoutez l'ail et le jambon et faites-les revenir 2 min à feu moyen jusqu'à ce que l'ail soit doré. Déglacez au vin blanc et laissez réduire 1 à 2 min jusqu'à ce que la sauce enrobe les ris.",
-      "Ajoutez le persil, le piment et un filet de jus de citron. Servez sur les patatas panaderas."
+      "Ajoutez le persil, le piment et un filet de jus de citron. Servez sur les patatas panaderas.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -3909,6 +3965,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 100,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3916,7 +3978,8 @@
       "Répétez une seconde série de couches de légumes, arrosez du vin blanc et du reste d'huile, couvrez et portez à frémissement. Cuisez 20 min à feu moyen-doux sans remuer, en secouant simplement la cocotte.",
       "Disposez les tronçons de lotte sur les pommes de terre, puis les moules par-dessus. Couvrez et poursuivez 12 à 15 min sans remuer.",
       "C'est prêt quand les moules sont toutes ouvertes, la lotte opaque et nacrée au centre et les pommes de terre tendres sous la pointe d'un couteau. Jetez les moules restées fermées.",
-      "Servez à la louche dans des assiettes creuses, en prenant toutes les couches, avec le pain grillé posé au fond pour boire le jus."
+      "Servez à la louche dans des assiettes creuses, en prenant toutes les couches, avec le pain grillé posé au fond pour boire le jus.",
+      "Terminez le repas par un morceau de fromage de brebis affiné (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "familial",
@@ -4121,6 +4184,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 50,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4128,7 +4197,8 @@
       "Cuisez les pommes de terre entières dans l'eau salée 20 à 25 min jusqu'à ce qu'une lame les traverse sans résistance ; épluchez-les et coupez-les en deux.",
       "Dans une grande poêle, faites fondre le saindoux et les lardons 5 min à feu moyen jusqu'à ce qu'ils soient dorés ; retirez les lardons.",
       "Égouttez le foie (gardez la marinade), épongez-le. Montez à feu vif et saisissez les tranches 1 min par face : elles doivent rester rosées à cœur, sinon elles durcissent. Réservez au chaud.",
-      "Versez la marinade dans la poêle, grattez les sucs et faites réduire 3 min de moitié. Remettez foie et lardons 30 s pour les napper, poivrez, parsemez de persil et servez avec les pommes de terre arrosées de sauce."
+      "Versez la marinade dans la poêle, grattez les sucs et faites réduire 3 min de moitié. Remettez foie et lardons 30 s pour les napper, poivrez, parsemez de persil et servez avec les pommes de terre arrosées de sauce.",
+      "Terminez le repas par un morceau de fromage de brebis affiné (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",

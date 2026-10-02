@@ -209,6 +209,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -217,7 +223,8 @@
       "Pendant ce temps, placez la viande 10 min au congélateur pour la raffermir, puis coupez-la au couteau en petits dés de 3 à 4 mm. Gardez-la au frais.",
       "Dans un saladier froid, mélangez la moutarde, 1 cuillère d'huile, les câpres, les cornichons, l'échalote, le persil, le piment, du sel et du poivre.",
       "Ajoutez la viande au dernier moment et mélangez à la fourchette sans écraser. Dressez en deux dômes à l'aide d'un cercle et creusez légèrement le sommet pour y déposer un jaune d'œuf.",
-      "Assaisonnez la salade avec le vinaigre et le reste d'huile. Servez immédiatement le tartare bien froid avec les frites brûlantes et la salade."
+      "Assaisonnez la salade avec le vinaigre et le reste d'huile. Servez immédiatement le tartare bien froid avec les frites brûlantes et la salade.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -339,6 +346,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -348,7 +361,8 @@
       "Versez le vin blanc, laissez bouillir 2 min, puis ajoutez le bouillon. Couvrez et laissez mijoter 2 h à tout petit frémissement (ou au four à 150 °C).",
       "Ajoutez les carottes, salez, poivrez et poursuivez 1 h 15 à couvert : la viande doit se défaire à la cuillère et les carottes être fondantes. Retirez le pied de veau, détachez-en la chair gélatineuse et remettez-la dans la sauce.",
       "Pendant la dernière demi-heure, cuisez les pommes de terre épluchées 25 min dans l'eau salée, écrasez-les au presse-purée avec 35 g de beurre, le lait chaud et la muscade.",
-      "Rectifiez l'assaisonnement de la sauce (réduisez-la 5 min à découvert si elle est trop liquide), parsemez de persil et servez sur la purée."
+      "Rectifiez l'assaisonnement de la sauce (réduisez-la 5 min à découvert si elle est trop liquide), parsemez de persil et servez sur la purée.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1697,6 +1711,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1706,7 +1726,8 @@
       "Badigeonnez le côté gras de moutarde et pressez la croûte persillée dessus en une couche régulière.",
       "Enfournez le carré à côté des grenailles 15 à 18 min (cœur à 55 °C pour rosé). Laissez reposer 5 min sous aluminium avant de découper entre les côtes.",
       "Pendant ce temps, cuisez les haricots verts 7 min dans l'eau bouillante salée, égouttez et roulez-les dans le reste du beurre.",
-      "Partagez les côtes avec les grenailles et les haricots verts, en écrasant l'ail confit sur les pommes de terre."
+      "Partagez les côtes avec les grenailles et les haricots verts, en écrasant l'ail confit sur les pommes de terre.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -1939,8 +1960,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -1953,7 +1974,7 @@
       "Glissez les tranches de jambon dans la sauce, couvrez et laissez-les se réchauffer 6 à 8 min à feu très doux, sans bouillir, en les retournant une fois.",
       "Pendant ce temps, faites tomber les épinards 2 min dans 20 g de beurre à feu vif, salez et ajoutez la muscade.",
       "Ajoutez le reste du beurre à la sauce hors du feu et servez le jambon nappé, avec les épinards et les pommes vapeur.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2474,6 +2495,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2482,7 +2509,8 @@
       "Quadrillez la peau du magret sans entailler la chair, salez. Posez-le côté peau dans une poêle froide, allumez à feu moyen et cuisez 8 à 10 min en retirant régulièrement la graisse fondue, jusqu'à ce que la peau soit dorée et croustillante. Retournez 4 min côté chair, puis laissez reposer 5 min sous aluminium.",
       "Videz la poêle. Faites caraméliser le miel 1 min à feu moyen, déglacez au vinaigre (attention aux projections), puis ajoutez jus d'orange et bouillon. Faites réduire 8 min jusqu'à consistance sirupeuse.",
       "Hors du feu, montez la sauce avec le reste du beurre, ajoutez les zestes et les suprêmes. Poivrez.",
-      "Tranchez le magret, nappez de sauce à l'orange et servez avec l'écrasé."
+      "Tranchez le magret, nappez de sauce à l'orange et servez avec l'écrasé.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -3122,6 +3150,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3130,7 +3164,8 @@
       "Mélangez les échalotes avec la chapelure, le persil, l'ail haché, le reste du beurre mou, sel et poivre, pour obtenir une pâte grumeleuse.",
       "Posez les dos de cabillaud salés dans un plat, versez le vin blanc autour, et couvrez le dessus de chaque morceau d'une couche de croûte en tassant.",
       "Enfournez 12 à 15 min : la croûte doit être dorée et la chair juste nacrée à cœur. Passez 1 min sous le gril si besoin.",
-      "Arrosez de quelques gouttes de citron et servez avec les pommes fondantes et le jus du plat."
+      "Arrosez de quelques gouttes de citron et servez avec les pommes fondantes et le jus du plat.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -3214,8 +3249,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -3226,7 +3261,7 @@
       "Ajoutez la crème et laissez bouillonner 3 min jusqu'à ce qu'elle nappe la cuillère. Hors du feu, ajoutez l'oseille : elle fond et vire au vert kaki en 30 secondes. Salez, poivrez.",
       "Salez les pavés. Faites mousser le beurre dans une poêle à feu moyen-vif et cuisez le saumon 3 min sur la première face, 1 à 2 min sur la seconde : le cœur doit rester rosé et nacré.",
       "Versez la sauce à l'oseille dans les assiettes chaudes, posez le saumon dessus et servez avec le riz.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3432,6 +3467,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3440,7 +3481,8 @@
       "Versez le court-bouillon bouillant avec ses légumes sur les filets : ils doivent être couverts. La chaleur suffit à les cuire. Laissez refroidir, filmez et réservez au moins 12 h au réfrigérateur.",
       "Le jour même, cuisez les pommes de terre dans leur peau 20 à 25 min à l'eau salée, jusqu'à ce que la lame d'un couteau s'y enfonce sans résistance. Pelez-les tièdes et coupez-les en rondelles.",
       "Arrosez les pommes de terre d'huile d'olive et de 2 cuillères de marinade, salez, poivrez et parsemez de ciboulette.",
-      "Servez les filets froids avec carottes et oignons de la marinade sur les pommes de terre tièdes."
+      "Servez les filets froids avec carottes et oignons de la marinade sur les pommes de terre tièdes.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "préparation à l’avance",
@@ -3542,6 +3584,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3550,7 +3598,8 @@
       "Dans un grand faitout, faites dorer les lardons 3 min à feu moyen, ajoutez le beurre, les échalotes et les champignons et faites revenir 5 min.",
       "Montez à feu vif, ajoutez les moules et le cidre, couvrez et cuisez 5 à 6 min en secouant le faitout deux fois : toutes les moules doivent être ouvertes.",
       "Retirez les moules dans un plat creux chaud. Faites bouillir le jus 3 min, ajoutez la crème et laissez bouillonner 2 min. Poivrez, ajoutez le persil.",
-      "Versez la sauce sur les moules et servez immédiatement avec les pommes de terre rôties."
+      "Versez la sauce sur les moules et servez immédiatement avec les pommes de terre rôties.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "familial",
@@ -3888,6 +3937,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3896,7 +3951,8 @@
       "Faites suer oignons et carottes 5 min à feu moyen. Remettez le cœur, saupoudrez de farine, remuez 1 min, puis ajoutez le concentré de tomate et l'ail.",
       "Versez le vin blanc et le bouillon, ajoutez thym et laurier. Couvrez et laissez braiser 1 h 45 à feu très doux : le cœur doit être tendre sous la fourchette.",
       "30 min avant la fin, cuisez les pommes de terre épluchées 25 min à l'eau salée et écrasez-les avec 55 g de beurre et le lait chaud.",
-      "Faites réduire la sauce 5 min à découvert si elle est trop liquide, poivrez et servez sur la purée."
+      "Faites réduire la sauce 5 min à découvert si elle est trop liquide, poivrez et servez sur la purée.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",

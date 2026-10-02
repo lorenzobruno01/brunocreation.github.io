@@ -693,6 +693,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 500,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -701,7 +707,8 @@
       "Ajoutez paprika, chipotle, cannelle, girofle et cumin, mélangez 30 secondes, puis versez 300 ml de bouillon. Mixez le tout très finement au mixeur plongeant.",
       "Remettez la sauce à feu doux, ajoutez le chocolat haché et le reste du bouillon. Remuez jusqu'à ce que le chocolat fonde : la sauce doit être brun-rouge, veloutée et napper la cuillère.",
       "Remettez les cuisses, couvrez et laissez mijoter 40 min à feu doux en remuant de temps en temps (la sauce attache facilement). Lancez le riz 20 min avant la fin.",
-      "Servez les cuisses nappées de mole, parsemées de sésame grillé, avec le riz et les tortillas chaudes."
+      "Servez les cuisses nappées de mole, parsemées de sésame grillé, avec le riz et les tortillas chaudes.",
+      "Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -1049,6 +1056,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "cac"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1058,7 +1071,8 @@
       "Leche de tigre : mixez ou pilez le jus des citrons verts avec le gingembre, l'ail, la moitié du piment, quelques tiges de coriandre, le sel et 2 petits cubes de poisson. Filtrez.",
       "Coupez le bar bien froid en cubes de 2 cm, salez-le, versez le leche de tigre et mélangez délicatement. Laissez « cuire » 5 à 8 min au frais : l'extérieur blanchit, le cœur reste translucide.",
       "Ajoutez l'oignon rouge, le reste du piment émincé et la coriandre, un filet d'huile d'olive.",
-      "Servez aussitôt dans des assiettes creuses avec la patate douce, le maïs et l'avocat en tranches, arrosé du jus du ceviche."
+      "Servez aussitôt dans des assiettes creuses avec la patate douce, le maïs et l'avocat en tranches, arrosé du jus du ceviche.",
+      "Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "léger",
@@ -1569,6 +1583,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1577,7 +1597,8 @@
       "Cuisez pommes de terre et carottes 18 min à la vapeur.",
       "Formez des galettes ovales à l'aide d'une cuillère à soupe trempée dans le beurre fondu (environ 10 galettes).",
       "Faites-les dorer dans le beurre à feu moyen 4 min par face : elles doivent gonfler, être bien dorées et fermes au centre.",
-      "Servez avec les pommes de terre et carottes parsemées de persil, la rémoulade et des quartiers de citron."
+      "Servez avec les pommes de terre et carottes parsemées de persil, la rémoulade et des quartiers de citron.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "familial",
@@ -1775,6 +1796,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1782,7 +1809,8 @@
       "Dans une autre poêle, faites revenir l'oignon dans le reste du beurre 5 min à feu moyen jusqu'à ce qu'il soit doré, puis ajoutez saucisse et bœuf et faites-les rissoler 5 min.",
       "Réunissez le tout, salez, poivrez, mélangez 2 min à feu vif.",
       "Dressez en dôme dans les assiettes, creusez un puits et déposez un jaune d'œuf dans une demi-coquille.",
-      "Servez avec la betterave marinée en dés, les cornichons et le persil : chacun mélange le jaune dans la poêlée chaude."
+      "Servez avec la betterave marinée en dés, les cornichons et le persil : chacun mélange le jaune dans la poêlée chaude.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "économique",
@@ -2657,6 +2685,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2664,7 +2698,8 @@
       "Pendant ce temps, faites fondre les oignons dans 15 g de beurre à feu moyen-doux 15 min avec une pincée de sel, jusqu'à ce qu'ils soient dorés et fondants. Réservez au chaud.",
       "Dans la même poêle, faites dorer les rondelles de pomme dans 10 g de beurre 2 min par face : elles doivent être caramélisées mais encore se tenir. Réservez avec les oignons.",
       "Épongez le foie, passez-le dans la farine et tapotez. Faites mousser le reste de beurre à feu moyen-vif et saisissez le foie 1 min 30 par face : il doit rester rosé à cœur. Salez et poivrez seulement après cuisson (le sel le durcit).",
-      "Servez le foie sur la purée, couvert d'oignons et de pommes, arrosé du beurre de cuisson, parsemé de persil et de marjolaine."
+      "Servez le foie sur la purée, couvert d'oignons et de pommes, arrosé du beurre de cuisson, parsemé de persil et de marjolaine.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",

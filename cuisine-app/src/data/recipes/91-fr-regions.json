@@ -478,8 +478,8 @@
       "Coupez le boudin en tronçons de 3 cm d'épaisseur : ils doivent montrer une jolie spirale.",
       "Dans une grande sauteuse, faites dorer les roulés à plat dans le beurre à feu moyen, 3 min par face, jusqu'à ce qu'ils soient bien colorés.",
       "Versez le bouillon chaud à mi-hauteur, couvrez et laissez cuire 20 min à feu doux : le bouillon doit être presque entièrement absorbé et la pâte tendre.",
-      "Servez avec la laitue assaisonnée de vinaigre de cidre et d'beurre clarifié.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Servez avec la laitue assaisonnée de vinaigre de cidre et d'beurre clarifié."
     ],
     "tags": [
       "week-end",
@@ -1063,8 +1063,8 @@
       "Fouettez le fromage blanc avec la crème 1 min pour l'aérer. Ajoutez l'échalote, l'ail râpé, la ciboulette et le persil ciselés, le vin blanc, l'beurre clarifié, sel et beaucoup de poivre. Réservez au frais au moins 20 min.",
       "Cuisez les œufs 9 min dans l'eau bouillante, refroidissez et écalez.",
       "Fendez les pommes de terre en croix, glissez une noisette de beurre, puis une grosse cuillerée de cervelle de canut.",
-      "Servez avec le jambon cru, les œufs coupés en deux et le reste de cervelle de canut à part.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Servez avec le jambon cru, les œufs coupés en deux et le reste de cervelle de canut à part."
     ],
     "tags": [
       "rapide",
@@ -1823,8 +1823,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 60,
+        "id": "comte",
+        "qty": 80,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -1838,7 +1838,7 @@
       "Enfournez 50 à 55 min : le dessus doit être bien doré et une lame plantée au centre ressortir sèche.",
       "Pendant ce temps, coupez les pommes de terre en dés de 2 cm et faites-les sauter dans la graisse de canard 25 min à feu moyen, en remuant souvent, jusqu'à ce qu'elles soient dorées et croustillantes. Salez.",
       "Démoulez le pounti après 10 min de repos, coupez en tranches épaisses et servez avec les pommes de terre.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1963,6 +1963,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 120,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1972,7 +1978,8 @@
       "Effilochez le jarret en gros morceaux, désossez le pied et hachez sa peau gélatineuse. Mélangez avec le jambon en cubes.",
       "Mélangez le persil, les échalotes, l'ail haché et le vinaigre. Dans une terrine, alternez couches de viande et de persillade, puis versez la gelée tiède à hauteur en tassant. Couvrez et laissez prendre 12 h au réfrigérateur.",
       "Le jour du repas, cuisez les pommes de terre en robe des champs 25 min. Pelez-les tièdes, coupez en rondelles et nappez de crème fouettée avec la moutarde, sel et poivre.",
-      "Démoulez la terrine en trempant le fond 10 s dans l'eau chaude, tranchez épais au couteau bien aiguisé et servez avec les pommes de terre."
+      "Démoulez la terrine en trempant le fond 10 s dans l'eau chaude, tranchez épais au couteau bien aiguisé et servez avec les pommes de terre.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "préparation à l’avance",
@@ -2457,6 +2464,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2465,7 +2478,8 @@
       "Ajoutez les pommes de terre, le fumet, le vin, le laurier et le zeste d'orange. Couvrez et cuisez 15 min à frémissement.",
       "Posez les médaillons de lotte sur les légumes, couvrez et pochez 8 à 10 min : la chair doit être blanche et ferme au cœur. Retirez poisson et légumes dans des assiettes creuses chaudes.",
       "Mélangez la moitié de l'aïoli avec les 2 jaunes restants. Hors du feu, versez dessus le bouillon chaud petit à petit en fouettant, puis remettez sur feu très doux en remuant 2 à 3 min : la sauce doit épaissir et napper la cuillère, sans jamais bouillir.",
-      "Nappez le poisson de sauce et servez avec le pain grillé tartiné du reste d'aïoli."
+      "Nappez le poisson de sauce et servez avec le pain grillé tartiné du reste d'aïoli.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -2683,6 +2697,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2691,7 +2711,8 @@
       "Monter le feu, ajoutez le veau, salez et faites-le colorer 5 min en remuant : il doit perdre sa couleur rosée.",
       "Ajoutez l'ail et le piment d'Espelette, mélangez 1 min, puis versez le bouillon. Couvrez et laissez mijoter 20 min à feu doux : la sauce doit être courte et la viande tendre.",
       "Pendant ce temps, coupez les pommes de terre en cubes de 2 cm et faites-les sauter dans la graisse de canard 20 à 25 min à feu moyen jusqu'à ce qu'elles soient dorées sur toutes les faces. Salez et ajoutez le persil haché.",
-      "Servez l'axoa bien chaud avec les pommes de terre."
+      "Servez l'axoa bien chaud avec les pommes de terre.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2808,8 +2829,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 90,
+        "id": "comte",
+        "qty": 120,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -2821,7 +2842,7 @@
       "Préchauffez le four à 150 °C. Dans une cassole en terre (ou un grand plat profond), alternez haricots et viandes en terminant par des haricots, avec les morceaux de confit et de saucisse posés à moitié enfoncés sur le dessus.",
       "Versez du bouillon à hauteur, salez, poivrez. Enfournez 2 h 30. Toutes les 30 min, une croûte dorée se forme : enfoncez-la à la cuillère et rajoutez un peu de bouillon si le cassoulet s'assèche (traditionnellement 7 fois).",
       "Servez dans la cassole, la croûte bien dorée et les haricots crémeux en dessous.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2922,6 +2943,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2930,7 +2957,8 @@
       "Ajoutez les pommes de terre (cassez-les en morceaux irréguliers en les entaillant puis en tordant le couteau : elles libèrent leur amidon), versez le fumet. Couvrez et cuisez 20 min à frémissement : elles doivent être tendres et la sauce légèrement épaissie.",
       "Salez les cubes de thon et saisissez-les 30 s par face dans le reste d'huile à feu très vif.",
       "Hors du feu, plongez le thon dans la cocotte, couvrez et laissez 4 min : il doit rester rosé au cœur.",
-      "Parsemez de persil et servez aussitôt dans des assiettes creuses."
+      "Parsemez de persil et servez aussitôt dans des assiettes creuses.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3018,6 +3046,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3026,7 +3060,8 @@
       "Épongez les cœurs. Dans la même poêle très chaude, avec le reste de graisse, saisissez-les 2 min par face : ils doivent être dorés dehors et rosés à cœur. Salez et poivrez.",
       "Ajoutez l'échalote ciselée 30 s, déglacez au vin rouge en grattant, laissez réduire 1 min.",
       "Remettez les cèpes, ajoutez l'ail et le persil hachés sur les pommes de terre et dans la fricassée, mélangez 1 min.",
-      "Servez aussitôt les cœurs et les cèpes avec les pommes sautées."
+      "Servez aussitôt les cœurs et les cèpes avec les pommes sautées.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -3273,8 +3308,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 90,
+        "id": "comte",
+        "qty": 120,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -3288,7 +3323,7 @@
       "Lipig : faites fondre doucement le reste du beurre avec les échalotes 10 min à feu doux, sans coloration.",
       "Sortez le sac, roulez-le sur le plan de travail en le malaxant pour émietter le farz en grains. Ouvrez-le dans un plat chaud.",
       "Servez les viandes tranchées, les légumes et le farz arrosé de lipig, avec un bol de bouillon à côté.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -4739,6 +4774,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 120,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4748,7 +4789,8 @@
       "Remettez viande, lardons, légumes de la marinade et l'autre oignon haché. Saupoudrez de farine, remuez 2 min, puis versez la marinade portée à ébullition. Couvrez et laissez mijoter 2 h 30 à feu doux : la viande doit être tendre sous la fourchette.",
       "Faites sauter les champignons dans le reste du beurre 5 min à feu vif, ajoutez-les avec le chocolat 20 min avant la fin. La sauce doit être sombre, brillante et napper la cuillère.",
       "Cuisez les pommes de terre épluchées 25 min à la vapeur.",
-      "Servez le civet avec les pommes vapeur et une cuillerée d'airelles."
+      "Servez le civet avec les pommes vapeur et une cuillerée d'airelles.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",

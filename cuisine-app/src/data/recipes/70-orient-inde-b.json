@@ -107,6 +107,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 580,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -115,7 +121,8 @@
       "Pendant ce temps, faites tremper les pruneaux 15 min dans l'eau chaude, égouttez-les et faites-les compoter 10 min dans une petite casserole avec le miel, une pincée de cannelle et 4 c. à soupe de sauce du tajine.",
       "Dorez les amandes à sec dans une poêle 4 à 5 min à feu moyen, puis le sésame 1 min.",
       "Semoule : versez 220 ml d'eau bouillante salée sur la semoule, couvrez 5 min, puis égrainez à la fourchette avec 15 g de beurre.",
-      "Disposez les pruneaux sur la viande, réchauffez 5 min à couvert, puis parsemez d'amandes, de sésame et de coriandre. Servez avec la semoule."
+      "Disposez les pruneaux sur la viande, réchauffez 5 min à couvert, puis parsemez d'amandes, de sésame et de coriandre. Servez avec la semoule.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -749,6 +756,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -757,7 +770,8 @@
       "Préchauffez le four à 200 °C. Mélangez les pommes de terre et le poivron avec le reste de chermoula et 2 c. à soupe d'huile, étalez-les dans un plat ou un tajine et ajoutez 100 ml d'eau. Couvrez d'aluminium et enfournez 25 min.",
       "Sortez le plat : les pommes de terre doivent être presque tendres. Posez dessus les tronçons de lotte, les rondelles de tomate et les olives.",
       "Enfournez à découvert 15 min : la lotte doit être opaque et ferme au toucher, et les pommes de terre dorées sur les bords.",
-      "Arrosez du jus de cuisson et servez avec des quartiers de citron."
+      "Arrosez du jus de cuisson et servez avec des quartiers de citron.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "sans gluten",
@@ -1005,6 +1019,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 520,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1012,7 +1032,8 @@
       "Versez l'eau chaude, couvrez et laissez mijoter 50 min à feu doux.",
       "Ajoutez les pommes de terre et l'écorce de citron confit en lanières, poursuivez 20 min à couvert.",
       "Ajoutez les cœurs d'artichaut et les petits pois, enfoncez-les dans la sauce et cuisez encore 15 min : les petits pois doivent être tendres mais encore verts et le veau fondant.",
-      "Faites réduire 5 min à découvert si la sauce est trop liquide. Parsemez de coriandre et de persil ciselés avant de servir."
+      "Faites réduire 5 min à découvert si la sauce est trop liquide. Parsemez de coriandre et de persil ciselés avant de servir.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1227,6 +1248,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1234,7 +1261,8 @@
       "Coupez tomates, concombre, poivron et oignon rouge en petits dés réguliers de 1 cm. Assaisonnez avec la moitié du cumin, le jus d'un demi-citron, 1 c. à soupe d'huile, sel et coriandre ciselée.",
       "Égouttez les pommes de terre et mélangez-les tièdes avec le reste du cumin, le persil, 1 c. à soupe d'huile et le jus du demi-citron restant.",
       "Séchez les sardines, frottez-les du reste d'huile, du paprika et de sel. Grillez-les au barbecue ou sur une plancha très chaude 2 à 3 min par face, jusqu'à ce que la peau soit croustillante et se décolle de la grille.",
-      "Servez les sardines sur la salade, avec les pommes de terre et les olives."
+      "Servez les sardines sur la salade, avec les pommes de terre et les olives.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2072,6 +2100,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2081,7 +2115,8 @@
       "Séchez le cabillaud, frottez-le avec le reste de curcuma, le piment et du sel.",
       "Chauffez 10 g de ghee dans une poêle à feu moyen-vif. Posez le poisson et laissez-le 4 min sans le bouger, retournez délicatement et cuisez 2 à 3 min : la chair doit être nacrée et s'effeuiller.",
       "Tadka : faites chauffer les 20 g de ghee restants dans une petite poêle, ajoutez cumin et graines de moutarde ; quand elles crépitent (30 s), ajoutez l'oignon émincé, l'ail et le piment frais, et laissez dorer 2 min. Versez aussitôt sur le dal en grésillant.",
-      "Servez le dal et le riz avec le cabillaud, la coriandre ciselée et des quartiers de citron vert."
+      "Servez le dal et le riz avec le cabillaud, la coriandre ciselée et des quartiers de citron vert.",
+      "Servez avec un raïta (yaourt nature entier, sel, cumin) : son calcium limite l’absorption des oxalates."
     ],
     "tags": [
       "riche en protéines",

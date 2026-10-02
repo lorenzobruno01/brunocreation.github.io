@@ -566,6 +566,12 @@
         "qty": 1,
         "unit": "cac",
         "note": "en grains"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -575,7 +581,8 @@
       "Ajoutez au faitout carottes, navets et chou. Poursuivez 30 min à frémissement.",
       "Piquez la saucisse de Morteau en 3 endroits et plongez-la avec les pommes de terre. Cuisez encore 35 min : la pointe d'un couteau doit traverser les pommes de terre sans résistance.",
       "Sortez viande et saucisse, tranchez-les. Goûtez le bouillon et rectifiez.",
-      "Servez dans de grandes assiettes creuses : légumes et viandes, une louche de bouillon brûlant par-dessus, avec moutarde et cornichons à côté."
+      "Servez dans de grandes assiettes creuses : légumes et viandes, une louche de bouillon brûlant par-dessus, avec moutarde et cornichons à côté.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2362,6 +2369,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2370,7 +2383,8 @@
       "Ajoutez les pommes de terre au bouillon, cuisez 10 min, puis le chou et cuisez encore 10 min.",
       "Ajoutez la poêlée de betterave et laissez mijoter 15 min à feu doux. Salez, poivrez.",
       "Hors du feu, ajoutez l'ail râpé et la moitié de l'aneth haché, couvrez et laissez reposer 10 min : le bortsch est toujours meilleur un peu reposé.",
-      "Servez avec les travers dans chaque bol, une cuillère de crème fraîche, le reste d'aneth et le pain de seigle."
+      "Servez avec les travers dans chaque bol, une cuillère de crème fraîche, le reste d'aneth et le pain de seigle.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2477,6 +2491,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2484,7 +2504,8 @@
       "Ajoutez pommes de terre, carotte, fumet, laurier et piment de la Jamaïque. Portez à ébullition puis cuisez 15 min à feu moyen : les pommes de terre doivent être tendres.",
       "Versez la crème, ramenez à petit frémissement.",
       "Ajoutez le saumon et la moitié de l'aneth haché, couvrez et cuisez 5 min à feu très doux, sans remuer pour ne pas briser les cubes : le saumon doit être tout juste opaque.",
-      "Salez, poivrez, retirez le laurier. Servez parsemé du reste d'aneth, avec le pain de seigle beurré."
+      "Salez, poivrez, retirez le laurier. Servez parsemé du reste d'aneth, avec le pain de seigle beurré.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2589,7 +2610,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper l’orge perlé 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mettez les cuisses de poulet dans un faitout avec le bouillon, le thym et le laurier. Portez à frémissement, écumez 5 min, puis cuisez 40 min à feu doux.",
       "Pendant ce temps, faites fondre le beurre dans une poêle et faites suer le vert des poireaux 5 min à feu moyen.",
       "Sortez les cuisses, laissez tiédir 10 min, puis retirez la peau et effilochez la chair en gros morceaux. Remettez les os dans le bouillon.",

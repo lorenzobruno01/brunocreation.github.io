@@ -162,6 +162,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -170,7 +176,8 @@
       "Faites chauffer 10 g de beurre à feu moyen-vif. Cuisez les côtes 5 min par face avec le thym et l'ail écrasé : elles doivent être bien dorées, et le jus clair quand on pique près de l'os.",
       "Réservez les côtes sur une assiette. Baissez le feu, ajoutez la moutarde et la crème dans la poêle, grattez les sucs et laissez bouillonner 1 à 2 min.",
       "Remettez les côtes et leur jus dans la sauce 1 min. Poivrez.",
-      "Mélangez pommes de terre et haricots avec le reste du beurre, salez, et servez avec les côtes nappées de sauce."
+      "Mélangez pommes de terre et haricots avec le reste du beurre, salez, et servez avec les côtes nappées de sauce.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -264,6 +271,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -271,7 +284,8 @@
       "Mélangez le bœuf haché avec l'échalote, la moitié du persil, sel et poivre, sans trop travailler. Formez 2 steaks de 2 cm d'épaisseur, creusez légèrement le centre.",
       "Égouttez les pommes de terre, écrasez-les au presse-purée, puis incorporez 30 g de beurre en morceaux et le lait chaud. Ajoutez la muscade et salez.",
       "Faites chauffer le reste du beurre à feu vif. Saisissez les steaks 3 min par face pour une cuisson à point (2 min pour saignant).",
-      "Assaisonnez la salade avec l'huile et le vinaigre. Servez les steaks parsemés du reste de persil, avec la purée et la salade."
+      "Assaisonnez la salade avec l'huile et le vinaigre. Servez les steaks parsemés du reste de persil, avec la purée et la salade.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -369,8 +383,8 @@
       "Ajoutez 10 g de beurre et les dés de pommes de terre. Faites-les rissoler 12 min à feu moyen en remuant souvent, puis ajoutez l'oignon et poursuivez 4 min : les pommes de terre doivent être dorées et tendres.",
       "Battez les œufs avec le persil, une pincée de sel et du poivre. Remettez les lardons dans la poêle avec le reste du beurre.",
       "Versez les œufs, ramenez les bords vers le centre avec une spatule pendant 1 min, puis laissez prendre 2 à 3 min à feu doux : le dessus doit rester légèrement baveux.",
-      "Faites glisser l'omelette sur un plat en la pliant ou servez-la à plat, avec la salade assaisonnée d'beurre clarifié et de vinaigre.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Faites glisser l'omelette sur un plat en la pliant ou servez-la à plat, avec la salade assaisonnée d'beurre clarifié et de vinaigre."
     ],
     "tags": [
       "rapide",
@@ -548,6 +562,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -555,7 +575,8 @@
       "Découpez 2 grands rectangles de papier sulfurisé. Répartissez au centre la julienne de poireau et de carotte, salez.",
       "Posez les pavés de saumon sur les légumes, salez, poivrez, ajoutez 1 c. à soupe de crème, 2 rondelles de citron et quelques pluches d'aneth sur chacun.",
       "Refermez les papillotes en roulant les bords pour qu'elles soient bien étanches. Enfournez 15 min sur une plaque : le saumon est nacré à cœur et les légumes tendres.",
-      "Arrosez les pommes de terre du beurre fondu, salez et parsemez du reste d'aneth. Servez les papillotes fermées, à ouvrir à table, avec le reste du citron."
+      "Arrosez les pommes de terre du beurre fondu, salez et parsemez du reste d'aneth. Servez les papillotes fermées, à ouvrir à table, avec le reste du citron.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -1159,8 +1180,8 @@
       "Posez les tranches de pain sur une plaque, répartissez les lardons puis les rondelles de chèvre. Parsemez de thym effeuillé.",
       "Enfournez 6 à 8 min en haut du four : le chèvre doit fondre et blondir sur les bords. Surveillez la dernière minute.",
       "Arrosez d'un filet de miel à la sortie du four et poivrez.",
-      "Assaisonnez la mâche avec l'beurre clarifié, le vinaigre et les cerneaux de noix concassés, et servez avec les tartines brûlantes.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Assaisonnez la mâche avec l'beurre clarifié, le vinaigre et les cerneaux de noix concassés, et servez avec les tartines brûlantes."
     ],
     "tags": [
       "rapide",
@@ -1510,6 +1531,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1518,7 +1545,8 @@
       "Posez-le côté peau dans une poêle froide, puis allumez à feu moyen. Laissez fondre la graisse 8 min en la retirant régulièrement : la peau doit être dorée et croustillante.",
       "Retournez le magret et cuisez 4 min côté chair pour une cuisson rosée. Réservez-le 5 min sous aluminium.",
       "Videz la graisse (gardez-la), versez le miel, le vinaigre balsamique et le thym dans la poêle, laissez réduire 1 min jusqu'à consistance sirupeuse.",
-      "Écrasez la patate douce avec le beurre, salez. Tranchez le magret, nappez de laque et servez avec la purée et les haricots verts."
+      "Écrasez la patate douce avec le beurre, salez. Tranchez le magret, nappez de laque et servez avec la purée et les haricots verts.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -1883,6 +1911,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1890,7 +1924,8 @@
       "Épongez très soigneusement les encornets : ils ne doivent pas rendre d'eau dans la poêle.",
       "Faites chauffer le reste d'huile dans une grande poêle à feu très vif jusqu'à ce qu'elle fume légèrement. Saisissez les encornets 2 min en une seule couche, sans remuer la première minute.",
       "Ajoutez le reste du beurre, l'ail et le persil, faites sauter 1 min : l'ail doit embaumer sans brunir.",
-      "Hors du feu, arrosez de jus de citron, ajoutez l'Espelette, salez et servez avec les pommes de terre."
+      "Hors du feu, arrosez de jus de citron, ajoutez l'Espelette, salez et servez avec les pommes de terre.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2077,8 +2112,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -2089,7 +2124,7 @@
       "Faites chauffer une poêle à feu vif avec le reste du beurre. Saisissez les tranches 3 min par face pour une chair rosée, salez, poivrez.",
       "Laissez reposer la viande 3 min, versez le jus de la poêle sur les flageolets et parsemez de persil.",
       "Servez avec le pain de campagne grillé.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2172,6 +2207,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2179,7 +2220,8 @@
       "Faites fondre la graisse de canard, mélangez-la aux frites avec du sel, étalez-les en une seule couche sur une plaque. Enfournez 30 à 35 min en les retournant à mi-cuisson : elles doivent être dorées et croustillantes.",
       "Incisez légèrement la peau des andouillettes. 20 min avant la fin des frites, glissez-les au four sur une petite grille ou faites-les cuire 15 min à la poêle à feu moyen en les retournant : la peau doit être dorée.",
       "Sauce : faites suer l'échalote 2 min dans une petite casserole, ajoutez le vin blanc et laissez réduire des deux tiers. Ajoutez la crème et la moutarde et faites bouillonner 1 min.",
-      "Servez les andouillettes nappées de sauce, avec les frites et la salade."
+      "Servez les andouillettes nappées de sauce, avec les frites et la salade.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -2260,6 +2302,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2268,7 +2316,8 @@
       "Faites chauffer 20 g de beurre à feu moyen-vif dans une grande poêle. Saisissez les côtes 4 min, retournez-les et ajoutez l'ail écrasé, la sauge et le thym.",
       "Baissez à feu moyen et cuisez 4 à 5 min en arrosant sans arrêt avec le beurre qui devient noisette. Le veau doit être rosé pâle à cœur (60 °C). Laissez reposer 5 min.",
       "Égouttez les légumes, écrasez-les avec le lait chaud et 20 g de beurre, salez, poivrez.",
-      "Servez la côte avec la purée, arrosée du beurre noisette de la poêle et des feuilles de sauge croustillantes."
+      "Servez la côte avec la purée, arrosée du beurre noisette de la poêle et des feuilles de sauge croustillantes.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -2366,6 +2415,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2374,7 +2429,8 @@
       "Frottez les cuisses de poulet avec le reste d'huile, le paprika et du sel. Posez-les peau vers le haut sur les légumes, avec les gousses d'ail.",
       "Enfournez 25 min, puis ajoutez les courgettes en les mêlant aux légumes et arrosez le poulet de jus.",
       "Poursuivez 20 min : la peau doit être dorée et croustillante, le jus clair en piquant la partie la plus épaisse (75 °C à cœur), les pommes de terre dorées.",
-      "Laissez reposer 5 min hors du four et servez directement dans la plaque, en écrasant l'ail confit sur les légumes."
+      "Laissez reposer 5 min hors du four et servez directement dans la plaque, en écrasant l'ail confit sur les légumes.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -3532,8 +3588,8 @@
       "Faites dorer les lardons 5 min à sec à feu moyen.",
       "Coupez les œufs en deux. Écrasez les jaunes avec le yaourt et la moutarde, salez, poivrez, et regarnissez les blancs. Réservez un jaune pour l'effet mimosa.",
       "Vinaigrette : beurre clarifié, vinaigre, échalote, sel et poivre. Mélangez-la aux lentilles et pommes de terre tièdes avec les lardons et le persil.",
-      "Disposez les œufs farcis sur la salade et râpez le jaune réservé par-dessus.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Disposez les œufs farcis sur la salade et râpez le jaune réservé par-dessus."
     ],
     "tags": [
       "repas froid",
@@ -3839,6 +3895,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3846,7 +3908,8 @@
       "Faites cuire les œufs 6 min 30 dans l'eau bouillante pour un jaune coulant, refroidissez-les et écalez-les.",
       "Saisissez les crevettes 2 min dans 1 c. à soupe d'huile à feu vif : elles doivent être roses et légèrement dorées. Salez.",
       "Fouettez la moutarde, le vinaigre, le reste d'huile et l'échalote. Mélangez avec les haricots, les pommes de terre et les tomates cerises coupées.",
-      "Ajoutez les crevettes et les œufs ouverts en deux, parsemez de ciboulette et servez tiède ou froid."
+      "Ajoutez les crevettes et les œufs ouverts en deux, parsemez de ciboulette et servez tiède ou froid.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",

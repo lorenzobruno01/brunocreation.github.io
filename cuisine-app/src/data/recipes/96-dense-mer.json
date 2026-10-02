@@ -446,20 +446,20 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le sarrasin, faites-le griller 2 min à sec dans une casserole à feu moyen, versez le bouillon chaud, couvrez et laissez cuire 12 min à feu doux jusqu'à absorption. Laissez reposer 5 min à couvert.",
       "Faites fondre les poireaux émincés avec 10 g de beurre et une pincée de sel, 10 min à feu doux à couvert. Mélangez-les au sarrasin avec les graines de courge.",
       "Épongez les filets, entaillez légèrement la peau et salez. Chauffez l'huile d'olive dans une poêle à feu vif, posez les filets côté peau 3 min en les pressant avec une spatule, retournez et cuisez 1 min.",
       "Essuyez la poêle, faites mousser le reste du beurre à feu moyen jusqu'à ce qu'il sente la noisette et devienne blond foncé (2 min). Hors du feu, ajoutez les câpres, le jus d'un demi-citron et le persil haché.",
       "Dressez le sarrasin aux poireaux, posez les filets et nappez de beurre noisette. Servez avec le reste du citron en quartiers.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -581,6 +581,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -589,7 +595,8 @@
       "Dans la même poêle, à feu moyen, faites revenir 5 min dans 3 c. à soupe d'huile l'oignon, les carottes et l'ail. Ajoutez le paprika, le laurier et le thym, remuez 30 s.",
       "Versez le vinaigre et le vin blanc, ajoutez 50 ml d'eau et laissez frémir 5 min : les carottes restent légèrement croquantes.",
       "Versez la marinade bouillante sur les filets : elle termine leur cuisson. Laissez reposer au moins 20 min (ou une nuit au frais).",
-      "Pelez les poivrons rôtis, coupez-les en lanières, mêlez-les aux pommes de terre écrasées à la fourchette. Servez avec le maquereau, ses légumes et un peu de marinade, parsemé de persil."
+      "Pelez les poivrons rôtis, coupez-les en lanières, mêlez-les aux pommes de terre écrasées à la fourchette. Servez avec le maquereau, ses légumes et un peu de marinade, parsemé de persil.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "préparation à l’avance",
@@ -806,8 +813,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "yaourt-nature",
+        "qty": 250,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -819,7 +826,7 @@
       "Délayez le miso dans un peu de jus de cuisson, versez-le dans la sauteuse et poursuivez 8 min en arrosant le poisson, jusqu'à ce que la sauce nappe et brille.",
       "Blanchissez les épinards 1 min, rafraîchissez-les, pressez-les et assaisonnez-les du sésame pilé et d'un trait de sauce soja.",
       "Servez le maquereau nappé de sauce avec le riz, les épinards, la nori en lanières et l'oignon nouveau émincé.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1130,6 +1137,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1137,7 +1150,8 @@
       "Mixez grossièrement les noisettes, la chapelure, le persil, le zeste du citron et le beurre mou jusqu'à obtenir une pâte sableuse.",
       "Posez les pavés sur une plaque, badigeonnez le dessus de moutarde et pressez la croûte de noisettes dessus.",
       "Enfournez 12 à 14 min : la croûte est dorée et le saumon encore nacré à cœur.",
-      "Égouttez pommes de terre et brocoli, écrasez-les à la fourchette avec l'huile d'olive, le jus d'un demi-citron, sel et poivre. Servez avec le saumon."
+      "Égouttez pommes de terre et brocoli, écrasez-les à la fourchette avec l'huile d'olive, le jus d'un demi-citron, sel et poivre. Servez avec le saumon.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1591,6 +1605,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1598,7 +1618,8 @@
       "Mélangez le sirop d'érable, la moutarde, le vinaigre de cidre et la sauce soja.",
       "Retournez les patates douces, ajoutez le kale déchiré mélangé à 1 c. à soupe d'huile et aux graines de courge, posez les pavés de saumon et badigeonnez-les de glaçage.",
       "Enfournez 12 min, en rebadigeonnant le saumon à mi-cuisson : il doit être brillant et caramélisé sur les bords, le kale croustillant.",
-      "Mélangez le kéfir avec la ciboulette ciselée et une pincée de sel ; servez en sauce froide à côté."
+      "Mélangez le kéfir avec la ciboulette ciselée et une pincée de sel ; servez en sauce froide à côté.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1705,6 +1726,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1713,7 +1740,8 @@
       "Dans la même casserole, faites fondre 10 g de beurre, ajoutez la farine, remuez 1 min, puis versez le lait et la crème en fouettant. Ajoutez les pommes de terre et laissez mijoter 8 min à feu doux en remuant : la sauce nappe. Ajoutez la ciboulette.",
       "Cuisez les haricots verts 7 min à l'eau bouillante salée.",
       "Salez les pavés et posez-les côté peau dans une poêle chaude avec le reste du beurre, 4 min à feu moyen-vif, puis 2 min de l'autre côté.",
-      "Servez le saumon avec les pommes de terre crémeuses, les haricots et le concombre."
+      "Servez le saumon avec les pommes de terre crémeuses, les haricots et le concombre.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2165,8 +2193,8 @@
         "note": "pour la cuisson"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "yaourt-nature",
+        "qty": 250,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -2178,7 +2206,7 @@
       "Chauffez l'huile de coco dans une poêle à feu très vif, saisissez le thon 1 min par face (plus 20 s sur les tranches) : l'extérieur est doré, le cœur rouge.",
       "Mélangez soba, petits pois et concombre en bâtonnets avec la moitié de la sauce. Tranchez le thon et posez-le dessus, avec la nori en lanières, l'oignon nouveau et le reste de sauce.",
       "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2396,6 +2424,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2403,7 +2437,8 @@
       "Romesco : pelez poivron, tomates et ail rôtis, mixez-les avec les noisettes, la tranche de pain grillée, le paprika, le vinaigre, 2 c. à soupe d'huile et du sel, jusqu'à une sauce épaisse et granuleuse.",
       "Enfilez sur des piques les cubes de thon en alternance avec le second poivron et l'oignon rouge en morceaux. Badigeonnez d'huile et salez.",
       "Grillez les brochettes 2 min par face sur un gril ou une plancha très chauds (6 à 8 min au total) : le thon doit rester rosé à cœur.",
-      "Servez avec les pommes de terre rôties, la roquette et la romesco."
+      "Servez avec les pommes de terre rôties, la roquette et la romesco.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "barbecue",
@@ -2620,20 +2655,20 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Faites griller le sarrasin à sec 2 min, versez le bouillon chaud, couvrez et cuisez 12 min à feu doux. Laissez gonfler 5 min hors du feu.",
       "Faites dorer l'oignon émincé dans le beurre 5 min à feu moyen, ajoutez les champignons et le chou émincé, salez et poêlez 7 min jusqu'à ce qu'ils soient dorés et que l'eau se soit évaporée.",
       "Cuisez les œufs 6 min 30 à l'eau bouillante (jaune coulant), rafraîchissez et écalez-les.",
       "Mélangez le sarrasin aux champignons. Ajoutez le foie de morue en morceaux et réchauffez 1 min sans remuer, juste pour le tiédir.",
       "Servez dans des bols avec les œufs mollets coupés en deux, la crème, les cornichons émincés et l'aneth.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3439,6 +3474,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3446,7 +3487,8 @@
       "Dans une cocotte, faites revenir l'oignon, le poivron et l'ail hachés dans l'huile 8 min à feu moyen-doux, sans coloration.",
       "Ajoutez le paprika et le safran, remuez 30 s, versez le vin blanc et laissez réduire 2 min. Ajoutez les haricots et le fumet, et laissez mijoter 15 min à petit frémissement en secouant la cocotte (sans remuer, pour ne pas écraser les haricots).",
       "Ajoutez les morceaux de merlu salés et les palourdes, couvrez et cuisez 5 min : les palourdes s'ouvrent et le poisson devient opaque.",
-      "Parsemez abondamment de persil haché, laissez reposer 2 min et servez avec le pain."
+      "Parsemez abondamment de persil haché, laissez reposer 2 min et servez avec le pain.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -4021,6 +4063,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4028,7 +4076,8 @@
       "Cuisez les petits pois 4 min à l'eau bouillante. Coupez la pomme en petits dés et arrosez-la de citron.",
       "Coupez le boudin en rondelles épaisses, faites-les croustiller 2 min par face dans une poêle sèche à feu moyen. Réservez.",
       "Épongez les Saint-Jacques, salez-les. Chauffez l'huile à feu vif, saisissez-les 1 min 30 sans les bouger, ajoutez le reste du beurre, retournez et arrosez de beurre mousseux 1 min : elles sont dorées et nacrées à cœur.",
-      "Dressez la purée, les petits pois, le boudin, les Saint-Jacques et les dés de pomme, parsemez de ciboulette."
+      "Dressez la purée, les petits pois, le boudin, les Saint-Jacques et les dés de pomme, parsemez de ciboulette.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",

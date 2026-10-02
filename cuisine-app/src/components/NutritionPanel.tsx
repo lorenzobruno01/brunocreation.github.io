@@ -4,6 +4,7 @@ import type { IndexedRecipe } from '../domain/types';
 import { useLibrary, useUserData } from '../hooks/library';
 import { computeDetailed, dailyRef, DEFAULT_PROFILES, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
 import { saveSettings } from '../db/db';
+import { householdEaters } from '../domain/nutriPlanner';
 
 /** Apports d'une portion : macros + vitamines, minéraux, électrolytes, acides aminés, en % des besoins du jour */
 export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe; portions?: number }) {
@@ -36,6 +37,15 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
       <p className="small muted" style={{ margin: 0 }}>
         Pour {portions === 1 ? '1 portion' : `${portions} portions`}, en % des besoins journaliers de {profile.name} ({profile.weight} kg, objectif {profile.kcal} kcal et {Math.round(proteinTarget)} g de protéines/jour). <Link to="/reglages">Modifier les profils</Link>
       </p>
+      {profiles.length > 1 && (
+        <p className="small muted" style={{ margin: 0 }}>
+          👫 Plat partagé : chacun se sert selon son objectif —{' '}
+          {householdEaters(profiles)
+            .map((e) => `${e.profile.name} ≈ ${e.portions.toFixed(2).replace('.', ',')} portion`)
+            .join(', ')}
+          .
+        </p>
+      )}
 
       {(() => {
         const sc = densityScore(detail, n.kcal);
