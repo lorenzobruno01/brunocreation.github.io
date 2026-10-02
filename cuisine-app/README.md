@@ -8,14 +8,15 @@ Published by GitHub Pages at **`/cuisine/`** (for example `https://brunocreation
 
 | Area | Features |
 |---|---|
-| Library | 593 recipes (about 78 % French and European classics), 20 cuisines, cards, detailed recipe pages with vitamins, minerals, electrolytes and amino acids as % of daily needs |
+| Library | 733 recipes (about 78 % French and European classics), 20 cuisines, cards, detailed recipe pages with vitamins, minerals, electrolytes and amino acids as % of daily needs |
 | Search | Full-text search by name, ingredient, cuisine or tag, with phrases understood (« dîner rapide », « italien », « œufs fromage »), plus 12 combinable filters |
 | Ingredients → recipes | « J'ai ces ingrédients »: instant ingredient search, 3 modes (cook now, almost nothing missing, show everything), equivalent substitutes, staples ignored |
 | Recipes → shopping | Selected recipes or the week's plan go into one list: quantities scaled to servings, identical ingredients merged, units converted, pantry items removed, list sorted by aisle with checkboxes, anti-waste warnings with suggested recipes |
 | Organisation | Favourites, history (used to avoid repeats), weekly planner (tap to place or drag and drop), automatic week generation that balances variety, season and time |
 | Cooking | Adjust servings (1–8), cook mode with one step per screen, large buttons, swipe, timers, screen kept awake |
 | Adding | Full form with photo, ingredient search, custom ingredients, nutrition calculated automatically, check against the eating philosophy, check for similar recipes |
-| AI (Claude) | Generate 10 or 20 recipes, a week, recipes around an ingredient or a cuisine; adapt or substitute a recipe; plan the week. Every generated recipe is checked against the library for duplicates before it is added |
+| Nutrition | Every recipe gets a nutrient density index (0–100) and a detailed breakdown: 13 vitamins, 8 minerals, electrolytes, omega-3, fibre and the 9 essential amino acids, as % of each household profile's daily needs. The weekly planner optimises the four meals of each day to get as close as possible to 100 % of those needs |
+| Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
 ## Architecture
@@ -31,12 +32,16 @@ cuisine-app/
     shopping.ts       consolidation, pantry, aisles, anti-waste
     similarity.ts     anti-repetition fingerprint and score
     planner.ts        weekly menu generation
-    philosophy.ts     eating philosophy: rules + AI prompt
+    philosophy.ts     eating philosophy rules
+    micronutrients.ts vitamins, minerals, amino acids, density index, daily references (EFSA)
+    nutriPlanner.ts   weekly menu optimised for daily nutrient coverage
+    composer.ts       built-in recipe creator
+    ingredientQuery.ts AND / OR / WITHOUT ingredient search
   src/data/
     ingredients.ts    330 normalised ingredients (aliases, nutrition, aisles, pack sizes)
     recipes/*.json    seed library, one file per slice, loaded on demand
   src/db/db.ts      IndexedDB (Dexie): favourites, history, planner, pantry, shopping, added recipes
-  src/ai/           Claude integration (SDK loaded on demand)
+  src/data/micronutrients/*.json  micronutrients per ingredient (per 100 g)
   scripts/validate-recipes.ts   library validation (schema, ingredients, philosophy, duplicates, stats)
   tests/            Vitest tests (scenarios A, B and C, planner)
 ```
@@ -44,7 +49,7 @@ cuisine-app/
 - **Structured, normalised data.** Each recipe references `ingredient_id`s. Aliases (« PDT », « pommes de terre ») point to the same ingredient. Nutrition is computed from the quantities.
 - **Persistence.** Data lives in the browser (IndexedDB). It can be exported and imported as JSON (Settings) to sync both phones.
 - **Scale.** Recipes are indexed in memory and lists load progressively, which is enough for several thousand recipes. To add recipes, drop a JSON file into `src/data/recipes/` and run the validator.
-- **AI.** The app calls the Anthropic API directly from the browser with the household's own API key, which is stored only on the device. Responses use structured outputs whose schema only accepts existing ingredient IDs. Each result is then checked against the eating philosophy and for similarity to existing recipes; duplicates are rejected and regenerated, up to 3 passes.
+- **No paid services.** Everything runs in the browser, with no server, no AI and no API key.
 
 ## Development
 

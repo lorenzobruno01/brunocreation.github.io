@@ -229,6 +229,10 @@ export interface IndexedRecipe extends Recipe {
   fruits: string[];
   mainIngredientIds: string[]; // hors ingrédients de base
   searchText: string;
+  /** apports détaillés par portion (vitamines, minéraux, acides aminés…) */
+  micros?: Record<string, number>;
+  /** indice de densité nutritionnelle 0–100 */
+  density?: number;
 }
 
 // ── Données utilisateur (persistées) ────────────────────────
@@ -246,7 +250,7 @@ export interface PantryItem {
   addedAt: string;
 }
 
-export type Slot = 'midi' | 'soir' | 'matin';
+export type Slot = 'matin' | 'midi' | 'collation' | 'soir';
 
 export interface PlanEntry {
   key: string; // `${date}|${slot}`

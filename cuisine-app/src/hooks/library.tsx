@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS } from '../db/db';
 import { INGREDIENTS } from '../data/ingredients';
 import { indexRecipe } from '../domain/indexing';
+import { computeDetailed, densityScore } from '../domain/micronutrients';
 import type { Ingredient, IndexedRecipe, Recipe, Settings } from '../domain/types';
 import { norm } from '../domain/text';
 
@@ -47,7 +48,12 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
     const merged = new Map<string, Recipe>();
     for (const r of seed!) if (!hiddenIds.has(r.id)) merged.set(r.id, r);
     for (const r of userRecipes!) merged.set(r.id, r); // les modifications locales priment
-    const recipes = [...merged.values()].map((r) => indexRecipe(r, lookup));
+    const recipes = [...merged.values()].map((r) => {
+      const ix = indexRecipe(r, lookup);
+      ix.micros = computeDetailed(r, lookup);
+      ix.density = densityScore(ix.micros, ix.nutrition.kcal);
+      return ix;
+    });
     return {
       ready,
       recipes,

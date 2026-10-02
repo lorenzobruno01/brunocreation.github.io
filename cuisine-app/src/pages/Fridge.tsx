@@ -5,6 +5,9 @@ import { IngredientPicker } from '../components/IngredientPicker';
 import { RecipeCard } from '../components/RecipeCard';
 import { Empty, useProgressive } from '../components/ui';
 import { BooleanSearch } from '../components/BooleanSearch';
+import { composeRecipe } from '../domain/composer';
+import { db } from '../db/db';
+import { useNavigate } from 'react-router-dom';
 import { filterByMode, matchRecipes, availableCount, type MatchMode, type MatchResult } from '../domain/matching';
 import { setFridge } from '../db/db';
 import { MEAL_TYPES } from '../domain/labels';
@@ -133,6 +136,7 @@ export function Fridge() {
           )}
           {results.length === 0 ? (
             <Empty emoji="🧐" title={mode === 'maintenant' ? 'Rien de réalisable à 100 % pour l’instant' : 'Aucune recette'}>
+              <ComposeFromFridge />
               {mode === 'maintenant' && counts.presque > 0 && (
                 <button className="btn" onClick={() => setMode('presque')}>
                   Voir les {counts.presque} recettes où il manque 1–2 ingrédients
@@ -178,5 +182,29 @@ function MatchCard({ m }: { m: MatchResult }) {
         </div>
       )}
     </div>
+  );
+}
+
+/** Compose une recette (gratuit, sans IA) à partir des ingrédients sélectionnés */
+function ComposeFromFridge() {
+  const { lookup, recipes } = useLibrary();
+  const { fridge, pantry, settings } = useUserData();
+  const navigate = useNavigate();
+  const go = async () => {
+    const ings = [...fridge].map(lookup).filter(Boolean);
+    const rank = (c: string) => (['viande', 'volaille', 'abats', 'poisson', 'fruits-de-mer', 'oeufs'].includes(c) ? 0 : c === 'feculent' ? 1 : c === 'legume' ? 2 : 3);
+    const chosen = ings.sort((a, b) => rank(a!.category) - rank(b!.category)).slice(0, 4);
+    const query = { groups: chosen.map((i) => [{ label: i!.name, ids: [i!.id] }]), exclude: [] };
+    const r = composeRecipe(query, lookup, { servings: settings.defaultServings, available: new Set([...fridge, ...pantry]), existingNames: new Set(recipes.map((x) => x.name.toLowerCase())) });
+    if (!r) return;
+    await db.recipes.put(r);
+    navigate(`/recette/${r.id}`);
+  };
+  return (
+    <p>
+      <button className="btn primary" onClick={go}>
+        ✨ Composer une recette avec mes ingrédients
+      </button>
+    </p>
   );
 }

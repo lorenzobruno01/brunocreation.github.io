@@ -1,67 +1,83 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../db/db';
+import { db, saveSettings } from '../db/db';
 import { useLibrary, useUserData } from '../hooks/library';
 import { DAY_NAMES, isoDate, mondayOf, weekDates } from '../domain/season';
-import { generateWeek } from '../domain/planner';
+import { generateWeek, type PlannerConstraints } from '../domain/planner';
+import { generateNutriWeek, dayReport, bestSourcesOf, type DayReport } from '../domain/nutriPlanner';
+import { DEFAULT_PROFILES, GROUP_LABELS, NUTRIENTS, type NutritionProfile } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
 import { SLOT_LABELS } from '../components/AddToPlanSheet';
 import { formatDateFr, formatDuration } from '../components/format';
-import { PROTEINS } from '../domain/labels';
-import { AiError, loadAi } from '../ai/light';
-import type { PlanEntry, Slot } from '../domain/types';
-import { isMainMeal, passesConstraints, type PlannerConstraints } from '../domain/planner';
 import { ConstraintsEditor, loadConstraints } from '../components/ConstraintsEditor';
-import { currentSeason } from '../domain/season';
+import type { IndexedRecipe, MealType, PlanEntry, Slot } from '../domain/types';
 
-function loadBool(key: string, def: boolean) {
+const ALL_SLOTS: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+const SLOTS_KEY = 'cuisine.planSlots';
+
+function loadSlots(): Slot[] {
   try {
-    const v = localStorage.getItem(key);
-    return v == null ? def : v === '1';
-  } catch {
-    return def;
-  }
-}
-function saveBool(key: string, v: boolean) {
-  try {
-    localStorage.setItem(key, v ? '1' : '0');
+    const v = JSON.parse(localStorage.getItem(SLOTS_KEY) ?? 'null');
+    if (Array.isArray(v) && v.length) return ALL_SLOTS.filter((s) => v.includes(s));
   } catch {
     /* indisponible */
   }
+  return ALL_SLOTS; // par défaut : journée complète (indispensable pour viser 100 %)
+}
+
+const SLOT_MEALS: Record<Slot, MealType[]> = { matin: ['petit-dejeuner'], midi: ['dejeuner', 'diner'], collation: ['collation'], soir: ['diner', 'dejeuner'] };
+
+export function covColor(p: number): string {
+  if (p >= 95) return 'var(--ok)';
+  if (p >= 80) return 'var(--olive)';
+  if (p >= 60) return 'var(--saffron)';
+  return 'var(--danger)';
 }
 
 export function Planner() {
   const { byId, recipes, lookup } = useLibrary();
   const { favorites, lastCooked, fridge, pantry, settings } = useUserData();
   const [offset, setOffset] = useState(0);
-  const [withBreakfast, setWithBreakfast] = useState(() => loadBool('cuisine.breakfast', false));
+  const [slots, setSlotsState] = useState<Slot[]>(loadSlots);
   const [picker, setPicker] = useState<{ date: string; slot: Slot } | null>(null);
   const [menu, setMenu] = useState<PlanEntry | null>(null);
   const [moving, setMoving] = useState<PlanEntry | null>(null);
   const [dragOver, setDragOver] = useState<string | null>(null);
   const [genOpen, setGenOpen] = useState(false);
+  const [busy, setBusy] = useState(false);
   const toast = useToast();
   const navigate = useNavigate();
+
+  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
+  const profile = profiles.find((p) => p.id === settings.activeProfile) ?? profiles[0];
+
+  const setSlots = (s: Slot[]) => {
+    const v = ALL_SLOTS.filter((x) => s.includes(x));
+    setSlotsState(v);
+    try {
+      localStorage.setItem(SLOTS_KEY, JSON.stringify(v));
+    } catch {
+      /* indisponible */
+    }
+  };
 
   const monday = mondayOf(new Date());
   monday.setDate(monday.getDate() + offset * 7);
   const dates = weekDates(monday);
   const today = isoDate(new Date());
-  const slots: Slot[] = withBreakfast ? ['matin', 'midi', 'soir'] : ['midi', 'soir'];
   const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
   const byKey = new Map(plan.map((p) => [p.key, p]));
 
-  const stats = useMemo(() => {
-    const entries = plan.map((p) => ({ p, r: byId.get(p.recipeId) })).filter((x) => x.r);
-    const proteins = new Map<string, number>();
-    for (const { r } of entries) if (r!.mainProtein) proteins.set(r!.mainProtein, (proteins.get(r!.mainProtein) ?? 0) + 1);
-    const daysWithMeals = new Set(entries.map((e) => e.p.date)).size || 1;
-    const kcal = entries.reduce((s, e) => s + e.r!.nutrition.kcal, 0) / daysWithMeals;
-    const prot = entries.reduce((s, e) => s + e.r!.nutrition.protein, 0) / daysWithMeals;
-    return { count: entries.length, proteins: [...proteins.entries()].sort((a, b) => b[1] - a[1]), kcal: Math.round(kcal), prot: Math.round(prot) };
-  }, [plan, byId]);
+  const reports = useMemo(
+    () =>
+      dates.map((d) => {
+        const rs = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)).filter(Boolean) as IndexedRecipe[];
+        return rs.length ? dayReport(d, rs, profile) : null;
+      }),
+    [plan, byId, profile, dates[0]], // eslint-disable-line react-hooks/exhaustive-deps
+  );
 
   const place = async (date: string, slot: Slot, recipeId: string, servings = settings.defaultServings) => {
     await db.plan.put({ key: `${date}|${slot}`, date, slot, recipeId, servings });
@@ -78,32 +94,35 @@ export function Planner() {
     });
   };
 
-  const generate = async (opts: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints }) => {
-    const locked = opts.replaceAll ? [] : plan;
-    const entries = generateWeek(
-      {
-        recipes,
-        favorites,
-        lastCooked,
-        available: new Set([...fridge, ...pantry]),
-        locked,
-        dates,
-        slots,
-        servings: settings.defaultServings,
-        shareIngredients: opts.share,
-        constraints: opts.constraints,
-      },
-      (id) => lookup(id)?.category,
-    );
+  const generate = async (opts: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints; mode: 'nutri' | 'variete' }) => {
+    setBusy(true);
+    setGenOpen(false);
+    await new Promise((r) => setTimeout(r, 30)); // laisser l'écran afficher « calcul en cours »
+    const locked = opts.replaceAll ? [] : plan.filter((p) => slots.includes(p.slot));
+    const ctx = {
+      recipes,
+      favorites,
+      lastCooked,
+      available: new Set([...fridge, ...pantry]),
+      locked,
+      dates,
+      slots,
+      servings: settings.defaultServings,
+      shareIngredients: opts.share,
+      constraints: opts.constraints,
+      profile,
+    };
+    const entries = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
     await db.transaction('rw', db.plan, async () => {
       if (opts.replaceAll) await db.plan.bulkDelete(plan.map((p) => p.key));
       await db.plan.bulkPut(entries);
     });
-    toast('Menu de la semaine généré ✨');
-    setGenOpen(false);
+    setBusy(false);
+    toast(opts.mode === 'nutri' ? `Semaine optimisée pour ${profile.name} 🎯` : 'Menu de la semaine généré ✨');
   };
 
-  const slotMeals = (s: Slot) => (s === 'matin' ? (['petit-dejeuner'] as const) : (['dejeuner', 'diner'] as const));
+  const filled = reports.filter(Boolean) as DayReport[];
+  const weekCoverage = filled.length ? Math.round(filled.reduce((s, r) => s + r.coverage, 0) / filled.length) : 0;
 
   return (
     <div className="page">
@@ -122,28 +141,33 @@ export function Planner() {
         </div>
       </div>
       <p className="muted" style={{ margin: '4px 0 12px' }}>
-        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })} — touchez un créneau pour ajouter un plat, glissez-déposez pour réorganiser.
+        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}. Objectif : couvrir chaque jour 100 % des besoins en vitamines, minéraux, électrolytes et acides aminés.
       </p>
 
+      <div className="row" style={{ marginBottom: 10 }}>
+        <span className="label">Objectif pour :</span>
+        {profiles.map((p) => (
+          <button key={p.id} className={`chip ${p.id === profile.id ? 'on' : ''}`} onClick={() => saveSettings({ activeProfile: p.id })}>
+            {p.sex === 'homme' ? '👨' : '👩'} {p.name} · {p.kcal} kcal
+          </button>
+        ))}
+      </div>
+
+      <div className="row" style={{ marginBottom: 10 }}>
+        <span className="label">Repas :</span>
+        {ALL_SLOTS.map((s) => (
+          <button key={s} className={`chip ${slots.includes(s) ? 'on' : ''}`} onClick={() => setSlots(slots.includes(s) ? slots.filter((x) => x !== s) : [...slots, s])} disabled={slots.length === 1 && slots.includes(s)}>
+            {SLOT_LABELS[s]}
+          </button>
+        ))}
+      </div>
+
       <div className="row" style={{ marginBottom: 14 }}>
-        <button className="btn primary" onClick={() => setGenOpen(true)}>
-          ✨ Générer ma semaine
+        <button className="btn primary" onClick={() => setGenOpen(true)} disabled={busy}>
+          {busy ? <><span className="spinner" style={{ width: 18, height: 18 }} /> Optimisation en cours…</> : '🎯 Générer ma semaine'}
         </button>
-        <button
-          className="btn olive"
-          disabled={!plan.length}
-          onClick={() => navigate(`/courses?source=semaine&du=${dates[0]}`)}
-        >
+        <button className="btn olive" disabled={!plan.length} onClick={() => navigate(`/courses?source=semaine&du=${dates[0]}`)}>
           🛒 Générer ma liste de courses
-        </button>
-        <button
-          className={`chip ${withBreakfast ? 'on' : ''}`}
-          onClick={() => {
-            setWithBreakfast(!withBreakfast);
-            saveBool('cuisine.breakfast', !withBreakfast);
-          }}
-        >
-          🌅 Petits-déjeuners
         </button>
         {plan.length > 0 && (
           <button
@@ -157,6 +181,16 @@ export function Planner() {
         )}
       </div>
 
+      {filled.length > 0 && (
+        <div className="card pad row between" style={{ marginBottom: 14 }}>
+          <div>
+            <div className="label">🎯 Couverture moyenne des besoins ({profile.name})</div>
+            <div className="small muted">vitamines, minéraux, électrolytes, acides aminés, oméga-3, fibres</div>
+          </div>
+          <strong style={{ fontSize: '1.8rem', fontFamily: 'var(--font-title)', color: covColor(weekCoverage) }}>{weekCoverage} %</strong>
+        </div>
+      )}
+
       {moving && (
         <div className="callout" style={{ marginBottom: 12 }}>
           ↔ Touchez le créneau de destination pour « {byId.get(moving.recipeId)?.name} ».{' '}
@@ -167,88 +201,83 @@ export function Planner() {
       )}
 
       <div className="week">
-        {dates.map((d, i) => (
-          <div key={d} className={`card day ${d === today ? 'today' : ''}`}>
-            <div className="day-head">
-              <strong>{DAY_NAMES[i]}</strong>
-              <span className="small muted">{formatDateFr(d, { day: 'numeric', month: 'short' })}</span>
-            </div>
-            <div className={`slots ${slots.length === 3 ? 'three' : ''}`}>
-              {slots.map((s) => {
-                const key = `${d}|${s}`;
-                const e = byKey.get(key);
-                const r = e ? byId.get(e.recipeId) : undefined;
-                return (
-                  <div
-                    key={s}
-                    className={`slot ${r ? 'filled' : ''} ${dragOver === key ? 'drop' : ''} ${moving?.key === key ? 'moving' : ''}`}
-                    role="button"
-                    tabIndex={0}
-                    draggable={!!r}
-                    onDragStart={(ev) => e && ev.dataTransfer.setData('text/plain', e.key)}
-                    onDragOver={(ev) => {
-                      ev.preventDefault();
-                      setDragOver(key);
-                    }}
-                    onDragLeave={() => setDragOver(null)}
-                    onDrop={(ev) => {
-                      ev.preventDefault();
-                      setDragOver(null);
-                      const fromKey = ev.dataTransfer.getData('text/plain');
-                      const from = plan.find((p) => p.key === fromKey);
-                      if (from) move(from, key);
-                    }}
-                    onClick={() => {
-                      if (moving) {
-                        move(moving, key);
-                        setMoving(null);
-                      } else if (e && r) setMenu(e);
-                      else setPicker({ date: d, slot: s });
-                    }}
-                  >
-                    <span className="slot-label">{SLOT_LABELS[s]}</span>
-                    {r ? (
-                      <>
-                        <span className="slot-name">
-                          {r.emoji} {r.name}
+        {dates.map((d, i) => {
+          const rep = reports[i];
+          return (
+            <div key={d} className={`card day ${d === today ? 'today' : ''}`}>
+              <div className="day-head">
+                <strong>{DAY_NAMES[i]}</strong>
+                <span className="row nowrap" style={{ gap: 6 }}>
+                  {rep && (
+                    <span className="tag" style={{ background: covColor(rep.coverage), color: '#fff' }} title="Couverture des besoins">
+                      🎯 {Math.round(rep.coverage)} %
+                    </span>
+                  )}
+                  <span className="small muted">{formatDateFr(d, { day: 'numeric', month: 'short' })}</span>
+                </span>
+              </div>
+              <div className={`slots n${slots.length}`}>
+                {slots.map((s) => {
+                  const key = `${d}|${s}`;
+                  const e = byKey.get(key);
+                  const r = e ? byId.get(e.recipeId) : undefined;
+                  return (
+                    <div
+                      key={s}
+                      className={`slot ${r ? 'filled' : ''} ${dragOver === key ? 'drop' : ''} ${moving?.key === key ? 'moving' : ''}`}
+                      role="button"
+                      tabIndex={0}
+                      draggable={!!r}
+                      onDragStart={(ev) => e && ev.dataTransfer.setData('text/plain', e.key)}
+                      onDragOver={(ev) => {
+                        ev.preventDefault();
+                        setDragOver(key);
+                      }}
+                      onDragLeave={() => setDragOver(null)}
+                      onDrop={(ev) => {
+                        ev.preventDefault();
+                        setDragOver(null);
+                        const from = plan.find((p) => p.key === ev.dataTransfer.getData('text/plain'));
+                        if (from) move(from, key);
+                      }}
+                      onClick={() => {
+                        if (moving) {
+                          move(moving, key);
+                          setMoving(null);
+                        } else if (e && r) setMenu(e);
+                        else setPicker({ date: d, slot: s });
+                      }}
+                    >
+                      <span className="slot-label">{SLOT_LABELS[s]}</span>
+                      {r ? (
+                        <>
+                          <span className="slot-name">
+                            {r.emoji} {r.name}
+                          </span>
+                          <span className="small muted">
+                            ⏱ {formatDuration(r.totalTime)} · 🔥 {r.nutrition.kcal}
+                          </span>
+                        </>
+                      ) : (
+                        <span className="muted" style={{ fontSize: '1.4rem', margin: 'auto' }}>
+                          +
                         </span>
-                        <span className="small muted">
-                          ⏱ {formatDuration(r.totalTime)} · 👥 {e!.servings}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="muted" style={{ fontSize: '1.4rem', margin: 'auto' }}>
-                        +
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      {stats.count > 0 && (
-        <section className="card pad section">
-          <h3>Équilibre de la semaine</h3>
-          <div className="small">
-            {stats.count} repas planifiés · moyenne ≈ <strong>{stats.kcal} kcal</strong> et <strong>{stats.prot} g de protéines</strong> par jour (repas planifiés, par personne).
-          </div>
-          <div className="chips" style={{ marginTop: 8 }}>
-            {stats.proteins.map(([p, n]) => (
-              <span key={p} className={`tag ${n >= 4 ? 'warn' : ''}`}>
-                {PROTEINS[p as keyof typeof PROTEINS]?.emoji} {PROTEINS[p as keyof typeof PROTEINS]?.label} × {n}
-              </span>
-            ))}
-          </div>
-        </section>
-      )}
+      {filled.length > 0 && <CoveragePanel dates={dates} reports={reports} profile={profile} recipes={recipes} />}
 
       {picker && (
         <RecipePicker
           title={`${DAY_NAMES[dates.indexOf(picker.date)]} — ${SLOT_LABELS[picker.slot]}`}
-          meals={[...slotMeals(picker.slot)]}
+          meals={SLOT_MEALS[picker.slot]}
           onClose={() => setPicker(null)}
           onPick={async (r) => {
             await place(picker.date, picker.slot, r.id);
@@ -272,57 +301,118 @@ export function Planner() {
         />
       )}
 
-      {genOpen && (
-        <GenerateSheet
-          onClose={() => setGenOpen(false)}
-          onLocal={generate}
-          hasPlan={plan.length > 0}
-          aiEnabled={!!settings.apiKey}
-          onAi={async (instructionIn, setStatus) => {
-            let instruction = instructionIn;
-            const cons = loadConstraints();
-            const candidates = recipes.filter((r) => slots.some((s) => isMainMeal(r, s)) && passesConstraints(r, { ...cons, maxTimeWeek: Math.max(cons.maxTimeWeek ?? 0, cons.maxTimeWeekend ?? 0) || undefined }, true, favorites, currentSeason()));
-            const extra = [
-              cons.maxTimeWeek ? `en semaine, plats de ${cons.maxTimeWeek} min maximum` : '',
-              cons.maxTimeWeekend ? `le week-end, ${cons.maxTimeWeekend} min maximum` : '',
-              cons.minFish ? `au moins ${cons.minFish} repas de poisson` : '',
-              cons.coldLunch ? 'midis de semaine en repas froids / lunch box' : '',
-            ].filter(Boolean).join(' ; ');
-            instruction = [instruction, extra].filter(Boolean).join('. ');
-            try {
-              setStatus('L’IA compose votre semaine…');
-              const { planWeekAI } = await loadAi();
-              const res = await planWeekAI({
-                apiKey: settings.apiKey!,
-                model: settings.model ?? 'claude-opus-5-5',
-                candidates,
-                dates,
-                slots,
-                instruction,
-                favorites,
-                recent: [...lastCooked.entries()].filter(([, d]) => Date.now() - new Date(d).getTime() < 14 * 86400000).map(([id]) => byId.get(id)?.name ?? id),
-                available: [...fridge, ...pantry].map((id) => lookup(id)?.name ?? id),
-                lookup,
-                servings: settings.defaultServings,
-              });
-              await db.transaction('rw', db.plan, async () => {
-                await db.plan.bulkDelete(plan.map((p) => p.key));
-                await db.plan.bulkPut(res.plan);
-              });
-              setStatus(null);
-              toast('Semaine composée par l’IA ✨');
-              return res.explanation;
-            } catch (e) {
-              setStatus(null);
-              throw e instanceof AiError ? e : new AiError(String(e));
-            }
-          }}
-        />
-      )}
+      {genOpen && <GenerateSheet onClose={() => setGenOpen(false)} onGenerate={generate} hasPlan={plan.length > 0} profile={profile} slots={slots} />}
       <p className="small muted center" style={{ marginTop: 24 }}>
-        Astuce : les plats du planning alimentent la liste de courses. <Link to="/courses">Voir la liste</Link>
+        Les plats du planning alimentent la liste de courses. <Link to="/courses">Voir la liste</Link>
       </p>
     </div>
+  );
+}
+
+/** Tableau de couverture : nutriments × jours, lacunes et recettes pour les combler */
+function CoveragePanel({ dates, reports, profile, recipes }: { dates: string[]; reports: Array<DayReport | null>; profile: NutritionProfile; recipes: IndexedRecipe[] }) {
+  const [day, setDay] = useState<number | null>(null);
+  const rows = [
+    { key: 'kcal', label: '🔥 Énergie', group: 'macros' },
+    { key: 'protein', label: '🥩 Protéines', group: 'macros' },
+    ...NUTRIENTS.filter((n) => n.key !== 'cl').map((n) => ({ key: n.key, label: n.label.replace(/ \(.*\)/, ''), group: n.group as string })),
+  ];
+  const groups = ['macros', ...Object.keys(GROUP_LABELS)];
+  // lacunes de la semaine : nutriments sous 80 % au moins un jour
+  const gapCount = new Map<string, number>();
+  for (const r of reports) if (r) for (const g of r.gaps) gapCount.set(g, (gapCount.get(g) ?? 0) + 1);
+  const gaps = [...gapCount.entries()].sort((a, b) => b[1] - a[1]);
+  const label = (k: string) => NUTRIENTS.find((n) => n.key === k)?.label ?? k;
+
+  return (
+    <section className="card pad section stack">
+      <h2 style={{ margin: 0 }}>🔬 Couverture des besoins jour par jour</h2>
+      <p className="small muted" style={{ margin: 0 }}>
+        % du besoin journalier de {profile.name} (1 portion de chaque plat). Vert ≥ 95 %, olive ≥ 80 %, jaune ≥ 60 %, rouge en dessous. Sodium : % de la limite (sel « au goût » non compté).
+      </p>
+
+      {gaps.length > 0 ? (
+        <div className="callout">
+          <strong>À renforcer cette semaine :</strong>
+          <ul className="small" style={{ margin: '6px 0 0', paddingLeft: 18 }}>
+            {gaps.slice(0, 6).map(([k, n]) => (
+              <li key={k} style={{ marginBottom: 4 }}>
+                <strong>{label(k)}</strong> sous 80 % sur {n} jour{n > 1 ? 's' : ''} — bonnes sources :{' '}
+                {bestSourcesOf(k, recipes).map((r, i) => (
+                  <span key={r.id}>
+                    {i > 0 && ', '}
+                    <Link to={`/recette/${r.id}`}>{r.name}</Link>
+                  </span>
+                ))}
+                {k === 'vD' && <> (la vitamine D vient aussi du soleil : 15–20 min bras découverts aux beaux jours)</>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <div className="callout ok small">✅ Tous les nutriments suivis atteignent au moins 80 % chaque jour planifié.</div>
+      )}
+
+      <div className="cov-table-wrap">
+        <table className="cov-table">
+          <thead>
+            <tr>
+              <th />
+              {dates.map((d, i) => (
+                <th key={d}>
+                  <button className={`chip ${day === i ? 'on' : ''}`} style={{ minHeight: 30, padding: '2px 8px' }} onClick={() => setDay(day === i ? null : i)}>
+                    {DAY_NAMES[i].slice(0, 3)}
+                  </button>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {groups.map((g) => (
+              <FragmentRows key={g} title={g === 'macros' ? '⚖️ Énergie & macros' : GROUP_LABELS[g as keyof typeof GROUP_LABELS]} rows={rows.filter((r) => r.group === g)} reports={reports} />
+            ))}
+            <tr>
+              <td className="cov-name">🧂 Sodium (limite)</td>
+              {reports.map((r, i) => (
+                <td key={i} className="cov-cell" style={{ background: r ? (r.pct.na > 115 ? 'var(--warn-soft)' : 'var(--olive-soft)') : undefined }}>
+                  {r ? Math.round(r.pct.na) : '–'}
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {day != null && reports[day] && (
+        <div className="small muted">
+          {DAY_NAMES[day]} : {Math.round(reports[day]!.kcal)} kcal, {Math.round(reports[day]!.protein)} g de protéines, couverture {Math.round(reports[day]!.coverage)} %.
+        </div>
+      )}
+    </section>
+  );
+}
+
+function FragmentRows({ title, rows, reports }: { title: string; rows: Array<{ key: string; label: string }>; reports: Array<DayReport | null> }) {
+  return (
+    <>
+      <tr>
+        <td colSpan={8} className="cov-group">
+          {title}
+        </td>
+      </tr>
+      {rows.map((row) => (
+        <tr key={row.key}>
+          <td className="cov-name">{row.label}</td>
+          {reports.map((r, i) => {
+            const p = r ? r.pct[row.key] ?? 0 : null;
+            return (
+              <td key={i} className="cov-cell" style={p == null ? undefined : { background: covColor(p), color: '#fff' }}>
+                {p == null ? '–' : p >= 999 ? '999+' : Math.round(p)}
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </>
   );
 }
 
@@ -366,73 +456,53 @@ function SlotMenu({ entry, onClose, onChange, onMove }: { entry: PlanEntry; onCl
 
 function GenerateSheet({
   onClose,
-  onLocal,
-  onAi,
+  onGenerate,
   hasPlan,
-  aiEnabled,
+  profile,
+  slots,
 }: {
   onClose: () => void;
-  onLocal: (o: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints }) => void;
-  onAi: (instruction: string, setStatus: (s: string | null) => void) => Promise<string>;
+  onGenerate: (o: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints; mode: 'nutri' | 'variete' }) => void;
   hasPlan: boolean;
-  aiEnabled: boolean;
+  profile: NutritionProfile;
+  slots: Slot[];
 }) {
   const [replaceAll, setReplaceAll] = useState(!hasPlan);
   const [share, setShare] = useState(true);
+  const [mode, setMode] = useState<'nutri' | 'variete'>('nutri');
   const [constraints, setConstraints] = useState<PlannerConstraints>(loadConstraints);
-  const [instruction, setInstruction] = useState('');
-  const [status, setStatus] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [explanation, setExplanation] = useState<string | null>(null);
+  const fullDay = slots.length === 4;
   return (
-    <Sheet title="✨ Générer ma semaine" onClose={onClose}>
+    <Sheet title="🎯 Générer ma semaine" onClose={onClose}>
       <div className="stack">
-        <p className="small muted" style={{ margin: 0 }}>
-          Le générateur tient compte de vos favoris, de la saison, des plats cuisinés récemment, de vos ingrédients disponibles et de la variété (jamais deux fois la même protéine de suite, plats rapides en semaine, mijotés le week-end).
-        </p>
+        <div className="segmented">
+          <button className={mode === 'nutri' ? 'on' : ''} onClick={() => setMode('nutri')}>
+            🎯 Densité nutritionnelle
+            <span className="cnt">viser 100 % des besoins</span>
+          </button>
+          <button className={mode === 'variete' ? 'on' : ''} onClick={() => setMode('variete')}>
+            🎲 Variété simple
+            <span className="cnt">rapide, sans calcul</span>
+          </button>
+        </div>
+        {mode === 'nutri' && (
+          <p className="small muted" style={{ margin: 0 }}>
+            Chaque créneau est choisi pour que la journée couvre au mieux les besoins de <strong>{profile.name}</strong> ({profile.kcal} kcal) en 13 vitamines, 8 minéraux, électrolytes, oméga-3, fibres et acides aminés, tout en gardant de la variété (protéines différentes, jamais deux fois le même plat) et vos critères ci-dessous.
+            {!fullDay && <strong> Astuce : activez les 4 repas (petit-déjeuner, midi, collation, soir) pour atteindre plus facilement 100 %.</strong>}
+          </p>
+        )}
+        <ConstraintsEditor value={constraints} onChange={setConstraints} />
         <label className="row nowrap">
-          <input type="checkbox" checked={replaceAll} onChange={(e) => setReplaceAll(e.target.checked)} /> Tout regénérer (sinon : compléter les créneaux vides)
+          <input type="checkbox" checked={replaceAll} onChange={(e) => setReplaceAll(e.target.checked)} /> Tout regénérer (sinon : garder les plats déjà placés)
         </label>
         <label className="row nowrap">
           <input type="checkbox" checked={share} onChange={(e) => setShare(e.target.checked)} /> ♻️ Anti-gaspillage : réutiliser les mêmes produits frais
         </label>
-        <ConstraintsEditor value={constraints} onChange={setConstraints} />
-        <button className="btn primary lg" onClick={() => onLocal({ replaceAll, share, constraints })}>
-          Générer instantanément
+        <button className="btn primary lg" onClick={() => onGenerate({ replaceAll, share, constraints, mode })}>
+          {mode === 'nutri' ? '🎯 Optimiser ma semaine' : '🎲 Générer'}
         </button>
-        <hr className="sep" />
-        <h3 style={{ margin: 0 }}>Avec l’assistant IA</h3>
-        {aiEnabled ? (
-          <>
-            <textarea
-              className="textarea"
-              value={instruction}
-              onChange={(e) => setInstruction(e.target.value)}
-              placeholder="ex. « Organise-moi 7 jours de repas, beaucoup de poisson, utilise autant que possible les mêmes ingrédients pour éviter le gaspillage »"
-            />
-            <button
-              className="btn"
-              disabled={!!status}
-              onClick={async () => {
-                setError(null);
-                try {
-                  setExplanation(await onAi(instruction, setStatus));
-                } catch (e) {
-                  setError((e as Error).message);
-                }
-              }}
-            >
-              {status ? <><span className="spinner" /> {status}</> : '✨ Composer avec l’IA (remplace la semaine)'}
-            </button>
-            {error && <div className="callout danger small">{error}</div>}
-            {explanation && <div className="callout ok small">{explanation}</div>}
-          </>
-        ) : (
-          <p className="small muted">
-            Ajoutez une clé API dans <Link to="/reglages">Réglages</Link> pour composer la semaine en langage naturel.
-          </p>
-        )}
       </div>
     </Sheet>
   );
 }
+

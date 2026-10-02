@@ -1473,3 +1473,43 @@ hr.sep {
   font-size: 0.72rem;
   color: var(--ink-3);
 }
+.slots.n1 { grid-template-columns: 1fr; }
+.slots.n3 { grid-template-columns: 1fr 1fr 1fr; }
+.slots.n4 { grid-template-columns: 1fr 1fr; }
+@media (min-width: 1000px) {
+  .slots.n3,
+  .slots.n4 { grid-template-columns: 1fr; }
+}
+.cov-table-wrap {
+  overflow-x: auto;
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+.cov-table {
+  border-collapse: separate;
+  border-spacing: 3px;
+  font-size: 0.8rem;
+  min-width: 520px;
+  width: 100%;
+}
+.cov-name {
+  white-space: nowrap;
+  font-weight: 700;
+  padding-right: 6px;
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+}
+.cov-cell {
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 800;
+  padding: 3px 2px;
+  min-width: 38px;
+  background: var(--surface-2);
+}
+.cov-group {
+  font-family: var(--font-title);
+  font-weight: 700;
+  padding-top: 10px;
+}

@@ -14,8 +14,10 @@ export type MicroKey =
 export type MicroValues = Partial<Record<MicroKey, number>>;
 
 // Données par ingrédient (pour 100 g), un fichier par lot
-const files = import.meta.glob<{ default: Record<string, MicroValues> }>('../data/micronutrients/*.json', { eager: true });
-export const MICROS: Record<string, MicroValues> = Object.assign({}, ...Object.values(files).map((m) => m.default));
+import microsA from '../data/micronutrients/a.json';
+import microsB from '../data/micronutrients/b.json';
+import microsC from '../data/micronutrients/c.json';
+export const MICROS: Record<string, MicroValues> = { ...microsA, ...microsB, ...microsC } as Record<string, MicroValues>;
 
 export interface NutrientDef {
   key: MicroKey | AminoKey | 'cl';
@@ -175,4 +177,29 @@ export function formatAmount(v: number, unit: string): string {
   if (v >= 100) return `${Math.round(v)} ${unit}`;
   if (v >= 10) return `${Math.round(v)} ${unit}`;
   return `${v.toFixed(1).replace('.', ',')} ${unit}`;
+}
+
+// ── Indice de densité nutritionnelle ─────────────────────
+/** Nutriments pris en compte dans l'indice (ceux qu'on cherche à couvrir chaque jour) */
+export const DENSITY_KEYS: MicroKey[] = ['vA', 'vB1', 'vB2', 'vB3', 'vB6', 'vB9', 'vB12', 'vC', 'vD', 'vE', 'vK', 'chol', 'ca', 'fe', 'mg', 'k', 'zn', 'se', 'i', 'cu', 'epa', 'fib'];
+const REF_DEFAULT = Object.fromEntries(NUTRIENTS.map((n) => [n.key, n.ref[0]]));
+
+/**
+ * « Quelle part des besoins d'une journée entière 1 000 kcal de ce plat couvrent-elles ? »
+ * Moyenne sur 22 nutriments, chacun plafonné à 100 %. 100 = 1 000 kcal suffisent à tout couvrir.
+ * Repères : ≥ 60 exceptionnel, ≥ 50 très dense, ≥ 40 bon, < 40 modeste.
+ */
+export function densityScore(detail: DetailedNutrition, kcal: number): number {
+  if (kcal < 60) return 0;
+  const f = 1000 / kcal;
+  let sum = 0;
+  for (const k of DENSITY_KEYS) sum += Math.min(1, ((detail[k] ?? 0) * f) / REF_DEFAULT[k]);
+  return Math.round((sum / DENSITY_KEYS.length) * 100);
+}
+
+export function densityLabel(score: number): { label: string; emoji: string } {
+  if (score >= 60) return { label: 'Exceptionnelle', emoji: '🌟' };
+  if (score >= 50) return { label: 'Très bonne', emoji: '🟢' };
+  if (score >= 40) return { label: 'Bonne', emoji: '🟡' };
+  return { label: 'Modeste', emoji: '⚪' };
 }

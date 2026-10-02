@@ -15,7 +15,6 @@ import { Planner } from './pages/Planner';
 import { Shopping } from './pages/Shopping';
 import { Favorites } from './pages/Favorites';
 import { RecipeForm } from './pages/RecipeForm';
-import { Assistant } from './pages/Assistant';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 
@@ -65,7 +64,6 @@ function Shell() {
               <Route path="/favoris" element={<Favorites />} />
               <Route path="/ajouter" element={<RecipeForm key="new" />} />
               <Route path="/modifier/:id" element={<RecipeForm />} />
-              <Route path="/assistant" element={<Assistant />} />
               <Route path="/stats" element={<Stats />} />
               <Route path="/reglages" element={<Settings />} />
               <Route path="*" element={<Home />} />

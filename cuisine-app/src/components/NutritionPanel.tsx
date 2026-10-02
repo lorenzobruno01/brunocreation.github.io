@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { IndexedRecipe } from '../domain/types';
 import { useLibrary, useUserData } from '../hooks/library';
-import { computeDetailed, dailyRef, DEFAULT_PROFILES, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
+import { computeDetailed, dailyRef, DEFAULT_PROFILES, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
 import { saveSettings } from '../db/db';
 
 /** Apports d'une portion : macros + vitamines, minéraux, électrolytes, acides aminés, en % des besoins du jour */
@@ -36,6 +36,23 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
       <p className="small muted" style={{ margin: 0 }}>
         Pour {portions === 1 ? '1 portion' : `${portions} portions`}, en % des besoins journaliers de {profile.name} ({profile.weight} kg, objectif {profile.kcal} kcal et {Math.round(proteinTarget)} g de protéines/jour). <Link to="/reglages">Modifier les profils</Link>
       </p>
+
+      {(() => {
+        const sc = densityScore(detail, n.kcal);
+        const dl = densityLabel(sc);
+        return (
+          <div className="row between card pad" style={{ background: 'var(--olive-soft)', boxShadow: 'none' }}>
+            <div>
+              <div className="label">🌿 Indice de densité nutritionnelle</div>
+              <div className="small muted">part des besoins d’une journée couverte par 1 000 kcal de ce plat (22 nutriments)</div>
+            </div>
+            <strong style={{ fontSize: '1.5rem' }}>
+              {dl.emoji} {sc}
+              <span className="small muted"> / 100 · {dl.label}</span>
+            </strong>
+          </div>
+        );
+      })()}
 
       <div className="stack" style={{ gap: 4 }}>
         <Bar label="🔥 Énergie" value={`${n.kcal * portions} kcal`} pct={pct(n.kcal, profile.kcal)} />
