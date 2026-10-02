@@ -62,21 +62,45 @@ export function dayReport(date: string, recipes: IndexedRecipe[], profile: Nutri
   return { date, kcal, protein, pct, coverage: cov / wsum, gaps, sodium: sum.na ?? 0 };
 }
 
-export interface NutriPlanContext extends PlannerContext {
+/** Une personne qui partage les repas, et la part de chaque plat qu'elle mange (en portions) */
+export interface Eater {
   profile: NutritionProfile;
+  portions: number;
+}
+
+/**
+ * Repas partagés : chacun mange une part proportionnelle à son objectif
+ * énergétique (ex. 3 000 et 2 200 kcal → 1,15 et 0,85 portion d'un plat pour 2).
+ */
+export function householdEaters(profiles: NutritionProfile[]): Eater[] {
+  const total = profiles.reduce((s, p) => s + p.kcal, 0) || 1;
+  return profiles.map((profile) => ({ profile, portions: (profiles.length * profile.kcal) / total }));
+}
+
+export interface NutriPlanContext extends PlannerContext {
+  /** objectif pour une seule personne (1 portion de chaque plat) */
+  profile?: NutritionProfile;
+  /** objectif pour plusieurs personnes qui mangent les mêmes plats */
+  eaters?: Eater[];
   passes?: number;
 }
 
+function eatersOf(ctx: NutriPlanContext): Eater[] {
+  if (ctx.eaters?.length) return ctx.eaters;
+  if (ctx.profile) return [{ profile: ctx.profile, portions: 1 }];
+  throw new Error('Profil nutritionnel manquant');
+}
+
 /** Score d'une journée (plus haut = mieux) */
-function dayScore(day: IndexedRecipe[], profile: NutritionProfile, refs: Record<string, number>): number {
+function dayScore(day: IndexedRecipe[], profile: NutritionProfile, refs: Record<string, number>, portions = 1): number {
   const sum: Record<string, number> = {};
   let kcal = 0;
   let protein = 0;
   for (const r of day) {
-    kcal += r.nutrition.kcal;
-    protein += r.nutrition.protein;
+    kcal += r.nutrition.kcal * portions;
+    protein += r.nutrition.protein * portions;
     const m = r.micros;
-    if (m) for (const k in m) sum[k] = (sum[k] ?? 0) + m[k];
+    if (m) for (const k in m) sum[k] = (sum[k] ?? 0) + m[k] * portions;
   }
   let s = 0;
   let w = 0;
@@ -179,8 +203,17 @@ function candidatesFor(slot: Slot, weekend: boolean, ctx: NutriPlanContext): Ind
   });
 }
 
+/** Score d'une journée pour toute la tablée : moyenne, avec un poids sur la personne la moins bien couverte */
+function householdScore(day: IndexedRecipe[], eaters: Eater[], refs: Array<Record<string, number>>): number {
+  if (eaters.length === 1) return dayScore(day, eaters[0].profile, refs[0], eaters[0].portions);
+  const scores = eaters.map((e, i) => dayScore(day, e.profile, refs[i], e.portions));
+  const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
+  return 0.5 * mean + 0.5 * Math.min(...scores);
+}
+
 export function generateNutriWeek(ctx: NutriPlanContext, categoryOf: (id: string) => string | undefined): PlanEntry[] {
-  const refs = refsFor(ctx.profile);
+  const eaters = eatersOf(ctx);
+  const refs = eaters.map((e) => refsFor(e.profile));
   const byId = new Map(ctx.recipes.map((r) => [r.id, r]));
   // 1. semaine variée de départ
   const start = generateWeek(ctx, categoryOf);
@@ -199,7 +232,7 @@ export function generateNutriWeek(ctx: NutriPlanContext, categoryOf: (id: string
     cur.forEach((row, day) => row.forEach((r, si) => r && out.push({ slot: ctx.slots[si], r, day })));
     return out;
   };
-  const dayScores = cur.map((row) => dayScore(row.filter(Boolean) as IndexedRecipe[], ctx.profile, refs));
+  const dayScores = cur.map((row) => householdScore(row.filter(Boolean) as IndexedRecipe[], eaters, refs));
   let variety = varietyPenalty(flat(), ctx);
 
   // 2. optimisation locale
@@ -219,7 +252,7 @@ export function generateNutriWeek(ctx: NutriPlanContext, categoryOf: (id: string
         for (const cand of pool) {
           if (cand === before) continue;
           cur[d][si] = cand;
-          const ds = dayScore(cur[d].filter(Boolean) as IndexedRecipe[], ctx.profile, refs);
+          const ds = householdScore(cur[d].filter(Boolean) as IndexedRecipe[], eaters, refs);
           // estimation rapide de la variété avant le calcul complet
           if (ds - variety + 70 < bestTotal) continue;
           const v = varietyPenalty(flat(), ctx);

@@ -75,7 +75,7 @@ describe('critères du menu', () => {
 
 import { composeRecipe } from '../src/domain/composer';
 import { checkPhilosophy } from '../src/domain/philosophy';
-import { generateNutriWeek, dayReport } from '../src/domain/nutriPlanner';
+import { generateNutriWeek, dayReport, householdEaters } from '../src/domain/nutriPlanner';
 import { computeDetailed as cd, densityScore, DEFAULT_PROFILES } from '../src/domain/micronutrients';
 
 describe('créateur de recettes intégré', () => {
@@ -117,6 +117,29 @@ describe('planificateur densité nutritionnelle', () => {
       expect(rep.coverage).toBeGreaterThan(95);
     }
   }, 30000);
+
+  it('optimise pour deux personnes qui partagent les mêmes plats', () => {
+    const lib = library.map((r) => {
+      r.micros = cd(r, lookup);
+      return r;
+    });
+    const dates = ['2026-10-05', '2026-10-06', '2026-10-07', '2026-10-08', '2026-10-09', '2026-10-10', '2026-10-11'];
+    const eaters = householdEaters(DEFAULT_PROFILES);
+    expect(eaters.reduce((s, e) => s + e.portions, 0)).toBeCloseTo(2);
+    expect(eaters[0].portions).toBeGreaterThan(eaters[1].portions);
+    const plan = generateNutriWeek({ recipes: lib, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots: ['matin', 'midi', 'collation', 'soir'], servings: 2, seed: 1, eaters }, (id) => lookup(id)?.category);
+    expect(plan).toHaveLength(28);
+    const byId = new Map(lib.map((r) => [r.id, r]));
+    for (const d of dates) {
+      const day = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)!);
+      for (const e of eaters) {
+        const rep = dayReport(d, day, e.profile, () => e.portions);
+        expect(rep.coverage).toBeGreaterThan(90);
+        expect(rep.pct.kcal).toBeGreaterThan(85);
+        expect(rep.pct.kcal).toBeLessThan(115);
+      }
+    }
+  }, 60000);
 });
 
 import { analyzeDigestion as ad } from '../src/domain/digestion';

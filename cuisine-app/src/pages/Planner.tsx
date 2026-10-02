@@ -5,8 +5,8 @@ import { db, saveSettings } from '../db/db';
 import { useLibrary, useUserData } from '../hooks/library';
 import { DAY_NAMES, isoDate, mondayOf, weekDates } from '../domain/season';
 import { generateWeek, type PlannerConstraints } from '../domain/planner';
-import { generateNutriWeek, dayReport, bestSourcesOf, type DayReport } from '../domain/nutriPlanner';
-import { DEFAULT_PROFILES, GROUP_LABELS, NUTRIENTS, type NutritionProfile } from '../domain/micronutrients';
+import { generateNutriWeek, dayReport, bestSourcesOf, householdEaters, type DayReport, type Eater } from '../domain/nutriPlanner';
+import { DEFAULT_PROFILES, GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
 import { SLOT_LABELS } from '../components/AddToPlanSheet';
@@ -51,7 +51,11 @@ export function Planner() {
   const navigate = useNavigate();
 
   const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
-  const profile = profiles.find((p) => p.id === settings.activeProfile) ?? profiles[0];
+  // Par défaut, le planning est fait pour toute la tablée : mêmes plats, part adaptée à chacun
+  const planFor = settings.planFor ?? (profiles.length > 1 ? 'nous' : profiles[0].id);
+  const together = planFor === 'nous' && profiles.length > 1;
+  const eaters: Eater[] = together ? householdEaters(profiles) : [{ profile: profiles.find((p) => p.id === planFor) ?? profiles[0], portions: 1 }];
+  const forName = together ? 'vous deux' : eaters[0].profile.name;
 
   const setSlots = (s: Slot[]) => {
     const v = ALL_SLOTS.filter((x) => s.includes(x));
@@ -70,13 +74,16 @@ export function Planner() {
   const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
   const byKey = new Map(plan.map((p) => [p.key, p]));
 
+  /** un rapport par personne, jour par jour */
   const reports = useMemo(
     () =>
-      dates.map((d) => {
-        const rs = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)).filter(Boolean) as IndexedRecipe[];
-        return rs.length ? dayReport(d, rs, profile) : null;
-      }),
-    [plan, byId, profile, dates[0]], // eslint-disable-line react-hooks/exhaustive-deps
+      eaters.map((e) =>
+        dates.map((d) => {
+          const rs = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)).filter(Boolean) as IndexedRecipe[];
+          return rs.length ? dayReport(d, rs, e.profile, () => e.portions) : null;
+        }),
+      ),
+    [plan, byId, JSON.stringify(eaters), dates[0]], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   const place = async (date: string, slot: Slot, recipeId: string, servings = settings.defaultServings) => {
@@ -107,10 +114,10 @@ export function Planner() {
       locked,
       dates,
       slots,
-      servings: settings.defaultServings,
+      servings: together ? Math.max(settings.defaultServings, profiles.length) : settings.defaultServings,
       shareIngredients: opts.share,
       constraints: opts.constraints,
-      profile,
+      eaters,
     };
     const entries = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
     await db.transaction('rw', db.plan, async () => {
@@ -118,11 +125,15 @@ export function Planner() {
       await db.plan.bulkPut(entries);
     });
     setBusy(false);
-    toast(opts.mode === 'nutri' ? `Semaine optimisée pour ${profile.name} 🎯` : 'Menu de la semaine généré ✨');
+    toast(opts.mode === 'nutri' ? `Semaine optimisée pour ${forName} 🎯` : 'Menu de la semaine généré ✨');
   };
 
-  const filled = reports.filter(Boolean) as DayReport[];
-  const weekCoverage = filled.length ? Math.round(filled.reduce((s, r) => s + r.coverage, 0) / filled.length) : 0;
+  const weekCoverage = reports.map((rs) => {
+    const filled = rs.filter(Boolean) as DayReport[];
+    return filled.length ? Math.round(filled.reduce((s, r) => s + r.coverage, 0) / filled.length) : 0;
+  });
+  const hasDays = reports[0].some(Boolean);
+  const icon = (e: Eater) => (e.profile.sex === 'homme' ? '👨' : '👩');
 
   return (
     <div className="page">
@@ -145,13 +156,30 @@ export function Planner() {
       </p>
 
       <div className="row" style={{ marginBottom: 10 }}>
-        <span className="label">Objectif pour :</span>
+        <span className="label">Repas pour :</span>
+        {profiles.length > 1 && (
+          <button className={`chip ${together ? 'on' : ''}`} onClick={() => saveSettings({ planFor: 'nous' })}>
+            👫 Nous deux
+          </button>
+        )}
         {profiles.map((p) => (
-          <button key={p.id} className={`chip ${p.id === profile.id ? 'on' : ''}`} onClick={() => saveSettings({ activeProfile: p.id })}>
-            {p.sex === 'homme' ? '👨' : '👩'} {p.name} · {p.kcal} kcal
+          <button key={p.id} className={`chip ${!together && p.id === eaters[0].profile.id ? 'on' : ''}`} onClick={() => saveSettings({ planFor: p.id })}>
+            {p.sex === 'homme' ? '👨' : '👩'} {p.name} seul{p.sex === 'femme' ? 'e' : ''}
           </button>
         ))}
       </div>
+      {together && (
+        <p className="small muted" style={{ margin: '0 0 10px' }}>
+          Mêmes plats pour vous deux, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son objectif :{' '}
+          {eaters.map((e, i) => (
+            <span key={e.profile.id}>
+              {i > 0 && ' · '}
+              {icon(e)} <strong>{e.profile.name}</strong> {e.portions.toFixed(2).replace('.', ',')} portion ({e.profile.kcal} kcal/jour)
+            </span>
+          ))}
+          . Le planning vise 100 % des besoins de chacun.
+        </p>
+      )}
 
       <div className="row" style={{ marginBottom: 10 }}>
         <span className="label">Repas :</span>
@@ -181,13 +209,20 @@ export function Planner() {
         )}
       </div>
 
-      {filled.length > 0 && (
+      {hasDays && (
         <div className="card pad row between" style={{ marginBottom: 14 }}>
           <div>
-            <div className="label">🎯 Couverture moyenne des besoins ({profile.name})</div>
+            <div className="label">🎯 Couverture moyenne des besoins</div>
             <div className="small muted">vitamines, minéraux, électrolytes, acides aminés, oméga-3, fibres</div>
           </div>
-          <strong style={{ fontSize: '1.8rem', fontFamily: 'var(--font-title)', color: covColor(weekCoverage) }}>{weekCoverage} %</strong>
+          <div className="row nowrap" style={{ gap: 14 }}>
+            {eaters.map((e, i) => (
+              <div key={e.profile.id} className="center">
+                {together && <div className="small muted">{icon(e)} {e.profile.name}</div>}
+                <strong style={{ fontSize: '1.8rem', fontFamily: 'var(--font-title)', color: covColor(weekCoverage[i]) }}>{weekCoverage[i]} %</strong>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -202,17 +237,21 @@ export function Planner() {
 
       <div className="week">
         {dates.map((d, i) => {
-          const rep = reports[i];
           return (
             <div key={d} className={`card day ${d === today ? 'today' : ''}`}>
               <div className="day-head">
                 <strong>{DAY_NAMES[i]}</strong>
                 <span className="row nowrap" style={{ gap: 6 }}>
-                  {rep && (
-                    <span className="tag" style={{ background: covColor(rep.coverage), color: '#fff' }} title="Couverture des besoins">
-                      🎯 {Math.round(rep.coverage)} %
-                    </span>
-                  )}
+                  {eaters.map((e, k) => {
+                    const rep = reports[k][i];
+                    return (
+                      rep && (
+                        <span key={e.profile.id} className="tag" style={{ background: covColor(rep.coverage), color: '#fff' }} title={`Couverture des besoins de ${e.profile.name}`}>
+                          {together ? icon(e) : '🎯'} {Math.round(rep.coverage)} %
+                        </span>
+                      )
+                    );
+                  })}
                   <span className="small muted">{formatDateFr(d, { day: 'numeric', month: 'short' })}</span>
                 </span>
               </div>
@@ -273,7 +312,7 @@ export function Planner() {
         })}
       </div>
 
-      {filled.length > 0 && <CoveragePanel dates={dates} reports={reports} profile={profile} recipes={recipes} />}
+      {hasDays && <CoveragePanel dates={dates} reports={reports} eaters={eaters} recipes={recipes} />}
 
       {picker && (
         <RecipePicker
@@ -302,7 +341,7 @@ export function Planner() {
         />
       )}
 
-      {genOpen && <GenerateSheet onClose={() => setGenOpen(false)} onGenerate={generate} hasPlan={plan.length > 0} profile={profile} slots={slots} />}
+      {genOpen && <GenerateSheet onClose={() => setGenOpen(false)} onGenerate={generate} hasPlan={plan.length > 0} eaters={eaters} slots={slots} />}
       <p className="small muted center" style={{ marginTop: 24 }}>
         Les plats du planning alimentent la liste de courses. <Link to="/courses">Voir la liste</Link>
       </p>
@@ -311,8 +350,13 @@ export function Planner() {
 }
 
 /** Tableau de couverture : nutriments × jours, lacunes et recettes pour les combler */
-function CoveragePanel({ dates, reports, profile, recipes }: { dates: string[]; reports: Array<DayReport | null>; profile: NutritionProfile; recipes: IndexedRecipe[] }) {
+function CoveragePanel({ dates, reports: all, eaters, recipes }: { dates: string[]; reports: Array<Array<DayReport | null>>; eaters: Eater[]; recipes: IndexedRecipe[] }) {
   const [day, setDay] = useState<number | null>(null);
+  const [who, setWho] = useState(0);
+  const w = Math.min(who, eaters.length - 1);
+  const profile = eaters[w].profile;
+  const portions = eaters[w].portions;
+  const reports = all[w];
   const rows = [
     { key: 'kcal', label: '🔥 Énergie', group: 'macros' },
     { key: 'protein', label: '🥩 Protéines', group: 'macros' },
@@ -328,8 +372,17 @@ function CoveragePanel({ dates, reports, profile, recipes }: { dates: string[]; 
   return (
     <section className="card pad section stack">
       <h2 style={{ margin: 0 }}>🔬 Couverture des besoins jour par jour</h2>
+      {eaters.length > 1 && (
+        <div className="chips">
+          {eaters.map((e, i) => (
+            <button key={e.profile.id} className={`chip ${i === w ? 'on' : ''}`} onClick={() => setWho(i)}>
+              {e.profile.sex === 'homme' ? '👨' : '👩'} {e.profile.name}
+            </button>
+          ))}
+        </div>
+      )}
       <p className="small muted" style={{ margin: 0 }}>
-        % du besoin journalier de {profile.name} (1 portion de chaque plat). Vert ≥ 95 %, olive ≥ 80 %, jaune ≥ 60 %, rouge en dessous. Sodium : % de la limite (sel « au goût » non compté).
+        % du besoin journalier de {profile.name} ({portions === 1 ? '1 portion' : `${portions.toFixed(2).replace('.', ',')} portion`} de chaque plat). Vert ≥ 95 %, olive ≥ 80 %, jaune ≥ 60 %, rouge en dessous. Sodium : % de la limite (sel « au goût » non compté).
       </p>
 
       {gaps.length > 0 ? (
@@ -459,13 +512,13 @@ function GenerateSheet({
   onClose,
   onGenerate,
   hasPlan,
-  profile,
+  eaters,
   slots,
 }: {
   onClose: () => void;
   onGenerate: (o: { replaceAll: boolean; share: boolean; constraints: PlannerConstraints; mode: 'nutri' | 'variete' }) => void;
   hasPlan: boolean;
-  profile: NutritionProfile;
+  eaters: Eater[];
   slots: Slot[];
 }) {
   const [replaceAll, setReplaceAll] = useState(!hasPlan);
@@ -488,7 +541,14 @@ function GenerateSheet({
         </div>
         {mode === 'nutri' && (
           <p className="small muted" style={{ margin: 0 }}>
-            Chaque créneau est choisi pour que la journée couvre au mieux les besoins de <strong>{profile.name}</strong> ({profile.kcal} kcal) en 13 vitamines, 8 minéraux, électrolytes, oméga-3, fibres et acides aminés, tout en gardant de la variété (protéines différentes, jamais deux fois le même plat) et vos critères ci-dessous.
+            Chaque créneau est choisi pour que la journée couvre au mieux les besoins de{' '}
+            {eaters.map((e, i) => (
+              <span key={e.profile.id}>
+                {i > 0 && ' et de '}
+                <strong>{e.profile.name}</strong> ({e.profile.kcal} kcal)
+              </span>
+            ))}{' '}
+            en 13 vitamines, 8 minéraux, électrolytes, oméga-3, fibres et acides aminés, tout en gardant de la variété (protéines différentes, jamais deux fois le même plat) et vos critères ci-dessous.
             {!fullDay && <strong> Astuce : activez les 4 repas (petit-déjeuner, midi, collation, soir) pour atteindre plus facilement 100 %.</strong>}
           </p>
         )}

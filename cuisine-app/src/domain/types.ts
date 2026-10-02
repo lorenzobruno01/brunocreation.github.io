@@ -285,6 +285,8 @@ export interface Settings {
   /** profils nutritionnels du foyer (besoins journaliers) */
   profiles?: Array<{ id: string; name: string; sex: 'homme' | 'femme'; weight: number; kcal: number; proteinPerKg: number }>;
   activeProfile?: string;
+  /** planning : « nous » (tous les profils partagent les repas) ou l'id d'un profil */
+  planFor?: string;
   /** créer automatiquement une recette quand une recherche ne donne rien */
   autoCreate?: boolean;
   /** profils alimentaires actifs (filtrent recettes et planning) */
