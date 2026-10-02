@@ -13,7 +13,6 @@ import { findSimilar } from '../domain/similarity';
 import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
-import { AiRecipeActions } from '../components/AiRecipeActions';
 import { NutritionPanel } from '../components/NutritionPanel';
 import type { IndexedRecipe } from '../domain/types';
 
@@ -144,7 +143,7 @@ export function RecipeDetail() {
                       {ri.optional && <span className="tag" style={{ marginLeft: 6 }}>facultatif</span>}
                       {has && <span className="tag ok" style={{ marginLeft: 6 }}>chez moi</span>}
                     </span>
-                    {(eq.length > 0 || settings.apiKey) && !ing.staple && (
+                    {eq.length > 0 && !ing.staple && (
                       <button
                         className="btn ghost sm"
                         title="Remplacer cet ingrédient"
@@ -210,7 +209,6 @@ export function RecipeDetail() {
 
           <NutritionPanel recipe={recipe} />
 
-          <AiRecipeActions recipe={recipe} servings={n} />
 
           {similar.length > 0 && (
             <section>
@@ -280,7 +278,7 @@ function SubstituteSheet({ recipe, ingredientId, onClose }: { recipe: IndexedRec
           ))}
         </div>
       ) : (
-        <p className="muted">Pas de substitut direct connu. Utilisez l’assistant IA ci-dessous (« Je n’ai pas de… ») pour une adaptation complète.</p>
+        <p className="muted">Pas de substitut direct connu. Utilisez « ✏️ Modifier » ou « 📄 Créer ma variante » pour adapter la recette.</p>
       )}
     </Sheet>
   );

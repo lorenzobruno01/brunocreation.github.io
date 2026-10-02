@@ -7,6 +7,9 @@
 import type { Cuisine, Difficulty, IndexedRecipe, MealType, ProteinGroup, RecipeCategory, Season } from './types';
 import { norm, stem } from './text';
 import { CUISINES } from './labels';
+import { NUTRIENTS } from './micronutrients';
+
+const RICH_REF: Record<string, number> = Object.fromEntries(NUTRIENTS.map((n) => [n.key, n.ref[0]]));
 
 export interface Filters {
   meals: MealType[];
@@ -25,6 +28,10 @@ export interface Filters {
   favoritesOnly?: boolean;
   /** nombre max d'ingrédients manquants (avec le frigo/garde-manger) */
   maxMissing?: number;
+  /** riche en : nutriments couverts à ≥ 30 % par portion */
+  richIn?: string[];
+  /** indice de densité nutritionnelle minimum */
+  densityMin?: number;
 }
 
 export const EMPTY_FILTERS: Filters = {
@@ -141,6 +148,8 @@ export function matchesFilters(r: IndexedRecipe, f: Filters, favorites?: Set<str
   if (f.kcalMax != null && r.nutrition.kcal > f.kcalMax) return false;
   if (f.proteinMin != null && r.nutrition.protein < f.proteinMin) return false;
   if (f.favoritesOnly && !favorites?.has(r.id)) return false;
+  if (f.densityMin != null && (r.density ?? 0) < f.densityMin) return false;
+  if (f.richIn?.length && !f.richIn.every((k) => ((r.micros?.[k] ?? 0) / (RICH_REF[k] ?? 1)) >= 0.3)) return false;
   return true;
 }
 
@@ -158,7 +167,7 @@ export function textScore(r: IndexedRecipe, terms: string[]): number {
   return score;
 }
 
-export type SortKey = 'pertinence' | 'temps' | 'calories' | 'proteines' | 'recent' | 'nom';
+export type SortKey = 'pertinence' | 'densite' | 'temps' | 'calories' | 'proteines' | 'recent' | 'nom';
 
 export function searchRecipes(
   recipes: IndexedRecipe[],
@@ -176,6 +185,7 @@ export function searchRecipes(
   }
   const cmp: Record<SortKey, (a: { r: IndexedRecipe; s: number }, b: { r: IndexedRecipe; s: number }) => number> = {
     pertinence: (a, b) => b.s - a.s || (favorites.has(b.r.id) ? 1 : 0) - (favorites.has(a.r.id) ? 1 : 0) || a.r.name.localeCompare(b.r.name, 'fr'),
+    densite: (a, b) => (b.r.density ?? 0) - (a.r.density ?? 0),
     temps: (a, b) => a.r.totalTime - b.r.totalTime,
     calories: (a, b) => b.r.nutrition.kcal - a.r.nutrition.kcal,
     proteines: (a, b) => b.r.nutrition.protein - a.r.nutrition.protein,
@@ -201,6 +211,8 @@ export function countActiveFilters(f: Filters): number {
     (f.kcalMin != null || f.kcalMax != null ? 1 : 0) +
     (f.proteinMin != null ? 1 : 0) +
     (f.favoritesOnly ? 1 : 0) +
-    (f.maxMissing != null ? 1 : 0)
+    (f.maxMissing != null ? 1 : 0) +
+    (f.richIn?.length ?? 0) +
+    (f.densityMin != null ? 1 : 0)
   );
 }

@@ -39,7 +39,6 @@ export function Stats() {
       quick30: recipes.filter((r) => r.totalTime <= 30).length,
       quick45: recipes.filter((r) => r.totalTime <= 45).length,
       long: recipes.filter((r) => r.totalTime > 60).length,
-      ai: recipes.filter((r) => r.source === 'ai').length,
       user: recipes.filter((r) => r.source === 'user').length,
       recent: [...recipes].filter((r) => r.source !== 'seed').sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? '')).slice(0, 8),
       avgKcal: Math.round(recipes.reduce((a, r) => a + r.nutrition.kcal, 0) / Math.max(1, recipes.length)),
@@ -98,7 +97,6 @@ export function Stats() {
         <Stat v={s.quick30} l="⚡ ≤ 30 min" />
         <Stat v={s.quick45} l="⚡ ≤ 45 min" />
         <Stat v={s.long} l="🍲 longues (> 1 h)" />
-        <Stat v={s.ai} l="✨ générées par l’IA" />
         <Stat v={s.user} l="✍️ ajoutées par vous" />
         <Stat v={`${s.avgKcal}`} l="kcal moy. / portion" />
         <Stat v={`${s.avgProt} g`} l="protéines moy. / portion" />
@@ -111,8 +109,8 @@ export function Stats() {
             {under.length > 0 && <>Cuisines : {under.map((k) => CUISINES[k as keyof typeof CUISINES].label).join(', ')}. </>}
             {lowProteins.length > 0 && <>Protéines : {lowProteins.map((k) => label('protein', k)).join(', ')}.</>}
           </p>
-          <Link to={`/assistant?cuisine=${under[0] ?? ''}`} className="btn sm primary">
-            ✨ Combler avec l’assistant
+          <Link to="/ajouter" className="btn sm primary">
+            ➕ Ajouter une recette
           </Link>
         </div>
       )}
@@ -146,7 +144,7 @@ export function Stats() {
           <ul>
             {s.recent.map((r) => (
               <li key={r.id}>
-                <Link to={`/recette/${r.id}`}>{r.name}</Link> <span className="small muted">({r.source === 'ai' ? 'IA' : 'vous'})</span>
+                <Link to={`/recette/${r.id}`}>{r.name}</Link> <span className="small muted">(vous)</span>
               </li>
             ))}
           </ul>

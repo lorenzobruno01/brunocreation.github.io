@@ -69,6 +69,7 @@ function mulberry32(a: number) {
 /** Recettes éligibles comme repas principal */
 export function isMainMeal(r: IndexedRecipe, slot: Slot): boolean {
   if (slot === 'matin') return r.mealTypes.includes('petit-dejeuner');
+  if (slot === 'collation') return r.mealTypes.includes('collation') && r.category !== 'sauce';
   const okType = slot === 'midi' ? r.mealTypes.includes('dejeuner') || r.mealTypes.includes('diner') : r.mealTypes.includes('diner') || r.mealTypes.includes('dejeuner');
   if (!okType) return false;
   if (['plat', 'mijote', 'salade-composee'].includes(r.category)) return true;

@@ -58,6 +58,7 @@ export function RecipeCard({
           <div className="rcard-meta">
             <span>🔥 {recipe.nutrition.kcal} kcal</span>
             <span>🥩 {recipe.nutrition.protein} g prot.</span>
+            {recipe.density != null && <span title="Indice de densité nutritionnelle (0–100)">🌿 {recipe.density}</span>}
           </div>
           {!compact && (
             <div className="rcard-tags">

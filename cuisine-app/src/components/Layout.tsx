@@ -14,7 +14,6 @@ const TABS = [
 const MORE = [
   { to: '/favoris', label: 'Mes favoris & historique', icon: '❤️' },
   { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
-  { to: '/assistant', label: 'Assistant IA — nouvelles recettes', icon: '✨' },
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
   { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },
   { to: '/reglages', label: 'Réglages & sauvegarde', icon: '⚙️' },
@@ -38,7 +37,6 @@ export function Layout({ children }: { children: ReactNode }) {
               </NavLink>
             ))}
             <NavLink to="/favoris">❤️ Favoris</NavLink>
-            <NavLink to="/assistant">✨ IA</NavLink>
           </nav>
           <div className="topbar-actions">
             <Link to="/recettes?focus=1" className="icon-btn" aria-label="Rechercher" style={{ textDecoration: 'none' }}>

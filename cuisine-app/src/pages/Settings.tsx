@@ -1,33 +1,16 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary } from '../hooks/library';
-import { AiError, loadAi, MODELS } from '../ai/light';
 import { DEFAULT_PROFILES, type NutritionProfile } from '../domain/micronutrients';
 import { useToast } from '../components/ui';
 
 export function Settings() {
   const { settings } = useUserData();
   const { recipes } = useLibrary();
-  const [key, setKey] = useState(settings.apiKey ?? '');
-  const [show, setShow] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   const toast = useToast();
-  const [testing, setTesting] = useState<string | null>(null);
   const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
   const setProfile = (i: number, patch: Partial<NutritionProfile>) => saveSettings({ profiles: profiles.map((p, k) => (k === i ? { ...p, ...patch } : p)) });
-
-  const test = async () => {
-    const k = key.trim() || settings.apiKey;
-    if (!k) return setTesting('❌ Saisissez d’abord une clé.');
-    setTesting('⏳ Test en cours…');
-    try {
-      const { testConnection } = await loadAi();
-      const r = await testConnection(k, settings.model ?? 'claude-opus-5-5');
-      setTesting(`✅ ${r}`);
-    } catch (e) {
-      setTesting(`❌ ${e instanceof AiError ? e.message : String(e)}`);
-    }
-  };
 
   const download = async () => {
     const json = await exportData(false);
@@ -124,70 +107,6 @@ export function Settings() {
         <p className="small muted" style={{ margin: 0 }}>Repères prise de masse : environ 35–45 kcal/kg et 1,6–2 g de protéines/kg par jour.</p>
       </section>
 
-      <section className="card pad stack">
-        <h2 style={{ margin: 0 }}>✨ Assistant IA (Claude)</h2>
-        <details className="callout info">
-          <summary style={{ cursor: 'pointer', fontWeight: 800 }}>📖 Comment connecter l’IA (5 minutes)</summary>
-          <ol className="small" style={{ margin: '8px 0 0', paddingLeft: 18 }}>
-            <li>Allez sur <a href="https://console.anthropic.com" target="_blank" rel="noreferrer">console.anthropic.com</a> et créez un compte (e-mail).</li>
-            <li>Menu <strong>Billing</strong> (Facturation) : ajoutez une carte et achetez un petit crédit (ex. 5 $). C’est du prépayé : pas d’abonnement, pas de mauvaise surprise.</li>
-            <li>Menu <strong>API Keys</strong> → <strong>Create Key</strong> → nommez-la « Notre Cuisine » → copiez la clé (elle commence par <span className="kbd">sk-ant-</span>, elle ne s’affiche qu’une fois).</li>
-            <li>Collez-la ci-dessous, <strong>Enregistrer</strong>, puis <strong>Tester la connexion</strong>.</li>
-            <li>À faire sur chaque téléphone (la clé n’est pas incluse dans les sauvegardes, par sécurité).</li>
-          </ol>
-          <p className="small" style={{ margin: '8px 0 0' }}>
-            Coût indicatif avec Opus 5.5 : ~0,15 à 0,25 $ pour créer une recette seule, ~0,60 $ pour 10 recettes, ~0,10 $ pour adapter une recette ou composer une semaine. Sonnet 5.5 coûte environ deux fois moins. Vous pouvez fixer une limite de dépense mensuelle dans la console (Limits).
-          </p>
-        </details>
-        <p className="small muted" style={{ margin: 0 }}>
-          Pour générer, adapter et planifier, l’application appelle l’API Anthropic directement depuis ce navigateur avec votre clé. La clé reste stockée sur cet appareil uniquement (elle n’est jamais incluse dans les sauvegardes). Créez une clé sur <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noreferrer">console.anthropic.com</a> ; l’usage est facturé sur votre compte API.
-        </p>
-        <div className="field">
-          <label htmlFor="apikey">Clé API</label>
-          <div className="row nowrap">
-            <input id="apikey" className="input" type={show ? 'text' : 'password'} value={key} onChange={(e) => setKey(e.target.value)} placeholder="sk-ant-…" autoComplete="off" />
-            <button className="btn" onClick={() => setShow(!show)}>
-              {show ? '🙈' : '👁'}
-            </button>
-          </div>
-        </div>
-        {testing && <div className="small">{testing}</div>}
-        <div className="field">
-          <label htmlFor="model">Modèle</label>
-          <select id="model" className="select" value={settings.model} onChange={(e) => saveSettings({ model: e.target.value })}>
-            {MODELS.map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.label}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="row">
-          <button
-            className="btn primary"
-            onClick={async () => {
-              await saveSettings({ apiKey: key.trim() || undefined });
-              toast(key.trim() ? 'Clé enregistrée' : 'Clé supprimée');
-            }}
-          >
-            Enregistrer
-          </button>
-          <button className="btn" onClick={test}>
-            🔌 Tester la connexion
-          </button>
-          {settings.apiKey && (
-            <button
-              className="btn danger"
-              onClick={async () => {
-                setKey('');
-                await saveSettings({ apiKey: undefined });
-              }}
-            >
-              Supprimer la clé
-            </button>
-          )}
-        </div>
-      </section>
 
       <section className="card pad stack">
         <h2 style={{ margin: 0 }}>💾 Sauvegarde & partage entre nos téléphones</h2>

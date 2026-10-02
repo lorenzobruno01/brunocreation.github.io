@@ -1,0 +1,4003 @@
+[
+  {
+    "id": "dm-sarde-beccafico-brocoli",
+    "name": "Sarde a beccafico, brocoli à l'ail et pommes de terre au four",
+    "description": "Sardines fraîches roulées sur une farce de chapelure, pignons, raisins secs et pecorino, rôties au four ; brocoli sauté à l'ail et pommes de terre en quartiers avec la peau.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 35,
+    "cookTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 10,
+        "unit": "piece",
+        "note": "ouvertes en portefeuille, arête retirée (demandez au poissonnier)"
+      },
+      {
+        "id": "panure",
+        "qty": 30,
+        "unit": "g",
+        "note": "chapelure de pain rassis"
+      },
+      {
+        "id": "pignons",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "pecorino râpé"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece",
+        "note": "jus et zeste"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laurier",
+        "qty": 6,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "brocoli",
+        "qty": 400,
+        "unit": "g",
+        "note": "brocoli ou cime di rapa"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "optionnel"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Coupez les pommes de terre non épluchées en quartiers, mélangez-les avec 1,5 c. à soupe d'huile d'olive et du sel, étalez-les sur une plaque et enfournez 15 min.",
+      "Préparez la farce : faites dorer la chapelure 2 min à sec dans une poêle à feu moyen, puis mélangez-la avec les pignons, les raisins secs, le pecorino, le persil haché, le zeste d'orange et 1 c. à soupe d'huile.",
+      "Salez légèrement l'intérieur des sardines ouvertes, déposez 1 c. à soupe de farce sur chacune et roulez-les de la tête vers la queue, queue en l'air.",
+      "Rangez les 10 rouleaux serrés dans un plat huilé en intercalant une feuille de laurier tous les deux rouleaux. Arrosez du jus d'orange et d'un filet d'huile, parsemez du reste de farce.",
+      "Enfournez le plat à côté des pommes de terre pour 15 min : les sardines sont opaques et la chapelure dorée.",
+      "Pendant ce temps, coupez le brocoli en fleurettes et faites-le sauter 6 min à feu vif dans 1 c. à soupe d'huile avec l'ail émincé et le piment, en ajoutant 3 c. à soupe d'eau en fin de cuisson. Servez avec des quartiers de citron."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "week-end",
+      "économique",
+      "prise de masse"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "fruite",
+      "herbace"
+    ],
+    "tips": "Le pecorino et les sardines mangées avec leurs petites arêtes résiduelles apportent beaucoup de calcium."
+  },
+  {
+    "id": "dm-gratin-sardines-fenouil",
+    "name": "Gratin de sardines à l'huile, fenouil et pommes de terre au comté",
+    "description": "Un gratin de placard malin : pommes de terre fondantes, fenouil confit et sardines à l'huile, nappés d'une crème au comté ; salade de mâche au colza.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 45,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine-conserve",
+        "qty": 230,
+        "unit": "g",
+        "note": "2 boîtes, égouttées, arêtes conservées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en rondelles fines, avec la peau"
+      },
+      {
+        "id": "fenouil",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "comte",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "mache",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "huile-colza",
+        "qty": 1.5,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 190 °C. Faites cuire les rondelles de pommes de terre 8 min dans de l'eau salée bouillante ; égouttez.",
+      "Dans une poêle, faites fondre le fenouil et l'oignon émincés avec 1 c. à soupe de l'huile des sardines, 8 min à feu moyen, jusqu'à ce qu'ils soient translucides et légèrement dorés.",
+      "Frottez un plat à gratin avec la gousse d'ail coupée. Alternez pommes de terre, fenouil et sardines grossièrement émiettées (avec leurs arêtes, elles sont tendres et riches en calcium), en terminant par des pommes de terre.",
+      "Fouettez la crème, le lait, la moitié du comté, le thym effeuillé, sel et poivre ; versez sur le gratin et parsemez du reste de comté.",
+      "Enfournez 30 min : le dessus est doré et la crème bouillonne sur les bords.",
+      "Fouettez l'huile de colza, le vinaigre et la moutarde, assaisonnez la mâche et servez à côté du gratin."
+    ],
+    "tags": [
+      "four",
+      "économique",
+      "familial",
+      "réconfortant",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "cremeux",
+      "iode",
+      "reconfortant"
+    ],
+    "tips": "Se prépare la veille et se réchauffe 15 min à 180 °C."
+  },
+  {
+    "id": "dm-sardeles-fourno",
+    "name": "Sardeles sto fourno, sardines au four à la grecque et horta",
+    "description": "Sardines fraîches rôties sur un lit de pommes de terre, tomates, origan et citron, servies avec des blettes au citron et une cuillère de yaourt grec.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 20,
+    "cookTime": 40,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 10,
+        "unit": "piece",
+        "note": "vidées, tête retirée"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en rondelles de 5 mm, avec la peau"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "origan",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "epinard",
+        "qty": 200,
+        "unit": "g",
+        "note": "blettes ou chicorée (horta)"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Mélangez les pommes de terre, l'oignon rouge émincé, l'ail écrasé, 1 c. à café d'origan, 2 c. à soupe d'huile, sel et poivre ; étalez dans un grand plat et enfournez 20 min.",
+      "Posez les rondelles de tomate sur les pommes de terre, puis les sardines côte à côte. Arrosez du jus d'un citron et de 1 c. à soupe d'huile, parsemez du reste d'origan.",
+      "Enfournez 18 à 20 min : la peau des sardines se fendille et la chair se détache de l'arête.",
+      "Pendant ce temps, faites cuire les blettes coupées 5 min dans de l'eau salée bouillante, égouttez-les et assaisonnez-les d'huile d'olive et du jus du second citron.",
+      "Parsemez le plat de persil et servez avec les horta et le yaourt grec."
+    ],
+    "tags": [
+      "four",
+      "une poêle",
+      "économique",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "acidule",
+      "iode",
+      "herbace"
+    ],
+    "tips": "Les petites sardines se mangent avec l'arête centrale bien rôtie : un plein de calcium."
+  },
+  {
+    "id": "dm-maquereau-sarrasin-poireaux",
+    "name": "Maquereau poêlé, kasha de sarrasin aux poireaux et beurre noisette",
+    "description": "Filets de maquereau à la peau croustillante sur un sarrasin grillé aux poireaux fondus, arrosés d'un beurre noisette aux câpres et au persil.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "levés en 4 filets"
+      },
+      {
+        "id": "sarrasin",
+        "qty": 150,
+        "unit": "g",
+        "note": "grains décortiqués grillés (kasha)"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "capres",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 350,
+        "unit": "ml"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le sarrasin, faites-le griller 2 min à sec dans une casserole à feu moyen, versez le bouillon chaud, couvrez et laissez cuire 12 min à feu doux jusqu'à absorption. Laissez reposer 5 min à couvert.",
+      "Faites fondre les poireaux émincés avec 10 g de beurre et une pincée de sel, 10 min à feu doux à couvert. Mélangez-les au sarrasin avec les graines de courge.",
+      "Épongez les filets, entaillez légèrement la peau et salez. Chauffez l'huile d'olive dans une poêle à feu vif, posez les filets côté peau 3 min en les pressant avec une spatule, retournez et cuisez 1 min.",
+      "Essuyez la poêle, faites mousser le reste du beurre à feu moyen jusqu'à ce qu'il sente la noisette et devienne blond foncé (2 min). Hors du feu, ajoutez les câpres, le jus d'un demi-citron et le persil haché.",
+      "Dressez le sarrasin aux poireaux, posez les filets et nappez de beurre noisette. Servez avec le reste du citron en quartiers."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "sans gluten",
+      "riche en protéines",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "umami",
+      "acidule"
+    ],
+    "tips": "Le sarrasin se remplace par des pommes de terre vapeur avec la peau."
+  },
+  {
+    "id": "dm-caballa-escabeche",
+    "name": "Caballa en escabeche, pommes de terre et poivrons rôtis",
+    "description": "Filets de maquereau saisis puis confits dans une marinade tiède au vinaigre, paprika fumé, laurier et carottes ; servis avec des pommes de terre et des poivrons rôtis.",
+    "emoji": "🫙",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 30,
+    "restTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "levés en filets"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en fines rondelles"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse",
+        "note": "en chemise, écrasées"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 70,
+        "unit": "ml",
+        "note": "ou vinaigre de xérès"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 70,
+        "unit": "ml"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "paprika fumé (pimentón de la Vera)"
+      },
+      {
+        "id": "laurier",
+        "qty": 3,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Posez les poivrons entiers et les pommes de terre coupées en deux sur une plaque, arrosez d'1 c. à soupe d'huile et enfournez 30 min.",
+      "Salez les filets de maquereau et saisissez-les côté peau 2 min dans 1 c. à soupe d'huile à feu vif. Rangez-les dans un plat creux.",
+      "Dans la même poêle, à feu moyen, faites revenir 5 min dans 3 c. à soupe d'huile l'oignon, les carottes et l'ail. Ajoutez le paprika, le laurier et le thym, remuez 30 s.",
+      "Versez le vinaigre et le vin blanc, ajoutez 50 ml d'eau et laissez frémir 5 min : les carottes restent légèrement croquantes.",
+      "Versez la marinade bouillante sur les filets : elle termine leur cuisson. Laissez reposer au moins 20 min (ou une nuit au frais).",
+      "Pelez les poivrons rôtis, coupez-les en lanières, mêlez-les aux pommes de terre écrasées à la fourchette. Servez avec le maquereau, ses légumes et un peu de marinade, parsemé de persil."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "repas froid",
+      "lunch box",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "fume",
+      "iode"
+    ],
+    "tips": "Se garde 3 jours au réfrigérateur dans sa marinade ; encore meilleur le lendemain."
+  },
+  {
+    "id": "dm-gratin-maquereau-fume-raifort",
+    "name": "Gratin de maquereau fumé au raifort et chou kale",
+    "description": "Pommes de terre en purée gratinée, maquereau fumé effeuillé, chou kale fondant et crème au raifort, à la manière d'un fish pie anglais express.",
+    "emoji": "🥔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau-fume",
+        "qty": 250,
+        "unit": "g",
+        "note": "sans peau, effeuillé"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g",
+        "note": "avec la peau, en gros cubes"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 200,
+        "unit": "g",
+        "note": "chou kale ou frisé, sans les côtes"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "raifort",
+        "qty": 2,
+        "unit": "cac",
+        "note": "râpé"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les cubes de pommes de terre non épluchées 15 min dans de l'eau salée bouillante. Égouttez et écrasez-les grossièrement avec le beurre, le lait chaud et les oignons nouveaux émincés.",
+      "Préchauffez le four à 200 °C. Faites tomber le chou émincé 4 min dans une poêle avec 2 c. à soupe d'eau et une pincée de sel, à feu vif.",
+      "Mélangez la crème, le raifort, la moutarde et le jus du demi-citron.",
+      "Dans un plat, étalez le chou, répartissez le maquereau effeuillé, nappez de crème au raifort, puis couvrez d'écrasé de pommes de terre.",
+      "Parsemez de cheddar râpé et enfournez 20 min, jusqu'à ce que le dessus soit doré et croustillant."
+    ],
+    "tags": [
+      "four",
+      "réconfortant",
+      "familial",
+      "rapide",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "fume",
+      "piquant",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "dm-saba-misoni",
+    "name": "Saba misoni, maquereau mijoté au miso, riz et épinards au sésame",
+    "description": "Le classique familial japonais : maquereau doucement mijoté dans un bouillon miso-gingembre jusqu'à devenir laqué, avec riz, épinards au sésame et nori.",
+    "emoji": "🍱",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "japonaise",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en tronçons de 5 cm avec la peau"
+      },
+      {
+        "id": "miso",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "mirin",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "gingembre",
+        "qty": 20,
+        "unit": "g",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "sucre",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 170,
+        "unit": "g"
+      },
+      {
+        "id": "epinard",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "sesame",
+        "qty": 2,
+        "unit": "cas",
+        "note": "graines grillées"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le riz jusqu'à ce que l'eau soit claire, couvrez-le de 230 ml d'eau, portez à ébullition, couvrez et cuisez 12 min à feu très doux. Laissez reposer 10 min sans soulever le couvercle.",
+      "Ébouillantez 10 s les tronçons de maquereau, puis rincez-les à l'eau froide : cela retire l'odeur forte.",
+      "Dans une sauteuse, portez à frémissement 200 ml d'eau, le mirin, la sauce soja, le sucre et le gingembre. Posez le maquereau côté peau en dessus, couvrez d'un disque de papier cuisson et laissez frémir 8 min à feu moyen-doux.",
+      "Délayez le miso dans un peu de jus de cuisson, versez-le dans la sauteuse et poursuivez 8 min en arrosant le poisson, jusqu'à ce que la sauce nappe et brille.",
+      "Blanchissez les épinards 1 min, rafraîchissez-les, pressez-les et assaisonnez-les du sésame pilé et d'un trait de sauce soja.",
+      "Servez le maquereau nappé de sauce avec le riz, les épinards, la nori en lanières et l'oignon nouveau émincé."
+    ],
+    "tags": [
+      "mijoté",
+      "riche en protéines",
+      "fermenté",
+      "rapide"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "sucre",
+      "iode"
+    ]
+  },
+  {
+    "id": "dm-sillgratin",
+    "name": "Sillgratin, gratin suédois de hareng aux pommes de terre et à l'aneth",
+    "description": "Couches de pommes de terre, oignons fondus et filets de hareng, liées d'une crème aux œufs et à l'aneth puis gratinées ; haricots verts au beurre.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 45,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "hareng",
+        "qty": 4,
+        "unit": "piece",
+        "note": "filets de hareng mariné doux, égouttés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 550,
+        "unit": "g",
+        "note": "en rondelles fines, avec la peau"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "lait",
+        "qty": 160,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "panure",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Faites fondre les oignons dans 10 g de beurre à feu moyen-doux, 10 min, jusqu'à ce qu'ils soient dorés et moelleux.",
+      "Beurrez un plat. Alternez les rondelles de pommes de terre crues, les oignons, les filets de hareng coupés en morceaux et l'aneth haché, en terminant par des pommes de terre.",
+      "Battez les œufs avec la crème et le lait, poivrez (peu de sel : le hareng est salé) et versez sur le gratin.",
+      "Parsemez de chapelure et de noisettes de beurre, couvrez d'une feuille de papier cuisson et enfournez 30 min, puis découvrez et poursuivez 15 min : la pointe d'un couteau traverse les pommes de terre sans résistance.",
+      "Pendant ce temps, cuisez les haricots verts 7 min à l'eau bouillante salée et servez-les avec le gratin, parsemés du reste d'aneth."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "économique",
+      "réconfortant",
+      "batch cooking"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "cremeux",
+      "herbace",
+      "iode"
+    ]
+  },
+  {
+    "id": "dm-hareng-grille-stoemp",
+    "name": "Harengs frais grillés, sauce moutarde et stoemp aux poireaux",
+    "description": "Harengs frais grillés à la peau croustillante, servis à la flamande avec un stoemp de pommes de terre et poireaux au beurre, et une sauce moutarde-crème.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "hareng",
+        "qty": 5,
+        "unit": "piece",
+        "note": "frais, vidés (ou filets)"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1.5,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les pommes de terre non épluchées et les carottes en morceaux, cuisez-les 20 min à l'eau salée. Pendant ce temps, faites fondre les poireaux émincés dans 15 g de beurre, 10 min à feu doux.",
+      "Égouttez pommes de terre et carottes, écrasez-les au presse-purée avec le reste du beurre, le lait chaud, les poireaux et la muscade : le stoemp doit rester rustique.",
+      "Chauffez une poêle-gril ou le gril du four à feu vif. Badigeonnez les harengs d'huile, salez et grillez-les 3 à 4 min par face : la peau cloque et la chair se détache.",
+      "Faites chauffer la crème avec la moutarde 1 min à feu doux, sans bouillir.",
+      "Servez les harengs sur le stoemp, nappés de sauce moutarde et parsemés de persil."
+    ],
+    "tags": [
+      "économique",
+      "réconfortant",
+      "riche en protéines",
+      "barbecue"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "acidule",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "dm-saumon-croute-noisettes",
+    "name": "Pavé de saumon en croûte de noisettes, écrasé de pommes de terre au brocoli",
+    "description": "Saumon rôti sous une croûte croquante de noisettes, persil et zeste de citron, avec un écrasé de pommes de terre au brocoli et à l'huile d'olive.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 160 g"
+      },
+      {
+        "id": "noisette",
+        "qty": 30,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "panure",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 450,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "brocoli",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Cuisez les pommes de terre coupées en morceaux 12 min à l'eau salée, ajoutez le brocoli en fleurettes et poursuivez 5 min.",
+      "Mixez grossièrement les noisettes, la chapelure, le persil, le zeste du citron et le beurre mou jusqu'à obtenir une pâte sableuse.",
+      "Posez les pavés sur une plaque, badigeonnez le dessus de moutarde et pressez la croûte de noisettes dessus.",
+      "Enfournez 12 à 14 min : la croûte est dorée et le saumon encore nacré à cœur.",
+      "Égouttez pommes de terre et brocoli, écrasez-les à la fourchette avec l'huile d'olive, le jus d'un demi-citron, sel et poivre. Servez avec le saumon."
+    ],
+    "tags": [
+      "four",
+      "rapide",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "grille",
+      "herbace",
+      "acidule"
+    ]
+  },
+  {
+    "id": "dm-saumon-poche-hollandaise-asperges",
+    "name": "Saumon vapeur à l'estragon, asperges vertes et sauce hollandaise, pommes de terre nouvelles",
+    "description": "Pavés de saumon cuits à la vapeur d'un court-bouillon à l'estragon, asperges vertes croquantes et petites pommes de terre nouvelles, nappés d'une hollandaise maison au citron.",
+    "emoji": "🌿",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 160 g"
+      },
+      {
+        "id": "asperge",
+        "qty": 14,
+        "unit": "piece",
+        "note": "vertes"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 450,
+        "unit": "g",
+        "note": "nouvelles, avec la peau"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 70,
+        "unit": "g",
+        "note": "clarifié ou fondu"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "carotte",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "estragon",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre nouvelles 18 min à l'eau salée. Dans une sauteuse, portez à frémissement 1 l d'eau avec le vin blanc, la carotte et l'oignon émincés, le laurier et du sel : 10 min.",
+      "Cassez la base dure des asperges, cuisez-les 4 à 5 min à l'eau bouillante salée et rafraîchissez-les.",
+      "Posez les pavés salés et un brin d'estragon dans un panier vapeur au-dessus du court-bouillon frémissant, couvrez et cuisez 8 à 10 min à feu moyen : la chair est rose pâle et se détache en lamelles.",
+      "Hollandaise : au bain-marie à peine frémissant, fouettez les jaunes avec 2 c. à soupe d'eau 2 min jusqu'à ce qu'ils moussent et laissent une trace. Hors du feu, versez le beurre fondu en filet en fouettant, puis ajoutez le jus d'un demi-citron, sel et estragon haché.",
+      "Réchauffez les asperges 1 min dans le court-bouillon. Dressez saumon, asperges et pommes de terre, nappez de hollandaise."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "vapeur",
+    "flavors": [
+      "cremeux",
+      "acidule",
+      "frais"
+    ],
+    "tips": "Si la hollandaise tranche, fouettez une cuillère d'eau chaude dans un bol propre et incorporez-y la sauce petit à petit."
+  },
+  {
+    "id": "dm-salmon-fishcakes-petits-pois",
+    "name": "Salmon fishcakes, petits pois à la menthe et sauce tartare au yaourt",
+    "description": "Galettes dorées de saumon frais et pommes de terre écrasées, câpres et aneth, servies avec des petits pois à la menthe et une sauce tartare légère.",
+    "emoji": "🥔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 30,
+    "cookTime": 25,
+    "restTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 150 g, sans peau"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 400,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "farine",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "panure",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "capres",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 6,
+        "unit": "feuille"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre entières avec la peau 25 min à l'eau salée, laissez tiédir et écrasez-les en gardant les peaux hachées. Pochez en même temps le saumon 6 min dans de l'eau frémissante, puis effeuillez-le.",
+      "Mélangez délicatement l'écrasé, le saumon, les câpres, l'aneth haché, le zeste du citron, sel et poivre. Formez 6 galettes épaisses et réfrigérez 15 min pour les raffermir.",
+      "Passez les galettes dans la farine, l'œuf battu puis la chapelure.",
+      "Faites dorer les galettes dans le beurre clarifié à feu moyen, 4 min par face, jusqu'à ce qu'elles soient bien croustillantes.",
+      "Cuisez les petits pois 4 min à l'eau bouillante, égouttez-les et écrasez-en la moitié avec la menthe ciselée et une noisette de beurre.",
+      "Sauce : mélangez le yaourt, les cornichons hachés et le jus d'un demi-citron. Servez les fishcakes avec les petits pois et la sauce."
+    ],
+    "tags": [
+      "familial",
+      "préparation à l’avance",
+      "lunch box",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "friture-legere",
+    "flavors": [
+      "herbace",
+      "frais",
+      "acidule"
+    ],
+    "tips": "Les galettes crues se congèlent ; cuisez-les directement surgelées, 6 min par face."
+  },
+  {
+    "id": "dm-saumon-plaki-fenouil-orzo",
+    "name": "Saumon plaki au fenouil, tomates et feta, orzo au citron",
+    "description": "Saumon cuit au four à la grecque sur un lit de fenouil, tomates, oignons et céleri au vin blanc, gratiné de feta, avec un orzo au citron et à l'aneth.",
+    "emoji": "🍅",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 150 g"
+      },
+      {
+        "id": "fenouil",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "feta",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "pates",
+        "qty": 150,
+        "unit": "g",
+        "note": "orzo (pâtes langue d'oiseau)"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Dans une sauteuse allant au four, faites revenir 8 min à feu moyen dans 2 c. à soupe d'huile le fenouil, l'oignon et le céleri émincés, puis l'ail 1 min.",
+      "Ajoutez les tomates concassées, le vin blanc et l'origan, salez, poivrez et laissez compoter 10 min.",
+      "Posez les pavés de saumon sur les légumes, émiettez la feta autour et enfournez 14 min : la feta dore et le saumon reste nacré.",
+      "Pendant ce temps, cuisez l'orzo 9 min à l'eau salée, égouttez et assaisonnez de la dernière cuillère d'huile, du zeste et du jus d'un demi-citron et de l'aneth.",
+      "Servez le saumon et ses légumes sur l'orzo avec des quartiers de citron."
+    ],
+    "tags": [
+      "four",
+      "une poêle",
+      "familial",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "lacte"
+    ]
+  },
+  {
+    "id": "dm-saumon-erable-patate-douce-kale",
+    "name": "Saumon laqué à l'érable et à la moutarde, patates douces rôties et kale croustillant",
+    "description": "Saumon glacé au sirop d'érable, moutarde et vinaigre de cidre, rôti avec des quartiers de patate douce et du chou kale croustillant aux graines de courge.",
+    "emoji": "🍁",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 160 g"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 1.5,
+        "unit": "cas"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "patate-douce",
+        "qty": 1.5,
+        "unit": "piece",
+        "note": "en quartiers, avec la peau"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 150,
+        "unit": "g",
+        "note": "kale, sans côtes"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "kefir",
+        "qty": 150,
+        "unit": "ml",
+        "note": "pour la sauce"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Mélangez les quartiers de patate douce avec 1,5 c. à soupe d'huile, le paprika et du sel, étalez sur une plaque et enfournez 15 min.",
+      "Mélangez le sirop d'érable, la moutarde, le vinaigre de cidre et la sauce soja.",
+      "Retournez les patates douces, ajoutez le kale déchiré mélangé à 1 c. à soupe d'huile et aux graines de courge, posez les pavés de saumon et badigeonnez-les de glaçage.",
+      "Enfournez 12 min, en rebadigeonnant le saumon à mi-cuisson : il doit être brillant et caramélisé sur les bords, le kale croustillant.",
+      "Mélangez le kéfir avec la ciboulette ciselée et une pincée de sel ; servez en sauce froide à côté."
+    ],
+    "tags": [
+      "four",
+      "une poêle",
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "sucre",
+      "acidule",
+      "grille"
+    ]
+  },
+  {
+    "id": "dm-laks-stuede-poteter",
+    "name": "Laks med stuede poteter, saumon poêlé et pommes de terre à la crème, concombre aigre",
+    "description": "Saumon norvégien poêlé, pommes de terre mijotées dans une sauce lait-crème à la ciboulette et salade de concombre aigre-douce à l'aneth.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 160 g avec la peau"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "fermes, en cubes, avec la peau"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les cubes de pommes de terre 10 min à l'eau salée ; égouttez.",
+      "Concombre : tranchez-le très finement, mélangez avec le vinaigre, le miel, l'aneth et une pincée de sel ; laissez mariner.",
+      "Dans la même casserole, faites fondre 10 g de beurre, ajoutez la farine, remuez 1 min, puis versez le lait et la crème en fouettant. Ajoutez les pommes de terre et laissez mijoter 8 min à feu doux en remuant : la sauce nappe. Ajoutez la ciboulette.",
+      "Cuisez les haricots verts 7 min à l'eau bouillante salée.",
+      "Salez les pavés et posez-les côté peau dans une poêle chaude avec le reste du beurre, 4 min à feu moyen-vif, puis 2 min de l'autre côté.",
+      "Servez le saumon avec les pommes de terre crémeuses, les haricots et le concombre."
+    ],
+    "tags": [
+      "rapide",
+      "familial",
+      "réconfortant",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "acidule",
+      "frais"
+    ]
+  },
+  {
+    "id": "dm-truite-lard-chou",
+    "name": "Truite au lard fumé et chou vert braisé, pommes de terre au carvi",
+    "description": "Truites entières bardées de lard fumé et poêlées, sur un chou vert braisé au vin blanc et des pommes de terre au beurre et au carvi, à l'alpine.",
+    "emoji": "🥬",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "truite",
+        "qty": 2,
+        "unit": "piece",
+        "note": "vidées"
+      },
+      {
+        "id": "lardons",
+        "qty": 80,
+        "unit": "g",
+        "note": "ou tranches de lard fumé"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 400,
+        "unit": "g",
+        "note": "émincé"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou carvi"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre entières 20 min à l'eau salée.",
+      "Dans une cocotte, faites revenir les lardons 3 min, ajoutez l'oignon émincé 3 min, puis le chou. Remuez, versez le vin blanc, couvrez et braisez 20 min à feu doux : le chou est tendre et légèrement doré.",
+      "Salez l'intérieur des truites, farinez-les légèrement et faites-les cuire dans 15 g de beurre à feu moyen, 5 à 6 min par face, jusqu'à ce que la peau soit dorée et que la nageoire dorsale se détache facilement.",
+      "Coupez les pommes de terre en deux et faites-les sauter 3 min avec le reste du beurre et le carvi.",
+      "Servez les truites sur le chou avec les pommes de terre, du persil et du citron."
+    ],
+    "tags": [
+      "réconfortant",
+      "riche en protéines",
+      "économique",
+      "mijoté"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "fume",
+      "reconfortant",
+      "umami"
+    ]
+  },
+  {
+    "id": "dm-trota-salvia-polenta-blettes",
+    "name": "Trota al burro e salvia, polenta crémeuse au parmesan et blettes",
+    "description": "Filets de truite saumonée nappés de beurre à la sauge croustillante, sur une polenta crémeuse au parmesan, avec des blettes sautées à l'ail et des pignons.",
+    "emoji": "🌿",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "truite",
+        "qty": 2,
+        "unit": "piece",
+        "note": "levées en 4 filets, ou truite saumonée"
+      },
+      {
+        "id": "polenta",
+        "qty": 120,
+        "unit": "g",
+        "note": "précuite"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "parmesan",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sauge",
+        "qty": 10,
+        "unit": "feuille"
+      },
+      {
+        "id": "epinard",
+        "qty": 200,
+        "unit": "g",
+        "note": "blettes, côtes et feuilles"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "pignons",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez le lait et 300 ml d'eau salée à ébullition, versez la polenta en pluie en fouettant et cuisez 8 min à feu doux en remuant. Hors du feu, ajoutez le parmesan et 10 g de beurre : elle doit être souple.",
+      "Émincez les côtes des blettes, faites-les sauter 4 min dans l'huile d'olive avec l'ail, ajoutez les feuilles et les pignons et cuisez 2 min de plus.",
+      "Salez les filets de truite et cuisez-les côté peau 3 min à feu moyen-vif dans 10 g de beurre, retournez 1 min. Réservez au chaud.",
+      "Dans la poêle, faites mousser le reste du beurre avec les feuilles de sauge jusqu'à ce qu'elles soient croustillantes et le beurre noisette (1 à 2 min). Ajoutez un trait de citron.",
+      "Dressez la polenta, les blettes et la truite, nappez de beurre à la sauge."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "riche en protéines",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "herbace",
+      "lacte"
+    ]
+  },
+  {
+    "id": "dm-boquerones-plancha-patatas",
+    "name": "Boquerones a la plancha, pommes de terre à l'ail et salade de tomates",
+    "description": "Anchois frais ouverts et saisis à la plancha avec ail et persil, servis avec des pommes de terre sautées et une salade de tomates, poivrons et oignon rouge.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "anchois",
+        "qty": 300,
+        "unit": "g",
+        "note": "frais, étêtés et ouverts (ou petites sardines)"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "ou vinaigre de xérès"
+      },
+      {
+        "id": "avocat",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre en morceaux 10 min à l'eau salée, égouttez-les puis faites-les dorer 10 min à feu moyen dans 1,5 c. à soupe d'huile avec une gousse d'ail écrasée.",
+      "Salade : coupez tomates, poivron, oignon rouge et avocat en morceaux, assaisonnez de 1 c. à soupe d'huile, du vinaigre et de sel.",
+      "Hachez finement 2 gousses d'ail avec le persil et mélangez avec 1 c. à soupe d'huile (ajada).",
+      "Chauffez une plancha ou une grande poêle à feu très vif, huilez-la légèrement et posez les anchois côté peau 1 min, puis 30 s de l'autre côté, en plusieurs fournées.",
+      "Arrosez aussitôt d'ajada et de jus de citron, salez et servez avec les pommes de terre et la salade."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "économique",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "iode",
+      "herbace",
+      "frais"
+    ]
+  },
+  {
+    "id": "dm-thon-sesame-soba-edamame",
+    "name": "Thon mi-cuit en croûte de sésame, soba, edamame et sauce gingembre",
+    "description": "Steaks de thon saisis en croûte de sésame, servis rosés sur des nouilles soba froides, edamame, concombre et nori, avec une sauce soja-gingembre-citron vert.",
+    "emoji": "🍣",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "japonaise",
+    "prepTime": 20,
+    "cookTime": 10,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "thon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "steaks de 150 g, extra-frais"
+      },
+      {
+        "id": "sesame",
+        "qty": 30,
+        "unit": "g",
+        "note": "graines blanches et noires"
+      },
+      {
+        "id": "nouilles-sarrasin",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "edamame",
+        "qty": 150,
+        "unit": "g",
+        "note": "écossés"
+      },
+      {
+        "id": "concombre",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "mirin",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "gingembre",
+        "qty": 15,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-sesame",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-coco",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les soba 5 min à l'eau bouillante en ajoutant les edamame les 3 dernières minutes. Rincez sous l'eau froide en frottant les nouilles pour retirer l'amidon ; égouttez.",
+      "Sauce : mélangez la sauce soja, le mirin, le gingembre, le jus du citron vert et l'huile de sésame.",
+      "Salez les steaks de thon et roulez-les dans le sésame en pressant.",
+      "Chauffez l'huile de coco dans une poêle à feu très vif, saisissez le thon 1 min par face (plus 20 s sur les tranches) : l'extérieur est doré, le cœur rouge.",
+      "Mélangez soba, edamame et concombre en bâtonnets avec la moitié de la sauce. Tranchez le thon et posez-le dessus, avec la nori en lanières, l'oignon nouveau et le reste de sauce."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "repas froid",
+      "léger"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "frais",
+      "acidule"
+    ]
+  },
+  {
+    "id": "dm-tagliata-tonno-cannellini",
+    "name": "Tagliata di tonno, cannellini au romarin et roquette",
+    "description": "Thon grillé à la braise et tranché, sur une salade tiède de haricots blancs au romarin, roquette, tomates cerises et pain grillé à l'ail.",
+    "emoji": "🫘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "thon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "steaks de 150 g"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 250,
+        "unit": "g",
+        "note": "cannellini cuits, égouttés"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "roquette",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 12,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 4,
+        "unit": "tranche"
+      },
+      {
+        "id": "parmesan",
+        "qty": 25,
+        "unit": "g",
+        "note": "en copeaux"
+      },
+      {
+        "id": "capres",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites chauffer doucement 2 c. à soupe d'huile avec une gousse d'ail écrasée et le romarin 3 min. Ajoutez les cannellini et les tomates cerises coupées en deux, réchauffez 4 min à feu doux. Assaisonnez de sel, de jus de citron et des câpres.",
+      "Grillez le pain, frottez-le avec la seconde gousse d'ail et arrosez d'un filet d'huile.",
+      "Chauffez une poêle-gril à feu très vif. Huilez et salez les steaks de thon, grillez-les 1 min 30 par face pour un cœur rosé.",
+      "Laissez reposer 2 min, puis tranchez en lamelles de 1 cm.",
+      "Disposez la roquette, les haricots tièdes, le thon, les copeaux de parmesan et un filet d'huile. Servez avec le pain grillé."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "léger"
+    ],
+    "seasons": [
+      "ete",
+      "printemps"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "herbace",
+      "acidule"
+    ]
+  },
+  {
+    "id": "dm-brochettes-thon-romesco",
+    "name": "Brochettes de thon, sauce romesco aux noisettes et pommes de terre rôties",
+    "description": "Cubes de thon et poivrons grillés en brochettes, servis avec une romesco catalane aux noisettes, tomates et poivrons rôtis, et des pommes de terre croustillantes.",
+    "emoji": "🍢",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "thon",
+        "qty": 320,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "noisette",
+        "qty": 35,
+        "unit": "g",
+        "note": "torréfiées"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "ou vinaigre de xérès"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 1,
+        "unit": "tranche"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Rôtissez 1 poivron entier, les tomates et 3 gousses d'ail en chemise 25 min sur une plaque, avec les pommes de terre coupées en dés et mélangées à 2 c. à soupe d'huile et du sel.",
+      "Romesco : pelez poivron, tomates et ail rôtis, mixez-les avec les noisettes, la tranche de pain grillée, le paprika, le vinaigre, 2 c. à soupe d'huile et du sel, jusqu'à une sauce épaisse et granuleuse.",
+      "Enfilez sur des piques les cubes de thon en alternance avec le second poivron et l'oignon rouge en morceaux. Badigeonnez d'huile et salez.",
+      "Grillez les brochettes 2 min par face sur un gril ou une plancha très chauds (6 à 8 min au total) : le thon doit rester rosé à cœur.",
+      "Servez avec les pommes de terre rôties, la roquette et la romesco."
+    ],
+    "tags": [
+      "barbecue",
+      "four",
+      "week-end",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "fume",
+      "umami"
+    ],
+    "tips": "La romesco se garde 5 jours au frais et accompagne aussi poissons et légumes grillés."
+  },
+  {
+    "id": "dm-pommes-robe-foie-morue",
+    "name": "Pommes de terre en robe des champs, foie de morue, œufs et oignon nouveau",
+    "description": "Pommes de terre au four fendues et garnies d'une salade de foie de morue fumé, œufs durs, oignon nouveau, aneth et citron, avec une salade de chou croquante.",
+    "emoji": "🥔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 15,
+    "cookTime": 50,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-morue",
+        "qty": 100,
+        "unit": "g",
+        "note": "en conserve, égoutté (garder 1 c. à soupe d'huile)"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 3,
+        "unit": "piece",
+        "note": "grosses, avec la peau"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "skyr",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 200,
+        "unit": "g",
+        "note": "chou blanc ou pointu, émincé finement"
+      },
+      {
+        "id": "carotte",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpée"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 2,
+        "unit": "tranche"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Piquez les pommes de terre, frottez-les de sel et enfournez-les directement sur la grille 50 min : la peau est croustillante et une lame s'enfonce sans résistance.",
+      "Cuisez les œufs 9 min à l'eau bouillante, rafraîchissez-les et écalez-les.",
+      "Salade de chou : mélangez le chou, la carotte, le vinaigre, 1 c. à soupe d'huile du foie de morue et du sel ; laissez s'attendrir 15 min.",
+      "Écrasez grossièrement le foie de morue à la fourchette avec les œufs hachés, l'oignon nouveau émincé, l'aneth, le jus d'un demi-citron, le skyr et du poivre.",
+      "Fendez les pommes de terre en croix, écartez-les et garnissez-les de la préparation. Servez avec la salade de chou et le pain de seigle."
+    ],
+    "tags": [
+      "four",
+      "économique",
+      "riche en protéines",
+      "abats"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "fume",
+      "cremeux"
+    ],
+    "tips": "Le foie de morue est l'aliment le plus riche en vitamine D : 60 g couvrent plusieurs jours de besoins."
+  },
+  {
+    "id": "dm-kasha-foie-morue-oeuf",
+    "name": "Kasha de sarrasin au foie de morue, œuf mollet et champignons",
+    "description": "Sarrasin grillé aux champignons et oignons dorés, garni de foie de morue tiède, œuf mollet, cornichons et crème aigre, à la russe.",
+    "emoji": "🍳",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sarrasin",
+        "qty": 140,
+        "unit": "g",
+        "note": "grains grillés (kasha)"
+      },
+      {
+        "id": "foie-morue",
+        "qty": 100,
+        "unit": "g",
+        "note": "en conserve, égoutté"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "champignon-forestier",
+        "qty": 200,
+        "unit": "g",
+        "note": "ou champignons de Paris"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 330,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 150,
+        "unit": "g",
+        "note": "kale ou chou frisé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites griller le sarrasin à sec 2 min, versez le bouillon chaud, couvrez et cuisez 12 min à feu doux. Laissez gonfler 5 min hors du feu.",
+      "Faites dorer l'oignon émincé dans le beurre 5 min à feu moyen, ajoutez les champignons et le chou émincé, salez et poêlez 7 min jusqu'à ce qu'ils soient dorés et que l'eau se soit évaporée.",
+      "Cuisez les œufs 6 min 30 à l'eau bouillante (jaune coulant), rafraîchissez et écalez-les.",
+      "Mélangez le sarrasin aux champignons. Ajoutez le foie de morue en morceaux et réchauffez 1 min sans remuer, juste pour le tiédir.",
+      "Servez dans des bols avec les œufs mollets coupés en deux, la crème, les cornichons émincés et l'aneth."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "abats",
+      "économique",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "acidule"
+    ]
+  },
+  {
+    "id": "dm-rosti-oeufs-truite-creme",
+    "name": "Rösti croustillant, œufs de truite, saumon fumé et crème à l'aneth",
+    "description": "Grande galette de pommes de terre râpées dorée au beurre, coiffée de crème à l'aneth, d'œufs de truite et de saumon fumé, avec une salade de concombre et radis.",
+    "emoji": "🥔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "fermes, râpées avec la peau"
+      },
+      {
+        "id": "oeufs-poisson",
+        "qty": 80,
+        "unit": "g",
+        "note": "œufs de truite ou de saumon"
+      },
+      {
+        "id": "saumon-fume",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 35,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "concombre",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "radis",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Râpez les pommes de terre avec la peau, pressez-les fortement dans un torchon pour en extraire l'eau, puis mélangez-les avec 1 œuf battu et du sel.",
+      "Chauffez 20 g de beurre clarifié dans une poêle de 24 cm à feu moyen. Étalez les pommes de terre en tassant et cuisez 10 à 12 min, jusqu'à ce que le dessous soit bien doré.",
+      "Retournez à l'aide d'une assiette, ajoutez le reste du beurre sur les bords et cuisez encore 10 min.",
+      "Pendant ce temps, cuisez le second œuf 9 min, hachez-le. Mélangez la crème avec l'aneth ciselé et le zeste du citron. Tranchez finement concombre, radis et oignon rouge, assaisonnez de jus de citron.",
+      "Coupez le rösti en parts, nappez de crème, posez le saumon fumé, les œufs de truite et l'œuf haché. Servez avec la salade."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "une poêle",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "cremeux",
+      "frais"
+    ]
+  },
+  {
+    "id": "dm-linguine-poutargue-crevettes",
+    "name": "Linguine à la poutargue, crevettes, citron et chapelure",
+    "description": "Linguine à l'huile d'olive, ail et piment, liées de poutargue râpée et de crevettes sautées, relevées de zeste de citron et de chapelure dorée ; brocoli-rave sauté.",
+    "emoji": "🍝",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pates",
+        "qty": 200,
+        "unit": "g",
+        "note": "linguine"
+      },
+      {
+        "id": "oeufs-poisson",
+        "qty": 60,
+        "unit": "g",
+        "note": "poutargue (bottarga) râpée"
+      },
+      {
+        "id": "crevette",
+        "qty": 250,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "panure",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "brocoli",
+        "qty": 300,
+        "unit": "g",
+        "note": "brocoli-rave ou brocoli"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites dorer la chapelure 2 min dans 1 c. à soupe d'huile à feu moyen, réservez.",
+      "Cuisez les linguine dans une grande eau salée selon le paquet moins 1 min, en ajoutant les fleurettes de brocoli 4 min avant la fin. Gardez une louche d'eau de cuisson.",
+      "Dans une grande poêle, chauffez 2 c. à soupe d'huile avec l'ail émincé et le piment 1 min à feu moyen. Ajoutez les crevettes et saisissez 2 min à feu vif : elles deviennent roses.",
+      "Versez les pâtes et le brocoli égouttés, ajoutez la moitié de la poutargue, le zeste du citron et un peu d'eau de cuisson ; mélangez 1 min hors du feu pour obtenir une sauce brillante.",
+      "Servez arrosé du reste d'huile, parsemé de la poutargue restante, du persil et de la chapelure."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "riche en glucides",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "umami",
+      "acidule"
+    ]
+  },
+  {
+    "id": "dm-huitres-bordelaise-crepinettes",
+    "name": "Huîtres à la bordelaise, crépinettes grillées, pain de seigle et salade d'herbes",
+    "description": "L'association bordelaise : huîtres glacées et crépinettes de porc brûlantes, avec pommes de terre tièdes à l'échalote, pain de seigle beurré et salade de mâche.",
+    "emoji": "🦪",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 25,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "huitre",
+        "qty": 18,
+        "unit": "piece",
+        "note": "creuses n° 2"
+      },
+      {
+        "id": "saucisse-toulouse",
+        "qty": 2,
+        "unit": "piece",
+        "note": "ou crépinettes"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g",
+        "note": "grenailles avec la peau"
+      },
+      {
+        "id": "echalote",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 3,
+        "unit": "cas",
+        "note": "ou vinaigre de vin rouge"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 3,
+        "unit": "tranche"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "mache",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "huile-colza",
+        "qty": 1.5,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les grenailles 18 min à l'eau salée. Pendant ce temps, mélangez 2 échalotes ciselées avec le vinaigre et du poivre (mignonnette).",
+      "Grillez les crépinettes ou saucisses 10 à 12 min à feu moyen dans une poêle ou au gril, en les retournant souvent, jusqu'à ce qu'elles soient dorées et fermes.",
+      "Ouvrez les huîtres au dernier moment, jetez la première eau, posez-les sur un lit de glace ou de gros sel.",
+      "Coupez les grenailles en deux et mélangez-les tièdes avec la troisième échalote ciselée, l'huile de colza, le persil et du sel. Assaisonnez la mâche du même mélange.",
+      "Servez les huîtres avec la mignonnette et le citron, les crépinettes chaudes coupées en tronçons, les pommes de terre, la mâche et le pain de seigle beurré, en alternant une huître et une bouchée de saucisse."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "iode",
+      "acidule",
+      "grille"
+    ],
+    "tips": "Choisissez des huîtres en mois « en r » (septembre à avril) pour leur fraîcheur maximale."
+  },
+  {
+    "id": "dm-omelette-huitres-taiwanaise",
+    "name": "Omelette aux huîtres à la taïwanaise, riz et chou chinois sauté",
+    "description": "Le o-a-chian des marchés de nuit : huîtres saisies prises dans des œufs et une pâte de fécule moelleuse, sauce tomate-piment aigre-douce, riz et chou chinois.",
+    "emoji": "🍳",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "chinoise",
+    "prepTime": 20,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "huitre",
+        "qty": 14,
+        "unit": "piece",
+        "note": "écaillées, égouttées"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "fecule-mais",
+        "qty": 3,
+        "unit": "cas",
+        "note": "ou fécule de patate douce"
+      },
+      {
+        "id": "chou-chinois",
+        "qty": 300,
+        "unit": "g",
+        "note": "ou pak-choï"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "ou vinaigre de riz"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-coco",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "gingembre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez le riz : rincez-le, couvrez de 1,5 fois son volume d'eau, portez à ébullition puis 12 min à feu très doux à couvert.",
+      "Sauce : chauffez le concentré de tomate, la sauce soja, le miel, le vinaigre, le piment haché et 4 c. à soupe d'eau 2 min jusqu'à ce que la sauce nappe.",
+      "Délayez la fécule dans 120 ml d'eau froide avec une pincée de sel. Battez les œufs avec l'oignon nouveau émincé.",
+      "Chauffez 1 c. à soupe d'huile dans une grande poêle à feu vif, saisissez les huîtres 30 s, versez la fécule délayée : elle devient translucide en 1 min. Versez les œufs par-dessus, cuisez 2 min, retournez par moitiés et cuisez 1 min.",
+      "Faites sauter le chou chinois émincé 3 min à feu vif dans le reste d'huile avec l'ail et le gingembre.",
+      "Servez l'omelette nappée de sauce, avec le riz et le chou."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "sucre",
+      "piquant"
+    ]
+  },
+  {
+    "id": "dm-mouclade-charentaise",
+    "name": "Mouclade charentaise au curry doux, riz complet et poireaux",
+    "description": "Moules ouvertes au vin blanc, nappées d'une crème safranée au curry doux, jaune d'œuf et beurre, avec du riz complet et une fondue de poireaux.",
+    "emoji": "🦪",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "moule",
+        "qty": 2000,
+        "unit": "g",
+        "note": "de bouchot, avec coquilles"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "echalote",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "garam-masala",
+        "qty": 0.5,
+        "unit": "cac",
+        "note": "ou curry doux"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "riz-complet",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez le riz complet 30 min à l'eau salée frémissante ; égouttez. Pendant ce temps, faites fondre les poireaux émincés dans 10 g de beurre, 12 min à feu doux à couvert.",
+      "Grattez et rincez les moules, jetez celles qui restent ouvertes après une tape. Dans une grande cocotte, faites suer les échalotes et l'ail dans le reste de beurre 2 min, versez le vin blanc, ajoutez les moules, couvrez et cuisez 5 min à feu vif en secouant : elles sont toutes ouvertes.",
+      "Retirez les moules, filtrez le jus dans une passoire fine et faites-le réduire 5 min de moitié.",
+      "Ajoutez le curcuma, le garam masala et le safran, puis la crème fouettée avec les jaunes, et chauffez 2 min à feu doux en fouettant, sans bouillir, jusqu'à ce que la sauce nappe la cuillère.",
+      "Retirez une coquille sur deux, rangez les moules dans un plat, nappez de sauce et parsemez de persil. Servez avec le riz complet et les poireaux."
+    ],
+    "tags": [
+      "riche en protéines",
+      "week-end",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "ete"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "cremeux",
+      "iode",
+      "epice"
+    ]
+  },
+  {
+    "id": "dm-midye-pilavi",
+    "name": "Midye pilavı, riz aux moules à la turque, pignons et raisins, salade de persil",
+    "description": "Moules mijotées dans un riz parfumé aux oignons, pignons, raisins secs, cannelle et piment doux, servies avec une salade de tomates au persil et du yaourt.",
+    "emoji": "🦪",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 25,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "moule",
+        "qty": 1800,
+        "unit": "g",
+        "note": "avec coquilles"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 170,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pignons",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "ou piment d'Alep"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "feuille"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Ouvrez les moules dans une cocotte avec 100 ml d'eau, à couvert, 5 min à feu vif. Décortiquez-les et filtrez le jus de cuisson (complétez à 320 ml avec de l'eau).",
+      "Dans la cocotte rincée, faites fondre les oignons émincés dans l'huile 8 min à feu moyen, ajoutez les pignons 2 min jusqu'à ce qu'ils blondissent, puis le riz rincé 2 min jusqu'à ce qu'il soit nacré.",
+      "Ajoutez le concentré de tomate, la cannelle, le piment et les raisins, puis versez le jus des moules. Couvrez et cuisez 15 min à feu très doux.",
+      "Ajoutez les moules décortiquées et la menthe ciselée, couvrez d'un torchon et laissez reposer 10 min hors du feu.",
+      "Salade : mélangez le persil haché, les tomates en dés, le jus d'un demi-citron et du sel. Servez le pilavı avec la salade, des quartiers de citron et le yaourt."
+    ],
+    "tags": [
+      "économique",
+      "familial",
+      "riche en glucides",
+      "préparation à l’avance"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "iode",
+      "epice",
+      "fruite"
+    ]
+  },
+  {
+    "id": "dm-fabes-con-almejas",
+    "name": "Fabes con almejas, haricots blancs aux palourdes et merlu",
+    "description": "Le plat des Asturies : haricots blancs fondants mijotés au safran et au paprika avec palourdes et morceaux de merlu, servis avec du pain de campagne.",
+    "emoji": "🫘",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 20,
+    "cookTime": 30,
+    "restTime": 60,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "palourde",
+        "qty": 800,
+        "unit": "g",
+        "note": "avec coquilles, dégorgées"
+      },
+      {
+        "id": "cabillaud",
+        "qty": 200,
+        "unit": "g",
+        "note": "merlu, en morceaux"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 300,
+        "unit": "g",
+        "note": "cuits, égouttés"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "doux"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 3,
+        "unit": "tranche"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites dégorger les palourdes 1 h dans de l'eau froide salée, puis rincez-les.",
+      "Dans une cocotte, faites revenir l'oignon, le poivron et l'ail hachés dans l'huile 8 min à feu moyen-doux, sans coloration.",
+      "Ajoutez le paprika et le safran, remuez 30 s, versez le vin blanc et laissez réduire 2 min. Ajoutez les haricots et le fumet, et laissez mijoter 15 min à petit frémissement en secouant la cocotte (sans remuer, pour ne pas écraser les haricots).",
+      "Ajoutez les morceaux de merlu salés et les palourdes, couvrez et cuisez 5 min : les palourdes s'ouvrent et le poisson devient opaque.",
+      "Parsemez abondamment de persil haché, laissez reposer 2 min et servez avec le pain."
+    ],
+    "tags": [
+      "mijoté",
+      "familial",
+      "riche en protéines",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "iode",
+      "umami",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "dm-clam-bake-cocotte",
+    "name": "Clam bake en cocotte : palourdes, crevettes, saucisse, maïs et pommes de terre",
+    "description": "Le festin de plage de Nouvelle-Angleterre version cocotte : palourdes, crevettes, saucisse fumée, épis de maïs et pommes de terre cuits à l'étouffée à la bière, beurre citronné aux herbes.",
+    "emoji": "🦐",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 3,
+    "ingredients": [
+      {
+        "id": "palourde",
+        "qty": 1000,
+        "unit": "g",
+        "note": "avec coquilles"
+      },
+      {
+        "id": "crevette",
+        "qty": 300,
+        "unit": "g",
+        "note": "entières"
+      },
+      {
+        "id": "saucisse-morteau",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "ou saucisse fumée, en tronçons"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "grenailles avec la peau"
+      },
+      {
+        "id": "mais",
+        "qty": 450,
+        "unit": "g",
+        "note": "3 épis coupés en tronçons"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "biere",
+        "qty": 330,
+        "unit": "ml",
+        "note": "blonde"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande cocotte, déposez l'oignon en quartiers, l'ail écrasé, le laurier, le paprika, les grenailles et les tronçons de saucisse. Versez la bière et 200 ml d'eau, salez, couvrez et portez à ébullition, puis cuisez 15 min à feu moyen.",
+      "Ajoutez les tronçons de maïs, couvrez et cuisez 5 min.",
+      "Ajoutez les palourdes puis les crevettes par-dessus, couvrez et cuisez 5 à 6 min à la vapeur : les palourdes sont ouvertes et les crevettes roses.",
+      "Faites fondre le beurre avec le zeste et le jus du citron et le persil haché.",
+      "Égouttez le tout (gardez le bouillon), étalez sur une grande planche ou un plat, arrosez de beurre citronné et servez avec le bouillon en tasse."
+    ],
+    "tags": [
+      "familial",
+      "week-end",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "iode",
+      "fume",
+      "lacte"
+    ]
+  },
+  {
+    "id": "dm-coques-lard-galloise",
+    "name": "Coques au lard à la galloise, galettes de pommes de terre à l'algue et œuf",
+    "description": "Coques sautées au lard fumé et aux oignons nouveaux, avec des galettes croustillantes de pommes de terre au chou et aux algues, un œuf au plat et du cresson.",
+    "emoji": "🐚",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 25,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "palourde",
+        "qty": 1000,
+        "unit": "g",
+        "note": "coques, avec coquilles, dégorgées"
+      },
+      {
+        "id": "bacon",
+        "qty": 6,
+        "unit": "tranche",
+        "note": "ou lard fumé"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec la peau"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 200,
+        "unit": "g",
+        "note": "émincé"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 3,
+        "unit": "piece",
+        "note": "ou laverbread"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g",
+        "note": "ou cresson"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre en morceaux 15 min à l'eau salée, en ajoutant le chou les 5 dernières minutes. Égouttez et écrasez avec 10 g de beurre et la nori émiettée finement.",
+      "Formez 4 galettes et faites-les dorer 4 min par face dans 10 g de beurre à feu moyen.",
+      "Dans une autre poêle, faites croustiller le bacon 4 min, retirez-le. Dans sa graisse, mettez les coques et le vinaigre, couvrez et cuisez 3 à 4 min à feu vif jusqu'à ouverture ; ajoutez l'oignon nouveau émincé et le bacon émietté.",
+      "Faites cuire les œufs au plat dans le reste du beurre, 3 min à feu moyen.",
+      "Servez les galettes avec les coques et leur jus, l'œuf au plat et le cresson."
+    ],
+    "tags": [
+      "économique",
+      "une poêle",
+      "riche en protéines",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "fume",
+      "umami"
+    ]
+  },
+  {
+    "id": "dm-shrimp-and-grits",
+    "name": "Shrimp and grits, crevettes cajun sur polenta au cheddar et chou kale",
+    "description": "Le classique du Sud des États-Unis : crevettes sautées aux épices cajun et bacon, sauce aux poivrons, sur une polenta crémeuse au cheddar, avec du kale.",
+    "emoji": "🦐",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "crevette",
+        "qty": 320,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "polenta",
+        "qty": 120,
+        "unit": "g",
+        "note": "précuite"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "cheddar",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "bacon",
+        "qty": 4,
+        "unit": "tranche"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 150,
+        "unit": "g",
+        "note": "kale"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez le lait et 300 ml d'eau salée à ébullition, versez la polenta en pluie en fouettant, cuisez 8 min à feu doux en remuant, puis incorporez le cheddar et le beurre.",
+      "Dans une grande poêle, faites croustiller le bacon en lardons 4 min à feu moyen. Ajoutez le poivron en dés et le blanc des oignons nouveaux 4 min, puis l'ail 1 min.",
+      "Ajoutez le kale émincé et 3 c. à soupe d'eau, faites-le tomber 2 min.",
+      "Mélangez les crevettes avec le paprika, le cumin, le piment et du sel, mettez-les dans la poêle et saisissez 3 min à feu vif : elles sont roses et en forme de C. Arrosez du jus d'un demi-citron.",
+      "Servez sur la polenta, parsemé du vert des oignons nouveaux."
+    ],
+    "tags": [
+      "rapide",
+      "réconfortant",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "epice",
+      "fume",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "dm-moqueca-saumon-crevettes",
+    "name": "Moqueca de saumon et crevettes, riz et farofa de manioc",
+    "description": "Ragoût brésilien de Bahia : saumon et crevettes mijotés dans du lait de coco, tomates, poivrons et coriandre, servi avec du riz et des haricots verts au citron vert.",
+    "emoji": "🥥",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "latino-americaine",
+    "prepTime": 20,
+    "cookTime": 25,
+    "restTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés de 130 g en gros cubes"
+      },
+      {
+        "id": "crevette",
+        "qty": 160,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "lait-coco",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-coco",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 130,
+        "unit": "g"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Marinez le saumon et les crevettes 15 min avec le jus d'un citron vert, l'ail râpé et du sel. Lancez le riz (12 min à couvert, 1,5 volume d'eau).",
+      "Dans une sauteuse large, chauffez l'huile de coco à feu moyen et faites revenir l'oignon, le poivron et le piment émincés 5 min.",
+      "Ajoutez les tomates en rondelles et le paprika, cuisez 3 min, puis versez le lait de coco et laissez frémir 5 min.",
+      "Déposez le saumon et ses sucs, laissez frémir 5 min à couvert, ajoutez les crevettes et poursuivez 3 min sans remuer : tout est juste cuit.",
+      "Cuisez les haricots verts 7 min à l'eau salée, assaisonnez-les du second citron vert.",
+      "Parsemez la moqueca de coriandre et servez avec le riz et les haricots."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "mijoté"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "cremeux",
+      "frais"
+    ]
+  },
+  {
+    "id": "dm-saint-jacques-boudin-noir-puree",
+    "name": "Saint-Jacques poêlées, boudin noir, purée de céleri-pommes de terre et pomme",
+    "description": "Noix de Saint-Jacques dorées au beurre et rondelles de boudin noir croustillantes, sur une purée de pommes de terre et céleri-rave, avec des dés de pomme et des petits pois.",
+    "emoji": "🐚",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saint-jacques",
+        "qty": 10,
+        "unit": "piece"
+      },
+      {
+        "id": "boudin-noir",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "pomme",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre épluchées et le céleri en cubes 20 min à l'eau salée. Égouttez et écrasez avec 20 g de beurre et le lait chaud jusqu'à une purée lisse.",
+      "Cuisez les petits pois 4 min à l'eau bouillante. Coupez la pomme en petits dés et arrosez-la de citron.",
+      "Coupez le boudin en rondelles épaisses, faites-les croustiller 2 min par face dans une poêle sèche à feu moyen. Réservez.",
+      "Épongez les Saint-Jacques, salez-les. Chauffez l'huile à feu vif, saisissez-les 1 min 30 sans les bouger, ajoutez le reste du beurre, retournez et arrosez de beurre mousseux 1 min : elles sont dorées et nacrées à cœur.",
+      "Dressez la purée, les petits pois, le boudin, les Saint-Jacques et les dés de pomme, parsemez de ciboulette."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "fruite",
+      "cremeux"
+    ]
+  }
+]

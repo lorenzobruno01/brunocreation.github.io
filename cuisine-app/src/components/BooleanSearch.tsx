@@ -1,31 +1,29 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { searchIngredients, useLibrary, useUserData } from '../hooks/library';
 import { describeQuery, matchBoolean, parseIngredientQuery, type IngGroup, type IngOption, type IngQuery } from '../domain/ingredientQuery';
 import { RecipeCard } from './RecipeCard';
 import { useDebounced, useProgressive, useToast } from './ui';
-import { AiError, loadAi } from '../ai/light';
-import { db, saveSettings } from '../db/db';
+import { db, deleteRecipe, saveSettings } from '../db/db';
+import { composeRecipe } from '../domain/composer';
 import { MEAL_TYPES } from '../domain/labels';
 import type { IndexedRecipe, MealType } from '../domain/types';
 import { indexRecipe } from '../domain/indexing';
 
 const EXAMPLES = ['patates et saumon ou bœuf', 'œufs et fromage sans lardons', 'agneau ou veau et riz', 'poulet et courgette et citron', 'foie et pommes de terre'];
 
-/** Recherche ET / OU / SANS sur les ingrédients, avec création automatique par l'IA si rien ne correspond */
+/** Recherche ET / OU / SANS sur les ingrédients, avec création automatique d'une recette si rien ne correspond */
 export function BooleanSearch() {
   const { recipes, ingredients, lookup } = useLibrary();
-  const { settings } = useUserData();
+  const { settings, fridge, pantry } = useUserData();
   const [text, setText] = useState('');
   const [query, setQuery] = useState<IngQuery>({ groups: [], exclude: [] });
   const [unknown, setUnknown] = useState<string[]>([]);
   const [adding, setAdding] = useState<{ group: number | 'new' | 'exclude' } | null>(null);
   const [meal, setMeal] = useState<MealType | null>(null);
-  const [status, setStatus] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [created, setCreated] = useState<IndexedRecipe | null>(null);
   const tried = useRef<Set<string>>(new Set());
-  const abort = useRef<AbortController | null>(null);
   const navigate = useNavigate();
   const toast = useToast();
   const dtext = useDebounced(text, 250);
@@ -45,50 +43,23 @@ export function BooleanSearch() {
   const autoCreate = settings.autoCreate !== false;
 
   const create = async () => {
-    if (!settings.apiKey || !query.groups.length) return;
+    if (!query.groups.length) return;
     setError(null);
-    setCreated(null);
-    abort.current = new AbortController();
-    const groupsText = query.groups
-      .map((g) => (g.length > 1 ? `UN SEUL au choix parmi : ${g.map((o) => o.label).join(' / ')}` : g[0].label))
-      .join(' ; ');
-    const request = `Crée une recette ${meal ? `de type ${MEAL_TYPES[meal].label.toLowerCase()}` : 'de plat principal (déjeuner ou dîner)'} qui utilise OBLIGATOIREMENT, comme ingrédients importants : ${groupsText}.${
-      query.exclude.length ? ` N'utilise PAS : ${query.exclude.map((o) => o.label).join(', ')}.` : ''
-    } Ingrédients d'un même groupe « au choix » : n'en prendre qu'un. Elle doit être différente des recettes existantes.`;
-    try {
-      const { generateRecipes } = await loadAi();
-      const res = await generateRecipes({
-        apiKey: settings.apiKey,
-        model: settings.model ?? 'claude-opus-5-5',
-        request,
-        count: 1,
-        library: recipes,
-        ingredients,
-        lookup,
-        signal: abort.current.signal,
-        onStatus: setStatus,
-      });
-      // Garder la première recette valide qui respecte vraiment la requête
-      const good = res.find((c) => c.status !== 'invalide' && c.status !== 'doublon' && matchBoolean([c.indexed], query).length > 0);
-      if (!good) throw new AiError('L’IA n’a pas produit de recette respectant tous vos critères. Réessayez ou reformulez.');
-      await db.recipes.put(good.recipe);
-      setCreated(indexRecipe(good.recipe, lookup));
-      toast('Nouvelle recette créée et ajoutée à la bibliothèque ✨');
-    } catch (e) {
-      setError(e instanceof AiError ? e.message : String(e));
-    } finally {
-      setStatus(null);
-    }
+    const r = composeRecipe(query, lookup, { meal, servings: settings.defaultServings, available: new Set([...fridge, ...pantry]), existingNames: new Set(recipes.map((x) => x.name.toLowerCase())) });
+    if (!r) return setError('Impossible de composer une recette avec ces critères.');
+    await db.recipes.put(r);
+    setCreated(indexRecipe(r, lookup));
+    toast('Nouvelle recette créée et ajoutée à la bibliothèque ✨');
   };
 
   // Aucune recette → création automatique (une fois par requête)
   useEffect(() => {
-    if (!autoCreate || !settings.apiKey || status || !query.groups.length || results.length > 0 || unknown.length) return;
+    if (!autoCreate || !query.groups.length || results.length > 0 || unknown.length) return;
     if (tried.current.has(key)) return;
     tried.current.add(key);
     create();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, results.length, autoCreate, settings.apiKey]);
+  }, [key, results.length, autoCreate]);
 
   const setGroups = (groups: IngGroup[]) => setQuery({ ...query, groups: groups.filter((g) => g.length) });
   const removeOption = (gi: number, oi: number) => setGroups(query.groups.map((g, i) => (i === gi ? g.filter((_, j) => j !== oi) : g)));
@@ -179,23 +150,14 @@ export function BooleanSearch() {
           <div className="small">
             <strong>{results.length}</strong> recette{results.length > 1 ? 's' : ''} pour <span className="tag primary">{describeQuery(query)}</span>
           </div>
-          {settings.apiKey && results.length > 0 && !status && (
+          {results.length > 0 && (
             <button className="btn sm" onClick={create}>
-              ✨ Créer une nouvelle recette avec ça
+              ✨ Composer une nouvelle recette avec ça
             </button>
           )}
         </div>
       )}
 
-      {status && (
-        <div className="card pad row">
-          <span className="spinner" />
-          <span className="grow">Aucune recette existante : l’IA en crée une… {status}</span>
-          <button className="btn sm ghost" onClick={() => abort.current?.abort()}>
-            Annuler
-          </button>
-        </div>
-      )}
       {error && <div className="callout danger small">{error}</div>}
       {created && (
         <div className="callout ok stack">
@@ -203,24 +165,32 @@ export function BooleanSearch() {
           <div style={{ maxWidth: 340 }}>
             <RecipeCard recipe={created} />
           </div>
-          <button className="btn sm" onClick={() => navigate(`/recette/${created.id}`)}>
-            Voir la recette
-          </button>
+          <div className="row">
+            <button className="btn sm primary" onClick={() => navigate(`/recette/${created.id}`)}>
+              Voir la recette
+            </button>
+            <button className="btn sm" onClick={() => navigate(`/modifier/${created.id}`)}>
+              ✏️ La personnaliser
+            </button>
+            <button
+              className="btn sm ghost danger"
+              onClick={async () => {
+                await deleteRecipe(created.id, false);
+                setCreated(null);
+              }}
+            >
+              Ne pas la garder
+            </button>
+          </div>
         </div>
       )}
 
-      {query.groups.length > 0 && results.length === 0 && !status && !created && (
+      {query.groups.length > 0 && results.length === 0 && !created && (
         <div className="callout">
           Aucune recette de la bibliothèque ne contient « {describeQuery(query)} ».{' '}
-          {!settings.apiKey ? (
-            <>
-              Ajoutez une clé API dans <Link to="/reglages">Réglages</Link> pour que l’assistant crée automatiquement une recette.
-            </>
-          ) : (
-            <button className="btn sm primary" onClick={create}>
-              ✨ Créer une recette
-            </button>
-          )}
+          <button className="btn sm primary" onClick={create}>
+            ✨ Composer une recette
+          </button>
         </div>
       )}
 
@@ -231,12 +201,10 @@ export function BooleanSearch() {
       </div>
       {sentinel}
 
-      {settings.apiKey && (
-        <label className="row nowrap small muted">
-          <input type="checkbox" checked={autoCreate} onChange={(e) => saveSettings({ autoCreate: e.target.checked })} />
-          Créer automatiquement une recette avec l’IA quand la recherche ne trouve rien
-        </label>
-      )}
+      <label className="row nowrap small muted">
+        <input type="checkbox" checked={autoCreate} onChange={(e) => saveSettings({ autoCreate: e.target.checked })} />
+        Composer automatiquement une recette (gratuit, sans IA) quand la recherche ne trouve rien
+      </label>
     </div>
   );
 }

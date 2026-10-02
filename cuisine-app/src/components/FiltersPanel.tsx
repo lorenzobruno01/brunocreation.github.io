@@ -6,6 +6,25 @@ function toggle<T>(arr: T[], v: T): T[] {
   return arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v];
 }
 
+const RICH: Array<[string, string]> = [
+  ['vD', '☀️ Vitamine D'],
+  ['epa', '🐟 Oméga-3 EPA/DHA'],
+  ['fe', '🩸 Fer'],
+  ['mg', '⚡ Magnésium'],
+  ['ca', '🦴 Calcium'],
+  ['k', '🍌 Potassium'],
+  ['zn', '🛡️ Zinc'],
+  ['vA', '🥕 Vitamine A'],
+  ['vC', '🍊 Vitamine C'],
+  ['vB12', '🥩 Vitamine B12'],
+  ['vB9', '🥬 Folates (B9)'],
+  ['vE', '🌰 Vitamine E'],
+  ['vK', '🥦 Vitamine K'],
+  ['i', '🌊 Iode'],
+  ['se', '✨ Sélénium'],
+  ['fib', '🌾 Fibres'],
+];
+
 const REGIONS: Record<string, string> = {
   mediterranee: '🫒 Méditerranéenne',
   asie: '🥢 Asiatique',
@@ -18,6 +37,20 @@ export function FiltersPanel({ value, onChange, showAvailability }: { value: Fil
   const set = (patch: Partial<Filters>) => onChange({ ...value, ...patch });
   return (
     <div>
+      <Group label="🌿 Densité nutritionnelle (indice 0–100)">
+        {[40, 50, 60].map((d) => (
+          <button key={d} className={`chip ${value.densityMin === d ? 'on' : ''}`} onClick={() => set({ densityMin: value.densityMin === d ? undefined : d })}>
+            ≥ {d} {d >= 60 ? '🌟' : d >= 50 ? '🟢' : '🟡'}
+          </button>
+        ))}
+      </Group>
+      <Group label="💊 Riche en (≥ 30 % du besoin du jour par portion)">
+        {RICH.map(([k, l]) => (
+          <button key={k} className={`chip olive ${value.richIn?.includes(k) ? 'on' : ''}`} onClick={() => set({ richIn: toggle(value.richIn ?? [], k) })}>
+            {l}
+          </button>
+        ))}
+      </Group>
       <Group label="Repas">
         {(Object.keys(MEAL_TYPES) as MealType[]).map((m) => (
           <button key={m} className={`chip ${value.meals.includes(m) ? 'on' : ''}`} onClick={() => set({ meals: toggle(value.meals, m) })}>

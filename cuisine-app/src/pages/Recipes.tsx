@@ -105,6 +105,7 @@ export function Recipes() {
         </div>
         <select className="select" style={{ width: 'auto', minHeight: 38 }} value={sort} onChange={(e) => setSort(e.target.value as SortKey)} aria-label="Trier">
           <option value="pertinence">Pertinence</option>
+          <option value="densite">🌿 Plus denses en nutriments</option>
           <option value="temps">Plus rapides</option>
           <option value="proteines">Plus protéinées</option>
           <option value="calories">Plus caloriques</option>

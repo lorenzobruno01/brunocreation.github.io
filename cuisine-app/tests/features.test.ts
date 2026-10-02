@@ -72,3 +72,49 @@ describe('critères du menu', () => {
     expect(fish).toBeGreaterThanOrEqual(3);
   });
 });
+
+import { composeRecipe } from '../src/domain/composer';
+import { checkPhilosophy } from '../src/domain/philosophy';
+import { generateNutriWeek, dayReport } from '../src/domain/nutriPlanner';
+import { computeDetailed as cd, densityScore, DEFAULT_PROFILES } from '../src/domain/micronutrients';
+
+describe('créateur de recettes intégré', () => {
+  it('compose un repas complet respectant « patates et saumon ou bœuf »', () => {
+    const { query } = parseIngredientQuery('patates et saumon ou bœuf', INGREDIENTS);
+    const r = composeRecipe(query, lookup)!;
+    expect(r).toBeTruthy();
+    const ix = indexRecipe(r, lookup);
+    expect(matchBoolean([ix], query).length).toBe(1);
+    expect(r.steps.length).toBeGreaterThanOrEqual(4);
+    expect(ix.nutrition.protein).toBeGreaterThan(30);
+    expect(checkPhilosophy(r, lookup).filter((i) => i.level === 'error')).toEqual([]);
+  });
+  it('fonctionne pour des combinaisons variées', () => {
+    for (const q of ['agneau et riz', 'oeufs et courgette', 'moules', 'foie de veau', 'paleron', 'poulet entier et patate douce', 'cabillaud et brocoli et sarrasin']) {
+      const { query } = parseIngredientQuery(q, INGREDIENTS);
+      const r = composeRecipe(query, lookup);
+      expect(r, q).toBeTruthy();
+      expect(matchBoolean([indexRecipe(r!, lookup)], query).length, q).toBe(1);
+    }
+  });
+});
+
+describe('planificateur densité nutritionnelle', () => {
+  it('approche 100 % des besoins chaque jour', () => {
+    const lib = library.map((r) => {
+      r.micros = cd(r, lookup);
+      r.density = densityScore(r.micros, r.nutrition.kcal);
+      return r;
+    });
+    const dates = ['2026-10-05', '2026-10-06', '2026-10-07', '2026-10-08', '2026-10-09', '2026-10-10', '2026-10-11'];
+    const profile = DEFAULT_PROFILES[0];
+    const plan = generateNutriWeek({ recipes: lib, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots: ['matin', 'midi', 'collation', 'soir'], servings: 2, seed: 1, profile }, (id) => lookup(id)?.category);
+    expect(plan).toHaveLength(28);
+    expect(new Set(plan.map((p) => p.recipeId)).size).toBe(28);
+    const byId = new Map(lib.map((r) => [r.id, r]));
+    for (const d of dates) {
+      const rep = dayReport(d, plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)!), profile);
+      expect(rep.coverage).toBeGreaterThan(95);
+    }
+  }, 30000);
+});
