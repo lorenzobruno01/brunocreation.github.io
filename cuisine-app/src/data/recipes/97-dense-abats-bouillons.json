@@ -1,0 +1,4880 @@
+[
+  {
+    "id": "dab-burger-boeuf-foie",
+    "name": "Burgers mi-bœuf mi-foie, frites de patate douce et roquette",
+    "description": "Un steak haché juteux où le foie de veau se fond totalement dans le bœuf et le persil : personne ne le devine. Cheddar fondu, roquette poivrée et frites de patate douce rôties au four.",
+    "emoji": "🍔",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 220,
+        "unit": "g",
+        "note": "15 % de matière grasse"
+      },
+      {
+        "id": "foie-veau",
+        "qty": 160,
+        "unit": "g",
+        "note": "très froid, mixé en purée"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g",
+        "note": "finement haché"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "moitié râpée dans la viande, moitié en rondelles"
+      },
+      {
+        "id": "panure",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 130,
+        "unit": "g",
+        "note": "2 petits pains ronds au levain"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "en tranches"
+      },
+      {
+        "id": "patate-douce",
+        "qty": 450,
+        "unit": "g",
+        "note": "en bâtonnets avec la peau"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 25,
+        "unit": "ml"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en tranches"
+      },
+      {
+        "id": "cornichon",
+        "qty": 30,
+        "unit": "g",
+        "note": "en lamelles"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C (chaleur tournante). Mélangez les bâtonnets de patate douce avec 20 ml d'huile d'olive, le paprika et du sel, étalez-les en une seule couche sur une plaque recouverte de papier cuisson.",
+      "Enfournez 30 à 35 min en retournant à mi-cuisson : les frites doivent être dorées et légèrement caramélisées sur les bords.",
+      "Pendant ce temps, mixez le foie de veau paré (sans peau ni vaisseaux) 20 secondes en purée lisse. Dans un saladier, mélangez-le au bœuf haché, au persil, à la moitié d'oignon râpée et à la chapelure. Salez, poivrez.",
+      "Façonnez 2 steaks épais de 2 cm avec les mains mouillées (la farce est souple, c'est normal) et creusez légèrement le centre avec le pouce pour qu'ils restent plats. Laissez-les 10 min au frais.",
+      "Chauffez une poêle en fonte à feu vif avec 10 ml d'huile. Saisissez les steaks 3 min sans y toucher, retournez-les, posez le cheddar dessus, couvrez et poursuivez 3 min à feu moyen : le cœur doit rester rosé et le fromage fondu.",
+      "Coupez les pains en deux et toastez-les 1 min face coupée dans la poêle, dans les sucs de cuisson.",
+      "Montez les burgers : moutarde, roquette, tomate, steak au cheddar, rondelles d'oignon rouge et cornichons. Servez avec les frites et le reste de roquette en salade."
+    ],
+    "tags": [
+      "riche en protéines",
+      "abats",
+      "four",
+      "familial",
+      "prise de masse"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "grille",
+      "fume"
+    ],
+    "tips": "Le foie mixé doit être très froid : il se travaille mieux et ne colore pas la farce. On peut monter jusqu'à 50/50 une fois la famille conquise."
+  },
+  {
+    "id": "dab-bolognaise-foies-cachee",
+    "name": "Spaghetti bolognaise cachée aux foies de volaille et légumes",
+    "description": "Une bolognaise du dimanche où les foies de volaille hachés et une montagne de légumes râpés fondent dans la sauce tomate : plus riche, plus profonde, et toujours aussi réconfortante, avec beaucoup de parmesan.",
+    "emoji": "🍝",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 25,
+    "cookTime": 90,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 450,
+        "unit": "g"
+      },
+      {
+        "id": "foie-volaille",
+        "qty": 250,
+        "unit": "g",
+        "note": "parés et hachés au couteau"
+      },
+      {
+        "id": "pancetta",
+        "qty": 80,
+        "unit": "g",
+        "note": "en petits dés"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées finement"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en brunoise"
+      },
+      {
+        "id": "courgette",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpée"
+      },
+      {
+        "id": "champignon",
+        "qty": 200,
+        "unit": "g",
+        "note": "hachés"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "lait",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "pates",
+        "qty": 340,
+        "unit": "g",
+        "note": "spaghetti complets ou de blé dur"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, faites fondre la pancetta 4 min à feu moyen avec l'huile d'olive. Ajoutez oignon, carotte, céleri et ail et faites suer 8 min en remuant, jusqu'à ce que les légumes soient tendres et translucides.",
+      "Ajoutez les champignons hachés et la courgette râpée, montez à feu vif et faites évaporer leur eau 5 min.",
+      "Ajoutez le bœuf haché et émiettez-le à la cuillère en bois 6 min jusqu'à ce qu'il ne soit plus rose. Ajoutez les foies hachés et remuez 2 min : ils doivent juste perdre leur couleur rouge.",
+      "Versez le vin rouge et laissez réduire de moitié 3 min. Ajoutez le concentré, les tomates concassées, le laurier, l'origan, salez et poivrez.",
+      "Couvrez aux trois quarts et laissez mijoter 1 h à feu très doux (petits frémissements), en remuant toutes les 15 min. Versez le lait les 15 dernières minutes : il arrondit l'acidité et adoucit le goût du foie.",
+      "Faites cuire les spaghetti dans une grande casserole d'eau bouillante salée selon le temps du paquet moins 1 min. Égouttez en gardant une louche d'eau de cuisson.",
+      "Mélangez les pâtes dans la sauce 1 min à feu moyen avec l'eau de cuisson réservée. Servez avec le parmesan et le persil."
+    ],
+    "tags": [
+      "batch cooking",
+      "familial",
+      "abats",
+      "réconfortant",
+      "riche en glucides",
+      "prise de masse"
+    ],
+    "seasons": [],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "La sauce se congèle très bien en portions : préparez-en double. Les foies hachés au couteau très fin disparaissent totalement à la cuisson."
+  },
+  {
+    "id": "dab-parmentier-coeur-celeri",
+    "name": "Hachis parmentier au cœur de bœuf, purée pommes de terre-céleri",
+    "description": "Le hachis parmentier de toujours, mais avec un mélange de cœur de bœuf et de bœuf haché : plus maigre, très riche en fer et en B12, sous une purée au céleri-rave gratinée au comté.",
+    "emoji": "🥧",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 35,
+    "cookTime": 55,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 400,
+        "unit": "g",
+        "note": "paré, haché par le boucher ou au robot"
+      },
+      {
+        "id": "boeuf-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "hachés"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en petits dés"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 900,
+        "unit": "g"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 400,
+        "unit": "g",
+        "note": "en cubes"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "persil",
+        "qty": 25,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez les pommes de terre épluchées en morceaux et le céleri-rave dans une casserole d'eau froide salée. Portez à ébullition et laissez cuire 20 à 25 min : la pointe d'un couteau doit s'enfoncer sans résistance.",
+      "Pendant ce temps, faites fondre 15 g de beurre dans une sauteuse à feu moyen. Faites suer oignons et carottes 7 min jusqu'à ce qu'ils blondissent.",
+      "Montez à feu vif, ajoutez le cœur et le bœuf hachés et l'ail. Faites revenir 6 à 8 min en émiettant, jusqu'à ce que la viande soit bien colorée.",
+      "Ajoutez le concentré de tomate, le thym et le bouillon. Laissez mijoter 10 min à feu doux à découvert : le mélange doit être moelleux mais sans jus au fond. Incorporez la moitié du persil, salez, poivrez.",
+      "Égouttez pommes de terre et céleri, écrasez-les au presse-purée avec le reste du beurre et le lait chaud, la muscade, sel et poivre. La purée doit être souple et tenir à la cuillère.",
+      "Préchauffez le four à 200 °C. Étalez la viande dans un plat à gratin, couvrez de purée, striez à la fourchette et parsemez de comté.",
+      "Enfournez 20 min, puis 3 min sous le gril, jusqu'à ce que le dessus soit bien doré. Laissez reposer 5 min et servez avec le reste du persil."
+    ],
+    "tags": [
+      "familial",
+      "abats",
+      "four",
+      "réconfortant",
+      "batch cooking",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "reconfortant",
+      "umami",
+      "cremeux"
+    ],
+    "tips": "Demandez au boucher de hacher le cœur avec le bœuf : il fait cela en une minute. Accompagnez d'une salade verte à l'huile de noix."
+  },
+  {
+    "id": "dab-terrine-campagne-foie",
+    "name": "Terrine de campagne au foie de porc, salade de lentilles tiède",
+    "description": "Une vraie terrine maison, rustique et parfumée au cognac et aux noisettes, servie en tranches épaisses avec une salade de lentilles tiède à l'échalote, du pain de seigle et des cornichons.",
+    "emoji": "🥖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 40,
+    "cookTime": 110,
+    "restTime": 720,
+    "difficulty": "intermediaire",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "porc-echine",
+        "qty": 500,
+        "unit": "g",
+        "note": "gorge ou échine, hachée gros"
+      },
+      {
+        "id": "foie-agneau",
+        "qty": 300,
+        "unit": "g",
+        "note": "foie de porc, haché"
+      },
+      {
+        "id": "porc-poitrine",
+        "qty": 200,
+        "unit": "g",
+        "note": "fraîche, hachée"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "echalote",
+        "qty": 3,
+        "unit": "piece",
+        "note": "ciselées"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "noisette",
+        "qty": 50,
+        "unit": "g",
+        "note": "torréfiées, concassées"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "quatre-épices"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 60,
+        "unit": "ml",
+        "note": "ou 3 cl de cognac"
+      },
+      {
+        "id": "lentilles-vertes",
+        "qty": 300,
+        "unit": "g",
+        "note": "du Puy, crues"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en petits dés"
+      },
+      {
+        "id": "huile-colza",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "mache",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "16 g par kg de farce"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 160 °C. Dans un grand saladier, mélangez les viandes hachées et le foie avec les œufs, les échalotes, l'ail, le persil, le thym effeuillé, les noisettes, le quatre-épices et le vin blanc. Salez (16 g/kg) et poivrez généreusement.",
+      "Faites cuire une noisette de farce 1 min à la poêle pour goûter et rectifier l'assaisonnement.",
+      "Tassez la farce dans une terrine de 1,2 l en chassant l'air, posez les feuilles de laurier dessus et couvrez. Placez la terrine dans un plat rempli d'eau chaude à mi-hauteur.",
+      "Enfournez 1 h 45 : la terrine est cuite quand le jus qui remonte sur les bords est clair et que le cœur atteint 70 °C. Laissez refroidir, posez un poids dessus (une brique de lait) et réservez au moins 12 h au frais.",
+      "Pour la salade, rincez les lentilles et mettez-les avec les carottes dans 3 fois leur volume d'eau froide non salée. Portez à frémissement et cuisez 20 à 25 min : elles doivent rester entières et fondantes. Salez en fin de cuisson et égouttez.",
+      "Fouettez la moutarde, le vinaigre et l'huile de colza. Mélangez les lentilles tièdes avec la moitié de la vinaigrette, assaisonnez la mâche avec le reste.",
+      "Servez 2 tranches épaisses de terrine par personne avec les lentilles tièdes, la mâche, le pain de seigle grillé et les cornichons."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "abats",
+      "week-end",
+      "four",
+      "repas froid",
+      "lunch box"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "herbace",
+      "acidule"
+    ],
+    "tips": "La terrine est meilleure après 2 jours et se garde 6 jours au frais, bien filmée. Le foie de porc se remplace par du foie de volaille pour un goût plus doux."
+  },
+  {
+    "id": "dab-souvlaki-coeur-agneau",
+    "name": "Souvlaki de cœur d'agneau, tzatziki et salade grecque",
+    "description": "Des cubes de cœur d'agneau marinés à l'origan et au citron, grillés vifs comme un souvlaki : tendres, au goût d'agneau franc. Pita chaude, tzatziki épais, salade de tomates, concombre et feta.",
+    "emoji": "🍢",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 25,
+    "cookTime": 12,
+    "restTime": 120,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 400,
+        "unit": "g",
+        "note": "cœurs d'agneau parés, en cubes de 3 cm"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "origan",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g",
+        "note": "ou menthe"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "vert de préférence"
+      },
+      {
+        "id": "olive",
+        "qty": 40,
+        "unit": "g",
+        "note": "de Kalamata"
+      },
+      {
+        "id": "feta",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Retirez le gras et les parties nerveuses des cœurs, coupez-les en cubes de 3 cm. Mélangez-les avec 25 ml d'huile, le jus d'un demi-citron, l'origan, 2 gousses d'ail écrasées et du poivre. Laissez mariner 2 h au frais.",
+      "Tzatziki : râpez la moitié du concombre, pressez-le dans les mains pour retirer l'eau, mélangez avec le yaourt, l'ail restant râpé, l'aneth ciselé, sel et un filet d'huile.",
+      "Salade : coupez les tomates, le reste du concombre, le poivron et l'oignon rouge en gros morceaux. Ajoutez les olives, la feta en bloc, un filet d'huile, le jus du demi-citron restant et une pincée d'origan.",
+      "Enfilez les cubes de cœur sur 4 brochettes, salez juste avant la cuisson.",
+      "Chauffez un gril, un barbecue ou une poêle-gril à feu très vif. Grillez les brochettes 2 min par face (8 min en tout) : le cœur doit rester rosé au centre, sinon il durcit.",
+      "Réchauffez les pitas 30 s par face sur le gril. Servez les brochettes sur les pitas avec le tzatziki, la salade et le persil."
+    ],
+    "tags": [
+      "barbecue",
+      "abats",
+      "riche en protéines",
+      "rapide",
+      "sportif"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "frais",
+      "acidule"
+    ],
+    "tips": "Le cœur est un muscle très maigre : cuisson vive et courte, comme un filet. Le cœur de veau ou de bœuf en cubes convient aussi."
+  },
+  {
+    "id": "dab-kasha-foies-volaille",
+    "name": "Kasha aux foies de volaille, oignons fondants et crème aigre",
+    "description": "Le réconfort d'Europe de l'Est : sarrasin grillé au beurre, foies de volaille saisis rosés, oignons caramélisés et champignons, le tout nappé de crème aigre à l'aneth.",
+    "emoji": "🥘",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sarrasin",
+        "qty": 160,
+        "unit": "g",
+        "note": "grains, kasha grillée"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 350,
+        "unit": "ml"
+      },
+      {
+        "id": "foie-volaille",
+        "qty": 230,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "champignon",
+        "qty": 200,
+        "unit": "g",
+        "note": "en lamelles"
+      },
+      {
+        "id": "beurre",
+        "qty": 35,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "mollets"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 80,
+        "unit": "ml",
+        "note": "ou smetana"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 50,
+        "unit": "g",
+        "note": "malossol, en dés"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites griller le sarrasin à sec 3 min dans une casserole à feu moyen en remuant, jusqu'à ce qu'il sente la noisette. Ajoutez 10 g de beurre puis le bouillon chaud, salez légèrement, couvrez et cuisez 15 min à feu doux. Laissez reposer 5 min hors du feu, couvercle fermé.",
+      "Plongez les œufs 6 min dans l'eau bouillante, puis dans l'eau froide ; écalez-les.",
+      "Dans une poêle, faites fondre 15 g de beurre et faites dorer les oignons 12 min à feu moyen en remuant : ils doivent être bien blonds et fondants. Ajoutez les champignons et faites-les colorer 5 min. Réservez.",
+      "Parez les foies (retirez les filaments verts et blancs) et séchez-les. Dans la même poêle, à feu vif, avec le reste du beurre, saisissez-les 1 min 30 par face avec le paprika : ils doivent rester rosés à cœur. Salez, poivrez.",
+      "Remettez oignons et champignons dans la poêle, mélangez 30 s pour réchauffer.",
+      "Mélangez la crème avec la moitié de l'aneth ciselé et une pincée de sel. Servez la kasha surmontée des foies, des oignons-champignons, d'un œuf mollet coupé en deux, de la crème à l'aneth, des cornichons, du persil et du reste d'aneth."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "abats",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "acidule"
+    ],
+    "tips": "Le sarrasin non grillé fonctionne aussi : faites-le griller 5 min de plus. Ne surcuisez jamais les foies, c'est le secret pour qu'ils restent doux."
+  },
+  {
+    "id": "dab-devilled-kidneys",
+    "name": "Devilled kidneys : rognons d'agneau à la diable, toast et champignons",
+    "description": "Le classique des gentlemen's clubs londoniens : rognons d'agneau poêlés dans une sauce relevée à la moutarde, au paprika et à la crème, sur toast de levain beurré, avec champignons et tomates rôtis.",
+    "emoji": "🍳",
+    "category": "plat",
+    "mealTypes": [
+      "petit-dejeuner",
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "rognon",
+        "qty": 350,
+        "unit": "g",
+        "note": "rognons d'agneau, coupés en deux"
+      },
+      {
+        "id": "farine",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "cayenne"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas",
+        "note": "forte, en poudre ou de Dijon"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 10,
+        "unit": "ml",
+        "note": "à la place de la Worcestershire"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 180,
+        "unit": "g",
+        "note": "4 tranches épaisses"
+      },
+      {
+        "id": "champignon",
+        "qty": 250,
+        "unit": "g",
+        "note": "bruns, coupés en deux"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "coupées en deux"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 15,
+        "unit": "ml"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "roquette",
+        "qty": 50,
+        "unit": "g",
+        "note": "cresson de préférence"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Disposez tomates et champignons sur une plaque, arrosez d'huile, salez et rôtissez 15 min : ils doivent être tendres et dorés.",
+      "Retirez la membrane fine des rognons, coupez-les en deux et ôtez le cœur blanc aux ciseaux. Mélangez farine, paprika, piment et une pincée de sel, roulez-y les rognons et secouez l'excédent.",
+      "Faites chauffer 20 g de beurre dans une poêle à feu vif jusqu'à ce qu'il mousse. Saisissez les rognons 2 min par face : ils doivent être dorés dehors et encore rosés dedans.",
+      "Baissez à feu moyen, ajoutez moutarde, sauce soja et bouillon, grattez les sucs et laissez réduire 1 min. Versez la crème et laissez napper 1 min. Poivrez.",
+      "Pendant ce temps, faites griller le pain et beurrez-le. Faites cuire les œufs au plat 3 min dans une petite poêle avec un filet d'huile.",
+      "Dressez les rognons et leur sauce sur les toasts, avec l'œuf au plat, les champignons et tomates rôtis et le persil haché."
+    ],
+    "tags": [
+      "rapide",
+      "abats",
+      "riche en protéines",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "piquant",
+      "umami",
+      "cremeux"
+    ],
+    "tips": "Un rognon trop cuit devient caoutchouteux : retirez-le du feu dès qu'il perle un jus rosé."
+  },
+  {
+    "id": "dab-gesiers-cepes-sarladaises",
+    "name": "Gésiers confits aux cèpes et pommes sarladaises, salade aux noix",
+    "description": "Le Périgord dans l'assiette : pommes de terre sautées à la graisse de canard, ail et persil, gésiers confits dorés et cèpes poêlés, avec une salade de roquette aux noix pour la fraîcheur.",
+    "emoji": "🍄",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "gesiers",
+        "qty": 300,
+        "unit": "g",
+        "note": "confits, émincés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "à chair ferme, en rondelles de 5 mm"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 35,
+        "unit": "g",
+        "note": "celle des gésiers"
+      },
+      {
+        "id": "champignon-forestier",
+        "qty": 250,
+        "unit": "g",
+        "note": "cèpes frais ou surgelés"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse",
+        "note": "hachées"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g",
+        "note": "haché"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pochés ou au plat"
+      },
+      {
+        "id": "roquette",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "noix",
+        "qty": 30,
+        "unit": "g",
+        "note": "cerneaux"
+      },
+      {
+        "id": "huile-noix",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 10,
+        "unit": "ml",
+        "note": "de vin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Réchauffez doucement les gésiers dans leur boîte ou un bain-marie pour liquéfier la graisse. Retirez-les et émincez-les en lamelles de 5 mm ; récupérez 35 g de graisse.",
+      "Rincez et séchez les rondelles de pommes de terre. Faites chauffer 25 g de graisse dans une grande poêle à feu moyen-vif, ajoutez les pommes de terre en couche fine et faites-les dorer 20 à 25 min en les retournant toutes les 5 min, jusqu'à ce qu'elles soient tendres et croustillantes.",
+      "Pendant ce temps, nettoyez les cèpes à la brosse, coupez-les en tranches. Saisissez-les 5 min à feu vif dans une seconde poêle avec le reste de graisse, salez.",
+      "Ajoutez les gésiers aux cèpes et faites-les dorer 4 min en remuant.",
+      "Hors du feu, versez cèpes et gésiers sur les pommes de terre, ajoutez l'ail et le persil hachés (la persillade) et mélangez 1 min à feu doux : l'ail doit parfumer sans brûler.",
+      "Faites cuire les œufs au plat 3 min. Assaisonnez la roquette et les noix avec l'huile de noix et le vinaigre, et servez à côté des sarladaises surmontées d'un œuf."
+    ],
+    "tags": [
+      "une poêle",
+      "abats",
+      "réconfortant",
+      "sans gluten",
+      "calorique"
+    ],
+    "seasons": [
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "Hors saison, des champignons de Paris bruns et une poignée de cèpes séchés réhydratés font très bien l'affaire."
+  },
+  {
+    "id": "dab-langue-sauce-raifort",
+    "name": "Langue de bœuf sauce au raifort, pommes de terre à l'aneth et betteraves",
+    "description": "La langue mijotée à la polonaise devient fondante comme un rôti ; tranchée fin, elle est nappée d'une sauce crémeuse au raifort, avec des pommes de terre à l'aneth et une salade de betteraves au raifort.",
+    "emoji": "👅",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 180,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "langue-boeuf",
+        "qty": 800,
+        "unit": "g",
+        "note": "langue de veau ou petite langue de bœuf"
+      },
+      {
+        "id": "carotte",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "piqué de 2 clous de girofle"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "2 clous"
+      },
+      {
+        "id": "raifort",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé frais ou en bocal"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "farine",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "nouvelles ou à chair ferme"
+      },
+      {
+        "id": "aneth",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "betterave",
+        "qty": 500,
+        "unit": "g",
+        "note": "cuites"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "persil",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains et moulu"
+      }
+    ],
+    "steps": [
+      "Rincez la langue, mettez-la dans une grande cocotte avec carottes, poireau, céleri, oignon piqué, laurier et quelques grains de poivre. Couvrez d'eau froide de 5 cm, salez (10 g/l) et portez à frémissement en écumant.",
+      "Laissez frémir 2 h 30 à 3 h à couvert : la pointe d'un couteau doit traverser la partie la plus épaisse sans résistance. Plongez la langue 1 min dans l'eau froide et retirez la peau épaisse tant qu'elle est chaude. Gardez-la au chaud dans 500 ml de bouillon filtré.",
+      "Cuisez les pommes de terre 20 min à l'eau salée. Égouttez et roulez-les dans 10 g de beurre et la moitié de l'aneth ciselé.",
+      "Salade : râpez grossièrement les betteraves, mélangez avec 1 cuillère à soupe de raifort, le vinaigre, sel et poivre.",
+      "Sauce : faites fondre 20 g de beurre, ajoutez la farine et remuez 1 min à feu moyen. Versez 400 ml de bouillon chaud en fouettant et laissez épaissir 5 min. Hors du feu, ajoutez la crème, le reste du raifort et le persil haché ; salez.",
+      "Tranchez la langue en biais en tranches de 1 cm, nappez de sauce au raifort et servez avec les pommes de terre et la salade de betteraves. Le reste de bouillon et de légumes se boit en entrée."
+    ],
+    "tags": [
+      "mijoté",
+      "abats",
+      "week-end",
+      "familial",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "piquant",
+      "cremeux",
+      "umami"
+    ],
+    "tips": "La langue cuite se garde 4 jours dans son bouillon. Froide, en tranches fines, elle fait d'excellents sandwichs au pain de seigle."
+  },
+  {
+    "id": "dab-ris-veau-petits-pois",
+    "name": "Ris de veau croustillants, petits pois à la française et grenailles",
+    "description": "Des ris de veau blanchis, pressés puis dorés au beurre jusqu'à être croustillants dehors et crémeux dedans, avec des petits pois mijotés à la laitue, aux lardons et aux petits oignons.",
+    "emoji": "🫛",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 30,
+    "cookTime": 35,
+    "restTime": 180,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "ris-veau",
+        "qty": 400,
+        "unit": "g",
+        "note": "noix de ris"
+      },
+      {
+        "id": "farine",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 350,
+        "unit": "g",
+        "note": "frais écossés ou surgelés"
+      },
+      {
+        "id": "laitue",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "cœur, émincé"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "lardons",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 450,
+        "unit": "g",
+        "note": "grenailles"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g",
+        "note": "ou cerfeuil"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 15,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites dégorger les ris 2 h dans de l'eau froide vinaigrée, en changeant l'eau 2 fois. Plongez-les dans de l'eau froide salée, portez à frémissement et blanchissez 3 min. Rafraîchissez-les dans l'eau glacée.",
+      "Retirez la fine membrane et les parties graisseuses des ris. Posez-les entre deux assiettes avec un poids dessus 1 h au frais : ils seront plus réguliers et doreront mieux.",
+      "Cuisez les grenailles 15 min à l'eau salée, égouttez-les, coupez-les en deux et faites-les dorer 10 min dans une poêle avec 10 g de beurre et le thym.",
+      "Petits pois : faites revenir les lardons 3 min à feu moyen dans une casserole, ajoutez les petits oignons et 10 g de beurre, puis les petits pois, la laitue et le bouillon. Couvrez et cuisez 10 min à feu doux (8 min pour des surgelés).",
+      "Escalopez les ris en tranches de 2 cm, salez et farinez-les légèrement. Faites chauffer le reste du beurre à feu moyen-vif jusqu'à ce qu'il mousse et dorez les ris 4 min par face en les arrosant de beurre : ils doivent être bien croustillants et dorés.",
+      "Arrosez les ris d'un filet de citron, parsemez de persil, et servez avec les petits pois et les grenailles."
+    ],
+    "tags": [
+      "week-end",
+      "abats",
+      "riche en protéines",
+      "préparation à l’avance"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "herbace",
+      "grille"
+    ],
+    "tips": "Les ris de veau d'agneau, plus petits, se cuisent entiers 3 min par face. Les petits pois surgelés extra-fins sont parfaits hors saison."
+  },
+  {
+    "id": "dab-brochettes-foie-lard",
+    "name": "Brochettes de foie de veau au lard, purée de patate douce et brocolis",
+    "description": "Des cubes de foie de veau enroulés de lard fumé, grillés avec oignon rouge et poivron : le lard protège le foie qui reste tendre et rosé. Purée de patate douce au beurre et brocolis croquants.",
+    "emoji": "🍢",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 25,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-veau",
+        "qty": 230,
+        "unit": "g",
+        "note": "en tranche épaisse de 3 cm"
+      },
+      {
+        "id": "bacon",
+        "qty": 8,
+        "unit": "piece",
+        "note": "tranches fines de lard fumé"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en carrés"
+      },
+      {
+        "id": "sauge",
+        "qty": 8,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "patate-douce",
+        "qty": 500,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 80,
+        "unit": "ml"
+      },
+      {
+        "id": "brocoli",
+        "qty": 300,
+        "unit": "g",
+        "note": "en bouquets"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "durs, en accompagnement"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 20,
+        "unit": "g",
+        "note": "torréfiées"
+      },
+      {
+        "id": "vinaigre-balsamique",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Épluchez la patate douce, coupez-la en cubes et cuisez-la 15 min à la vapeur ou dans l'eau salée frémissante : elle doit s'écraser à la fourchette. Écrasez-la avec le beurre et le lait chaud, salez, poivrez, gardez au chaud.",
+      "Plongez les œufs 9 min dans l'eau bouillante, refroidissez-les et écalez-les.",
+      "Coupez le foie en 8 gros cubes. Posez une feuille de sauge sur chaque cube et enroulez-le dans une tranche de lard. Enfilez sur 4 brochettes en alternant avec l'oignon rouge et le poivron. Badigeonnez d'huile et poivrez (pas de sel : le lard sale déjà).",
+      "Cuisez les brocolis 4 min à la vapeur : ils doivent rester vert vif et croquants.",
+      "Chauffez une poêle-gril ou un barbecue à feu vif. Grillez les brochettes 2 min sur chacune des 4 faces (8 min en tout) : le lard doit être croustillant, le foie rosé au centre.",
+      "Déglacez la poêle-gril avec le balsamique, versez ce jus sur les brochettes. Servez avec la purée, les brocolis parsemés de graines de courge et de persil, et les œufs durs coupés en deux."
+    ],
+    "tags": [
+      "barbecue",
+      "abats",
+      "riche en protéines",
+      "sans gluten",
+      "sportif"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "fume",
+      "sucre"
+    ],
+    "tips": "Le foie d'agneau convient aussi. Pour des enfants réticents, coupez le foie en cubes plus petits : le lard domine en goût."
+  },
+  {
+    "id": "dab-paprikash-coeurs-volaille",
+    "name": "Paprikash de cœurs de volaille et nokedli au beurre",
+    "description": "Le ragoût hongrois au paprika doux, poivrons et crème aigre, avec des cœurs de poulet mijotés jusqu'à devenir tendres, servi sur des nokedli, petites pâtes fraîches pochées et rissolées au beurre.",
+    "emoji": "🌶️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "coeur-volaille",
+        "qty": 400,
+        "unit": "g",
+        "note": "parés, coupés en deux"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece",
+        "note": "un rouge et un jaune, en lanières"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "concassées"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cas",
+        "note": "doux de Hongrie"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 0.5,
+        "unit": "cac",
+        "note": "carvi"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 15,
+        "unit": "g",
+        "note": "ou saindoux"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 70,
+        "unit": "ml",
+        "note": "ou crème aigre"
+      },
+      {
+        "id": "farine",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "eau",
+        "qty": 70,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Retirez le gras et les caillots des cœurs et coupez-les en deux dans la longueur. Rincez et séchez.",
+      "Dans une cocotte, faites fondre la graisse à feu moyen et faites blondir les oignons 8 min. Retirez du feu, ajoutez le paprika et le carvi et remuez 30 s (hors du feu : le paprika brûle et devient amer).",
+      "Remettez sur le feu, ajoutez les cœurs, l'ail, les poivrons et les tomates, puis le bouillon. Salez, couvrez et laissez mijoter 40 min à feu doux : les cœurs doivent être tendres sous la dent.",
+      "Nokedli : mélangez farine, œufs, eau et une pincée de sel jusqu'à une pâte épaisse et collante qui tombe en ruban. Laissez reposer 10 min.",
+      "Faites bouillir une grande casserole d'eau salée. Raclez la pâte en petits morceaux avec un couteau au-dessus de l'eau (ou passez-la à travers une passoire à gros trous). Quand les nokedli remontent, comptez 1 min et égouttez. Faites-les sauter 2 min dans le beurre.",
+      "Hors du feu, incorporez la crème au paprikash sans faire bouillir. Servez sur les nokedli, avec le persil haché."
+    ],
+    "tags": [
+      "économique",
+      "abats",
+      "mijoté",
+      "réconfortant",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "Mélangez moitié cœurs, moitié hauts de cuisse en dés pour une première fois. Les nokedli se remplacent par des tagliatelles fraîches."
+  },
+  {
+    "id": "dab-galettes-sarrasin-foies",
+    "name": "Galettes de blé noir aux foies de volaille, champignons, œuf et comté",
+    "description": "Des galettes bretonnes au sarrasin, croustillantes et dentelées, garnies d'un œuf miroir, de comté fondu, de foies de volaille poêlés à l'échalote et de champignons, relevées d'algues en paillettes.",
+    "emoji": "🥞",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 25,
+    "restTime": 60,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-sarrasin",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece",
+        "note": "1 pour la pâte, 4 pour garnir"
+      },
+      {
+        "id": "beurre",
+        "qty": 35,
+        "unit": "g",
+        "note": "demi-sel"
+      },
+      {
+        "id": "foie-volaille",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "champignon",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "comte",
+        "qty": 70,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 2,
+        "unit": "g",
+        "note": "dulse ou nori en paillettes"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "mache",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "cidre",
+        "qty": 30,
+        "unit": "ml",
+        "note": "pour déglacer"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez la farine de sarrasin, une pincée de sel et 1 œuf, puis versez l'eau froide petit à petit en fouettant jusqu'à une pâte fluide comme une crème liquide. Laissez reposer 1 h (ou une nuit) au frais.",
+      "Faites fondre 10 g de beurre dans une poêle à feu moyen, faites dorer les champignons émincés 6 min, salez et réservez.",
+      "Dans la même poêle à feu vif, avec 10 g de beurre, faites saisir les foies parés et coupés en deux 1 min par face avec l'échalote ciselée. Déglacez au cidre, laissez réduire 30 s : les foies doivent rester rosés. Salez, poivrez, ajoutez le persil haché.",
+      "Chauffez une grande poêle ou une crêpière bien chaude, beurrez-la légèrement. Versez une louche de pâte en tournant pour couvrir le fond et laissez cuire 2 min jusqu'à ce que les bords soient dentelés et dorés.",
+      "Retournez la galette, cassez 2 œufs au centre, répartissez du comté autour et laissez cuire 3 min à feu moyen, couvercle posé, jusqu'à ce que le blanc soit pris.",
+      "Ajoutez foies et champignons, repliez les bords en carré, parsemez de paillettes d'algues. Recommencez pour la seconde galette et servez avec la mâche."
+    ],
+    "tags": [
+      "rapide",
+      "abats",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "iode",
+      "lacte"
+    ],
+    "tips": "La pâte restante se garde 2 jours au frais : de quoi faire des galettes œuf-jambon-fromage pour le lendemain."
+  },
+  {
+    "id": "dab-lasagnes-foie-epinards",
+    "name": "Lasagnes au bœuf, foie de veau, épinards et ricotta",
+    "description": "Des lasagnes généreuses où le ragù de bœuf est enrichi de foie de veau haché, alternées avec une couche verte d'épinards à la ricotta et du parmesan, gratinées à la mozzarella.",
+    "emoji": "🍽️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 40,
+    "cookTime": 90,
+    "difficulty": "intermediaire",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "foie-veau",
+        "qty": 300,
+        "unit": "g",
+        "note": "mixé en purée"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 800,
+        "unit": "g",
+        "note": "passata"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "epinard",
+        "qty": 500,
+        "unit": "g",
+        "note": "frais ou surgelés"
+      },
+      {
+        "id": "ricotta",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "parmesan",
+        "qty": 80,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pates",
+        "qty": 400,
+        "unit": "g",
+        "note": "feuilles de lasagne sèches"
+      },
+      {
+        "id": "basilic",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Ragù : dans une cocotte, faites revenir l'oignon haché, les carottes et l'ail 6 min à feu moyen dans l'huile. Ajoutez le bœuf et émiettez-le 6 min à feu vif. Ajoutez le foie mixé et remuez 2 min.",
+      "Versez la passata et 200 ml d'eau, ajoutez l'origan, salez, poivrez. Laissez mijoter 40 min à feu doux à demi-couvert : la sauce doit être épaisse mais encore coulante.",
+      "Faites tomber les épinards 3 min dans une poêle à feu vif, pressez-les fortement dans une passoire, hachez-les. Mélangez avec la ricotta, l'œuf, la moitié du parmesan, la muscade, sel et poivre.",
+      "Préchauffez le four à 180 °C. Dans un plat de 30 × 20 cm, étalez une louche de ragù, puis une couche de feuilles de lasagne, du ragù, de la crème d'épinards-ricotta, et recommencez pour obtenir 4 couches de pâtes, en terminant par du ragù.",
+      "Couvrez de mozzarella déchirée et du reste de parmesan. Couvrez d'aluminium et enfournez 30 min, puis retirez l'aluminium et prolongez 15 min jusqu'à ce que le dessus soit doré et bouillonnant.",
+      "Laissez reposer 15 min avant de couper : les parts se tiendront. Parsemez de basilic."
+    ],
+    "tags": [
+      "batch cooking",
+      "familial",
+      "abats",
+      "four",
+      "week-end",
+      "prise de masse"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "Les lasagnes se congèlent en parts individuelles. Avec 500 g d'épinards pour 6, on reste à moins de 100 g par portion."
+  },
+  {
+    "id": "dab-meatloaf-boeuf-foie",
+    "name": "Meatloaf bœuf et foie glacé à la tomate, purée de céleri et haricots verts",
+    "description": "Le pain de viande américain, moelleux et laqué d'un glaçage tomate-vinaigre-miel : bœuf, foie de veau, carottes et champignons râpés le gardent juteux. Servi en tranches épaisses avec purée pommes de terre-céleri et haricots verts.",
+    "emoji": "🍞",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 30,
+    "cookTime": 70,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "foie-veau",
+        "qty": 250,
+        "unit": "g",
+        "note": "mixé en purée"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpé"
+      },
+      {
+        "id": "carotte",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpée finement"
+      },
+      {
+        "id": "champignon",
+        "qty": 150,
+        "unit": "g",
+        "note": "hachés"
+      },
+      {
+        "id": "flocons-avoine",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "60 ml pour la farce, le reste pour la purée"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 15,
+        "unit": "ml"
+      },
+      {
+        "id": "miel",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "haricots-verts",
+        "qty": 500,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 180 °C. Faites tremper les flocons d'avoine 5 min dans 60 ml de lait.",
+      "Dans un saladier, mélangez le bœuf, le foie mixé, l'oignon, la carotte, les champignons, l'avoine trempée, les œufs, la moutarde, le paprika, le thym effeuillé, la moitié du persil, 1,5 cuillère à café de sel et du poivre. Ne pétrissez pas trop : la farce doit rester souple.",
+      "Façonnez un pain de 25 × 10 cm sur une plaque recouverte de papier cuisson (il dore mieux qu'en moule). Mélangez concentré de tomate, vinaigre et miel, et badigeonnez-en la moitié sur le dessus.",
+      "Enfournez 1 h, en ajoutant le reste du glaçage après 40 min : le jus doit être clair et le cœur atteindre 68 °C. Laissez reposer 10 min avant de trancher.",
+      "Pendant la cuisson, cuisez pommes de terre et céleri-rave en morceaux 25 min à l'eau salée. Écrasez-les avec 30 g de beurre et le lait chaud restant, salez.",
+      "Cuisez les haricots verts 7 min à l'eau bouillante salée, égouttez et roulez-les dans le reste du beurre. Servez le meatloaf en tranches de 2 cm avec la purée, les haricots et le reste du persil."
+    ],
+    "tags": [
+      "familial",
+      "abats",
+      "four",
+      "batch cooking",
+      "lunch box"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "Froid, en tranches, il fait un excellent sandwich au pain de seigle avec cornichons et moutarde. Il se congèle tranché."
+  },
+  {
+    "id": "dab-mixed-grill-moelle-rognons",
+    "name": "Mixed grill : bavette, rognons et os à moelle, salade de persil aux câpres",
+    "description": "Le grand plat de grill britannique : bavette saisie, rognons d'agneau grillés et os à moelle rôtis à tartiner sur du pain grillé, avec une salade acidulée de persil, échalote et câpres, et des pommes de terre rôties.",
+    "emoji": "🦴",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "os-a-moelle",
+        "qty": 2,
+        "unit": "piece",
+        "note": "fendus dans la longueur par le boucher"
+      },
+      {
+        "id": "boeuf-bavette",
+        "qty": 220,
+        "unit": "g"
+      },
+      {
+        "id": "rognon",
+        "qty": 220,
+        "unit": "g",
+        "note": "rognons d'agneau, ouverts en deux"
+      },
+      {
+        "id": "persil",
+        "qty": 60,
+        "unit": "g",
+        "note": "plat, feuilles seulement"
+      },
+      {
+        "id": "echalote",
+        "qty": 2,
+        "unit": "piece",
+        "note": "ciselées très fin"
+      },
+      {
+        "id": "capres",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 450,
+        "unit": "g"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 50,
+        "unit": "g",
+        "note": "2 tranches grillées"
+      },
+      {
+        "id": "roquette",
+        "qty": 80,
+        "unit": "g",
+        "note": "cresson"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "fleur de sel"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Cuisez les pommes de terre coupées en gros dés 8 min à l'eau salée, égouttez-les et faites-les rôtir 25 min au four sur une plaque avec la graisse de canard, en les retournant une fois.",
+      "Posez les os à moelle face coupée vers le haut dans un plat, salez. Enfournez 15 à 18 min : la moelle doit être translucide, frémissante et se détacher de l'os, sans fondre totalement.",
+      "Retirez la membrane des rognons, ouvrez-les en deux et ôtez le cœur blanc aux ciseaux. Embrochez-les en croix sur des pics pour qu'ils restent à plat, badigeonnez de 5 ml d'huile et poivrez.",
+      "Salade : mélangez le persil, l'échalote, les câpres et la roquette. Assaisonnez au dernier moment avec le jus du citron, 10 ml d'huile, sel et poivre.",
+      "Chauffez une poêle-gril en fonte à feu très vif avec le reste d'huile. Saisissez la bavette 2 à 3 min par face (saignante) et les rognons 2 min par face (rosés). Salez et laissez reposer 5 min.",
+      "Grillez le pain, tranchez la bavette à contre-fil. Chacun racle la moelle sur son pain, sale à la fleur de sel et pose dessus une pincée de salade de persil, à côté de la bavette, des rognons et des pommes de terre."
+    ],
+    "tags": [
+      "barbecue",
+      "abats",
+      "riche en collagène",
+      "riche en protéines",
+      "week-end"
+    ],
+    "seasons": [],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "herbace",
+      "acidule"
+    ],
+    "tips": "La salade de persil très acidulée est indispensable : elle coupe le gras de la moelle. Le jus de cuisson des os nourrit aussi les pommes de terre."
+  },
+  {
+    "id": "dab-chili-coeur-boeuf",
+    "name": "Chili au cœur de bœuf, haricots noirs et riz à la coriandre",
+    "description": "Un chili épais et fumé où le cœur de bœuf coupé en petits dés remplace en partie le haché : moelleux et intensément beefy. Riz au citron vert, avocat, yaourt et cheddar.",
+    "emoji": "🌶️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "mexicaine",
+    "prepTime": 25,
+    "cookTime": 120,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 500,
+        "unit": "g",
+        "note": "paré, en dés de 1 cm"
+      },
+      {
+        "id": "boeuf-hache",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "haricots-noirs",
+        "qty": 400,
+        "unit": "g",
+        "note": "cuits, égouttés"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "chipotle ou piment en poudre"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "cacao",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 240,
+        "unit": "g"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "avocat",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Séchez les dés de cœur. Dans une cocotte, faites chauffer l'huile à feu vif et saisissez-les en 2 fournées, 3 min chacune, jusqu'à ce qu'ils soient bien bruns. Réservez.",
+      "Dans la même cocotte, faites colorer le bœuf haché 5 min en l'émiettant. Ajoutez oignons, poivrons et ail et faites revenir 6 min à feu moyen.",
+      "Ajoutez cumin, paprika, piment et origan, remuez 1 min pour torréfier les épices. Ajoutez le concentré, les tomates, le cacao, 300 ml d'eau et le cœur saisi. Salez.",
+      "Couvrez et laissez mijoter 1 h 30 à feu doux en remuant toutes les 20 min : le cœur doit être fondant. Ajoutez les haricots noirs les 20 dernières minutes et laissez réduire à découvert jusqu'à une texture épaisse.",
+      "Rincez le riz, cuisez-le 12 min dans 1,5 fois son volume d'eau salée, couvert, puis laissez reposer 5 min. Mélangez-le avec le zeste et le jus d'un citron vert et la moitié de la coriandre.",
+      "Servez le chili sur le riz avec l'avocat en tranches arrosé du second citron vert, une cuillère de yaourt, le cheddar et le reste de coriandre."
+    ],
+    "tags": [
+      "batch cooking",
+      "abats",
+      "mijoté",
+      "familial",
+      "prise de masse",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "fume",
+      "umami"
+    ],
+    "tips": "Comme tout chili, il est encore meilleur le lendemain et se congèle 3 mois."
+  },
+  {
+    "id": "dab-cevapi-foie-ajvar",
+    "name": "Ćevapi bœuf-agneau au foie, ajvar maison et kajmak",
+    "description": "Les petites saucisses grillées des Balkans, ail et paprika, avec un tiers de foie qui les rend plus moelleuses : glissées dans un pain plat chaud avec oignon cru, ajvar de poivrons et aubergine, crème épaisse et salade.",
+    "emoji": "🥙",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 40,
+    "restTime": 60,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 220,
+        "unit": "g"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "foie-agneau",
+        "qty": 120,
+        "unit": "g",
+        "note": "foie d'agneau, mixé"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 0.5,
+        "unit": "cac",
+        "note": "bicarbonate, pour le moelleux"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 200,
+        "unit": "g",
+        "note": "poivrons rouges grillés pelés"
+      },
+      {
+        "id": "aubergine",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 40,
+        "unit": "ml",
+        "note": "épaisse, à la place du kajmak"
+      },
+      {
+        "id": "feta",
+        "qty": 40,
+        "unit": "g",
+        "note": "émiettée dans la crème"
+      },
+      {
+        "id": "pain-pita",
+        "qty": 2,
+        "unit": "piece",
+        "note": "lepinja ou pain plat"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "concombre",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez les viandes, le foie mixé, 2 gousses d'ail râpées, 1 cuillère à café de paprika, le bicarbonate, 1 cuillère à café de sel et du poivre. Pétrissez 3 min jusqu'à ce que la farce devienne collante. Laissez reposer 1 h au frais.",
+      "Ajvar : piquez l'aubergine et faites-la griller 25 min sous le gril du four à 240 °C en la retournant, jusqu'à ce que la peau soit noircie et la chair effondrée. Mixez la chair avec les poivrons grillés, l'ail restant, 20 ml d'huile, le vinaigre, le reste du paprika et du sel.",
+      "Mélangez la crème fraîche et la feta émiettée à la fourchette : c'est le kajmak.",
+      "Les mains mouillées, roulez la farce en petits boudins de 8 cm sur 2 cm (environ 12).",
+      "Chauffez une poêle-gril ou un barbecue à feu vif, huilez légèrement. Grillez les ćevapi 8 min en les tournant 4 fois : ils doivent être bien marqués et juste cuits à cœur.",
+      "Réchauffez les pains dans les sucs. Servez 6 ćevapi par personne dans le pain, avec oignon haché, ajvar, kajmak, et une salade de tomates-concombre au persil."
+    ],
+    "tags": [
+      "barbecue",
+      "abats",
+      "riche en protéines",
+      "week-end",
+      "familial"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "epice",
+      "fume"
+    ],
+    "tips": "L'ajvar se garde une semaine au frais sous un film d'huile. Les ćevapi crus se congèlent très bien."
+  },
+  {
+    "id": "dab-farcis-provencaux-foie",
+    "name": "Petits farcis provençaux au bœuf et foies de volaille, riz complet",
+    "description": "Tomates et poivrons farcis d'un mélange bœuf, foies de volaille, riz complet, parmesan et herbes du jardin, rôtis au four dans leur jus : un plat d'été familial et très dense.",
+    "emoji": "🍅",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 35,
+    "cookTime": 60,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "tomate",
+        "qty": 8,
+        "unit": "piece",
+        "note": "grosses, bien fermes"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 4,
+        "unit": "piece",
+        "note": "petits"
+      },
+      {
+        "id": "courgette",
+        "qty": 2,
+        "unit": "piece",
+        "note": "rondes de préférence"
+      },
+      {
+        "id": "boeuf-hache",
+        "qty": 450,
+        "unit": "g"
+      },
+      {
+        "id": "foie-volaille",
+        "qty": 250,
+        "unit": "g",
+        "note": "hachés au couteau"
+      },
+      {
+        "id": "riz-complet",
+        "qty": 200,
+        "unit": "g",
+        "note": "cru"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "basilic",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "panure",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez le riz complet 25 min dans 3 fois son volume d'eau salée : il doit être juste tendre. Égouttez.",
+      "Décalottez les tomates, videz-les à la cuillère et retournez-les sur une grille 15 min pour qu'elles rendent leur eau. Gardez la pulpe hachée. Coupez le chapeau des poivrons et des courgettes, videz-les (hachez la chair des courgettes).",
+      "Préchauffez le four à 180 °C. Faites revenir l'oignon haché et la chair de courgette 5 min dans 15 ml d'huile.",
+      "Dans un saladier, mélangez le bœuf, les foies hachés, le riz, l'oignon-courgette, l'ail haché, les œufs, la moitié du parmesan, le persil, le basilic, le thym effeuillé, sel et poivre.",
+      "Farcissez généreusement les légumes en tassant. Posez-les dans un grand plat, versez la pulpe de tomate au fond, parsemez le dessus de chapelure et du reste du parmesan, arrosez du reste d'huile, et posez les chapeaux à côté.",
+      "Enfournez 50 min à 1 h : la farce doit être cuite (jus clair), le dessus gratiné et les légumes confits. Arrosez à mi-cuisson avec le jus du plat. Servez chaud ou tiède."
+    ],
+    "tags": [
+      "four",
+      "abats",
+      "familial",
+      "batch cooking",
+      "préparation à l’avance"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "herbace",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Les farcis sont aussi bons froids le lendemain, en lunch box. Ajoutez des pommes de terre en quartiers dans le plat pour un repas encore plus copieux."
+  },
+  {
+    "id": "dab-tagliata-coeur-boeuf",
+    "name": "Tagliata de cœur de bœuf, roquette, parmesan et pommes au romarin",
+    "description": "Le cœur de bœuf se tranche comme un bon steak : saisi à la braise, tranché fin et posé sur la roquette avec tomates cerises, copeaux de parmesan et réduction balsamique, avec des pommes de terre rôties au romarin.",
+    "emoji": "🥩",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 20,
+    "cookTime": 35,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 400,
+        "unit": "g",
+        "note": "en pavés de 2,5 cm, parés"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "romarin",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "roquette",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 40,
+        "unit": "g",
+        "note": "en copeaux"
+      },
+      {
+        "id": "vinaigre-balsamique",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "pignons",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "fleur de sel"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Retirez les parties grasses et les tendons du cœur. Mettez les pavés à mariner 1 h avec 15 ml d'huile, 1 brin de romarin effeuillé, 1 gousse d'ail écrasée et du poivre.",
+      "Préchauffez le four à 210 °C. Coupez les pommes de terre en quartiers, mélangez-les avec 20 ml d'huile, le reste du romarin, l'ail restant en chemise et du sel. Rôtissez 35 min en remuant à mi-cuisson, jusqu'à ce qu'elles soient dorées et croustillantes.",
+      "Faites griller les pignons 2 min à sec dans une poêle.",
+      "Chauffez une poêle en fonte ou un gril à feu très vif. Saisissez les pavés de cœur 2 min par face : le centre doit rester rose. Laissez reposer 5 min sous une feuille d'aluminium.",
+      "Disposez la roquette et les tomates cerises coupées en deux sur un plat, arrosez du reste d'huile et du jus de citron.",
+      "Tranchez le cœur en lamelles fines en biais, posez-les sur la salade, arrosez de balsamique, ajoutez les copeaux de parmesan, les pignons et la fleur de sel. Servez avec les pommes de terre."
+    ],
+    "tags": [
+      "rapide",
+      "abats",
+      "riche en protéines",
+      "sportif",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "grille",
+      "herbace",
+      "acidule"
+    ],
+    "tips": "Coupé à contre-fil très fin, le cœur est aussi tendre qu'un faux-filet pour une fraction du prix."
+  },
+  {
+    "id": "dab-oxtail-soup-orge",
+    "name": "Oxtail soup : soupe de queue de bœuf à l'orge et aux légumes racines",
+    "description": "La soupe anglaise de l'hiver : queue de bœuf rôtie puis mijotée 4 h jusqu'à se détacher de l'os, dans un bouillon brun et sirupeux de collagène, avec orge perlé, carottes, navets, chou frisé et persil. Un repas complet dans le bol.",
+    "emoji": "🍲",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 30,
+    "cookTime": 270,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-queue",
+        "qty": 1200,
+        "unit": "g",
+        "note": "en tronçons"
+      },
+      {
+        "id": "farine",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 20,
+        "unit": "g",
+        "note": "ou suif"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 4,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "navet",
+        "qty": 2,
+        "unit": "piece",
+        "note": "rutabaga, en dés"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 200,
+        "unit": "ml",
+        "note": "ou porto"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "orge",
+        "qty": 160,
+        "unit": "g",
+        "note": "perlé, rincé"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 300,
+        "unit": "g",
+        "note": "chou frisé (kale), émincé"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 15,
+        "unit": "ml",
+        "note": "en guise de Worcestershire"
+      },
+      {
+        "id": "persil",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 120,
+        "unit": "g",
+        "note": "beurré, pour servir"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Salez et farinez légèrement les tronçons de queue. Dans une grande cocotte, faites chauffer la graisse à feu vif et colorez-les en 2 fournées, 4 min par face, jusqu'à une croûte bien brune. Réservez.",
+      "Baissez à feu moyen, faites revenir oignons, la moitié des carottes et le céleri 6 min. Ajoutez le concentré et remuez 1 min, puis déglacez au vin rouge en grattant les sucs. Laissez réduire de moitié.",
+      "Remettez la viande, versez le bouillon, ajoutez thym et laurier. Portez à frémissement, couvrez et laissez cuire 3 h 30 à feu très doux : la viande doit se détacher toute seule de l'os.",
+      "Sortez les morceaux de queue, laissez-les tiédir et effilochez la viande en jetant os et gras. Dégraissez le bouillon à la louche (gardez la graisse pour rôtir des pommes de terre).",
+      "Ajoutez l'orge, le reste des carottes, les navets et le poireau émincé au bouillon et laissez mijoter 35 min : l'orge doit être tendre et la soupe épaissie. Ajoutez le chou frisé émincé les 10 dernières minutes.",
+      "Remettez la viande effilochée, ajoutez la sauce soja, salez et poivrez. Servez très chaud avec beaucoup de persil haché et le pain de seigle beurré."
+    ],
+    "tags": [
+      "mijoté",
+      "riche en collagène",
+      "réconfortant",
+      "batch cooking",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Préparez-la la veille : au frais, le bouillon prend en gelée et la graisse fige en surface, il suffit de la retirer."
+  },
+  {
+    "id": "dab-hochepot-queue-boeuf",
+    "name": "Hochepot flamand à la queue de bœuf, poitrine et chou",
+    "description": "Le pot-au-feu des Flandres : queue de bœuf, poitrine de porc et pied de veau mijotés avec chou vert, carottes, navets, poireaux et pommes de terre. On boit le bouillon gélatineux, puis on mange viandes et légumes à la moutarde.",
+    "emoji": "🥬",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 30,
+    "cookTime": 240,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boeuf-queue",
+        "qty": 1500,
+        "unit": "g",
+        "note": "en tronçons"
+      },
+      {
+        "id": "porc-poitrine",
+        "qty": 300,
+        "unit": "g",
+        "note": "demi-sel ou fraîche"
+      },
+      {
+        "id": "pied-veau",
+        "qty": 500,
+        "unit": "g",
+        "note": "fendu en deux"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 1,
+        "unit": "piece",
+        "note": "de Milan, en quartiers"
+      },
+      {
+        "id": "carotte",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "navet",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "poireau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "piqués de clous de girofle"
+      },
+      {
+        "id": "girofle",
+        "qty": 4,
+        "unit": "pincee",
+        "note": "4 clous"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1000,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "genièvre ou carvi"
+      },
+      {
+        "id": "persil",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "moutarde",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "cornichon",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "gros sel"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Mettez la queue de bœuf, le pied de veau et la poitrine dans une grande marmite, couvrez largement d'eau froide et portez à ébullition. Écumez soigneusement pendant 10 min.",
+      "Ajoutez les oignons piqués, le laurier, le thym, le genièvre, une poignée de gros sel et le poivre en grains. Laissez frémir 2 h 30 à couvert, à tout petits bouillons.",
+      "Ajoutez carottes, navets et poireaux ficelés, et poursuivez 40 min.",
+      "Blanchissez les quartiers de chou 5 min dans une casserole d'eau bouillante salée (il sera plus digeste), puis ajoutez-les dans la marmite avec les pommes de terre épluchées. Cuisez encore 30 min : les pommes de terre doivent être tendres.",
+      "Retirez les os du pied de veau et coupez la poitrine en tranches. Dégraissez le bouillon en surface.",
+      "Servez d'abord un bol de bouillon brûlant au persil, puis les viandes et les légumes dans un grand plat, avec moutarde, cornichons et gros sel."
+    ],
+    "tags": [
+      "mijoté",
+      "riche en collagène",
+      "familial",
+      "week-end",
+      "économique"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "reconfortant",
+      "umami"
+    ],
+    "tips": "Le bouillon restant, filtré, se congèle et sert de base à une soupe à l'orge. Les restes de viande se mangent froids en vinaigrette."
+  },
+  {
+    "id": "dab-rosol-polonais",
+    "name": "Rosół polonais au poulet et jarret de bœuf, nouilles aux œufs",
+    "description": "Le bouillon du dimanche en Pologne : poulet, carcasses et jarret de bœuf mijotés 3 h avec légumes racines et oignon brûlé, pour un bouillon doré et limpide servi avec fines nouilles, carottes, viande et aneth.",
+    "emoji": "🍜",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 180,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-cuisse",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "carcasse-poulet",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 500,
+        "unit": "g",
+        "note": "avec un os si possible"
+      },
+      {
+        "id": "carotte",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "panais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ou racine de persil"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "coupé en deux, brûlé à sec"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 150,
+        "unit": "g",
+        "note": "une feuille de chou de Milan"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "piment de la Jamaïque"
+      },
+      {
+        "id": "pates-fraiches",
+        "qty": 250,
+        "unit": "g",
+        "note": "fines nouilles aux œufs"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 3500,
+        "unit": "ml",
+        "note": "froide"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Mettez les cuisses, les carcasses et le jarret dans un grand faitout, couvrez de 3,5 l d'eau froide et portez lentement à frémissement à feu moyen. Écumez pendant 10 min jusqu'à ce que la mousse ne remonte plus.",
+      "Pendant ce temps, faites noircir les demi-oignons face coupée dans une poêle sèche à feu vif 5 min : ils donneront la couleur dorée.",
+      "Ajoutez l'oignon brûlé, les légumes entiers épluchés (carottes, panais, céleri, poireau, chou), laurier, piment de la Jamaïque, poivre en grains et 2 cuillères à café de sel.",
+      "Laissez frémir 3 h à couvert entrouvert, sans jamais bouillir fort (le bouillon resterait trouble). Retirez les cuisses au bout de 1 h 30 pour qu'elles restent moelleuses, effilochez-les et réservez.",
+      "Filtrez le bouillon, rectifiez le sel. Coupez les carottes et le céleri en rondelles, effilochez le jarret.",
+      "Cuisez les nouilles 3 min dans de l'eau salée à part, égouttez-les et répartissez-les dans des bols creux avec les viandes et les légumes. Versez le bouillon brûlant et parsemez d'aneth et de persil."
+    ],
+    "tags": [
+      "riche en collagène",
+      "réconfortant",
+      "batch cooking",
+      "familial",
+      "mijoté"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "reconfortant",
+      "herbace",
+      "umami"
+    ],
+    "tips": "Les nouilles se cuisent toujours à part pour ne pas troubler le bouillon. Le bouillon restant se congèle en bocaux."
+  },
+  {
+    "id": "dab-soljanka-viandes",
+    "name": "Soljanka aux trois viandes, cornichons, olives et crème aigre",
+    "description": "La soupe acidulée et fumée d'Europe de l'Est : bouillon de bœuf épais à la tomate, jarret effiloché, saucisse fumée et jambon, cornichons, câpres et olives, servie avec une rondelle de citron, de la crème aigre et du pain de seigle.",
+    "emoji": "🥒",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 150,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-jarret",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "os-boeuf",
+        "qty": 800,
+        "unit": "g",
+        "note": "avec moelle"
+      },
+      {
+        "id": "saucisse-morteau",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ou saucisse fumée de Montbéliard"
+      },
+      {
+        "id": "jambon-blanc",
+        "qty": 4,
+        "unit": "piece",
+        "note": "tranches, en lanières"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "cornichon",
+        "qty": 150,
+        "unit": "g",
+        "note": "malossol, en dés"
+      },
+      {
+        "id": "cornichons-saumure",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "capres",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "olive",
+        "qty": 60,
+        "unit": "g",
+        "note": "noires"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 80,
+        "unit": "ml",
+        "note": "ou smetana"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez le jarret et les os dans un faitout avec 2,5 l d'eau froide et le laurier. Portez à frémissement, écumez 10 min, puis laissez cuire 2 h à couvert à feu doux. Retirez la viande et effilochez-la ; filtrez le bouillon (gardez environ 1,8 l).",
+      "Dans une cocotte, faites fondre le beurre à feu moyen et faites revenir les oignons émincés, la carotte râpée et le poivron en lanières 8 min.",
+      "Ajoutez le concentré de tomate et le paprika, remuez 2 min jusqu'à ce que le concentré fonce. Ajoutez les cornichons en dés et la saumure, remuez 2 min.",
+      "Versez le bouillon, ajoutez les pommes de terre et laissez cuire 15 min.",
+      "Ajoutez la viande effilochée, la saucisse en rondelles, le jambon en lanières, les câpres et les olives. Laissez frémir 10 min pour que les saveurs fumées se diffusent. Poivrez, goûtez avant de saler.",
+      "Servez dans des bols avec une rondelle de citron, une cuillerée de crème, l'aneth et le persil hachés, et le pain de seigle."
+    ],
+    "tags": [
+      "riche en collagène",
+      "réconfortant",
+      "batch cooking",
+      "fermenté",
+      "mijoté"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "acidule",
+      "fume",
+      "umami"
+    ],
+    "tips": "La soljanka est la soupe idéale pour finir des restes de viandes cuites ou de charcuterie. Encore meilleure réchauffée le lendemain."
+  },
+  {
+    "id": "dab-cotriade-bretonne",
+    "name": "Cotriade bretonne au maquereau, sardines et moules",
+    "description": "La soupe des pêcheurs bretons : pommes de terre et poireaux cuits dans un bouillon au beurre, puis maquereaux, sardines, merlu et moules pochés quelques minutes. On boit le bouillon sur des tartines, puis on mange le poisson à la vinaigrette à la ciboulette.",
+    "emoji": "🐟",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 30,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 500,
+        "unit": "g",
+        "note": "2 maquereaux en filets ou tronçons"
+      },
+      {
+        "id": "sardine",
+        "qty": 300,
+        "unit": "g",
+        "note": "écaillées, étêtées"
+      },
+      {
+        "id": "cabillaud",
+        "qty": 300,
+        "unit": "g",
+        "note": "merlu ou lieu"
+      },
+      {
+        "id": "moule",
+        "qty": 1000,
+        "unit": "g",
+        "note": "de bouchot, grattées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 750,
+        "unit": "g",
+        "note": "à chair ferme, en gros morceaux"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g",
+        "note": "demi-sel"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 1500,
+        "unit": "ml",
+        "note": "ou eau"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 3,
+        "unit": "g",
+        "note": "dulse ou laitue de mer, émiettée"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "huile-colza",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 120,
+        "unit": "g",
+        "note": "tranches grillées"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande cocotte, faites fondre le beurre à feu moyen et faites suer les oignons et poireaux émincés 8 min sans coloration, jusqu'à ce qu'ils soient tendres.",
+      "Ajoutez les pommes de terre, l'ail, le thym et le laurier, versez le fumet et portez à ébullition. Laissez cuire 15 min à frémissement : les pommes de terre doivent être presque tendres.",
+      "Ajoutez d'abord les tronçons de maquereau et le merlu, laissez pocher 5 min à petit frémissement. Ajoutez les sardines et les moules, couvrez et poursuivez 4 à 5 min : les moules doivent être ouvertes (jetez celles qui restent fermées).",
+      "Préparez la vinaigrette : fouettez la moutarde, le vinaigre et l'huile de colza, ajoutez la ciboulette ciselée, sel et poivre.",
+      "Retirez délicatement poissons, moules et pommes de terre dans un plat chaud avec une écumoire. Ajoutez les algues émiettées au bouillon et rectifiez l'assaisonnement.",
+      "Servez d'abord le bouillon versé sur les tartines de pain grillé, puis le poisson, les moules et les pommes de terre arrosés de vinaigrette à la ciboulette."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "économique",
+      "réconfortant"
+    ],
+    "seasons": [
+      "printemps",
+      "ete",
+      "automne"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "Tous les poissons du marché conviennent : congre, rouget, vieille, chinchard. Les poissons gras (maquereau, sardine) font la richesse en oméga-3 et vitamine D."
+  },
+  {
+    "id": "dab-markklosschensuppe",
+    "name": "Bouillon de bœuf aux quenelles de moelle et jarret effiloché",
+    "description": "La Markklößchensuppe des grands-mères allemandes et autrichiennes : un consommé de jarret et d'os longuement mijoté, garni de petites quenelles moelleuses de moelle, chapelure et persil, avec légumes en julienne et pommes de terre.",
+    "emoji": "🥣",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 35,
+    "cookTime": 210,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-jarret",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "os-a-moelle",
+        "qty": 3,
+        "unit": "piece",
+        "note": "pour extraire 100 g de moelle"
+      },
+      {
+        "id": "os-boeuf",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "carotte",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "brûlé à sec"
+      },
+      {
+        "id": "panure",
+        "qty": 90,
+        "unit": "g",
+        "note": "chapelure fine"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "eau",
+        "qty": 3000,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Poussez la moelle hors des os avec le pouce (trempez-les 5 min dans l'eau chaude si elle résiste). Réservez 100 g de moelle au frais ; mettez les os vidés avec les os de bœuf.",
+      "Mettez le jarret et tous les os dans un faitout avec 3 l d'eau froide. Portez à frémissement, écumez 10 min, puis ajoutez l'oignon brûlé, la moitié des carottes et du céleri, le vert des poireaux, le laurier et du poivre en grains. Laissez frémir 3 h à couvert entrouvert.",
+      "Quenelles : écrasez la moelle froide à la fourchette jusqu'à ce qu'elle soit crémeuse, ajoutez les œufs, la chapelure, la moitié du persil haché, la muscade, sel et poivre. Laissez reposer 20 min au frais : la pâte doit se tenir.",
+      "Filtrez le bouillon, effilochez le jarret. Coupez le reste des carottes, du céleri et le blanc des poireaux en fine julienne.",
+      "Portez le bouillon à frémissement, ajoutez les dés de pommes de terre et la julienne, cuisez 12 min. Formez des billes de 2 cm avec les mains mouillées et pochez-les 10 min dans le bouillon frémissant : elles remontent et gonflent.",
+      "Ajoutez le jarret effiloché, rectifiez le sel et servez dans des assiettes creuses avec le reste du persil et la ciboulette."
+    ],
+    "tags": [
+      "riche en collagène",
+      "réconfortant",
+      "week-end",
+      "mijoté",
+      "abats"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "Testez une quenelle avant de pocher le reste : si elle se défait, ajoutez une cuillère de chapelure."
+  },
+  {
+    "id": "dab-hergma-pieds-veau",
+    "name": "Hergma : pieds de veau mijotés aux pois chiches, blé et blettes",
+    "description": "Le grand plat d'hiver marocain : pieds de veau confits des heures avec pois chiches, blé concassé, ail et épices, jusqu'à une sauce collante et brillante de collagène. Relevé de harissa, citron et coriandre.",
+    "emoji": "🦶",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nord-africaine",
+    "prepTime": 25,
+    "cookTime": 240,
+    "restTime": 720,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "pied-veau",
+        "qty": 800,
+        "unit": "g",
+        "note": "coupé en morceaux par le boucher, flambé"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 250,
+        "unit": "g",
+        "note": "en gros cubes"
+      },
+      {
+        "id": "pois-chiches",
+        "qty": 300,
+        "unit": "g",
+        "note": "cuits ou trempés la veille"
+      },
+      {
+        "id": "boulgour",
+        "qty": 100,
+        "unit": "g",
+        "note": "ou blé concassé"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "râpés"
+      },
+      {
+        "id": "ail",
+        "qty": 6,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomate",
+        "qty": 3,
+        "unit": "piece",
+        "note": "râpées"
+      },
+      {
+        "id": "carotte",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en gros tronçons"
+      },
+      {
+        "id": "epinard",
+        "qty": 300,
+        "unit": "g",
+        "note": "blettes, feuilles émincées"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "gingembre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "harissa",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "coriandre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 100,
+        "unit": "g",
+        "note": "pain de campagne ou khobz"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Si les pois chiches sont secs, faites-les tremper 12 h la veille. Faites tremper le boulgour 30 min dans l'eau froide et égouttez-le.",
+      "Blanchissez les pieds de veau : couvrez-les d'eau froide, portez à ébullition 5 min, égouttez et rincez-les.",
+      "Dans une grande cocotte, mélangez pieds, jarret, oignons râpés, ail écrasé, tomates râpées, huile, toutes les épices, la moitié de la coriandre et du persil hachés, sel et poivre. Faites revenir 5 min à feu moyen en remuant.",
+      "Ajoutez les pois chiches et couvrez d'eau de 3 cm. Portez à ébullition, puis couvrez et laissez cuire 3 h à feu très doux (ou 1 h 15 en autocuiseur).",
+      "Ajoutez le boulgour (en vrac ou dans une gaze), les carottes et les blettes émincées et poursuivez 45 min : la sauce doit devenir épaisse, collante et brillante et la chair des pieds se détacher des os. Ajoutez un peu d'eau si nécessaire.",
+      "Retirez les gros os, incorporez la harissa, le jus du citron et le reste des herbes. Servez brûlant avec le pain pour saucer."
+    ],
+    "tags": [
+      "riche en collagène",
+      "abats",
+      "mijoté",
+      "économique",
+      "week-end"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "reconfortant",
+      "umami"
+    ],
+    "tips": "La hergma se réchauffe très bien : elle se fige au frais grâce au collagène et redevient onctueuse en 10 min à feu doux."
+  },
+  {
+    "id": "dab-waterzooi-gantois",
+    "name": "Waterzooi gantois au poulet, poireaux et jaunes d'œuf",
+    "description": "La soupe-repas de Gand : cuisses de poulet pochées dans un bouillon de carcasses avec poireaux, carottes et céleri en julienne, puis liée à la crème et aux jaunes d'œuf. Velouté, doux et rassasiant, avec pommes de terre.",
+    "emoji": "🍲",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 30,
+    "cookTime": 75,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-cuisse",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "carcasse-poulet",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "eau",
+        "qty": 2000,
+        "unit": "ml"
+      },
+      {
+        "id": "poireau",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "carotte",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en julienne"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 800,
+        "unit": "g",
+        "note": "en gros dés"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 120,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "estragon",
+        "qty": 5,
+        "unit": "g",
+        "note": "ou cerfeuil"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "blanc"
+      }
+    ],
+    "steps": [
+      "Mettez les carcasses, l'oignon coupé en deux, thym, laurier et 2 l d'eau froide dans un faitout. Portez à frémissement, écumez et laissez cuire 30 min. Ajoutez les cuisses de poulet et pochez-les 35 min à petit frémissement.",
+      "Retirez les cuisses, enlevez peau et os et coupez la chair en gros morceaux. Filtrez le bouillon (gardez 1,5 l).",
+      "Dans la cocotte, faites fondre le beurre à feu doux et faites suer la julienne de poireaux, carottes et céleri 8 min sans coloration.",
+      "Versez le bouillon, ajoutez les pommes de terre et laissez cuire 15 min : elles doivent être tendres.",
+      "Fouettez les jaunes avec la crème et le jus de citron. Hors du feu, versez une louche de bouillon chaud dessus en fouettant, puis reversez le tout dans la cocotte. Remettez sur feu très doux 2 à 3 min en remuant, sans faire bouillir, jusqu'à ce que la soupe nappe légèrement la cuillère.",
+      "Ajoutez le poulet, la muscade, salez et poivrez. Servez dans des assiettes creuses avec le persil et l'estragon hachés."
+    ],
+    "tags": [
+      "réconfortant",
+      "familial",
+      "riche en collagène",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "cremeux",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "La version d'origine se fait au poisson (lotte, cabillaud) : même méthode, avec un fumet à la place du bouillon de carcasse."
+  },
+  {
+    "id": "dab-scotch-broth-agneau",
+    "name": "Scotch broth au collier d'agneau, orge et pois cassés",
+    "description": "La soupe épaisse des Highlands : collier d'agneau mijoté sur l'os avec orge perlé, pois cassés, rutabaga, carottes, poireaux et chou, jusqu'à un bouillon riche et nourrissant. Un repas entier, le persil en fin.",
+    "emoji": "🐑",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 25,
+    "cookTime": 150,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 900,
+        "unit": "g",
+        "note": "collier ou épaule sur os, en morceaux"
+      },
+      {
+        "id": "orge",
+        "qty": 100,
+        "unit": "g",
+        "note": "perlé, rincé"
+      },
+      {
+        "id": "lentilles-vertes",
+        "qty": 60,
+        "unit": "g",
+        "note": "ou pois cassés"
+      },
+      {
+        "id": "carotte",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "navet",
+        "qty": 2,
+        "unit": "piece",
+        "note": "rutabaga, en dés"
+      },
+      {
+        "id": "poireau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 250,
+        "unit": "g",
+        "note": "kale ou chou de Milan, émincé"
+      },
+      {
+        "id": "eau",
+        "qty": 2500,
+        "unit": "ml"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "persil",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 120,
+        "unit": "g",
+        "note": "ou oatcakes"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez l'agneau dans un faitout avec 2,5 l d'eau froide, portez à ébullition et écumez soigneusement 10 min. Ajoutez le laurier, le thym et une cuillère à café de sel.",
+      "Ajoutez l'orge et les pois cassés rincés, couvrez et laissez frémir 1 h à feu doux.",
+      "Ajoutez carottes, rutabaga, oignon haché et le blanc des poireaux émincé. Poursuivez 50 min à couvert : l'orge doit être fondant et la viande se détacher de l'os.",
+      "Sortez la viande, retirez os et gras, coupez-la en petits morceaux et remettez-la dans la soupe. Dégraissez la surface à la louche.",
+      "Ajoutez le chou et le vert des poireaux émincé et cuisez 10 min de plus : le chou doit rester vert. Salez et poivrez.",
+      "Servez très chaud avec beaucoup de persil haché et du pain de seigle."
+    ],
+    "tags": [
+      "mijoté",
+      "économique",
+      "réconfortant",
+      "batch cooking",
+      "riche en collagène"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "reconfortant",
+      "herbace"
+    ],
+    "tips": "La soupe épaissit en refroidissant : allongez-la d'un peu d'eau au réchauffage. Elle se garde 4 jours au frais."
+  },
+  {
+    "id": "dab-ciorba-perisoare",
+    "name": "Ciorbă de perișoare : soupe aigre roumaine aux boulettes bœuf-foie",
+    "description": "La soupe acidulée de Roumanie : boulettes de bœuf, foie de volaille et riz pochées dans un bouillon d'os aux légumes, aigri au jus de cornichon et au citron, liée à la crème et au jaune d'œuf, avec livèche et aneth.",
+    "emoji": "🥣",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "foie-volaille",
+        "qty": 150,
+        "unit": "g",
+        "note": "hachés au couteau"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 70,
+        "unit": "g",
+        "note": "cru, pour les boulettes"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 1800,
+        "unit": "ml",
+        "note": "bouillon d'os"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "panais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece",
+        "note": "avec les feuilles (pour la livèche)"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 500,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "cornichons-saumure",
+        "qty": 150,
+        "unit": "ml",
+        "note": "ou borș, son fermenté"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Boulettes : mélangez le bœuf, les foies hachés, le riz cru rincé, l'œuf, la moitié d'un oignon râpé, la moitié du persil haché, 1 cuillère à café de sel et du poivre. Formez des billes de 3 cm les mains mouillées (environ 24).",
+      "Portez le bouillon à ébullition dans un grand faitout. Ajoutez le reste des oignons hachés, les carottes, le panais et le céleri en dés et le poivron, et laissez cuire 10 min.",
+      "Ajoutez les pommes de terre et les tomates concassées, puis glissez les boulettes une à une dans le bouillon frémissant. Laissez cuire 30 min à petit frémissement sans remuer les 10 premières minutes : le riz doit être gonflé dans les boulettes.",
+      "Versez le jus de cornichon et le jus du citron, goûtez : la soupe doit être franchement acidulée. Salez.",
+      "Fouettez les jaunes d'œuf avec la crème, ajoutez une louche de bouillon chaud en fouettant, puis reversez hors du feu dans la soupe en remuant.",
+      "Servez avec l'aneth, le reste du persil et les feuilles de céleri hachés, et le pain de seigle. On ajoute un piment frais croqué à part pour les amateurs."
+    ],
+    "tags": [
+      "abats",
+      "familial",
+      "réconfortant",
+      "fermenté",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps",
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "La soupe ne doit plus bouillir après l'ajout des jaunes. Elle se réchauffe doucement, à feu très doux."
+  },
+  {
+    "id": "dab-magiritsa-agneau",
+    "name": "Magiritsa : soupe grecque d'agneau et d'abats à l'aneth et citron",
+    "description": "La soupe de Pâques grecque, qui rompt le jeûne : épaule, foie et cœur d'agneau, riz, oignons nouveaux, laitue et beaucoup d'aneth, dans un bouillon lié à l'œuf et au citron. Douce, herbacée et très nourrissante.",
+    "emoji": "🌿",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 30,
+    "cookTime": 90,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 400,
+        "unit": "g",
+        "note": "en petits dés, os réservé"
+      },
+      {
+        "id": "foie-agneau",
+        "qty": 250,
+        "unit": "g",
+        "note": "foie d'agneau"
+      },
+      {
+        "id": "coeur-boeuf",
+        "qty": 200,
+        "unit": "g",
+        "note": "cœur d'agneau"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1800,
+        "unit": "ml",
+        "note": "ou bouillon d'agneau"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "laitue",
+        "qty": 1,
+        "unit": "piece",
+        "note": "romaine, émincée"
+      },
+      {
+        "id": "aneth",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-levain",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Blanchissez le foie et le cœur 3 min dans de l'eau bouillante salée, égouttez-les, puis coupez-les en très petits dés de 5 mm (ils se fondent ainsi dans la soupe).",
+      "Dans une cocotte, faites chauffer l'huile à feu moyen et faites revenir les dés d'agneau 5 min. Ajoutez les oignons nouveaux émincés et faites-les fondre 5 min.",
+      "Ajoutez les abats en dés et remuez 3 min. Versez le bouillon chaud, salez, poivrez, et laissez frémir 45 min à couvert.",
+      "Ajoutez le riz, la laitue émincée et la moitié de l'aneth haché ; cuisez 18 min : le riz doit être tendre.",
+      "Avgolemono : battez les œufs entiers 2 min jusqu'à ce qu'ils moussent, ajoutez le jus des citrons en filet sans cesser de fouetter. Versez 3 louches de bouillon chaud une à une en fouettant, puis reversez le tout dans la cocotte hors du feu.",
+      "Remuez 1 min sur feu très doux sans bouillir, jusqu'à ce que la soupe soit veloutée. Servez avec le reste de l'aneth, le persil et le pain."
+    ],
+    "tags": [
+      "abats",
+      "familial",
+      "réconfortant",
+      "riche en protéines",
+      "week-end"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "cremeux"
+    ],
+    "tips": "Le foie coupé très fin et blanchi perd toute amertume : la soupe convient même aux plus réticents."
+  },
+  {
+    "id": "dab-zuppa-farro-jarret-veau",
+    "name": "Zuppa de petit épeautre au jarret de veau, cavolo nero et gremolata",
+    "description": "Une soupe-repas toscane : jarret de veau mijoté sur l'os, petit épeautre, haricots blancs et chou noir, enrichie d'une croûte de parmesan. Une gremolata citron-ail-persil réveille chaque bol.",
+    "emoji": "🥬",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 25,
+    "cookTime": 135,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "veau-jarret",
+        "qty": 3,
+        "unit": "piece",
+        "note": "tranches d'osso buco"
+      },
+      {
+        "id": "orge",
+        "qty": 180,
+        "unit": "g",
+        "note": "petit épeautre ou farro, rincé"
+      },
+      {
+        "id": "haricots-blancs",
+        "qty": 250,
+        "unit": "g",
+        "note": "cannellini cuits"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 300,
+        "unit": "g",
+        "note": "cavolo nero ou chou frisé"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "parmesan",
+        "qty": 70,
+        "unit": "g",
+        "note": "dont une croûte"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "zeste"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Salez les jarrets. Dans une cocotte, faites chauffer 20 ml d'huile à feu vif et dorez-les 4 min par face. Réservez.",
+      "Baissez à feu moyen, faites suer oignon, carotte et céleri en dés 7 min avec le romarin. Ajoutez 2 gousses d'ail hachées et les tomates, remuez 2 min.",
+      "Remettez les jarrets, versez le bouillon, ajoutez la croûte de parmesan. Couvrez et laissez mijoter 1 h 15 à feu doux : la viande doit commencer à se détacher de l'os.",
+      "Ajoutez le petit épeautre et cuisez 35 min. Sortez les jarrets, détachez la viande en morceaux, récupérez la moelle des os et remettez le tout dans la soupe.",
+      "Ajoutez les haricots et le chou émincé (sans les côtes dures) et cuisez 10 min. Ajoutez un peu d'eau si la soupe est trop épaisse : elle doit rester à la cuillère.",
+      "Gremolata : hachez ensemble le persil, le zeste de citron et la dernière gousse d'ail. Servez la soupe avec un filet d'huile d'olive, le parmesan restant râpé et une cuillerée de gremolata."
+    ],
+    "tags": [
+      "mijoté",
+      "riche en collagène",
+      "batch cooking",
+      "réconfortant",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "herbace",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "La croûte de parmesan, gardée au congélateur, donne un fond umami incomparable : retirez-la avant de servir."
+  },
+  {
+    "id": "dab-sopa-picadillo",
+    "name": "Sopa de picadillo andalouse : bouillon de poule et jambon, œuf dur et menthe",
+    "description": "La soupe de puchero d'Andalousie : bouillon d'os de jambon, de bœuf et de poule mijoté avec pois chiches, servi avec la poule effilochée, des dés de jambon serrano, des œufs durs, du riz et de la menthe fraîche.",
+    "emoji": "🥚",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 180,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-cuisse",
+        "qty": 3,
+        "unit": "piece",
+        "note": "ou un morceau de poule"
+      },
+      {
+        "id": "carcasse-poulet",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "os-boeuf",
+        "qty": 600,
+        "unit": "g",
+        "note": "os de jambon et os de bœuf"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 6,
+        "unit": "piece",
+        "note": "serrano, en petits dés"
+      },
+      {
+        "id": "pois-chiches",
+        "qty": 250,
+        "unit": "g",
+        "note": "cuits"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "navet",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece",
+        "note": "durs"
+      },
+      {
+        "id": "menthe",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 3000,
+        "unit": "ml"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez les os, la carcasse, le jarret et les cuisses dans une grande marmite avec 3 l d'eau froide. Portez à frémissement et écumez 10 min.",
+      "Ajoutez carottes, poireau, céleri et navet entiers, et laissez frémir 2 h 30 à couvert entrouvert. Retirez les cuisses au bout de 1 h 15 pour qu'elles restent juteuses.",
+      "Effilochez le poulet et le jarret. Filtrez le bouillon (gardez 1,8 l), coupez carottes et navet en dés.",
+      "Faites cuire les œufs 10 min dans l'eau bouillante, refroidissez-les et écalez-les, puis hachez-les grossièrement.",
+      "Portez le bouillon filtré à ébullition, ajoutez le riz et les pommes de terre et cuisez 15 min. Ajoutez les pois chiches, les viandes effilochées et les légumes en dés, réchauffez 5 min. Goûtez avant de saler (le jambon sale).",
+      "Servez dans des bols, garnis des œufs hachés, des dés de jambon serrano, de feuilles de menthe et de persil ciselés, et d'un trait de citron."
+    ],
+    "tags": [
+      "riche en collagène",
+      "familial",
+      "réconfortant",
+      "batch cooking",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "herbace",
+      "reconfortant",
+      "umami"
+    ],
+    "tips": "En Andalousie, on ajoute souvent un trait de fino (xérès sec) dans le bol. Le reste du puchero (viandes, pois chiches) se mange en ropa vieja le lendemain."
+  },
+  {
+    "id": "dab-galbitang-plat-de-cote",
+    "name": "Galbitang : bouillon coréen de plat de côtes, radis et vermicelles",
+    "description": "Une soupe claire et réconfortante de Corée : plat de côtes et jarret de bœuf mijotés avec radis blanc, ail et oignon, servis avec vermicelles, rubans d'œuf, ciboule et riz, des épinards au sésame et du kimchi.",
+    "emoji": "🍜",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "coreenne",
+    "prepTime": 20,
+    "cookTime": 150,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "boeuf-plat-de-cote",
+        "qty": 700,
+        "unit": "g",
+        "note": "en tronçons de 6 cm"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 500,
+        "unit": "g",
+        "note": "en gros morceaux"
+      },
+      {
+        "id": "radis",
+        "qty": 400,
+        "unit": "g",
+        "note": "radis blanc (daikon), en carrés"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 8,
+        "unit": "gousse"
+      },
+      {
+        "id": "gingembre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 2500,
+        "unit": "ml"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "sauce-poisson",
+        "qty": 15,
+        "unit": "ml"
+      },
+      {
+        "id": "nouilles-riz",
+        "qty": 100,
+        "unit": "g",
+        "note": "vermicelles de patate douce"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 4,
+        "unit": "g",
+        "note": "émiettée"
+      },
+      {
+        "id": "kimchi",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "epinard",
+        "qty": 300,
+        "unit": "g",
+        "note": "pour le namul"
+      },
+      {
+        "id": "huile-sesame",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "sesame",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites tremper le plat de côtes 1 h dans de l'eau froide pour le dégorger. Blanchissez-le 5 min dans l'eau bouillante, puis rincez chaque morceau à l'eau froide.",
+      "Remettez la viande dans une marmite propre avec le jarret, 2,5 l d'eau, l'oignon, l'ail et le gingembre. Portez à frémissement et laissez cuire 1 h 30 à couvert, à feu doux.",
+      "Retirez l'oignon et le gingembre, ajoutez le radis, la sauce soja et la sauce poisson. Poursuivez 40 min : la viande doit être fondante, le radis translucide. Dégraissez soigneusement la surface.",
+      "Pendant ce temps, faites cuire le riz et faites tremper les vermicelles 20 min dans l'eau tiède. Namul : blanchissez les épinards 30 s, rafraîchissez-les, pressez-les et assaisonnez-les d'huile de sésame, d'une goutte de soja et de la moitié du sésame.",
+      "Ajoutez les vermicelles égouttés dans la soupe pour 5 min. Battez les œufs et versez-les en filet dans le bouillon frémissant en remuant doucement : ils forment de fins rubans.",
+      "Servez dans de grands bols avec la ciboule émincée, l'algue, le sésame et du poivre, avec le riz et le kimchi à côté. Salez à table selon le goût."
+    ],
+    "tags": [
+      "riche en collagène",
+      "réconfortant",
+      "mijoté",
+      "sans gluten",
+      "fermenté"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Préparez-la la veille : la graisse figée en surface s'enlève d'un coup de cuillère, et le bouillon reste très clair."
+  },
+  {
+    "id": "dab-ukha-saumon-cabillaud",
+    "name": "Oukha : soupe russe au saumon et cabillaud, tartines aux œufs de truite",
+    "description": "La soupe de pêcheur russe : bouillon clair d'arêtes et têtes de poisson, pommes de terre, carotte, puis saumon et cabillaud pochés, aneth et persil. Avec des tartines de seigle beurrées aux œufs de truite.",
+    "emoji": "🐟",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "fumet-poisson",
+        "qty": 1800,
+        "unit": "ml",
+        "note": "fait avec têtes et arêtes"
+      },
+      {
+        "id": "saumon",
+        "qty": 400,
+        "unit": "g",
+        "note": "en gros cubes"
+      },
+      {
+        "id": "cabillaud",
+        "qty": 400,
+        "unit": "g",
+        "note": "en gros cubes"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 700,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "carotte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "aneth",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pain-seigle",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "oeufs-poisson",
+        "qty": 60,
+        "unit": "g",
+        "note": "œufs de truite ou de saumon"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml",
+        "optional": true
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Portez le fumet à frémissement avec le laurier, quelques grains de poivre et l'oignon entier coupé en deux. Laissez infuser 10 min.",
+      "Ajoutez les pommes de terre, les carottes et le poireau émincé, et cuisez 15 min à frémissement : les pommes de terre doivent être juste tendres.",
+      "Retirez l'oignon. Glissez d'abord les cubes de cabillaud, puis 2 min après ceux de saumon, et laissez pocher 5 à 6 min à tout petit frémissement sans remuer : le poisson doit être juste nacré.",
+      "Ajoutez la moitié de l'aneth et du persil hachés, le jus d'un demi-citron, salez. Couvrez et laissez reposer 5 min hors du feu.",
+      "Beurrez les tranches de pain de seigle et garnissez-les d'œufs de truite.",
+      "Servez la soupe dans des assiettes creuses avec le reste des herbes, un quartier de citron et, si vous aimez, une cuillerée de crème ; les tartines à côté."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "léger",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "herbace",
+      "frais"
+    ],
+    "tips": "Demandez des têtes et arêtes au poissonnier pour faire le fumet (30 min de frémissement suffisent) : c'est là que se cache le collagène du poisson."
+  }
+]
