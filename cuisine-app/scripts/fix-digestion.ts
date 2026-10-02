@@ -7,6 +7,7 @@ import { join } from 'node:path';
 import { INGREDIENT_BY_ID } from '../src/data/ingredients';
 import { analyzeDigestion, prepStepFor, OXALATE_MG } from '../src/domain/digestion';
 import { toGrams } from '../src/domain/units';
+import { computeDetailed, MICROS } from '../src/domain/micronutrients';
 import type { Recipe } from '../src/domain/types';
 
 const dir = join(import.meta.dirname, '../src/data/recipes');
@@ -31,14 +32,66 @@ const addTag = (r: Recipe, t: string) => !r.tags.includes(t) && r.tags.push(t);
 
 const OX_CAP: Record<string, number> = { epinard: 40, sarrasin: 50, 'farine-sarrasin': 50, 'nouilles-sarrasin': 60, rhubarbe: 20, oseille: 20, betterave: 100, 'haricots-blancs': 120, amande: 20, cacao: 10, 'chocolat-noir': 20, sesame: 10, tahini: 20, 'noix-cajou': 25, noisette: 25, pignons: 20, quinoa: 60, 'patate-douce': 200, persil: 30 };
 
+const SWEET = new Set(['petit-dejeuner', 'dessert', 'collation', 'boisson']);
+const CALCIUM_IDS = ['manchego', 'comte', 'parmesan', 'pecorino', 'feta', 'yaourt-nature', 'yaourt-grec', 'kefir', 'fromage-blanc', 'cheddar', 'chevre-buche', 'roquefort', 'reblochon', 'camembert', 'mozzarella', 'skyr', 'lait'];
+
+/**
+ * Source de calcium cohérente avec le plat (le calcium lie les oxalates dans l'intestin) :
+ * fromage de la cuisine du plat, ou yaourt en dessert pour les plats sucrés et les cuisines sans fromage.
+ */
+function addCalcium(r: Recipe, missingMg: number): boolean {
+  const sweet = SWEET.has(r.category) && !r.flavors.includes('umami');
+  const yaourt = ['yaourt-nature', 125, 250, 'Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates).'] as const;
+  const cheese = (id: string, label: string) => [id, 20, 40, `Terminez le repas par un morceau de ${label} (son calcium limite l’absorption des oxalates).`] as const;
+  const BY_CUISINE: Record<string, readonly [string, number, number, string]> = {
+    francaise: cheese('comte', 'comté'),
+    rustique: cheese('comte', 'comté'),
+    'europe-centrale': cheese('comte', 'fromage affiné (comté, emmental)'),
+    britannique: cheese('cheddar', 'cheddar'),
+    americaine: cheese('cheddar', 'cheddar'),
+    italienne: ['parmesan', 20, 30, 'Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates).'],
+    espagnole: cheese('manchego', 'manchego'),
+    portugaise: cheese('manchego', 'fromage de brebis affiné'),
+    grecque: ['feta', 30, 60, 'Servez avec un peu de feta émiettée (son calcium limite l’absorption des oxalates).'],
+    levantine: ['yaourt-grec', 100, 200, 'Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates).'],
+    turque: ['yaourt-grec', 100, 200, 'Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates).'],
+    'nord-africaine': ['yaourt-grec', 100, 200, 'Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates).'],
+    indienne: ['yaourt-nature', 125, 250, 'Servez avec un raïta (yaourt nature entier, sel, cumin) : son calcium limite l’absorption des oxalates.'],
+    nordique: ['skyr', 125, 200, 'Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates).'],
+  };
+  const [id, min, max, step] = sweet
+    ? (['yaourt-nature', 125, 250, 'Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates).'] as const)
+    : (BY_CUISINE[r.cuisine] ?? yaourt);
+  if (r.ingredients.some((i) => i.id === id)) return false;
+  const perG = (MICROS[id]?.ca ?? 100) / 100;
+  const g = Math.max(min, Math.min(max, Math.ceil(missingMg / perG / 5) * 5));
+  r.ingredients.push({ id, qty: g * r.servings, unit: 'g', note: 'le calcium limite l’absorption des oxalates' });
+  r.steps.push(step);
+  return true;
+}
+
 let changed = 0;
 for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
   const data: Recipe[] = JSON.parse(readFileSync(join(dir, f), 'utf8'));
   let mod = false;
   for (const r of data) {
     const before = JSON.stringify(r);
+    // 0. Oxalates modérés avec peu de calcium : ajouter un laitage adapté au plat
+    {
+      const d0 = analyzeDigestion(r, lookup);
+      const ca = computeDetailed(r, lookup).ca ?? 0;
+      if (d0.oxalateMg >= 60 && d0.oxalateMg <= 150 && ca < 300 && !r.ingredients.some((i) => CALCIUM_IDS.includes(i.id) && i.note?.includes('oxalates'))) {
+        addCalcium(r, 300 - ca);
+      }
+    }
     let issues = analyzeDigestion(r, lookup).issues.filter((i) => i.level === 'error');
-    if (!issues.length) continue;
+    if (!issues.length) {
+      if (JSON.stringify(r) !== before) {
+        mod = true;
+        changed++;
+      }
+      continue;
+    }
     const ids = () => new Set(r.ingredients.map((i) => i.id));
 
     // 1. Soja non fermenté / lin
@@ -86,10 +139,7 @@ for (const f of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
       const cap = OX_CAP[top[0]] ?? grams(r, top[0]) * 0.6;
       setGrams(r, top[0], Math.min(cap, grams(r, top[0]) * 0.7));
       if (top[0] === 'epinard' && !/blanch/i.test(r.steps.join(' '))) r.steps.splice(1, 0, 'Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).');
-      if (!ids().has('comte') && !ids().has('parmesan') && !ids().has('yaourt-grec') && !ids().has('kefir') && !ids().has('fromage-blanc')) {
-        r.ingredients.push({ id: 'parmesan', qty: 15 * r.servings, unit: 'g', note: 'le calcium limite l’absorption des oxalates' });
-        r.steps.push('Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates).');
-      }
+      if (!CALCIUM_IDS.some((c) => ids().has(c))) addCalcium(r, 300);
     }
     // 6. Préparations traditionnelles (trempage la veille)
     issues = analyzeDigestion(r, lookup).issues.filter((i) => i.level === 'error' && i.topic === 'phytates');

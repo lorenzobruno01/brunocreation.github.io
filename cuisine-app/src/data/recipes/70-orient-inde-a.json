@@ -219,6 +219,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 620,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -227,7 +233,8 @@
       "Huilez un grand plat à four. Disposez les rondelles de pommes de terre en couche, arrosez de 2 c. à soupe d'huile, salez et enfournez 15 min pour les précuire.",
       "Pendant ce temps, mélangez les tomates concassées, l'ail écrasé, l'eau, le reste d'huile, sel et poivre.",
       "Sortez le plat, alternez dessus les galettes de kafta et les rondelles de tomate en rangées serrées, puis versez la sauce tomate sur l'ensemble.",
-      "Enfournez 35 min : la sauce doit bouillonner, les pommes de terre se percer sans résistance et la kafta être dorée sur le dessus. Laissez reposer 5 min avant de servir."
+      "Enfournez 35 min : la sauce doit bouillonner, les pommes de terre se percer sans résistance et la kafta être dorée sur le dessus. Laissez reposer 5 min avant de servir.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -710,7 +717,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le boulgour, couvrez-le d'eau froide 15 min, puis pressez-le fortement dans les mains pour l'essorer.",
       "Pâte : mixez par à-coups 500 g d'agneau, l'oignon râpé, le cumin, la menthe, 1 c. à café de sel et un peu de poivre, puis pétrissez avec le boulgour 3 min en vous mouillant les mains d'eau glacée, jusqu'à une pâte lisse et homogène.",
       "Farce : faites revenir les 2 oignons hachés dans 15 g de beurre 6 min à feu moyen, ajoutez 400 g d'agneau et émiettez-le 8 min jusqu'à ce qu'il soit bien doré. Ajoutez cannelle, ras el hanout, sel, poivre et les pignons dorés à sec 3 min.",
@@ -831,6 +838,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 400,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -839,7 +852,8 @@
       "Ajoutez le riz, salez, couvrez et cuisez 12 min à feu très doux. Préchauffez le four à 200 °C.",
       "Salez, poivrez les pavés de cabillaud et posez-les sur le riz. Enfournez la cocotte couverte 15 min : le poisson doit être nacré et s'effeuiller sous la fourchette.",
       "Pendant ce temps, dorez pignons et amandes 3 min dans une poêle avec le reste d'huile. Fouettez le tahini avec le jus de citron, l'ail râpé, une pincée de sel et 4 c. à soupe d'eau.",
-      "Servez le riz et le poisson parsemés des oignons réservés, des pignons, des amandes et du persil, avec la sauce tahini à part."
+      "Servez le riz et le poisson parsemés des oignons réservés, des pignons, des amandes et du persil, avec la sauce tahini à part.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "familial",
@@ -1336,7 +1350,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Couvrez le boulgour de 150 ml d'eau bouillante salée, couvrez et laissez gonfler 15 min, puis égrainez à la fourchette.",
       "Mélangez le bœuf, l'oignon râpé, le cumin, la cannelle, le piment, 1 c. à café de sel et du poivre. Formez 8 keftas allongées autour de brochettes ou en cigares.",
       "Ciselez très finement le persil et la menthe (au couteau, pas au mixeur), coupez les tomates en petits dés et émincez les oignons nouveaux.",
@@ -2239,6 +2253,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 400,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2247,7 +2267,8 @@
       "Remettez la viande, ajoutez les tomates râpées et le bouillon chaud. Portez à frémissement, couvrez et laissez mijoter 1 h 30 à feu doux : le bœuf doit se couper à la cuillère.",
       "Ajoutez les haricots blancs, salez, poivrez et poursuivez 20 min à découvert : la sauce doit réduire et napper.",
       "Pendant ce temps, rincez le riz, nacrez-le 1 min dans 20 g de beurre, ajoutez 420 ml d'eau salée, couvrez et cuisez 12 min à feu très doux, puis laissez gonfler 10 min.",
-      "Servez le ragoût à côté du pilaf, parsemé de persil, avec des cornichons ou un piment vert si vous aimez."
+      "Servez le ragoût à côté du pilaf, parsemé de persil, avec des cornichons ou un piment vert si vous aimez.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2379,7 +2400,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez le yaourt, 1 c. à soupe de concentré, le piment, le cumin, l'ail écrasé, 1 c. à soupe d'huile, sel et poivre. Enrobez le poulet et laissez mariner 1 h au frais.",
       "Pilaf : faites fondre le beurre, ajoutez le reste de concentré et remuez 1 min. Ajoutez le boulgour, nacrez 1 min, versez le bouillon chaud, salez. Couvrez et cuisez 12 min à feu doux, puis laissez gonfler 10 min hors du feu avec un torchon sous le couvercle.",
       "Enfilez sur des brochettes en alternant poulet, poivron et oignon. Badigeonnez du reste d'huile.",
@@ -2487,6 +2508,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 290,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2495,7 +2522,8 @@
       "Préparez la salade : roquette, oignon rouge en fines lamelles, tomates en quartiers, sumac, sel et 1 c. à soupe d'huile.",
       "Chauffez une poêle-gril ou une plancha à feu vif. Posez les filets côté peau, pressez-les 10 s avec une spatule et cuisez 4 min sans y toucher, jusqu'à ce que la chair soit opaque aux trois quarts. Retournez 1 min.",
       "Égouttez les pommes de terre, écrasez-les grossièrement à la fourchette avec le beurre, 2 c. à soupe d'huile, l'ail râpé, le zeste et la moitié du jus de citron, le persil, sel et poivre.",
-      "Servez le bar peau croustillante vers le haut, avec les pommes de terre, la salade et des quartiers de citron."
+      "Servez le bar peau croustillante vers le haut, avec les pommes de terre, la salade et des quartiers de citron.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2601,6 +2629,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 310,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2608,7 +2642,8 @@
       "Chauffez 3 c. à soupe d'huile dans une grande poêle à feu moyen-vif et faites dorer les dés de pommes de terre 15 min en remuant toutes les 3 min, jusqu'à ce qu'ils soient croustillants. Salez, réservez au chaud.",
       "Rincez le foie à l'eau froide, égouttez-le dans une passoire (il doit rester juste humide) puis mélangez la farine, le cumin et le piment, et enrobez-en les dés en secouant l'excédent.",
       "Ajoutez le reste d'huile dans la poêle à feu vif. Quand elle est très chaude, jetez-y le foie en une couche et sautez 3 min : les dés doivent être croustillants dehors et encore rosés dedans.",
-      "Salez le foie hors du feu, mélangez-le aux pommes de terre et servez aussitôt avec la salade d'oignon au sumac, la tomate en quartiers et le pain."
+      "Salez le foie hors du feu, mélangez-le aux pommes de terre et servez aussitôt avec la salade d'oignon au sumac, la tomate en quartiers et le pain.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2730,7 +2765,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez l'agneau avec l'origan, le cumin, 1 c. à soupe d'huile et du poivre. Laissez mariner 30 min à température ambiante.",
       "Versez 180 ml d'eau bouillante salée sur le boulgour, couvrez et laissez gonfler 15 min. Incorporez aussitôt le concentré de tomate et le piment pendant qu'il est chaud : il doit devenir uniformément rouge.",
       "Coupez tomates et concombre en petits dés, émincez les oignons nouveaux, ciselez persil et menthe.",

@@ -101,13 +101,15 @@ const PREP_HELP: Record<PrepKind, string> = {
   'galette-sarrasin': 'Farine de sarrasin : laisser reposer/fermenter la pâte au moins 8 h (une nuit), ou tremper la farine dans un liquide acidifié.',
 };
 
+const CEREAL_NAME: Record<string, string> = { sarrasin: 'le sarrasin', boulgour: 'le boulgour', orge: 'l’orge perlé' };
+
 /** Étape « la veille » à ajouter pour un ingrédient qui demande une préparation traditionnelle */
 export function prepStepFor(id: string): { step: string; restMinutes: number } | null {
   const kind = PREP[id];
   if (!kind) return null;
   const text: Record<PrepKind, string> = {
     avoine: 'La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.',
-    cereale: 'La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.',
+    cereale: `La veille : faites tremper ${CEREAL_NAME[id] ?? 'la céréale'} 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.`,
     'riz-complet': 'La veille : faites tremper le riz complet 12 à 24 h dans de l’eau tiède, jetez l’eau et rincez avant de cuire.',
     quinoa: 'La veille : rincez énergiquement le quinoa (3 eaux), puis faites-le tremper 12 h (une nuit) avec 1 c. à soupe de jus de citron ; rincez de nouveau avant de cuire.',
     lentilles: 'La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.',

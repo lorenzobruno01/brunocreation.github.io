@@ -229,6 +229,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -239,7 +245,8 @@
       "Pendant ce temps, faites suer le chou rouge et les pommes dans 10 g de saindoux 5 min, ajoutez le miel, 3 cas de marinade et 100 ml d'eau, couvrez et laissez compoter 50 min à feu doux en remuant de temps en temps.",
       "Cuisez les pommes de terre épluchées 25 min à la vapeur. Sortez le bœuf et gardez-le au chaud sous aluminium.",
       "Mixez ou passez le jus de braisage avec les légumes, ajoutez le pain de seigle émietté et les raisins secs, puis faites réduire 8 min à feu moyen jusqu'à une sauce brillante et nappante. Rectifiez en sel (et miel si trop acide).",
-      "Tranchez le bœuf en tranches de 1 cm, nappez de sauce et servez avec le chou rouge et les pommes de terre."
+      "Tranchez le bœuf en tranches de 1 cm, nappez de sauce et servez avec le chou rouge et les pommes de terre.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -627,6 +634,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -636,7 +649,8 @@
       "Pendant ce temps, cuisez les pommes de terre en robe 20 min, laissez-les tiédir, épluchez-les et coupez-les en rondelles.",
       "Apfelkren : râpez finement les pommes, arrosez-les aussitôt du jus de citron, mélangez avec le raifort et une pincée de sel. Sauce ciboulette : mélangez la crème fraîche, la ciboulette ciselée, sel et poivre.",
       "Faites chauffer le saindoux dans une grande poêle à feu moyen-vif, ajoutez l'oignon émincé et les pommes de terre, et faites rissoler 15 min en retournant de temps en temps jusqu'à ce qu'elles soient bien dorées et croustillantes.",
-      "Tranchez la viande contre le fil en tranches de 1 cm, servez-la dans un peu de bouillon brûlant avec les légumes, les pommes rissolées, l'Apfelkren et la crème à la ciboulette."
+      "Tranchez la viande contre le fil en tranches de 1 cm, servez-la dans un peu de bouillon brûlant avec les légumes, les pommes rissolées, l'Apfelkren et la crème à la ciboulette.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -749,6 +763,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -757,7 +777,8 @@
       "Pendant ce temps, farinez légèrement les lanières de veau. Dans une autre poêle très chaude avec 10 g de beurre, saisissez-les en 2 fois, 1 min 30 par fournée, juste colorées. Réservez dans une assiette.",
       "Dans la même poêle, ajoutez le reste du beurre, l'échalote et les champignons ; faites sauter 5 min à feu vif jusqu'à ce qu'ils dorent.",
       "Déglacez au vin blanc, laissez réduire de moitié (2 min), ajoutez le bouillon et la crème. Laissez épaissir 3 min à feu moyen jusqu'à ce que la sauce nappe la cuillère.",
-      "Remettez le veau et son jus 1 min, sans faire bouillir pour qu'il reste tendre. Ajoutez un trait de citron, salez, poivrez, parsemez de persil et servez avec le rösti coupé en parts."
+      "Remettez le veau et son jus 1 min, sans faire bouillir pour qu'il reste tendre. Ajoutez un trait de citron, salez, poivrez, parsemez de persil et servez avec le rösti coupé en parts.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -1251,6 +1272,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1259,7 +1286,8 @@
       "Pendant ce temps, faites chauffer le beurre dans une autre poêle à feu vif. Saisissez les rognons 2 min en remuant : ils doivent rester rosés. Retirez-les dans une passoire (ils rendent un jus que l'on jette).",
       "Dans la même poêle, faites revenir l'oignon 4 min à feu moyen. Saupoudrez de farine et laissez-la brunir 2 min en remuant, jusqu'à une couleur noisette.",
       "Versez le vin, le bouillon et le laurier en fouettant, laissez épaissir 4 min. Ajoutez le vinaigre, la crème, sel et poivre : la sauce doit être franchement aigre-douce.",
-      "Remettez les rognons 1 min à feu doux, sans bouillir pour qu'ils ne durcissent pas. Parsemez de persil et servez avec les Bratkartoffeln."
+      "Remettez les rognons 1 min à feu doux, sans bouillir pour qu'ils ne durcissent pas. Parsemez de persil et servez avec les Bratkartoffeln.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -1839,6 +1867,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1847,7 +1881,8 @@
       "Posez les côtes entre deux feuilles de papier cuisson et aplatissez-les au rouleau ou au fond d'une casserole jusqu'à 6–7 mm. Entaillez le bord gras pour éviter qu'elles ne se rétractent, salez et poivrez.",
       "Passez-les dans la farine, l'œuf battu puis la chapelure en appuyant bien.",
       "Faites chauffer le saindoux dans une grande poêle à feu moyen-vif. Faites dorer les côtes 4 min par face jusqu'à ce que la panure soit dorée et le jus clair à cœur. Égouttez sur papier absorbant.",
-      "Servez aussitôt avec les pommes de terre à l'aneth et la surówka."
+      "Servez aussitôt avec les pommes de terre à l'aneth et la surówka.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2067,20 +2102,20 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Kasha : rincez le sarrasin, versez-le dans 300 ml d'eau bouillante salée, couvrez et laissez cuire 12 min à feu très doux jusqu'à absorption. Hors du feu, ajoutez 15 g de beurre, couvrez et laissez gonfler 10 min.",
       "Pendant ce temps, faites fondre les oignons dans le saindoux à feu moyen 10 min, jusqu'à ce qu'ils soient dorés. Poussez-les sur le côté.",
       "Ajoutez les tronçons de boudin (retirez la peau s'il est très friable) et faites-les griller 4 min par face à feu moyen, jusqu'à une croûte bien dorée. Parsemez de marjolaine.",
       "Dans une petite poêle, faites cuire les œufs au plat dans le reste du beurre 3 min à feu moyen, jaune coulant.",
       "Servez la kasha surmontée du boudin et des oignons, l'œuf à côté, et les cornichons en accompagnement pour l'acidité.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
@@ -2743,6 +2778,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2751,7 +2792,8 @@
       "Ajoutez les pommes de terre, le vin blanc et le bouillon, salez peu (la saucisse est salée) et poivrez. Portez à frémissement.",
       "Piquez les saucisses en 3 endroits avec une aiguille et posez-les sur les légumes. Couvrez et laissez étuver 45 min à feu doux, sans jamais faire bouillir pour que les saucisses n'éclatent pas.",
       "Sortez les saucisses, versez la crème sur les légumes et écrasez-les grossièrement à la cuillère : le papet doit être onctueux mais avec des morceaux.",
-      "Tranchez les saucisses en rondelles épaisses, posez-les sur le papet et servez avec la moutarde."
+      "Tranchez les saucisses en rondelles épaisses, posez-les sur le papet et servez avec la moutarde.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "réconfortant",
@@ -3017,6 +3059,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3025,7 +3073,8 @@
       "Versez le fumet avec le thym, portez à frémissement et laissez cuire 5 min. Salez, poivrez.",
       "Ajoutez la lotte, laissez frémir 4 min, puis le cabillaud 4 min de plus : la chair doit devenir nacrée et se détacher en lamelles. Ajoutez les crevettes hors du feu.",
       "Fouettez la crème avec les jaunes d'œufs et le jus d'un demi-citron. Versez une louche de bouillon chaud dessus en fouettant, puis reversez le tout dans la sauteuse à feu très doux en remuant 2 min, sans bouillir : le bouillon doit devenir velouté.",
-      "Servez dans des assiettes creuses avec les pommes de terre, parsemé de persil ciselé, avec le reste du citron en quartiers."
+      "Servez dans des assiettes creuses avec les pommes de terre, parsemé de persil ciselé, avec le reste du citron en quartiers.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -3249,6 +3298,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3257,7 +3312,8 @@
       "Faites revenir les oignons 6 min dans la cocotte. Versez la kriek en grattant les sucs, ajoutez thym et laurier, remettez le lapin. Couvrez et laissez braiser 1 h à feu doux.",
       "Stoemp : cuisez les pommes de terre épluchées et les carottes ensemble 25 min à l'eau salée. Égouttez et écrasez grossièrement au presse-purée avec le lait chaud, 40 g de beurre, la muscade, sel et poivre.",
       "10 min avant la fin, ajoutez les griottes au lapin et faites réduire la sauce à découvert jusqu'à ce qu'elle soit sirupeuse.",
-      "Servez le lapin et sa sauce avec le stoemp."
+      "Servez le lapin et sa sauce avec le stoemp.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -3347,6 +3403,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3354,7 +3416,8 @@
       "Pendant ce temps, faites chauffer la saucisse 20 min dans de l'eau frémissante (sans bouillir).",
       "Faites dorer les lardons 6 min à sec dans une poêle jusqu'à ce qu'ils soient croustillants. Déglacez la poêle avec le bouillon pour obtenir un petit jus.",
       "Égouttez pommes de terre et chou, écrasez-les grossièrement au presse-purée avec le lait chaud et le beurre. Incorporez les lardons et la moutarde, poivrez généreusement.",
-      "Servez en dôme, creusez un puits au centre pour le jus, et posez la saucisse coupée en tronçons."
+      "Servez en dôme, creusez un puits au centre pour le jus, et posez la saucisse coupée en tronçons.",
+      "Terminez le repas par un morceau de fromage affiné (comté, emmental) (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3451,15 +3514,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper l’orge perlé 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Dégraissez grossièrement l'agneau, salez-le et poivrez-le. Rangez-le dans une grande cocotte avec les oignons, les pommes de terre farineuses et l'orge rincé.",
       "Versez le bouillon froid juste à hauteur, ajoutez le thym. Portez lentement à frémissement en écumant.",
       "Couvrez et laissez mijoter 1 h à feu très doux : le liquide doit à peine frémir.",
       "Ajoutez les pommes de terre fermes et les poireaux, et poursuivez 45 min : les pommes de terre farineuses se sont défaites et ont épaissi le bouillon, les fermes restent entières, l'agneau se détache à la fourchette.",
-      "Rectifiez l'assaisonnement, retirez le thym et servez dans des assiettes creuses parsemé de persil."
+      "Rectifiez l'assaisonnement, retirez le thym et servez dans des assiettes creuses parsemé de persil.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -3585,6 +3655,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3594,7 +3670,8 @@
       "Sortez le bœuf, couvrez-le d'aluminium et laissez-le reposer 20 min. Montez le four à 230 °C. Répartissez le reste de graisse dans 8 empreintes d'un moule à muffins et chauffez 5 min jusqu'à ce qu'elle fume.",
       "Versez la pâte dans la graisse brûlante (elle doit grésiller) et enfournez 20 min sans ouvrir la porte : les puddings doivent gonfler et devenir dorés et croustillants.",
       "Gravy : posez le plat de cuisson sur le feu, saupoudrez le reste de farine sur les sucs, déglacez au vin, puis ajoutez le bouillon et le jus de repos. Laissez réduire 5 min en fouettant, filtrez.",
-      "Mélangez le raifort et la crème. Tranchez le bœuf finement et servez avec pommes de terre, carottes, Yorkshire puddings, gravy et sauce raifort."
+      "Mélangez le raifort et la crème. Tranchez le bœuf finement et servez avec pommes de terre, carottes, Yorkshire puddings, gravy et sauce raifort.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -3833,6 +3910,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3841,7 +3924,8 @@
       "Retournez les frites, posez le poisson sur une plaque recouverte de papier cuisson et enfournez le tout 15 à 18 min : la croûte doit être dorée et la chair se détacher en gros flocons nacrés.",
       "Mushy peas : cuisez les petits pois 5 min à l'eau salée, égouttez et écrasez-les grossièrement à la fourchette avec le reste du beurre, la menthe ciselée, sel et poivre.",
       "Sauce tartare : mélangez le yaourt, les cornichons, les câpres, le persil ciselé et 1 cac de jus de citron.",
-      "Servez le poisson avec les frites arrosées de vinaigre, les mushy peas, la sauce tartare et des quartiers de citron."
+      "Servez le poisson avec les frites arrosées de vinaigre, les mushy peas, la sauce tartare et des quartiers de citron.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "familial",
@@ -4663,6 +4747,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "cheddar",
+        "qty": 50,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4671,7 +4761,8 @@
       "Préchauffez le gril du four (ou une poêle-gril) à feu vif. Entaillez la peau des maquereaux 3 fois de chaque côté, huilez-les, salez et poivrez l'intérieur et l'extérieur.",
       "Faites griller les maquereaux 5 à 6 min de chaque côté à 10 cm du gril : la peau doit être boursouflée et dorée, la chair se détacher de l'arête.",
       "Enrobez les pommes de terre chaudes de crème fraîche, du reste de beurre et de ciboulette ciselée. Mêlez-les au cresson arrosé de jus de citron.",
-      "Servez les maquereaux avec la sauce aux groseilles et les pommes de terre au cresson."
+      "Servez les maquereaux avec la sauce aux groseilles et les pommes de terre au cresson.",
+      "Terminez le repas par un morceau de cheddar (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -4860,6 +4951,12 @@
         "id": "beurre",
         "qty": 20,
         "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 500,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4867,7 +4964,8 @@
       "Dans une grande cocotte, alternez couches d'agneau (côté gras vers le bas pour la première) et de chou. Entre chaque couche, saupoudrez un peu de farine, de sel et de grains de poivre.",
       "Versez l'eau, portez à ébullition à feu moyen, puis couvrez et laissez mijoter 2 h 15 à feu très doux, sans remuer. La viande doit se détacher de l'os et le chou être fondant et translucide.",
       "30 min avant la fin, cuisez les pommes de terre épluchées 25 min à la vapeur, puis roulez-les dans le beurre et le persil.",
-      "Servez l'agneau et le chou bien chauds avec le bouillon poivré et les pommes de terre."
+      "Servez l'agneau et le chou bien chauds avec le bouillon poivré et les pommes de terre.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",

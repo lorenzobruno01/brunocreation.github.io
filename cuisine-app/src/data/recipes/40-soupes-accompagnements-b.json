@@ -707,6 +707,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 560,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -715,7 +721,8 @@
       "Étalez-les sur une plaque tapissée de papier cuisson, bien espacées, côté coupé contre la plaque.",
       "Rôtissez 20 min, retournez, puis 12 à 15 min de plus : les bords doivent être caramélisés et presque noirs par endroits, le cœur fondant.",
       "Pendant ce temps, mélangez le yaourt avec le zeste et la moitié du jus de citron vert et une pincée de sel.",
-      "Servez les patates douces arrosées du reste de jus de citron vert, avec le yaourt à côté et la coriandre ciselée par-dessus."
+      "Servez les patates douces arrosées du reste de jus de citron vert, avec le yaourt à côté et la coriandre ciselée par-dessus.",
+      "Prévoyez un yaourt nature entier en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1356,16 +1363,23 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 760,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le boulgour, mettez-le dans un bol avec le jus d'un citron et 2 c. à soupe d'eau, et laissez-le gonfler 15 min.",
       "Lavez le persil et la menthe, puis séchez-les parfaitement (essoreuse puis torchon) : des herbes humides donnent un taboulé détrempé.",
       "Hachez le persil et la menthe très finement au couteau bien aiguisé, en botte serrée, sans écraser (pas au mixeur).",
       "Coupez les tomates en petits dés de 5 mm et laissez-les égoutter 5 min dans une passoire avec une pincée de sel.",
       "Dans un saladier, mélangez herbes, boulgour, tomates et oignons nouveaux. Assaisonnez avec le reste de jus de citron, l'huile d'olive, sel, poivre et la pincée de cannelle.",
-      "Goûtez : il doit être franchement citronné. Servez dans l'heure, avec des feuilles de laitue romaine pour le prendre à la main."
+      "Goûtez : il doit être franchement citronné. Servez dans l'heure, avec des feuilles de laitue romaine pour le prendre à la main.",
+      "Servez avec une bonne cuillerée de yaourt épais (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "repas froid",

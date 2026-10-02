@@ -62,7 +62,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Faites fondre le beurre dans une petite poêle à feu moyen. Ajoutez les graines de sarrasin et faites-les griller 3 à 4 min en remuant sans cesse, jusqu'à ce qu'elles brunissent légèrement et sentent la noisette. Débarrassez sur une assiette.",
       "Fouettez le kéfir avec le yaourt grec et la cannelle dans un saladier, 20 secondes, pour obtenir une texture de yaourt à boire épais.",
       "Râpez les pommes avec la peau à la grosse râpe, directement au-dessus du saladier, et mélangez aussitôt pour qu'elles ne noircissent pas.",
@@ -680,22 +680,15 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
-      },
-      {
-        "id": "parmesan",
-        "qty": 30,
-        "unit": "g",
-        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le sarrasin. Mettez-le dans une casserole avec le lait et le sel, portez à frémissement à feu moyen en surveillant (le lait monte vite).",
       "Baissez à feu doux, couvrez à moitié et laissez cuire 15 à 18 min en remuant toutes les 3 min, jusqu'à ce que les grains soient tendres et le lait presque absorbé.",
       "Pendant ce temps, faites fondre le beurre dans une poêle à feu moyen. Faites sauter les lamelles de pomme 6 à 8 min avec la cannelle, jusqu'à ce qu'elles soient dorées sur les bords mais encore légèrement fermes.",
       "Hors du feu, incorporez le cottage cheese à la kasha pour la rendre plus riche.",
-      "Servez en bols, couvrez de pommes, d'une cuillère de crème crue et d'un filet de miel.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Servez en bols, couvrez de pommes, d'une cuillère de crème crue et d'un filet de miel."
     ],
     "tags": [
       "sans gluten",
@@ -1824,6 +1817,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1833,7 +1832,8 @@
       "Faites dorer les lamelles de poire 4 min dans 5 g de beurre à feu moyen-vif, jusqu'à ce qu'elles soient translucides.",
       "Chauffez une crêpière ou une grande poêle à feu vif et beurrez-la. Versez une louche de pâte, étalez très finement en tournant la poêle. Cuisez 2 min, jusqu'à ce que le dessous soit brun doré et les bords croustillants.",
       "Retournez la galette, cassez la moitié de l'œuf restant battu sur toute la surface, étalez au dos de la louche et laissez prendre 1 min.",
-      "Disposez les poires au centre, nappez de caramel, rabattez les bords en carré et servez avec la crème épaisse et le fromage blanc battu."
+      "Disposez les poires au centre, nappez de caramel, rabattez les bords en carré et servez avec la crème épaisse et le fromage blanc battu.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",

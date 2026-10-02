@@ -2,11 +2,13 @@ import { useState } from 'react';
 import antinutriments from '../../docs/sources/antinutriments.md?raw';
 import sensibilites from '../../docs/sources/sensibilites.md?raw';
 import regimes from '../../docs/sources/regimes.md?raw';
+import donnees from '../../docs/sources/donnees-nutritionnelles.md?raw';
 
 const DOCS = [
   { id: 'antinutriments', title: '🌾 Antinutriments & préparation', text: antinutriments },
   { id: 'sensibilites', title: '💎 Oxalates, FODMAP, phytoestrogènes', text: sensibilites },
   { id: 'regimes', title: '🧈 Approches : WAPF, GAPS, Ray Peat…', text: regimes },
+  { id: 'donnees', title: '🔬 Données nutritionnelles (USDA)', text: donnees },
 ];
 
 function esc(s: string) {

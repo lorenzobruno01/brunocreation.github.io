@@ -338,6 +338,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -346,7 +352,8 @@
       "Dans la même huile, faites revenir les amandes et les 2 gousses d’ail restantes 2 min jusqu’à ce qu’elles soient blondes. Retirez-les et pilez-les au mortier avec le safran et le reste de persil.",
       "Faites fondre l’oignon 6 min dans la cocotte, ajoutez le paprika 20 secondes, puis le vin blanc (2 min de réduction), les tomates et le bouillon.",
       "Ajoutez la pâte d’amandes, remettez les boulettes, couvrez et laissez mijoter 25 min à feu doux : la sauce doit être onctueuse et napper le dos d’une cuillère.",
-      "Pendant ce temps, cuisez le riz 12 min à l’eau salée (ou selon le paquet). Servez les albóndigas et leur sauce sur le riz."
+      "Pendant ce temps, cuisez le riz 12 min à l’eau salée (ou selon le paquet). Servez les albóndigas et leur sauce sur le riz.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "batch cooking",
@@ -541,6 +548,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 120,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -549,7 +562,8 @@
       "Réglez à frémissement très doux, ajoutez le chorizo et laissez cuire 1 h 30 à couvert. Pour éviter que les haricots n’éclatent, « effrayez-les » toutes les 30 min avec un demi-verre d’eau froide au lieu de remuer.",
       "Ajoutez la morcilla, le safran et le paprika délayés dans un peu de bouillon, et poursuivez 45 min à 1 h : les haricots doivent être fondants et le bouillon crémeux et orangé. Secouez la cocotte plutôt que de remuer.",
       "Retirez le jarret, effilochez la chair en gros morceaux et remettez-la. Goûtez avant de saler (le jarret et le chorizo salent déjà). Laissez reposer 30 min hors du feu.",
-      "Servez en assiettes creuses avec une tranche de chaque viande et le pain au levain grillé."
+      "Servez en assiettes creuses avec une tranche de chaque viande et le pain au levain grillé.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -763,6 +777,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -771,7 +791,8 @@
       "Dans une cazuela ou une sauteuse large, chauffez l’huile avec l’ail à feu doux 2 min sans coloration. Ajoutez la farine et remuez 1 min, puis le vin blanc et le fumet en filet en remuant.",
       "Posez les tranches de merlu côté peau dans la sauce frémissante, ajoutez les palourdes et les petits pois. Cuisez 4 min, retournez le poisson et poursuivez 3-4 min en secouant la cazuela d’avant en arrière : la sauce doit épaissir et blanchir légèrement grâce à la gélatine.",
       "Quand les palourdes sont ouvertes et que la chair du merlu se détache en lamelles nacrées, ajoutez le persil, les pommes de terre et les œufs, et secouez encore 1 min.",
-      "Servez directement dans la cazuela."
+      "Servez directement dans la cazuela.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "léger",
@@ -1002,6 +1023,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1009,7 +1036,8 @@
       "Fouettez l’huile, le vinaigre de Xérès, du sel et du poivre.",
       "Pelez les pommes de terre encore chaudes, coupez-les en gros morceaux et arrosez-les immédiatement de la moitié de la vinaigrette : chaudes, elles l’absorbent mieux.",
       "Ajoutez l’oignon rouge, les piquillos et les olives, mélangez délicatement.",
-      "Dressez, posez la ventrèche en gros pétales, les œufs mollets coupés en deux, le persil, et versez le reste de vinaigrette."
+      "Dressez, posez la ventrèche en gros pétales, les œufs mollets coupés en deux, le persil, et versez le reste de vinaigrette.",
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -1385,6 +1413,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1392,7 +1426,8 @@
       "Cuisez les pommes de terre épluchées en morceaux 15 min à l’eau frémissante, et les œufs 10 min dans une autre casserole.",
       "Pochez la morue 6-8 min dans une eau à peine frémissante (elle ne doit jamais bouillir) : elle est cuite quand elle se sépare en feuillets nacrés. Égouttez, retirez peau et arêtes et détachez de gros pétales.",
       "Fouettez l’huile, le vinaigre, l’ail et du poivre.",
-      "Dans un grand plat, mélangez pois chiches, pommes de terre tièdes, oignon rouge, tomates cerises et la moitié de la vinaigrette. Posez la morue et les œufs en quartiers, arrosez du reste et parsemez de persil."
+      "Dans un grand plat, mélangez pois chiches, pommes de terre tièdes, oignon rouge, tomates cerises et la moitié de la vinaigrette. Posez la morue et les œufs en quartiers, arrosez du reste et parsemez de persil.",
+      "Terminez le repas par un morceau de fromage de brebis affiné (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "repas froid",
@@ -1934,6 +1969,12 @@
         "id": "persil",
         "qty": 10,
         "unit": "g"
+      },
+      {
+        "id": "manchego",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1941,7 +1982,8 @@
       "Grillez les poivrons entiers sur la braise ou sous le gril du four 12-15 min en les tournant, jusqu’à ce que la peau soit noircie. Enfermez-les 10 min dans un saladier couvert, puis pelez-les et coupez-les en lanières.",
       "Assaisonnez les poivrons avec l’ail, 2 cuillères d’huile, le vinaigre et du sel.",
       "Grillez les sardines sur une grille bien chaude et huilée, 3-4 min par face : la peau doit être cloquée et dorée, la chair se détacher de l’arête.",
-      "Servez les sardines posées sur les tranches de pain (qui s’imbibent de leur jus), avec les pommes de terre arrosées du reste d’huile et de persil, et la salade de poivrons."
+      "Servez les sardines posées sur les tranches de pain (qui s’imbibent de leur jus), avec les pommes de terre arrosées du reste d’huile et de persil, et la salade de poivrons.",
+      "Terminez le repas par un morceau de fromage de brebis affiné (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",

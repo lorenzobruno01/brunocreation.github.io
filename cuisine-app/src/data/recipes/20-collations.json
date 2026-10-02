@@ -515,8 +515,8 @@
       "Chauffez une poêle à sec à feu moyen-vif. Ajoutez les gésiers émincés avec la graisse qui les enrobe et faites-les dorer 5 à 6 min en remuant, jusqu'à ce que les bords soient croustillants.",
       "Ajoutez l'échalote ciselée la dernière minute, puis déglacez avec le balsamique : il doit napper les gésiers en 30 s.",
       "Faites griller les tranches de pain dans la graisse restée dans la poêle, 1 min par face.",
-      "Assaisonnez la mâche avec l'beurre clarifié. Disposez-la sur le pain, ajoutez les gésiers chauds, les noix concassées et un tour de poivre.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Assaisonnez la mâche avec l'beurre clarifié. Disposez-la sur le pain, ajoutez les gésiers chauds, les noix concassées et un tour de poivre."
     ],
     "tags": [
       "abats",
@@ -727,6 +727,12 @@
         "id": "citron",
         "qty": 0.5,
         "unit": "piece"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 750,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -736,7 +742,8 @@
       "Pour les blinis, fouettez la farine de sarrasin, la levure, les œufs et le lait jusqu'à une pâte épaisse et lisse. Laissez reposer 15 min.",
       "Chauffez une poêle beurrée à feu moyen. Versez des cuillerées de pâte (6–7 cm), cuisez 1 min 30 jusqu'à ce que des bulles crèvent la surface, retournez et cuisez 1 min.",
       "Mélangez la crème fraîche avec le reste d'aneth ciselé, un trait de jus de citron et du poivre.",
-      "Garnissez chaque blini tiède d'une cuillère de crème et d'une tranche de gravlax pliée."
+      "Garnissez chaque blini tiède d'une cuillère de crème et d'une tranche de gravlax pliée.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "préparation à l’avance",

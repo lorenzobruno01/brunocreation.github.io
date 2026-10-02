@@ -1356,6 +1356,12 @@
         "unit": "g",
         "note": "entier, pour servir",
         "optional": true
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 1140,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1363,7 +1369,8 @@
       "Mettez le tout dans une casserole avec l'eau, le miel et la vanille fendue et grattée.",
       "Couvrez et cuisez 15 min à feu doux en remuant de temps en temps, puis découvrez et poursuivez 5 min pour évaporer le jus : la rhubarbe doit être complètement effondrée et les pommes fondantes.",
       "Écrasez à la fourchette pour une compote rustique ou mixez pour une texture lisse. Goûtez et ajustez avec un peu de miel si la rhubarbe est très acide.",
-      "Servez tiède ou froide, avec une cuillerée de yaourt grec."
+      "Servez tiède ou froide, avec une cuillerée de yaourt grec.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "économique",

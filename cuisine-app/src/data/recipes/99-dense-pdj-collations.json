@@ -366,8 +366,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "yaourt-nature",
+        "qty": 250,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -380,7 +380,7 @@
       "Émiettez le chèvre frais sur l’omelette, répartissez les épinards puis le saumon fumé et la ciboulette ciselée.",
       "Roulez l’omelette sur elle-même à l’aide d’une spatule et laissez-la 30 s de plus sur le feu. Coupez-la en deux tronçons.",
       "Servez avec le pain au levain grillé et les quartiers d’orange.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -594,27 +594,27 @@
   },
   {
     "id": "dpc-porridge-pruneaux-noix-courge",
-    "name": "Porridge au lait, pruneaux fondants, noix et graines de courge",
-    "description": "Un porridge d’avoine au lait entier où les pruneaux fondent en sucrant naturellement, relevé de noix et de graines de courge grillées : magnésium, fibres et potassium au rendez-vous.",
+    "name": "Orge perlé au lait à l’ancienne, pruneaux fondants, noix et graines de courge",
+    "description": "Le « riz au lait » de nos grands-mères à l’orge : grains trempés la veille, cuits doucement dans le lait entier avec des pruneaux qui fondent, relevés de noix et de graines de courge grillées.",
     "emoji": "🥣",
     "category": "petit-dejeuner",
     "mealTypes": [
       "petit-dejeuner"
     ],
     "cuisine": "francaise",
-    "prepTime": 5,
-    "cookTime": 12,
+    "prepTime": 8,
+    "cookTime": 40,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
       {
-        "id": "flocons-avoine",
+        "id": "orge",
         "qty": 100,
         "unit": "g"
       },
       {
         "id": "lait",
-        "qty": 450,
+        "qty": 600,
         "unit": "g"
       },
       {
@@ -660,24 +660,18 @@
         "unit": "pincee"
       },
       {
-        "id": "farine-seigle",
-        "qty": 12,
-        "unit": "g",
-        "note": "pour le trempage de l’avoine (phytase)"
-      },
-      {
-        "id": "kefir",
-        "qty": 4,
-        "unit": "cas",
-        "note": "pour le trempage"
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "jus pour le trempage, zeste pour la cuisson"
       }
     ],
     "steps": [
-      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
-      "Dans une casserole, versez le lait, les flocons d’avoine, les pruneaux coupés, la cannelle et une pincée de sel.",
-      "Portez à frémissement à feu moyen puis baissez à feu doux et laissez cuire 8 à 10 min en remuant régulièrement : les flocons doivent être tendres et le porridge épais et crémeux, les pruneaux fondants.",
+      "La veille : faites tremper l’orge perlé 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron. Rincez avant de cuire.",
+      "Dans une casserole à fond épais, versez le lait, l’orge égoutté, la cannelle, une bande de zeste de citron et une pincée de sel. Portez à frémissement à feu moyen.",
+      "Baissez à feu très doux et laissez cuire 35 à 40 min à découvert en remuant toutes les 5 min : les grains doivent être tendres et le lait épaissi en crème. Ajoutez les pruneaux coupés les 10 dernières minutes.",
       "Pendant ce temps, torréfiez les noix concassées et les graines de courge 3 min à sec dans une poêle à feu moyen, jusqu’à ce qu’elles sentent le grillé.",
-      "Répartissez le porridge dans deux bols, ajoutez une belle cuillerée de skyr, les dés de kiwi, les noix et les graines, puis un filet de miel."
+      "Retirez le zeste, répartissez dans deux bols, ajoutez une belle cuillerée de skyr, les dés de kiwi, les noix et les graines, puis un filet de miel."
     ],
     "tags": [
       "rapide",
@@ -690,13 +684,13 @@
       "automne",
       "hiver"
     ],
-    "technique": "mijote",
+    "technique": "bouilli",
     "flavors": [
       "reconfortant",
       "cremeux",
       "sucre"
     ],
-    "tips": "Les pruneaux peuvent tremper la veille dans le lait pour un porridge encore plus moelleux.",
+    "tips": "Se prépare en double et se réchauffe avec un trait de lait : un petit-déjeuner prêt pour deux jours.",
     "restTime": 720
   },
   {
@@ -787,8 +781,8 @@
       "Fouettez énergiquement le fromage blanc avec l’beurre clarifié et le jus du demi-citron 1 min : l’huile doit disparaître complètement dans le fromage blanc.",
       "Incorporez la banane, les graines de courge et les flocons d’avoine.",
       "Concassez grossièrement les noisettes et coupez les kiwis en dés.",
-      "Répartissez la crème dans deux bols et garnissez de kiwi, de myrtilles et de noisettes.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Répartissez la crème dans deux bols et garnissez de kiwi, de myrtilles et de noisettes."
     ],
     "tags": [
       "rapide",
@@ -1266,6 +1260,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 290,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1273,7 +1273,8 @@
       "Ajoutez l’oignon rouge et le poivron en lanières, ainsi que le paprika ; poursuivez 4 min.",
       "Poussez les légumes sur les bords, déposez les cubes de saumon au centre et faites-les saisir 2 min en les retournant une fois : ils doivent rester nacrés à cœur.",
       "Creusez deux puits dans la poêlée, cassez-y les œufs, couvrez et laissez cuire 3 à 4 min à feu moyen, jusqu’à ce que les blancs soient pris.",
-      "Parsemez de persil, arrosez d’un trait de citron et servez directement dans la poêle."
+      "Parsemez de persil, arrosez d’un trait de citron et servez directement dans la poêle.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "une poêle",
@@ -1362,15 +1363,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le sarrasin, versez-le dans une casserole avec 2 fois son volume d’eau salée. Portez à ébullition, couvrez et cuisez 12 min à feu doux : les grains doivent être tendres mais se tenir. Hors du feu, ajoutez le beurre et laissez gonfler 3 min.",
       "Plongez les œufs 6 min 30 dans l’eau bouillante, puis 1 min dans l’eau froide, et écalez-les.",
       "Fouettez le kéfir avec l’aneth ciselé, une pincée de sel et du poivre.",
       "Tranchez l’avocat, les radis en rondelles fines et ciselez l’oignon nouveau.",
-      "Répartissez le kasha chaud dans deux bols, ajoutez l’avocat, les radis, les œufs mollets coupés en deux et les graines de courge, puis nappez de kéfir à l’aneth."
+      "Répartissez le kasha chaud dans deux bols, ajoutez l’avocat, les radis, les œufs mollets coupés en deux et les graines de courge, puis nappez de kéfir à l’aneth.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -1462,22 +1470,22 @@
         "unit": "pincee"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "yaourt-nature",
+        "qty": 250,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "La veille : préparez la pâte et laissez-la reposer et fermenter une nuit (12 h) à température ambiante, couverte.",
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 190 °C.",
       "Épluchez et coupez les pommes et la poire en dés de 2 cm. Mélangez-les avec la moitié de la cannelle et étalez-les dans un plat à gratin.",
       "Du bout des doigts, sablez la farine de sarrasin, les grains de kasha, les noisettes concassées, les graines de courge, le sucre, le reste de cannelle, le sel et le beurre froid jusqu’à obtenir de grosses miettes.",
       "Répartissez les miettes sur les fruits sans tasser.",
       "Enfournez 25 à 30 min, jusqu’à ce que le dessus soit bien doré et que le jus des fruits bouillonne sur les bords.",
       "Laissez tiédir 5 min et servez avec le skyr bien froid.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -2498,6 +2506,12 @@
         "id": "citron-vert",
         "qty": 0.5,
         "unit": "piece"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2505,7 +2519,8 @@
       "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Mettez dans le blender le kéfir, les fruits, les pousses d’épinards, les graines de courge, le miel, la menthe et le jus du demi-citron vert.",
       "Mixez 60 s à pleine puissance, jusqu’à ce que la boisson soit parfaitement lisse et d’un vert vif.",
-      "Goûtez : ajoutez un trait de citron vert si besoin. Servez immédiatement, bien frais."
+      "Goûtez : ajoutez un trait de citron vert si besoin. Servez immédiatement, bien frais.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2595,6 +2610,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2602,7 +2623,8 @@
       "Torréfiez les noisettes 4 min à sec dans une poêle à feu moyen, ajoutez les graines de courge, le sésame, le cumin et la coriandre pour 1 min de plus, jusqu’à ce que le sésame blondisse.",
       "Laissez tiédir, puis concassez au mortier avec une bonne pincée de sel : le dukkah doit rester grossier.",
       "Mélangez le yaourt avec le zeste et le jus du demi-citron et étalez-le dans une assiette creuse. Arrosez d’huile d’olive.",
-      "Posez les œufs coupés en deux sur le yaourt, couvrez généreusement de dukkah et servez avec les bâtonnets de poivron."
+      "Posez les œufs coupés en deux sur le yaourt, couvrez généreusement de dukkah et servez avec les bâtonnets de poivron.",
+      "Servez avec une cuillerée de yaourt nature entier (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",

@@ -468,8 +468,8 @@
       "Salez le rôti de bœuf. Saisissez-le dans une poêle avec l’huile d’olive à feu vif 2 à 3 min par face, puis enfournez 10 min à 200 °C pour un cœur rosé. Laissez reposer 10 min et tranchez finement.",
       "Fouettez la moutarde, le vinaigre, l’échalote ciselée et l’beurre clarifié. Versez la moitié sur les lentilles tièdes.",
       "Torréfiez les noix 3 min à sec dans une poêle. Coupez la poire en lamelles et les endives en tronçons.",
-      "Dressez roquette et endives, les lentilles, la poire, le bœuf et le roquefort émietté. Arrosez du reste de vinaigrette et parsemez de noix.",
-      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
+      "Hors du feu, juste avant de servir, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum.",
+      "Dressez roquette et endives, les lentilles, la poire, le bœuf et le roquefort émietté. Arrosez du reste de vinaigrette et parsemez de noix."
     ],
     "tags": [
       "repas froid",
@@ -1185,7 +1185,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 210 °C. Coupez l’aubergine en deux, quadrillez la chair, badigeonnez de 15 ml d’huile et salez. Rôtissez 30 min face coupée vers le bas : la chair doit être fondante.",
       "Couvrez le boulgour de 1,5 fois son volume d’eau bouillante salée, couvrez et laissez gonfler 15 min.",
       "Mélangez l’agneau avec la moitié de l’oignon râpé, les épices, 10 g de persil haché et du sel. Formez 6 boudins autour de brochettes.",
@@ -1312,8 +1312,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 60,
+        "id": "comte",
+        "qty": 80,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -1325,7 +1325,7 @@
       "Remettez l’agneau, ajoutez les tomates concassées et le bouillon. Couvrez et laissez mijoter 1 h 15 à feu doux.",
       "Ajoutez les haricots, les courgettes en gros dés et les côtes de blettes, poursuivez 25 min à couvert. Ajoutez le vert des blettes les 5 dernières minutes : l’agneau doit être fondant et le jus légèrement épaissi par les haricots.",
       "Rectifiez l’assaisonnement, arrosez du reste d’huile d’olive crue et servez avec le pain grillé frotté d’ail.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1430,6 +1430,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1437,7 +1443,8 @@
       "Épluchez la patate douce, coupez-la en cubes et cuisez-la 15 min à la vapeur. Écrasez-la avec 15 g de beurre et le gingembre râpé, salez.",
       "Salez les côtes de porc et saisissez-les 2 min par face dans une poêle très chaude avec le reste de beurre. Posez-les sur les légumes et enfournez 10 min : le cœur doit être juste rosé (63 °C).",
       "Déglacez la poêle avec le cidre et la moutarde, laissez réduire 2 min pour obtenir un jus sirupeux.",
-      "Torréfiez les noisettes concassées 3 min à sec. Servez les côtes nappées de jus avec les légumes rôtis, la purée et les noisettes."
+      "Torréfiez les noisettes concassées 3 min à sec. Servez les côtes nappées de jus avec les légumes rôtis, la purée et les noisettes.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1548,8 +1555,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "manchego",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -1562,7 +1569,7 @@
       "Ajoutez les pois chiches, la pâte de pain et 150 ml d’eau. Laissez mijoter 10 min à feu doux : la sauce doit devenir épaisse et nappante. Ajoutez les piquillos en lanières.",
       "Grillez l’échine dans une poêle-gril très chaude 4 min par face, puis laissez reposer 3 min.",
       "Servez les tranches de porc sur les pois chiches, avec un quartier de citron.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de manchego (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "une poêle",
@@ -2025,7 +2032,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le boulgour 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez le poulet avec le yaourt, 1 cuillère de zaatar, une gousse d’ail râpée et du sel. Laissez mariner 30 min (ou toute une nuit au frais).",
       "Préchauffez le four à 220 °C. Sur une plaque, mélangez le chou-fleur en fleurettes, l’oignon rouge en quartiers, les pois chiches séchés, l’huile et le reste de zaatar. Posez le poulet par-dessus.",
       "Enfournez 30 à 35 min : le poulet doit être doré et caramélisé sur les bords, le chou-fleur bien grillé.",
@@ -2141,6 +2148,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2150,7 +2163,8 @@
       "Remettez le poulet, versez le bouillon, couvrez et laissez mijoter 30 min à feu doux.",
       "Pendant ce temps, cuisez le riz complet 30 à 35 min dans 2,5 fois son volume d’eau salée. Faites sauter les champignons émincés dans le reste de beurre 6 min à feu vif jusqu’à ce qu’ils soient dorés.",
       "Ajoutez les champignons, la crème et la moutarde dans la cocotte et laissez réduire 5 min à découvert pour que la sauce nappe la cuillère. Ajoutez l’estragon et un trait de citron.",
-      "Servez la fricassée sur le riz complet."
+      "Servez la fricassée sur le riz complet.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2261,7 +2275,7 @@
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée frémissante : il doit être tendre mais encore un peu croquant. Égouttez et étalez pour qu’il tiédisse.",
       "Coupez les asperges en tronçons de 4 cm et cuisez-les 3 min à l’eau bouillante salée avec les petits pois, puis rafraîchissez.",
       "Aplatissez légèrement les blancs, frottez-les de 10 ml d’huile, du zeste de citron et du sel. Grillez 5 min par face dans une poêle-gril à feu moyen-vif : le cœur doit être juste blanc. Laissez reposer 3 min et tranchez.",
@@ -2367,6 +2381,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2375,7 +2395,8 @@
       "Faites griller les amandes à sec 2 min à feu moyen jusqu’à ce qu’elles blondissent. Réservez.",
       "Salez les escalopes et dorez-les dans 15 g de beurre 3 min par face à feu moyen-vif. Réservez au chaud.",
       "Dans la même poêle, faites sauter les tomates cerises coupées en deux avec le reste de beurre, l’ail restant et l’origan 2 min, ajoutez les haricots 2 min. Arrosez de citron.",
-      "Servez la dinde avec les haricots parsemés d’amandes et les pommes de terre."
+      "Servez la dinde avec les haricots parsemés d’amandes et les pommes de terre.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2604,6 +2625,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2611,7 +2638,8 @@
       "Quadrillez la peau du magret sans entailler la chair, salez. Posez-le côté peau dans une poêle froide, chauffez à feu moyen et cuisez 8 min en retirant le gras fondu, puis 4 min côté chair. Laissez reposer 6 min sous aluminium.",
       "Dans 1 cuillère de graisse du magret, faites revenir l’échalote 1 min, déglacez au balsamique et ajoutez les airelles et le thym 2 min.",
       "Faites mousser le reste de beurre jusqu’à ce qu’il sente la noisette, ajoutez les noisettes concassées et le kale, faites sauter 4 min à feu vif : le chou doit être tombé mais vert vif.",
-      "Tranchez le magret, servez sur la purée avec le kale et la sauce aux airelles."
+      "Tranchez le magret, servez sur la purée avec le kale et la sauce aux airelles.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "week-end",
@@ -2727,8 +2755,8 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 60,
+        "id": "comte",
+        "qty": 80,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
@@ -2741,7 +2769,7 @@
       "Ajoutez les lentilles rincées et le bouillon, posez les cuisses dessus, peau hors du liquide. Couvrez et laissez mijoter 45 min à feu doux.",
       "Découvrez et passez 15 min sous le gril du four à 220 °C : la peau doit être croustillante et les lentilles avoir absorbé presque tout le bouillon.",
       "Retirez les cuisses, incorporez les épinards aux lentilles chaudes jusqu’à ce qu’ils tombent (2 min), ajoutez le vinaigre et le persil. Servez les cuisses sur les lentilles.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -2853,6 +2881,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 80,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2861,7 +2895,8 @@
       "Posez la pintade sur les légumes, versez le bouillon, couvrez et cuisez 50 min au four à 170 °C.",
       "Découvrez, montez le four à 210 °C et poursuivez 15 min : la peau doit dorer et les topinambours être fondants à cœur.",
       "Torréfiez les noisettes concassées 3 min. Retirez la viande, mélangez la crème, l’estragon et le citron au jus des légumes, puis remettez la pintade.",
-      "Servez parsemé de noisettes."
+      "Servez parsemé de noisettes.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -3204,15 +3239,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 200 °C. Posez le saumon salé sur une plaque, arrosez d’huile et de zeste de citron, enfournez 10 à 12 min : la chair doit être nacrée au centre.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée, puis ajoutez le beurre.",
       "Cuisez le brocoli en fleurettes 4 min à la vapeur, ajoutez les petits pois la dernière minute.",
       "Mélangez le kéfir avec l’aneth haché, le raifort, le jus d’un demi-citron, le concombre en petits dés et du sel.",
-      "Torréfiez les graines de courge 3 min à sec. Dressez kasha, légumes et saumon, nappez de sauce et parsemez de graines."
+      "Torréfiez les graines de courge 3 min à sec. Dressez kasha, légumes et saumon, nappez de sauce et parsemez de graines.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3538,6 +3580,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3545,7 +3593,8 @@
       "Faites revenir l’ail émincé dans l’huile 1 min, ajoutez le kale effeuillé et 2 cuillères d’eau, faites sauter 5 min à feu vif. Ajoutez les noix concassées et le zeste du citron.",
       "Salez les filets de truite et cuisez-les côté peau dans le reste de beurre 4 min à feu moyen-vif, puis 1 min côté chair : la peau doit être croustillante.",
       "Mélangez la crème, la ciboulette ciselée et le jus d’un demi-citron.",
-      "Servez la truite sur l’écrasé avec le kale et la sauce."
+      "Servez la truite sur l’écrasé avec le kale et la sauce.",
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3781,6 +3830,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3788,7 +3843,8 @@
       "Émincez finement le chou, râpez la pomme et la carotte. Mélangez avec le kéfir, la moutarde, le vinaigre et du sel. Laissez reposer 15 min pour attendrir le chou.",
       "Coupez la betterave en quartiers, salez et poivrez.",
       "Salez les harengs, passez-les dans la farine de seigle et cuisez-les dans le reste de beurre à feu moyen-vif 3 à 4 min par face : la peau doit être dorée et la chair se détacher de l’arête.",
-      "Servez les harengs avec la salade de chou, la betterave, les pommes de terre, le reste d’aneth et le pain de seigle."
+      "Servez les harengs avec la salade de chou, la betterave, les pommes de terre, le reste d’aneth et le pain de seigle.",
+      "Prévoyez un skyr nature en dessert (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "économique",
@@ -3908,6 +3964,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 40,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3915,7 +3977,8 @@
       "Dans la même sauteuse, faites suer l’oignon, le céleri et le poivron en dés 6 min. Ajoutez les tomates, les olives, les câpres, le vinaigre et le miel ; laissez compoter 10 min. Remettez l’aubergine 5 min.",
       "Versez 120 ml d’eau bouillante salée sur la semoule, couvrez 5 min, égrainez avec une fourchette et ajoutez les pignons grillés et la moitié du basilic.",
       "Salez le thon, huilez-le et saisissez-le dans une poêle fumante 1 min 30 par face : le cœur doit rester rose.",
-      "Servez le thon tranché sur la caponata tiède, avec le couscous, le reste de basilic et un trait de citron."
+      "Servez le thon tranché sur la caponata tiède, avec le couscous, le reste de basilic et un trait de citron.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -4133,20 +4196,20 @@
         "unit": "au-gout"
       },
       {
-        "id": "parmesan",
-        "qty": 30,
+        "id": "comte",
+        "qty": 40,
         "unit": "g",
         "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 210 °C. Mélangez les choux coupés en deux avec l’huile et du sel, rôtissez 20 min : ils doivent être tendres et bien caramélisés.",
       "Faites fondre les oignons émincés dans 10 g de beurre à feu doux 20 min en remuant, jusqu’à ce qu’ils soient blonds et confits. Déglacez au vinaigre.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée, ajoutez les noisettes torréfiées concassées et le persil.",
       "Salez le foie et farinez-le légèrement. Faites mousser le reste de beurre avec la sauge, saisissez le foie à feu vif 1 min 30 par face : il doit rester rosé au cœur.",
       "Servez le foie sur les oignons, avec la kasha et les choux, nappé du beurre de sauge.",
-      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
+      "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
