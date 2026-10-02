@@ -1052,6 +1052,7 @@
       }
     ],
     "steps": [
+      "Sécurité : congelez le poisson au moins 24 h à −20 °C avant de le préparer cru (ou achetez-le « qualité sashimi », déjà assaini) — recommandation ANSES contre les parasites.",
       "Cuisez les patates douces entières 25 min dans l'eau frémissante (la lame d'un couteau doit entrer sans résistance), laissez-les tiédir puis coupez-les en rondelles épaisses. Faites griller le maïs 5 min dans une poêle sèche très chaude.",
       "Plongez l'oignon rouge 10 min dans de l'eau glacée salée pour l'adoucir, égouttez.",
       "Leche de tigre : mixez ou pilez le jus des citrons verts avec le gingembre, l'ail, la moitié du piment, quelques tiges de coriandre, le sel et 2 petits cubes de poisson. Filtrez.",
@@ -2595,7 +2596,7 @@
     "ingredients": [
       {
         "id": "foie-veau",
-        "qty": 3,
+        "qty": 2.25,
         "unit": "piece",
         "note": "tranches de 1 cm"
       },

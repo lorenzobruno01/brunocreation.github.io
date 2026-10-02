@@ -518,9 +518,9 @@
         "note": "en petits dés"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 40,
-        "unit": "ml"
+        "unit": "g"
       },
       {
         "id": "vinaigre-cidre",
@@ -565,12 +565,13 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Préchauffez le four à 160 °C. Dans un grand saladier, mélangez les viandes hachées et le foie avec les œufs, les échalotes, l'ail, le persil, le thym effeuillé, les noisettes, le quatre-épices et le vin blanc. Salez (16 g/kg) et poivrez généreusement.",
       "Faites cuire une noisette de farce 1 min à la poêle pour goûter et rectifier l'assaisonnement.",
       "Tassez la farce dans une terrine de 1,2 l en chassant l'air, posez les feuilles de laurier dessus et couvrez. Placez la terrine dans un plat rempli d'eau chaude à mi-hauteur.",
       "Enfournez 1 h 45 : la terrine est cuite quand le jus qui remonte sur les bords est clair et que le cœur atteint 70 °C. Laissez refroidir, posez un poids dessus (une brique de lait) et réservez au moins 12 h au frais.",
       "Pour la salade, rincez les lentilles et mettez-les avec les carottes dans 3 fois leur volume d'eau froide non salée. Portez à frémissement et cuisez 20 à 25 min : elles doivent rester entières et fondantes. Salez en fin de cuisson et égouttez.",
-      "Fouettez la moutarde, le vinaigre et l'huile de colza. Mélangez les lentilles tièdes avec la moitié de la vinaigrette, assaisonnez la mâche avec le reste.",
+      "Fouettez la moutarde, le vinaigre et l'beurre clarifié (ghee). Mélangez les lentilles tièdes avec la moitié de la vinaigrette, assaisonnez la mâche avec le reste.",
       "Servez 2 tranches épaisses de terrine par personne avec les lentilles tièdes, la mâche, le pain de seigle grillé et les cornichons."
     ],
     "tags": [
@@ -745,7 +746,7 @@
     "ingredients": [
       {
         "id": "sarrasin",
-        "qty": 160,
+        "qty": 100,
         "unit": "g",
         "note": "grains, kasha grillée"
       },
@@ -818,22 +819,31 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Faites griller le sarrasin à sec 3 min dans une casserole à feu moyen en remuant, jusqu'à ce qu'il sente la noisette. Ajoutez 10 g de beurre puis le bouillon chaud, salez légèrement, couvrez et cuisez 15 min à feu doux. Laissez reposer 5 min hors du feu, couvercle fermé.",
       "Plongez les œufs 6 min dans l'eau bouillante, puis dans l'eau froide ; écalez-les.",
       "Dans une poêle, faites fondre 15 g de beurre et faites dorer les oignons 12 min à feu moyen en remuant : ils doivent être bien blonds et fondants. Ajoutez les champignons et faites-les colorer 5 min. Réservez.",
       "Parez les foies (retirez les filaments verts et blancs) et séchez-les. Dans la même poêle, à feu vif, avec le reste du beurre, saisissez-les 1 min 30 par face avec le paprika : ils doivent rester rosés à cœur. Salez, poivrez.",
       "Remettez oignons et champignons dans la poêle, mélangez 30 s pour réchauffer.",
-      "Mélangez la crème avec la moitié de l'aneth ciselé et une pincée de sel. Servez la kasha surmontée des foies, des oignons-champignons, d'un œuf mollet coupé en deux, de la crème à l'aneth, des cornichons, du persil et du reste d'aneth."
+      "Mélangez la crème avec la moitié de l'aneth ciselé et une pincée de sel. Servez la kasha surmontée des foies, des oignons-champignons, d'un œuf mollet coupé en deux, de la crème à l'aneth, des cornichons, du persil et du reste d'aneth.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
       "économique",
       "abats",
       "sans gluten",
-      "réconfortant"
+      "réconfortant",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -845,7 +855,8 @@
       "cremeux",
       "acidule"
     ],
-    "tips": "Le sarrasin non grillé fonctionne aussi : faites-le griller 5 min de plus. Ne surcuisez jamais les foies, c'est le secret pour qu'ils restent doux."
+    "tips": "Le sarrasin non grillé fonctionne aussi : faites-le griller 5 min de plus. Ne surcuisez jamais les foies, c'est le secret pour qu'ils restent doux.",
+    "restTime": 720
   },
   {
     "id": "dab-devilled-kidneys",
@@ -1057,8 +1068,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 20,
-        "unit": "ml"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "vinaigre-cidre",
@@ -1075,6 +1087,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
@@ -1083,7 +1101,8 @@
       "Pendant ce temps, nettoyez les cèpes à la brosse, coupez-les en tranches. Saisissez-les 5 min à feu vif dans une seconde poêle avec le reste de graisse, salez.",
       "Ajoutez les gésiers aux cèpes et faites-les dorer 4 min en remuant.",
       "Hors du feu, versez cèpes et gésiers sur les pommes de terre, ajoutez l'ail et le persil hachés (la persillade) et mélangez 1 min à feu doux : l'ail doit parfumer sans brûler.",
-      "Faites cuire les œufs au plat 3 min. Assaisonnez la roquette et les noix avec l'huile de noix et le vinaigre, et servez à côté des sarladaises surmontées d'un œuf."
+      "Faites cuire les œufs au plat 3 min. Assaisonnez la roquette et les noix avec l'beurre clarifié et le vinaigre, et servez à côté des sarladaises surmontées d'un œuf.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "une poêle",
@@ -1191,7 +1210,7 @@
       },
       {
         "id": "betterave",
-        "qty": 500,
+        "qty": 245,
         "unit": "g",
         "note": "cuites"
       },
@@ -1215,6 +1234,12 @@
         "qty": 1,
         "unit": "au-gout",
         "note": "en grains et moulu"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -1223,7 +1248,8 @@
       "Cuisez les pommes de terre 20 min à l'eau salée. Égouttez et roulez-les dans 10 g de beurre et la moitié de l'aneth ciselé.",
       "Salade : râpez grossièrement les betteraves, mélangez avec 1 cuillère à soupe de raifort, le vinaigre, sel et poivre.",
       "Sauce : faites fondre 20 g de beurre, ajoutez la farine et remuez 1 min à feu moyen. Versez 400 ml de bouillon chaud en fouettant et laissez épaissir 5 min. Hors du feu, ajoutez la crème, le reste du raifort et le persil haché ; salez.",
-      "Tranchez la langue en biais en tranches de 1 cm, nappez de sauce au raifort et servez avec les pommes de terre et la salade de betteraves. Le reste de bouillon et de légumes se boit en entrée."
+      "Tranchez la langue en biais en tranches de 1 cm, nappez de sauce au raifort et servez avec les pommes de terre et la salade de betteraves. Le reste de bouillon et de légumes se boit en entrée.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1655,7 +1681,7 @@
     "ingredients": [
       {
         "id": "farine-sarrasin",
-        "qty": 160,
+        "qty": 100,
         "unit": "g"
       },
       {
@@ -1808,7 +1834,7 @@
       },
       {
         "id": "epinard",
-        "qty": 500,
+        "qty": 82.25,
         "unit": "g",
         "note": "frais ou surgelés"
       },
@@ -1867,6 +1893,7 @@
     ],
     "steps": [
       "Ragù : dans une cocotte, faites revenir l'oignon haché, les carottes et l'ail 6 min à feu moyen dans l'huile. Ajoutez le bœuf et émiettez-le 6 min à feu vif. Ajoutez le foie mixé et remuez 2 min.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Versez la passata et 200 ml d'eau, ajoutez l'origan, salez, poivrez. Laissez mijoter 40 min à feu doux à demi-couvert : la sauce doit être épaisse mais encore coulante.",
       "Faites tomber les épinards 3 min dans une poêle à feu vif, pressez-les fortement dans une passoire, hachez-les. Mélangez avec la ricotta, l'œuf, la moitié du parmesan, la muscade, sel et poivre.",
       "Préchauffez le four à 180 °C. Dans un plat de 30 × 20 cm, étalez une louche de ragù, puis une couche de feuilles de lasagne, du ragù, de la crème d'épinards-ricotta, et recommencez pour obtenir 4 couches de pâtes, en terminant par du ragù.",
@@ -2016,9 +2043,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 8,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Préchauffez le four à 180 °C. Faites tremper les flocons d'avoine 5 min dans 60 ml de lait.",
       "Dans un saladier, mélangez le bœuf, le foie mixé, l'oignon, la carotte, les champignons, l'avoine trempée, les œufs, la moutarde, le paprika, le thym effeuillé, la moitié du persil, 1,5 cuillère à café de sel et du poivre. Ne pétrissez pas trop : la farce doit rester souple.",
       "Façonnez un pain de 25 × 10 cm sur une plaque recouverte de papier cuisson (il dore mieux qu'en moule). Mélangez concentré de tomate, vinaigre et miel, et badigeonnez-en la moitié sur le dessus.",
@@ -2031,7 +2071,8 @@
       "abats",
       "four",
       "batch cooking",
-      "lunch box"
+      "lunch box",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2043,7 +2084,8 @@
       "sucre",
       "reconfortant"
     ],
-    "tips": "Froid, en tranches, il fait un excellent sandwich au pain de seigle avec cornichons et moutarde. Il se congèle tranché."
+    "tips": "Froid, en tranches, il fait un excellent sandwich au pain de seigle avec cornichons et moutarde. Il se congèle tranché.",
+    "restTime": 720
   },
   {
     "id": "dab-mixed-grill-moelle-rognons",
@@ -2579,6 +2621,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper le riz complet 12 à 24 h dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Cuisez le riz complet 25 min dans 3 fois son volume d'eau salée : il doit être juste tendre. Égouttez.",
       "Décalottez les tomates, videz-les à la cuillère et retournez-les sur une grille 15 min pour qu'elles rendent leur eau. Gardez la pulpe hachée. Coupez le chapeau des poivrons et des courgettes, videz-les (hachez la chair des courgettes).",
       "Préchauffez le four à 180 °C. Faites revenir l'oignon haché et la chair de courgette 5 min dans 15 ml d'huile.",
@@ -2602,7 +2645,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Les farcis sont aussi bons froids le lendemain, en lunch box. Ajoutez des pommes de terre en quartiers dans le plat pour un repas encore plus copieux."
+    "tips": "Les farcis sont aussi bons froids le lendemain, en lunch box. Ajoutez des pommes de terre en quartiers dans le plat pour un repas encore plus copieux.",
+    "restTime": 720
   },
   {
     "id": "dab-tagliata-coeur-boeuf",
@@ -2845,6 +2889,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Salez et farinez légèrement les tronçons de queue. Dans une grande cocotte, faites chauffer la graisse à feu vif et colorez-les en 2 fournées, 4 min par face, jusqu'à une croûte bien brune. Réservez.",
       "Baissez à feu moyen, faites revenir oignons, la moitié des carottes et le céleri 6 min. Ajoutez le concentré et remuez 1 min, puis déglacez au vin rouge en grattant les sucs. Laissez réduire de moitié.",
       "Remettez la viande, versez le bouillon, ajoutez thym et laurier. Portez à frémissement, couvrez et laissez cuire 3 h 30 à feu très doux : la viande doit se détacher toute seule de l'os.",
@@ -2857,7 +2902,8 @@
       "riche en collagène",
       "réconfortant",
       "batch cooking",
-      "week-end"
+      "week-end",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2868,7 +2914,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Préparez-la la veille : au frais, le bouillon prend en gelée et la graisse fige en surface, il suffit de la retirer."
+    "tips": "Préparez-la la veille : au frais, le bouillon prend en gelée et la graisse fige en surface, il suffit de la retirer.",
+    "restTime": 720
   },
   {
     "id": "dab-hochepot-queue-boeuf",
@@ -3410,9 +3457,9 @@
         "unit": "g"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 30,
-        "unit": "ml"
+        "unit": "g"
       },
       {
         "id": "vinaigre-cidre",
@@ -3445,7 +3492,7 @@
       "Dans une grande cocotte, faites fondre le beurre à feu moyen et faites suer les oignons et poireaux émincés 8 min sans coloration, jusqu'à ce qu'ils soient tendres.",
       "Ajoutez les pommes de terre, l'ail, le thym et le laurier, versez le fumet et portez à ébullition. Laissez cuire 15 min à frémissement : les pommes de terre doivent être presque tendres.",
       "Ajoutez d'abord les tronçons de maquereau et le merlu, laissez pocher 5 min à petit frémissement. Ajoutez les sardines et les moules, couvrez et poursuivez 4 à 5 min : les moules doivent être ouvertes (jetez celles qui restent fermées).",
-      "Préparez la vinaigrette : fouettez la moutarde, le vinaigre et l'huile de colza, ajoutez la ciboulette ciselée, sel et poivre.",
+      "Préparez la vinaigrette : fouettez la moutarde, le vinaigre et l'beurre clarifié (ghee), ajoutez la ciboulette ciselée, sel et poivre.",
       "Retirez délicatement poissons, moules et pommes de terre dans un plat chaud avec une écumoire. Ajoutez les algues émiettées au bouillon et rectifiez l'assaisonnement.",
       "Servez d'abord le bouillon versé sur les tartines de pain grillé, puis le poisson, les moules et les pommes de terre arrosés de vinaigrette à la ciboulette."
     ],
@@ -3668,7 +3715,7 @@
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 38.5,
         "unit": "g",
         "note": "blettes, feuilles émincées"
       },
@@ -3737,6 +3784,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3745,7 +3798,8 @@
       "Dans une grande cocotte, mélangez pieds, jarret, oignons râpés, ail écrasé, tomates râpées, huile, toutes les épices, la moitié de la coriandre et du persil hachés, sel et poivre. Faites revenir 5 min à feu moyen en remuant.",
       "Ajoutez les pois chiches et couvrez d'eau de 3 cm. Portez à ébullition, puis couvrez et laissez cuire 3 h à feu très doux (ou 1 h 15 en autocuiseur).",
       "Ajoutez le boulgour (en vrac ou dans une gaze), les carottes et les blettes émincées et poursuivez 45 min : la sauce doit devenir épaisse, collante et brillante et la chair des pieds se détacher des os. Ajoutez un peu d'eau si nécessaire.",
-      "Retirez les gros os, incorporez la harissa, le jus du citron et le reste des herbes. Servez brûlant avec le pain pour saucer."
+      "Retirez les gros os, incorporez la harissa, le jus du citron et le reste des herbes. Servez brûlant avec le pain pour saucer.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en collagène",
@@ -4010,6 +4064,8 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Mettez l'agneau dans un faitout avec 2,5 l d'eau froide, portez à ébullition et écumez soigneusement 10 min. Ajoutez le laurier, le thym et une cuillère à café de sel.",
       "Ajoutez l'orge et les pois cassés rincés, couvrez et laissez frémir 1 h à feu doux.",
       "Ajoutez carottes, rutabaga, oignon haché et le blanc des poireaux émincé. Poursuivez 50 min à couvert : l'orge doit être fondant et la viande se détacher de l'os.",
@@ -4022,7 +4078,8 @@
       "économique",
       "réconfortant",
       "batch cooking",
-      "riche en collagène"
+      "riche en collagène",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -4033,7 +4090,8 @@
       "reconfortant",
       "herbace"
     ],
-    "tips": "La soupe épaissit en refroidissant : allongez-la d'un peu d'eau au réchauffage. Elle se garde 4 jours au frais."
+    "tips": "La soupe épaissit en refroidissant : allongez-la d'un peu d'eau au réchauffage. Elle se garde 4 jours au frais.",
+    "restTime": 720
   },
   {
     "id": "dab-ciorba-perisoare",
@@ -4423,6 +4481,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Salez les jarrets. Dans une cocotte, faites chauffer 20 ml d'huile à feu vif et dorez-les 4 min par face. Réservez.",
       "Baissez à feu moyen, faites suer oignon, carotte et céleri en dés 7 min avec le romarin. Ajoutez 2 gousses d'ail hachées et les tomates, remuez 2 min.",
       "Remettez les jarrets, versez le bouillon, ajoutez la croûte de parmesan. Couvrez et laissez mijoter 1 h 15 à feu doux : la viande doit commencer à se détacher de l'os.",
@@ -4435,7 +4494,8 @@
       "riche en collagène",
       "batch cooking",
       "réconfortant",
-      "familial"
+      "familial",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -4447,7 +4507,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "La croûte de parmesan, gardée au congélateur, donne un fond umami incomparable : retirez-la avant de servir."
+    "tips": "La croûte de parmesan, gardée au congélateur, donne un fond umami incomparable : retirez-la avant de servir.",
+    "restTime": 720
   },
   {
     "id": "dab-sopa-picadillo",
@@ -4693,7 +4754,7 @@
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 55,
         "unit": "g",
         "note": "pour le namul"
       },
@@ -4716,6 +4777,12 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -4724,7 +4791,8 @@
       "Retirez l'oignon et le gingembre, ajoutez le radis, la sauce soja et la sauce poisson. Poursuivez 40 min : la viande doit être fondante, le radis translucide. Dégraissez soigneusement la surface.",
       "Pendant ce temps, faites cuire le riz et faites tremper les vermicelles 20 min dans l'eau tiède. Namul : blanchissez les épinards 30 s, rafraîchissez-les, pressez-les et assaisonnez-les d'huile de sésame, d'une goutte de soja et de la moitié du sésame.",
       "Ajoutez les vermicelles égouttés dans la soupe pour 5 min. Battez les œufs et versez-les en filet dans le bouillon frémissant en remuant doucement : ils forment de fins rubans.",
-      "Servez dans de grands bols avec la ciboule émincée, l'algue, le sésame et du poivre, avec le riz et le kimchi à côté. Salez à table selon le goût."
+      "Servez dans de grands bols avec la ciboule émincée, l'algue, le sésame et du poivre, avec le riz et le kimchi à côté. Salez à table selon le goût.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en collagène",

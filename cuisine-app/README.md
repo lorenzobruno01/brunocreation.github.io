@@ -16,6 +16,7 @@ Published by GitHub Pages at **`/cuisine/`** (for example `https://brunocreation
 | Cooking | Adjust servings (1–8), cook mode with one step per screen, large buttons, swipe, timers, screen kept awake |
 | Adding | Full form with photo, ingredient search, custom ingredients, nutrition calculated automatically, check against the eating philosophy, check for similar recipes |
 | Nutrition | Every recipe gets a nutrient density index (0–100) and a detailed breakdown: 13 vitamins, 8 minerals, electrolytes, omega-3, fibre and the 9 essential amino acids, as % of each household profile's daily needs. The weekly planner optimises the four meals of each day to get as close as possible to 100 % of those needs |
+| Digestion | Every recipe is checked for traditional preparation (soaked oats with acid and rye flour, soaked buckwheat, quinoa, brown rice and lentils, nut limits), seed oils, unfermented soy, flax, oxalates per portion, liver portions and raw-fish safety. Eight selectable eating approaches (Weston A. Price by default, anti-inflammatory, Ray Peat-inspired, GAPS, low-FODMAP, low-oxalate, phytoestrogen-cautious, Primal) filter the whole app. The sourced documentation is readable in the app (Sources page) |
 | Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
@@ -36,12 +37,15 @@ cuisine-app/
     micronutrients.ts vitamins, minerals, amino acids, density index, daily references (EFSA)
     nutriPlanner.ts   weekly menu optimised for daily nutrient coverage
     composer.ts       built-in recipe creator
+    digestion.ts      antinutrients, oxalates, preparations, eating-approach profiles
     ingredientQuery.ts AND / OR / WITHOUT ingredient search
   src/data/
     ingredients.ts    330 normalised ingredients (aliases, nutrition, aisles, pack sizes)
     recipes/*.json    seed library, one file per slice, loaded on demand
   src/db/db.ts      IndexedDB (Dexie): favourites, history, planner, pantry, shopping, added recipes
   src/data/micronutrients/*.json  micronutrients per ingredient (per 100 g)
+  docs/sources/     sourced research (antinutrients, sensitivities, eating approaches)
+  scripts/fix-digestion.ts      systematic fixes for the digestion rules
   scripts/validate-recipes.ts   library validation (schema, ingredients, philosophy, duplicates, stats)
   tests/            Vitest tests (scenarios A, B and C, planner)
 ```

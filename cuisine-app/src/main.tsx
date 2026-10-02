@@ -17,6 +17,7 @@ import { Favorites } from './pages/Favorites';
 import { RecipeForm } from './pages/RecipeForm';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
+import { Sources } from './pages/Sources';
 
 // Thème mémorisé (clair / sombre / auto)
 try {
@@ -66,6 +67,7 @@ function Shell() {
               <Route path="/modifier/:id" element={<RecipeForm />} />
               <Route path="/stats" element={<Stats />} />
               <Route path="/reglages" element={<Settings />} />
+              <Route path="/sources" element={<Sources />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </Layout>

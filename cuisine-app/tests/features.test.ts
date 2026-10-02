@@ -118,3 +118,21 @@ describe('planificateur densité nutritionnelle', () => {
     }
   }, 30000);
 });
+
+import { analyzeDigestion as ad } from '../src/domain/digestion';
+describe('digestion', () => {
+  it('le créateur ajoute le trempage pour le sarrasin et les lentilles', () => {
+    for (const q of ['sarrasin et poulet', 'lentilles et saucisse', 'riz complet et saumon']) {
+      const { query } = parseIngredientQuery(q, INGREDIENTS);
+      const r = composeRecipe(query, lookup)!;
+      expect(ad(r, lookup).issues.filter((i) => i.level === 'error' && i.topic === 'phytates'), q).toEqual([]);
+      expect(r.restTime, q).toBeGreaterThan(0);
+    }
+  });
+  it('signale l’avoine non trempée', () => {
+    const r = { id: 'x', name: 'x', description: '', category: 'petit-dejeuner', mealTypes: ['petit-dejeuner'], cuisine: 'francaise', prepTime: 5, cookTime: 5, difficulty: 'facile', servings: 1, ingredients: [{ id: 'flocons-avoine', qty: 60, unit: 'g' }, { id: 'lait', qty: 200, unit: 'ml' }], steps: ['Cuire les flocons dans le lait 5 min.', 'b', 'c'], tags: [], seasons: [], technique: 'bouilli', flavors: [] } as Recipe;
+    expect(ad(r, lookup).issues.some((i) => i.topic === 'phytates' && i.level === 'error')).toBe(true);
+    r.steps[0] = 'La veille, faire tremper les flocons 12 h dans de l’eau tiède avec 1 c. à soupe de kéfir et 1 c. à soupe de farine de seigle.';
+    expect(ad(r, lookup).issues.some((i) => i.topic === 'phytates' && i.level === 'error')).toBe(false);
+  });
+});

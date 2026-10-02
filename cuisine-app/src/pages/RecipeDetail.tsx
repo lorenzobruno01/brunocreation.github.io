@@ -14,11 +14,13 @@ import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
 import { NutritionPanel } from '../components/NutritionPanel';
+import { DigestionPanel } from '../components/DigestionPanel';
+import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
 import type { IndexedRecipe } from '../domain/types';
 
 export function RecipeDetail() {
   const { id } = useParams();
-  const { byId, recipes, lookup, seedIds } = useLibrary();
+  const { byId, recipes, lookup, seedIds, diets } = useLibrary();
   const { favorites, basket, pantry, fridge, settings } = useUserData();
   const recipe = id ? byId.get(id) : undefined;
   const [servings, setServings] = useState<number | null>(null);
@@ -111,6 +113,15 @@ export function RecipeDetail() {
         </div>
 
         <div className="stack" style={{ gap: 18 }}>
+          {diets.some((d) => recipe.incompatible?.[d]) && (
+            <div className="callout danger small">
+              ⚠️ Hors de votre approche alimentaire :{' '}
+              {diets
+                .filter((d) => recipe.incompatible?.[d])
+                .map((d) => `${DIET_BY_ID[d as DietProfileId]?.label} (${recipe.incompatible![d].slice(0, 3).join(', ')})`)
+                .join(' ; ')}
+            </div>
+          )}
           {issues.length > 0 && (
             <div className="callout">
               <strong>Contrôle « philosophie alimentaire »</strong>
@@ -206,6 +217,8 @@ export function RecipeDetail() {
               </button>
             </div>
           </section>
+
+          <DigestionPanel recipe={recipe} />
 
           <NutritionPanel recipe={recipe} />
 

@@ -8,6 +8,7 @@ import type { Ingredient, MealType, Recipe, RecipeIngredient, Season, Technique 
 import type { IngQuery } from './ingredientQuery';
 import { currentSeason } from './season';
 import { slugify } from './text';
+import { prepStepFor } from './digestion';
 
 type Lookup = (id: string) => Ingredient | undefined;
 
@@ -314,7 +315,12 @@ export function composeRecipe(q: IngQuery, lookup: Lookup, opts: { meal?: MealTy
   add('sel', 1, 'au-gout');
   add('poivre', 1, 'au-gout');
 
+  // Préparations traditionnelles (trempage la veille) pour céréales et légumineuses
+  const preps = ing.map((x) => prepStepFor(x.id)).filter(Boolean) as Array<{ step: string; restMinutes: number }>;
+  const restTime = preps.length ? Math.max(...preps.map((p) => p.restMinutes)) : undefined;
+  if (preps.length && ing.some((x) => x.id === 'flocons-avoine')) add('farine-seigle', 15, 'g', 'pour le trempage');
   const steps = [
+    ...preps.map((p) => p.step),
     'Sortez et pesez tous les ingrédients. Lavez les légumes.',
     ...(kind === 'oeufs' ? [...ss.pre, vs.step, ...ps.steps] : kind === 'braise' || kind === 'roast' ? [...ps.steps, `Pendant la dernière demi-heure de cuisson : ${ss.pre[0].charAt(0).toLowerCase()}${ss.pre[0].slice(1)}`, vs.step] : [...ss.pre, vs.step, ...ps.steps]),
     'Dressez dans des assiettes chaudes : le féculent, les légumes, puis la protéine nappée de son jus. Rectifiez l’assaisonnement.',
@@ -336,11 +342,12 @@ export function composeRecipe(q: IngQuery, lookup: Lookup, opts: { meal?: MealTy
     cuisine: 'francaise',
     prepTime: 15,
     cookTime: Math.round(time),
+    ...(restTime ? { restTime } : {}),
     difficulty: kind === 'roast' || kind === 'braise' ? 'facile' : 'tres-facile',
     servings: n,
     ingredients: ing,
     steps,
-    tags: [...(time + 15 <= 30 ? ['rapide'] : []), ...(kind === 'braise' ? ['mijoté', 'week-end'] : []), 'riche en protéines', 'création maison'],
+    tags: [...(restTime && restTime >= 360 ? ['préparation à l’avance'] : []), ...(time + 15 <= 30 ? ['rapide'] : []), ...(kind === 'braise' ? ['mijoté', 'week-end'] : []), 'riche en protéines', 'création maison'],
     seasons: [],
     technique: ps.technique,
     flavors: kind === 'poisson' || kind === 'fruits-de-mer' ? ['iode', 'frais'] : kind === 'braise' ? ['reconfortant', 'umami'] : ['umami'],

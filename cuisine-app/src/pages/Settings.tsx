@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary } from '../hooks/library';
 import { DEFAULT_PROFILES, type NutritionProfile } from '../domain/micronutrients';
+import { DIET_PROFILES } from '../domain/digestion';
+import { Link } from 'react-router-dom';
 import { useToast } from '../components/ui';
 
 export function Settings() {
@@ -72,6 +74,42 @@ export function Settings() {
             </button>
           </div>
         </div>
+      </section>
+
+      <section className="card pad stack">
+        <h2 style={{ margin: 0 }}>🧭 Mon approche alimentaire</h2>
+        <p className="small muted" style={{ margin: 0 }}>
+          Les recettes incompatibles avec les approches cochées sont masquées partout (bibliothèque, frigo, planning). Plusieurs approches peuvent être combinées : leurs exclusions s’additionnent. <Link to="/sources">Sources et méthode</Link>
+        </p>
+        {DIET_PROFILES.map((p) => {
+          const on = (settings.diets ?? ['wapf']).includes(p.id);
+          return (
+            <label key={p.id} className="card pad row nowrap" style={{ alignItems: 'flex-start', cursor: 'pointer', boxShadow: 'none', borderColor: on ? 'var(--olive)' : undefined }}>
+              <input
+                type="checkbox"
+                checked={on}
+                onChange={() => {
+                  const cur = settings.diets ?? ['wapf'];
+                  saveSettings({ diets: on ? cur.filter((x) => x !== p.id) : [...cur, p.id] });
+                }}
+                style={{ marginTop: 4 }}
+              />
+              <span>
+                <strong>
+                  {p.emoji} {p.label}
+                </strong>
+                <span className="small muted" style={{ display: 'block' }}>
+                  {p.description}
+                </span>
+                {p.warning && <span className="small" style={{ display: 'block', color: 'var(--warn)' }}>⚠️ {p.warning}</span>}
+              </span>
+            </label>
+          );
+        })}
+        <label className="row nowrap small">
+          <input type="checkbox" checked={!!settings.showIncompatible} onChange={(e) => saveSettings({ showIncompatible: e.target.checked })} />
+          Afficher quand même les recettes hors de mon approche (signalées par un avertissement)
+        </label>
       </section>
 
       <section className="card pad stack">

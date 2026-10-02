@@ -1826,7 +1826,7 @@
         "unit": "piece"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 1,
         "unit": "cas"
       },
@@ -2030,7 +2030,7 @@
       },
       {
         "id": "sarrasin",
-        "qty": 140,
+        "qty": 98,
         "unit": "g",
         "note": "kasha (sarrasin grillé)"
       },
@@ -2065,21 +2065,30 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Kasha : rincez le sarrasin, versez-le dans 300 ml d'eau bouillante salée, couvrez et laissez cuire 12 min à feu très doux jusqu'à absorption. Hors du feu, ajoutez 15 g de beurre, couvrez et laissez gonfler 10 min.",
       "Pendant ce temps, faites fondre les oignons dans le saindoux à feu moyen 10 min, jusqu'à ce qu'ils soient dorés. Poussez-les sur le côté.",
       "Ajoutez les tronçons de boudin (retirez la peau s'il est très friable) et faites-les griller 4 min par face à feu moyen, jusqu'à une croûte bien dorée. Parsemez de marjolaine.",
       "Dans une petite poêle, faites cuire les œufs au plat dans le reste du beurre 3 min à feu moyen, jaune coulant.",
-      "Servez la kasha surmontée du boudin et des oignons, l'œuf à côté, et les cornichons en accompagnement pour l'acidité."
+      "Servez la kasha surmontée du boudin et des oignons, l'œuf à côté, et les cornichons en accompagnement pour l'acidité.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
       "rapide",
       "économique",
       "fermenté",
-      "prise de masse"
+      "prise de masse",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2091,7 +2100,8 @@
       "reconfortant",
       "acidule"
     ],
-    "tips": "Un filet de raifort râpé ou de moutarde forte relève très bien la kaszanka."
+    "tips": "Un filet de raifort râpé ou de moutarde forte relève très bien la kaszanka.",
+    "restTime": 720
   },
   {
     "id": "eu-svickova-na-smetane",
@@ -3444,6 +3454,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Dégraissez grossièrement l'agneau, salez-le et poivrez-le. Rangez-le dans une grande cocotte avec les oignons, les pommes de terre farineuses et l'orge rincé.",
       "Versez le bouillon froid juste à hauteur, ajoutez le thym. Portez lentement à frémissement en écumant.",
       "Couvrez et laissez mijoter 1 h à feu très doux : le liquide doit à peine frémir.",
@@ -3456,7 +3467,8 @@
       "économique",
       "familial",
       "réconfortant",
-      "riche en protéines"
+      "riche en protéines",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -3467,7 +3479,8 @@
       "herbace",
       "reconfortant"
     ],
-    "tips": "Encore meilleur le lendemain. Servez avec du pain de seigle beurré et une bière brune."
+    "tips": "Encore meilleur le lendemain. Servez avec du pain de seigle beurré et une bière brune.",
+    "restTime": 720
   },
   {
     "id": "eu-sunday-roast-yorkshire",
@@ -3950,9 +3963,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 14,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 8,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Faites griller les flocons d'avoine à sec dans une poêle 4 min à feu moyen, jusqu'à ce qu'ils sentent la noisette. Réservez.",
       "Pochez le foie et le cœur 10 min dans le bouillon frémissant. Égouttez (gardez le bouillon) et hachez-les finement au couteau ou au mixeur.",
       "Faites fondre les oignons 6 min dans la graisse. Mélangez les abats, l'agneau haché, l'avoine, les oignons et leur graisse, la muscade, la coriandre, le piment, 1,5 cac de sel et beaucoup de poivre. Mouillez avec 200 ml de bouillon : la farce doit être humide.",
@@ -3965,7 +3991,8 @@
       "week-end",
       "riche en protéines",
       "économique",
-      "réconfortant"
+      "réconfortant",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -3977,7 +4004,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Les restes se tranchent froids et se dorent à la poêle au petit-déjeuner avec un œuf."
+    "tips": "Les restes se tranchent froids et se dorent à la poêle au petit-déjeuner avec un œuf.",
+    "restTime": 720
   },
   {
     "id": "eu-cornish-pasty-maison",

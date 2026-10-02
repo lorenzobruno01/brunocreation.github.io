@@ -349,8 +349,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "sel",
@@ -368,7 +369,8 @@
       "Ajoutez 10 g de beurre et les dés de pommes de terre. Faites-les rissoler 12 min à feu moyen en remuant souvent, puis ajoutez l'oignon et poursuivez 4 min : les pommes de terre doivent être dorées et tendres.",
       "Battez les œufs avec le persil, une pincée de sel et du poivre. Remettez les lardons dans la poêle avec le reste du beurre.",
       "Versez les œufs, ramenez les bords vers le centre avec une spatule pendant 1 min, puis laissez prendre 2 à 3 min à feu doux : le dessus doit rester légèrement baveux.",
-      "Faites glisser l'omelette sur un plat en la pliant ou servez-la à plat, avec la salade assaisonnée d'huile de noix et de vinaigre."
+      "Faites glisser l'omelette sur un plat en la pliant ou servez-la à plat, avec la salade assaisonnée d'beurre clarifié et de vinaigre.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -1125,8 +1127,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "vinaigre-cidre",
@@ -1142,6 +1145,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
@@ -1150,7 +1159,8 @@
       "Posez les tranches de pain sur une plaque, répartissez les lardons puis les rondelles de chèvre. Parsemez de thym effeuillé.",
       "Enfournez 6 à 8 min en haut du four : le chèvre doit fondre et blondir sur les bords. Surveillez la dernière minute.",
       "Arrosez d'un filet de miel à la sortie du four et poivrez.",
-      "Assaisonnez la mâche avec l'huile de noix, le vinaigre et les cerneaux de noix concassés, et servez avec les tartines brûlantes."
+      "Assaisonnez la mâche avec l'beurre clarifié, le vinaigre et les cerneaux de noix concassés, et servez avec les tartines brûlantes.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -2016,7 +2026,7 @@
       },
       {
         "id": "haricots-blancs",
-        "qty": 400,
+        "qty": 240,
         "unit": "g",
         "note": "flageolets cuits, égouttés"
       },
@@ -2065,6 +2075,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2072,7 +2088,8 @@
       "Dans une casserole, faites fondre 10 g de beurre, ajoutez 2 gousses d'ail hachées et la tomate, cuisez 2 min puis ajoutez les flageolets et 4 c. à soupe d'eau. Réchauffez 6 min à feu doux.",
       "Faites chauffer une poêle à feu vif avec le reste du beurre. Saisissez les tranches 3 min par face pour une chair rosée, salez, poivrez.",
       "Laissez reposer la viande 3 min, versez le jus de la poêle sur les flageolets et parsemez de persil.",
-      "Servez avec le pain de campagne grillé."
+      "Servez avec le pain de campagne grillé.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3414,7 +3431,7 @@
   {
     "id": "quo-salade-lentilles-oeufs-mimosa",
     "name": "Salade de lentilles tiède, œufs mimosa et lardons",
-    "description": "Lentilles vertes tièdes à l'échalote et à l'huile de noix, lardons croustillants, pommes de terre et œufs mimosa : la salade-repas de bistrot.",
+    "description": "Lentilles vertes tièdes à l'échalote et à l'beurre clarifié, lardons croustillants, pommes de terre et œufs mimosa : la salade-repas de bistrot.",
     "emoji": "🥚",
     "category": "salade-composee",
     "mealTypes": [
@@ -3473,7 +3490,8 @@
       {
         "id": "huile-noix",
         "qty": 2,
-        "unit": "cas"
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "vinaigre-cidre",
@@ -3499,22 +3517,31 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Rincez les lentilles et mettez-les dans une casserole d'eau froide avec la carotte et le laurier. Portez à frémissement et cuisez 20 à 25 min : elles doivent être tendres mais entières. Salez en fin de cuisson et égouttez.",
       "En parallèle, cuisez les pommes de terre en rondelles épaisses 15 min à l'eau salée, et les œufs 10 min dans l'eau bouillante. Refroidissez les œufs dans l'eau glacée et écalez-les.",
       "Faites dorer les lardons 5 min à sec à feu moyen.",
       "Coupez les œufs en deux. Écrasez les jaunes avec le yaourt et la moutarde, salez, poivrez, et regarnissez les blancs. Réservez un jaune pour l'effet mimosa.",
-      "Vinaigrette : huile de noix, vinaigre, échalote, sel et poivre. Mélangez-la aux lentilles et pommes de terre tièdes avec les lardons et le persil.",
-      "Disposez les œufs farcis sur la salade et râpez le jaune réservé par-dessus."
+      "Vinaigrette : beurre clarifié, vinaigre, échalote, sel et poivre. Mélangez-la aux lentilles et pommes de terre tièdes avec les lardons et le persil.",
+      "Disposez les œufs farcis sur la salade et râpez le jaune réservé par-dessus.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "repas froid",
       "lunch box",
       "économique",
       "riche en protéines",
-      "sans gluten"
+      "sans gluten",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -3525,7 +3552,8 @@
     "flavors": [
       "acidule",
       "umami"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "quo-salade-cesar-maison",

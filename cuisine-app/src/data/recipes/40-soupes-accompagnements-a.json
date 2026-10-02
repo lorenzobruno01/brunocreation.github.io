@@ -1197,6 +1197,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Dans un faitout, faites fondre le beurre clarifié à feu moyen-vif et faites revenir l'agneau 5 min jusqu'à ce qu'il soit doré. Ajoutez l'oignon râpé, le céleri, le gingembre, le curcuma, le ras-el-hanout, la cannelle et la moitié des herbes hachées ; remuez 2 min.",
       "Ajoutez les tomates concassées, le concentré, les lentilles et le bouillon. Portez à ébullition, puis laissez mijoter à couvert 1 h à feu doux.",
       "Ajoutez les pois chiches et les vermicelles, cuisez 10 min à feu moyen.",
@@ -1209,7 +1210,8 @@
       "riche en protéines",
       "batch cooking",
       "familial",
-      "mijoté"
+      "mijoté",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -1221,7 +1223,8 @@
       "herbace",
       "reconfortant"
     ],
-    "tips": "Se garde 4 jours au frais et se congèle ; elle épaissit en refroidissant, allongez-la avec un peu de bouillon."
+    "tips": "Se garde 4 jours au frais et se congèle ; elle épaissit en refroidissant, allongez-la avec un peu de bouillon.",
+    "restTime": 720
   },
   {
     "id": "sa-caldo-verde-chorizo",
@@ -2095,6 +2098,7 @@
       }
     ],
     "steps": [
+      "Rincez les lentilles corail et laissez-les tremper 2 h dans de l’eau tiède ; jetez l’eau avant de cuire.",
       "Mélangez l'agneau avec l'oignon râpé (bien pressé), le persil haché, 1 c. à café de cumin, sel et poivre. Pétrissez 2 min puis façonnez 8 petits boudins allongés. Réservez au frais.",
       "Dans une casserole, faites fondre 15 g de beurre à feu moyen et faites suer l'autre moitié d'oignon et la carotte 5 min. Ajoutez le concentré de tomate et le reste du cumin, remuez 1 min.",
       "Ajoutez les lentilles et le bouillon, portez à ébullition, écumez puis cuisez 20 min à feu doux : les lentilles doivent être complètement défaites.",
@@ -2106,7 +2110,8 @@
       "riche en protéines",
       "économique",
       "réconfortant",
-      "prise de masse"
+      "prise de masse",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2119,7 +2124,8 @@
       "cremeux",
       "acidule"
     ],
-    "tips": "La soupe seule se congèle très bien ; les köfte crus aussi, à cuire sans décongeler (5 min par face à feu moyen)."
+    "tips": "La soupe seule se congèle très bien ; les köfte crus aussi, à cuire sans décongeler (5 min par face à feu moyen).",
+    "restTime": 120
   },
   {
     "id": "sa-goulasch-leves",
@@ -2583,6 +2589,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mettez les cuisses de poulet dans un faitout avec le bouillon, le thym et le laurier. Portez à frémissement, écumez 5 min, puis cuisez 40 min à feu doux.",
       "Pendant ce temps, faites fondre le beurre dans une poêle et faites suer le vert des poireaux 5 min à feu moyen.",
       "Sortez les cuisses, laissez tiédir 10 min, puis retirez la peau et effilochez la chair en gros morceaux. Remettez les os dans le bouillon.",
@@ -2595,7 +2602,8 @@
       "familial",
       "batch cooking",
       "économique",
-      "riche en protéines"
+      "riche en protéines",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2608,7 +2616,8 @@
       "sucre",
       "herbace"
     ],
-    "tips": "Les pruneaux sont traditionnels mais facultatifs ; ils se marient très bien avec le poireau."
+    "tips": "Les pruneaux sont traditionnels mais facultatifs ; ils se marient très bien avec le poireau.",
+    "restTime": 720
   },
   {
     "id": "sa-veloute-celeri-moelle-saint-jacques",

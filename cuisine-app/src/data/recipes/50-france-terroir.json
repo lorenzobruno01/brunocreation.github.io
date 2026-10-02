@@ -317,7 +317,8 @@
       {
         "id": "huile-noix",
         "qty": 2,
-        "unit": "cas"
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "citron",
@@ -336,11 +337,13 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Rincez les lentilles, couvrez-les de 3 fois leur volume d'eau froide avec la carotte et le laurier. Portez à ébullition puis laissez frémir 20 à 22 min : elles doivent être tendres mais garder leur forme. Salez en fin de cuisson et égouttez.",
       "Pendant ce temps, plongez les œufs dans l'eau bouillante 6 min (mollets), puis dans l'eau glacée. Écalez-les délicatement.",
-      "Fouettez la moutarde, le vinaigre, l'huile de noix, sel et poivre ; ajoutez les échalotes. Versez sur les lentilles encore chaudes et mélangez.",
+      "Fouettez la moutarde, le vinaigre, l'beurre clarifié, sel et poivre ; ajoutez les échalotes. Versez sur les lentilles encore chaudes et mélangez.",
       "Mélangez la crème fraîche avec l'aneth haché, le jus du demi-citron et un tour de poivre.",
-      "Toastez les tranches de pain de seigle et beurrez-les. Répartissez les lentilles tièdes, posez dessus le saumon fumé en lanières et un œuf mollet coupé en deux, nappez de crème à l'aneth et servez avec les tartines."
+      "Toastez les tranches de pain de seigle et beurrez-les. Répartissez les lentilles tièdes, posez dessus le saumon fumé en lanières et un œuf mollet coupé en deux, nappez de crème à l'aneth et servez avec les tartines.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "lunch box",
@@ -359,7 +362,8 @@
       "acidule",
       "cremeux"
     ],
-    "tips": "Les lentilles assaisonnées se gardent 3 jours au frais : préparez-en une double dose pour les lunch box de la semaine."
+    "tips": "Les lentilles assaisonnées se gardent 3 jours au frais : préparez-en une double dose pour les lunch box de la semaine.",
+    "restTime": 720
   },
   {
     "id": "fr-salade-hareng-pommes-huile",
@@ -403,7 +407,7 @@
         "note": "en fines rondelles"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 4,
         "unit": "cas",
         "note": "ou huile de noix, de première pression"
@@ -549,8 +553,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "persil",
@@ -566,13 +571,20 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
       "Réchauffez la boîte de gésiers quelques minutes au bain-marie pour liquéfier la graisse. Prélevez 2 c. à soupe de graisse et égouttez les gésiers ; coupez-les en deux.",
       "Dans une grande poêle à feu moyen-vif, faites chauffer la graisse et ajoutez les cubes de pommes de terre bien séchés. Faites-les sauter 15 min en remuant toutes les 3 min, jusqu'à ce qu'ils soient dorés sur toutes les faces et fondants à cœur. Salez.",
       "Poussez les pommes de terre sur le côté, ajoutez les gésiers et l'ail écrasé, faites-les dorer 4 min à feu vif. Ajoutez l'échalote 30 s puis déglacez avec le vinaigre en grattant le fond.",
-      "Dans un saladier, mélangez la mâche, les tomates cerises coupées en deux et l'huile de noix. Ajoutez le contenu chaud de la poêle et les noix concassées, parsemez de persil et servez aussitôt, encore tiède."
+      "Dans un saladier, mélangez la mâche, les tomates cerises coupées en deux et l'beurre clarifié. Ajoutez le contenu chaud de la poêle et les noix concassées, parsemez de persil et servez aussitôt, encore tiède.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -656,7 +668,8 @@
       {
         "id": "huile-noix",
         "qty": 2,
-        "unit": "cas"
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "moutarde",
@@ -677,14 +690,21 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
       "Sortez le magret 20 min avant. Quadrillez la peau au couteau sans toucher la chair, salez des deux côtés.",
       "Posez-le côté peau dans une poêle froide, puis allumez à feu moyen : la graisse fond doucement. Cuisez 8 min côté peau en vidant la graisse au fur et à mesure (gardez-en 2 c. à soupe), puis 4 min côté chair. Laissez reposer 5 min sous une feuille d'aluminium : il doit être rosé à cœur.",
       "Dans la même poêle, avec 1 c. à soupe de graisse, faites rôtir les asperges coupées en tronçons de 5 cm à feu vif 5 min : elles doivent être tachées de doré et encore croquantes. Réservez, puis dorez les dés de pain 3 min dans le reste de graisse.",
-      "Fouettez la moutarde, le miel, le vinaigre balsamique, l'huile de noix, l'échalote ciselée, sel et poivre.",
-      "Mélangez la laitue, le maïs, la tomate en dés et la vinaigrette. Ajoutez les asperges et les croûtons, puis le magret tranché en fines lamelles. Arrosez du jus de repos du magret et servez."
+      "Fouettez la moutarde, le miel, le vinaigre balsamique, l'beurre clarifié, l'échalote ciselée, sel et poivre.",
+      "Mélangez la laitue, le maïs, la tomate en dés et la vinaigrette. Ajoutez les asperges et les croûtons, puis le magret tranché en fines lamelles. Arrosez du jus de repos du magret et servez.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -2834,6 +2854,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Si votre viande est très salée, faites-la dessaler 2 h dans l'eau froide. Mettez la poitrine et le jarret dans une cocotte, couvrez d'eau froide, portez à ébullition, laissez bouillir 5 min puis jetez l'eau.",
       "Recouvrez d'eau fraîche (environ 2 L), ajoutez l'oignon piqué des clous de girofle, l'ail, le thym et le laurier. Laissez frémir 1 h à couvert.",
       "Ajoutez les lentilles rincées, les carottes et les pommes de terre. Piquez la saucisse de Morteau et posez-la dessus. Poursuivez la cuisson 40 min à frémissement : les lentilles doivent être tendres et le jus légèrement épaissi. Ne salez pas avant d'avoir goûté.",
@@ -2845,7 +2866,8 @@
       "mijoté",
       "batch cooking",
       "économique",
-      "familial"
+      "familial",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2857,7 +2879,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Faire tremper les lentilles 2 h et ne pas les servir à chaque repas les rend plus digestes. Se réchauffe très bien."
+    "tips": "Faire tremper les lentilles 2 h et ne pas les servir à chaque repas les rend plus digestes. Se réchauffe très bien.",
+    "restTime": 720
   },
   {
     "id": "fr-echine-cidre-pommes",
@@ -3021,7 +3044,7 @@
       },
       {
         "id": "sarrasin",
-        "qty": 140,
+        "qty": 98,
         "unit": "g",
         "note": "décortiqué, grillé (kasha)"
       },
@@ -3045,20 +3068,29 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le sarrasin. Faites-le griller à sec 2 min dans une casserole, ajoutez 280 ml d'eau salée bouillante, couvrez et cuisez 12 min à feu doux. Hors du feu, laissez gonfler 5 min et ajoutez 10 g de beurre.",
       "Cuisez les haricots verts 7 min à l'eau bouillante salée : ils doivent rester croquants. Égouttez.",
       "Coupez le filet mignon en médaillons de 3 cm, salez-les. Dans une poêle à feu moyen-vif avec 15 g de beurre, dorez-les 3 min par face. Le cœur doit rester très légèrement rosé. Réservez sous aluminium.",
       "Dans la même poêle, faites suer l'échalote ciselée 1 min, déglacez au vin blanc en grattant les sucs et laissez réduire 1 min. Ajoutez la crème et la moutarde, laissez épaissir 2 min à petit feu, puis l'estragon haché.",
-      "Remettez les médaillons et leur jus 1 min dans la sauce. Servez avec le sarrasin et les haricots verts passés dans le reste du beurre."
+      "Remettez les médaillons et leur jus 1 min dans la sauce. Servez avec le sarrasin et les haricots verts passés dans le reste du beurre.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
       "riche en protéines",
       "une poêle",
-      "sans gluten"
+      "sans gluten",
+      "préparation à l’avance"
     ],
     "seasons": [],
     "technique": "poele",
@@ -3066,7 +3098,8 @@
       "cremeux",
       "piquant"
     ],
-    "tips": "Le sarrasin, naturellement sans gluten, a un goût de noisette grillée qui va très bien avec la moutarde."
+    "tips": "Le sarrasin, naturellement sans gluten, a un goût de noisette grillée qui va très bien avec la moutarde.",
+    "restTime": 720
   },
   {
     "id": "fr-choucroute-garnie",
@@ -4730,8 +4763,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 2,
-        "unit": "cas"
+        "qty": 4,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "vinaigre-cidre",
@@ -4755,7 +4789,8 @@
       "Pendant ce temps, faites dorer les lardons 5 min à la poêle sans matière grasse, égouttez-les sur du papier.",
       "Fouettez les œufs avec la crème, le lait, la muscade et du poivre (peu de sel, les lardons sont salés).",
       "Répartissez les lardons et le comté sur le fond de tarte, versez l'appareil. Baissez le four à 180 °C et enfournez 28 à 30 min : la quiche doit être gonflée et dorée, encore légèrement tremblotante au centre.",
-      "Laissez reposer 10 min avant de couper. Servez avec la laitue assaisonnée d'huile de noix et de vinaigre."
+      "Laissez reposer 10 min avant de couper. Servez avec la laitue assaisonnée d'beurre clarifié et de vinaigre.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "four",
@@ -5159,8 +5194,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "sel",
@@ -5178,7 +5214,8 @@
       "Pendant ce temps, piquez les saucisses et faites-les dorer 15 à 18 min à feu moyen dans une poêle avec un fond d'eau, puis à sec en fin de cuisson pour qu'elles caramélisent.",
       "Égouttez pommes de terre et ail, passez-les au presse-purée dans la casserole. Remettez sur feu doux, ajoutez le beurre et la crème, mélangez 2 min.",
       "Ajoutez la tomme en lamelles en 3 fois, en tournant énergiquement à la cuillère en bois en formant des 8. Continuez 5 à 8 min : l'aligot est prêt quand il se détache des parois et file en un long ruban lisse et brillant lorsqu'on le soulève.",
-      "Servez aussitôt avec les saucisses et une petite salade verte à l'huile de noix."
+      "Servez aussitôt avec les saucisses et une petite salade verte à l'beurre clarifié.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "réconfortant",

@@ -172,9 +172,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 13,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Faites chauffer une poêle à feu vif avec 10 g de beurre. Saisissez les champignons émincés 5 min sans les remuer au début, jusqu’à ce qu’ils soient bien dorés, puis ajoutez l’échalote ciselée et le thym 1 min. Salez, poivrez.",
       "Dans une casserole, portez le bouillon à frémissement, versez les flocons d’avoine et faites cuire 6 à 7 min à feu moyen en remuant souvent : le porridge doit napper la cuillère.",
       "Pendant ce temps, plongez les œufs 6 min 30 dans l’eau bouillante, puis 1 min dans l’eau froide. Écalez-les délicatement.",
@@ -186,7 +199,8 @@
       "réconfortant",
       "riche en protéines",
       "sportif",
-      "une poêle"
+      "une poêle",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -198,7 +212,8 @@
       "cremeux",
       "reconfortant"
     ],
-    "tips": "Un trait de sauce soja ou une pincée de piment d’Espelette relève l’ensemble."
+    "tips": "Un trait de sauce soja ou une pincée de piment d’Espelette relève l’ensemble.",
+    "restTime": 720
   },
   {
     "id": "dpc-tartine-sardines-avocat-oeuf",
@@ -310,7 +325,7 @@
       },
       {
         "id": "epinard",
-        "qty": 100,
+        "qty": 34.25,
         "unit": "g",
         "note": "pousses"
       },
@@ -349,15 +364,23 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "Battez les œufs à la fourchette avec une pincée de sel et de poivre, sans les faire mousser.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Dans une grande poêle antiadhésive, faites tomber les pousses d’épinards 1 min à feu moyen avec 5 g de beurre, salez et réservez sur une assiette.",
       "Essuyez la poêle, faites fondre le reste du beurre à feu moyen-doux. Versez les œufs et laissez prendre 3 à 4 min en ramenant les bords vers le centre les 30 premières secondes : le dessus doit rester juste baveux.",
       "Émiettez le chèvre frais sur l’omelette, répartissez les épinards puis le saumon fumé et la ciboulette ciselée.",
       "Roulez l’omelette sur elle-même à l’aide d’une spatule et laissez-la 30 s de plus sur le feu. Coupez-la en deux tronçons.",
-      "Servez avec le pain au levain grillé et les quartiers d’orange."
+      "Servez avec le pain au levain grillé et les quartiers d’orange.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -635,9 +658,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 12,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Dans une casserole, versez le lait, les flocons d’avoine, les pruneaux coupés, la cannelle et une pincée de sel.",
       "Portez à frémissement à feu moyen puis baissez à feu doux et laissez cuire 8 à 10 min en remuant régulièrement : les flocons doivent être tendres et le porridge épais et crémeux, les pruneaux fondants.",
       "Pendant ce temps, torréfiez les noix concassées et les graines de courge 3 min à sec dans une poêle à feu moyen, jusqu’à ce qu’elles sentent le grillé.",
@@ -647,7 +683,8 @@
       "rapide",
       "réconfortant",
       "économique",
-      "riche en glucides"
+      "riche en glucides",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -659,12 +696,13 @@
       "cremeux",
       "sucre"
     ],
-    "tips": "Les pruneaux peuvent tremper la veille dans le lait pour un porridge encore plus moelleux."
+    "tips": "Les pruneaux peuvent tremper la veille dans le lait pour un porridge encore plus moelleux.",
+    "restTime": 720
   },
   {
     "id": "dpc-creme-budwig-fruits",
-    "name": "Crème Budwig au fromage blanc, graines de lin, kiwi et myrtilles",
-    "description": "La crème du Dr Kousmine revisitée : fromage blanc fouetté à l’huile de noix, banane, lin fraîchement moulu, avoine et fruits frais. Oméga-3, calcium, vitamine C et fibres en un bol.",
+    "name": "Crème Budwig au fromage blanc, graines de courge, kiwi et myrtilles",
+    "description": "La crème du Dr Kousmine revisitée : fromage blanc fouetté à l’beurre clarifié, banane, lin fraîchement moulu, avoine et fruits frais. Oméga-3, calcium, vitamine C et fibres en un bol.",
     "emoji": "🥝",
     "category": "petit-dejeuner",
     "mealTypes": [
@@ -682,15 +720,16 @@
         "unit": "g"
       },
       {
-        "id": "graines-lin",
+        "id": "graines-courge",
         "qty": 20,
         "unit": "g",
         "note": "moulues à la minute"
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "banane",
@@ -721,21 +760,42 @@
         "id": "myrtille",
         "qty": 100,
         "unit": "g"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
-      "Mixez ou moulez les graines de lin au moulin à café, juste avant l’utilisation (elles s’oxydent vite une fois moulues).",
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
+      "Mixez ou moulez les graines de courge au moulin à café, juste avant l’utilisation (elles s’oxydent vite une fois moulues).",
       "Écrasez la banane à la fourchette dans un saladier jusqu’à obtenir une purée lisse.",
-      "Fouettez énergiquement le fromage blanc avec l’huile de noix et le jus du demi-citron 1 min : l’huile doit disparaître complètement dans le fromage blanc.",
-      "Incorporez la banane, les graines de lin moulues et les flocons d’avoine.",
+      "Fouettez énergiquement le fromage blanc avec l’beurre clarifié et le jus du demi-citron 1 min : l’huile doit disparaître complètement dans le fromage blanc.",
+      "Incorporez la banane, les graines de courge et les flocons d’avoine.",
       "Concassez grossièrement les noisettes et coupez les kiwis en dés.",
-      "Répartissez la crème dans deux bols et garnissez de kiwi, de myrtilles et de noisettes."
+      "Répartissez la crème dans deux bols et garnissez de kiwi, de myrtilles et de noisettes.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
       "sans gluten",
       "léger",
-      "repas froid"
+      "repas froid",
+      "préparation à l’avance"
     ],
     "seasons": [
       "printemps",
@@ -747,7 +807,8 @@
       "cremeux",
       "frais"
     ],
-    "tips": "Sans gluten si l’avoine est certifiée. En hiver, remplacez les myrtilles par des quartiers de clémentine."
+    "tips": "Sans gluten si l’avoine est certifiée. En hiver, remplacez les myrtilles par des quartiers de clémentine.",
+    "restTime": 720
   },
   {
     "id": "dpc-haddock-poche-lait-oeuf",
@@ -1003,9 +1064,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 12,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Dans une casserole, délayez le cacao dans un peu de lait froid pour éviter les grumeaux, puis ajoutez le reste du lait, les flocons d’avoine, les dattes hachées et une pincée de sel.",
       "Faites cuire 8 à 10 min à feu doux en remuant souvent, jusqu’à obtenir une texture épaisse et brillante.",
       "Pendant ce temps, torréfiez les noisettes 4 min à sec dans une poêle à feu moyen, puis concassez-les.",
@@ -1016,7 +1090,8 @@
       "rapide",
       "réconfortant",
       "sportif",
-      "riche en glucides"
+      "riche en glucides",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -1027,7 +1102,8 @@
       "sucre",
       "reconfortant",
       "cremeux"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dpc-oeufs-cocotte-maquereau-poireau",
@@ -1289,6 +1365,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le sarrasin, versez-le dans une casserole avec 2 fois son volume d’eau salée. Portez à ébullition, couvrez et cuisez 12 min à feu doux : les grains doivent être tendres mais se tenir. Hors du feu, ajoutez le beurre et laissez gonfler 3 min.",
       "Plongez les œufs 6 min 30 dans l’eau bouillante, puis 1 min dans l’eau froide, et écalez-les.",
       "Fouettez le kéfir avec l’aneth ciselé, une pincée de sel et du poivre.",
@@ -1308,7 +1385,8 @@
       "herbace",
       "lacte"
     ],
-    "tips": "Le kasha se cuit en grande quantité et se réchauffe 2 min à la poêle avec une noisette de beurre."
+    "tips": "Le kasha se cuit en grande quantité et se réchauffe 2 min à la poêle avec une noisette de beurre.",
+    "restTime": 720
   },
   {
     "id": "dpc-crumble-matin-pommes-sarrasin",
@@ -1337,7 +1415,7 @@
       },
       {
         "id": "farine-sarrasin",
-        "qty": 40,
+        "qty": 28,
         "unit": "g"
       },
       {
@@ -1382,15 +1460,24 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : préparez la pâte et laissez-la reposer et fermenter une nuit (12 h) à température ambiante, couverte.",
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 190 °C.",
       "Épluchez et coupez les pommes et la poire en dés de 2 cm. Mélangez-les avec la moitié de la cannelle et étalez-les dans un plat à gratin.",
       "Du bout des doigts, sablez la farine de sarrasin, les grains de kasha, les noisettes concassées, les graines de courge, le sucre, le reste de cannelle, le sel et le beurre froid jusqu’à obtenir de grosses miettes.",
       "Répartissez les miettes sur les fruits sans tasser.",
       "Enfournez 25 à 30 min, jusqu’à ce que le dessus soit bien doré et que le jus des fruits bouillonne sur les bords.",
-      "Laissez tiédir 5 min et servez avec le skyr bien froid."
+      "Laissez tiédir 5 min et servez avec le skyr bien froid.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -1408,7 +1495,8 @@
       "grille",
       "sucre"
     ],
-    "tips": "Se prépare la veille : réchauffez 10 min à 160 °C ou mangez froid. Les miettes crues se congèlent très bien."
+    "tips": "Se prépare la veille : réchauffez 10 min à 160 °C ou mangez froid. Les miettes crues se congèlent très bien.",
+    "restTime": 720
   },
   {
     "id": "dpc-kuku-sabzi-noix-yaourt",
@@ -1908,9 +1996,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 26,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 8,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Préchauffez le four à 180 °C et beurrez un plat d’environ 20 × 25 cm.",
       "Écrasez les bananes à la fourchette dans un saladier, puis fouettez-y les œufs, le lait, le sirop d’érable, la cannelle et le sel.",
       "Incorporez les flocons d’avoine, la levure, les dés de pomme, la moitié des noisettes et la moitié des graines de courge.",
@@ -1935,7 +2036,8 @@
       "reconfortant",
       "grille"
     ],
-    "tips": "Se garde 4 jours au réfrigérateur ; réchauffez une part 1 min au micro-ondes ou 8 min au four à 160 °C."
+    "tips": "Se garde 4 jours au réfrigérateur ; réchauffez une part 1 min au micro-ondes ou 8 min au four à 160 °C.",
+    "restTime": 720
   },
   {
     "id": "dpc-sardines-seigle-radis",
@@ -2177,7 +2279,7 @@
     "cuisine": "francaise",
     "prepTime": 20,
     "cookTime": 0,
-    "restTime": 60,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 6,
     "ingredients": [
@@ -2222,9 +2324,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 12,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Faites tremper les pruneaux et les abricots secs 10 min dans de l’eau chaude s’ils sont secs, puis égouttez-les bien.",
       "Mixez les flocons d’avoine, les noix et 40 g de graines de courge 20 s en poudre grossière.",
       "Ajoutez les pruneaux, les abricots secs, le cacao, le café et le sel, et mixez par impulsions jusqu’à ce que la pâte forme une boule collante.",
@@ -2360,7 +2475,7 @@
       },
       {
         "id": "epinard",
-        "qty": 50,
+        "qty": 35,
         "unit": "g",
         "note": "pousses"
       },
@@ -2387,6 +2502,7 @@
     ],
     "steps": [
       "Épluchez les kiwis, retirez le trognon de la pomme (gardez la peau) et prélevez la chair du demi-avocat.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Mettez dans le blender le kéfir, les fruits, les pousses d’épinards, les graines de courge, le miel, la menthe et le jus du demi-citron vert.",
       "Mixez 60 s à pleine puissance, jusqu’à ce que la boisson soit parfaitement lisse et d’un vert vif.",
       "Goûtez : ajoutez un trait de citron vert si besoin. Servez immédiatement, bien frais."

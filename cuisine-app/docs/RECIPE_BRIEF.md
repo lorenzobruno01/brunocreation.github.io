@@ -67,3 +67,20 @@ npx tsx scripts/validate-recipes.ts src/data/recipes/<ton-fichier>.json
 Corrige **toutes les erreurs** (❌). Traite les avertissements (⚠️) : protéines/calories trop basses → augmente les portions de protéine / féculent / matière grasse ; « trop proche » → rends la recette réellement différente ou remplace-la. Itère jusqu'à 0 erreur et le moins d'avertissements possible. Ne touche à aucun autre fichier que le tien.
 
 Dans ton message final : nombre de recettes, répartition (repas / protéines / cuisines / temps), avertissements restants éventuels. Pas besoin de recopier les recettes.
+
+## Digestibilité et antinutriments (règles vérifiées automatiquement)
+
+Le validateur applique `src/domain/digestion.ts`. Le détail, avec les sources, est dans `docs/sources/` et les consignes de correction dans `docs/FIX_BRIEF.md`.
+
+- **Avoine** : trempage ≥ 12 h dans un liquide acide, avec de la farine de seigle ou de sarrasin.
+- **Sarrasin, boulgour et orge** : trempage acide ≥ 7 h.
+- **Pâte à galettes de sarrasin** : repos ≥ 8 h.
+- **Riz complet** : trempage ≥ 12 h.
+- **Quinoa** : rinçage, puis trempage ≥ 8 h.
+- **Lentilles vertes** : trempage ≥ 7 h. **Lentilles corail** : trempage ≥ 2 h.
+- **Oléagineux** : ≤ 30 g par portion, ou trempés puis séchés.
+- **Interdits** : huile de colza (et autres huiles de graines en cuisson), soja non fermenté (edamame), graines de lin.
+- **Huiles de sésame et de noix** : ≤ 1 c. à café par portion, en assaisonnement.
+- **Oxalates** : ≤ 150 mg par portion. Si le plat dépasse 60 mg, ajouter un laitage riche en calcium.
+- **Foie** : ≤ 150 g par portion.
+- **Poisson cru** : congélation préalable à −20 °C pendant 24 h.

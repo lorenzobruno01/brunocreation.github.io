@@ -312,8 +312,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "sel",
@@ -332,7 +333,8 @@
       "Versez les œufs et remuez vivement 20 secondes à la fourchette en secouant la poêle, puis laissez prendre 1 min : le dessus doit rester crémeux.",
       "Parsemez la moitié du comté au centre, puis repliez l'omelette en trois en inclinant la poêle et faites-la glisser sur l'assiette, pliure dessous.",
       "Frottez la surface avec un petit morceau de beurre pour la faire briller. Recommencez pour la seconde omelette.",
-      "Servez avec les pommes de terre sautées et la mâche assaisonnée d'huile de noix, de sel et de poivre."
+      "Servez avec les pommes de terre sautées et la mâche assaisonnée d'beurre clarifié, de sel et de poivre.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "riche en protéines",
@@ -1280,7 +1282,7 @@
         "unit": "piece"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 1,
         "unit": "cac"
       },

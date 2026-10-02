@@ -2154,9 +2154,22 @@
         "id": "miel",
         "qty": 15,
         "unit": "g"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 14,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Faites fondre le beurre dans une grande poêle à feu moyen. Ajoutez les flocons d'avoine et les graines, faites-les dorer 5 à 6 min en remuant souvent : ils doivent sentir la noisette et prendre une teinte blonde.",
       "Ajoutez les noix concassées et le miel, mélangez 1 min hors du feu pour enrober. Étalez sur une assiette et laissez refroidir 5 min : le mélange devient croustillant.",
       "Mélangez avec les raisins et les dés d'abricots secs.",
@@ -2177,7 +2190,8 @@
       "fruite",
       "grille"
     ],
-    "tips": "Préparez la base grillée pour la semaine : elle se garde 10 jours dans un bocal."
+    "tips": "Préparez la base grillée pour la semaine : elle se garde 10 jours dans un bocal.",
+    "restTime": 720
   },
   {
     "id": "ced-porridge-ecossais-sel-creme",
@@ -2191,7 +2205,7 @@
     "cuisine": "britannique",
     "prepTime": 5,
     "cookTime": 20,
-    "restTime": 480,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
@@ -2239,9 +2253,22 @@
         "qty": 1,
         "unit": "pincee",
         "note": "généreuse"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 13,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "La veille, faites tremper l'avoine dans l'eau froide : elle cuira plus vite et sera plus crémeuse.",
       "Le matin, versez l'avoine et son eau dans une casserole avec le lait. Portez à ébullition à feu moyen en remuant avec une cuillère en bois (le « spurtle » écossais).",
       "Baissez à feu doux et laissez cuire 15 à 20 min en remuant toutes les 2 à 3 min : le porridge doit être épais, nappant et les grains tendres mais encore présents.",

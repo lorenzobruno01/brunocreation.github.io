@@ -599,9 +599,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 4,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Épongez les filets de hareng, salez-les et poivrez-les. Passez-les côté chair dans l'œuf battu, puis pressez-les dans les flocons d'avoine pour bien les enrober.",
       "Écrasez 15 g de beurre mou avec la moutarde et le persil haché. Réservez au frais.",
       "Chauffez 20 g de beurre dans une grande poêle à feu moyen-vif jusqu'à ce qu'il mousse. Déposez les filets côté avoine et cuisez 3 min, jusqu'à ce que la croûte soit dorée et croustillante, puis retournez et cuisez 2 min côté peau.",
@@ -612,7 +625,8 @@
       "rapide",
       "économique",
       "riche en protéines",
-      "une poêle"
+      "une poêle",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -624,7 +638,8 @@
       "grille",
       "acidule"
     ],
-    "tips": "Le hareng frais est l'un des poissons les moins chers et les plus riches en oméga-3 et vitamine D. Demandez au poissonnier de lever les filets."
+    "tips": "Le hareng frais est l'un des poissons les moins chers et les plus riches en oméga-3 et vitamine D. Demandez au poissonnier de lever les filets.",
+    "restTime": 720
   },
   {
     "id": "pdj-foies-volaille-toast-porto",
@@ -1039,7 +1054,7 @@
     "ingredients": [
       {
         "id": "farine-sarrasin",
-        "qty": 150,
+        "qty": 100,
         "unit": "g"
       },
       {
