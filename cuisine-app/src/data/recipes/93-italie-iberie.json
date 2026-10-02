@@ -179,7 +179,7 @@
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 78.5,
         "unit": "g",
         "note": "blettes (vert seulement) ou épinards"
       },
@@ -245,6 +245,7 @@
     ],
     "steps": [
       "Sauce : faites revenir l'oignon dans 2 c. à soupe d'huile 5 min à feu moyen, ajoutez l'ail 1 min, puis la passata et 150 ml d'eau. Laissez frémir 15 min, salez et ajoutez la moitié du basilic.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Faites tomber les blettes 3 min dans une poêle avec une goutte d'eau, pressez-les fortement entre vos mains pour extraire l'eau, puis hachez-les finement.",
       "Dans la même poêle, saisissez le veau haché avec 1 c. à soupe d'huile 5 min à feu vif en l'émiettant, jusqu'à ce qu'il ne soit plus rosé. Laissez tiédir.",
       "Mélangez veau, blettes, ricotta, œuf, 40 g de parmesan, muscade, sel et poivre. Garnissez les cannelloni crus à la poche (ou avec une petite cuillère) en tassant légèrement.",
@@ -4057,7 +4058,7 @@
     "ingredients": [
       {
         "id": "foie-agneau",
-        "qty": 400,
+        "qty": 300,
         "unit": "g",
         "note": "foie de porc ou d'agneau, en tranches fines de 5 mm"
       },

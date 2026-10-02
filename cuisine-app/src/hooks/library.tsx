@@ -4,6 +4,7 @@ import { db, DEFAULT_SETTINGS } from '../db/db';
 import { INGREDIENTS } from '../data/ingredients';
 import { indexRecipe } from '../domain/indexing';
 import { computeDetailed, densityScore } from '../domain/micronutrients';
+import { analyzeDigestion, compatibility, DIET_PROFILES } from '../domain/digestion';
 import type { Ingredient, IndexedRecipe, Recipe, Settings } from '../domain/types';
 import { norm } from '../domain/text';
 
@@ -17,7 +18,11 @@ async function loadSeed(): Promise<Recipe[]> {
 
 interface LibraryValue {
   ready: boolean;
+  /** recettes compatibles avec les profils alimentaires actifs */
   recipes: IndexedRecipe[];
+  /** toute la bibliothèque */
+  allRecipes: IndexedRecipe[];
+  diets: string[];
   byId: Map<string, IndexedRecipe>;
   seedIds: Set<string>;
   ingredients: Ingredient[];
@@ -37,13 +42,16 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   const userRecipes = useLiveQuery(() => db.recipes.toArray(), []);
   const hidden = useLiveQuery(() => db.hidden.toArray(), []);
   const custom = useLiveQuery(() => db.customIngredients.toArray(), []);
+  const settingsRow = useLiveQuery(() => db.settings.get('settings'), []);
+  const diets = settingsRow?.diets ?? ['wapf'];
+  const showIncompatible = !!settingsRow?.showIncompatible;
 
   const value = useMemo<LibraryValue>(() => {
     const ingredients = [...INGREDIENTS, ...(custom ?? [])];
     const ingMap = new Map(ingredients.map((i) => [i.id, i]));
     const lookup = (id: string) => ingMap.get(id);
     const ready = seed != null && userRecipes != null && hidden != null && custom != null;
-    if (!ready) return { ready, recipes: [], byId: new Map(), seedIds: new Set(), ingredients, lookup };
+    if (!ready) return { ready, recipes: [], allRecipes: [], diets, byId: new Map(), seedIds: new Set(), ingredients, lookup };
     const hiddenIds = new Set(hidden!.map((h) => h.recipeId));
     const merged = new Map<string, Recipe>();
     for (const r of seed!) if (!hiddenIds.has(r.id)) merged.set(r.id, r);
@@ -52,17 +60,28 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       const ix = indexRecipe(r, lookup);
       ix.micros = computeDetailed(r, lookup);
       ix.density = densityScore(ix.micros, ix.nutrition.kcal);
+      const d = analyzeDigestion(r, lookup);
+      ix.digest = { oxalateMg: d.oxalateMg, oxalateLevel: d.oxalateLevel, prepared: d.prepared, alerts: d.issues.filter((i) => i.level !== 'info').length, fermented: d.fermented, broth: d.broth, organs: d.organs };
+      const inc: Record<string, string[]> = {};
+      for (const p of DIET_PROFILES) {
+        const c = compatibility(r, p, lookup, d);
+        if (!c.ok) inc[p.id] = c.reasons;
+      }
+      ix.incompatible = inc;
       return ix;
     });
+    const visible = showIncompatible ? recipes : recipes.filter((r) => !diets.some((d) => r.incompatible?.[d]));
     return {
       ready,
-      recipes,
+      recipes: visible,
+      allRecipes: recipes,
+      diets,
       byId: new Map(recipes.map((r) => [r.id, r])),
       seedIds: new Set(seed!.map((r) => r.id)),
       ingredients,
       lookup,
     };
-  }, [seed, userRecipes, hidden, custom]);
+  }, [seed, userRecipes, hidden, custom, diets.join(','), showIncompatible]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return <LibraryContext.Provider value={value}>{children}</LibraryContext.Provider>;
 }

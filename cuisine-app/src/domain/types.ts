@@ -233,6 +233,10 @@ export interface IndexedRecipe extends Recipe {
   micros?: Record<string, number>;
   /** indice de densité nutritionnelle 0–100 */
   density?: number;
+  /** digestibilité : oxalates (mg/portion), préparations, alertes */
+  digest?: { oxalateMg: number; oxalateLevel: string; prepared: string[]; alerts: number; fermented: boolean; broth: boolean; organs: boolean };
+  /** profils alimentaires incompatibles → raisons */
+  incompatible?: Record<string, string[]>;
 }
 
 // ── Données utilisateur (persistées) ────────────────────────
@@ -281,6 +285,10 @@ export interface Settings {
   /** profils nutritionnels du foyer (besoins journaliers) */
   profiles?: Array<{ id: string; name: string; sex: 'homme' | 'femme'; weight: number; kcal: number; proteinPerKg: number }>;
   activeProfile?: string;
-  /** créer automatiquement une recette par l'IA quand une recherche ne donne rien */
+  /** créer automatiquement une recette quand une recherche ne donne rien */
   autoCreate?: boolean;
+  /** profils alimentaires actifs (filtrent recettes et planning) */
+  diets?: string[];
+  /** afficher aussi les recettes hors profil */
+  showIncompatible?: boolean;
 }

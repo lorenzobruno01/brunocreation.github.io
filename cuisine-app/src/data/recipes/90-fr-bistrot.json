@@ -1914,7 +1914,7 @@
       },
       {
         "id": "epinard",
-        "qty": 200,
+        "qty": 19.25,
         "unit": "g",
         "note": "frais, équeutés"
       },
@@ -1937,15 +1937,23 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "Cuisez les pommes de terre épluchées 25 min à la vapeur.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Sauce : faites revenir l'échalote et les champignons 5 min dans 15 g de beurre à feu moyen. Ajoutez le concentré de tomate, puis le madère, et faites réduire de moitié (3 min).",
       "Versez le bouillon, laissez frémir 5 min, puis liez avec la fécule délayée en remuant : la sauce doit napper la cuillère. Poivrez.",
       "Glissez les tranches de jambon dans la sauce, couvrez et laissez-les se réchauffer 6 à 8 min à feu très doux, sans bouillir, en les retournant une fois.",
       "Pendant ce temps, faites tomber les épinards 2 min dans 20 g de beurre à feu vif, salez et ajoutez la muscade.",
-      "Ajoutez le reste du beurre à la sauce hors du feu et servez le jambon nappé, avec les épinards et les pommes vapeur."
+      "Ajoutez le reste du beurre à la sauce hors du feu et servez le jambon nappé, avec les épinards et les pommes vapeur.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -3160,7 +3168,7 @@
       },
       {
         "id": "oseille",
-        "qty": 80,
+        "qty": 40,
         "unit": "g",
         "note": "équeutée, en lanières"
       },
@@ -3204,6 +3212,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -3211,7 +3225,8 @@
       "Dans une casserole, mettez l'échalote, le vin blanc et le fumet. Faites réduire à feu vif jusqu'à ce qu'il ne reste que 3 cuillères à soupe de liquide (8 min).",
       "Ajoutez la crème et laissez bouillonner 3 min jusqu'à ce qu'elle nappe la cuillère. Hors du feu, ajoutez l'oseille : elle fond et vire au vert kaki en 30 secondes. Salez, poivrez.",
       "Salez les pavés. Faites mousser le beurre dans une poêle à feu moyen-vif et cuisez le saumon 3 min sur la première face, 1 à 2 min sur la seconde : le cœur doit rester rosé et nacré.",
-      "Versez la sauce à l'oseille dans les assiettes chaudes, posez le saumon dessus et servez avec le riz."
+      "Versez la sauce à l'oseille dans les assiettes chaudes, posez le saumon dessus et servez avec le riz.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -4157,7 +4172,7 @@
     "ingredients": [
       {
         "id": "foie-veau",
-        "qty": 320,
+        "qty": 300,
         "unit": "g",
         "note": "foie de génisse, 2 tranches épaisses"
       },

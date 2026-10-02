@@ -451,8 +451,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 2,
-        "unit": "cas"
+        "qty": 4,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "muscade",
@@ -477,7 +478,8 @@
       "Coupez le boudin en tronçons de 3 cm d'épaisseur : ils doivent montrer une jolie spirale.",
       "Dans une grande sauteuse, faites dorer les roulés à plat dans le beurre à feu moyen, 3 min par face, jusqu'à ce qu'ils soient bien colorés.",
       "Versez le bouillon chaud à mi-hauteur, couvrez et laissez cuire 20 min à feu doux : le bouillon doit être presque entièrement absorbé et la pâte tendre.",
-      "Servez avec la laitue assaisonnée de vinaigre de cidre et d'huile de noix."
+      "Servez avec la laitue assaisonnée de vinaigre de cidre et d'beurre clarifié.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "week-end",
@@ -1019,8 +1021,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "pomme-de-terre",
@@ -1057,10 +1060,11 @@
     ],
     "steps": [
       "Préchauffez le four à 200 °C. Lavez les pommes de terre, piquez-les, posez-les sur une plaque avec du gros sel et enfournez 40 à 45 min : la peau doit être ridée et la lame d'un couteau entrer comme dans du beurre.",
-      "Fouettez le fromage blanc avec la crème 1 min pour l'aérer. Ajoutez l'échalote, l'ail râpé, la ciboulette et le persil ciselés, le vin blanc, l'huile de noix, sel et beaucoup de poivre. Réservez au frais au moins 20 min.",
+      "Fouettez le fromage blanc avec la crème 1 min pour l'aérer. Ajoutez l'échalote, l'ail râpé, la ciboulette et le persil ciselés, le vin blanc, l'beurre clarifié, sel et beaucoup de poivre. Réservez au frais au moins 20 min.",
       "Cuisez les œufs 9 min dans l'eau bouillante, refroidissez et écalez.",
       "Fendez les pommes de terre en croix, glissez une noisette de beurre, puis une grosse cuillerée de cervelle de canut.",
-      "Servez avec le jambon cru, les œufs coupés en deux et le reste de cervelle de canut à part."
+      "Servez avec le jambon cru, les œufs coupés en deux et le reste de cervelle de canut à part.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -1753,7 +1757,7 @@
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 38.5,
         "unit": "g",
         "note": "feuilles de blettes, ciselées"
       },
@@ -1817,16 +1821,24 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "Préchauffez le four à 180 °C. Beurrez un moule à cake ou une terrine de 1,5 l.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Fouettez la farine et les œufs, puis délayez progressivement avec le lait jusqu'à obtenir une pâte lisse comme une pâte à crêpes épaisse.",
       "Hachez finement l'oignon, le persil, la ciboulette. Ajoutez-les à la pâte avec les blettes, la chair à saucisse, le jambon, 1 c. à café de sel et du poivre. Mélangez bien.",
       "Versez la moitié dans le moule, alignez les pruneaux au centre, couvrez du reste.",
       "Enfournez 50 à 55 min : le dessus doit être bien doré et une lame plantée au centre ressortir sèche.",
       "Pendant ce temps, coupez les pommes de terre en dés de 2 cm et faites-les sauter dans la graisse de canard 25 min à feu moyen, en remuant souvent, jusqu'à ce qu'elles soient dorées et croustillantes. Salez.",
-      "Démoulez le pounti après 10 min de repos, coupez en tranches épaisses et servez avec les pommes de terre."
+      "Démoulez le pounti après 10 min de repos, coupez en tranches épaisses et servez avec les pommes de terre.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "four",
@@ -2716,7 +2728,7 @@
     "ingredients": [
       {
         "id": "haricots-blancs",
-        "qty": 1200,
+        "qty": 720,
         "unit": "g",
         "note": "lingots cuits (ou 500 g secs trempés une nuit)"
       },
@@ -2794,6 +2806,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 90,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2802,7 +2820,8 @@
       "Faites dorer les saucisses 5 min à la poêle et les morceaux de confit côté peau 5 min pour faire fondre leur gras.",
       "Préchauffez le four à 150 °C. Dans une cassole en terre (ou un grand plat profond), alternez haricots et viandes en terminant par des haricots, avec les morceaux de confit et de saucisse posés à moitié enfoncés sur le dessus.",
       "Versez du bouillon à hauteur, salez, poivrez. Enfournez 2 h 30. Toutes les 30 min, une croûte dorée se forme : enfoncez-la à la cuillère et rajoutez un peu de bouillon si le cassoulet s'assèche (traditionnellement 7 fois).",
-      "Servez dans la cassole, la croûte bien dorée et les haricots crémeux en dessous."
+      "Servez dans la cassole, la croûte bien dorée et les haricots crémeux en dessous.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -3163,7 +3182,7 @@
     "cuisine": "rustique",
     "prepTime": 35,
     "cookTime": 180,
-    "restTime": 120,
+    "restTime": 720,
     "difficulty": "intermediaire",
     "servings": 6,
     "ingredients": [
@@ -3180,7 +3199,7 @@
       },
       {
         "id": "farine-sarrasin",
-        "qty": 300,
+        "qty": 210,
         "unit": "g"
       },
       {
@@ -3252,16 +3271,24 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 90,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : préparez la pâte et laissez-la reposer et fermenter une nuit (12 h) à température ambiante, couverte.",
       "Dessalez le porc 2 h dans l'eau froide. Mettez-le dans une très grande marmite avec le plat de côtes, l'oignon piqué, thym, laurier, couvrez largement d'eau froide et portez à ébullition. Écumez et laissez frémir 1 h.",
       "Farz : fouettez la farine de sarrasin, le lait, l'œuf, 40 g de beurre fondu et 200 ml de bouillon tiédi de la marmite jusqu'à obtenir une pâte épaisse. Versez-la dans un sac en tissu (ou un torchon fariné) en la remplissant aux deux tiers, et nouez solidement en laissant de la place pour qu'elle gonfle.",
       "Plongez le sac dans la marmite et laissez frémir 2 h, en le retournant à mi-cuisson.",
       "Ajoutez les carottes, navets, poireaux et le chou 45 min avant la fin : ils doivent être tendres sans se défaire.",
       "Lipig : faites fondre doucement le reste du beurre avec les échalotes 10 min à feu doux, sans coloration.",
       "Sortez le sac, roulez-le sur le plan de travail en le malaxant pour émietter le farz en grains. Ouvrez-le dans un plat chaud.",
-      "Servez les viandes tranchées, les légumes et le farz arrosé de lipig, avec un bol de bouillon à côté."
+      "Servez les viandes tranchées, les légumes et le farz arrosé de lipig, avec un bol de bouillon à côté.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -3269,7 +3296,8 @@
       "familial",
       "réconfortant",
       "batch cooking",
-      "riche en collagène"
+      "riche en collagène",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -3475,7 +3503,7 @@
         "unit": "cas"
       },
       {
-        "id": "huile-colza",
+        "id": "beurre-clarifie",
         "qty": 3,
         "unit": "cas"
       },
@@ -3990,6 +4018,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Rincez les lentilles et mettez-les dans une casserole d'eau froide non salée avec le laurier. Portez à ébullition et laissez frémir 20 à 25 min : elles doivent être tendres mais entières. Salez en fin de cuisson. En parallèle, cuisez les pommes de terre en gros cubes 15 min à l'eau salée.",
       "Dans une sauteuse, faites revenir l'oignon et la carotte en dés dans l'huile d'olive 5 min à feu moyen. Ajoutez l'ail, le thym, les lentilles égouttées, les pommes de terre et 150 ml d'eau de cuisson des lentilles. Laissez mijoter 10 min à découvert : le jus doit napper.",
       "Faites griller le figatellu (et la saucisse) au gril, à la braise ou à la poêle en fonte à feu moyen-vif, 4 à 5 min par face : la peau doit être dorée et le gras perler. Si vous utilisez du foie de porc en tranches, saisissez-le 1 min 30 par face seulement, il doit rester rosé.",
@@ -4001,7 +4030,8 @@
       "rapide",
       "économique",
       "réconfortant",
-      "barbecue"
+      "barbecue",
+      "préparation à l’avance"
     ],
     "seasons": [
       "hiver"
@@ -4012,7 +4042,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Le figatellu frais ne se trouve que de décembre à mars ; le reste de l'année, utilisez du foie de porc et une saucisse."
+    "tips": "Le figatellu frais ne se trouve que de décembre à mars ; le reste de l'année, utilisez du foie de porc et une saucisse.",
+    "restTime": 720
   },
   {
     "id": "reg-ficelle-picarde",

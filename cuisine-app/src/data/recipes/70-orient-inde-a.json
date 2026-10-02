@@ -443,6 +443,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Rincez les lentilles et cuisez-les 15 min dans 600 ml d'eau non salée frémissante : elles doivent rester un peu fermes. Ne les égouttez pas.",
       "Pendant ce temps, faites frire les oignons dans l'huile d'olive à feu moyen-vif 15 à 20 min en remuant souvent, jusqu'à ce qu'ils soient brun foncé et croustillants. Réservez-en la moitié sur du papier absorbant.",
       "Ajoutez le riz rincé et le cumin aux lentilles avec leur eau (il doit rester 2 cm d'eau au-dessus), salez, couvrez et cuisez 15 min à feu doux. Incorporez la moitié des oignons restés dans la poêle et laissez reposer 5 min couvert.",
@@ -455,7 +456,8 @@
       "réconfortant",
       "riche en glucides",
       "familial",
-      "sans gluten"
+      "sans gluten",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -467,7 +469,8 @@
       "epice",
       "grille"
     ],
-    "tips": "La mujaddara se garde 3 jours et se mange aussi tiède, en lunch box, avec un œuf mollet à la place de l'agneau."
+    "tips": "La mujaddara se garde 3 jours et se mange aussi tiède, en lunch box, avec un œuf mollet à la place de l'agneau.",
+    "restTime": 720
   },
   {
     "id": "ori-maqluba-agneau-aubergine",
@@ -707,6 +710,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Rincez le boulgour, couvrez-le d'eau froide 15 min, puis pressez-le fortement dans les mains pour l'essorer.",
       "Pâte : mixez par à-coups 500 g d'agneau, l'oignon râpé, le cumin, la menthe, 1 c. à café de sel et un peu de poivre, puis pétrissez avec le boulgour 3 min en vous mouillant les mains d'eau glacée, jusqu'à une pâte lisse et homogène.",
       "Farce : faites revenir les 2 oignons hachés dans 15 g de beurre 6 min à feu moyen, ajoutez 400 g d'agneau et émiettez-le 8 min jusqu'à ce qu'il soit bien doré. Ajoutez cannelle, ras el hanout, sel, poivre et les pignons dorés à sec 3 min.",
@@ -720,7 +724,8 @@
       "four",
       "familial",
       "batch cooking",
-      "calorique"
+      "calorique",
+      "préparation à l’avance"
     ],
     "seasons": [],
     "technique": "four",
@@ -729,7 +734,8 @@
       "umami",
       "reconfortant"
     ],
-    "tips": "Se congèle découpé en parts, cru ou cuit. Excellent froid le lendemain en lunch box."
+    "tips": "Se congèle découpé en parts, cru ou cuit. Excellent froid le lendemain en lunch box.",
+    "restTime": 720
   },
   {
     "id": "ori-sayadieh-cabillaud",
@@ -1330,6 +1336,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Couvrez le boulgour de 150 ml d'eau bouillante salée, couvrez et laissez gonfler 15 min, puis égrainez à la fourchette.",
       "Mélangez le bœuf, l'oignon râpé, le cumin, la cannelle, le piment, 1 c. à café de sel et du poivre. Formez 8 keftas allongées autour de brochettes ou en cigares.",
       "Ciselez très finement le persil et la menthe (au couteau, pas au mixeur), coupez les tomates en petits dés et émincez les oignons nouveaux.",
@@ -1354,7 +1361,8 @@
       "acidule",
       "grille"
     ],
-    "tips": "Le taboulé se garde 2 jours au frais ; ajoutez les tomates le jour même si vous le préparez à l'avance."
+    "tips": "Le taboulé se garde 2 jours au frais ; ajoutez les tomates le jour même si vous le préparez à l'avance.",
+    "restTime": 720
   },
   {
     "id": "ori-bowl-shawarma-dinde",
@@ -2274,7 +2282,7 @@
     "cuisine": "turque",
     "prepTime": 15,
     "cookTime": 15,
-    "restTime": 60,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
@@ -2371,6 +2379,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez le yaourt, 1 c. à soupe de concentré, le piment, le cumin, l'ail écrasé, 1 c. à soupe d'huile, sel et poivre. Enrobez le poulet et laissez mariner 1 h au frais.",
       "Pilaf : faites fondre le beurre, ajoutez le reste de concentré et remuez 1 min. Ajoutez le boulgour, nacrez 1 min, versez le bouillon chaud, salez. Couvrez et cuisez 12 min à feu doux, puis laissez gonfler 10 min hors du feu avec un torchon sous le couvercle.",
       "Enfilez sur des brochettes en alternant poulet, poivron et oignon. Badigeonnez du reste d'huile.",
@@ -2382,7 +2391,8 @@
       "rapide",
       "barbecue",
       "riche en protéines",
-      "familial"
+      "familial",
+      "préparation à l’avance"
     ],
     "seasons": [
       "printemps",
@@ -2629,7 +2639,7 @@
     "cuisine": "turque",
     "prepTime": 20,
     "cookTime": 10,
-    "restTime": 30,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
@@ -2720,6 +2730,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez l'agneau avec l'origan, le cumin, 1 c. à soupe d'huile et du poivre. Laissez mariner 30 min à température ambiante.",
       "Versez 180 ml d'eau bouillante salée sur le boulgour, couvrez et laissez gonfler 15 min. Incorporez aussitôt le concentré de tomate et le piment pendant qu'il est chaud : il doit devenir uniformément rouge.",
       "Coupez tomates et concombre en petits dés, émincez les oignons nouveaux, ciselez persil et menthe.",

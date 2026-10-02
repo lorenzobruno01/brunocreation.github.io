@@ -2075,6 +2075,7 @@
       }
     ],
     "steps": [
+      "Rincez les lentilles corail et laissez-les tremper 2 h dans de l’eau tiède ; jetez l’eau avant de cuire.",
       "Mettez les lentilles dans une casserole avec 450 ml d'eau, 1 c. à café de curcuma, le gingembre râpé et la tomate en dés. Portez à ébullition, écumez et laissez cuire 20 min à feu doux à demi couvert, en remuant de temps en temps : le dal doit être crémeux. Salez.",
       "En parallèle, cuisez le riz rincé dans 1,5 fois son volume d'eau salée, 12 min à couvert, puis 5 min de repos.",
       "Séchez le cabillaud, frottez-le avec le reste de curcuma, le piment et du sel.",
@@ -2086,7 +2087,8 @@
       "riche en protéines",
       "économique",
       "sans gluten",
-      "léger"
+      "léger",
+      "préparation à l’avance"
     ],
     "seasons": [],
     "technique": "poele",
@@ -2094,7 +2096,8 @@
       "epice",
       "reconfortant",
       "iode"
-    ]
+    ],
+    "restTime": 120
   },
   {
     "id": "ori-curry-crevettes-kerala-coco",

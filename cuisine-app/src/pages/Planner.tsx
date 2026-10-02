@@ -257,6 +257,7 @@ export function Planner() {
                           <span className="small muted">
                             ⏱ {formatDuration(r.totalTime)} · 🔥 {r.nutrition.kcal}
                           </span>
+                          {(r.restTime ?? 0) >= 360 && <span className="small" style={{ color: 'var(--primary-2)', fontWeight: 800 }}>🌙 À préparer la veille</span>}
                         </>
                       ) : (
                         <span className="muted" style={{ fontSize: '1.4rem', margin: 'auto' }}>

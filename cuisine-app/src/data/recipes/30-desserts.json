@@ -805,6 +805,7 @@
       }
     ],
     "steps": [
+      "La veille : préparez la pâte et laissez-la reposer et fermenter une nuit (12 h) à température ambiante, couverte.",
       "Préchauffez le four à 180 °C. Beurrez un plat à gratin en terre de 24 cm et saupoudrez-le d'1 c. à soupe du sucre.",
       "Rangez les demi-quetsches serrées dans le plat, face coupée vers le haut.",
       "Fouettez les œufs avec le reste du sucre, le sel et la cannelle, puis la farine de sarrasin jusqu'à une pâte lisse. Détendez progressivement avec le kéfir et la vanille.",
@@ -816,7 +817,8 @@
       "familial",
       "économique",
       "sans gluten",
-      "fermenté"
+      "fermenté",
+      "préparation à l’avance"
     ],
     "seasons": [
       "ete",
@@ -827,7 +829,8 @@
       "fruite",
       "acidule"
     ],
-    "tips": "En juin, la même base fonctionne avec des cerises noires entières non dénoyautées (comptez 5 min de moins)."
+    "tips": "En juin, la même base fonctionne avec des cerises noires entières non dénoyautées (comptez 5 min de moins).",
+    "restTime": 720
   },
   {
     "id": "des-bread-butter-pudding",
@@ -1089,9 +1092,22 @@
         "unit": "ml",
         "note": "pour servir, ou crème anglaise",
         "optional": true
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 12,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 12,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Préchauffez le four à 190 °C.",
       "Pelez les poires, coupez-les en gros cubes de 3 cm et mélangez-les dans un plat à gratin avec le gingembre râpé, le jus de citron, la cannelle et 15 g de sucre.",
       "Dans un saladier, mélangez flocons d'avoine, farine, noisettes, 45 g de sucre et sel. Ajoutez le beurre froid et sablez du bout des doigts jusqu'à obtenir de gros grumeaux irréguliers.",
@@ -1103,7 +1119,8 @@
       "four",
       "familial",
       "réconfortant",
-      "économique"
+      "économique",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -1115,7 +1132,8 @@
       "epice",
       "reconfortant"
     ],
-    "tips": "Le crumble cru se congèle : gardez-en un sachet pour un dessert minute sur des pommes ou des prunes."
+    "tips": "Le crumble cru se congèle : gardez-en un sachet pour un dessert minute sur des pommes ou des prunes.",
+    "restTime": 720
   },
   {
     "id": "des-pommes-au-four-miel-noix",
@@ -1306,7 +1324,7 @@
     "ingredients": [
       {
         "id": "rhubarbe",
-        "qty": 500,
+        "qty": 120,
         "unit": "g",
         "note": "tiges, effilées"
       },

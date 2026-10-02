@@ -147,6 +147,21 @@ function varietyPenalty(entries: Array<{ slot: Slot; r: IndexedRecipe; day: numb
   if (c.maxAbats != null && abats > c.maxAbats) p += (abats - c.maxAbats) * 50;
   else if (abats > 2) p += (abats - 2) * 30;
   if (c.minFish && fish < c.minFish) p += (c.minFish - fish) * 25;
+  // Objectifs hebdomadaires traditionnels (WAPF / Deep Nutrition) : abats, bouillons, fermentés, poisson gras
+  let organs = 0;
+  let broth = 0;
+  let fermented = 0;
+  let fattyFish = 0;
+  for (const { r } of entries) {
+    if (r.digest?.organs) organs++;
+    if (r.digest?.broth) broth++;
+    if (r.digest?.fermented) fermented++;
+    if (r.mainProtein === 'poisson-gras') fattyFish++;
+  }
+  if (organs < 1) p += 12;
+  if (broth < 2) p += (2 - broth) * 6;
+  if (fermented < 3) p += (3 - fermented) * 4;
+  if (!c.minFish && fattyFish < 2) p += (2 - fattyFish) * 6;
   return p;
 }
 

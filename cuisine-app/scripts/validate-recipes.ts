@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { INGREDIENT_BY_ID } from '../src/data/ingredients';
 import { indexRecipe } from '../src/domain/indexing';
 import { checkPhilosophy } from '../src/domain/philosophy';
+import { analyzeDigestion } from '../src/domain/digestion';
 import { similarity, DUPLICATE_THRESHOLD, TOO_CLOSE_THRESHOLD } from '../src/domain/similarity';
 import { CATEGORIES, CUISINES, DIFFICULTIES, FLAVORS, MEAL_TYPES, SEASONS, TECHNIQUES } from '../src/domain/labels';
 import { RECIPE_UNITS } from '../src/domain/units';
@@ -112,6 +113,7 @@ for (const item of all) {
   const ix = indexRecipe(r, lookup);
   item.indexed = ix;
   for (const issue of checkPhilosophy(r, lookup)) (issue.level === 'error' ? E : W)(issue.message);
+  for (const issue of analyzeDigestion(r, lookup).issues) if (issue.level !== 'info') (issue.level === 'error' ? E : W)(`[${issue.topic}] ${issue.message}`);
 
   const n = ix.nutrition;
   const isMain = r.category === 'plat' || r.category === 'mijote' || r.category === 'salade-composee';

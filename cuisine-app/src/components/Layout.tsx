@@ -16,6 +16,7 @@ const MORE = [
   { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
   { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },
+  { to: '/sources', label: 'Sources & méthode nutritionnelle', icon: '📚' },
   { to: '/reglages', label: 'Réglages & sauvegarde', icon: '⚙️' },
 ];
 

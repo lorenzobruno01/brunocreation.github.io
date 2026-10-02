@@ -495,20 +495,28 @@
       },
       {
         "id": "huile-noix",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
       "Chauffez une poêle à sec à feu moyen-vif. Ajoutez les gésiers émincés avec la graisse qui les enrobe et faites-les dorer 5 à 6 min en remuant, jusqu'à ce que les bords soient croustillants.",
       "Ajoutez l'échalote ciselée la dernière minute, puis déglacez avec le balsamique : il doit napper les gésiers en 30 s.",
       "Faites griller les tranches de pain dans la graisse restée dans la poêle, 1 min par face.",
-      "Assaisonnez la mâche avec l'huile de noix. Disposez-la sur le pain, ajoutez les gésiers chauds, les noix concassées et un tour de poivre."
+      "Assaisonnez la mâche avec l'beurre clarifié. Disposez-la sur le pain, ajoutez les gésiers chauds, les noix concassées et un tour de poivre.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "abats",
@@ -812,6 +820,7 @@
       }
     ],
     "steps": [
+      "Sécurité : congelez le poisson au moins 24 h à −20 °C avant de le préparer cru (ou achetez-le « qualité sashimi », déjà assaini) — recommandation ANSES contre les parasites.",
       "Préchauffez le four à 200 °C. Badigeonnez légèrement les tortillas d'huile d'olive, posez-les à plat sur une plaque et enfournez 7 à 8 min : elles doivent être dorées et cassantes.",
       "Coupez le thon en cubes de 1 cm. Mélangez-le avec le jus d'un citron vert, l'oignon rouge très finement émincé, la moitié du piment haché et une pincée de sel. Laissez mariner 5 min au frais : la surface du thon blanchit légèrement.",
       "Écrasez l'avocat à la fourchette avec le jus du second citron vert et du sel.",
@@ -1173,7 +1182,7 @@
     "cuisine": "americaine",
     "prepTime": 20,
     "cookTime": 8,
-    "restTime": 30,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 6,
     "ingredients": [
@@ -1214,9 +1223,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 12,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Torréfiez les noisettes 8 min au four à 170 °C, jusqu'à ce que la peau craquelle. Frottez-les dans un torchon pour retirer une partie des peaux et laissez tiédir.",
       "Si les dattes sont sèches, faites-les tremper 10 min dans de l'eau chaude puis égouttez-les soigneusement.",
       "Mixez les noisettes et les flocons d'avoine par à-coups jusqu'à obtenir une poudre grossière.",
@@ -1285,9 +1307,16 @@
         "id": "miel",
         "qty": 20,
         "unit": "g"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Versez le kéfir dans le bol du blender, puis ajoutez les flocons d'avoine et laissez-les gonfler 3 min.",
       "Ajoutez les bananes en tronçons, le yaourt grec, le miel et les framboises surgelées.",
       "Mixez 45 à 60 s à pleine puissance, jusqu'à obtenir une texture lisse, épaisse et sans grains d'avoine visibles.",
@@ -1298,7 +1327,8 @@
       "sportif",
       "prise de masse",
       "fermenté",
-      "riche en glucides"
+      "riche en glucides",
+      "préparation à l’avance"
     ],
     "seasons": [],
     "technique": "mixe",
@@ -1307,7 +1337,8 @@
       "acidule",
       "lacte"
     ],
-    "tips": "Les fruits surgelés évitent d'ajouter des glaçons. Myrtilles ou cerises remplacent très bien les framboises."
+    "tips": "Les fruits surgelés évitent d'ajouter des glaçons. Myrtilles ou cerises remplacent très bien les framboises.",
+    "restTime": 720
   },
   {
     "id": "col-lassi-kefir-mangue-cardamome",
@@ -2459,8 +2490,8 @@
   },
   {
     "id": "col-edamame-ail-piment-wok",
-    "name": "Edamame sautés à l'ail, piment et soja",
-    "description": "Edamame en cosses saisis au wok avec ail, piment, gingembre et sauce soja, à décortiquer avec les dents. Une collation salée et addictive.",
+    "name": "petits pois sautés à l'ail, piment et soja",
+    "description": "petits pois en cosses saisis au wok avec ail, piment, gingembre et sauce soja, à décortiquer avec les dents. Une collation salée et addictive.",
     "emoji": "🫛",
     "category": "collation",
     "mealTypes": [
@@ -2473,7 +2504,7 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "edamame",
+        "id": "petits-pois",
         "qty": 400,
         "unit": "g",
         "note": "en cosses, surgelés"
@@ -2516,8 +2547,8 @@
       }
     ],
     "steps": [
-      "Plongez les edamame surgelés 3 min dans l'eau bouillante salée, égouttez et séchez-les dans un torchon.",
-      "Chauffez le wok à feu très vif avec l'huile de coco jusqu'à ce qu'elle fume légèrement. Ajoutez les edamame et faites-les sauter 2 min sans trop remuer pour que les cosses noircissent par endroits.",
+      "Plongez les petits pois surgelés 3 min dans l'eau bouillante salée, égouttez et séchez-les dans un torchon.",
+      "Chauffez le wok à feu très vif avec l'huile de coco jusqu'à ce qu'elle fume légèrement. Ajoutez les petits pois et faites-les sauter 2 min sans trop remuer pour que les cosses noircissent par endroits.",
       "Ajoutez l'ail haché, le gingembre râpé et le piment émincé, sautez 30 s jusqu'à ce que l'ail blondisse.",
       "Versez la sauce soja, mélangez 30 s pour l'évaporer, puis coupez le feu et ajoutez l'huile de sésame et la fleur de sel."
     ],
@@ -2554,11 +2585,6 @@
       {
         "id": "farine-seigle",
         "qty": 120,
-        "unit": "g"
-      },
-      {
-        "id": "graines-lin",
-        "qty": 30,
         "unit": "g"
       },
       {
@@ -2734,7 +2760,7 @@
     "cuisine": "britannique",
     "prepTime": 10,
     "cookTime": 25,
-    "restTime": 60,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 10,
     "ingredients": [
@@ -2779,9 +2805,22 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 36,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
+      },
+      {
+        "id": "kefir",
+        "qty": 20,
+        "unit": "cas",
+        "note": "pour le trempage"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Préchauffez le four à 170 °C. Chemisez de papier cuisson un moule carré de 22 cm.",
       "Faites fondre le beurre, le miel, le sucre et le sel dans une grande casserole à feu doux, en remuant jusqu'à ce que le sucre soit dissous (2 à 3 min). Ne faites pas bouillir.",
       "Hors du feu, ajoutez les flocons d'avoine, les abricots, les graines et la cannelle. Mélangez jusqu'à ce que tous les flocons soient brillants.",
@@ -2951,9 +2990,16 @@
         "id": "sel",
         "qty": 1,
         "unit": "pincee"
+      },
+      {
+        "id": "farine-seigle",
+        "qty": 12,
+        "unit": "g",
+        "note": "pour le trempage de l’avoine (phytase)"
       }
     ],
     "steps": [
+      "La veille au soir : faites tremper les flocons d’avoine 12 h (une nuit) dans de l’eau tiède avec 2 c. à soupe de kéfir ou de yaourt et 1 c. à soupe de farine de seigle (sa phytase dégrade les phytates de l’avoine). Égouttez avant de cuire.",
       "Préchauffez le four à 190 °C et garnissez 12 empreintes à muffins de caissettes en papier.",
       "Écrasez les bananes à la fourchette en purée presque lisse. Ajoutez les œufs, le beurre fondu tiède, le yaourt et le miel, et fouettez.",
       "Dans un autre bol, mélangez flocons d'avoine, farine, levure, cannelle et sel. Versez sur les liquides et mélangez à la spatule juste assez pour humidifier la farine : quelques grumeaux sont normaux.",
@@ -2976,7 +3022,8 @@
       "fruite",
       "sucre"
     ],
-    "tips": "Se gardent 3 jours dans une boîte et se congèlent un par un. Comptez 2 muffins par portion, avec un verre de kéfir."
+    "tips": "Se gardent 3 jours dans une boîte et se congèlent un par un. Comptez 2 muffins par portion, avec un verre de kéfir.",
+    "restTime": 720
   },
   {
     "id": "col-smorrebrod-hareng-pomme",

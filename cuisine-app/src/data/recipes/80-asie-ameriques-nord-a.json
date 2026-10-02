@@ -802,8 +802,9 @@
       },
       {
         "id": "huile-sesame",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "sesame",
@@ -811,7 +812,7 @@
         "unit": "cas"
       },
       {
-        "id": "edamame",
+        "id": "petits-pois",
         "qty": 100,
         "unit": "g",
         "note": "écossés"
@@ -822,8 +823,9 @@
       "Lancez le riz. Préchauffez le four à 220 °C, gril et chaleur tournante.",
       "Essuyez l'excès de marinade avec les doigts (laissez un voile fin, l'épaisseur brûlerait). Posez le poisson sur une plaque recouverte de papier cuisson.",
       "Enfournez 10 à 12 min à mi-hauteur : la surface doit caraméliser par endroits en brun foncé et la chair s'effeuiller en lamelles nacrées.",
-      "Pendant ce temps, faites fondre le beurre à feu moyen, ajoutez gingembre, pak choï côté coupé en dessous et edamame. Cuisez 3 min, retournez, ajoutez 2 cas d'eau, couvrez 2 min. Arrosez d'huile de sésame.",
-      "Servez le cabillaud sur le riz avec les légumes, parsemé de sésame."
+      "Pendant ce temps, faites fondre le beurre à feu moyen, ajoutez gingembre, pak choï côté coupé en dessous et petits pois. Cuisez 3 min, retournez, ajoutez 2 cas d'eau, couvrez 2 min. Arrosez d'beurre clarifié.",
+      "Servez le cabillaud sur le riz avec les légumes, parsemé de sésame.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "préparation à l’avance",
@@ -1044,6 +1046,7 @@
       }
     ],
     "steps": [
+      "Sécurité : congelez le poisson au moins 24 h à −20 °C avant de le préparer cru (ou achetez-le « qualité sashimi », déjà assaini) — recommandation ANSES contre les parasites.",
       "Rincez le riz jusqu'à ce que l'eau soit claire, cuisez-le avec 1,1 fois son volume d'eau 12 min à feu doux à couvert, puis 10 min de repos.",
       "Chauffez vinaigre, miel et sel jusqu'à dissolution. Versez sur le riz étalé dans un grand plat et mélangez en coupant à la spatule, en éventant, jusqu'à ce qu'il soit brillant et tiède.",
       "Battez les œufs avec le mirin. Cuisez en 3 couches fines dans une petite poêle beurrée à feu doux (1 min chacune), roulez, laissez tiédir et coupez en lanières.",
@@ -1071,8 +1074,8 @@
   },
   {
     "id": "wld-poke-saumon-mangue",
-    "name": "Poke bowl de saumon, mangue et edamame",
-    "description": "Bol hawaïen de riz japonais garni de cubes de saumon marinés soja-sésame-citron vert, avocat, mangue, edamame et concombre.",
+    "name": "Poke bowl de saumon, mangue et petits pois",
+    "description": "Bol hawaïen de riz japonais garni de cubes de saumon marinés soja-sésame-citron vert, avocat, mangue, petits pois et concombre.",
     "emoji": "🥗",
     "category": "salade-composee",
     "mealTypes": [
@@ -1112,7 +1115,7 @@
         "unit": "piece"
       },
       {
-        "id": "edamame",
+        "id": "petits-pois",
         "qty": 150,
         "unit": "g",
         "note": "écossés, blanchis"
@@ -1158,9 +1161,10 @@
       }
     ],
     "steps": [
+      "Sécurité : congelez le poisson au moins 24 h à −20 °C avant de le préparer cru (ou achetez-le « qualité sashimi », déjà assaini) — recommandation ANSES contre les parasites.",
       "Cuisez le riz japonais rincé (12 min à couvert à feu doux, 10 min de repos), puis étalez-le pour qu'il tiédisse.",
       "Mélangez la sauce soja, l'huile de sésame et le jus du citron vert. Versez les deux tiers sur le saumon, ajoutez l'oignon rouge et laissez mariner 10 min au frais.",
-      "Blanchissez les edamame 3 min dans l'eau bouillante salée, rafraîchissez-les à l'eau froide.",
+      "Blanchissez les petits pois 3 min dans l'eau bouillante salée, rafraîchissez-les à l'eau froide.",
       "Coupez avocat, mangue et concombre en cubes de 1,5 cm, la nori en lanières.",
       "Garnissez deux bols de riz, disposez le saumon mariné et chaque garniture en quartiers, arrosez du reste de sauce et parsemez de sésame et de piment émincé."
     ],
@@ -1219,8 +1223,9 @@
       },
       {
         "id": "huile-sesame",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "miel",
@@ -1276,14 +1281,21 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
-      "Mélangez poire râpée, sauce soja, huile de sésame, miel, ail, gingembre et poivre. Ajoutez le bœuf et l'oignon, massez bien et laissez mariner 1 h au frais (jusqu'à une nuit).",
+      "Mélangez poire râpée, sauce soja, beurre clarifié, miel, ail, gingembre et poivre. Ajoutez le bœuf et l'oignon, massez bien et laissez mariner 1 h au frais (jusqu'à une nuit).",
       "Lancez la cuisson du riz.",
       "Faites chauffer une plancha ou une grande poêle en fonte à feu très vif jusqu'à ce qu'elle fume légèrement.",
       "Étalez le bœuf égoutté en une seule couche (en 2 fois) et laissez saisir 1 min sans toucher, puis retournez et cuisez encore 1 à 2 min avec la ciboule : les bords doivent caraméliser.",
-      "Servez au centre de la table avec le riz, les feuilles de laitue, le kimchi et le sésame : chacun roule une bouchée de bœuf et de riz dans une feuille."
+      "Servez au centre de la table avec le riz, les feuilles de laitue, le kimchi et le sésame : chacun roule une bouchée de bœuf et de riz dans une feuille.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -1304,7 +1316,7 @@
   {
     "id": "wld-hoedeopbap-sole",
     "name": "Hoedeopbap, bol de poisson cru à la coréenne",
-    "description": "Riz tiède, crudités croquantes et lamelles de poisson blanc cru, arrosés d'une sauce gochujang vinaigrée et d'huile de sésame : la version coréenne du chirashi.",
+    "description": "Riz tiède, crudités croquantes et lamelles de poisson blanc cru, arrosés d'une sauce gochujang vinaigrée et d'beurre clarifié : la version coréenne du chirashi.",
     "emoji": "🐠",
     "category": "salade-composee",
     "mealTypes": [
@@ -1377,7 +1389,8 @@
       {
         "id": "huile-sesame",
         "qty": 2,
-        "unit": "cas"
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "sesame",
@@ -1389,14 +1402,21 @@
         "qty": 1,
         "unit": "piece",
         "note": "émiettée"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
       "Cuisez le riz (12 min à couvert à feu doux, 10 min de repos) et laissez-le tiédir. Cuisez les œufs 6 min 30 dans l'eau bouillante, puis plongez-les dans l'eau glacée et écalez-les.",
-      "Sauce : mélangez gochujang, vinaigre, miel, 1 cas d'huile de sésame et 1 cas de sésame.",
+      "Sauce : mélangez gochujang, vinaigre, miel, 1 cas d'beurre clarifié et 1 cas de sésame.",
       "Tranchez le poisson bien froid en fines lamelles de 5 mm, en biais, avec un couteau très aiguisé.",
       "Répartissez le riz, couvrez de laitue, carotte et concombre, puis du poisson en éventail, des œufs de poisson et d'un œuf mollet coupé en deux.",
-      "Arrosez du reste d'huile de sésame, parsemez de nori, et servez la sauce à part : chacun mélange vigoureusement son bol avant de manger."
+      "Arrosez du reste d'beurre clarifié, parsemez de nori, et servez la sauce à part : chacun mélange vigoureusement son bol avant de manger.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -1420,7 +1440,7 @@
   {
     "id": "wld-japchae-crevettes",
     "name": "Japchae aux crevettes et shiitakés",
-    "description": "Nouilles translucides sautées à l'huile de sésame avec crevettes, shiitakés, légumes en julienne et lanières d'omelette, glacées d'une sauce soja à peine sucrée.",
+    "description": "Nouilles translucides sautées à l'beurre clarifié avec crevettes, shiitakés, légumes en julienne et lanières d'omelette, glacées d'une sauce soja à peine sucrée.",
     "emoji": "🍜",
     "category": "plat",
     "mealTypes": [
@@ -1465,7 +1485,7 @@
       },
       {
         "id": "epinard",
-        "qty": 100,
+        "qty": 24,
         "unit": "g",
         "note": "pousses"
       },
@@ -1488,7 +1508,8 @@
       {
         "id": "huile-sesame",
         "qty": 2,
-        "unit": "cas"
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "graisse-canard",
@@ -1510,15 +1531,30 @@
         "id": "sesame",
         "qty": 1,
         "unit": "cas"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
-      "Cuisez les nouilles selon le paquet (en général 5 à 6 min), égouttez, rincez à l'eau froide et mélangez-les avec 1 cas d'huile de sésame et 1 cas de sauce soja.",
+      "Cuisez les nouilles selon le paquet (en général 5 à 6 min), égouttez, rincez à l'eau froide et mélangez-les avec 1 cas d'beurre clarifié et 1 cas de sauce soja.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Battez les œufs, cuisez-les en une omelette très fine 1 min de chaque côté à feu doux, roulez-la et coupez-la en lanières.",
       "Faites chauffer la graisse dans un wok à feu vif. Saisissez les crevettes 2 min jusqu'à ce qu'elles soient roses, réservez.",
       "Dans le même wok, faites sauter l'oignon et la carotte 2 min, puis les shiitakés et le poivron 2 min, enfin l'ail et les épinards 30 secondes jusqu'à ce qu'ils tombent.",
-      "Ajoutez les nouilles, les crevettes, le reste de sauce soja, le miel et l'huile de sésame. Mélangez 2 min à feu vif avec des pinces jusqu'à ce que les nouilles soient brillantes et chaudes.",
-      "Servez garni des lanières d'omelette et du sésame."
+      "Ajoutez les nouilles, les crevettes, le reste de sauce soja, le miel et l'beurre clarifié. Mélangez 2 min à feu vif avec des pinces jusqu'à ce que les nouilles soient brillantes et chaudes.",
+      "Servez garni des lanières d'omelette et du sésame.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "riche en protéines",
@@ -1618,8 +1654,9 @@
       },
       {
         "id": "huile-sesame",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "riz-rond",
@@ -1632,6 +1669,12 @@
         "qty": 1,
         "unit": "piece",
         "note": "émiettée"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
@@ -1639,8 +1682,9 @@
       "Dans une grande poêle ou sauteuse, chauffez la graisse à feu moyen-vif. Mettez la patate douce et l'oignon 5 min en remuant.",
       "Ajoutez le poulet et toute sa marinade, étalez-le et faites saisir 5 min sans trop remuer, puis ajoutez le chou et 80 ml d'eau.",
       "Couvrez et laissez cuire 8 à 10 min à feu moyen en remuant de temps en temps : la patate douce doit être tendre sous la pointe d'un couteau et la sauce épaisse et brillante.",
-      "Ajoutez la ciboule et l'huile de sésame. Servez le poulet et les légumes en laissant 3 à 4 cuillerées de sauce au fond.",
-      "Pour finir, mettez le riz, la nori dans la poêle avec le reste de sauce, écrasez et faites revenir 3 min à feu vif jusqu'à ce que le dessous accroche et grille."
+      "Ajoutez la ciboule et l'beurre clarifié. Servez le poulet et les légumes en laissant 3 à 4 cuillerées de sauce au fond.",
+      "Pour finir, mettez le riz, la nori dans la poêle avec le reste de sauce, écrasez et faites revenir 3 min à feu vif jusqu'à ce que le dessous accroche et grille.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "une poêle",
@@ -1854,8 +1898,9 @@
       },
       {
         "id": "huile-sesame",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "oignon-nouveau",
@@ -1879,7 +1924,8 @@
       "Ajoutez le kimchi et le blanc des ciboules et faites sauter 3 min, jusqu'à ce que le kimchi commence à caraméliser.",
       "Ajoutez le riz froid égrené, le jus de kimchi, le gochujang et la sauce soja. Faites sauter 3 min à feu vif en pressant le riz contre la paroi pour qu'il grille.",
       "Pendant ce temps, faites cuire les œufs au plat dans le beurre, à feu moyen, 3 min : blancs pris et bords croustillants, jaunes coulants.",
-      "Hors du feu, arrosez le riz d'huile de sésame. Servez en bols, chaque portion couronnée de 2 œufs, de nori, de vert de ciboule et de sésame."
+      "Hors du feu, arrosez le riz d'beurre clarifié. Servez en bols, chaque portion couronnée de 2 œufs, de nori, de vert de ciboule et de sésame.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",
@@ -1979,8 +2025,9 @@
       },
       {
         "id": "huile-sesame",
-        "qty": 1,
-        "unit": "cas"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "riz-rond",
@@ -1991,6 +2038,12 @@
         "id": "sesame",
         "qty": 1,
         "unit": "cas"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g",
+        "note": "pour la cuisson"
       }
     ],
     "steps": [
@@ -1998,7 +2051,8 @@
       "Épongez soigneusement les calamars : humides, ils bouillent au lieu de sauter.",
       "Chauffez l'huile de coco dans un wok à feu très vif. Faites sauter oignon et carotte 2 min, puis la courgette 1 min.",
       "Ajoutez les calamars et faites sauter 1 min jusqu'à ce qu'ils s'enroulent et blanchissent, puis la sauce : mélangez 1 à 2 min, pas plus, sinon ils deviennent caoutchouteux.",
-      "Hors du feu, ajoutez ciboule, huile de sésame et sésame. Servez immédiatement sur le riz."
+      "Hors du feu, ajoutez ciboule, beurre clarifié et sésame. Servez immédiatement sur le riz.",
+      "Hors du feu, arrosez d’un filet d’huile de sésame grillé (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "rapide",

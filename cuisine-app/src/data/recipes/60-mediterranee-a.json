@@ -1433,7 +1433,7 @@
     "ingredients": [
       {
         "id": "foie-veau",
-        "qty": 350,
+        "qty": 300,
         "unit": "g",
         "note": "en lanières de 1 cm"
       },
@@ -1706,6 +1706,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Cuisez l’orge 25 min à l’eau bouillante salée : il doit être tendre mais garder une petite résistance sous la dent. Égouttez et rincez à l’eau froide.",
       "Pendant la cuisson, faites dorer les pignons 3 min à sec dans une poêle à feu moyen en remuant, jusqu’à ce qu’ils soient blonds et parfumés.",
       "Fouettez le jus et le zeste de citron avec l’huile, du sel et du poivre.",
@@ -1728,7 +1729,8 @@
       "acidule",
       "umami"
     ],
-    "tips": "L’orge assaisonné se garde 3 jours au frais : ajoutez roquette et bresaola au dernier moment."
+    "tips": "L’orge assaisonné se garde 3 jours au frais : ajoutez roquette et bresaola au dernier moment.",
+    "restTime": 720
   },
   {
     "id": "med-souvlaki-porc-pita-tzatziki",
@@ -2394,7 +2396,7 @@
       },
       {
         "id": "epinard",
-        "qty": 200,
+        "qty": 27.5,
         "unit": "g",
         "note": "blettes ou chicorée sauvage"
       },
@@ -2429,6 +2431,12 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
@@ -2436,7 +2444,8 @@
       "Faites 3 entailles sur chaque face des poissons, séchez-les bien avec du papier absorbant, huilez-les et salez-les généreusement, intérieur compris. Glissez une rondelle de citron dans le ventre.",
       "Grillez-les sur un barbecue bien chaud ou une poêle-gril huilée, 6-7 min par face sans les bouger : la peau doit se détacher seule de la grille. La chair près de l’arête doit être blanche et opaque.",
       "Ladolemono : fouettez 4 cuillères d’huile avec le jus d’un citron, l’origan, l’ail, du sel et du poivre jusqu’à ce que le mélange devienne trouble et légèrement épais.",
-      "Servez les poissons avec les pommes de terre et les blettes, le tout généreusement arrosé de ladolemono."
+      "Servez les poissons avec les pommes de terre et les blettes, le tout généreusement arrosé de ladolemono.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "rapide",
@@ -2906,7 +2915,7 @@
     "cuisine": "grecque",
     "prepTime": 20,
     "cookTime": 60,
-    "restTime": 120,
+    "restTime": 720,
     "difficulty": "facile",
     "servings": 4,
     "ingredients": [
@@ -2989,6 +2998,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mettez le poulpe dans une grande casserole avec le laurier, sans eau, couvrez et chauffez à feu moyen : il rend son eau en 10 min. Ajoutez alors de l’eau à hauteur et laissez frémir 45-50 min à feu doux. Il est cuit quand la pointe d’un couteau s’enfonce dans l’épaisseur du tentacule comme dans du beurre.",
       "Laissez-le refroidir 15 min dans son eau, puis coupez les tentacules en tronçons de 2 cm.",
       "Marinez le poulpe tiède avec 3 cuillères de vinaigre, 4 cuillères d’huile, l’origan et du poivre, au moins 2 h au frais.",

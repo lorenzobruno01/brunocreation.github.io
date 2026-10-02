@@ -369,7 +369,7 @@
   {
     "id": "dl-salade-rosbif-lentilles-poire-roquefort",
     "name": "Salade-repas de rosbif, lentilles beluga, poire, roquefort et noix",
-    "description": "Lentilles beluga tièdes, fines tranches de rôti de bœuf rosé, poire juteuse, roquette poivrée, roquefort et cerneaux de noix, vinaigrette à l’huile de noix.",
+    "description": "Lentilles beluga tièdes, fines tranches de rôti de bœuf rosé, poire juteuse, roquette poivrée, roquefort et cerneaux de noix, vinaigrette à l’beurre clarifié.",
     "emoji": "🥗",
     "category": "salade-composee",
     "mealTypes": [
@@ -426,8 +426,9 @@
       },
       {
         "id": "huile-noix",
-        "qty": 20,
-        "unit": "ml"
+        "qty": 2,
+        "unit": "cac",
+        "note": "en assaisonnement, hors du feu"
       },
       {
         "id": "huile-olive",
@@ -462,11 +463,13 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Rincez les lentilles et cuisez-les 20 à 25 min dans 3 fois leur volume d’eau frémissante avec le thym, sans sel. Elles doivent être tendres mais entières. Égouttez et salez.",
       "Salez le rôti de bœuf. Saisissez-le dans une poêle avec l’huile d’olive à feu vif 2 à 3 min par face, puis enfournez 10 min à 200 °C pour un cœur rosé. Laissez reposer 10 min et tranchez finement.",
-      "Fouettez la moutarde, le vinaigre, l’échalote ciselée et l’huile de noix. Versez la moitié sur les lentilles tièdes.",
+      "Fouettez la moutarde, le vinaigre, l’échalote ciselée et l’beurre clarifié. Versez la moitié sur les lentilles tièdes.",
       "Torréfiez les noix 3 min à sec dans une poêle. Coupez la poire en lamelles et les endives en tronçons.",
-      "Dressez roquette et endives, les lentilles, la poire, le bœuf et le roquefort émietté. Arrosez du reste de vinaigrette et parsemez de noix."
+      "Dressez roquette et endives, les lentilles, la poire, le bœuf et le roquefort émietté. Arrosez du reste de vinaigrette et parsemez de noix.",
+      "Hors du feu, arrosez d’un filet d’huile de noix (1 c. à café par personne) pour le parfum."
     ],
     "tags": [
       "repas froid",
@@ -483,7 +486,8 @@
       "fruite",
       "umami",
       "acidule"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-steak-asperges-petits-pois-grenailles",
@@ -686,6 +690,7 @@
       }
     ],
     "steps": [
+      "La veille : rincez énergiquement le quinoa (3 eaux), puis faites-le tremper 12 h (une nuit) avec 1 c. à soupe de jus de citron ; rincez de nouveau avant de cuire.",
       "Rincez le quinoa et cuisez-le 14 min dans 2,5 fois son volume d’eau salée, puis laissez gonfler 5 min hors du feu à couvert.",
       "Cuisez les haricots verts 6 min à l’eau bouillante salée et rafraîchissez-les. Coupez les courgettes en demi-rondelles.",
       "Faites sauter les courgettes dans l’huile d’olive à feu vif 5 min, ajoutez les haricots et l’ail haché 2 min. Hors du feu, ajoutez le basilic ciselé.",
@@ -697,7 +702,8 @@
       "rapide",
       "une poêle",
       "riche en protéines",
-      "léger"
+      "léger",
+      "préparation à l’avance"
     ],
     "seasons": [
       "ete"
@@ -706,7 +712,8 @@
     "flavors": [
       "acidule",
       "herbace"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-agneau-butternut-pois-chiches-zaatar",
@@ -1178,6 +1185,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 210 °C. Coupez l’aubergine en deux, quadrillez la chair, badigeonnez de 15 ml d’huile et salez. Rôtissez 30 min face coupée vers le bas : la chair doit être fondante.",
       "Couvrez le boulgour de 1,5 fois son volume d’eau bouillante salée, couvrez et laissez gonfler 15 min.",
       "Mélangez l’agneau avec la moitié de l’oignon râpé, les épices, 10 g de persil haché et du sel. Formez 6 boudins autour de brochettes.",
@@ -1188,7 +1196,8 @@
     "tags": [
       "barbecue",
       "riche en protéines",
-      "familial"
+      "familial",
+      "préparation à l’avance"
     ],
     "seasons": [
       "ete",
@@ -1199,7 +1208,8 @@
       "epice",
       "herbace",
       "cremeux"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-agneau-haricots-coco-courgettes-romarin",
@@ -1225,7 +1235,7 @@
       },
       {
         "id": "haricots-blancs",
-        "qty": 500,
+        "qty": 245,
         "unit": "g",
         "note": "cocos cuits"
       },
@@ -1241,7 +1251,7 @@
       },
       {
         "id": "epinard",
-        "qty": 250,
+        "qty": 38.5,
         "unit": "g",
         "note": "blettes, côtes et vert émincés"
       },
@@ -1300,14 +1310,22 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "Salez l’agneau. Dans une cocotte, faites-le dorer dans 20 ml d’huile à feu vif en 2 fournées, 5 min chacune. Réservez.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "À feu moyen, faites suer oignons et carottes en dés 6 min, ajoutez l’ail écrasé, le romarin et le thym. Déglacez au vin blanc et laissez réduire 2 min.",
       "Remettez l’agneau, ajoutez les tomates concassées et le bouillon. Couvrez et laissez mijoter 1 h 15 à feu doux.",
       "Ajoutez les haricots, les courgettes en gros dés et les côtes de blettes, poursuivez 25 min à couvert. Ajoutez le vert des blettes les 5 dernières minutes : l’agneau doit être fondant et le jus légèrement épaissi par les haricots.",
-      "Rectifiez l’assaisonnement, arrosez du reste d’huile d’olive crue et servez avec le pain grillé frotté d’ail."
+      "Rectifiez l’assaisonnement, arrosez du reste d’huile d’olive crue et servez avec le pain grillé frotté d’ail.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
@@ -1467,7 +1485,7 @@
       },
       {
         "id": "epinard",
-        "qty": 200,
+        "qty": 27.5,
         "unit": "g"
       },
       {
@@ -1528,15 +1546,23 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
       "Frottez l’échine avec 1 cuillère de pimentón, du sel et 10 ml d’huile. Réservez.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Dans une sauteuse, faites frire la tranche de pain et l’ail entier dans 20 ml d’huile 3 min à feu moyen jusqu’à ce qu’ils soient dorés. Mixez-les au pilon avec le cumin, le reste de pimentón et le vinaigre pour obtenir une pâte.",
       "Dans la même sauteuse, faites fondre la tomate râpée 3 min, ajoutez les épinards par poignées jusqu’à ce qu’ils tombent (3 min).",
       "Ajoutez les pois chiches, la pâte de pain et 150 ml d’eau. Laissez mijoter 10 min à feu doux : la sauce doit devenir épaisse et nappante. Ajoutez les piquillos en lanières.",
       "Grillez l’échine dans une poêle-gril très chaude 4 min par face, puis laissez reposer 3 min.",
-      "Servez les tranches de porc sur les pois chiches, avec un quartier de citron."
+      "Servez les tranches de porc sur les pois chiches, avec un quartier de citron.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "une poêle",
@@ -1917,7 +1943,7 @@
     "cuisine": "levantine",
     "prepTime": 15,
     "cookTime": 35,
-    "restTime": 30,
+    "restTime": 720,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
@@ -1999,6 +2025,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Mélangez le poulet avec le yaourt, 1 cuillère de zaatar, une gousse d’ail râpée et du sel. Laissez mariner 30 min (ou toute une nuit au frais).",
       "Préchauffez le four à 220 °C. Sur une plaque, mélangez le chou-fleur en fleurettes, l’oignon rouge en quartiers, les pois chiches séchés, l’huile et le reste de zaatar. Posez le poulet par-dessus.",
       "Enfournez 30 à 35 min : le poulet doit être doré et caramélisé sur les bords, le chou-fleur bien grillé.",
@@ -2117,6 +2144,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper le riz complet 12 à 24 h dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Salez les cuisses et dorez-les côté peau dans 15 g de beurre 8 min à feu moyen-vif dans une cocotte, puis 3 min côté chair. Réservez et retirez l’excès de gras.",
       "Faites suer les échalotes, les poireaux en rondelles et les carottes en biseau 8 min à feu moyen. Déglacez au vin blanc, laissez réduire 3 min.",
       "Remettez le poulet, versez le bouillon, couvrez et laissez mijoter 30 min à feu doux.",
@@ -2128,7 +2156,8 @@
       "mijoté",
       "familial",
       "réconfortant",
-      "batch cooking"
+      "batch cooking",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2139,7 +2168,8 @@
       "cremeux",
       "herbace",
       "reconfortant"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-salade-poulet-sarrasin-asperges-feta",
@@ -2231,6 +2261,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée frémissante : il doit être tendre mais encore un peu croquant. Égouttez et étalez pour qu’il tiédisse.",
       "Coupez les asperges en tronçons de 4 cm et cuisez-les 3 min à l’eau bouillante salée avec les petits pois, puis rafraîchissez.",
       "Aplatissez légèrement les blancs, frottez-les de 10 ml d’huile, du zeste de citron et du sel. Grillez 5 min par face dans une poêle-gril à feu moyen-vif : le cœur doit être juste blanc. Laissez reposer 3 min et tranchez.",
@@ -2241,7 +2272,8 @@
       "lunch box",
       "repas froid",
       "riche en protéines",
-      "sans gluten"
+      "sans gluten",
+      "préparation à l’avance"
     ],
     "seasons": [
       "printemps"
@@ -2251,7 +2283,8 @@
       "frais",
       "herbace",
       "acidule"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-dinde-haricots-verts-tomates-amandes",
@@ -2402,13 +2435,13 @@
       },
       {
         "id": "haricots-blancs",
-        "qty": 500,
+        "qty": 350,
         "unit": "g",
         "note": "cannellini"
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 38.5,
         "unit": "g",
         "note": "blettes"
       },
@@ -2467,6 +2500,7 @@
     ],
     "steps": [
       "Mélangez la dinde, l’œuf, la chapelure, 30 g de parmesan, 1 cuillère de graines de fenouil écrasées, une gousse d’ail râpée et du sel. Formez 16 boulettes.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Dorez les boulettes dans 20 ml d’huile à feu moyen-vif 6 min en les roulant. Réservez.",
       "Dans la même sauteuse, faites suer l’oignon, le fenouil émincé et le reste d’ail 7 min. Ajoutez le reste de graines de fenouil, le piment et les tomates. Laissez frémir 10 min.",
       "Ajoutez les haricots égouttés, les côtes de blettes émincées et les boulettes. Couvrez et laissez mijoter 12 min à feu doux.",
@@ -2643,7 +2677,7 @@
       },
       {
         "id": "epinard",
-        "qty": 300,
+        "qty": 55,
         "unit": "g"
       },
       {
@@ -2691,20 +2725,30 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 60,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : faites tremper les lentilles 12 h (une nuit) dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Salez les cuisses et dorez-les côté peau dans une cocotte à feu moyen 10 min pour faire fondre le gras, puis 3 min côté chair. Réservez et gardez 2 cuillères de graisse.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Faites suer l’oignon, les carottes en rondelles épaisses et le céleri dans la graisse 6 min. Ajoutez l’ail, le thym, le laurier et le girofle. Déglacez au vin rouge et réduisez 2 min.",
       "Ajoutez les lentilles rincées et le bouillon, posez les cuisses dessus, peau hors du liquide. Couvrez et laissez mijoter 45 min à feu doux.",
       "Découvrez et passez 15 min sous le gril du four à 220 °C : la peau doit être croustillante et les lentilles avoir absorbé presque tout le bouillon.",
-      "Retirez les cuisses, incorporez les épinards aux lentilles chaudes jusqu’à ce qu’ils tombent (2 min), ajoutez le vinaigre et le persil. Servez les cuisses sur les lentilles."
+      "Retirez les cuisses, incorporez les épinards aux lentilles chaudes jusqu’à ce qu’ils tombent (2 min), ajoutez le vinaigre et le persil. Servez les cuisses sur les lentilles.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "mijoté",
       "réconfortant",
       "familial",
-      "sans gluten"
+      "sans gluten",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -2716,7 +2760,8 @@
       "reconfortant",
       "acidule"
     ],
-    "tips": "Les lentilles tiennent lieu de féculent."
+    "tips": "Les lentilles tiennent lieu de féculent.",
+    "restTime": 720
   },
   {
     "id": "dl-pintade-topinambours-poireaux-noisettes",
@@ -2979,7 +3024,7 @@
       },
       {
         "id": "epinard",
-        "qty": 180,
+        "qty": 19.25,
         "unit": "g"
       },
       {
@@ -3052,6 +3097,7 @@
     ],
     "steps": [
       "Dans une grande poêle, faites fondre les poireaux émincés dans l’huile 8 min à feu moyen, sans coloration. Ajoutez la courgette en dés, l’ail et le cumin, poursuivez 4 min.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Ajoutez les pois chiches et les épinards par poignées ; laissez-les tomber 3 min. Mouillez de 60 ml d’eau, salez et ajoutez le jus du citron.",
       "Creusez 5 puits, cassez-y les œufs. Couvrez et cuisez 6 à 8 min à feu doux : les blancs doivent être pris, les jaunes encore coulants.",
       "Émiettez la feta, ajoutez des cuillerées de yaourt, les herbes hachées et le piment.",
@@ -3161,6 +3207,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 200 °C. Posez le saumon salé sur une plaque, arrosez d’huile et de zeste de citron, enfournez 10 à 12 min : la chair doit être nacrée au centre.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée, puis ajoutez le beurre.",
       "Cuisez le brocoli en fleurettes 4 min à la vapeur, ajoutez les petits pois la dernière minute.",
@@ -3172,7 +3219,8 @@
       "fermenté",
       "riche en protéines",
       "sans gluten",
-      "sportif"
+      "sportif",
+      "préparation à l’avance"
     ],
     "seasons": [],
     "technique": "four",
@@ -3180,7 +3228,8 @@
       "frais",
       "herbace",
       "lacte"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-maquereau-fenouil-orange-pommes-de-terre",
@@ -3317,7 +3366,7 @@
       },
       {
         "id": "epinard",
-        "qty": 200,
+        "qty": 27.5,
         "unit": "g",
         "note": "blettes"
       },
@@ -3384,6 +3433,7 @@
     ],
     "steps": [
       "Préchauffez le four à 200 °C. Ébouillantez les blettes 3 min, rafraîchissez, pressez fort et hachez-les.",
+      "Blanchissez les épinards 2 min dans l’eau bouillante salée, égouttez-les et jetez l’eau de cuisson (cela élimine une bonne partie des oxalates solubles).",
       "Mélangez les blettes avec l’œuf, 30 g de parmesan, l’ail haché, le persil, du sel et du poivre.",
       "Coupez les tomates en rondelles épaisses dans un plat huilé, salez et parsemez d’origan. Déposez une cuillerée de farce sur chaque sardine côté chair, refermez et posez-les sur les tomates.",
       "Mélangez la chapelure et le reste du parmesan, parsemez sur les sardines, arrosez de 20 ml d’huile. Enfournez 20 min : le dessus doit être doré et croustillant.",
@@ -3613,6 +3663,7 @@
       }
     ],
     "steps": [
+      "La veille : faites tremper le riz complet 12 à 24 h dans de l’eau tiède, jetez l’eau et rincez avant de cuire.",
       "Cuisez le riz complet 30 min dans 2,5 fois son volume d’eau salée.",
       "Préchauffez le four à 200 °C. Dans une sauteuse, faites revenir le fenouil émincé et les artichauts en quartiers dans 20 ml d’huile 5 min, ajoutez l’ail, le vin blanc et le jus d’un demi-citron, couvrez et cuisez 15 min à feu doux.",
       "Mixez grossièrement les graines de courge, le persil, le parmesan, la chapelure, le zeste du citron et 15 ml d’huile pour obtenir une chapelure verte.",
@@ -3622,7 +3673,8 @@
     "tags": [
       "four",
       "riche en protéines",
-      "léger"
+      "léger",
+      "préparation à l’avance"
     ],
     "seasons": [
       "printemps",
@@ -3633,7 +3685,8 @@
       "herbace",
       "iode",
       "acidule"
-    ]
+    ],
+    "restTime": 720
   },
   {
     "id": "dl-harengs-grilles-chou-pomme-kefir-seigle",
@@ -4026,7 +4079,7 @@
       },
       {
         "id": "sarrasin",
-        "qty": 110,
+        "qty": 77,
         "unit": "g"
       },
       {
@@ -4078,19 +4131,28 @@
         "id": "poivre",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "le calcium limite l’absorption des oxalates"
       }
     ],
     "steps": [
+      "La veille : faites tremper la céréale 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Préchauffez le four à 210 °C. Mélangez les choux coupés en deux avec l’huile et du sel, rôtissez 20 min : ils doivent être tendres et bien caramélisés.",
       "Faites fondre les oignons émincés dans 10 g de beurre à feu doux 20 min en remuant, jusqu’à ce qu’ils soient blonds et confits. Déglacez au vinaigre.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée, ajoutez les noisettes torréfiées concassées et le persil.",
       "Salez le foie et farinez-le légèrement. Faites mousser le reste de beurre avec la sauge, saisissez le foie à feu vif 1 min 30 par face : il doit rester rosé au cœur.",
-      "Servez le foie sur les oignons, avec la kasha et les choux, nappé du beurre de sauge."
+      "Servez le foie sur les oignons, avec la kasha et les choux, nappé du beurre de sauge.",
+      "Servez parsemé de parmesan râpé (son calcium limite l’absorption des oxalates)."
     ],
     "tags": [
       "abats",
       "riche en protéines",
-      "rapide"
+      "rapide",
+      "préparation à l’avance"
     ],
     "seasons": [
       "automne",
@@ -4101,6 +4163,7 @@
       "umami",
       "grille",
       "acidule"
-    ]
+    ],
+    "restTime": 720
   }
 ]

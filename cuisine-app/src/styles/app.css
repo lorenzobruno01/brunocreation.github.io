@@ -1513,3 +1513,10 @@ hr.sep {
   font-weight: 700;
   padding-top: 10px;
 }
+.md h2 { margin-top: 1.2em; }
+.md h3, .md h4, .md h5 { margin-top: 1em; }
+.md p, .md li { font-size: 0.93rem; }
+.md a { color: var(--primary); word-break: break-word; }
+.md-table { border-collapse: collapse; font-size: 0.82rem; width: 100%; margin: 8px 0; }
+.md-table th, .md-table td { border: 1px solid var(--line); padding: 4px 6px; text-align: left; vertical-align: top; }
+.md-table th { background: var(--surface-2); }
