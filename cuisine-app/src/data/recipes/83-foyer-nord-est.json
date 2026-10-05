@@ -387,7 +387,7 @@
     "ingredients": [
       {
         "id": "langue-boeuf",
-        "qty": 1200,
+        "qty": 1100,
         "unit": "g",
         "note": "une langue entière"
       },
@@ -854,7 +854,7 @@
       },
       {
         "id": "beurre-clarifie",
-        "qty": 30,
+        "qty": 20,
         "unit": "g"
       },
       {
@@ -903,7 +903,7 @@
       },
       {
         "id": "lardons",
-        "qty": 80,
+        "qty": 70,
         "unit": "g"
       },
       {
@@ -914,7 +914,7 @@
       },
       {
         "id": "graisse-canard",
-        "qty": 30,
+        "qty": 20,
         "unit": "g",
         "note": "ou saindoux"
       },
@@ -991,9 +991,9 @@
       },
       {
         "id": "beurre",
-        "qty": 110,
+        "qty": 95,
         "unit": "g",
-        "note": "30 g duchesse, 80 g béarnaise"
+        "note": "30 g duchesse, 65 g béarnaise"
       },
       {
         "id": "muscade",
@@ -2271,7 +2271,7 @@
       },
       {
         "id": "riz-blanc",
-        "qty": 240,
+        "qty": 220,
         "unit": "g"
       },
       {
@@ -2288,7 +2288,7 @@
     "steps": [
       "Mélangez le porc, l'oignon râpé, l'œuf, le lait, 2 c. à soupe de farine de riz, 1 c. à café de sel et du poivre. Laissez reposer 15 min au frais.",
       "Portez le bouillon à frémissement. Formez 24 boulettes à la cuillère mouillée et pochez-les en deux fois 8 min. Réservez-les et gardez le bouillon.",
-      "Faites cuire le riz 12 min à couvert dans 480 ml d'eau salée, puis laissez reposer 5 min.",
+      "Faites cuire le riz 12 min à couvert dans 440 ml d'eau salée, puis laissez reposer 5 min.",
       "Faites fondre le beurre et dorez l'oignon émincé et le poireau 6 min à feu moyen. Ajoutez le curry, le curcuma et la pomme, mélangez 2 min jusqu'à ce que les épices embaument.",
       "Saupoudrez 2 c. à soupe de farine de riz, mélangez, puis versez 500 ml de bouillon de pochage en fouettant. Laissez épaissir 5 min, ajoutez la crème.",
       "Remettez les boulettes 3 min dans la sauce et servez sur le riz."
@@ -2366,7 +2366,7 @@
       },
       {
         "id": "beurre",
-        "qty": 60,
+        "qty": 45,
         "unit": "g"
       },
       {
@@ -2401,7 +2401,7 @@
       "Mettez-la dans un faitout avec l'oignon piqué des clous de girofle et le laurier, couvrez d'eau froide, portez à frémissement et écumez. Laissez frémir 1 h 30 à couvert (25 min par 500 g + 25 min).",
       "Sortez la viande, couvrez-la d'aluminium. Plongez les quartiers de chou dans le bouillon frémissant 12 min : ils doivent être tendres mais encore verts.",
       "Pendant ce temps, cuisez les pommes de terre en robe 25 min à la vapeur et pelez-les.",
-      "Sauce persil : faites fondre 40 g de beurre, ajoutez la farine de riz 1 min, puis le lait en fouettant et 100 ml de bouillon. Laissez épaissir 5 min, ajoutez le persil et la moutarde, poivrez.",
+      "Sauce persil : faites fondre 30 g de beurre, ajoutez la farine de riz 1 min, puis le lait en fouettant et 100 ml de bouillon. Laissez épaissir 5 min, ajoutez le persil et la moutarde, poivrez.",
       "Tranchez la viande, servez avec le chou égoutté et beurré du reste de beurre, les pommes de terre et la sauce."
     ],
     "tags": [
@@ -2777,7 +2777,7 @@
       },
       {
         "id": "creme-liquide",
-        "qty": 100,
+        "qty": 80,
         "unit": "ml",
         "note": "très froide"
       },
@@ -2789,9 +2789,9 @@
       },
       {
         "id": "beurre",
-        "qty": 40,
+        "qty": 35,
         "unit": "g",
-        "note": "20 g pour la cuisson, 20 g pour la purée"
+        "note": "20 g pour la cuisson, 15 g pour la purée"
       },
       {
         "id": "pomme-de-terre-farineuse",
@@ -2832,7 +2832,7 @@
     "steps": [
       "Mettez le bol du robot et le veau 15 min au congélateur : tout doit être très froid pour que la farce monte.",
       "Mixez le veau avec 1 c. à café de sel 20 s, puis ajoutez les jaunes un à un, et enfin la crème en filet, en mixant par à-coups jusqu'à obtenir une farce lisse et brillante. Poivrez.",
-      "Cuisez les pommes de terre 20 min à l'eau salée, écrasez-les avec le lait chaud, 20 g de beurre et la muscade.",
+      "Cuisez les pommes de terre 20 min à l'eau salée, écrasez-les avec le lait chaud, 15 g de beurre et la muscade.",
       "À mains mouillées, formez 4 galettes épaisses de 2 cm et roulez-les délicatement dans la farine de riz.",
       "Faites mousser 20 g de beurre à feu moyen-doux et cuisez les galettes 5 min par face : elles doivent être dorées et souples sous le doigt, sans dessécher.",
       "Faites chauffer les petits pois 4 min à l'eau bouillante salée et égouttez-les. Servez les wallenbergare avec la purée, les petits pois, le beurre de cuisson et les airelles."
