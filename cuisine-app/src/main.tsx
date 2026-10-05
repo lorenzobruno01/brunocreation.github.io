@@ -19,6 +19,7 @@ import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
 import { Account } from './pages/Account';
+import { Buy } from './pages/Buy';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
@@ -84,6 +85,7 @@ function Shell() {
                 <Route path="/reglages" element={<Settings />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />
+                <Route path="/acheter" element={<Buy />} />
                 <Route path="*" element={<Home />} />
               </Routes>
             </ErrorBoundary>
