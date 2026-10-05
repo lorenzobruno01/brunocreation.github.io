@@ -89,7 +89,10 @@ let busy: Promise<void> | null = null;
 let pushTimer: ReturnType<typeof setTimeout> | undefined;
 
 const fail = (e: unknown) => {
-  const msg = (e as Error)?.message ?? String(e);
+  let msg = (e as Error)?.message ?? String(e);
+  if (/user_data/.test(msg) && /(schema cache|does not exist|relation)/i.test(msg)) msg = 'La table « user_data » n’existe pas encore dans Supabase : exécutez le script de docs/COMPTES.md (étape 2, SQL Editor → Run).';
+  else if (/row-level security|permission denied/i.test(msg)) msg = 'Accès refusé par les règles de sécurité : vérifiez que tout le script SQL a bien été exécuté.';
+  else if (/Failed to fetch|NetworkError/i.test(msg)) msg = 'Impossible de joindre le serveur des comptes (réseau ou projet Supabase en pause).';
   set({ status: navigator.onLine === false ? 'offline' : 'error', error: msg });
 };
 
