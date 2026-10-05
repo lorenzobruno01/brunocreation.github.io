@@ -1154,13 +1154,22 @@ img {
   font-size: 0.88rem;
   line-height: 1.2;
 }
-@media (min-width: 1000px) {
-  .week {
-    grid-template-columns: repeat(7, 1fr);
+/* Grand écran : un jour par ligne, les repas côte à côte (les 7 jours restent lisibles) */
+@media (min-width: 760px) {
+  .day {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
   }
-  .slots,
-  .slots.three {
-    grid-template-columns: 1fr;
+  .day-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 0;
+  }
+  .day-head > .row {
+    flex-wrap: wrap;
   }
 }
 
@@ -1474,11 +1483,17 @@ hr.sep {
   color: var(--ink-3);
 }
 .slots.n1 { grid-template-columns: 1fr; }
-.slots.n3 { grid-template-columns: 1fr 1fr 1fr; }
-.slots.n4 { grid-template-columns: 1fr 1fr; }
-@media (min-width: 1000px) {
-  .slots.n3,
-  .slots.n4 { grid-template-columns: 1fr; }
+.slots.n3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.slots.n4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 760px) {
+  .slots.n2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .slots.n4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.slot-name {
+  overflow-wrap: anywhere;
+}
+.day-head .tag {
+  white-space: nowrap;
 }
 .cov-table-wrap {
   overflow-x: auto;
