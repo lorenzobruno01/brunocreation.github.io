@@ -128,7 +128,9 @@ async function pull() {
   if (error) throw error;
   if (!row) return push(); // premier appareil du compte
   const sameUser = meta.userId === user.id;
-  if (sameUser && meta.remoteAt === row.updated_at) {
+  // PostgreSQL renvoie « …+00:00 » là où l'appli a envoyé « …Z » : on compare des instants, pas du texte
+  const sameVersion = !!meta.remoteAt && Date.parse(meta.remoteAt) === Date.parse(row.updated_at);
+  if (sameUser && sameVersion) {
     if (meta.dirty) return push();
     set({ status: 'synced', lastSync: row.updated_at, error: undefined });
     return;
@@ -138,10 +140,21 @@ async function pull() {
     await apply(row.data as Snapshot, 'merge');
     return push();
   }
-  // l'autre appareil est plus récent et rien n'a changé ici : on prend sa version
-  await apply(row.data as Snapshot, 'replace');
+  // l'autre appareil est plus récent et rien n'a changé ici : on prend sa version (si elle diffère vraiment)
+  if (!sameSnapshot(await snapshotData(), row.data as Snapshot)) await apply(row.data as Snapshot, 'replace');
   writeMeta({ userId: user.id, remoteAt: row.updated_at, dirty: false });
   set({ status: 'synced', lastSync: row.updated_at, error: undefined });
+}
+
+/** Même contenu, quel que soit l'ordre des clés (PostgreSQL réordonne le JSON) */
+function canonical(v: unknown): unknown {
+  if (Array.isArray(v)) return v.map(canonical);
+  if (v && typeof v === 'object') return Object.fromEntries(Object.keys(v).sort().map((k) => [k, canonical((v as Record<string, unknown>)[k])]));
+  return v;
+}
+function sameSnapshot(a: Snapshot, b: Snapshot): boolean {
+  const strip = (s: Snapshot) => ({ ...s, history: ((s.history ?? []) as Array<Record<string, unknown>>).map(({ id: _id, ...h }) => h) });
+  return JSON.stringify(canonical(strip(a))) === JSON.stringify(canonical(strip(b)));
 }
 
 function run(task: () => Promise<void>) {

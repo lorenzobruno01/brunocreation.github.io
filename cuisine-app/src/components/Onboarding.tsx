@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { db, saveSettings } from '../db/db';
@@ -15,10 +15,15 @@ export function Onboarding() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const [later, setLater] = useState(false);
-  const [step, setStep] = useState<'hello' | 'profile'>('hello');
+  const [step, setStep] = useState<'hello' | 'profile'>(cloud.email ? 'profile' : 'hello');
   const [profiles, setProfiles] = useState<NutritionProfile[] | null>(null);
+  // connecté avec un profil créé sur un autre appareil : l'accueil est terminé
+  useEffect(() => {
+    if (cloud.email && row && !row.onboarded && row.profiles?.length) saveSettings({ onboarded: true });
+  }, [cloud.email, row]);
 
   if (row === undefined || row?.onboarded || later || pathname === '/compte' || cloud.status === 'syncing') return null;
+  if (cloud.email && row?.profiles?.length) return null;
   const list = profiles ?? (row?.profiles?.length ? row.profiles.map((p) => newProfile({ ...p })) : [newProfile({ name: '' })]);
 
   const finish = async () => {
@@ -36,7 +41,7 @@ export function Onboarding() {
           <button className="btn primary lg" onClick={() => setStep('profile')}>
             Créer mon profil (1 minute)
           </button>
-          {cloudEnabled && (
+          {cloudEnabled && !cloud.email && (
             <button
               className="btn"
               onClick={() => {
