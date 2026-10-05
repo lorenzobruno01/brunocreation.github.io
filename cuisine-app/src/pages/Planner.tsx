@@ -245,7 +245,9 @@ export function Planner() {
           return (
             <div key={d} className={`card day ${d === today ? 'today' : ''}`}>
               <div className="day-head">
-                <strong>{DAY_NAMES[i]}</strong>
+                <span>
+                  <strong>{DAY_NAMES[i]}</strong> <span className="small muted">{formatDateFr(d, { day: 'numeric', month: 'short' })}</span>
+                </span>
                 <span className="row nowrap" style={{ gap: 6 }}>
                   {eaters.map((e, k) => {
                     const rep = reports[k][i];
@@ -257,7 +259,6 @@ export function Planner() {
                       )
                     );
                   })}
-                  <span className="small muted">{formatDateFr(d, { day: 'numeric', month: 'short' })}</span>
                 </span>
               </div>
               <div className={`slots n${slots.length}`}>
