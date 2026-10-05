@@ -1,9 +1,10 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary } from '../hooks/library';
 import { DEFAULT_PROFILES } from '../domain/micronutrients';
 import { HouseholdEditor } from '../components/Household';
 import { cloudEnabled, useCloud } from '../cloud/sync';
+import { clearIncidents, readIncidents } from '../domGuard';
 import { DIET_PROFILES } from '../domain/digestion';
 import { Link } from 'react-router-dom';
 import { useToast } from '../components/ui';
@@ -161,6 +162,8 @@ export function Settings() {
         <div className="small muted">{recipes.length} recettes dans la bibliothèque.</div>
       </section>
 
+      <Incidents />
+
       <section className="card pad stack">
         <h2 style={{ margin: 0 }}>🧹 Réinitialisation</h2>
         <div className="row">
@@ -177,5 +180,46 @@ export function Settings() {
         </div>
       </section>
     </div>
+  );
+}
+
+/** Derniers incidents d'affichage (diagnostic à transmettre en cas de souci) */
+function Incidents() {
+  const [list, setList] = useState(readIncidents);
+  const toast = useToast();
+  if (!list.length) return null;
+  const text = list.map((i) => `${i.at} ${i.where}\n${i.message}`).join('\n\n');
+  return (
+    <section className="card pad stack">
+      <h2 style={{ margin: 0 }}>🩺 Incidents récents</h2>
+      <p className="small muted" style={{ margin: 0 }}>
+        L’appli s’est rétablie seule, mais ces erreurs aident à corriger la cause. Copiez-les et envoyez-les si un souci revient.
+      </p>
+      <pre className="small" style={{ whiteSpace: 'pre-wrap', maxHeight: 220, overflow: 'auto', margin: 0 }}>{text}</pre>
+      <div className="row">
+        <button
+          className="btn sm"
+          onClick={async () => {
+            try {
+              await navigator.clipboard.writeText(text);
+              toast('Copié ✅');
+            } catch {
+              toast('Sélectionnez le texte pour le copier');
+            }
+          }}
+        >
+          📋 Copier
+        </button>
+        <button
+          className="btn ghost sm"
+          onClick={() => {
+            clearIncidents();
+            setList([]);
+          }}
+        >
+          Effacer
+        </button>
+      </div>
+    </section>
   );
 }

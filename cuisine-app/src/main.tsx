@@ -22,6 +22,12 @@ import { Account } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
+import { installDomGuard, logIncident } from './domGuard';
+
+// Extensions de navigateur qui modifient la page : éviter le plantage au changement de page
+installDomGuard();
+window.addEventListener('error', (e) => logIncident(`erreur : ${e.message}`));
+window.addEventListener('unhandledrejection', (e) => logIncident(`promesse : ${(e.reason as Error)?.message ?? String(e.reason)}`));
 
 // Thème mémorisé (clair / sombre / auto)
 try {
