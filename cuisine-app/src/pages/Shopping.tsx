@@ -10,6 +10,9 @@ import { mondayOf, weekDates, isoDate } from '../domain/season';
 import { formatDateFr } from '../components/format';
 import { Empty, ServingsControl, useToast } from '../components/ui';
 import { RecipePicker } from '../components/RecipePicker';
+import { Sheet } from '../components/ui';
+import { guideFor, nutrientGains, UPGRADES } from '../domain/buying';
+import { GuideCard } from './Buy';
 import type { ShoppingAisle, ShoppingItem, StandardUnit } from '../domain/types';
 
 interface Meta {
@@ -48,6 +51,7 @@ export function Shopping() {
   const [picker, setPicker] = useState(false);
   const [view, setView] = useState<'liste' | 'preparer'>(params.get('source') ? 'preparer' : 'liste');
   const toast = useToast();
+  const [info, setInfo] = useState<string | null>(null);
 
   const dates = weekDates(new Date(weekStart + 'T12:00:00'));
   const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
@@ -259,6 +263,12 @@ export function Shopping() {
                 </details>
               )}
 
+              <Link to="/acheter" className="callout info small row between" style={{ textDecoration: 'none', color: 'inherit', margin: '0 0 12px' }}>
+                <span>
+                  🧭 <strong>Où et comment acheter ?</strong> Commerces près de chez vous, labels à privilégier, morceaux plus nutritifs.
+                </span>
+                <span>›</span>
+              </Link>
               {byAisle.map(([aisle, list]) => (
                 <section key={aisle} className="aisle">
                   <h3>
@@ -277,6 +287,19 @@ export function Shopping() {
                             {it.recipes.length > 0 && <div className="sr">pour : {it.recipes.join(', ')}</div>}
                           </div>
                           <span className="sq">{itemQtyLabel(it, ing?.pieceWeight)}</span>
+                          {ing && guideFor(ing) && (
+                            <button
+                              className="icon-btn"
+                              aria-label={`Bien choisir : ${it.label}`}
+                              title="Bien choisir"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setInfo(ing.id);
+                              }}
+                            >
+                              🏷️
+                            </button>
+                          )}
                           {it.key.startsWith('custom:') && (
                             <button
                               className="icon-btn"
@@ -347,6 +370,31 @@ export function Shopping() {
           }}
         />
       )}
+
+      {info &&
+        (() => {
+          const ing = lookup(info);
+          const g = ing && guideFor(ing);
+          if (!ing || !g) return null;
+          const up = UPGRADES[ing.id];
+          const gains = up ? nutrientGains(ing.id, up.to) : [];
+          return (
+            <Sheet title={`🏷️ Bien choisir : ${ing.name}`} onClose={() => setInfo(null)}>
+              <div className="stack">
+                {up && (
+                  <div className="callout ok small" style={{ margin: 0 }}>
+                    💡 <strong>Plus nutritif : {lookup(up.to)?.name}</strong>. {up.tip}
+                    {gains.length > 0 && <span className="muted"> ({gains.map((x) => `${x.label} ×${x.ratio >= 10 ? '10+' : String(x.ratio).replace('.', ',')}`).join(', ')} pour 100 g)</span>}
+                  </div>
+                )}
+                <GuideCard g={g} compact />
+                <Link to="/acheter" className="btn" onClick={() => setInfo(null)}>
+                  🧭 Trouver les commerces près de chez moi
+                </Link>
+              </div>
+            </Sheet>
+          );
+        })()}
     </div>
   );
 }

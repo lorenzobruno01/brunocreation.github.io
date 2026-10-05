@@ -288,6 +288,9 @@ export interface Settings {
   activeProfile?: string;
   /** le profil du foyer a été configuré (premier lancement terminé) */
   onboarded?: boolean;
+  /** assistant courses : code postal et rayon de recherche (km) */
+  shopCp?: string;
+  shopRadius?: number;
   /** planning : « nous » (tous les profils partagent les repas) ou l'id d'un profil */
   planFor?: string;
   /** créer automatiquement une recette quand une recherche ne donne rien */

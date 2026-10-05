@@ -8,7 +8,7 @@ Published by GitHub Pages at **https://lorenzobruno01.github.io/brunocreation.gi
 
 | Area | Features |
 |---|---|
-| Library | 826 recipes (about 78 % French and European classics), 20 cuisines, cards, detailed recipe pages with vitamins, minerals, electrolytes and amino acids as % of daily needs |
+| Library | 990 recipes (about 78 % French and European classics), 20 cuisines, cards, detailed recipe pages with vitamins, minerals, electrolytes and amino acids as % of daily needs |
 | Search | Full-text search by name, ingredient, cuisine or tag, with phrases understood (« dîner rapide », « italien », « œufs fromage »), plus 12 combinable filters |
 | Ingredients → recipes | « J'ai ces ingrédients »: instant ingredient search, 3 modes (cook now, almost nothing missing, show everything), equivalent substitutes, staples ignored |
 | Recipes → shopping | Selected recipes or the week's plan go into one list: quantities scaled to servings, identical ingredients merged, units converted, pantry items removed, list sorted by aisle with checkboxes, anti-waste warnings with suggested recipes |
@@ -20,6 +20,7 @@ Published by GitHub Pages at **https://lorenzobruno01.github.io/brunocreation.gi
 | Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
 | Profiles | Each person enters height, weight, age, activity and goal (muscle gain, maintenance, fat loss): calorie and protein targets are computed (Mifflin-St Jeor × activity) and drive the planner, portion sizes and every % of daily needs. Several people can share a household |
 | Accounts | Optional free accounts (Supabase, e-mail + password): planning, favourites, history, fridge, pantry, shopping list, added recipes and profile are saved to the account and synced across devices; each friend has their own account and data. Setup: `docs/COMPTES.md` |
+| Shopping assistant | Food shops around a postcode (OpenStreetMap), a sourced buying guide per food family (grass-fed, labels, egg codes, raw-milk cheese…) and more nutritious cuts computed from the USDA data (e.g. chicken thigh instead of breast) |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
 ## Architecture

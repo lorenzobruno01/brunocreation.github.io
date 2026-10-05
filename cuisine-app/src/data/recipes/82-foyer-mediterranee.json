@@ -1,0 +1,3537 @@
+[
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-kefta-sardines-tajine-riz",
+    "name": "Kefta de sardines en tajine de tomate, riz au cumin",
+    "description": "Boulettes de sardines fraîches hachées au couteau avec coriandre, cumin et paprika, mijotées dans une sauce tomate pimentée, servies sur un riz parfumé au cumin.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "nord-africaine",
+    "prepTime": 30,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 10,
+        "unit": "piece",
+        "note": "levées en filets, peau et arêtes retirées"
+      },
+      {
+        "id": "coriandre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "tomate",
+        "qty": 400,
+        "unit": "g",
+        "note": "bien mûres"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Hachez les filets de sardines au couteau jusqu’à obtenir une pâte grossière. Mélangez-les avec la moitié de la coriandre et du persil ciselés, 1 gousse d’ail râpée, 1 c. à café de cumin, 1 c. à café de paprika, l’œuf, la farine de riz et une pincée de sel.",
+      "Façonnez une vingtaine de boulettes de la taille d’une noix avec les mains mouillées et réservez-les 15 min au frais pour qu’elles se raffermissent.",
+      "Râpez les tomates sur une grosse râpe et jetez la peau. Dans un tajine ou une sauteuse, chauffez 3 c. à soupe d’huile à feu moyen, ajoutez les 2 gousses d’ail restantes émincées et le piment fendu, puis la pulpe de tomate et le reste du paprika. Laissez compoter 12 min à frémissement : la sauce épaissit et l’huile perle en surface.",
+      "Rincez le riz, faites-le revenir 1 min dans 1 c. à soupe d’huile avec le reste du cumin, couvrez de 1,5 fois son volume d’eau salée et cuisez 12 min à couvert sur feu doux, puis 5 min hors du feu.",
+      "Déposez les boulettes dans la sauce, couvrez et laissez cuire 10 min à feu doux sans remuer : elles deviennent fermes et opaques à cœur.",
+      "Arrosez du jus de citron, parsemez du reste des herbes et servez le tajine bien chaud avec le riz."
+    ],
+    "tags": [
+      "riche en protéines",
+      "économique",
+      "sans gluten",
+      "familial"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "iode",
+      "herbace"
+    ],
+    "tips": "Les sardines apportent oméga-3 à longue chaîne et vitamine D ; hachées avec leur peau, elles gardent toute leur graisse. Les boulettes crues se congèlent très bien."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-sarde-saor-polenta",
+    "name": "Sarde in saor, oignons aigres-doux et polenta grillée",
+    "description": "Le classique vénitien : sardines dorées à la poêle, couvertes d’oignons confits au vinaigre, raisins secs et pignons, marinées une nuit et servies avec des tranches de polenta grillée au parmesan.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 30,
+    "cookTime": 40,
+    "restTime": 720,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 10,
+        "unit": "piece",
+        "note": "vidées, étêtées, ouvertes en portefeuille"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "oignon",
+        "qty": 300,
+        "unit": "g",
+        "note": "oignons blancs"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 100,
+        "unit": "ml",
+        "note": "vinaigre de vin blanc"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "pignons",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "polenta",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille : faites gonfler les raisins secs 10 min dans de l’eau tiède. Émincez finement les oignons et faites-les fondre 20 min à feu doux dans 2,5 c. à soupe d’huile avec le laurier et une pincée de sel : ils doivent être translucides et souples, sans coloration.",
+      "Versez le vinaigre sur les oignons, laissez bouillonner 2 min à feu moyen, puis ajoutez les raisins égouttés et les pignons. Retirez du feu.",
+      "Farinez légèrement les sardines dans la farine de riz. Saisissez-les 2 min par face dans 1,5 c. à soupe d’huile chaude, à feu vif, jusqu’à ce que la peau soit dorée. Salez.",
+      "Dans un plat creux, alternez couches de sardines et d’oignons au vinaigre en terminant par les oignons. Couvrez et laissez mariner une nuit (12 h) au réfrigérateur.",
+      "Pour la polenta : portez 600 ml d’eau salée à ébullition, versez la polenta en pluie en fouettant et cuisez 10 min à feu doux en remuant (ou selon le paquet). Incorporez le beurre et le parmesan, étalez sur 2 cm d’épaisseur dans un plat huilé et laissez prendre 1 h au frais.",
+      "Au moment de servir, coupez la polenta en rectangles et faites-les griller 4 min par face dans une poêle-gril très chaude, jusqu’à obtenir des marques bien brunes. Sortez les sardines 30 min avant pour les servir à température ambiante avec la polenta chaude."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "économique",
+      "riche en protéines",
+      "sans gluten",
+      "repas froid"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "sucre",
+      "iode"
+    ],
+    "tips": "Le saor était la conserve des marins vénitiens : il se garde 3 jours au frais et gagne en goût. Les sardines sont l’un des poissons gras les plus riches en oméga-3 et les moins contaminés."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "id": "fm-maquereau-salmoriglio-ecrase",
+    "name": "Maquereau grillé au salmoriglio, écrasé de pommes de terre aux olives et fenouil cru",
+    "description": "Maquereaux entiers grillés et arrosés de salmoriglio sicilien (huile, citron, origan, ail), écrasé de pommes de terre aux olives noires et salade croquante de fenouil au citron.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "entiers, vidés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "olive",
+        "qty": 40,
+        "unit": "g",
+        "note": "noires, dénoyautées"
+      },
+      {
+        "id": "fenouil",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "origan",
+        "qty": 2,
+        "unit": "cac",
+        "note": "séché, de Sicile si possible"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les pommes de terre avec la peau 20 min dans l’eau salée frémissante : la pointe d’un couteau doit s’y enfoncer sans résistance.",
+      "Préparez le salmoriglio : fouettez 4 c. à soupe d’huile avec le jus d’un citron, l’origan, l’ail râpé, 2 c. à soupe d’eau chaude, du sel et du poivre jusqu’à obtenir une émulsion trouble.",
+      "Incisez les maquereaux de 3 entailles par face, salez, badigeonnez d’un peu de salmoriglio. Faites chauffer un gril ou une poêle-gril à feu vif.",
+      "Grillez les maquereaux 5 à 6 min par face sans les bouger : la peau est boursouflée et noircie par endroits, la chair se détache de l’arête.",
+      "Pendant ce temps, émincez le fenouil très finement et assaisonnez-le avec le jus du second citron, 1 c. à soupe d’huile et du sel.",
+      "Écrasez grossièrement les pommes de terre à la fourchette avec 1 c. à soupe d’huile et les olives hachées. Servez les maquereaux nappés du reste de salmoriglio, avec l’écrasé et le fenouil."
+    ],
+    "tags": [
+      "rapide",
+      "barbecue",
+      "riche en protéines",
+      "sans gluten",
+      "sportif"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "herbace",
+      "acidule",
+      "grille"
+    ],
+    "tips": "Le maquereau, poisson gras de petite taille, est riche en oméga-3, vitamine D et B12. Au barbecue, posez-le sur une grille à poisson bien huilée."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-uskumru-bugulama-pilav",
+    "name": "Uskumru buğulama : maquereau braisé aux tomates et poivrons, pilav au beurre",
+    "description": "Filets de maquereau cuits à l’étouffée sur un lit de tomates, poivrons longs, oignon et citron, relevés de pul biber, avec un riz pilaf turc au beurre.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "turque",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "levés en filets"
+      },
+      {
+        "id": "tomate",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 150,
+        "unit": "g",
+        "note": "poivron vert long type çarliston"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en rondelles fines"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "pul biber (flocons de piment d’Alep)"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le riz jusqu’à ce que l’eau soit claire et laissez-le tremper 20 min dans l’eau tiède salée, puis égouttez.",
+      "Faites fondre le beurre dans une casserole à feu moyen, ajoutez le riz et nacrez-le 2 min en remuant. Versez le bouillon chaud, salez, couvrez et cuisez 15 min à feu très doux. Hors du feu, posez un torchon sous le couvercle et laissez reposer 10 min.",
+      "Pendant ce temps, émincez l’oignon et les poivrons, coupez les tomates en rondelles. Dans une large sauteuse, étalez l’oignon et les poivrons avec 2 c. à soupe d’huile et l’ail émincé, faites suer 5 min à feu moyen.",
+      "Couvrez des rondelles de tomate, posez les filets de maquereau côté peau dessus, salez, saupoudrez de pul biber et recouvrez des rondelles de citron.",
+      "Arrosez du reste d’huile et de 4 c. à soupe d’eau, couvrez et laissez cuire 12 min à feu doux : la chair devient opaque et les tomates rendent leur jus.",
+      "Parsemez de persil ciselé et servez directement dans la sauteuse avec le pilav."
+    ],
+    "tags": [
+      "une poêle",
+      "riche en protéines",
+      "sans gluten",
+      "familial"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "acidule",
+      "iode",
+      "epice"
+    ],
+    "tips": "Cuisson douce à l’étouffée : les graisses fragiles du maquereau restent intactes. Le bouillon d’os maison donne au pilav du collagène et de la profondeur."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "id": "fm-tortiera-alici-pdt",
+    "name": "Tortiera di alici : anchois frais en gratin de pommes de terre au pecorino",
+    "description": "Spécialité des Pouilles : anchois frais ouverts en portefeuille, superposés avec des pommes de terre fines, tomates cerises, câpres, origan et pecorino, rôtis au four.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 30,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "anchois",
+        "qty": 300,
+        "unit": "g",
+        "note": "frais, vidés, étêtés, ouverts en portefeuille"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "à chair ferme"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "pecorino",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "capres",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Épluchez les pommes de terre et coupez-les en rondelles de 3 mm à la mandoline ; mélangez-les avec 2 c. à soupe d’huile et du sel.",
+      "Hachez ensemble le persil, l’ail et les câpres, puis mélangez avec le pecorino et l’origan.",
+      "Huilez un plat à gratin de 25 cm. Étalez la moitié des pommes de terre en rosace, puis la moitié des anchois peau dessous, côte à côte. Parsemez de la moitié du mélange au pecorino.",
+      "Recommencez avec le reste des pommes de terre, puis des anchois peau dessus, et terminez par le mélange au pecorino et les tomates cerises coupées en deux. Arrosez du reste d’huile.",
+      "Enfournez 30 à 35 min : les pommes de terre sont tendres sous la lame et le dessus est doré et grésillant.",
+      "Arrosez du jus de citron à la sortie du four et laissez reposer 5 min avant de servir à la cuillère."
+    ],
+    "tags": [
+      "four",
+      "économique",
+      "riche en protéines",
+      "sans gluten",
+      "familial"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "umami",
+      "herbace"
+    ],
+    "tips": "Version sans chapelure : le pecorino seul gratine. Les anchois frais, petits poissons bleus, sont riches en oméga-3, sélénium et calcium s’ils sont mangés avec leurs fines arêtes. Remplacez-les par des sardines si besoin."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-hamsi-pilavi",
+    "name": "Hamsi pilavı : anchois frais en couronne sur riz aux raisins et à l’aneth",
+    "description": "Recette de la mer Noire : un moule tapissé d’anchois frais, garni d’un pilaf au beurre, pignons, raisins de Corinthe, aneth et menthe, cuit au four puis démoulé.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "turque",
+    "prepTime": 35,
+    "cookTime": 40,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "anchois",
+        "qty": 300,
+        "unit": "g",
+        "note": "frais, ouverts en portefeuille, arête retirée"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 180,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pignons",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "raisins-secs",
+        "qty": 15,
+        "unit": "g",
+        "note": "raisins de Corinthe"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le riz et laissez-le tremper 20 min dans l’eau tiède salée. Faites gonfler les raisins 10 min dans un peu d’eau chaude.",
+      "Dans une casserole, faites fondre 30 g de beurre à feu moyen, faites blondir l’oignon haché 5 min, ajoutez les pignons 1 min puis le riz égoutté et nacrez 2 min.",
+      "Ajoutez les raisins égouttés, la cannelle, du sel, du poivre et le bouillon chaud. Couvrez et cuisez 10 min à feu doux : le riz doit rester légèrement ferme. Incorporez l’aneth et la menthe ciselés.",
+      "Préchauffez le four à 190 °C. Beurrez un moule rond de 20 cm avec le reste du beurre. Tapissez le fond et les bords d’anchois, peau contre le moule, en les faisant se chevaucher en rayons, queues vers l’extérieur.",
+      "Versez le riz dans le moule, tassez légèrement et rabattez les queues qui dépassent ; couvrez du reste des anchois. Arrosez d’huile d’olive.",
+      "Enfournez 25 min : les anchois du dessus sont dorés. Laissez reposer 5 min, passez une lame sur le bord et démoulez sur un plat. Servez en parts avec des quartiers de citron."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "riche en protéines",
+      "sans gluten",
+      "calorique"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "herbace",
+      "sucre"
+    ],
+    "tips": "L’anchois de la mer Noire (hamsi) se mange l’hiver, quand il est le plus gras. Ces petits poissons en bas de la chaîne alimentaire concentrent peu de mercure et beaucoup d’oméga-3."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-atum-cebolada",
+    "name": "Atum de cebolada : thon braisé aux oignons et au vin blanc, pommes de terre à l’eau",
+    "description": "Tranches de thon saisies puis braisées dans une montagne d’oignons fondus au vin blanc, laurier et paprika, comme à Madère et en Algarve, avec des pommes de terre à l’eau.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "portugaise",
+    "prepTime": 20,
+    "cookTime": 40,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "thon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "tranches de 2 cm, thon ou bonite"
+      },
+      {
+        "id": "oignon",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomate",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "doux"
+      },
+      {
+        "id": "persil",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Salez le thon et laissez-le 10 min à température ambiante. Émincez les oignons en demi-lunes fines, l’ail en lamelles, coupez la tomate en dés.",
+      "Dans une sauteuse, chauffez 4 c. à soupe d’huile à feu moyen, ajoutez les oignons, l’ail et le laurier et laissez fondre 15 min en remuant souvent : les oignons sont souples et dorés pâle.",
+      "Pendant ce temps, faites cuire les pommes de terre épluchées et coupées en deux 18 min dans l’eau salée frémissante.",
+      "Ajoutez la tomate et le paprika aux oignons, puis le vin blanc ; laissez réduire 5 min.",
+      "Dans une poêle très chaude avec 1 c. à soupe d’huile, saisissez le thon 1 min par face, puis glissez-le dans les oignons, couvrez et laissez 5 à 6 min à feu doux : le cœur doit rester rosé.",
+      "Parsemez de persil haché et servez le thon nappé des oignons, avec les pommes de terre arrosées du jus de cuisson."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant",
+      "une poêle"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "umami",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "Le thon frais apporte protéines maigres, sélénium et vitamine D ; préférez la bonite ou le germon, plus petits et moins chargés en mercure que le thon rouge."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "id": "fm-tonno-agrodolce-riz-safran",
+    "name": "Tonno in agrodolce aux oignons rouges et à la menthe, riz au safran",
+    "description": "Dés de thon saisis puis glacés dans des oignons rouges aigres-doux au miel et vinaigre de vin, avec câpres et menthe fraîche, sur un riz au safran et au beurre.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "thon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 60,
+        "unit": "ml",
+        "note": "vinaigre de vin rouge"
+      },
+      {
+        "id": "miel",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "capres",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites infuser le safran 10 min dans 2 c. à soupe d’eau chaude. Cuisez le riz 12 min dans 1,5 fois son volume d’eau salée, à couvert sur feu doux ; incorporez le beurre et le safran infusé, couvrez et laissez reposer 5 min.",
+      "Émincez les oignons rouges en lanières de 5 mm. Faites-les revenir 10 min dans 2 c. à soupe d’huile à feu moyen : ils doivent s’attendrir et rester légèrement croquants.",
+      "Ajoutez le miel, laissez-le caraméliser 1 min, puis versez le vinaigre et laissez réduire de moitié (3 min). Ajoutez les câpres et réservez dans la sauteuse.",
+      "Salez les cubes de thon et roulez-les dans la farine de riz. Saisissez-les 1 min par face dans une poêle très chaude avec 2 c. à soupe d’huile : extérieur doré, cœur rosé.",
+      "Versez le thon dans les oignons, mélangez 30 s hors du feu pour le glacer et parsemez de menthe ciselée. Servez sur le riz safrané."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "sportif"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "sucre",
+      "herbace"
+    ],
+    "tips": "Se mange aussi froid, comme en Sicile : l’agrodolce protège le poisson et se garde 2 jours au frais."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "id": "fm-sepia-guisantes-pdt",
+    "name": "Sepia con guisantes : seiche mijotée aux petits pois et pommes de terre au safran",
+    "description": "Ragoût andalou de seiche fondante mijotée avec petits pois, pommes de terre, tomate, vin blanc et une pointe de safran et de pimentón, dans une sauce courte et parfumée.",
+    "emoji": "🦑",
+    "category": "plat",
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 55,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "calamar",
+        "qty": 600,
+        "unit": "g",
+        "note": "seiche nettoyée, en morceaux de 3 cm"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 300,
+        "unit": "g",
+        "note": "frais écossés ou surgelés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomate",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "persil",
+        "qty": 4,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, chauffez 3 c. à soupe d’huile à feu moyen-vif et faites revenir la seiche 6 min : elle rend son eau puis commence à dorer.",
+      "Ajoutez l’oignon haché et 2 gousses d’ail émincées, faites fondre 5 min, puis la tomate râpée et le pimentón ; laissez réduire 5 min jusqu’à une sauce épaisse.",
+      "Versez le vin blanc, laissez bouillir 2 min, puis ajoutez le fumet chaud, le laurier et le safran. Couvrez et mijotez 25 min à feu doux : la seiche doit commencer à être tendre.",
+      "Ajoutez les pommes de terre coupées en morceaux de 3 cm en les « cassant » au couteau, puis les petits pois. Poursuivez 15 min à couvert : les pommes de terre sont tendres et la sauce a épaissi grâce à leur amidon.",
+      "Pilez le reste de l’ail avec le persil et 2 c. à soupe d’huile, incorporez ce hachis hors du feu.",
+      "Salez, poivrez et laissez reposer 5 min avant de servir dans des assiettes creuses."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant",
+      "familial"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "iode",
+      "reconfortant",
+      "herbace"
+    ],
+    "tips": "La seiche, comme le calamar, est riche en B12, cuivre et sélénium pour très peu de graisse ; l’huile d’olive du hachis final apporte l’énergie. Les petits pois de printemps donnent fibres et protéines végétales."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-chtapodi-stifado-riz",
+    "name": "Chtapodi stifado : poulpe mijoté aux petits oignons et au vin rouge, riz pilaf",
+    "description": "Poulpe braisé lentement avec une montagne de petits oignons entiers, vin rouge, tomate, vinaigre, clou de girofle et laurier, jusqu’à une sauce sirupeuse ; servi sur du riz.",
+    "emoji": "🐙",
+    "category": "mijote",
+    "cuisine": "grecque",
+    "prepTime": 25,
+    "cookTime": 90,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulpe",
+        "qty": 1200,
+        "unit": "g",
+        "note": "congelé puis décongelé"
+      },
+      {
+        "id": "echalote",
+        "qty": 500,
+        "unit": "g",
+        "note": "petits oignons grelots ou échalotes pelées"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de vin rouge"
+      },
+      {
+        "id": "laurier",
+        "qty": 3,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "ou 3 clous entiers"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 320,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez le poulpe en tronçons de 4 cm. Mettez-le dans une cocotte sèche à feu moyen, couvrez et laissez-le rendre son eau 10 min. Égouttez en gardant ce jus rosé.",
+      "Essuyez la cocotte, chauffez l’huile à feu moyen et faites dorer les petits oignons entiers 8 min en secouant la cocotte. Ajoutez le poulpe et faites revenir 3 min.",
+      "Ajoutez le concentré de tomate, mélangez 1 min, puis versez le vin rouge et le vinaigre ; laissez bouillir 2 min.",
+      "Ajoutez les tomates concassées, le jus du poulpe, le laurier, le girofle et la cannelle. Couvrez et laissez mijoter 1 h 15 à feu très doux : le poulpe est fondant et la sauce nappe la cuillère. Retirez le couvercle les 15 dernières minutes si elle est trop liquide.",
+      "Vingt minutes avant la fin, nacrez le riz 2 min dans le beurre, mouillez de 1,5 fois son volume d’eau salée bouillante, couvrez et cuisez 12 min à feu doux, puis 5 min hors du feu.",
+      "Poivrez généreusement le stifado, goûtez et salez si besoin (le poulpe est naturellement salé). Servez sur le riz."
+    ],
+    "tags": [
+      "mijoté",
+      "batch cooking",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "Encore meilleur réchauffé le lendemain. Le poulpe est une source exceptionnelle de vitamine B12, de zinc et de sélénium pour très peu de graisse ; l’huile d’olive de la sauce complète l’énergie."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-kalamarakia-gemista",
+    "name": "Kalamarakia gemista : encornets farcis au riz, feta et menthe, sauce tomate",
+    "description": "Encornets entiers garnis d’un riz aux tentacules hachés, feta, menthe et aneth, cuits au four dans une sauce tomate au vin blanc.",
+    "emoji": "🦑",
+    "category": "plat",
+    "cuisine": "grecque",
+    "prepTime": 35,
+    "cookTime": 45,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "calamar",
+        "qty": 600,
+        "unit": "g",
+        "note": "6 à 8 encornets moyens, nettoyés, tentacules réservés"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "feta",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 180 °C. Hachez finement les tentacules et l’oignon. Faites-les revenir 5 min dans 2 c. à soupe d’huile à feu moyen avec 1 gousse d’ail hachée.",
+      "Ajoutez le riz rond, nacrez 1 min, mouillez de 150 ml d’eau et cuisez 8 min à feu doux en remuant : le riz a absorbé le liquide mais reste ferme au centre. Hors du feu, ajoutez la feta émiettée, la menthe et l’aneth ciselés, le zeste du citron et du poivre.",
+      "Garnissez les encornets aux deux tiers seulement avec une petite cuillère (le riz va gonfler) et fermez chaque ouverture avec un cure-dent.",
+      "Dans un plat à four, mélangez les tomates concassées, le vin blanc, la seconde gousse d’ail écrasée, 2 c. à soupe d’huile et du sel. Rangez les encornets dans la sauce.",
+      "Couvrez d’aluminium et enfournez 30 min, puis découvrez et poursuivez 10 min : les encornets sont tendres sous la pointe d’un couteau et la sauce a réduit.",
+      "Arrosez d’un trait de citron et servez les encornets tranchés en deux, nappés de sauce."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "sans gluten",
+      "week-end"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "herbace",
+      "lacte"
+    ],
+    "tips": "Remplissez sans tasser : sinon les encornets éclatent. Les céphalopodes apportent cuivre, B12 et sélénium ; la feta de brebis ajoute calcium et ferments."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-mydia-saganaki-pdt-origan",
+    "name": "Mydia saganaki : moules à la feta et au piment, pommes de terre rôties à l’origan",
+    "description": "Moules ouvertes au vin blanc puis enrobées d’une sauce tomate pimentée où fond la feta, servies avec des pommes de terre rôties à l’origan pour saucer.",
+    "emoji": "🦪",
+    "category": "plat",
+    "cuisine": "grecque",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "moule",
+        "qty": 1500,
+        "unit": "g",
+        "note": "grattées et rincées"
+      },
+      {
+        "id": "feta",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "origan",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "persil",
+        "qty": 4,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Coupez les pommes de terre en quartiers, mélangez-les avec 2 c. à soupe d’huile, l’origan et du sel, et rôtissez-les 30 min sur une plaque en les retournant à mi-cuisson : elles doivent être dorées et croustillantes.",
+      "Dans une grande sauteuse, chauffez 3 c. à soupe d’huile à feu moyen, faites revenir l’ail émincé et le piment en rondelles 1 min, puis ajoutez les tomates en dés et laissez compoter 8 min.",
+      "Ajoutez les moules et le vin blanc, couvrez et cuisez 5 min à feu vif en secouant la sauteuse : toutes les coquilles doivent être ouvertes (jetez celles qui restent fermées).",
+      "Retirez la moitié des coquilles vides pour alléger le plat. Émiettez la feta sur les moules, couvrez 1 min hors du feu pour qu’elle commence à fondre.",
+      "Parsemez de persil, poivrez et servez aussitôt avec les pommes de terre rôties."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "sans gluten",
+      "riche en protéines",
+      "four"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "piquant",
+      "lacte"
+    ],
+    "tips": "Les moules sont parmi les aliments les plus riches en vitamine B12, en fer et en sélénium, avec un peu d’oméga-3 ; la feta apporte le calcium."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-rojoes-minhota-chataignes",
+    "name": "Rojões à minhota : porc mariné au vin et au cumin, foie poêlé et châtaignes rôties",
+    "description": "Spécialité du Minho : cubes d’échine marinés une nuit au vin blanc, ail, cumin et pimentão, confits puis dorés dans leur graisse, servis avec un peu de foie poêlé, des châtaignes rôties et des rondelles de citron.",
+    "emoji": "🌰",
+    "category": "plat",
+    "cuisine": "portugaise",
+    "prepTime": 20,
+    "cookTime": 50,
+    "restTime": 720,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "porc-echine",
+        "qty": 400,
+        "unit": "g",
+        "note": "en cubes de 4 cm, avec leur gras"
+      },
+      {
+        "id": "foie-agneau",
+        "qty": 100,
+        "unit": "g",
+        "note": "foie de porc, en dés"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 200,
+        "unit": "ml",
+        "note": "vinho verde de préférence"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 1,
+        "unit": "cas",
+        "note": "saindoux"
+      },
+      {
+        "id": "chataigne",
+        "qty": 300,
+        "unit": "g",
+        "note": "cuites, sous vide ou rôties"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laitue",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille : mélangez le porc avec le vin blanc, l’ail écrasé, le cumin, le paprika, le laurier, 1 c. à café de sel et du poivre. Couvrez et laissez mariner une nuit (12 h) au réfrigérateur.",
+      "Égouttez la viande en gardant la marinade. Dans une cocotte, faites fondre le saindoux à feu moyen et mettez-y le porc ; laissez-le rendre sa graisse et dorer 10 min en remuant.",
+      "Versez la marinade, couvrez et laissez confire 30 min à feu doux : le liquide s’évapore presque entièrement et la viande devient tendre.",
+      "Retirez le couvercle, montez le feu et laissez les cubes caraméliser 5 min dans leur graisse en les retournant : ils doivent être brun foncé et brillants.",
+      "Poussez la viande sur le côté, ajoutez les dés de foie et saisissez-les 2 min à feu vif. Ajoutez les châtaignes et faites-les rouler 3 min dans les sucs pour les dorer.",
+      "Servez avec des rondelles de citron à presser et la laitue assaisonnée d’huile d’olive et d’une pincée de sel."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "abats",
+      "réconfortant",
+      "sans gluten",
+      "calorique"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "epice",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Les châtaignes du Minho remplacent les pommes de terre : un féculent sans gluten, doux et riche en potassium. Le petit morceau de foie suffit à apporter fer, vitamine A et B12."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-arroz-a-banda-alioli",
+    "name": "Arroz a banda : riz au fumet, seiche et crevettes, alioli au jaune d’œuf",
+    "description": "Le riz d’Alicante cuit à plat dans un fumet corsé à la tomate, au pimentón et au safran, avec seiche et crevettes, servi avec un alioli monté à l’huile d’olive.",
+    "emoji": "🥘",
+    "category": "plat",
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 200,
+        "unit": "g",
+        "note": "bomba ou riz rond"
+      },
+      {
+        "id": "calamar",
+        "qty": 300,
+        "unit": "g",
+        "note": "seiche nettoyée, en dés"
+      },
+      {
+        "id": "crevette",
+        "qty": 300,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préparez l’alioli : écrasez 2 gousses d’ail avec une pincée de sel, ajoutez le jaune d’œuf et un trait de citron, puis montez au fouet en versant 3 c. à soupe d’huile en filet. Réservez au frais.",
+      "Portez le fumet à frémissement avec le safran. Dans une poêle à paella de 30 cm, chauffez 3 c. à soupe d’huile à feu vif et saisissez les crevettes 1 min ; retirez-les.",
+      "Dans la même poêle, faites dorer la seiche 5 min, ajoutez les 2 gousses d’ail restantes hachées et la tomate râpée et laissez réduire 5 min à feu moyen jusqu’à une pâte sombre. Ajoutez le pimentón et remuez 10 s.",
+      "Versez le riz, enrobez-le 1 min, puis le fumet chaud d’un seul coup. Répartissez le riz uniformément et ne remuez plus. Cuisez 10 min à feu vif puis 8 min à feu doux.",
+      "Posez les crevettes sur le riz les 3 dernières minutes. Montez le feu 1 min à la fin pour former le socarrat, une croûte qui crépite au fond.",
+      "Couvrez d’un torchon 5 min hors du feu et servez avec l’alioli et des quartiers de citron."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "sans gluten",
+      "riche en glucides"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "iode",
+      "umami",
+      "fume"
+    ],
+    "tips": "Un fumet maison fait avec les têtes des crevettes donne le goût du plat et un peu de collagène. Les fruits de mer apportent iode, zinc et sélénium."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "id": "fm-crevettes-zaatar-feves-riz",
+    "name": "Crevettes grillées au zaatar, salade de fèves à la menthe et riz au citron",
+    "description": "Grosses crevettes marinées au zaatar et à l’huile d’olive puis grillées, avec une salade tiède de fèves, menthe et yaourt, et un riz au citron et au beurre.",
+    "emoji": "🦐",
+    "category": "plat",
+    "cuisine": "levantine",
+    "prepTime": 25,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "crevette",
+        "qty": 400,
+        "unit": "g",
+        "note": "grosses crevettes décortiquées"
+      },
+      {
+        "id": "zaatar",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "feves",
+        "qty": 300,
+        "unit": "g",
+        "note": "écossées (surgelées possible), dérobées"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez les crevettes avec le zaatar, 2 c. à soupe d’huile, le zeste d’un citron et une pincée de sel ; laissez mariner 15 min.",
+      "Cuisez le riz 12 min dans 1,5 fois son volume d’eau salée, à couvert sur feu doux. Hors du feu, ajoutez le beurre et le jus d’un demi-citron, couvrez et laissez reposer 5 min.",
+      "Plongez les fèves 3 min dans l’eau bouillante salée, rafraîchissez-les et retirez leur peau en les pinçant. Assaisonnez-les avec 2 c. à soupe d’huile, le jus d’un demi-citron, la menthe ciselée et du poivre.",
+      "Mélangez le yaourt avec l’ail râpé, le reste de jus de citron et une pincée de sel.",
+      "Faites chauffer une poêle-gril à feu vif et grillez les crevettes 1 min 30 par face : elles deviennent roses et légèrement marquées.",
+      "Étalez le yaourt dans les assiettes, posez la salade de fèves et les crevettes, arrosez du reste d’huile et servez avec le riz."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "léger",
+      "sportif"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "herbace",
+      "acidule",
+      "frais"
+    ],
+    "tips": "Les crevettes apportent protéines maigres, iode et sélénium ; les fèves de printemps, des fibres et des folates. Évitez les fèves en cas de déficit en G6PD (favisme)."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-vieiras-gallega-pdt",
+    "name": "Vieiras a la gallega : Saint-Jacques rôties à l’oignon, jambon serrano et pimentón",
+    "description": "Noix de Saint-Jacques sur une compotée d’oignon au vin blanc et pimentón, couvertes de jambon serrano croustillant et rôties en coquille ou en plat, avec des pommes de terre au beurre.",
+    "emoji": "🐚",
+    "category": "plat",
+    "cuisine": "espagnole",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "saint-jacques",
+        "qty": 20,
+        "unit": "piece",
+        "note": "avec ou sans corail"
+      },
+      {
+        "id": "oignon",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 4,
+        "unit": "piece",
+        "note": "serrano, en lanières"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "pimentón doux"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les pommes de terre épluchées 20 min dans l’eau salée frémissante. Égouttez et gardez-les au chaud avec 20 g de beurre.",
+      "Émincez finement l’oignon et faites-le fondre 12 min à feu doux dans 2 c. à soupe d’huile : il doit être blond et confit. Ajoutez le pimentón, mélangez 10 s, puis le vin blanc et laissez réduire 2 min.",
+      "Préchauffez le gril du four à 230 °C. Répartissez la compotée dans 4 coquilles ou un plat à four, posez les noix de Saint-Jacques dessus, salez légèrement.",
+      "Couvrez des lanières de jambon serrano, parsemez du reste de beurre en noisettes et d’un filet d’huile.",
+      "Enfournez 6 à 8 min à 15 cm du gril : le jambon croustille et les noix sont tout juste nacrées à cœur.",
+      "Parsemez de persil haché et servez aussitôt avec les pommes de terre."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "sans gluten",
+      "week-end"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "fume",
+      "sucre"
+    ],
+    "tips": "Version sans chapelure : le jambon fait office de croûte. Les Saint-Jacques sont riches en B12, iode et sélénium, avec très peu de graisse ; le beurre complète l’énergie."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-bar-sel-papas-mojo",
+    "name": "Bar en croûte de sel, papas arrugadas et mojo rojo",
+    "description": "Bar entier cuit sous une croûte de gros sel qui garde sa chair nacrée, servi à la canarienne avec des petites pommes de terre ridées au sel et un mojo rouge au poivron, cumin et ail.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "espagnole",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "bar",
+        "qty": 2,
+        "unit": "piece",
+        "note": "entiers, vidés mais non écaillés (ou une dorade)"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "et 1,5 kg de gros sel pour la croûte (non consommé)"
+      },
+      {
+        "id": "blanc-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "grenailles"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 100,
+        "unit": "g",
+        "note": "poivrons rouges grillés pelés"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "piment en poudre"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas",
+        "note": "vinaigre de vin"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 7,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      }
+    ],
+    "steps": [
+      "Mettez les grenailles avec leur peau dans une casserole, couvrez juste d’eau et ajoutez 2 bonnes poignées de gros sel. Cuisez 20 min à découvert, videz l’eau et remettez la casserole sur feu doux 3 min en la secouant : la peau se ride et se couvre de sel blanc.",
+      "Préchauffez le four à 220 °C. Mélangez 1,5 kg de gros sel avec les blancs d’œufs et 4 c. à soupe d’eau : il doit avoir la texture du sable mouillé.",
+      "Glissez des rondelles de citron et le laurier dans le ventre des poissons. Étalez un lit de sel de 1 cm dans un plat, posez les bars et couvrez-les entièrement du reste de sel en tassant.",
+      "Enfournez 25 min pour deux bars de 400 g : une sonde plantée à travers la croûte doit indiquer 55 °C.",
+      "Pendant ce temps, mixez les poivrons, l’ail, le cumin, le paprika, le piment, le vinaigre et une pincée de sel, puis ajoutez 6 c. à soupe d’huile en filet pour émulsionner le mojo.",
+      "Cassez la croûte au dos d’une cuillère devant les convives, retirez la peau avec le sel et levez les filets. Arrosez-les du reste d’huile et servez avec les papas et le mojo."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "sans gluten",
+      "week-end",
+      "familial"
+    ],
+    "technique": "four",
+    "flavors": [
+      "iode",
+      "piquant",
+      "epice"
+    ],
+    "tips": "La croûte cuit le poisson à l’étouffée dans son jus, sans le dessécher ni le saler excessivement. L’huile d’olive crue du mojo apporte polyphénols et énergie."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-triglie-livornese-polenta",
+    "name": "Triglie alla livornese : rougets à la tomate et aux olives, polenta crémeuse au lait",
+    "description": "Rougets entiers mijotés quelques minutes dans une sauce tomate à l’ail, olives noires et câpres, comme à Livourne, servis sur une polenta crémeuse au lait, beurre et parmesan.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "rouget",
+        "qty": 6,
+        "unit": "piece",
+        "note": "entiers, vidés et écaillés"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "olive",
+        "qty": 40,
+        "unit": "g",
+        "note": "noires de Gaète ou Kalamata"
+      },
+      {
+        "id": "capres",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "polenta",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez le lait et 300 ml d’eau salée à frémissement, versez la polenta en pluie en fouettant et cuisez 10 min à feu très doux en remuant souvent (ou selon le paquet). Incorporez le beurre et le parmesan, couvrez et gardez au chaud.",
+      "Dans une large sauteuse, chauffez l’huile à feu moyen avec l’ail écrasé et le piment 1 min, sans laisser brunir.",
+      "Ajoutez les tomates concassées et une pincée de sel ; laissez réduire 10 min à frémissement jusqu’à ce que la sauce épaississe.",
+      "Ajoutez les olives et les câpres, puis rangez les rougets côte à côte dans la sauce. Couvrez et cuisez 6 à 8 min à feu doux, en arrosant de sauce à mi-cuisson : l’œil devient blanc et la chair se détache.",
+      "Parsemez de persil haché et servez les rougets et leur sauce sur la polenta."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "iode",
+      "cremeux"
+    ],
+    "tips": "Gardez les rougets entiers : la cuisson sur l’arête garde la chair moelleuse et le foie, très parfumé, est un régal. Le lait et le parmesan apportent le calcium."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-samke-harra-riz",
+    "name": "Samke harra : cabillaud épicé à la tomate et coriandre, riz au citron et sauce yaourt",
+    "description": "Dos de cabillaud cuits au four dans une sauce tomate relevée de piment, cumin et coriandre comme à Tripoli, avec un riz au citron et une sauce yaourt-ail à la place du tahini.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "levantine",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "cabillaud",
+        "qty": 400,
+        "unit": "g",
+        "note": "ou merlu, en 2 dos"
+      },
+      {
+        "id": "tomate",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "coriandre-graines",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Mixez grossièrement la coriandre, 3 gousses d’ail, les piments épépinés, le cumin, la coriandre moulue, 3 c. à soupe d’huile et une pincée de sel : c’est la pâte harra.",
+      "Faites revenir la pâte 2 min dans une sauteuse à feu moyen, ajoutez les tomates en dés et laissez compoter 8 min.",
+      "Versez la sauce dans un plat à four, posez les dos de cabillaud salés, arrosez du reste d’huile et enfournez 15 min : la chair devient opaque et se détache en feuillets.",
+      "Pendant ce temps, cuisez le riz 12 min dans 1,5 fois son volume d’eau salée, à couvert sur feu doux ; ajoutez le beurre et le zeste du citron, laissez reposer 5 min.",
+      "Mélangez le yaourt avec la dernière gousse d’ail râpée, la moitié du jus de citron et du sel.",
+      "Arrosez le poisson du reste de jus de citron et servez avec le riz et la sauce au yaourt."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "léger",
+      "four"
+    ],
+    "technique": "four",
+    "flavors": [
+      "piquant",
+      "herbace",
+      "epice"
+    ],
+    "tips": "Le yaourt remplace la crème de sésame traditionnelle, trop riche en oxalates : il apporte calcium et ferments. Le cabillaud fournit iode et protéines très digestes."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-bacalao-vizcaina-riz",
+    "name": "Bacalao a la vizcaína : morue sauce aux poivrons choriceros, riz blanc",
+    "description": "Morue dessalée confite doucement dans l’huile puis nappée d’une sauce basque rouge sombre aux poivrons choriceros et aux oignons fondus, avec du riz blanc.",
+    "emoji": "🐟",
+    "category": "plat",
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 50,
+    "restTime": 2160,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "morue-salee",
+        "qty": 180,
+        "unit": "g",
+        "note": "en morceaux épais, dessalée 36 h"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 150,
+        "unit": "g",
+        "note": "pulpe de piments choriceros réhydratés ou piquillos"
+      },
+      {
+        "id": "oignon",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac",
+        "note": "pimentón doux"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 2,
+        "unit": "piece",
+        "note": "serrano"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dessalez la morue 36 h au réfrigérateur dans un grand volume d’eau froide, peau vers le haut, en changeant l’eau toutes les 8 h. Épongez-la.",
+      "Dans une cocotte, faites fondre les oignons émincés et l’ail 25 min à feu doux dans 3 c. à soupe d’huile avec le jambon coupé en dés : ils doivent être très tendres et caramel clair.",
+      "Ajoutez la pulpe de poivrons, le pimentón, les tomates et le bouillon ; laissez mijoter 15 min puis mixez finement. La sauce doit napper la cuillère.",
+      "Dans une petite sauteuse, chauffez 3 c. à soupe d’huile à feu doux (70 °C environ, l’huile frémit à peine) et confisez les morceaux de morue 5 min côté peau, puis 3 min de l’autre côté.",
+      "Cuisez le riz 12 min dans 1,5 fois son volume d’eau, à couvert sur feu doux, puis 5 min hors du feu.",
+      "Versez la sauce dans un plat en terre, posez la morue peau dessus, arrosez de son huile de cuisson et réchauffez 5 min à feu doux. Servez avec le riz."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "fume",
+      "reconfortant"
+    ],
+    "tips": "La sauce se prépare la veille et se congèle. La morue séchée est une protéine très concentrée, riche en iode et en sélénium."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-tangia-agneau-riz",
+    "name": "Tangia marrakchie : agneau confit au citron confit, cumin et safran, riz blanc",
+    "description": "Épaule d’agneau confite 5 heures en jarre fermée avec citron confit, ail, cumin, safran et smen, jusqu’à se défaire à la cuillère ; servie avec du riz et son jus concentré.",
+    "emoji": "🍖",
+    "category": "mijote",
+    "cuisine": "nord-africaine",
+    "prepTime": 20,
+    "cookTime": 300,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 1000,
+        "unit": "g",
+        "note": "avec l’os, en gros morceaux"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "citron confit au sel, en quartiers"
+      },
+      {
+        "id": "ail",
+        "qty": 8,
+        "unit": "gousse"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 40,
+        "unit": "g",
+        "note": "ou smen"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "eau",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "coriandre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une jarre en terre ou une cocotte en fonte avec couvercle, mélangez l’agneau avec l’ail entier écrasé, le cumin, le safran, le citron confit, le smen, l’huile, 1 c. à café de sel et du poivre.",
+      "Versez l’eau, mélangez, puis scellez : couvrez d’un papier sulfurisé puis du couvercle (ou d’un aluminium ficelé pour une jarre).",
+      "Enfournez à 140 °C pour 5 heures sans ouvrir : la viande doit se détacher de l’os à la cuillère.",
+      "Quarante minutes avant la fin, rincez le riz et cuisez-le 12 min dans 1,5 fois son volume d’eau salée, à couvert sur feu doux, puis laissez-le reposer 10 min.",
+      "Retirez la viande, versez le jus dans une casserole et faites-le réduire 5 à 8 min à feu vif jusqu’à ce qu’il devienne sirupeux.",
+      "Servez l’agneau effiloché avec le riz, nappé du jus réduit et parsemé de coriandre."
+    ],
+    "tags": [
+      "mijoté",
+      "four",
+      "batch cooking",
+      "week-end",
+      "riche en collagène",
+      "prise de masse"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "acidule",
+      "epice",
+      "reconfortant"
+    ],
+    "tips": "L’épaule sur l’os libère collagène et minéraux pendant la longue cuisson. Traditionnellement, la tangia cuit toute une nuit dans les cendres du four du hammam."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-mansaf-agneau-yaourt",
+    "name": "Mansaf : agneau mijoté au yaourt, riz au safran et pignons",
+    "description": "Le plat de fête jordanien : morceaux d’agneau sur l’os cuits dans une sauce au yaourt fermenté parfumée à la cardamome, sur un riz safrané au beurre clarifié, pignons dorés.",
+    "emoji": "🍚",
+    "category": "mijote",
+    "cuisine": "levantine",
+    "prepTime": 25,
+    "cookTime": 120,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 1000,
+        "unit": "g",
+        "note": "collier ou épaule sur l’os, en gros morceaux"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 700,
+        "unit": "g",
+        "note": "yaourt entier, idéalement de brebis"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cas",
+        "note": "fécule pour stabiliser le yaourt"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "cardamome",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 35,
+        "unit": "g",
+        "note": "ghee ou samneh"
+      },
+      {
+        "id": "pignons",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez l’agneau dans une cocotte, couvrez d’eau froide, portez à ébullition et écumez soigneusement. Ajoutez l’oignon coupé en deux, la cardamome, le laurier et du sel, puis laissez frémir 1 h 15 à couvert : la viande doit être tendre. Gardez 400 ml du bouillon.",
+      "Fouettez le yaourt avec la fécule de riz jusqu’à ce qu’il soit lisse, puis versez-le dans une casserole et chauffez-le à feu doux en remuant toujours dans le même sens, sans jamais le laisser bouillir fort, pendant 5 min.",
+      "Délayez progressivement le yaourt chaud avec 300 ml de bouillon chaud, ajoutez la viande égouttée et laissez mijoter 30 min à feu très doux, à découvert, en remuant de temps en temps.",
+      "Pendant ce temps, nacrez le riz 2 min dans 20 g de beurre clarifié avec le safran et le curcuma, mouillez avec 450 ml d’eau chaude salée et le reste du bouillon, couvrez et cuisez 12 min à feu doux, puis 10 min hors du feu.",
+      "Faites dorer les pignons 2 min dans le reste de beurre clarifié à feu moyen, jusqu’à ce qu’ils soient blonds.",
+      "Dressez le riz sur un grand plat, posez la viande dessus, arrosez de quelques louches de sauce au yaourt, parsemez de pignons et de persil. Servez le reste de sauce à part."
+    ],
+    "tags": [
+      "mijoté",
+      "week-end",
+      "familial",
+      "fermenté",
+      "prise de masse"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "lacte",
+      "acidule",
+      "reconfortant"
+    ],
+    "tips": "Traditionnellement fait avec le jameed, yaourt de brebis séché : un yaourt de brebis entier en est le plus proche. L’agneau sur l’os donne un bouillon riche en collagène et le yaourt apporte ferments et calcium."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-kafta-sayniyeh-pdt",
+    "name": "Kafta bil sayniyeh : galette d’agneau au persil, pommes de terre et tomates au four",
+    "description": "Une large galette de kafta d’agneau aux sept épices et à l’oignon, étalée dans un plat et couverte de rondelles de pommes de terre et de tomates, rôtie dans une sauce tomate légère.",
+    "emoji": "🍖",
+    "category": "plat",
+    "cuisine": "levantine",
+    "prepTime": 25,
+    "cookTime": 45,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-hache",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "persil",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "ras-el-hanout",
+        "qty": 2,
+        "unit": "cac",
+        "note": "sept épices (baharat)"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 260,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Râpez l’oignon et pressez-le dans un torchon pour en retirer le jus. Mélangez l’agneau haché avec l’oignon, le persil haché, le baharat, 1 c. à café de sel et du poivre ; pétrissez 1 min.",
+      "Étalez la viande en une galette de 1,5 cm d’épaisseur dans un plat rond de 24 cm. Enfournez 10 min pour la saisir.",
+      "Pendant ce temps, coupez les pommes de terre en rondelles de 5 mm, mélangez-les avec 2 c. à soupe d’huile et du sel. Coupez les tomates en rondelles.",
+      "Couvrez la galette de rondelles alternées de pommes de terre et de tomates qui se chevauchent. Délayez le concentré de tomate dans 200 ml d’eau chaude avec l’ail écrasé, une pincée de sel et le reste d’huile, et versez sur le plat.",
+      "Enfournez 35 min : les pommes de terre sont tendres et dorées sur les bords, la sauce a réduit de moitié.",
+      "Servez en parts avec le yaourt mélangé à un trait de jus de citron."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "batch cooking"
+    ],
+    "technique": "four",
+    "flavors": [
+      "epice",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "L’agneau, nourri à l’herbe, apporte fer héminique, zinc et un peu d’oméga-3. Le plat se réchauffe très bien et se prépare entièrement à l’avance."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "id": "fm-agnello-cacio-uova",
+    "name": "Agnello cacio e uova : sauté d’agneau au pecorino et à l’œuf, pommes de terre au romarin",
+    "description": "Recette pascale des Abruzzes : agneau sauté à l’ail et au vin blanc, lié hors du feu par des œufs battus au pecorino et au citron, avec des pommes de terre rôties au romarin.",
+    "emoji": "🍖",
+    "category": "plat",
+    "cuisine": "italienne",
+    "prepTime": 20,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "agneau-gigot",
+        "qty": 450,
+        "unit": "g",
+        "note": "en cubes de 3 cm"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pecorino",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Coupez les pommes de terre en quartiers, mélangez-les avec 2 c. à soupe d’huile, 1 brin de romarin effeuillé et du sel ; rôtissez 35 min en les retournant à mi-cuisson.",
+      "Dans une sauteuse, chauffez 2 c. à soupe d’huile à feu vif et faites dorer l’agneau salé 6 min en plusieurs fois : il doit être bien coloré.",
+      "Ajoutez l’ail écrasé et le second brin de romarin, versez le vin blanc et laissez évaporer 2 min. Couvrez et cuisez 15 min à feu doux, en ajoutant un peu d’eau si le fond attache.",
+      "Battez les œufs avec le pecorino, le zeste et le jus d’un demi-citron et beaucoup de poivre.",
+      "Retirez la sauteuse du feu, attendez 1 min, versez les œufs et remuez vivement 30 s : la sauce devient crémeuse et nappante, sans grumeaux d’œuf brouillé.",
+      "Servez aussitôt avec les pommes de terre rôties et des quartiers de citron."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "week-end",
+      "prise de masse"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "lacte",
+      "herbace",
+      "cremeux"
+    ],
+    "tips": "Les œufs entiers et le pecorino de brebis complètent l’agneau en vitamines A et K2, choline et calcium. Si la sauce tourne, ajoutez 1 c. à soupe d’eau froide et fouettez."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-coniglio-ligure-polenta",
+    "name": "Coniglio alla ligure : lapin aux olives taggiasche, pignons et romarin, polenta au parmesan",
+    "description": "Lapin de Ligurie doré à l’huile d’olive puis braisé au vin blanc avec olives noires, pignons, romarin, thym et laurier, servi sur une polenta crémeuse au beurre et au parmesan.",
+    "emoji": "🐇",
+    "category": "mijote",
+    "cuisine": "italienne",
+    "prepTime": 25,
+    "cookTime": 70,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "lapin",
+        "qty": 1400,
+        "unit": "g",
+        "note": "découpé en 8 morceaux, foie réservé"
+      },
+      {
+        "id": "olive",
+        "qty": 80,
+        "unit": "g",
+        "note": "noires taggiasche ou niçoises"
+      },
+      {
+        "id": "pignons",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "romarin",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 5,
+        "unit": "cas"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "polenta",
+        "qty": 240,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, chauffez 4 c. à soupe d’huile à feu moyen-vif et faites dorer les morceaux de lapin salés 10 min en plusieurs fois : ils doivent être bien blonds sur toutes les faces.",
+      "Ajoutez l’oignon haché, l’ail écrasé, le romarin, le thym et le laurier ; faites revenir 3 min. Versez le vin blanc et laissez réduire de moitié à feu vif (3 min).",
+      "Ajoutez le bouillon, couvrez et laissez braiser 40 min à feu doux en retournant les morceaux à mi-cuisson.",
+      "Ajoutez les olives et les pignons, poursuivez 15 min à découvert : la sauce réduit et enrobe la viande, la chair se détache de l’os. Hachez le foie et ajoutez-le les 3 dernières minutes.",
+      "Pendant ce temps, portez 1 litre d’eau salée à ébullition, versez la polenta en pluie en fouettant et cuisez 10 min à feu doux en remuant (ou selon le paquet). Incorporez le beurre et le parmesan.",
+      "Servez le lapin et sa sauce sur la polenta, arrosé d’un filet d’huile d’olive crue."
+    ],
+    "tags": [
+      "mijoté",
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "herbace",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Le lapin est une viande maigre et très digeste ; le foie ajouté en fin de cuisson enrichit la sauce en fer et vitamine A. Les pignons sont limités à 10 g par portion."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "id": "fm-arni-fricassee-avgolemono",
+    "name": "Arni fricassée : agneau à la laitue et à l’aneth, sauce avgolemono, riz",
+    "description": "Agneau mijoté avec des cœurs de romaine, oignons nouveaux et beaucoup d’aneth, puis lié au dernier moment avec une sauce œuf-citron mousseuse ; servi avec du riz.",
+    "emoji": "🍲",
+    "category": "mijote",
+    "cuisine": "grecque",
+    "prepTime": 25,
+    "cookTime": 90,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-epaule",
+        "qty": 1000,
+        "unit": "g",
+        "note": "en morceaux avec l’os"
+      },
+      {
+        "id": "laitue",
+        "qty": 2,
+        "unit": "piece",
+        "note": "romaines"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "aneth",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, chauffez l’huile à feu moyen-vif et faites dorer l’agneau salé 8 min sur toutes les faces. Ajoutez les oignons nouveaux émincés (avec le vert) et faites revenir 3 min.",
+      "Couvrez d’eau chaude à mi-hauteur, couvrez et laissez mijoter 1 h à feu doux : la viande doit commencer à se détacher de l’os.",
+      "Coupez les romaines en lanières de 3 cm et ajoutez-les avec les deux tiers de l’aneth ; elles vont fondre. Poursuivez 15 min à couvert.",
+      "Cuisez le riz 12 min dans 1,5 fois son volume d’eau salée, à couvert sur feu doux, puis incorporez le beurre.",
+      "Pour l’avgolemono : fouettez les œufs 2 min jusqu’à ce qu’ils moussent, ajoutez le jus des citrons en filet, puis, sans cesser de fouetter, 2 louches de jus de cuisson chaud.",
+      "Retirez la cocotte du feu, versez la sauce en secouant la cocotte (ne remuez pas à la cuillère) et laissez 2 min à couvert : la sauce épaissit et devient soyeuse. Parsemez du reste d’aneth et servez avec le riz."
+    ],
+    "tags": [
+      "mijoté",
+      "familial",
+      "riche en collagène",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "cremeux"
+    ],
+    "tips": "Ne faites jamais bouillir après l’ajout de l’avgolemono, sinon l’œuf graine. Le bouillon de l’agneau sur l’os et les jaunes d’œufs en font un plat très nourrissant."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-karniyarik-pilav",
+    "name": "Karnıyarık : aubergine fendue farcie à l’agneau, pilav et yaourt à l’ail",
+    "description": "Une aubergine rôtie, fendue et garnie d’agneau haché aux tomates, poivron et pul biber, cuite au four dans sa sauce, avec un riz au beurre et un yaourt à l’ail.",
+    "emoji": "🍆",
+    "category": "plat",
+    "cuisine": "turque",
+    "prepTime": 25,
+    "cookTime": 50,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "aubergine",
+        "qty": 1,
+        "unit": "piece",
+        "note": "longue, coupée en deux dans la longueur"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 100,
+        "unit": "g",
+        "note": "poivron vert long"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac",
+        "note": "pul biber"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Badigeonnez les demi-aubergines de 1,5 c. à soupe d’huile, salez et rôtissez-les 20 min face coupée dessus : la chair doit être fondante.",
+      "Pendant ce temps, faites revenir l’oignon haché et le poivron en dés 5 min dans 1,5 c. à soupe d’huile à feu moyen, ajoutez l’agneau et 2 gousses d’ail hachées et faites dorer 6 min en émiettant.",
+      "Ajoutez la moitié des tomates en dés, le pul biber, du sel et du poivre et laissez réduire 5 min.",
+      "Écrasez la chair des aubergines avec une cuillère pour creuser un sillon et garnissez-les de farce. Posez dessus les rondelles du reste de tomate. Délayez le concentré dans 150 ml d’eau chaude et versez autour. Enfournez 20 min.",
+      "Pendant ce temps, rincez le riz, nacrez-le 2 min dans le beurre, mouillez de 1,5 fois son volume d’eau salée bouillante, couvrez et cuisez 12 min à feu doux, puis 10 min hors du feu.",
+      "Mélangez le yaourt avec la dernière gousse d’ail râpée et du sel. Servez chaque demi-aubergine avec le pilav et le yaourt."
+    ],
+    "tags": [
+      "four",
+      "riche en protéines",
+      "sans gluten",
+      "familial"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "epice",
+      "lacte"
+    ],
+    "tips": "Version rôtie au four plutôt que frite : l’aubergine absorbe moins de graisse et reste digeste. Le yaourt entier apporte calcium, protéines et ferments."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "id": "fm-soutzoukakia-riz",
+    "name": "Soutzoukakia smyrneika : boulettes au cumin en sauce tomate au vin rouge, riz pilaf",
+    "description": "Boulettes allongées bœuf-agneau au cumin et à l’ail, saisies puis mijotées dans une sauce tomate au vin rouge et à la cannelle, comme à Smyrne, sur du riz pilaf.",
+    "emoji": "🍅",
+    "category": "plat",
+    "cuisine": "grecque",
+    "prepTime": 25,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-hache",
+        "qty": 220,
+        "unit": "g"
+      },
+      {
+        "id": "agneau-hache",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "cumin",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "persil",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez les viandes avec la moitié de l’oignon râpé, 2 gousses d’ail râpées, le cumin, l’œuf, 1 c. à soupe de farine de riz, 1 c. à café de sel et du poivre ; pétrissez 2 min pour une farce bien liée.",
+      "Façonnez 10 boulettes allongées en forme de petits boudins de 8 cm, roulez-les dans le reste de farine de riz.",
+      "Saisissez-les 5 min dans 1,5 c. à soupe d’huile à feu moyen-vif en les retournant : elles doivent être dorées sur toutes les faces. Réservez.",
+      "Dans la même sauteuse, faites fondre le reste d’oignon et d’ail 3 min dans 1,5 c. à soupe d’huile, versez le vin rouge et laissez réduire 2 min. Ajoutez les tomates, la cannelle, le laurier et du sel, puis les boulettes. Couvrez et mijotez 25 min à feu doux.",
+      "Pendant ce temps, nacrez le riz 2 min dans le beurre, mouillez de 1,5 fois son volume d’eau salée bouillante, couvrez et cuisez 12 min à feu doux, puis 5 min hors du feu.",
+      "Parsemez de persil ciselé et servez les boulettes nappées de sauce sur le riz."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant",
+      "batch cooking"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "La farine de riz remplace la mie de pain trempée. Le mélange bœuf-agneau apporte fer héminique, zinc et B12 ; doublez les quantités et congelez la moitié en sauce."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "id": "fm-vitello-tonnato-salade",
+    "name": "Vitello tonnato en salade-repas : veau rosé, sauce au thon, pommes de terre tièdes et roquette",
+    "description": "Noix de veau pochée au vin blanc et tranchée finement, nappée d’une sauce onctueuse au thon, anchois et câpres montée à l’huile d’olive, avec pommes de terre tièdes et roquette.",
+    "emoji": "🥗",
+    "category": "salade-composee",
+    "cuisine": "italienne",
+    "prepTime": 30,
+    "cookTime": 45,
+    "restTime": 120,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "veau-escalope",
+        "qty": 400,
+        "unit": "g",
+        "note": "noix de veau en un seul morceau, ficelée"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thon-conserve",
+        "qty": 120,
+        "unit": "g",
+        "note": "à l’huile d’olive, égoutté"
+      },
+      {
+        "id": "anchois",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "capres",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "jaunes cuits durs"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "roquette",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une casserole juste assez grande, portez à frémissement le vin blanc, le laurier, 500 ml d’eau et une pincée de sel. Plongez le veau et pochez-le 35 à 40 min à feu très doux : une sonde doit indiquer 58 °C à cœur. Laissez-le refroidir dans le bouillon (au moins 2 h au frais).",
+      "Faites durcir 2 œufs 10 min et gardez les jaunes (les blancs iront dans la salade ou un autre plat).",
+      "Mixez le thon, les anchois, la moitié des câpres, les jaunes cuits, le jus du citron et 4 c. à soupe de bouillon de cuisson ; versez l’huile en filet, moteur en marche, jusqu’à obtenir une sauce lisse comme une mayonnaise souple.",
+      "Cuisez les pommes de terre avec la peau 20 min dans l’eau salée, coupez-les en rondelles et assaisonnez-les tièdes d’un filet de bouillon et de poivre.",
+      "Tranchez le veau froid le plus finement possible. Disposez dans les assiettes la roquette, les pommes de terre, puis les tranches de veau en rosace.",
+      "Nappez généreusement de sauce au thon et parsemez du reste de câpres."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "repas froid",
+      "riche en protéines",
+      "sans gluten",
+      "lunch box"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "acidule"
+    ],
+    "tips": "Le bouillon de pochage, riche en gélatine, se garde pour un risotto. Les deux jaunes d’œufs et le thon apportent vitamine D et choline."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "id": "fm-insalata-di-mare-pdt",
+    "name": "Insalata di mare tiède : calamars, crevettes et moules, pommes de terre au citron",
+    "description": "Salade-repas de la côte napolitaine : calamars pochés, crevettes et moules, mêlés tièdes à des pommes de terre et du céleri, assaisonnés d’huile d’olive, citron, ail et persil.",
+    "emoji": "🦑",
+    "category": "salade-composee",
+    "cuisine": "italienne",
+    "prepTime": 30,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "calamar",
+        "qty": 300,
+        "unit": "g",
+        "note": "nettoyés"
+      },
+      {
+        "id": "crevette",
+        "qty": 200,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "moule",
+        "qty": 800,
+        "unit": "g",
+        "note": "grattées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "celeri-branche",
+        "qty": 1,
+        "unit": "piece",
+        "note": "avec ses feuilles"
+      },
+      {
+        "id": "citron",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "persil",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre avec la peau 20 min dans l’eau salée frémissante, pelez-les tièdes et coupez-les en dés de 2 cm.",
+      "Dans une grande sauteuse, ouvrez les moules avec le vin blanc et 1 gousse d’ail écrasée, 4 min à couvert sur feu vif. Décortiquez-les et filtrez le jus.",
+      "Portez une casserole d’eau salée à frémissement avec un demi-citron. Pochez les calamars coupés en anneaux 2 min, retirez-les, puis les crevettes 2 min : elles deviennent roses et fermes.",
+      "Préparez l’assaisonnement : 6 c. à soupe d’huile, le jus d’un citron et demi, la seconde gousse d’ail râpée, 3 c. à soupe du jus des moules, le piment, du sel et du poivre.",
+      "Mélangez encore tièdes les fruits de mer, les pommes de terre, le céleri émincé finement et le persil haché avec l’assaisonnement.",
+      "Laissez reposer 10 min pour que les saveurs s’échangent et servez tiède ou à température ambiante."
+    ],
+    "tags": [
+      "repas froid",
+      "riche en protéines",
+      "sans gluten",
+      "lunch box",
+      "léger"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "acidule",
+      "frais"
+    ],
+    "tips": "Trois fruits de mer qui concentrent B12, zinc, iode et sélénium. Se garde 24 h au frais : sortez la salade 20 min avant de servir."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "id": "fm-esgarraet-morue-pdt-oeufs",
+    "name": "Esgarraet : salade de poivrons rôtis et morue effilochée, pommes de terre et œufs mollets",
+    "description": "La salade valencienne de poivrons rouges rôtis en lanières et morue crue dessalée effeuillée, marinés à l’ail et à l’huile d’olive, enrichie de pommes de terre, d’œufs mollets et d’olives noires.",
+    "emoji": "🥗",
+    "category": "salade-composee",
+    "cuisine": "espagnole",
+    "prepTime": 25,
+    "cookTime": 30,
+    "restTime": 2160,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "morue-salee",
+        "qty": 160,
+        "unit": "g",
+        "note": "dessalée 36 h"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 300,
+        "unit": "g",
+        "note": "poivrons rouges rôtis et pelés, en lanières"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "olive",
+        "qty": 40,
+        "unit": "g",
+        "note": "noires"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 6,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "vinaigre de Xérès"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dessalez la morue 36 h au réfrigérateur dans un grand volume d’eau froide, en changeant l’eau toutes les 8 h. Si vous rôtissez vos poivrons : 40 min à 220 °C, puis 10 min sous un torchon avant de les peler.",
+      "Épongez la morue, retirez peau et arêtes, puis effeuillez-la en fins lambeaux avec les doigts. Pour la manger crue comme à Valence, choisissez une morue séchée de qualité ; sinon pochez-la 3 min à frémissement.",
+      "Mélangez la morue, les lanières de poivrons, l’ail émincé finement et 5 c. à soupe d’huile ; laissez mariner au moins 30 min.",
+      "Cuisez les pommes de terre avec la peau 20 min dans l’eau salée, puis coupez-les en rondelles tièdes et arrosez-les du vinaigre.",
+      "Plongez les œufs 6 min 30 dans l’eau bouillante, refroidissez-les dans l’eau glacée et écalez-les.",
+      "Dressez les pommes de terre, couvrez d’esgarraet, ajoutez les olives et les œufs coupés en deux ; arrosez du reste d’huile et poivrez."
+    ],
+    "tags": [
+      "repas froid",
+      "préparation à l’avance",
+      "riche en protéines",
+      "sans gluten",
+      "lunch box"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fume",
+      "iode",
+      "fruite"
+    ],
+    "tips": "La morue séchée salée concentre protéines, iode et sélénium ; les poivrons rouges apportent beaucoup de vitamine C et de caroténoïdes, mieux absorbés grâce à l’huile."
+  },
+  {
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "seasons": [],
+    "id": "fm-iscas-portuguesa-pdt",
+    "name": "Iscas à portuguesa : foie mariné au vin blanc et à l’ail, pommes de terre à l’eau",
+    "description": "Fines tranches de foie marinées une nuit dans le vin blanc, l’ail, le laurier et le paprika, saisies au saindoux et déglacées à la marinade, avec presunto et pommes de terre à l’eau.",
+    "emoji": "🫀",
+    "category": "plat",
+    "cuisine": "portugaise",
+    "prepTime": 15,
+    "cookTime": 25,
+    "restTime": 720,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-agneau",
+        "qty": 300,
+        "unit": "g",
+        "note": "foie de porc ou d’agneau, en tranches de 5 mm"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas",
+        "note": "vinaigre de vin"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 3,
+        "unit": "cas",
+        "note": "saindoux (banha)"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 3,
+        "unit": "piece",
+        "note": "presunto ou serrano"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "laitue",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille : mélangez le vin blanc, l’ail écrasé, le laurier, le vinaigre, le paprika et une pincée de sel. Plongez-y les tranches de foie, couvrez et laissez mariner une nuit (12 h) au réfrigérateur.",
+      "Cuisez les pommes de terre épluchées et coupées en deux 18 min dans l’eau salée frémissante.",
+      "Égouttez le foie en gardant la marinade et épongez-le. Chauffez 2 c. à soupe de saindoux dans une poêle à feu vif et saisissez les tranches 1 min par face : elles doivent rester rosées au centre. Réservez au chaud.",
+      "Dans la même poêle, faites griller 1 min les lanières de presunto avec le reste de saindoux, puis versez la marinade filtrée et l’ail. Laissez réduire 3 min à feu vif jusqu’à une sauce sirupeuse.",
+      "Remettez le foie 30 s dans la sauce pour le napper.",
+      "Servez avec les pommes de terre arrosées de sauce et la laitue assaisonnée d’huile d’olive."
+    ],
+    "tags": [
+      "abats",
+      "rapide",
+      "économique",
+      "préparation à l’avance",
+      "sans gluten"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "acidule",
+      "reconfortant"
+    ],
+    "tips": "Le foie est l’aliment le plus riche en vitamine A, en B12, en fer et en cuivre : une portion par semaine suffit. La marinade acide adoucit son goût et l’attendrit."
+  }
+]
