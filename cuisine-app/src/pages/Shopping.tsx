@@ -10,9 +10,8 @@ import { mondayOf, weekDates, isoDate } from '../domain/season';
 import { formatDateFr } from '../components/format';
 import { Empty, ServingsControl, useToast } from '../components/ui';
 import { RecipePicker } from '../components/RecipePicker';
-import { Sheet } from '../components/ui';
-import { guideFor, nutrientGains, UPGRADES } from '../domain/buying';
-import { GuideCard } from './Buy';
+import { quickTip, nutrientGains, SHOPS, UPGRADES } from '../domain/buying';
+import { GuideCard, NearbyShops, StoreLine, useNearbyStores } from '../components/BuyingAdvice';
 import type { ShoppingAisle, ShoppingItem, StandardUnit } from '../domain/types';
 
 interface Meta {
@@ -51,7 +50,8 @@ export function Shopping() {
   const [picker, setPicker] = useState(false);
   const [view, setView] = useState<'liste' | 'preparer'>(params.get('source') ? 'preparer' : 'liste');
   const toast = useToast();
-  const [info, setInfo] = useState<string | null>(null);
+  const [open, setOpen] = useState<string | null>(null);
+  const shops = useNearbyStores(settings.shopCp, settings.shopRadius);
 
   const dates = weekDates(new Date(weekStart + 'T12:00:00'));
   const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
@@ -263,12 +263,7 @@ export function Shopping() {
                 </details>
               )}
 
-              <Link to="/acheter" className="callout info small row between" style={{ textDecoration: 'none', color: 'inherit', margin: '0 0 12px' }}>
-                <span>
-                  🧭 <strong>Où et comment acheter ?</strong> Commerces près de chez vous, labels à privilégier, morceaux plus nutritifs.
-                </span>
-                <span>›</span>
-              </Link>
+              <NearbyShops shops={shops} />
               {byAisle.map(([aisle, list]) => (
                 <section key={aisle} className="aisle">
                   <h3>
@@ -287,19 +282,6 @@ export function Shopping() {
                             {it.recipes.length > 0 && <div className="sr">pour : {it.recipes.join(', ')}</div>}
                           </div>
                           <span className="sq">{itemQtyLabel(it, ing?.pieceWeight)}</span>
-                          {ing && guideFor(ing) && (
-                            <button
-                              className="icon-btn"
-                              aria-label={`Bien choisir : ${it.label}`}
-                              title="Bien choisir"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setInfo(ing.id);
-                              }}
-                            >
-                              🏷️
-                            </button>
-                          )}
                           {it.key.startsWith('custom:') && (
                             <button
                               className="icon-btn"
@@ -312,6 +294,7 @@ export function Shopping() {
                               ✕
                             </button>
                           )}
+                          {ing && !it.checked && <Advice ingId={ing.id} category={ing.category} open={open === it.key} onToggle={() => setOpen(open === it.key ? null : it.key)} shops={shops} />}
                         </div>
                       );
                     })}
@@ -371,30 +354,6 @@ export function Shopping() {
         />
       )}
 
-      {info &&
-        (() => {
-          const ing = lookup(info);
-          const g = ing && guideFor(ing);
-          if (!ing || !g) return null;
-          const up = UPGRADES[ing.id];
-          const gains = up ? nutrientGains(ing.id, up.to) : [];
-          return (
-            <Sheet title={`🏷️ Bien choisir : ${ing.name}`} onClose={() => setInfo(null)}>
-              <div className="stack">
-                {up && (
-                  <div className="callout ok small" style={{ margin: 0 }}>
-                    💡 <strong>Plus nutritif : {lookup(up.to)?.name}</strong>. {up.tip}
-                    {gains.length > 0 && <span className="muted"> ({gains.map((x) => `${x.label} ×${x.ratio >= 10 ? '10+' : String(x.ratio).replace('.', ',')}`).join(', ')} pour 100 g)</span>}
-                  </div>
-                )}
-                <GuideCard g={g} compact />
-                <Link to="/acheter" className="btn" onClick={() => setInfo(null)}>
-                  🧭 Trouver les commerces près de chez moi
-                </Link>
-              </div>
-            </Sheet>
-          );
-        })()}
     </div>
   );
 }
@@ -406,4 +365,43 @@ function shift(iso: string, days: number): string {
 }
 function cap(s: string) {
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/** Conseils d'achat sous un produit : ce qu'il faut choisir, mieux encore, où l'acheter */
+function Advice({ ingId, category, open, onToggle, shops }: { ingId: string; category: Parameters<typeof quickTip>[0]['category']; open: boolean; onToggle: () => void; shops: ReturnType<typeof useNearbyStores> }) {
+  const { lookup } = useLibrary();
+  const tip = quickTip({ id: ingId, category });
+  if (!tip) return null;
+  const up = UPGRADES[ingId];
+  const gains = up ? nutrientGains(ingId, up.to) : [];
+  const store = shops.nearest(tip.guide.shops);
+  return (
+    <div className="advice" onClick={(e) => e.stopPropagation()}>
+      <div>🏷️ {tip.text}</div>
+      {up && (
+        <div className="advice-up">
+          💡 Plus nutritif : <strong>{lookup(up.to)?.name}</strong>
+          {gains.length > 0 && <> ({gains.slice(0, 3).map((g) => `${g.label} ×${g.ratio >= 10 ? '10+' : String(g.ratio).replace('.', ',')}`).join(', ')})</>}
+        </div>
+      )}
+      {store ? (
+        <StoreLine s={store} />
+      ) : (
+        <div className="muted">
+          {tip.guide.shops
+            .slice(0, 3)
+            .map((k) => `${SHOPS[k].emoji} ${SHOPS[k].one.toLowerCase()}`)
+            .join(' · ')}
+        </div>
+      )}
+      <button className="advice-more" onClick={onToggle}>
+        {open ? 'Moins de détails ▲' : 'Labels, à éviter, étiquette ▼'}
+      </button>
+      {open && (
+        <div style={{ marginTop: 6 }}>
+          <GuideCard g={tip.guide} compact />
+        </div>
+      )}
+    </div>
+  );
 }

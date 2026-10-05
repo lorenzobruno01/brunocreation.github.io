@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { INGREDIENT_BY_ID } from '../src/data/ingredients';
-import { guideFor, nutrientGains, UPGRADES } from '../src/domain/buying';
+import { guideFor, nutrientGains, quickTip, UPGRADES } from '../src/domain/buying';
 import { classify, overpassQuery, parseStores } from '../src/domain/stores';
 
 describe('assistant courses', () => {
@@ -33,5 +33,8 @@ describe('assistant courses', () => {
     for (const [from, u] of Object.entries(UPGRADES)) expect(INGREDIENT_BY_ID[u.to], `${from} → ${u.to}`).toBeTruthy();
     const g = nutrientGains('poulet-blanc', 'poulet-haut-cuisse-desosse').map((x) => x.label);
     expect(g).toEqual(expect.arrayContaining(['Zinc', 'Vitamine B12']));
+    // conseil spécifique au produit quand il existe
+    expect(quickTip(INGREDIENT_BY_ID['boeuf-hache'])?.text).toMatch(/hacher devant vous/);
+    expect(quickTip(INGREDIENT_BY_ID['agneau-gigot'])?.text).toMatch(/herbe/);
   });
 });

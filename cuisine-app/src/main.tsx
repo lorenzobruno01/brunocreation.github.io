@@ -1,6 +1,6 @@
 import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './styles/app.css';
 import { LibraryProvider, UserDataProvider, useLibrary } from './hooks/library';
 import { ToastProvider } from './components/ui';
@@ -19,7 +19,6 @@ import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
 import { Account } from './pages/Account';
-import { Buy } from './pages/Buy';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
@@ -85,7 +84,7 @@ function Shell() {
                 <Route path="/reglages" element={<Settings />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />
-                <Route path="/acheter" element={<Buy />} />
+                <Route path="/acheter" element={<Navigate to="/courses" replace />} />
                 <Route path="*" element={<Home />} />
               </Routes>
             </ErrorBoundary>
