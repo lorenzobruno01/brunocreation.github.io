@@ -1520,3 +1520,22 @@ hr.sep {
 .md-table { border-collapse: collapse; font-size: 0.82rem; width: 100%; margin: 8px 0; }
 .md-table th, .md-table td { border: 1px solid var(--line); padding: 4px 6px; text-align: left; vertical-align: top; }
 .md-table th { background: var(--surface-2); }
+
+/* Pastille d'état de synchronisation du compte */
+.sync-dot {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ok);
+  border: 2px solid var(--surface);
+}
+.sync-dot.syncing {
+  background: var(--saffron);
+}
+.sync-dot.error,
+.sync-dot.offline {
+  background: var(--danger);
+}

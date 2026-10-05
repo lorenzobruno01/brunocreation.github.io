@@ -158,6 +158,12 @@ export interface NutritionProfile {
   weight: number; // kg
   kcal: number; // objectif journalier
   proteinPerKg: number; // g/kg/jour
+  age?: number;
+  height?: number; // cm
+  activity?: 'sedentaire' | 'leger' | 'modere' | 'intense' | 'tres-intense';
+  goal?: 'prise-de-masse' | 'maintien' | 'perte-de-poids';
+  /** objectifs kcal / protéines saisis à la main (sinon calculés) */
+  manualTargets?: boolean;
 }
 
 export const DEFAULT_PROFILES: NutritionProfile[] = [

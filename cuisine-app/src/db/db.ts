@@ -117,13 +117,29 @@ export async function deleteRecipe(recipeId: string, isSeed: boolean) {
 
 // ── Sauvegarde / synchronisation manuelle entre appareils ──
 
-const BACKUP_TABLES = ['recipes', 'hidden', 'customIngredients', 'favorites', 'history', 'pantry', 'plan', 'basket', 'shopping', 'settings'] as const;
+export const BACKUP_TABLES = ['recipes', 'hidden', 'customIngredients', 'favorites', 'history', 'pantry', 'fridge', 'plan', 'basket', 'shopping', 'settings'] as const;
 
-export async function exportData(includeApiKey = false): Promise<string> {
-  const out: Record<string, unknown[]> = {};
-  for (const t of BACKUP_TABLES) out[t] = await db.table(t).toArray();
-  if (!includeApiKey) out.settings = (out.settings as Settings[]).map(({ apiKey: _apiKey, ...rest }) => rest);
-  return JSON.stringify({ app: 'cuisine-foyer', version: 1, exportedAt: new Date().toISOString(), data: out }, null, 1);
+export type Snapshot = Record<(typeof BACKUP_TABLES)[number], unknown[]>;
+
+/** Toutes les données personnelles, sans la clé d'API historique */
+export async function snapshotData(): Promise<Snapshot> {
+  const out = {} as Snapshot;
+  await db.transaction('r', BACKUP_TABLES.map((t) => db.table(t)), async () => {
+    for (const t of BACKUP_TABLES) out[t] = await db.table(t).toArray();
+  });
+  out.settings = (out.settings as Settings[]).map(({ apiKey: _apiKey, ...rest }) => rest);
+  return out;
+}
+
+export async function exportData(): Promise<string> {
+  return JSON.stringify({ app: 'cuisine-foyer', version: 1, exportedAt: new Date().toISOString(), data: await snapshotData() }, null, 1);
+}
+
+/** Efface toutes les données personnelles de cet appareil (la bibliothèque de base reste) */
+export async function wipeLocalData() {
+  await db.transaction('rw', BACKUP_TABLES.map((t) => db.table(t)), async () => {
+    for (const t of BACKUP_TABLES) await db.table(t).clear();
+  });
 }
 
 /** mode « merge » : ajoute/écrase par clé ; « replace » : remplace tout */
@@ -140,7 +156,10 @@ export async function importData(json: string, mode: 'merge' | 'replace' = 'merg
         for (const r of rows) await db.settings.put({ ...r, apiKey: r.apiKey ?? cur.apiKey, key: 'settings' });
       } else if (t === 'history' && mode === 'merge') {
         const existing = new Set((await db.history.toArray()).map((h) => `${h.recipeId}|${h.date}`));
+        // (les entrées déjà présentes, quel que soit leur id local, ne sont pas dupliquées)
         await db.history.bulkAdd(rows.filter((h: HistoryEntry) => !existing.has(`${h.recipeId}|${h.date}`)).map(({ id: _id, ...h }: HistoryEntry) => h));
+      } else if (t === 'history') {
+        await db.history.bulkAdd(rows.map(({ id: _id, ...h }: HistoryEntry) => h));
       } else {
         await db.table(t).bulkPut(rows);
       }

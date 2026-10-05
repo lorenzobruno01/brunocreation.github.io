@@ -5,7 +5,7 @@ import { db, saveSettings } from '../db/db';
 import { useLibrary, useUserData } from '../hooks/library';
 import { DAY_NAMES, isoDate, mondayOf, weekDates } from '../domain/season';
 import { generateWeek, type PlannerConstraints } from '../domain/planner';
-import { generateNutriWeek, dayReport, bestSourcesOf, householdEaters, type DayReport, type Eater } from '../domain/nutriPlanner';
+import { generateNutriWeek, dayReport, bestSourcesOf, householdEaters, soloEater, type DayReport, type Eater } from '../domain/nutriPlanner';
 import { DEFAULT_PROFILES, GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
@@ -54,8 +54,8 @@ export function Planner() {
   // Par défaut, le planning est fait pour toute la tablée : mêmes plats, part adaptée à chacun
   const planFor = settings.planFor ?? (profiles.length > 1 ? 'nous' : profiles[0].id);
   const together = planFor === 'nous' && profiles.length > 1;
-  const eaters: Eater[] = together ? householdEaters(profiles) : [{ profile: profiles.find((p) => p.id === planFor) ?? profiles[0], portions: 1 }];
-  const forName = together ? 'vous deux' : eaters[0].profile.name;
+  const eaters: Eater[] = together ? householdEaters(profiles) : [soloEater(profiles.find((p) => p.id === planFor) ?? profiles[0])];
+  const forName = together ? (profiles.length === 2 ? 'vous deux' : 'tout le foyer') : eaters[0].profile.name;
 
   const setSlots = (s: Slot[]) => {
     const v = ALL_SLOTS.filter((x) => s.includes(x));
@@ -159,18 +159,18 @@ export function Planner() {
         <span className="label">Repas pour :</span>
         {profiles.length > 1 && (
           <button className={`chip ${together ? 'on' : ''}`} onClick={() => saveSettings({ planFor: 'nous' })}>
-            👫 Nous deux
+            👫 {profiles.length === 2 ? 'Nous deux' : `Tout le foyer (${profiles.length})`}
           </button>
         )}
         {profiles.map((p) => (
           <button key={p.id} className={`chip ${!together && p.id === eaters[0].profile.id ? 'on' : ''}`} onClick={() => saveSettings({ planFor: p.id })}>
-            {p.sex === 'homme' ? '👨' : '👩'} {p.name} seul{p.sex === 'femme' ? 'e' : ''}
+            {p.sex === 'homme' ? '👨' : '👩'} {profiles.length > 1 ? `${p.name} seul${p.sex === 'femme' ? 'e' : ''}` : p.name}
           </button>
         ))}
       </div>
       {together && (
         <p className="small muted" style={{ margin: '0 0 10px' }}>
-          Mêmes plats pour vous deux, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son objectif :{' '}
+          Mêmes plats pour {profiles.length === 2 ? 'vous deux' : 'tout le foyer'}, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son objectif :{' '}
           {eaters.map((e, i) => (
             <span key={e.profile.id}>
               {i > 0 && ' · '}
@@ -178,6 +178,11 @@ export function Planner() {
             </span>
           ))}
           . Le planning vise 100 % des besoins de chacun.
+        </p>
+      )}
+      {!together && (
+        <p className="small muted" style={{ margin: '0 0 10px' }}>
+          Objectif de {eaters[0].profile.name} : {eaters[0].profile.kcal} kcal/jour, soit environ {eaters[0].portions.toFixed(2).replace('.', ',')} portion de chaque plat. <Link to="/reglages">Modifier mon profil</Link>
         </p>
       )}
 
