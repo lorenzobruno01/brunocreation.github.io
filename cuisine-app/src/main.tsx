@@ -20,6 +20,7 @@ import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
 import { Account } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
 
 // Thème mémorisé (clair / sombre / auto)
@@ -44,6 +45,7 @@ function ScrollTop() {
 
 function Shell() {
   const { ready } = useLibrary();
+  const { pathname } = useLocation();
   if (!ready)
     return (
       <div className="loading-screen">
@@ -60,23 +62,25 @@ function Shell() {
         path="*"
         element={
           <Layout>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/recettes" element={<Recipes />} />
-              <Route path="/recette/:id" element={<RecipeDetail />} />
-              <Route path="/frigo" element={<Fridge />} />
-              <Route path="/garde-manger" element={<Pantry />} />
-              <Route path="/semaine" element={<Planner />} />
-              <Route path="/courses" element={<Shopping />} />
-              <Route path="/favoris" element={<Favorites />} />
-              <Route path="/ajouter" element={<RecipeForm key="new" />} />
-              <Route path="/modifier/:id" element={<RecipeForm />} />
-              <Route path="/stats" element={<Stats />} />
-              <Route path="/reglages" element={<Settings />} />
-              <Route path="/sources" element={<Sources />} />
-              <Route path="/compte" element={<Account />} />
-              <Route path="*" element={<Home />} />
-            </Routes>
+            <ErrorBoundary resetKey={pathname}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/recettes" element={<Recipes />} />
+                <Route path="/recette/:id" element={<RecipeDetail />} />
+                <Route path="/frigo" element={<Fridge />} />
+                <Route path="/garde-manger" element={<Pantry />} />
+                <Route path="/semaine" element={<Planner />} />
+                <Route path="/courses" element={<Shopping />} />
+                <Route path="/favoris" element={<Favorites />} />
+                <Route path="/ajouter" element={<RecipeForm key="new" />} />
+                <Route path="/modifier/:id" element={<RecipeForm />} />
+                <Route path="/stats" element={<Stats />} />
+                <Route path="/reglages" element={<Settings />} />
+                <Route path="/sources" element={<Sources />} />
+                <Route path="/compte" element={<Account />} />
+                <Route path="*" element={<Home />} />
+              </Routes>
+            </ErrorBoundary>
             <Onboarding />
           </Layout>
         }
@@ -87,15 +91,17 @@ function Shell() {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
-      <ScrollTop />
-      <ToastProvider>
-        <LibraryProvider>
-          <UserDataProvider>
-            <Shell />
-          </UserDataProvider>
-        </LibraryProvider>
-      </ToastProvider>
-    </HashRouter>
+    <ErrorBoundary>
+      <HashRouter>
+        <ScrollTop />
+        <ToastProvider>
+          <LibraryProvider>
+            <UserDataProvider>
+              <Shell />
+            </UserDataProvider>
+          </LibraryProvider>
+        </ToastProvider>
+      </HashRouter>
+    </ErrorBoundary>
   </StrictMode>,
 );
