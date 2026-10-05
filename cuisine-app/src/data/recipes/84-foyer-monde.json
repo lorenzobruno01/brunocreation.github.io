@@ -569,7 +569,7 @@
       },
       {
         "id": "riz-rond",
-        "qty": 260,
+        "qty": 250,
         "unit": "g",
         "note": "riz japonais"
       },
@@ -1279,9 +1279,9 @@
     ]
   },
   {
-    "id": "fw-crevettes-cantonaises-sauce-oeuf",
-    "name": "Crevettes à la cantonaise, sauce au porc et à l'œuf, riz jasmin",
-    "description": "Grosses crevettes saisies au wok, nappées d'une sauce cantonaise au porc haché, à l'ail et au gingembre liée à l'œuf en rubans, avec brocoli et riz jasmin.",
+    "id": "fw-wat-dan-hor-crevettes",
+    "name": "Wat dan hor, nouilles de riz saisies, crevettes et sauce cantonaise à l'œuf",
+    "description": "Nouilles de riz larges saisies au wok jusqu'à prendre le goût de fumé, nappées d'une sauce cantonaise au bouillon, au porc haché et aux crevettes liée à l'œuf en rubans, avec brocoli.",
     "emoji": "🦐",
     "category": "plat",
     "mealTypes": [
@@ -1327,12 +1327,12 @@
       },
       {
         "id": "bouillon-volaille",
-        "qty": 250,
+        "qty": 350,
         "unit": "ml"
       },
       {
         "id": "sauce-soja",
-        "qty": 30,
+        "qty": 40,
         "unit": "ml"
       },
       {
@@ -1343,20 +1343,20 @@
       },
       {
         "id": "fecule-mais",
-        "qty": 1,
+        "qty": 1.5,
         "unit": "cas"
       },
       {
         "id": "graisse-canard",
-        "qty": 2,
+        "qty": 3,
         "unit": "cas",
         "note": "saindoux"
       },
       {
-        "id": "riz-blanc",
+        "id": "nouilles-riz",
         "qty": 180,
         "unit": "g",
-        "note": "riz jasmin"
+        "note": "larges (hor fun)"
       },
       {
         "id": "brocoli",
@@ -1367,16 +1367,21 @@
         "id": "sel",
         "qty": 1,
         "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
       }
     ],
     "steps": [
-      "Rincez le riz jasmin 3 fois, puis cuisez-le avec 1,3 fois son volume d'eau salée, 12 min à couvert à feu doux, et laissez reposer 10 min hors du feu.",
-      "Décortiquez les crevettes en gardant la queue, incisez le dos et retirez le boyau. Mélangez le bouillon, la sauce soja, le vin de riz et la fécule.",
+      "Faites tremper les nouilles de riz 20 min dans de l'eau tiède, puis égouttez-les bien.",
+      "Décortiquez les crevettes en gardant la queue, incisez le dos et retirez le boyau. Mélangez le bouillon, 2 c. à soupe de sauce soja, le vin de riz et la fécule.",
       "Coupez le brocoli en fleurettes et faites-le blanchir 3 min à l'eau bouillante salée ; égouttez.",
-      "Saisissez les crevettes 1 min 30 par face dans 1 c. à soupe de saindoux à feu vif dans un wok ; elles doivent juste rosir. Réservez.",
-      "Ajoutez le reste du saindoux et faites sauter le porc haché 3 min, puis l'ail, le gingembre et le blanc des oignons nouveaux 30 s.",
+      "Chauffez le wok à feu très vif avec 1 c. à soupe de saindoux, ajoutez les nouilles et le reste de sauce soja et laissez-les saisir 2 min sans remuer, puis retournez-les 1 min : elles doivent être légèrement grillées par endroits. Répartissez-les dans des assiettes creuses.",
+      "Ajoutez 1 c. à soupe de saindoux et saisissez les crevettes 1 min 30 par face ; réservez. Faites sauter le porc haché 3 min dans le reste de saindoux, puis l'ail, le gingembre et le blanc des oignons nouveaux 30 s.",
       "Versez le mélange au bouillon et portez à ébullition 1 min jusqu'à ce qu'il épaississe ; remettez les crevettes et le brocoli.",
-      "Versez les œufs battus en cercle, attendez 20 s puis remuez doucement pour former des rubans. Parsemez du vert d'oignon nouveau et servez sur le riz."
+      "Versez les œufs battus en cercle, attendez 20 s puis remuez doucement pour former des rubans. Nappez les nouilles de cette sauce, poivrez et parsemez du vert des oignons nouveaux."
     ],
     "tags": [
       "rapide",
@@ -1388,7 +1393,8 @@
     "technique": "wok",
     "flavors": [
       "umami",
-      "iode"
+      "iode",
+      "grille"
     ]
   },
   {
@@ -1779,7 +1785,7 @@
       },
       {
         "id": "lait-coco",
-        "qty": 250,
+        "qty": 230,
         "unit": "ml"
       },
       {
@@ -2327,7 +2333,7 @@
       },
       {
         "id": "beurre-clarifie",
-        "qty": 40,
+        "qty": 35,
         "unit": "g"
       },
       {
@@ -2375,7 +2381,7 @@
       },
       {
         "id": "riz-blanc",
-        "qty": 260,
+        "qty": 240,
         "unit": "g",
         "note": "basmati"
       },
@@ -2555,7 +2561,7 @@
     "ingredients": [
       {
         "id": "porc-echine",
-        "qty": 750,
+        "qty": 720,
         "unit": "g",
         "note": "en gros morceaux"
       },
@@ -2945,7 +2951,7 @@
     "ingredients": [
       {
         "id": "boeuf-plat-de-cote",
-        "qty": 1100,
+        "qty": 1000,
         "unit": "g"
       },
       {
@@ -2992,7 +2998,7 @@
       },
       {
         "id": "manioc",
-        "qty": 400,
+        "qty": 300,
         "unit": "g"
       },
       {
@@ -3566,7 +3572,7 @@
     "ingredients": [
       {
         "id": "agneau-epaule",
-        "qty": 900,
+        "qty": 850,
         "unit": "g",
         "note": "désossée, en cubes de 4 cm"
       },
