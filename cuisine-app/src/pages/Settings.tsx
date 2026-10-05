@@ -5,13 +5,14 @@ import { DEFAULT_PROFILES } from '../domain/micronutrients';
 import { HouseholdEditor } from '../components/Household';
 import { cloudEnabled, useCloud } from '../cloud/sync';
 import { clearIncidents, readIncidents } from '../domGuard';
-import { DIET_PROFILES } from '../domain/digestion';
+import { DIET_BY_ID, DIET_PROFILES, type DietProfileId } from '../domain/digestion';
+import type { IndexedRecipe } from '../domain/types';
 import { Link } from 'react-router-dom';
 import { useToast } from '../components/ui';
 
 export function Settings() {
   const { settings } = useUserData();
-  const { recipes } = useLibrary();
+  const { recipes, allRecipes } = useLibrary();
   const file = useRef<HTMLInputElement>(null);
   const toast = useToast();
   const cloud = useCloud();
@@ -121,6 +122,7 @@ export function Settings() {
             </label>
           );
         })}
+        <DietSummary all={allRecipes} diets={settings.diets ?? ['wapf']} />
         <label className="row nowrap small">
           <input type="checkbox" checked={!!settings.showIncompatible} onChange={(e) => saveSettings({ showIncompatible: e.target.checked })} />
           Afficher quand même les recettes hors de mon approche (signalées par un avertissement)
@@ -221,5 +223,44 @@ function Incidents() {
         </button>
       </div>
     </section>
+  );
+}
+
+/** Approches qui se contredisent (l'une écarte ce que l'autre recommande) */
+const CONFLICTS: Array<[DietProfileId, DietProfileId, string]> = [
+  ['peat', 'anti-inflammatoire', 'Ray Peat écarte les poissons gras que l’approche anti-inflammatoire recommande (oméga-3, vitamine D).'],
+  ['gaps', 'primal', 'GAPS interdit pommes de terre, patate douce et riz, que Primal garde pour l’énergie et la prise de masse.'],
+  ['peat', 'wapf', 'Ray Peat écarte oléagineux et poissons gras, valorisés par Weston A. Price.'],
+];
+
+/** Nombre de recettes restantes, approche la plus restrictive et contradictions */
+function DietSummary({ all, diets }: { all: IndexedRecipe[]; diets: string[] }) {
+  const visible = all.filter((r) => !diets.some((d) => r.incompatible?.[d])).length;
+  // ce que chaque approche retire en plus des autres
+  const cost = diets
+    .map((d) => ({ d, extra: all.filter((r) => r.incompatible?.[d] && !diets.some((o) => o !== d && r.incompatible?.[o])).length }))
+    .sort((a, b) => b.extra - a.extra);
+  const conflicts = CONFLICTS.filter(([a, b]) => diets.includes(a) && diets.includes(b));
+  const color = visible >= 150 ? 'ok' : visible >= 60 ? 'info' : 'danger';
+  return (
+    <div className={`callout small ${color}`} style={{ margin: 0 }}>
+      <strong>
+        → {visible} recette{visible > 1 ? 's' : ''} sur {all.length} compatible{visible > 1 ? 's' : ''} avec votre sélection
+      </strong>
+      {diets.length > 1 && cost[0]?.extra > 0 && (
+        <div>
+          Le plus restrictif : {DIET_BY_ID[cost[0].d as DietProfileId]?.label} (retire {cost[0].extra} recettes à lui seul)
+          {cost[1]?.extra > 0 ? `, puis ${DIET_BY_ID[cost[1].d as DietProfileId]?.label} (${cost[1].extra})` : ''}.
+        </div>
+      )}
+      {conflicts.map(([, , msg]) => (
+        <div key={msg}>⚠️ {msg}</div>
+      ))}
+      {visible < 150 && diets.length > 1 && (
+        <div className="muted">
+          GAPS et pauvre en FODMAP sont des protocoles temporaires (quelques semaines) ; au quotidien, l’association Weston A. Price + anti-inflammatoire + prudent en phytoestrogènes couvre l’essentiel de l’objectif santé.
+        </div>
+      )}
+    </div>
   );
 }
