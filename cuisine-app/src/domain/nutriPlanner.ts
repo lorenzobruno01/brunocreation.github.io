@@ -73,8 +73,17 @@ export interface Eater {
  * énergétique (ex. 3 000 et 2 200 kcal → 1,15 et 0,85 portion d'un plat pour 2).
  */
 export function householdEaters(profiles: NutritionProfile[]): Eater[] {
+  if (profiles.length === 1) return [soloEater(profiles[0])];
   const total = profiles.reduce((s, p) => s + p.kcal, 0) || 1;
   return profiles.map((profile) => ({ profile, portions: (profiles.length * profile.kcal) / total }));
+}
+
+/** Énergie d'une journée type à 1 portion de chaque plat (4 repas de la bibliothèque) */
+export const DAY_KCAL_AT_ONE_PORTION = 2600;
+
+/** Personne seule : sa part est ajustée à son objectif (0,6 à 1,6 portion) */
+export function soloEater(profile: NutritionProfile): Eater {
+  return { profile, portions: Math.round(Math.min(1.6, Math.max(0.6, profile.kcal / DAY_KCAL_AT_ONE_PORTION)) * 100) / 100 };
 }
 
 export interface NutriPlanContext extends PlannerContext {

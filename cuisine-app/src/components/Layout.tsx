@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useUserData } from '../hooks/library';
 import { Sheet } from './ui';
+import { cloudEnabled, useCloud } from '../cloud/sync';
 
 const TABS = [
   { to: '/', label: 'Accueil', icon: '🏠', end: true },
@@ -17,12 +18,14 @@ const MORE = [
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
   { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },
   { to: '/sources', label: 'Sources & méthode nutritionnelle', icon: '📚' },
-  { to: '/reglages', label: 'Réglages & sauvegarde', icon: '⚙️' },
+  { to: '/compte', label: 'Mon compte', icon: '👤' },
+  { to: '/reglages', label: 'Mon profil & réglages', icon: '⚙️' },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
   const [more, setMore] = useState(false);
   const { basket } = useUserData();
+  const cloud = useCloud();
   return (
     <div className="app">
       <header className="topbar">
@@ -43,6 +46,12 @@ export function Layout({ children }: { children: ReactNode }) {
             <Link to="/recettes?focus=1" className="icon-btn" aria-label="Rechercher" style={{ textDecoration: 'none' }}>
               🔎
             </Link>
+            {cloudEnabled && (
+              <Link to="/compte" className="icon-btn" aria-label={cloud.email ? `Compte : ${cloud.email}` : 'Se connecter'} title={cloud.email ?? 'Se connecter'} style={{ textDecoration: 'none', position: 'relative' }}>
+                👤
+                {cloud.email && <span className={`sync-dot ${cloud.status}`} />}
+              </Link>
+            )}
             <button className="icon-btn" aria-label="Menu" onClick={() => setMore(true)}>
               ☰
             </button>

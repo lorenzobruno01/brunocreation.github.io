@@ -18,6 +18,8 @@ Published by GitHub Pages at **https://lorenzobruno01.github.io/brunocreation.gi
 | Nutrition | Every recipe gets a nutrient density index (0–100) and a detailed breakdown: 13 vitamins, 8 minerals, electrolytes, omega-3, fibre and the 9 essential amino acids, as % of each household profile's daily needs. Vitamin and mineral values come from the USDA reference table (SR28) for 298 of the 344 ingredients (see `docs/sources/donnees-nutritionnelles.md`). The weekly planner optimises the four meals of each day to get as close as possible to 100 % of those needs, either for one person or for **both of you together** (same dishes, each person's share sized to their energy target) |
 | Digestion | Every recipe is checked for traditional preparation (soaked oats with acid and rye flour, soaked buckwheat, quinoa, brown rice and lentils, nut limits), seed oils, unfermented soy, flax, oxalates per portion, liver portions and raw-fish safety. Eight selectable eating approaches (Weston A. Price by default, anti-inflammatory, Ray Peat-inspired, GAPS, low-FODMAP, low-oxalate, phytoestrogen-cautious, Primal) filter the whole app. The sourced documentation is readable in the app (Sources page) |
 | Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
+| Profiles | Each person enters height, weight, age, activity and goal (muscle gain, maintenance, fat loss): calorie and protein targets are computed (Mifflin-St Jeor × activity) and drive the planner, portion sizes and every % of daily needs. Several people can share a household |
+| Accounts | Optional free accounts (Supabase, e-mail + password): planning, favourites, history, fridge, pantry, shopping list, added recipes and profile are saved to the account and synced across devices; each friend has their own account and data. Setup: `docs/COMPTES.md` |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
 ## Architecture
@@ -52,9 +54,9 @@ cuisine-app/
 ```
 
 - **Structured, normalised data.** Each recipe references `ingredient_id`s. Aliases (« PDT », « pommes de terre ») point to the same ingredient. Nutrition is computed from the quantities.
-- **Persistence.** Data lives in the browser (IndexedDB). It can be exported and imported as JSON (Settings) to sync both phones.
+- **Persistence.** Data lives in the browser (IndexedDB) first. When signed in, a full copy is stored in the user's row of the `user_data` table (row-level security: each user only sees their own row) and pulled on other devices; it can also be exported and imported as JSON.
 - **Scale.** Recipes are indexed in memory and lists load progressively, which is enough for several thousand recipes. To add recipes, drop a JSON file into `src/data/recipes/` and run the validator.
-- **No paid services.** Everything runs in the browser, with no server, no AI and no API key.
+- **No paid services.** Everything runs in the browser, with no AI and no API key. Accounts are optional and use Supabase's free tier (`src/cloud/`, `supabase/schema.sql`); without them the app works entirely offline.
 
 ## Development
 

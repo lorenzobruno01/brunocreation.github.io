@@ -18,6 +18,9 @@ import { RecipeForm } from './pages/RecipeForm';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
+import { Account } from './pages/Account';
+import { Onboarding } from './components/Onboarding';
+import { initCloud } from './cloud/sync';
 
 // Thème mémorisé (clair / sombre / auto)
 try {
@@ -29,6 +32,9 @@ try {
 
 // Demande au navigateur de ne pas effacer la base locale (recettes ajoutées, planning…)
 navigator.storage?.persist?.().catch(() => {});
+
+// Compte et synchronisation (si activés dans src/cloud/config.ts)
+initCloud();
 
 function ScrollTop() {
   const { pathname } = useLocation();
@@ -68,8 +74,10 @@ function Shell() {
               <Route path="/stats" element={<Stats />} />
               <Route path="/reglages" element={<Settings />} />
               <Route path="/sources" element={<Sources />} />
+              <Route path="/compte" element={<Account />} />
               <Route path="*" element={<Home />} />
             </Routes>
+            <Onboarding />
           </Layout>
         }
       />

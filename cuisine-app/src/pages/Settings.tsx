@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary } from '../hooks/library';
-import { DEFAULT_PROFILES, type NutritionProfile } from '../domain/micronutrients';
+import { DEFAULT_PROFILES } from '../domain/micronutrients';
+import { HouseholdEditor } from '../components/Household';
+import { cloudEnabled, useCloud } from '../cloud/sync';
 import { DIET_PROFILES } from '../domain/digestion';
 import { Link } from 'react-router-dom';
 import { useToast } from '../components/ui';
@@ -11,11 +13,11 @@ export function Settings() {
   const { recipes } = useLibrary();
   const file = useRef<HTMLInputElement>(null);
   const toast = useToast();
+  const cloud = useCloud();
   const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
-  const setProfile = (i: number, patch: Partial<NutritionProfile>) => saveSettings({ profiles: profiles.map((p, k) => (k === i ? { ...p, ...patch } : p)) });
 
   const download = async () => {
-    const json = await exportData(false);
+    const json = await exportData();
     const blob = new Blob([json], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -46,7 +48,19 @@ export function Settings() {
 
   return (
     <div className="page narrow stack" style={{ gap: 18 }}>
-      <h1>⚙️ Réglages</h1>
+      <h1>⚙️ Mon profil & réglages</h1>
+
+      {cloudEnabled && (
+        <Link to="/compte" className="card pad row between" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <span>
+            <strong>👤 {cloud.email ? cloud.email : 'Se connecter / créer un compte'}</strong>
+            <span className="small muted" style={{ display: 'block' }}>
+              {cloud.email ? 'Vos données sont enregistrées dans votre compte et synchronisées sur vos appareils.' : 'Retrouvez votre semaine, vos favoris et votre profil sur tous vos appareils.'}
+            </span>
+          </span>
+          <span>›</span>
+        </Link>
+      )}
 
       <section className="card pad stack">
         <h2 style={{ margin: 0 }}>🏡 Foyer</h2>
@@ -113,43 +127,17 @@ export function Settings() {
       </section>
 
       <section className="card pad stack">
-        <h2 style={{ margin: 0 }}>🔬 Profils nutritionnels</h2>
-        <p className="small muted" style={{ margin: 0 }}>Utilisés pour calculer les % des besoins journaliers (vitamines, minéraux, acides aminés…) sur chaque recette.</p>
-        {profiles.map((p, i) => (
-          <div key={p.id} className="form-grid" style={{ alignItems: 'end' }}>
-            <div className="field">
-              <label>Prénom</label>
-              <input className="input" value={p.name} onChange={(e) => setProfile(i, { name: e.target.value })} />
-            </div>
-            <div className="field">
-              <label>Sexe</label>
-              <select className="select" value={p.sex} onChange={(e) => setProfile(i, { sex: e.target.value as 'homme' | 'femme' })}>
-                <option value="homme">Homme</option>
-                <option value="femme">Femme</option>
-              </select>
-            </div>
-            <div className="field">
-              <label>Poids (kg)</label>
-              <input className="input" type="number" inputMode="numeric" value={p.weight} onChange={(e) => setProfile(i, { weight: Number(e.target.value) || p.weight })} />
-            </div>
-            <div className="field">
-              <label>Objectif kcal / jour</label>
-              <input className="input" type="number" inputMode="numeric" value={p.kcal} onChange={(e) => setProfile(i, { kcal: Number(e.target.value) || p.kcal })} />
-            </div>
-            <div className="field">
-              <label>Protéines (g / kg)</label>
-              <input className="input" type="number" inputMode="decimal" step="0.1" value={p.proteinPerKg} onChange={(e) => setProfile(i, { proteinPerKg: Number(e.target.value) || p.proteinPerKg })} />
-            </div>
-          </div>
-        ))}
-        <p className="small muted" style={{ margin: 0 }}>Repères prise de masse : environ 35–45 kcal/kg et 1,6–2 g de protéines/kg par jour.</p>
+        <h2 style={{ margin: 0 }}>🧍 Mon profil et mon foyer</h2>
+        <p className="small muted" style={{ margin: 0 }}>
+          Taille, poids, âge, activité et objectif servent à calculer vos besoins en calories et en protéines, puis les % de vitamines, minéraux et acides aminés affichés partout. Ajoutez les personnes qui partagent vos repas : le planning « Nous deux » vise 100 % pour chacune.
+        </p>
+        <HouseholdEditor profiles={profiles} />
       </section>
 
-
       <section className="card pad stack">
-        <h2 style={{ margin: 0 }}>💾 Sauvegarde & partage entre nos téléphones</h2>
+        <h2 style={{ margin: 0 }}>💾 Sauvegarde dans un fichier</h2>
         <p className="small muted" style={{ margin: 0 }}>
-          Les données (favoris, historique, planning, garde-manger, liste de courses, recettes ajoutées) sont enregistrées dans ce navigateur. Pour les retrouver sur un autre appareil, exportez un fichier puis importez-le de l’autre côté (fusion sans perte).
+          Les données (favoris, historique, planning, garde-manger, liste de courses, recettes ajoutées, profil) sont enregistrées dans ce navigateur{cloud.email ? ' et dans votre compte' : ''}. Vous pouvez aussi en faire une copie dans un fichier et l’importer ailleurs (fusion sans perte).
         </p>
         <div className="row">
           <button className="btn" onClick={download}>
