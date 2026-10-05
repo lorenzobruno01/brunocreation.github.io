@@ -1,0 +1,3745 @@
+[
+  {
+    "id": "fp-rognons-moutarde-pommes-sautees",
+    "name": "Rognons de veau à la moutarde à l’ancienne, pommes sautées au beurre",
+    "description": "Un petit-déjeuner de bistrot comme on en servait aux Halles : rognons saisis minute, déglacés à la crème et à la moutarde à l’ancienne, avec des pommes de terre dorées au beurre.",
+    "emoji": "🫘",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "rognon",
+        "qty": 300,
+        "unit": "g",
+        "note": "parés, sans le cœur blanc"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "à chair ferme"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas",
+        "note": "à l’ancienne"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "persil",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les pommes de terre en dés de 1,5 cm. Faites-les cuire 15 min à feu moyen dans 20 g de beurre, couvercle entrouvert les 5 premières minutes, en les retournant souvent, jusqu’à ce qu’elles soient dorées et tendres à la pointe du couteau.",
+      "Pendant ce temps, coupez les rognons en morceaux de 2 cm en retirant les parties blanches et nerveuses. Séchez-les soigneusement dans du papier absorbant.",
+      "Chauffez une seconde poêle à feu vif avec le reste du beurre jusqu’à ce qu’il mousse. Saisissez les rognons 2 min en une seule couche, sans remuer la première minute : ils doivent rester rosés au cœur. Réservez-les dans une passoire au-dessus d’un bol (ils rendent un jus amer qu’on jette).",
+      "Dans la même poêle, faites fondre l’échalote ciselée 1 min à feu moyen, déglacez au vin blanc et laissez réduire de moitié (1 min).",
+      "Ajoutez la crème et la moutarde, laissez frémir 1 min jusqu’à ce que la sauce nappe la cuillère, puis remettez les rognons 30 secondes pour les réchauffer sans les recuire.",
+      "Salez, poivrez, parsemez de persil ciselé et servez aussitôt avec les pommes sautées."
+    ],
+    "tags": [
+      "abats",
+      "riche en protéines",
+      "week-end",
+      "sans gluten",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "Les rognons apportent beaucoup de vitamine B12, de sélénium et de fer : un abat doux, idéal pour s’y habituer. Achetez-les très frais, d’un rose clair et sans odeur."
+  },
+  {
+    "id": "fp-hash-coeur-boeuf-panais",
+    "name": "Hash de cœur de bœuf et panais, œufs au plat et ciboule",
+    "description": "Le cœur de bœuf coupé en petits dés et poêlé avec des panais et de la pomme de terre bien dorés, couronné d’œufs au plat : un petit-déjeuner de bûcheron, très riche en fer.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 250,
+        "unit": "g",
+        "note": "paré, en dés de 1 cm"
+      },
+      {
+        "id": "panais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 30,
+        "unit": "g",
+        "note": "ou saindoux"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "fumé"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Épluchez panais et pommes de terre, coupez-les en dés de 1 cm et faites-les précuire 5 min dans l’eau bouillante salée. Égouttez et laissez fumer 2 min pour qu’ils sèchent.",
+      "Chauffez 20 g de graisse dans une grande poêle en fonte à feu moyen-vif. Étalez les légumes en une couche et laissez-les colorer 6 min sans y toucher, puis retournez-les et ajoutez l’oignon émincé ; poursuivez 5 min.",
+      "Poussez les légumes sur le côté, ajoutez le reste de graisse et saisissez les dés de cœur à feu vif 2 à 3 min avec le paprika et le thym effeuillé : ils doivent être bruns dehors et encore rosés dedans. Mélangez le tout, salez, poivrez.",
+      "Creusez quatre puits dans le hash, cassez-y les œufs, couvrez et laissez cuire 3 à 4 min à feu moyen, jusqu’à ce que les blancs soient pris et les jaunes encore coulants.",
+      "Parsemez de ciboule émincée et servez directement dans la poêle."
+    ],
+    "tags": [
+      "abats",
+      "riche en protéines",
+      "prise de masse",
+      "une poêle",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "fume",
+      "grille"
+    ],
+    "tips": "Le cœur est un muscle : il se cuisine comme un steak, mais il est particulièrement riche en coenzyme Q10, en fer et en vitamines B. Ne le cuisez jamais trop, il deviendrait caoutchouteux."
+  },
+  {
+    "id": "fp-oeufs-meurette-pommes-vapeur",
+    "name": "Œufs en meurette au bouillon de bœuf, pommes vapeur",
+    "description": "Le grand classique bourguignon du dimanche matin : des œufs pochés nappés d’une sauce au vin rouge montée au beurre avec lardons et champignons, servis sur des pommes de terre vapeur au lieu des croûtons.",
+    "emoji": "🍷",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 35,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece",
+        "note": "très frais"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 300,
+        "unit": "ml",
+        "note": "de Bourgogne"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "lardons",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "champignon",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les pommes de terre épluchées, coupées en deux, 20 min à la vapeur : la lame d’un couteau doit s’y enfoncer sans résistance.",
+      "Dans une casserole, faites revenir les échalotes ciselées dans 10 g de beurre 3 min à feu moyen. Versez le vin et le bouillon, ajoutez thym et laurier et laissez réduire à gros bouillons 15 à 20 min, jusqu’à ce qu’il ne reste qu’environ 200 ml.",
+      "Pendant ce temps, faites dorer les lardons 5 min à sec dans une poêle, ajoutez les champignons en quartiers et 10 g de beurre, poêlez 5 min à feu vif jusqu’à ce qu’ils soient dorés.",
+      "Filtrez la sauce réduite. Malaxez 10 g de beurre avec la farine de riz, fouettez ce beurre manié dans la sauce frémissante 1 min pour la lier, puis montez-la hors du feu avec le dernier beurre froid. Ajoutez lardons et champignons, salez, poivrez.",
+      "Portez 2 l d’eau et le vinaigre à frémissement (petites bulles, pas de bouillon). Cassez chaque œuf dans une tasse, créez un tourbillon et glissez-le au centre ; pochez 3 min, puis égouttez sur du papier absorbant.",
+      "Disposez les pommes de terre écrasées grossièrement dans des assiettes creuses, posez deux œufs pochés et nappez généreusement de sauce meurette."
+    ],
+    "tags": [
+      "week-end",
+      "réconfortant",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "La sauce peut se préparer la veille et se réchauffer doucement avant d’ajouter le beurre froid. Le bouillon d’os apporte gélatine et minéraux à la sauce."
+  },
+  {
+    "id": "fp-piperade-jambon-bayonne-polenta",
+    "name": "Piperade aux œufs, jambon de Bayonne poêlé et polenta grillée",
+    "description": "Poivrons, tomates et oignons fondus à l’huile d’olive et au piment d’Espelette, dans lesquels on brouille des œufs, avec une tranche de jambon de Bayonne saisie et des tranches de polenta grillées.",
+    "emoji": "🫑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 30,
+    "restTime": 60,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "polenta",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 4,
+        "unit": "tranche",
+        "note": "jambon de Bayonne, tranches épaisses"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 2,
+        "unit": "piece",
+        "note": "un rouge, un vert"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille ou 1 h avant : portez le bouillon à ébullition, versez la polenta en pluie en fouettant et faites cuire 8 à 10 min à feu doux en remuant, jusqu’à ce qu’elle se détache des parois. Ajoutez le beurre, étalez sur 2 cm d’épaisseur dans un plat huilé et laissez prendre au frais au moins 1 h.",
+      "Émincez l’oignon et les poivrons en lanières fines. Faites-les fondre 15 min à feu moyen-doux dans 25 ml d’huile d’olive avec l’ail écrasé, en remuant de temps en temps : ils doivent être très tendres, sans coloration.",
+      "Ajoutez les tomates pelées et concassées et le piment d’Espelette, salez et laissez compoter 8 min jusqu’à ce que l’eau de végétation soit presque évaporée.",
+      "Pendant ce temps, coupez la polenta en rectangles et faites-les griller 3 min par face dans une poêle huilée bien chaude, jusqu’à obtenir une croûte dorée. Saisissez les tranches de jambon 20 secondes de chaque côté dans la même poêle.",
+      "Battez les œufs à la fourchette, versez-les dans la piperade à feu doux et remuez lentement 2 à 3 min : retirez du feu quand ils sont encore crémeux et bien liés aux légumes.",
+      "Servez la piperade avec le jambon poêlé et la polenta grillée, un dernier trait d’huile d’olive et une pincée d’Espelette."
+    ],
+    "tags": [
+      "week-end",
+      "sans gluten",
+      "préparation à l’avance",
+      "familial"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "epice",
+      "umami",
+      "grille"
+    ],
+    "tips": "Les poivrons cuits longuement dans l’huile d’olive libèrent mieux leurs caroténoïdes. Variez avec du maïs nixtamalisé (tortillas de maïs) d’autres jours."
+  },
+  {
+    "id": "fp-frittelle-riz-jambon-parmesan",
+    "name": "Frittelle de riz au jambon et au parmesan, œufs au plat et tomates rôties",
+    "description": "Les restes de riz rond liés à l’œuf et au parmesan, façonnés en galettes et dorées au beurre : croustillantes dehors, fondantes dedans, avec un œuf au plat et des tomates cerises rôties.",
+    "emoji": "🍚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 120,
+        "unit": "g",
+        "note": "cuit la veille (environ 300 g cuit)"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "parmesan",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "jambon-blanc",
+        "qty": 2,
+        "unit": "tranche",
+        "note": "en petits dés"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 12,
+        "unit": "piece"
+      },
+      {
+        "id": "basilic",
+        "qty": 4,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Si le riz n’est pas cuit : faites-le cuire la veille 15 min dans l’eau salée, égouttez et réfrigérez. Le riz froid se façonne bien mieux.",
+      "Mélangez le riz froid avec 2 œufs battus, le parmesan, les dés de jambon, la farine de riz, sel et poivre. La pâte doit tenir quand on la presse dans la main.",
+      "Préchauffez le four à 200 °C. Disposez les tomates cerises sur une plaque, arrosez d’huile d’olive, salez et enfournez 12 min, jusqu’à ce que leur peau se fende.",
+      "Faites mousser 20 g de beurre dans une grande poêle à feu moyen. Déposez 4 grosses cuillerées de pâte, aplatissez-les à 1,5 cm et laissez dorer 4 min sans y toucher, puis retournez-les et comptez 4 min de plus : elles doivent être bien croustillantes.",
+      "Retirez les galettes, ajoutez le reste du beurre et cuisez les 2 derniers œufs au plat 3 min à feu moyen, couvercle posé 1 min pour prendre le dessus du blanc.",
+      "Servez deux galettes par personne, un œuf au plat, les tomates rôties et quelques feuilles de basilic."
+    ],
+    "tags": [
+      "économique",
+      "sans gluten",
+      "familial",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "grille",
+      "lacte"
+    ],
+    "tips": "Recette anti-gaspillage : le riz refroidi développe de l’amidon résistant, bon pour la flore intestinale. Ajoutez-y un reste de légumes cuits."
+  },
+  {
+    "id": "fp-omurice-poulet",
+    "name": "Omurice, omelette roulée sur riz sauté au poulet et à la tomate",
+    "description": "Le petit-déjeuner des cafés de Tokyo : un riz sauté au poulet et à la tomate enveloppé d’une omelette baveuse, nappé d’une sauce tomate au beurre.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "japonaise",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 140,
+        "unit": "g",
+        "note": "cuit la veille"
+      },
+      {
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en dés de 1 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 10,
+        "unit": "ml",
+        "note": "tamari"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire le riz rond 15 min (ou utilisez un reste), étalez-le et laissez-le refroidir au moins 1 h : bien sec, il ne collera pas.",
+      "Dans une poêle, faites fondre 10 g de beurre à feu moyen-vif, ajoutez l’oignon haché et le poulet ; faites dorer 5 min jusqu’à ce que le poulet soit opaque au cœur.",
+      "Ajoutez le riz, le concentré de tomate et la sauce soja, puis sautez 3 min à feu vif en écrasant les grumeaux pour que chaque grain soit rouge et légèrement grillé. Divisez en deux dômes sur les assiettes.",
+      "Faites réduire les tomates concassées 5 min dans une petite casserole avec 5 g de beurre, salez : c’est la sauce.",
+      "Battez 2 œufs et demi avec la moitié du lait et une pincée de sel. Dans une poêle de 20 cm, faites mousser 7 g de beurre à feu moyen, versez les œufs et remuez vivement 30 secondes avec des baguettes, puis laissez prendre 30 secondes : le dessus doit rester baveux.",
+      "Faites glisser l’omelette sur un dôme de riz et recommencez pour la seconde portion. Nappez de sauce tomate et parsemez de ciboule."
+    ],
+    "tags": [
+      "riche en protéines",
+      "familial",
+      "sans gluten",
+      "rapide"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "acidule"
+    ],
+    "tips": "Pour une omelette « tampopo », roulez-la en ballon dans la poêle puis fendez-la sur le riz : elle s’ouvre comme un drap."
+  },
+  {
+    "id": "fp-banh-xeo-crevettes-porc",
+    "name": "Bánh xèo, crêpes croustillantes à la farine de riz, crevettes et porc",
+    "description": "Crêpes vietnamiennes dorées à la farine de riz et au lait de coco, garnies de crevettes, de poitrine de porc et de pousses croquantes, à envelopper dans la laitue avec des herbes et une sauce nuoc-mâm.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "thai-vietnamienne",
+    "prepTime": 25,
+    "cookTime": 25,
+    "restTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-riz",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "lait-coco",
+        "qty": 120,
+        "unit": "ml"
+      },
+      {
+        "id": "eau",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "crevette",
+        "qty": 10,
+        "unit": "piece",
+        "note": "décortiquées"
+      },
+      {
+        "id": "porc-poitrine",
+        "qty": 100,
+        "unit": "g",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-coco",
+        "qty": 20,
+        "unit": "ml"
+      },
+      {
+        "id": "laitue",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "menthe",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "coriandre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sauce-poisson",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Fouettez la farine de riz, le lait de coco, l’eau, le curcuma, une pincée de sel et les verts de ciboule émincés. La pâte doit être très fluide, comme du lait entier. Laissez reposer 30 min.",
+      "Préparez la sauce : mélangez la sauce poisson, le jus du citron vert, le miel, 3 cuillères à soupe d’eau, l’ail écrasé et le piment émincé.",
+      "Dans une poêle antiadhésive de 24 cm, chauffez 1 cuillère à café d’huile de coco à feu vif. Faites saisir un quart du porc 2 min et un quart des crevettes 1 min, avec un peu de blanc de ciboule.",
+      "Remuez la pâte, versez-en une louche en tournant la poêle pour couvrir le fond : elle doit grésiller fort. Couvrez 2 min, puis découvrez, ajoutez un filet d’huile sur les bords et laissez croustiller 3 à 4 min à feu moyen jusqu’à ce que le dessous soit doré et cassant.",
+      "Repliez la crêpe en deux, glissez-la sur une assiette et recommencez trois fois.",
+      "À table, découpez des morceaux de crêpe, enroulez-les dans une feuille de laitue avec menthe et coriandre, et trempez dans la sauce."
+    ],
+    "tags": [
+      "week-end",
+      "sans gluten",
+      "riche en protéines",
+      "familial"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "frais",
+      "umami",
+      "grille"
+    ],
+    "tips": "La farine de riz ne contient pas de gluten : la crêpe tient grâce à la cuisson à feu vif. Une poêle bien chaude est le secret du croustillant."
+  },
+  {
+    "id": "fp-pancakes-chataigne-poires",
+    "name": "Pancakes à la purée de châtaigne, poires poêlées et crème crue",
+    "description": "Des pancakes épais et parfumés à base de châtaignes cuites écrasées, d’œufs et de farine de riz, servis avec des poires dorées au beurre et une cuillerée de crème crue.",
+    "emoji": "🌰",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "chataigne",
+        "qty": 200,
+        "unit": "g",
+        "note": "cuites, sous vide ou au naturel"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 60,
+        "unit": "g",
+        "note": "ou farine de châtaigne"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "poire",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml",
+        "note": "crue"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Mixez les châtaignes avec le lait chaud jusqu’à obtenir une purée lisse, comme une compote épaisse.",
+      "Ajoutez les œufs, la farine de riz, la levure, la vanille et une pincée de sel ; fouettez 30 secondes. La pâte doit napper la cuillère et couler en ruban épais.",
+      "Coupez les poires en quartiers épais. Faites-les dorer 6 min à feu moyen dans 10 g de beurre, en les retournant, puis ajoutez le miel et laissez caraméliser 1 min.",
+      "Chauffez une poêle à feu moyen, graissez-la d’un peu de beurre et versez des petites louches de pâte (10 cm de diamètre). Retournez quand des bulles éclatent en surface et que les bords sont mats, soit après 2 à 3 min, puis cuisez 1 min de plus.",
+      "Empilez les pancakes, ajoutez les poires et leur jus, et une grosse cuillerée de crème crue."
+    ],
+    "tags": [
+      "sans gluten",
+      "week-end",
+      "familial",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "Avec de la farine de châtaigne à la place de la farine de riz, le goût de sous-bois est encore plus prononcé (réduisez alors à 50 g, elle absorbe davantage)."
+  },
+  {
+    "id": "fp-crepes-riz-poulet-estragon",
+    "name": "Crêpes de riz gratinées au poulet, champignons et estragon",
+    "description": "Un brunch de bistrot : des crêpes à la farine de riz roulées autour d’un reste de poulet effiloché, de champignons à la crème et d’estragon, nappées de béchamel et gratinées au comté.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 25,
+    "cookTime": 30,
+    "restTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-riz",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 450,
+        "unit": "ml",
+        "note": "dont 200 ml pour la béchamel"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 1.5,
+        "unit": "piece",
+        "note": "cuits, effilochés (reste de rôti)"
+      },
+      {
+        "id": "estragon",
+        "qty": 6,
+        "unit": "g"
+      },
+      {
+        "id": "champignon",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Fouettez 100 g de farine de riz, les œufs, 250 ml de lait, 5 g de beurre fondu et une pincée de sel. Laissez reposer 30 min : la pâte doit avoir la consistance d’une crème liquide.",
+      "Faites revenir l’échalote ciselée et les champignons émincés dans 10 g de beurre à feu vif 6 min, jusqu’à évaporation totale de leur eau. Ajoutez le poulet effiloché, la moitié de la crème et l’estragon ciselé, salez, poivrez.",
+      "Béchamel : faites fondre 10 g de beurre, ajoutez les 20 g de farine de riz restants, puis versez 200 ml de lait froid en fouettant. Faites épaissir 3 min à feu moyen, ajoutez le reste de crème, la muscade et la moitié du comté.",
+      "Cuisez 4 crêpes dans une poêle beurrée, 1 min 30 par face à feu moyen-vif : elles doivent être souples et dorées par endroits.",
+      "Préchauffez le four à 210 °C. Répartissez la farce poulet-champignons sur les crêpes et roulez-les serré. Rangez-les dans un plat beurré.",
+      "Nappez de béchamel, parsemez du reste de comté et enfournez 15 min, jusqu’à ce que le dessus soit gratiné et bouillonnant."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "familial",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "cremeux",
+      "lacte",
+      "umami"
+    ],
+    "tips": "Les crêpes se préparent la veille, empilées sous un film. La cuisse de poulet, plus grasse que le blanc, reste moelleuse au gratin ; le comté au lait cru apporte calcium et vitamine K2."
+  },
+  {
+    "id": "fp-teurgoule-pommes-crues",
+    "name": "Teurgoule normande au miel, pommes crues et crème fraîche",
+    "description": "Le riz au lait cuit des heures au four à basse température jusqu’à former une peau dorée : on le prépare la veille et on le sert froid avec des quartiers de pomme croquante et de la crème d’Isigny.",
+    "emoji": "🍮",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 300,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 1500,
+        "unit": "ml",
+        "note": "entier, cru si possible"
+      },
+      {
+        "id": "miel",
+        "qty": 60,
+        "unit": "g",
+        "note": "miel de fleurs"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 120,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 150 °C. Dans une terrine haute en terre (2 l), mélangez le riz non rincé, le miel, la cannelle, la vanille et le sel.",
+      "Versez le lait froid et remuez une seule fois.",
+      "Enfournez 1 h à 150 °C, puis baissez à 120 °C et laissez cuire 4 h sans y toucher : une croûte brune se forme, le riz absorbe le lait et devient crémeux. Ne remuez jamais.",
+      "Laissez refroidir à température ambiante puis réfrigérez une nuit.",
+      "Le matin, servez à la louche, avec des quartiers de pomme crue et une cuillerée de crème fraîche."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "économique",
+      "four",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "La cuisson lente concentre les protéines et le calcium du lait. La teurgoule se garde 4 jours au réfrigérateur sous sa croûte."
+  },
+  {
+    "id": "fp-grits-crevettes-cheddar",
+    "name": "Grits au cheddar et crevettes à l’ail, œuf mollet",
+    "description": "Le « shrimp and grits » de Charleston : une bouillie de maïs crémeuse au cheddar et au beurre, surmontée de crevettes sautées aux lardons, à l’ail et au paprika, avec un œuf mollet.",
+    "emoji": "🦐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "polenta",
+        "qty": 100,
+        "unit": "g",
+        "note": "grits ou polenta grossière"
+      },
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "eau",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "cheddar",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "beurre",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "crevette",
+        "qty": 14,
+        "unit": "piece",
+        "note": "décortiquées"
+      },
+      {
+        "id": "lardons",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez le lait et l’eau salés à frémissement, versez la polenta en pluie en fouettant, puis laissez cuire 15 à 20 min à feu doux en remuant souvent : elle doit être crémeuse et tomber de la cuillère en nappe épaisse. Ajoutez un peu d’eau chaude si elle épaissit trop.",
+      "Hors du feu, incorporez le cheddar et 15 g de beurre ; poivrez généreusement.",
+      "Plongez les œufs 6 min 30 dans l’eau bouillante, refroidissez-les sous l’eau froide et écalez-les.",
+      "Faites dorer les lardons 4 min dans une poêle à feu moyen. Ajoutez le reste de beurre, l’ail émincé, le paprika et les crevettes ; saisissez 2 min à feu vif jusqu’à ce qu’elles soient roses et recourbées. Arrosez du jus de citron.",
+      "Versez les grits dans des bols, ajoutez les crevettes et leur jus, l’œuf mollet coupé en deux et la ciboule émincée."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "week-end",
+      "réconfortant"
+    ],
+    "seasons": [],
+    "technique": "mijote",
+    "flavors": [
+      "cremeux",
+      "umami",
+      "fume"
+    ],
+    "tips": "Les crevettes apportent zinc, iode et sélénium. Variez le féculent : le maïs se prête aussi au matin en tortillas."
+  },
+  {
+    "id": "fp-boxty-boudin-noir-pommes",
+    "name": "Boxty irlandais au boudin noir et aux pommes poêlées",
+    "description": "Des galettes irlandaises à base de pomme de terre crue râpée et de purée, liées au babeurre (ici le kéfir) et à la farine de riz, avec du boudin noir grillé et des pommes caramélisées au beurre.",
+    "emoji": "🥔",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 25,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 300,
+        "unit": "g",
+        "note": "moitié cuite en purée, moitié crue râpée"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "kefir",
+        "qty": 80,
+        "unit": "ml",
+        "note": "remplace le babeurre"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "boudin-noir",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire la moitié des pommes de terre 15 min à l’eau salée et écrasez-les en purée. Râpez l’autre moitié crue, pressez-la fortement dans un torchon pour en extraire l’eau.",
+      "Mélangez purée, râpé, farine de riz, levure, œuf et kéfir ; salez, poivrez. La pâte doit être épaisse et tenir à la cuillère.",
+      "Coupez la pomme en quartiers fins et faites-la dorer 6 min dans 10 g de beurre avec le thym, jusqu’à ce qu’elle soit tendre et caramélisée sur les bords.",
+      "Faites mousser 20 g de beurre à feu moyen dans une grande poêle. Déposez 4 cuillerées de pâte aplaties à 1 cm et cuisez 4 à 5 min par face : elles doivent être bien dorées et cuites au centre.",
+      "Pendant ce temps, coupez le boudin en tronçons épais et faites-le griller 3 min par face dans une poêle avec le reste de beurre, sans le percer.",
+      "Servez les boxty avec le boudin et les pommes poêlées."
+    ],
+    "tags": [
+      "week-end",
+      "réconfortant",
+      "abats",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "reconfortant",
+      "grille",
+      "fruite"
+    ],
+    "tips": "Le boudin noir est l’une des meilleures sources de fer héminique ; la pomme acidulée l’allège. Choisissez un boudin artisanal, sans additifs."
+  },
+  {
+    "id": "fp-sardines-grillees-batatas",
+    "name": "Sardines grillées à la portugaise, batatas à murro et salade de tomates",
+    "description": "Le petit-déjeuner du pêcheur de Lisbonne : sardines fraîches grillées au gros sel, pommes de terre écrasées d’un coup de poing arrosées d’huile d’olive à l’ail, et tomates au poivron.",
+    "emoji": "🐟",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 15,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "sardine",
+        "qty": 8,
+        "unit": "piece",
+        "note": "fraîches, vidées"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "petites, avec la peau"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C. Faites cuire les pommes de terre entières 15 min à l’eau salée, égouttez-les, posez-les sur une plaque et écrasez chacune d’un coup de paume. Enfournez-les 15 min jusqu’à ce que la peau craque.",
+      "Pendant ce temps, faites cuire les œufs 9 min dans l’eau bouillante, refroidissez-les et écalez-les.",
+      "Coupez les tomates en quartiers, le poivron en dés et l’oignon rouge en fines lamelles. Assaisonnez avec le vinaigre, 10 ml d’huile, l’origan et du sel.",
+      "Frottez les sardines de gros sel et faites-les griller sous le gril du four très chaud (ou au barbecue) 3 à 4 min par face : la peau doit cloquer et se colorer.",
+      "Faites chauffer le reste de l’huile avec l’ail écrasé 1 min à feu doux et versez-le sur les pommes de terre écrasées.",
+      "Servez les sardines avec les batatas, la salade de tomates et les œufs durs coupés en deux."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "barbecue",
+      "économique",
+      "week-end"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "iode",
+      "grille",
+      "herbace"
+    ],
+    "tips": "La sardine entière est l’un des poissons les plus riches en oméga-3 et en vitamine D, et elle accumule très peu de mercure."
+  },
+  {
+    "id": "fp-kippers-oeufs-poches-tomates",
+    "name": "Kippers au beurre, œufs pochés et tomates grillées",
+    "description": "Les harengs fumés à l’anglaise, simplement chauffés au beurre persillé, avec des œufs pochés, des tomates grillées et des pommes de terre sautées : le petit-déjeuner des hôtels d’Édimbourg.",
+    "emoji": "🐟",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "hareng",
+        "qty": 3,
+        "unit": "piece",
+        "note": "kippers : harengs fumés entiers ouverts"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 35,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les pommes de terre en rondelles de 5 mm et faites-les dorer 15 min dans 15 g de beurre à feu moyen en les retournant à mi-cuisson.",
+      "Coupez les tomates en deux, salez-les et faites-les griller côté chair 6 min sous le gril du four, jusqu’à ce qu’elles soient fondantes et noircies par endroits.",
+      "Posez les kippers sur une plaque, parsemez-les de 15 g de beurre en noisettes et glissez-les sous le gril 4 min : la peau grésille et la chair se détache facilement.",
+      "Portez une casserole d’eau vinaigrée à frémissement. Pochez les œufs un à un 3 min, égouttez-les sur du papier absorbant.",
+      "Servez les kippers arrosés de leur beurre et d’un jus de citron, les œufs pochés parsemés de ciboulette, les tomates et les pommes sautées."
+    ],
+    "tags": [
+      "riche en protéines",
+      "rapide",
+      "sans gluten",
+      "four"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "fume",
+      "iode",
+      "umami"
+    ],
+    "tips": "Le hareng est une source majeure d’oméga-3 et de vitamine D, précieuse en hiver. Ouvrez les fenêtres : l’odeur du fumé est tenace !"
+  },
+  {
+    "id": "fp-yaourt-prunes-gingembre",
+    "name": "Yaourt grec, prunes rôties au gingembre, noix et crème crue",
+    "description": "Des prunes violettes rôties au beurre, au miel et au gingembre frais, servies tièdes sur un yaourt grec épais avec une cuillerée de crème crue, des noix et deux œufs mollets à côté pour tenir la matinée.",
+    "emoji": "🫐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 350,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "prune",
+        "qty": 8,
+        "unit": "piece",
+        "note": "quetsches"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "gingembre",
+        "qty": 10,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "noix",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Coupez les prunes en deux et dénoyautez-les. Rangez-les côté coupé vers le haut dans un plat.",
+      "Faites fondre le beurre avec le miel et le gingembre râpé, versez sur les prunes et enfournez 15 à 18 min : elles doivent être fondantes et rendre un sirop violet.",
+      "Pendant ce temps, faites cuire les œufs 6 min 30 dans l’eau bouillante, refroidissez-les et écalez-les.",
+      "Faites griller les noix concassées 3 min à sec dans une poêle.",
+      "Répartissez le yaourt dans deux bols, ajoutez les prunes tièdes et leur sirop, la crème et les noix. Servez les œufs mollets salés à côté."
+    ],
+    "tags": [
+      "fermenté",
+      "rapide",
+      "sans gluten",
+      "four"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "epice"
+    ],
+    "tips": "Le yaourt entier fermenté apporte probiotiques et calcium ; la graisse du lait aide à absorber les vitamines A et D."
+  },
+  {
+    "id": "fp-kefir-peches-macadamia",
+    "name": "Kéfir épais aux pêches, abricots et noix de macadamia, jaunes d’œufs au miel",
+    "description": "Un bol d’été rafraîchissant : kéfir égoutté pour le rendre crémeux, pêches et abricots bien mûrs, macadamias grillées et une crème de jaunes d’œufs battus au miel et à la vanille.",
+    "emoji": "🍑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 15,
+    "cookTime": 3,
+    "restTime": 240,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "kefir",
+        "qty": 500,
+        "unit": "ml",
+        "note": "de lait entier"
+      },
+      {
+        "id": "peche",
+        "qty": 2,
+        "unit": "piece",
+        "note": "bien mûres"
+      },
+      {
+        "id": "abricot",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "macadamia",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "œufs très frais, bio"
+      },
+      {
+        "id": "miel",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 60,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "La veille ou 4 h avant : versez le kéfir dans une passoire tapissée d’une étamine posée sur un bol et laissez égoutter au réfrigérateur. Il perd environ un tiers de son volume et devient épais comme un yaourt grec.",
+      "Faites dorer les macadamias concassées 3 min à sec dans une poêle à feu moyen.",
+      "Fouettez les jaunes avec le miel, la vanille et la crème 1 min, jusqu’à obtenir une crème mousseuse et pâle.",
+      "Coupez pêches et abricots en quartiers.",
+      "Étalez le kéfir égoutté dans deux bols, versez la crème de jaunes au centre, ajoutez les fruits et les macadamias."
+    ],
+    "tags": [
+      "fermenté",
+      "préparation à l’avance",
+      "sans gluten",
+      "repas froid"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "frais",
+      "acidule"
+    ],
+    "tips": "Le petit-lait égoutté se boit tel quel ou sert à lacto-fermenter des légumes. Les jaunes crus, très frais, conservent intacts leur choline et leurs vitamines liposolubles."
+  },
+  {
+    "id": "fp-masala-omelette-lemon-rice",
+    "name": "Masala omelette roulée et riz au citron aux graines de moutarde",
+    "description": "L’omelette des gares indiennes aux oignons, tomate, piment et coriandre, servie avec un riz basmati parfumé au citron, au ghee, aux graines de moutarde et aux feuilles de curry.",
+    "emoji": "🍋",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "indienne",
+    "prepTime": 15,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "riz-blanc",
+        "qty": 140,
+        "unit": "g",
+        "note": "basmati"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 35,
+        "unit": "g",
+        "note": "ghee"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "graines de moutarde"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "garam-masala",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "noix-coco",
+        "qty": 10,
+        "unit": "g",
+        "note": "râpée"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le riz jusqu’à ce que l’eau soit claire, puis faites-le cuire 12 min à couvert dans 1,5 fois son volume d’eau salée. Laissez reposer 5 min hors du feu.",
+      "Chauffez 15 g de ghee dans une poêle à feu moyen, ajoutez les graines de moutarde : dès qu’elles crépitent (30 secondes), ajoutez le curcuma et la coco. Versez le riz, le jus du citron et mélangez 2 min.",
+      "Battez les œufs avec l’oignon rouge et la tomate finement hachés, le piment, la moitié de la coriandre, le garam masala et du sel.",
+      "Faites chauffer 10 g de ghee dans une poêle de 24 cm à feu moyen. Versez la moitié des œufs, laissez prendre 2 min jusqu’à ce que le dessous soit doré et le dessus encore humide, puis roulez l’omelette sur elle-même. Recommencez.",
+      "Servez l’omelette sur le riz au citron, parsemée du reste de coriandre, avec le yaourt nature salé."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "économique",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "epice",
+      "acidule",
+      "herbace"
+    ],
+    "tips": "Le ghee résiste bien à la chaleur et apporte vitamines A et K2 ; le curcuma se limite ici à une pincée pour rester pauvre en oxalates."
+  },
+  {
+    "id": "fp-huevos-flamenca",
+    "name": "Huevos a la flamenca, œufs au four au chorizo, petits pois et jambon",
+    "description": "Le plat andalou en cassolette : des œufs cuits au four sur un sofrito de tomate, avec chorizo, jambon serrano, petits pois, pommes de terre et poivrons, jaunes encore coulants.",
+    "emoji": "🍅",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 15,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "chorizo",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 3,
+        "unit": "tranche",
+        "note": "serrano"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 60,
+        "unit": "g",
+        "note": "piquillos"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac",
+        "note": "pimentón"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Coupez les pommes de terre en dés de 1 cm et faites-les dorer 12 min dans l’huile d’olive à feu moyen.",
+      "Ajoutez l’oignon et l’ail hachés et le chorizo en rondelles ; poursuivez 4 min jusqu’à ce que l’huile devienne orange.",
+      "Versez les tomates concassées et le paprika, salez légèrement et laissez mijoter 10 min jusqu’à ce que la sauce épaississe. Ajoutez les petits pois les 3 dernières minutes.",
+      "Préchauffez le four à 200 °C. Répartissez la préparation dans deux cassolettes en terre, creusez deux puits dans chacune et cassez-y les œufs.",
+      "Disposez les lamelles de piquillos et le jambon autour des œufs et enfournez 8 à 10 min : les blancs doivent être juste pris et les jaunes encore brillants."
+    ],
+    "tags": [
+      "four",
+      "week-end",
+      "sans gluten",
+      "familial"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "four",
+    "flavors": [
+      "fume",
+      "epice",
+      "umami"
+    ],
+    "tips": "Choisissez un chorizo artisanal au pimentón, sans dextrose ni additifs : 30 g par personne suffisent à parfumer tout le plat."
+  },
+  {
+    "id": "fp-machaca-oeufs-papas",
+    "name": "Machaca con huevo et papas, bœuf séché brouillé aux œufs et pommes de terre au piment",
+    "description": "Le petit-déjeuner des ranchs du nord du Mexique : de la viande de bœuf séchée effilochée, sautée avec tomate, oignon et piment, puis brouillée aux œufs, servie avec des pommes de terre sautées au saindoux et une crème au citron vert.",
+    "emoji": "🌮",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "mexicaine",
+    "prepTime": 15,
+    "cookTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-seche",
+        "qty": 80,
+        "unit": "g",
+        "note": "effilochée finement"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "jalapeño"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 35,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "coriandre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Effilochez la viande séchée en fins filaments avec les doigts (ou au mortier). Coupez les pommes de terre en dés de 1 cm et faites-les dorer 15 min dans 20 g de saindoux à feu moyen, en les retournant souvent, jusqu’à ce qu’elles soient croustillantes ; salez et réservez.",
+      "Faites chauffer le reste du saindoux à feu moyen, ajoutez l’oignon, le piment et la tomate hachés et faites revenir 4 min jusqu’à ce que la tomate se défasse.",
+      "Ajoutez la viande et faites-la revenir 2 min pour qu’elle se réhydrate dans le jus de tomate et grille légèrement.",
+      "Versez les œufs battus, baissez le feu et remuez doucement 2 min : retirez quand ils sont encore moelleux. Goûtez avant de saler, la viande séchée l’est déjà.",
+      "Mélangez la crème avec le jus d’un demi-citron vert et une pincée de sel.",
+      "Servez la machaca sur les pommes de terre, avec la crème au citron vert, la coriandre et des quartiers de citron vert."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "piquant",
+      "frais"
+    ],
+    "tips": "La viande séchée concentre les protéines du bœuf : 40 g par personne suffisent. Les pommes de terre refroidies puis resautées apportent de l’amidon résistant."
+  },
+  {
+    "id": "fp-gyeran-jjim-riz-kimchi",
+    "name": "Gyeran-jjim, flan d’œufs vapeur au bouillon, riz et kimchi",
+    "description": "Le flan d’œufs coréen, gonflé et tremblotant, cuit au bouillon d’anchois et à la ciboule, servi avec un bol de riz blanc, du saumon grillé et du kimchi.",
+    "emoji": "🥚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "coreenne",
+    "prepTime": 10,
+    "cookTime": 20,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "dashi",
+        "qty": 200,
+        "unit": "ml",
+        "note": "ou bouillon d’anchois"
+      },
+      {
+        "id": "sauce-poisson",
+        "qty": 5,
+        "unit": "ml"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-sesame",
+        "qty": 5,
+        "unit": "ml"
+      },
+      {
+        "id": "riz-rond",
+        "qty": 140,
+        "unit": "g"
+      },
+      {
+        "id": "saumon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "kimchi",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "gochugaru",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "algue-nori",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire le riz rond rincé 12 min à couvert dans 1,2 fois son volume d’eau, puis laissez-le gonfler 10 min hors du feu.",
+      "Battez les œufs avec le dashi, la sauce poisson et une pincée de sel, puis filtrez au tamis pour un flan bien lisse. Ajoutez les deux tiers de la ciboule émincée.",
+      "Versez dans un bol résistant à la chaleur, posez-le dans un panier vapeur sur eau frémissante, couvrez et cuisez 12 à 14 min à feu moyen-doux : le flan doit être pris et trembler comme une panna cotta.",
+      "Pendant ce temps, salez le saumon et faites-le cuire 4 min côté peau puis 2 min côté chair dans une poêle chaude : la peau doit être croustillante.",
+      "Arrosez le flan d’huile de sésame, parsemez du reste de ciboule et de gochugaru. Servez avec le riz, le saumon effeuillé, le kimchi et les feuilles de nori."
+    ],
+    "tags": [
+      "fermenté",
+      "riche en protéines",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [],
+    "technique": "vapeur",
+    "flavors": [
+      "umami",
+      "iode",
+      "piquant"
+    ],
+    "tips": "Le kimchi lacto-fermenté apporte des bactéries vivantes : ajoutez-le froid, jamais cuit, pour les préserver."
+  },
+  {
+    "id": "fp-oeufs-marbres-the",
+    "name": "Œufs marbrés au thé noir et à la badiane",
+    "description": "Les œufs des marchés chinois : écalés à moitié fêlés et marinés dans un bouillon de thé, sauce soja et épices, ils prennent un joli motif de marbre et un goût fumé.",
+    "emoji": "🥚",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "chinoise",
+    "prepTime": 10,
+    "cookTime": 30,
+    "restTime": 720,
+    "difficulty": "tres-facile",
+    "servings": 3,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 9,
+        "unit": "piece"
+      },
+      {
+        "id": "the",
+        "qty": 500,
+        "unit": "ml",
+        "note": "thé noir fort (3 sachets)"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 60,
+        "unit": "ml",
+        "note": "tamari"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "g",
+        "note": "badiane : 2 étoiles"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "gingembre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 0.5,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Plongez les œufs dans l’eau bouillante et faites-les cuire 8 min. Refroidissez-les dans l’eau glacée.",
+      "Tapotez chaque coquille avec le dos d’une cuillère pour la fêler sur toute la surface, sans l’enlever.",
+      "Dans une casserole, portez à frémissement le thé, la sauce soja, la badiane, la cannelle, le gingembre en rondelles et le miel. Ajoutez les œufs et laissez frémir 20 min à feu doux.",
+      "Laissez refroidir et réfrigérez les œufs dans leur marinade au moins 12 h : plus ils restent, plus le marbré est marqué.",
+      "Écalez-les au moment de servir, avec des bâtonnets de concombre."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "économique",
+      "lunch box",
+      "riche en protéines",
+      "repas froid"
+    ],
+    "seasons": [],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "epice"
+    ],
+    "tips": "Ils se gardent 4 jours dans la marinade au frais : une collation protéinée toujours prête."
+  },
+  {
+    "id": "fp-stracciatella-romaine",
+    "name": "Stracciatella romaine, bouillon d’os aux œufs filés et parmesan",
+    "description": "La soupe de Pâques de Rome : un bouillon de volaille maison brûlant dans lequel on verse des œufs battus au parmesan et à la muscade, qui forment de délicats lambeaux.",
+    "emoji": "🍲",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "bouillon-volaille",
+        "qty": 600,
+        "unit": "ml",
+        "note": "maison, bien gélatineux"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "parmesan",
+        "qty": 40,
+        "unit": "g",
+        "note": "râpé finement"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece",
+        "note": "zeste"
+      },
+      {
+        "id": "persil",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez le bouillon à frémissement dans une casserole et salez-le.",
+      "Battez les œufs avec le parmesan, la muscade, le zeste de citron et le persil haché.",
+      "Remuez le bouillon en cercle avec une fourchette et versez les œufs en filet continu : ils forment immédiatement des filaments.",
+      "Laissez frémir 1 min sans remuer, puis remuez délicatement une fois pour défaire les lambeaux.",
+      "Servez dans des tasses avec un filet d’huile d’olive et du poivre."
+    ],
+    "tags": [
+      "rapide",
+      "riche en collagène",
+      "sans gluten",
+      "réconfortant",
+      "léger"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Le bouillon d’os maison apporte glycine, gélatine et minéraux, réputés apaiser la digestion."
+  },
+  {
+    "id": "fp-rillettes-saumon-deux-facons",
+    "name": "Rillettes aux deux saumons, crème fraîche et aneth, radis et concombre",
+    "description": "Du saumon frais poché et du saumon fumé effilochés ensemble avec du beurre mou, de la crème fraîche, de l’aneth et du citron, à tartiner sur des rondelles de radis noir et de concombre.",
+    "emoji": "🐟",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 8,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "pavés sans peau"
+      },
+      {
+        "id": "saumon-fume",
+        "qty": 4,
+        "unit": "piece",
+        "note": "tranches"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g",
+        "note": "mou"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "radis",
+        "qty": 12,
+        "unit": "piece",
+        "note": "ou radis noir"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Portez à frémissement le vin blanc et 200 ml d’eau salée. Plongez-y les pavés de saumon et pochez 6 min à feu doux : la chair doit juste s’effeuiller. Laissez refroidir dans le liquide.",
+      "Égouttez le saumon et émiettez-le à la fourchette. Coupez le saumon fumé en petits dés.",
+      "Écrasez le beurre mou avec la crème fraîche, puis incorporez les deux saumons, l’échalote très finement ciselée, l’aneth haché, le zeste et le jus du demi-citron. Poivrez et goûtez avant de saler.",
+      "Tassez dans un bocal et réfrigérez au moins 1 h pour que les rillettes se raffermissent.",
+      "Servez avec des rondelles de radis et de concombre en guise de tartines."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "repas froid",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "cremeux",
+      "herbace"
+    ],
+    "tips": "Les rillettes se gardent 3 jours au frais sous une fine couche de beurre fondu. Le saumon apporte oméga-3 et vitamine D."
+  },
+  {
+    "id": "fp-camembert-roti-thym-pommes",
+    "name": "Camembert au lait cru rôti au thym, pommes croquantes et jambon cru",
+    "description": "Un camembert entier rôti dans sa boîte avec de l’ail, du thym et un filet de miel, à déguster coulant avec des quartiers de pomme et des tranches de jambon cru à tremper.",
+    "emoji": "🧀",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 5,
+    "cookTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 3,
+    "ingredients": [
+      {
+        "id": "camembert",
+        "qty": 1,
+        "unit": "piece",
+        "note": "au lait cru, dans sa boîte en bois"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "miel",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "jambon-cru",
+        "qty": 6,
+        "unit": "tranche"
+      },
+      {
+        "id": "noix",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 190 °C. Retirez le papier du camembert et remettez-le dans sa boîte en bois, sans le couvercle.",
+      "Entaillez la croûte en croisillons, piquez-y de fines lamelles d’ail et les feuilles de thym, poivrez et arrosez de miel.",
+      "Posez la boîte sur une plaque et enfournez 15 min : le cœur doit être entièrement coulant quand on appuie au centre.",
+      "Pendant ce temps, coupez les pommes en quartiers et faites griller les noix 3 min à sec dans une poêle.",
+      "Servez aussitôt le camembert avec les pommes, le jambon et les noix pour y tremper."
+    ],
+    "tags": [
+      "four",
+      "rapide",
+      "sans gluten",
+      "réconfortant",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "cremeux",
+      "fruite"
+    ],
+    "tips": "Un camembert au lait cru moulé à la louche apporte vitamine K2, calcium et ferments vivants."
+  },
+  {
+    "id": "fp-faisselle-fraises-basilic",
+    "name": "Faisselle à la crème, fraises au basilic et au poivre",
+    "description": "Une faisselle bien égouttée arrosée de crème crue, avec des fraises marinées quelques minutes au basilic, au citron, au miel et à un tour de poivre qui réveille le fruit.",
+    "emoji": "🍓",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 0,
+    "restTime": 15,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "fromage-blanc",
+        "qty": 300,
+        "unit": "g",
+        "note": "faisselle au lait entier"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 50,
+        "unit": "ml",
+        "note": "crue"
+      },
+      {
+        "id": "fraise",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "basilic",
+        "qty": 6,
+        "unit": "feuille"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "pistache",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Égouttez la faisselle 10 min dans sa passoire.",
+      "Équeutez les fraises, coupez-les en quatre et mélangez-les avec le jus du quart de citron, le miel, le basilic ciselé et un tour de poivre. Laissez macérer 15 min.",
+      "Concassez grossièrement les pistaches.",
+      "Démoulez la faisselle dans deux coupelles, nappez de crème crue, ajoutez les fraises et leur jus, puis les pistaches."
+    ],
+    "tags": [
+      "fermenté",
+      "rapide",
+      "sans gluten",
+      "léger"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "frais",
+      "lacte"
+    ],
+    "tips": "Les fraises sont très riches en vitamine C et pauvres en oxalates ; la faisselle entière apporte des protéines de caséine qui rassasient longtemps."
+  },
+  {
+    "id": "fp-cocktail-crevettes-raifort",
+    "name": "Cocktail de crevettes, sauce yaourt-raifort et avocat",
+    "description": "Le prawn cocktail des pubs anglais en version maison : crevettes pochées, laitue croquante, avocat et une sauce au yaourt, à la tomate, au raifort et au paprika.",
+    "emoji": "🍤",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 3,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "crevette",
+        "qty": 16,
+        "unit": "piece",
+        "note": "crues décortiquées"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "raifort",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "laitue",
+        "qty": 0.25,
+        "unit": "piece",
+        "note": "cœur de romaine"
+      },
+      {
+        "id": "avocat",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Plongez les crevettes 2 min dans l’eau bouillante salée : elles doivent être roses et fermes. Égouttez-les dans l’eau glacée.",
+      "Montez une petite mayonnaise : fouettez le jaune avec une pincée de sel et ajoutez l’huile d’olive en mince filet jusqu’à ce qu’elle soit ferme.",
+      "Incorporez le yaourt, le concentré de tomate, le raifort et la moitié du jus de citron. La sauce doit être rose et nappante.",
+      "Émincez la laitue, coupez l’avocat en dés et arrosez-le du reste de citron.",
+      "Dressez en verrines : laitue, avocat, crevettes, sauce, et une pincée de paprika."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "frais",
+      "cremeux"
+    ],
+    "tips": "La mayonnaise maison à l’huile d’olive remplace les mayonnaises industrielles à l’huile de colza."
+  },
+  {
+    "id": "fp-scotch-eggs-four",
+    "name": "Scotch eggs au four, œufs mollets en chair à saucisse aux herbes",
+    "description": "Des œufs mollets enrobés de chair à saucisse à la sauge et à la moutarde, roulés dans la farine de riz et cuits au four : croustillants, sans friture ni chapelure.",
+    "emoji": "🥚",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 25,
+    "cookTime": 30,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece",
+        "note": "4 entiers + 1 pour l’enrobage"
+      },
+      {
+        "id": "porc-hache",
+        "qty": 400,
+        "unit": "g",
+        "note": "chair à saucisse"
+      },
+      {
+        "id": "sauge",
+        "qty": 6,
+        "unit": "feuille"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "parmesan",
+        "qty": 30,
+        "unit": "g",
+        "note": "râpé finement"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 15,
+        "unit": "g",
+        "note": "saindoux fondu"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire 4 œufs 6 min dans l’eau bouillante, plongez-les dans l’eau glacée 5 min et écalez-les délicatement.",
+      "Mélangez la chair à saucisse avec la sauge hachée, la moutarde, la muscade et du poivre. Divisez en 4 boules.",
+      "Aplatissez chaque boule en galette de 12 cm entre deux feuilles de papier cuisson, posez un œuf au centre et refermez la chair autour en lissant avec les mains mouillées, sans laisser de trou.",
+      "Préchauffez le four à 200 °C. Roulez les boules dans l’œuf battu, puis dans le mélange farine de riz et parmesan.",
+      "Posez-les sur une plaque, badigeonnez de saindoux fondu et enfournez 25 min, en les retournant à mi-cuisson : la croûte doit être bien dorée et la viande cuite à cœur (75 °C).",
+      "Laissez tiédir 5 min, coupez en deux et servez avec des cornichons."
+    ],
+    "tags": [
+      "four",
+      "lunch box",
+      "riche en protéines",
+      "préparation à l’avance",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "herbace"
+    ],
+    "tips": "Ils se transportent très bien froids. Un jaune d’œuf apporte choline, lutéine et vitamine D."
+  },
+  {
+    "id": "fp-quesadillas-mais-poulet",
+    "name": "Quesadillas de maïs au poulet effiloché, cheddar et salsa de tomate",
+    "description": "Des tortillas de maïs garnies de cuisse de poulet effilochée et de cheddar affiné, dorées à sec jusqu’à ce que le fromage file, avec une salsa crue tomate-coriandre.",
+    "emoji": "🌮",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "mexicaine",
+    "prepTime": 10,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "tortilla-mais",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 1,
+        "unit": "piece",
+        "note": "cuit, effiloché (reste de rôti)"
+      },
+      {
+        "id": "cheddar",
+        "qty": 60,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 0.25,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préparez la salsa : tomate en petits dés, oignon rouge haché, coriandre ciselée, jus de citron vert et sel. Laissez reposer pendant la cuisson.",
+      "Assaisonnez le poulet effiloché avec le cumin et une pincée de sel.",
+      "Sur la moitié de chaque tortilla, répartissez le cheddar et le poulet, puis repliez en demi-lune.",
+      "Faites cuire à sec dans une poêle à feu moyen 2 à 3 min par face, en appuyant avec une spatule : la tortilla doit être dorée et le fromage fondu.",
+      "Coupez en deux et servez avec la salsa et la crème fraîche."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "sans gluten",
+      "une poêle"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "lacte",
+      "frais",
+      "grille"
+    ],
+    "tips": "Idéal pour utiliser un reste de poulet rôti ; le cheddar affiné au lait cru apporte vitamine K2."
+  },
+  {
+    "id": "fp-rillettes-canard-poivre",
+    "name": "Rillettes de canard maison au poivre, cornichons et endives",
+    "description": "Des cuisses de canard confites doucement dans leur graisse avec thym et laurier, puis effilochées et montées à la graisse : à tartiner sur des feuilles d’endive croquantes.",
+    "emoji": "🦆",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 20,
+    "cookTime": 180,
+    "restTime": 720,
+    "difficulty": "facile",
+    "servings": 8,
+    "ingredients": [
+      {
+        "id": "canard-cuisse",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "cac",
+        "note": "concassé"
+      },
+      {
+        "id": "sel",
+        "qty": 12,
+        "unit": "g"
+      },
+      {
+        "id": "endive",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "cornichon",
+        "qty": 100,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "La veille, frottez les cuisses de sel, de thym et d’ail écrasé, et laissez-les au frais 12 h.",
+      "Rincez rapidement les cuisses et séchez-les. Placez-les dans une cocotte avec la graisse, le vin blanc, le laurier et le reste de thym.",
+      "Couvrez et faites confire 3 h au four à 140 °C : la chair doit se détacher de l’os à la fourchette.",
+      "Égouttez les cuisses, retirez peau et os, puis effilochez la chair avec deux fourchettes.",
+      "Incorporez petit à petit 8 cuillères à soupe de graisse de cuisson filtrée et le poivre concassé, en écrasant pour obtenir une texture filandreuse et onctueuse. Goûtez et rectifiez le sel.",
+      "Tassez dans des bocaux, couvrez d’une fine couche de graisse et réfrigérez. Servez à température ambiante sur des feuilles d’endive, avec des cornichons."
+    ],
+    "tags": [
+      "batch cooking",
+      "préparation à l’avance",
+      "mijoté",
+      "sans gluten",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Les rillettes se gardent 3 semaines au frais sous leur graisse. La graisse de canard, riche en acides gras mono-insaturés, est très stable à la cuisson."
+  },
+  {
+    "id": "fp-os-moelle-grenailles",
+    "name": "Os à moelle rôtis, fleur de sel et pommes grenaille",
+    "description": "Des os à moelle rôtis au four jusqu’à ce que la moelle tremble, à déguster à la petite cuillère sur des pommes de terre grenaille écrasées, avec une salade de persil aux câpres.",
+    "emoji": "🦴",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "os-a-moelle",
+        "qty": 2,
+        "unit": "piece",
+        "note": "coupés en canon de 8 cm"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 200,
+        "unit": "g",
+        "note": "grenailles"
+      },
+      {
+        "id": "persil",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "capres",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 10,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "fleur de sel"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les grenailles 15 min dans l’eau salée bouillante.",
+      "Préchauffez le four à 220 °C. Posez les os debout sur une plaque, salez la moelle.",
+      "Enfournez 15 à 18 min : la moelle doit être chaude, translucide et légèrement décollée de l’os, sans fondre entièrement.",
+      "Pendant ce temps, mélangez les feuilles de persil, l’échalote ciselée finement, les câpres, le jus de citron et l’huile d’olive.",
+      "Écrasez légèrement les pommes de terre, étalez la moelle dessus à la cuillère, parsemez de fleur de sel et de poivre, et servez avec la salade de persil."
+    ],
+    "tags": [
+      "abats",
+      "four",
+      "sans gluten",
+      "riche en collagène",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "umami",
+      "herbace"
+    ],
+    "tips": "La moelle apporte des graisses précieuses et de la vitamine K2 ; la salade acide de persil équilibre sa richesse."
+  },
+  {
+    "id": "fp-boulettes-labneh-zaatar",
+    "name": "Boulettes de labneh à l’huile d’olive et au zaatar, concombre et olives",
+    "description": "Du yaourt égoutté 24 h jusqu’à devenir ferme, roulé en petites boules, enrobé de zaatar et conservé dans l’huile d’olive, servi avec concombre, olives et œufs durs.",
+    "emoji": "🫒",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 20,
+    "cookTime": 10,
+    "restTime": 1440,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 1000,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "sel",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "zaatar",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 60,
+        "unit": "ml",
+        "note": "pour couvrir, dont la moitié est consommée"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "olive",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "menthe",
+        "qty": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Mélangez le yaourt avec le sel, versez-le dans une étamine posée dans une passoire et laissez égoutter 24 h au réfrigérateur : il doit devenir ferme comme un fromage frais.",
+      "Les mains huilées, formez des boules de la taille d’une noix.",
+      "Roulez la moitié des boules dans le zaatar et rangez-les toutes dans un bocal ; couvrez d’huile d’olive.",
+      "Faites cuire les œufs 9 min dans l’eau bouillante, refroidissez-les et coupez-les en quartiers.",
+      "Servez quelques boulettes avec un filet de leur huile, le concombre en bâtonnets, les olives, les œufs et la menthe."
+    ],
+    "tags": [
+      "fermenté",
+      "préparation à l’avance",
+      "repas froid",
+      "sans gluten",
+      "lunch box"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "acidule",
+      "herbace",
+      "lacte"
+    ],
+    "tips": "Dans l’huile, les boulettes se gardent 2 semaines au réfrigérateur. Le labneh est très digeste : la fermentation a consommé une grande partie du lactose."
+  },
+  {
+    "id": "fp-pulpo-gallega",
+    "name": "Pulpo a la gallega, poulpe tiède au paprika et pommes de terre",
+    "description": "La tapa des fêtes de Galice : poulpe tendre poché puis tranché sur des rondelles de pommes de terre, arrosé d’huile d’olive, de pimentón et de gros sel.",
+    "emoji": "🐙",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "espagnole",
+    "prepTime": 10,
+    "cookTime": 60,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulpe",
+        "qty": 800,
+        "unit": "g",
+        "note": "congelé puis décongelé, il sera plus tendre"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cac",
+        "note": "pimentón doux et fort"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "gros sel"
+      }
+    ],
+    "steps": [
+      "Portez une grande marmite d’eau à ébullition avec l’oignon et le laurier, sans sel. Tenez le poulpe par la tête et plongez-le 3 fois 5 secondes dans l’eau bouillante pour que les tentacules se recroquevillent, puis immergez-le.",
+      "Faites cuire 45 à 50 min à petits frémissements : une pique doit traverser la base d’un tentacule sans résistance. Laissez-le reposer 10 min dans l’eau.",
+      "Faites cuire les pommes de terre entières avec leur peau dans l’eau du poulpe 20 min, puis épluchez-les et coupez-les en rondelles épaisses.",
+      "Coupez les tentacules aux ciseaux en rondelles de 1 cm.",
+      "Disposez les pommes de terre sur une planche en bois, puis le poulpe ; arrosez d’huile d’olive, saupoudrez de pimentón et de gros sel. Servez tiède."
+    ],
+    "tags": [
+      "riche en protéines",
+      "sans gluten",
+      "week-end",
+      "familial"
+    ],
+    "seasons": [],
+    "technique": "bouilli",
+    "flavors": [
+      "iode",
+      "fume"
+    ],
+    "tips": "Le poulpe est riche en vitamine B12, en fer et en sélénium. Congeler le poulpe avant cuisson attendrit les fibres."
+  },
+  {
+    "id": "fp-flan-chataignes-lait",
+    "name": "Flan de châtaignes au lait entier et au miel",
+    "description": "Un flan rustique et dense de l’Ardèche à base de purée de châtaignes, d’œufs et de lait entier, juste adouci au miel de châtaignier et parfumé à la vanille.",
+    "emoji": "🌰",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 15,
+    "cookTime": 45,
+    "restTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "chataigne",
+        "qty": 400,
+        "unit": "g",
+        "note": "cuites"
+      },
+      {
+        "id": "lait",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "miel",
+        "qty": 80,
+        "unit": "g",
+        "note": "de châtaignier"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 170 °C et beurrez un moule à manqué de 22 cm.",
+      "Faites chauffer les châtaignes 5 min dans le lait, puis mixez jusqu’à obtenir une crème parfaitement lisse.",
+      "Fouettez les œufs avec le miel, la vanille, la crème et le sel, puis ajoutez la crème de châtaignes tiède.",
+      "Versez dans le moule et enfournez 40 à 45 min : le flan doit être pris sur les bords et à peine tremblotant au centre, la lame d’un couteau ressortant presque propre.",
+      "Laissez refroidir puis réfrigérez au moins 2 h avant de couper en parts."
+    ],
+    "tags": [
+      "four",
+      "préparation à l’avance",
+      "sans gluten",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "lacte",
+      "sucre",
+      "reconfortant"
+    ],
+    "tips": "La châtaigne est un féculent sans gluten, riche en potassium et en fibres douces. Le flan se garde 3 jours au frais."
+  },
+  {
+    "id": "fp-bavarois-fraises-miel",
+    "name": "Bavarois aux fraises, crème fouettée et miel",
+    "description": "Un entremets léger et frais : purée de fraises mûres liée à la gélatine et à une crème anglaise au miel, allégée de crème fouettée, et démoulé sur un coulis.",
+    "emoji": "🍓",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 30,
+    "cookTime": 10,
+    "restTime": 360,
+    "difficulty": "intermediaire",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "fraise",
+        "qty": 500,
+        "unit": "g"
+      },
+      {
+        "id": "gelatine",
+        "qty": 6,
+        "unit": "piece",
+        "note": "feuilles de 2 g"
+      },
+      {
+        "id": "lait",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 250,
+        "unit": "ml",
+        "note": "bien froide"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Faites tremper la gélatine 10 min dans l’eau froide. Mixez 400 g de fraises avec le jus du demi-citron.",
+      "Portez le lait à frémissement. Fouettez les jaunes avec 60 g de miel, versez le lait chaud dessus et remettez sur feu doux en remuant à la spatule 4 à 5 min : la crème doit napper la spatule (82 °C) sans bouillir.",
+      "Hors du feu, ajoutez la gélatine essorée, mélangez jusqu’à dissolution, puis incorporez la purée de fraises. Laissez refroidir jusqu’à ce que le mélange commence à épaissir (environ 20 min au frais).",
+      "Fouettez la crème froide en chantilly souple et incorporez-la délicatement à la spatule.",
+      "Versez dans un moule à charlotte rincé à l’eau froide et réfrigérez 6 h.",
+      "Mixez les 100 g de fraises restantes avec le reste du miel. Démoulez le bavarois en plongeant le moule 5 secondes dans l’eau chaude et servez avec le coulis."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "sans gluten",
+      "riche en collagène",
+      "week-end"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "cremeux",
+      "frais"
+    ],
+    "tips": "La gélatine est du collagène pur : elle apporte glycine et proline, utiles aux tissus conjonctifs."
+  },
+  {
+    "id": "fp-clafoutis-abricots-farine-riz",
+    "name": "Clafoutis aux abricots et à la farine de riz, parfum de lavande",
+    "description": "Des abricots bien mûrs pris dans un appareil fondant aux œufs, au lait entier et à la crème, lié à la farine de riz et légèrement parfumé à la lavande et au miel.",
+    "emoji": "🍑",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 40,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "abricot",
+        "qty": 12,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "miel",
+        "qty": 70,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "origan",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "fleurs de lavande séchées"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 180 °C. Beurrez généreusement un plat à gratin de 26 cm.",
+      "Coupez les abricots en deux, dénoyautez-les et rangez-les côté bombé vers le haut.",
+      "Fouettez les œufs avec le miel, puis la farine de riz et le sel. Ajoutez le lait, la crème, la vanille, la lavande et le reste du beurre fondu : la pâte est liquide comme une crêpe.",
+      "Versez sur les abricots et enfournez 35 à 40 min : le clafoutis doit être gonflé, doré et ferme au centre.",
+      "Laissez tiédir 20 min avant de servir : il se tient mieux et ses arômes ressortent."
+    ],
+    "tags": [
+      "four",
+      "familial",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "fruite",
+      "lacte"
+    ],
+    "tips": "La farine de riz donne un clafoutis plus fondant que la farine de blé. Remplacez les abricots par des mirabelles en septembre."
+  },
+  {
+    "id": "fp-souffle-fromage-blanc-citron",
+    "name": "Soufflés chauds au fromage blanc et au citron",
+    "description": "Des soufflés individuels qui montent haut, à base de fromage blanc entier, de jaunes d’œufs, de zeste de citron et de miel, à servir dès la sortie du four.",
+    "emoji": "🍋",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 20,
+    "cookTime": 15,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "fromage-blanc",
+        "qty": 300,
+        "unit": "g",
+        "note": "entier, bien égoutté"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece",
+        "note": "blancs et jaunes séparés"
+      },
+      {
+        "id": "miel",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "framboise",
+        "qty": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C, sole sans ventilation. Beurrez 4 ramequins de 10 cm de bas en haut, avec des traits verticaux.",
+      "Mélangez le fromage blanc avec les jaunes, 35 g de miel, la farine de riz, la vanille, le zeste du citron et 1 cuillère à soupe de jus.",
+      "Montez les blancs avec le sel en neige ferme, ajoutez le reste du miel en fin de fouettage pour les serrer : ils doivent faire un bec ferme.",
+      "Incorporez un tiers des blancs vivement pour détendre, puis le reste délicatement à la spatule en soulevant la masse.",
+      "Remplissez les ramequins à ras, lissez et passez le pouce sur le bord intérieur. Enfournez 12 à 14 min sans jamais ouvrir le four : ils doivent avoir gonflé de 3 cm et être dorés.",
+      "Servez immédiatement avec quelques framboises."
+    ],
+    "tags": [
+      "four",
+      "sans gluten",
+      "week-end",
+      "riche en protéines"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "acidule",
+      "lacte",
+      "sucre"
+    ],
+    "tips": "Le fromage blanc remplace la crème pâtissière : plus de protéines, moins de sucre."
+  },
+  {
+    "id": "fp-zabaione-marsala-figues",
+    "name": "Zabaione au marsala et au miel, figues rôties",
+    "description": "Une crème mousseuse italienne de jaunes d’œufs battus au bain-marie avec du marsala et du miel, versée tiède sur des figues rôties au beurre.",
+    "emoji": "🍷",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 10,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "jaune-oeuf",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 80,
+        "unit": "ml",
+        "note": "marsala"
+      },
+      {
+        "id": "miel",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "figue",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Coupez les figues en croix aux trois quarts, rangez-les dans un plat, glissez une noisette de beurre et quelques feuilles de thym dans chacune et enfournez 12 min.",
+      "Fouettez la crème liquide froide en chantilly souple et réservez au frais.",
+      "Dans un cul-de-poule, fouettez les jaunes avec le miel jusqu’à ce qu’ils blanchissent, puis ajoutez le marsala.",
+      "Posez le cul-de-poule sur une casserole d’eau frémissante sans que le fond touche l’eau, et fouettez sans arrêt 6 à 8 min : la crème triple de volume et forme un ruban épais. Ne dépassez pas 75 °C, elle tournerait.",
+      "Incorporez la chantilly, puis versez le zabaione tiède sur les figues rôties dans des coupes."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "week-end"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "sucre",
+      "cremeux",
+      "fruite"
+    ],
+    "tips": "Les jaunes d’œufs sont l’ingrédient phare de Weston A. Price : vitamines A, D, K2 et choline."
+  },
+  {
+    "id": "fp-pots-creme-cafe-miel",
+    "name": "Petits pots de crème au café et au miel",
+    "description": "Des crèmes cuites tout doucement à la vapeur, lisses et fondantes, parfumées à l’espresso et adoucies au miel, servies froides avec une cuillerée de crème fraîche.",
+    "emoji": "☕",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 25,
+    "restTime": 180,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "cafe",
+        "qty": 60,
+        "unit": "ml",
+        "note": "espresso serré"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 75,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 0.5,
+        "unit": "cac"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 90,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Portez le lait, la crème liquide et l’espresso à frémissement.",
+      "Fouettez les jaunes, l’œuf entier, le miel et la vanille sans faire mousser. Versez le liquide chaud en filet en remuant.",
+      "Filtrez au tamis et écumez la mousse. Répartissez dans 6 petits pots.",
+      "Couvrez chaque pot d’un film résistant à la chaleur ou d’une assiette, posez-les dans un cuit-vapeur sur une eau à peine frémissante et faites cuire 18 à 20 min à feu doux, couvercle entrouvert d’un torchon : les crèmes doivent être prises sur les bords et trembler légèrement au centre.",
+      "Laissez refroidir puis réfrigérez au moins 3 h. Servez avec une cuillerée de crème fraîche."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [],
+    "technique": "vapeur",
+    "flavors": [
+      "lacte",
+      "cremeux",
+      "sucre"
+    ],
+    "tips": "Une cuisson très douce à la vapeur évite les bulles et donne une texture soyeuse. Les crèmes se gardent 3 jours."
+  },
+  {
+    "id": "fp-syllabub-citron-miel",
+    "name": "Syllabub au citron, vin blanc et miel, fraises et mûres",
+    "description": "Une crème fouettée anglaise de l’époque Tudor, parfumée au vin blanc, au zeste de citron et au miel, servie en verrines avec des fruits rouges frais.",
+    "emoji": "🍋",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 0,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "creme-liquide",
+        "qty": 300,
+        "unit": "ml",
+        "note": "entière, bien froide"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 80,
+        "unit": "ml",
+        "note": "moelleux de préférence"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "fraise",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 4,
+        "unit": "feuille"
+      }
+    ],
+    "steps": [
+      "Mélangez le vin blanc, le zeste fin et le jus du citron et 40 g de miel. Laissez infuser 30 min, puis filtrez.",
+      "Fouettez la crème bien froide en versant progressivement le vin parfumé, jusqu’à ce qu’elle forme des pics souples. Arrêtez dès qu’elle tient : trop fouettée, elle tournerait en beurre.",
+      "Incorporez le yaourt grec à la spatule.",
+      "Coupez les fraises et mélangez-les avec le reste du miel.",
+      "Superposez fruits et crème dans des verres et réfrigérez 30 min. Décorez de menthe."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "rapide",
+      "sans gluten",
+      "repas froid"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "frais",
+      "cremeux",
+      "acidule"
+    ],
+    "tips": "Le syllabub se tient plusieurs heures au frais, le vin et le citron stabilisant la crème."
+  },
+  {
+    "id": "fp-crepes-riz-prunes-creme",
+    "name": "Crêpes à la farine de riz, compotée de prunes au miel et crème crue",
+    "description": "Des crêpes fines et dentelées à la farine de riz et au lait entier, cuites au beurre, avec une compotée de prunes vanillée et une cuillerée de crème crue.",
+    "emoji": "🥞",
+    "category": "dessert",
+    "mealTypes": [
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 15,
+    "cookTime": 30,
+    "restTime": 30,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "farine-riz",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "prune",
+        "qty": 12,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 45,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 120,
+        "unit": "ml",
+        "note": "crue"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Fouettez la farine de riz, les œufs, une pincée de sel et le lait jusqu’à obtenir une pâte lisse et fluide. Ajoutez 15 g de beurre fondu et laissez reposer 30 min.",
+      "Coupez les prunes en quartiers et faites-les compoter 12 min à feu doux avec 30 g de miel, la vanille et 2 cuillères à soupe d’eau : elles doivent être fondantes mais garder leur forme.",
+      "Chauffez une poêle à crêpes à feu moyen-vif et graissez-la avec un papier imbibé de beurre. Remuez la pâte (la farine de riz se dépose), versez une petite louche et étalez en tournant.",
+      "Cuisez 1 min 30, jusqu’à ce que les bords soient dorés et se décollent, retournez et comptez 30 secondes.",
+      "Servez les crêpes pliées en quatre, nappées de compotée, avec la crème crue et un filet du reste de miel."
+    ],
+    "tags": [
+      "familial",
+      "sans gluten",
+      "week-end",
+      "économique"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "sucre"
+    ],
+    "tips": "La pâte à la farine de riz est plus fragile : laissez bien saisir la crêpe avant de la retourner."
+  }
+]
