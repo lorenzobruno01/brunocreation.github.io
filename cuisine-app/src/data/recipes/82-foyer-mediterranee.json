@@ -1330,31 +1330,38 @@
       "diner"
     ],
     "seasons": [
-      "ete"
+      "automne",
+      "hiver"
     ],
-    "id": "fm-espetada-madeirense-milho",
-    "name": "Espetada madeirense : brochettes de bœuf au laurier, milho grelhado au chou et salade de tomates",
-    "description": "Gros cubes de bœuf frottés à l’ail, au gros sel et au laurier, grillés sur des brochettes, avec des cubes de polenta au chou poêlés au saindoux et une salade de tomates à l’oignon rouge.",
-    "emoji": "🍢",
+    "id": "fm-rojoes-minhota-chataignes",
+    "name": "Rojões à minhota : porc mariné au vin et au cumin, foie poêlé et châtaignes rôties",
+    "description": "Spécialité du Minho : cubes d’échine marinés une nuit au vin blanc, ail, cumin et pimentão, confits puis dorés dans leur graisse, servis avec un peu de foie poêlé, des châtaignes rôties et des rondelles de citron.",
+    "emoji": "🌰",
     "category": "plat",
     "cuisine": "portugaise",
-    "prepTime": 25,
-    "cookTime": 30,
-    "restTime": 120,
+    "prepTime": 20,
+    "cookTime": 50,
+    "restTime": 720,
     "difficulty": "facile",
     "servings": 2,
     "ingredients": [
       {
-        "id": "boeuf-steak",
-        "qty": 450,
+        "id": "porc-echine",
+        "qty": 400,
         "unit": "g",
-        "note": "rumsteck ou cœur de rumsteck, en cubes de 4 cm"
+        "note": "en cubes de 4 cm, avec leur gras"
       },
       {
-        "id": "laurier",
-        "qty": 8,
-        "unit": "feuille",
-        "note": "fraîches de préférence"
+        "id": "foie-agneau",
+        "qty": 100,
+        "unit": "g",
+        "note": "foie de porc, en dés"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 200,
+        "unit": "ml",
+        "note": "vinho verde de préférence"
       },
       {
         "id": "ail",
@@ -1362,46 +1369,45 @@
         "unit": "gousse"
       },
       {
-        "id": "polenta",
-        "qty": 120,
-        "unit": "g"
-      },
-      {
-        "id": "chou-vert",
-        "qty": 150,
-        "unit": "g",
-        "note": "chou frisé ou couve, en fines lanières"
-      },
-      {
-        "id": "graisse-canard",
-        "qty": 2,
-        "unit": "cas",
-        "note": "saindoux"
-      },
-      {
-        "id": "tomate",
-        "qty": 300,
-        "unit": "g"
-      },
-      {
-        "id": "oignon-rouge",
-        "qty": 60,
-        "unit": "g"
-      },
-      {
-        "id": "origan",
+        "id": "cumin",
         "qty": 1,
         "unit": "cac"
       },
       {
-        "id": "vinaigre-cidre",
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "graisse-canard",
         "qty": 1,
         "unit": "cas",
-        "note": "vinaigre de vin"
+        "note": "saindoux"
+      },
+      {
+        "id": "chataigne",
+        "qty": 300,
+        "unit": "g",
+        "note": "cuites, sous vide ou rôties"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "laitue",
+        "qty": 150,
+        "unit": "g"
       },
       {
         "id": "huile-olive",
-        "qty": 3,
+        "qty": 1,
         "unit": "cas"
       },
       {
@@ -1416,27 +1422,27 @@
       }
     ],
     "steps": [
-      "Écrasez l’ail avec 1 c. à café de gros sel au mortier, frottez-en les cubes de bœuf avec 1 c. à soupe d’huile et 4 feuilles de laurier froissées. Laissez mariner 2 h au frais.",
-      "Portez 500 ml d’eau salée à ébullition, ajoutez le chou et cuisez 3 min, puis versez la polenta en pluie en fouettant. Cuisez 10 min à feu doux en remuant (ou selon le paquet), versez dans un plat huilé sur 2 cm d’épaisseur et laissez prendre au moins 1 h au frais.",
-      "Préparez la salade : tomates en quartiers, oignon rouge en fines lamelles, origan, vinaigre, 2 c. à soupe d’huile et du sel.",
-      "Enfilez les cubes de bœuf sur 2 brochettes (ou de vraies branches de laurier épluchées), en intercalant les feuilles de laurier restantes. Sortez-les 20 min avant la cuisson.",
-      "Grillez les brochettes 8 à 10 min sur un barbecue ou une poêle-gril très chaude, en les tournant d’un quart toutes les 2 min : croûte brune, cœur rosé.",
-      "Pendant ce temps, coupez la polenta en cubes de 3 cm et dorez-les 4 min par face dans le saindoux chaud à feu moyen. Servez les brochettes avec les cubes croustillants et la salade."
+      "La veille : mélangez le porc avec le vin blanc, l’ail écrasé, le cumin, le paprika, le laurier, 1 c. à café de sel et du poivre. Couvrez et laissez mariner une nuit (12 h) au réfrigérateur.",
+      "Égouttez la viande en gardant la marinade. Dans une cocotte, faites fondre le saindoux à feu moyen et mettez-y le porc ; laissez-le rendre sa graisse et dorer 10 min en remuant.",
+      "Versez la marinade, couvrez et laissez confire 30 min à feu doux : le liquide s’évapore presque entièrement et la viande devient tendre.",
+      "Retirez le couvercle, montez le feu et laissez les cubes caraméliser 5 min dans leur graisse en les retournant : ils doivent être brun foncé et brillants.",
+      "Poussez la viande sur le côté, ajoutez les dés de foie et saisissez-les 2 min à feu vif. Ajoutez les châtaignes et faites-les rouler 3 min dans les sucs pour les dorer.",
+      "Servez avec des rondelles de citron à presser et la laitue assaisonnée d’huile d’olive et d’une pincée de sel."
     ],
     "tags": [
-      "barbecue",
-      "riche en protéines",
+      "préparation à l’avance",
+      "abats",
+      "réconfortant",
       "sans gluten",
-      "sportif",
-      "week-end"
+      "calorique"
     ],
-    "technique": "grill",
+    "technique": "braise",
     "flavors": [
-      "grille",
-      "herbace",
-      "umami"
+      "epice",
+      "umami",
+      "reconfortant"
     ],
-    "tips": "À Madère, la polenta au chou (milho frito) est frite à grande huile ; ici elle est simplement dorée au saindoux. Le bœuf apporte fer héminique, zinc, créatine et B12."
+    "tips": "Les châtaignes du Minho remplacent les pommes de terre : un féculent sans gluten, doux et riche en potassium. Le petit morceau de foie suffit à apporter fer, vitamine A et B12."
   },
   {
     "mealTypes": [
