@@ -1,0 +1,3639 @@
+[
+  {
+    "id": "fn-cullen-skink",
+    "name": "Cullen skink, soupe écossaise au haddock et œuf mollet",
+    "description": "La grande soupe de pêcheurs de Moray Firth : haddock fumé poché dans le lait, pommes de terre fondantes et poireau, finie à la crème et coiffée d'un œuf mollet.",
+    "emoji": "🥣",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "haddock",
+        "qty": 400,
+        "unit": "g",
+        "note": "fumé, en un ou deux morceaux"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 300,
+        "unit": "g",
+        "note": "farineuses, en dés de 1,5 cm"
+      },
+      {
+        "id": "poireau",
+        "qty": 100,
+        "unit": "g",
+        "note": "le blanc, émincé"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g",
+        "note": "ciselée"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une sauteuse, posez le haddock avec le laurier, couvrez avec le lait et 200 ml d'eau. Portez juste au frémissement à feu moyen, puis laissez pocher 5 min hors du feu, couvert : la chair doit s'effeuiller facilement.",
+      "Retirez le haddock à l'écumoire, ôtez peau et arêtes et effeuillez la chair en gros flocons. Gardez le lait de pochage filtré.",
+      "Dans une cocotte, faites fondre le beurre à feu doux et faites suer l'oignon et le poireau 8 min sans coloration, jusqu'à ce qu'ils soient translucides.",
+      "Ajoutez les pommes de terre et le lait de pochage. Laissez frémir 18 à 20 min à feu doux, couvercle entrouvert, jusqu'à ce que la pointe d'un couteau traverse les dés sans résistance.",
+      "Pendant ce temps, plongez les œufs 6 min 30 dans l'eau bouillante, puis dans l'eau glacée ; écalez-les.",
+      "Écrasez grossièrement un tiers des pommes de terre contre la paroi pour lier la soupe. Ajoutez la crème et les deux tiers du haddock, réchauffez 3 min sans bouillir. Poivrez, salez peu (le haddock est salé).",
+      "Servez dans des bols creux, avec le reste du haddock, un œuf mollet coupé en deux et la ciboulette."
+    ],
+    "tags": [
+      "réconfortant",
+      "riche en protéines",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "fume",
+      "cremeux",
+      "iode"
+    ],
+    "tips": "Le poisson fumé et le lait entier apportent protéines complètes, iode et calcium ; le jaune d'œuf ajoute vitamine D et choline."
+  },
+  {
+    "id": "fn-karjalanpaisti",
+    "name": "Karjalanpaisti, ragoût carélien aux trois viandes",
+    "description": "Le ragoût de Carélie : bœuf, porc et agneau cuits très longtemps au four avec quatre-épices et laurier, presque sans liquide, jusqu'à s'effilocher. Pommes de terre au beurre et airelles.",
+    "emoji": "🍲",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 25,
+    "cookTime": 240,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boeuf-paleron",
+        "qty": 700,
+        "unit": "g",
+        "note": "en cubes de 4 cm"
+      },
+      {
+        "id": "porc-echine",
+        "qty": 600,
+        "unit": "g",
+        "note": "en cubes de 4 cm"
+      },
+      {
+        "id": "agneau-epaule",
+        "qty": 500,
+        "unit": "g",
+        "note": "désossée, en cubes de 4 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "carotte",
+        "qty": 150,
+        "unit": "g",
+        "note": "en tronçons"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "cac",
+        "note": "quatre-épices (piment de la Jamaïque) en grains"
+      },
+      {
+        "id": "laurier",
+        "qty": 3,
+        "unit": "feuille"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 1000,
+        "unit": "g",
+        "note": "fermes"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "airelles",
+        "qty": 150,
+        "unit": "g",
+        "note": "ou confiture d'airelles peu sucrée"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g",
+        "note": "pour les pommes de terre"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 160 °C. Salez les cubes de viande et mélangez les trois viandes dans une grande cocotte en fonte.",
+      "Glissez entre les morceaux les oignons, les carottes, les grains de quatre-épices, quelques grains de poivre et le laurier. Versez le bouillon : il doit arriver aux deux tiers de la viande, pas plus.",
+      "Couvrez hermétiquement et enfournez 3 h sans remuer. Le jus doit frémir doucement ; ajoutez un peu d'eau chaude s'il descend sous le tiers.",
+      "Retirez le couvercle, mélangez une fois et poursuivez 1 h à 160 °C : la surface dore et la viande se défait à la fourchette.",
+      "35 min avant la fin, faites cuire les pommes de terre épluchées 20 à 25 min dans l'eau salée frémissante ; égouttez et enrobez-les du beurre et de l'aneth.",
+      "Servez le ragoût dans des assiettes creuses avec son jus, les pommes de terre et une cuillerée d'airelles."
+    ],
+    "tags": [
+      "mijoté",
+      "batch cooking",
+      "familial",
+      "réconfortant",
+      "riche en protéines",
+      "riche en collagène"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "fruite"
+    ],
+    "tips": "Encore meilleur réchauffé le lendemain ; se congèle 3 mois. Trois viandes mijotées longuement : protéines variées, collagène des morceaux gélatineux et graisses animales stables."
+  },
+  {
+    "id": "fn-wildgulasch-sterz",
+    "name": "Wildgulasch styrien aux airelles, Sterz de maïs au beurre",
+    "description": "Goulasch de chevreuil ou de sanglier au vin rouge, champignons des bois et paprika, adouci d'airelles et de crème aigre, servi avec un Sterz de maïs émietté au beurre comme en Styrie.",
+    "emoji": "🦌",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 150,
+    "difficulty": "facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "gibier",
+        "qty": 1400,
+        "unit": "g",
+        "note": "épaule de chevreuil ou de sanglier, en cubes de 4 cm"
+      },
+      {
+        "id": "lardons",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 4,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "champignon-forestier",
+        "qty": 300,
+        "unit": "g",
+        "note": "cèpes, girolles ou pleurotes"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "clous de girofle écrasés"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "airelles",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 40,
+        "unit": "g",
+        "note": "ou saindoux"
+      },
+      {
+        "id": "polenta",
+        "qty": 360,
+        "unit": "g",
+        "note": "semoule de maïs grossière"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "eau",
+        "qty": 1400,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Épongez la viande. Dans une cocotte, faites fondre 30 g de graisse à feu vif et saisissez le gibier en trois fois, 4 min par fournée, jusqu'à ce qu'il soit bien bruni. Réservez.",
+      "Baissez à feu moyen, faites dorer les lardons 3 min, ajoutez les oignons et laissez-les fondre 12 min jusqu'à ce qu'ils soient blonds et caramélisés.",
+      "Hors du feu, ajoutez le paprika et le concentré de tomate, mélangez 30 s, puis versez le vin rouge en grattant les sucs. Remettez sur le feu et réduisez 3 min.",
+      "Remettez la viande, ajoutez le bouillon, le laurier, le thym et le girofle. Couvrez et laissez mijoter 2 h à feu très doux : la viande doit se couper à la cuillère.",
+      "Faites sauter les champignons dans le reste de graisse 6 min à feu vif. Ajoutez-les au goulasch avec la moitié des airelles 15 min avant la fin.",
+      "Sterz : portez l'eau salée à ébullition, versez la polenta en pluie et remuez 2 min. Couvrez et laissez gonfler 15 min à feu très doux. Faites mousser le beurre dans une grande poêle, ajoutez la polenta et émiettez-la à la fourchette 8 min à feu moyen, jusqu'à obtenir des grumeaux dorés.",
+      "Hors du feu, liez le goulasch avec la crème. Servez avec le Sterz et le reste des airelles."
+    ],
+    "tags": [
+      "mijoté",
+      "week-end",
+      "batch cooking",
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "fruite",
+      "reconfortant"
+    ],
+    "tips": "Le gibier est une viande maigre, riche en fer et en zinc, nourrie à l'herbe ; la crème et la graisse de canard apportent l'énergie qu'il n'a pas."
+  },
+  {
+    "id": "fn-tafelspitz-apfelkren",
+    "name": "Tafelspitz viennois, Apfelkren et sauce à la ciboulette",
+    "description": "Le bœuf bouilli des cafés viennois : gîte poché des heures avec os à moelle et racines, servi dans son bouillon, avec un raifort râpé à la pomme, une sauce froide à la ciboulette et des pommes de terre rissolées.",
+    "emoji": "🥩",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 35,
+    "cookTime": 200,
+    "difficulty": "facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "boeuf-jarret",
+        "qty": 1500,
+        "unit": "g",
+        "note": "gîte, aiguillette ou pointe de culotte (Tafelspitz), en une pièce"
+      },
+      {
+        "id": "os-a-moelle",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "poireau",
+        "qty": 150,
+        "unit": "g",
+        "note": "le vert compris"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "coupé en deux, sans peau"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "eau",
+        "qty": 3500,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "acidulée"
+      },
+      {
+        "id": "raifort",
+        "qty": 60,
+        "unit": "g",
+        "note": "racine fraîche râpée"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "de deux œufs durs + un cru"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 800,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Posez l'oignon côté coupé dans une poêle sèche à feu vif 5 min, jusqu'à ce qu'il soit noirci : c'est lui qui colore le bouillon.",
+      "Dans un grand faitout, portez l'eau à ébullition, plongez le bœuf et les os à moelle (ainsi saisi, le bœuf reste juteux). Écumez 10 min, puis ajoutez l'oignon brûlé, le laurier, une dizaine de grains de poivre et 1 c. à soupe de sel.",
+      "Laissez frémir à tout petits bouillons 2 h 30, couvercle entrouvert. Ajoutez carotte, céleri-rave et poireau en gros morceaux pour les 45 dernières minutes. Le bœuf est prêt quand une fourchette y entre et en ressort sans accrocher.",
+      "Apfelkren : râpez finement les pommes pelées, arrosez aussitôt de jus de citron, mélangez avec le raifort et une pincée de sel.",
+      "Sauce ciboulette : écrasez les jaunes durs avec le jaune cru, incorporez la crème fraîche, la ciboulette ciselée, sel, poivre et un trait de jus de citron.",
+      "Cuisez les pommes de terre 15 min à l'eau, coupez-les en tranches épaisses et faites-les rissoler 12 min dans le beurre à feu moyen, jusqu'à ce qu'elles soient dorées.",
+      "Tranchez le bœuf à contre-fil en tranches de 1 cm. Servez-le dans des assiettes creuses avec un peu de bouillon, les légumes, la moelle sur les pommes de terre, l'Apfelkren et la sauce ciboulette."
+    ],
+    "tags": [
+      "week-end",
+      "familial",
+      "riche en collagène",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver",
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "piquant",
+      "frais"
+    ],
+    "tips": "Gardez le bouillon : servi d'abord en entrée en tasse, il apporte collagène, glycine et minéraux des os ; le reste se congèle."
+  },
+  {
+    "id": "fn-pyttipanna-jaune-oeuf",
+    "name": "Pytt i panna au bœuf et au kassler, œufs au plat et cornichons",
+    "description": "Le hachis poêlé suédois : petits dés de bœuf, de porc fumé et de pommes de terre dorés au beurre jusqu'au croustillant, coiffés d'œufs au plat, avec des cornichons aigres.",
+    "emoji": "🍳",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner",
+      "petit-dejeuner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 30,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-steak",
+        "qty": 300,
+        "unit": "g",
+        "note": "rumsteck ou restes de rôti, en dés de 1 cm"
+      },
+      {
+        "id": "porc-fume",
+        "qty": 150,
+        "unit": "g",
+        "note": "kassler, en dés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g",
+        "note": "fermes, en dés de 1 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en petits dés"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g",
+        "note": "cornichons aigres ou lactofermentés"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire les dés de pommes de terre 4 min dans l'eau bouillante salée, égouttez et laissez-les sécher 5 min à l'air.",
+      "Dans une grande poêle en fonte, faites mousser 25 g de beurre à feu moyen-vif. Étalez les pommes de terre en une couche et laissez-les dorer 10 min sans trop remuer, en les retournant toutes les 3 min.",
+      "Poussez-les sur le côté, ajoutez l'oignon et 10 g de beurre, faites-le blondir 4 min.",
+      "Ajoutez le bœuf et le kassler, montez à feu vif et faites sauter 4 min : le bœuf doit être saisi et encore rosé à cœur. Salez légèrement, poivrez généreusement, mélangez le tout.",
+      "Dans une autre poêle, faites cuire les œufs au plat dans le reste du beurre 3 min à feu moyen, jusqu'à ce que le blanc soit pris et le jaune coulant.",
+      "Répartissez le hachis dans les assiettes, posez deux œufs sur chaque portion, parsemez de ciboulette et servez avec les cornichons."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "riche en protéines",
+      "économique",
+      "prise de masse",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "grille",
+      "acidule"
+    ],
+    "tips": "Recette idéale pour recycler un reste de rôti ou de pot-au-feu. Les jaunes d'œufs coulants apportent vitamines A et D, les cornichons lactofermentés des bactéries vivantes."
+  },
+  {
+    "id": "fn-serca-duszone-smietana",
+    "name": "Serca duszone, cœur de bœuf braisé à la crème aigre et aux cornichons",
+    "description": "Cœur de bœuf mijoté à la polonaise avec lardons, champignons et oignons, sauce à la crème aigre relevée de cornichons et d'aneth, pommes de terre vapeur.",
+    "emoji": "🫀",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 105,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "coeur-boeuf",
+        "qty": 900,
+        "unit": "g",
+        "note": "paré (sans gras ni vaisseaux), en lanières de 1 cm"
+      },
+      {
+        "id": "lardons",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "champignon",
+        "qty": 300,
+        "unit": "g",
+        "note": "en quartiers"
+      },
+      {
+        "id": "carotte",
+        "qty": 100,
+        "unit": "g",
+        "note": "râpée"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee",
+        "note": "quatre-épices"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "cornichon",
+        "qty": 80,
+        "unit": "g",
+        "note": "en petits dés"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Rincez le cœur, épongez-le soigneusement et retirez les parties nerveuses. Taillez-le en lanières fines : coupé fin, il reste tendre.",
+      "Dans une cocotte, faites dorer les lardons 4 min à feu moyen. Ajoutez 20 g de beurre, montez à feu vif et saisissez le cœur en deux fois, 2 min par fournée. Réservez.",
+      "Faites fondre les oignons 8 min à feu moyen dans la cocotte, ajoutez la carotte et les champignons et laissez-les rendre leur eau 6 min.",
+      "Remettez le cœur et les lardons, ajoutez paprika, quatre-épices et laurier, versez le bouillon. Couvrez et laissez mijoter 1 h 15 à feu très doux, à peine frémissant.",
+      "Délayez la farine de riz dans la crème, versez dans la cocotte et laissez épaissir 5 min à feu doux en remuant. Ajoutez les cornichons et l'aneth, rectifiez sel et poivre.",
+      "Pendant la fin de cuisson, faites cuire les pommes de terre 25 min à la vapeur, enrobez-les du reste de beurre et servez avec le cœur."
+    ],
+    "tags": [
+      "abats",
+      "riche en protéines",
+      "réconfortant",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "cremeux",
+      "acidule",
+      "umami"
+    ],
+    "tips": "Le cœur est un muscle : texture de bœuf maigre, mais bien plus riche en coenzyme Q10, fer, B12 et sélénium. Un abat facile pour commencer."
+  },
+  {
+    "id": "fn-zunge-madeira",
+    "name": "Langue de bœuf sauce madère aux champignons, pommes de terre au beurre",
+    "description": "La langue pochée longuement puis tranchée et nappée d'une sauce madère brillante aux champignons et échalotes, comme dans les brasseries allemandes.",
+    "emoji": "👅",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 200,
+    "restTime": 60,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "langue-boeuf",
+        "qty": 1200,
+        "unit": "g",
+        "note": "une langue entière"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "piqué de 2 clous de girofle"
+      },
+      {
+        "id": "carotte",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "clous"
+      },
+      {
+        "id": "eau",
+        "qty": 3000,
+        "unit": "ml"
+      },
+      {
+        "id": "champignon",
+        "qty": 300,
+        "unit": "g",
+        "note": "émincés"
+      },
+      {
+        "id": "echalote",
+        "qty": 2,
+        "unit": "piece",
+        "note": "ciselées"
+      },
+      {
+        "id": "vin-rouge",
+        "qty": 150,
+        "unit": "ml",
+        "note": "madère"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites dégorger la langue 1 h dans l'eau froide, puis rincez-la.",
+      "Mettez-la dans un faitout avec l'eau froide, l'oignon piqué, la carotte, le laurier et 1 c. à soupe de sel. Portez à ébullition, écumez, puis laissez frémir 2 h 45 à couvert : la pointe d'un couteau doit entrer sans résistance dans la partie épaisse.",
+      "Sortez la langue, plongez-la 1 min dans l'eau froide et retirez la peau épaisse tant qu'elle est chaude (elle part en tirant à partir d'une incision). Filtrez et gardez 400 ml du bouillon de cuisson.",
+      "Sauce : faites fondre 25 g de beurre et dorez les échalotes et les champignons 7 min à feu vif. Saupoudrez de farine de riz, mélangez 1 min, versez le madère, réduisez de moitié (2 min) puis ajoutez le bouillon réservé. Laissez réduire 10 min à feu moyen jusqu'à ce que la sauce nappe la cuillère, puis ajoutez la crème.",
+      "Pendant ce temps, faites cuire les pommes de terre 20 min à l'eau salée, égouttez et roulez-les dans le reste du beurre et la ciboulette.",
+      "Tranchez la langue en biais en tranches de 1 cm, réchauffez-les 5 min dans la sauce frémissante et servez avec les pommes de terre."
+    ],
+    "tags": [
+      "abats",
+      "week-end",
+      "riche en protéines",
+      "réconfortant",
+      "préparation à l’avance",
+      "riche en collagène"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "umami",
+      "cremeux"
+    ],
+    "tips": "La langue se poche la veille et se garde 3 jours au frais dans son bouillon. Morceau gras et fondant, riche en zinc, fer et vitamine B12."
+  },
+  {
+    "id": "fn-foie-agneau-bacon-colcannon",
+    "name": "Foie d'agneau au bacon et sauce à l'oignon, colcannon",
+    "description": "Un classique des pubs irlandais : foie d'agneau saisi rosé, bacon croustillant, sauce brune aux oignons fondus, et colcannon, purée au chou et aux oignons nouveaux beurrée.",
+    "emoji": "🥓",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "foie-agneau",
+        "qty": 300,
+        "unit": "g",
+        "note": "en tranches de 1 cm"
+      },
+      {
+        "id": "bacon",
+        "qty": 6,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés finement"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g",
+        "note": "farineuses"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 200,
+        "unit": "g",
+        "note": "chou frisé émincé"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Colcannon : cuisez les pommes de terre épluchées 20 min à l'eau salée. Faites tomber le chou 5 min dans 10 g de beurre à feu moyen avec 2 c. à soupe d'eau, à couvert.",
+      "Chauffez le lait avec les oignons nouveaux 3 min. Écrasez les pommes de terre, incorporez le lait aux oignons, le chou et 15 g de beurre. Poivrez et gardez au chaud.",
+      "Dans une grande poêle, faites griller le bacon 4 min à feu moyen jusqu'à ce qu'il soit croustillant. Réservez-le, gardez la graisse.",
+      "Dans cette graisse, ajoutez 10 g de beurre et faites fondre les oignons avec le thym 12 min à feu moyen-doux, jusqu'à ce qu'ils soient bruns et sucrés. Saupoudrez de farine de riz, versez le bouillon et laissez réduire 4 min. Réservez la sauce.",
+      "Essuyez la poêle, chauffez le reste du beurre à feu vif. Saisissez le foie épongé et salé 1 min 30 par face : il doit rester rosé au centre.",
+      "Servez le foie nappé de sauce à l'oignon, le bacon dessus, et un dôme de colcannon creusé d'une noisette de beurre."
+    ],
+    "tags": [
+      "abats",
+      "rapide",
+      "riche en protéines",
+      "réconfortant",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ],
+    "tips": "Le foie est l'aliment le plus dense qui soit : vitamine A, B12, folates, fer et cuivre. Une portion de 150 g par semaine suffit."
+  },
+  {
+    "id": "fn-dublin-coddle",
+    "name": "Dublin coddle aux saucisses, bacon et pommes de terre",
+    "description": "Le plat des samedis soir dublinois : saucisses et bacon étuvés lentement avec des couches d'oignons et de pommes de terre dans un bouillon de volaille, jusqu'à ce que tout soit fondant.",
+    "emoji": "🍲",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "saucisse-toulouse",
+        "qty": 6,
+        "unit": "piece",
+        "note": "saucisses de porc pur"
+      },
+      {
+        "id": "bacon",
+        "qty": 12,
+        "unit": "piece",
+        "note": "en lanières de 3 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 760,
+        "unit": "g",
+        "note": "farineuses, en rondelles épaisses"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 600,
+        "unit": "ml"
+      },
+      {
+        "id": "thym",
+        "qty": 4,
+        "unit": "brin"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 150 °C.",
+      "Dans une cocotte, faites dorer les saucisses entières 6 min à feu moyen en les retournant, puis le bacon 3 min. Réservez, laissez la graisse dans la cocotte.",
+      "Coupez les saucisses en tronçons de 4 cm. Dans la cocotte hors du feu, alternez couches d'oignons, de pommes de terre, de saucisses et de bacon, en salant peu et en poivrant chaque couche. Terminez par des pommes de terre.",
+      "Glissez le thym et le laurier, versez le bouillon chaud : il doit arriver juste sous la dernière couche.",
+      "Couvrez et enfournez 1 h 30. Retirez le couvercle et poursuivez 20 min pour dorer le dessus : les pommes de terre du fond doivent avoir épaissi le bouillon.",
+      "Parsemez de persil et servez dans des assiettes creuses avec le jus."
+    ],
+    "tags": [
+      "mijoté",
+      "familial",
+      "économique",
+      "réconfortant",
+      "four",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "reconfortant",
+      "fume",
+      "umami"
+    ],
+    "tips": "Choisissez des saucisses de boucher 100 % porc. Avec un bouillon d'os maison, le jus devient gélatineux et nourrissant."
+  },
+  {
+    "id": "fn-gravlax-hovmastarsas",
+    "name": "Gravlax maison, sauce hovmästar et pommes de terre à l'aneth",
+    "description": "Saumon mariné 48 h au sel, au miel, à l'aneth et au poivre, tranché fin et servi avec la sauce suédoise moutarde-aneth, des pommes de terre tièdes et un concombre à la crème.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 30,
+    "cookTime": 20,
+    "restTime": 2880,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "saumon",
+        "qty": 800,
+        "unit": "g",
+        "note": "un filet avec la peau, qualité très fraîche"
+      },
+      {
+        "id": "sel",
+        "qty": 40,
+        "unit": "g",
+        "note": "gros sel, pour la marinade"
+      },
+      {
+        "id": "miel",
+        "qty": 50,
+        "unit": "g",
+        "note": "30 g pour la marinade, 20 g pour la sauce"
+      },
+      {
+        "id": "aneth",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "cac",
+        "note": "concassé"
+      },
+      {
+        "id": "moutarde",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 700,
+        "unit": "g",
+        "note": "nouvelles"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 100,
+        "unit": "ml"
+      }
+    ],
+    "steps": [
+      "Sécurité : congelez le filet de saumon au moins 24 h à −20 °C (parasites), puis décongelez-le une nuit au réfrigérateur.",
+      "Mélangez le gros sel, 30 g de miel et le poivre concassé. Hachez 30 g d'aneth avec les tiges.",
+      "Coupez le filet en deux dans la largeur. Étalez la moitié du mélange salé sur la chair des deux morceaux, couvrez d'aneth, et refermez-les chair contre chair. Emballez serré dans du film, posez dans un plat avec un poids de 1 kg.",
+      "Laissez mariner 48 h au réfrigérateur en retournant le paquet toutes les 12 h et en jetant le liquide rendu.",
+      "Sauce hovmästar : fouettez la moutarde, 20 g de miel et le vinaigre, puis versez l'huile en filet en fouettant jusqu'à obtenir une sauce épaisse. Ajoutez le reste de l'aneth ciselé.",
+      "Pelez le concombre en rayures, émincez-le très finement, salez 10 min, pressez puis mélangez avec la crème fraîche.",
+      "Faites cuire les pommes de terre 18 min à l'eau salée et enrobez-les de beurre. Grattez la marinade du saumon, tranchez-le en biais très finement et servez avec la sauce, les pommes de terre tièdes et le concombre."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "riche en protéines",
+      "week-end",
+      "sans gluten",
+      "repas froid"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "cru",
+    "flavors": [
+      "frais",
+      "herbace",
+      "iode"
+    ],
+    "tips": "Le gravlax se garde 5 jours au frais, tranché au fur et à mesure. Saumon non cuit : ses oméga-3 et sa vitamine D restent intacts."
+  },
+  {
+    "id": "fn-kedgeree-maquereau-fume",
+    "name": "Kedgeree au maquereau fumé, œufs mollets et petits pois",
+    "description": "Le riz anglo-indien de l'époque victorienne : riz basmati au beurre et au curry doux, gros flocons de maquereau fumé, œufs mollets, petits pois et citron.",
+    "emoji": "🍛",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner",
+      "petit-dejeuner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 15,
+    "cookTime": 25,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "maquereau-fume",
+        "qty": 250,
+        "unit": "g",
+        "note": "filets, sans peau"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 140,
+        "unit": "g",
+        "note": "basmati, rincé"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "garam-masala",
+        "qty": 2,
+        "unit": "cac",
+        "note": "curry doux"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "cardamome",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "petits-pois",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 40,
+        "unit": "ml"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "coriandre",
+        "qty": 10,
+        "unit": "g",
+        "note": "ou ciboulette"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire le riz avec le laurier dans 280 ml d'eau salée, 12 min à couvert à feu doux, puis laissez reposer 5 min hors du feu.",
+      "Plongez les œufs 7 min dans l'eau bouillante, refroidissez-les à l'eau glacée et écalez-les.",
+      "Dans une grande sauteuse, faites fondre le beurre à feu moyen et faites blondir l'oignon 7 min. Ajoutez curry, curcuma et cardamome, mélangez 1 min jusqu'à ce que les épices embaument.",
+      "Ajoutez les petits pois et 2 c. à soupe d'eau, couvrez 3 min. Ajoutez le riz et mélangez délicatement pour l'enrober de beurre épicé.",
+      "Incorporez la crème fraîche et le maquereau effeuillé en gros morceaux, réchauffez 2 min sans écraser.",
+      "Servez avec les œufs coupés en quartiers, la coriandre ciselée et des quartiers de citron."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "une poêle",
+      "sans gluten",
+      "lunch box"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "fume",
+      "epice",
+      "iode"
+    ],
+    "tips": "Le maquereau est l'un des poissons les plus riches en oméga-3 et en vitamine D, et il reste peu contaminé car petit et à cycle court."
+  },
+  {
+    "id": "fn-brathering-bratkartoffeln",
+    "name": "Brathering, harengs poêlés marinés au vinaigre, Bratkartoffeln au lard",
+    "description": "Spécialité de la Baltique : harengs frais dorés au beurre puis marinés un jour dans un vinaigre épicé aux oignons rouges, servis froids avec des pommes de terre sautées au lard.",
+    "emoji": "🐟",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 30,
+    "restTime": 1440,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "hareng",
+        "qty": 6,
+        "unit": "piece",
+        "note": "harengs frais vidés, ou filets"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre-clarifie",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "eau",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en rondelles fines"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "clous + quelques grains de quatre-épices"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "graines de moutarde"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 360,
+        "unit": "g",
+        "note": "cuites la veille"
+      },
+      {
+        "id": "lardons",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 30,
+        "unit": "g",
+        "note": "ou saindoux"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Marinade : portez à ébullition le vinaigre, l'eau, le miel, le laurier, le girofle, les graines de moutarde et 1 c. à café de sel. Ajoutez l'oignon rouge, laissez frémir 1 min et refroidissez complètement.",
+      "Salez et poivrez les harengs, roulez-les dans la farine de riz en tapotant l'excédent.",
+      "Chauffez le beurre clarifié à feu moyen-vif et faites dorer les harengs 3 min par face, jusqu'à ce que la peau soit croustillante et la chair opaque jusqu'à l'arête.",
+      "Rangez-les dans un plat creux, versez la marinade froide dessus pour les couvrir, filmez et laissez mariner au moins 24 h au réfrigérateur.",
+      "Le jour du repas, coupez les pommes de terre en rondelles. Faites fondre les lardons 3 min dans une poêle en fonte, ajoutez la graisse et les pommes de terre en une couche, et laissez dorer 12 min à feu moyen sans remuer, puis 8 min en les retournant.",
+      "Ajoutez l'oignon émincé les 5 dernières minutes. Servez les harengs froids égouttés avec les oignons rouges de la marinade et les Bratkartoffeln brûlantes."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "riche en protéines",
+      "repas froid",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "acidule",
+      "iode",
+      "grille"
+    ],
+    "tips": "Les harengs marinés se gardent 5 jours au frais. Le hareng de la Baltique est riche en oméga-3, en vitamine D et en sélénium."
+  },
+  {
+    "id": "fn-plankstek-duchesse-bearnaise",
+    "name": "Plankstek, steak sur planche, pommes duchesse et béarnaise",
+    "description": "Le grand classique des restaurants suédois : un steak grillé servi sur une planche de chêne entourée d'une bordure de pommes duchesse dorées, d'asperges, de tomates rôties et de béarnaise.",
+    "emoji": "🥩",
+    "category": "plat",
+    "mealTypes": [
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 35,
+    "cookTime": 35,
+    "difficulty": "intermediaire",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-steak",
+        "qty": 360,
+        "unit": "g",
+        "note": "rumsteck ou faux-filet épais de 3 cm"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 4,
+        "unit": "piece",
+        "note": "1 pour la duchesse, 3 pour la béarnaise"
+      },
+      {
+        "id": "beurre",
+        "qty": 110,
+        "unit": "g",
+        "note": "30 g duchesse, 80 g béarnaise"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "echalote",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselée"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "vin-blanc",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "estragon",
+        "qty": 5,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "asperge",
+        "qty": 200,
+        "unit": "g",
+        "note": "vertes"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "coupées en deux"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les pommes de terre épluchées 20 min à l'eau salée, égouttez et séchez-les 2 min sur le feu. Passez-les au presse-purée, incorporez 30 g de beurre, 1 jaune et la muscade. Mettez dans une poche à douille cannelée.",
+      "Préchauffez le four à 220 °C. Sur une planche à steak (trempée 1 h dans l'eau) ou une plaque, pochez une bordure de purée en rosaces. Posez les tomates salées à l'intérieur. Enfournez 15 min, jusqu'à ce que la duchesse soit dorée sur les arêtes.",
+      "Béarnaise : réduisez l'échalote avec le vinaigre, le vin blanc et la moitié de l'estragon à feu moyen jusqu'à 1 c. à soupe de liquide. Hors du feu, ajoutez les 3 jaunes et 1 c. à soupe d'eau, fouettez au bain-marie frémissant 4 min jusqu'à une mousse épaisse.",
+      "Incorporez le beurre fondu tiède en filet en fouettant. Ajoutez le reste d'estragon, salez. Gardez tiède (pas chaud) au bain-marie éteint.",
+      "Cuisez les asperges 4 min à l'eau bouillante salée.",
+      "Saisissez le steak salé dans une poêle en fonte très chaude, 3 min par face pour une cuisson saignante, puis laissez-le reposer 5 min. Posez-le au centre de la planche avec les asperges, nappez de béarnaise et servez aussitôt."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "four",
+      "sans gluten",
+      "calorique"
+    ],
+    "seasons": [
+      "printemps"
+    ],
+    "technique": "four",
+    "flavors": [
+      "umami",
+      "cremeux",
+      "herbace"
+    ],
+    "tips": "Hors saison des asperges, utilisez des haricots verts ou des petits pois. Les jaunes d'œufs et le beurre de la béarnaise apportent vitamines A, D, K2 et choline."
+  },
+  {
+    "id": "fn-fiskesuppe-bergen",
+    "name": "Fiskesuppe de Bergen au cabillaud, saumon et crevettes",
+    "description": "La soupe de poisson crémeuse du port de Bergen : racines en julienne, cabillaud, saumon et crevettes pochés dans un fumet lié aux jaunes d'œufs et à la crème, avec un trait de vinaigre.",
+    "emoji": "🐟",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 25,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "cabillaud",
+        "qty": 600,
+        "unit": "g",
+        "note": "dos, en gros cubes"
+      },
+      {
+        "id": "saumon",
+        "qty": 300,
+        "unit": "g",
+        "note": "sans peau, en cubes"
+      },
+      {
+        "id": "crevette",
+        "qty": 200,
+        "unit": "g",
+        "note": "décortiquées"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 1000,
+        "unit": "ml",
+        "note": "maison avec les arêtes"
+      },
+      {
+        "id": "carotte",
+        "qty": 120,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "poireau",
+        "qty": 200,
+        "unit": "g",
+        "note": "en fines lanières"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 350,
+        "unit": "g",
+        "note": "en petits dés"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande casserole, faites fondre le beurre à feu doux et faites suer carotte, céleri-rave et poireau 6 min sans coloration.",
+      "Versez le fumet, ajoutez les pommes de terre et laissez frémir 12 min, jusqu'à ce qu'elles soient tendres.",
+      "Ajoutez la crème et le vinaigre, portez au frémissement. Plongez le cabillaud et le saumon, laissez pocher 4 min à feu très doux, puis les crevettes 1 min.",
+      "Fouettez les jaunes dans un bol avec deux louches de soupe chaude, puis reversez dans la casserole hors du feu en remuant doucement : la soupe épaissit légèrement. Ne la laissez plus bouillir.",
+      "Rectifiez sel et poivre, parsemez de ciboulette et servez immédiatement dans des assiettes chaudes."
+    ],
+    "tags": [
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "iode",
+      "cremeux",
+      "acidule"
+    ],
+    "tips": "Trois produits de la mer pour un éventail complet d'iode, de sélénium, de B12 et d'oméga-3 ; le fumet maison d'arêtes apporte des minéraux."
+  },
+  {
+    "id": "fn-schweinshaxe-choucroute-crue-knodel",
+    "name": "Schweinshaxe rôti, salade de choucroute crue et knödel de pommes de terre",
+    "description": "Jarret de porc bavarois mijoté puis rôti jusqu'à ce que la couenne craque, jus aux oignons, quenelles de pommes de terre et salade de choucroute crue à la pomme et au carvi.",
+    "emoji": "🍖",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 40,
+    "cookTime": 180,
+    "difficulty": "intermediaire",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-jarret",
+        "qty": 1300,
+        "unit": "g",
+        "note": "poids de chair : 2 jarrets arrière d'environ 1,2 kg avec l'os"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "ail",
+        "qty": 4,
+        "unit": "gousse"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 2,
+        "unit": "cac",
+        "note": "carvi"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 60,
+        "unit": "g",
+        "note": "fécule de pomme de terre"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "choucroute",
+        "qty": 400,
+        "unit": "g",
+        "note": "crue, non pasteurisée"
+      },
+      {
+        "id": "pomme",
+        "qty": 1,
+        "unit": "piece",
+        "note": "acidulée, en julienne"
+      },
+      {
+        "id": "oignon-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé finement"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 30,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Frottez les jarrets de sel, de 1 c. à café de carvi écrasé et d'ail. Pochez-les 1 h dans l'eau frémissante salée, puis égouttez et entaillez la couenne en losanges au couteau bien aiguisé.",
+      "Préchauffez le four à 180 °C. Posez les jarrets sur les oignons dans un plat, versez le bouillon et enfournez 1 h 30 en arrosant toutes les 20 min. Montez à 230 °C les 15 dernières minutes, sans arroser : la couenne doit gonfler et craquer.",
+      "Knödel : cuisez les pommes de terre en robe 25 min, épluchez-les chaudes et passez-les au presse-purée. Laissez tiédir, puis mélangez avec la fécule, l'œuf, la muscade et du sel jusqu'à une pâte souple. Formez 8 boules à mains mouillées.",
+      "Pochez les knödel 18 min dans l'eau salée à peine frémissante : ils remontent puis restent en surface.",
+      "Salade : mélangez la choucroute crue égouttée (non rincée), la pomme, l'oignon rouge, le reste du carvi, l'huile d'olive et du poivre.",
+      "Dégraissez le jus du plat, écrasez-y les oignons, ajoutez la moutarde et laissez réduire 3 min. Servez les jarrets avec le jus, les knödel et la choucroute crue."
+    ],
+    "tags": [
+      "week-end",
+      "four",
+      "riche en collagène",
+      "fermenté",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "roti",
+    "flavors": [
+      "grille",
+      "acidule",
+      "umami"
+    ],
+    "tips": "La choucroute crue, jamais chauffée, garde ses bactéries lactiques vivantes et sa vitamine C ; le jarret et sa couenne apportent du collagène."
+  },
+  {
+    "id": "fn-szekelygulyas",
+    "name": "Székelygulyás, porc mijoté à la choucroute, paprika et crème aigre",
+    "description": "Le goulasch de Szeged qui n'est pas un goulasch : échine de porc fondante, choucroute et paprika doux mijotés ensemble, liés à la crème aigre et parfumés d'aneth et de carvi.",
+    "emoji": "🥘",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 120,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "porc-echine",
+        "qty": 1400,
+        "unit": "g",
+        "note": "en cubes de 4 cm"
+      },
+      {
+        "id": "choucroute",
+        "qty": 800,
+        "unit": "g",
+        "note": "crue, égouttée et rincée une fois"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "ail",
+        "qty": 3,
+        "unit": "gousse"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cas",
+        "note": "doux de Hongrie"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "carvi"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 500,
+        "unit": "ml"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 40,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une cocotte, faites fondre la graisse à feu moyen et laissez fondre les oignons 10 min jusqu'à ce qu'ils soient dorés. Ajoutez l'ail 1 min.",
+      "Hors du feu (le paprika brûle vite), ajoutez le paprika et le carvi, mélangez, puis ajoutez la viande et le concentré de tomate. Remettez à feu moyen 5 min en remuant pour enrober la viande.",
+      "Versez le bouillon, ajoutez le laurier, salez légèrement. Couvrez et laissez mijoter 45 min à feu doux.",
+      "Ajoutez la choucroute, mélangez et poursuivez 1 h à couvert à feu très doux, jusqu'à ce que la viande se défasse et que la choucroute soit fondante.",
+      "Cuisez les pommes de terre épluchées 25 min à la vapeur.",
+      "Mélangez les deux tiers de la crème avec deux louches de jus chaud, puis versez dans la cocotte et chauffez 3 min sans bouillir. Servez avec les pommes de terre, une cuillerée de crème et l'aneth ciselé."
+    ],
+    "tags": [
+      "mijoté",
+      "batch cooking",
+      "fermenté",
+      "familial",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "cremeux",
+      "acidule",
+      "epice"
+    ],
+    "tips": "Meilleur réchauffé ; se congèle très bien. Pour garder des ferments vivants, servez à côté un peu de choucroute crue non cuite."
+  },
+  {
+    "id": "fn-lecso-saucisse-fumee-oeufs",
+    "name": "Lecsó à la saucisse fumée et aux œufs, riz au paprika",
+    "description": "La ratatouille hongroise : poivrons et tomates fondus au saindoux avec du lard et du paprika, saucisse fumée en rondelles et œufs brouillés mollement dedans, sur un riz blanc.",
+    "emoji": "🫑",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 20,
+    "cookTime": 35,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "poivron-rouge",
+        "qty": 3,
+        "unit": "piece",
+        "note": "jaunes et rouges, en lanières"
+      },
+      {
+        "id": "tomate",
+        "qty": 300,
+        "unit": "g",
+        "note": "mûres, en dés"
+      },
+      {
+        "id": "saucisse-morteau",
+        "qty": 250,
+        "unit": "g",
+        "note": "saucisse fumée, en rondelles"
+      },
+      {
+        "id": "lardons",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 15,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites cuire le riz 12 min à couvert dans 240 ml d'eau salée avec une pincée de paprika, puis laissez reposer 5 min.",
+      "Dans une sauteuse, faites fondre les lardons dans le saindoux 4 min à feu moyen. Ajoutez l'oignon et faites-le blondir 5 min.",
+      "Ajoutez les rondelles de saucisse et faites-les dorer 3 min. Hors du feu, saupoudrez le paprika et mélangez.",
+      "Ajoutez les poivrons, remettez à feu moyen et laissez fondre 10 min en remuant. Ajoutez les tomates, salez, et laissez compoter 10 min jusqu'à ce que le jus ait presque disparu.",
+      "Battez les œufs avec du sel, versez-les sur le lecsó et remuez doucement à feu doux 2 min : ils doivent rester crémeux.",
+      "Servez aussitôt sur le riz."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "économique",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "fume",
+      "epice",
+      "umami"
+    ],
+    "tips": "En plein été, doublez la part de tomates et de poivrons ; ils apportent caroténoïdes et vitamine C, mieux absorbés grâce au gras du lard."
+  },
+  {
+    "id": "fn-kapusniak-travers-fumes",
+    "name": "Kapuśniak, soupe polonaise de choucroute aux travers fumés",
+    "description": "Grande soupe d'hiver polonaise : travers et porc fumé mijotés avec la choucroute, carotte et pommes de terre, parfumée de quatre-épices et de carvi, finie à la crème aigre et à l'aneth.",
+    "emoji": "🥣",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 110,
+    "difficulty": "tres-facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "porc-travers",
+        "qty": 800,
+        "unit": "g",
+        "note": "idéalement fumés, coupés entre les os"
+      },
+      {
+        "id": "porc-fume",
+        "qty": 400,
+        "unit": "g",
+        "note": "kassler, en dés"
+      },
+      {
+        "id": "choucroute",
+        "qty": 600,
+        "unit": "g",
+        "note": "crue, avec un peu de son jus"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "carotte",
+        "qty": 150,
+        "unit": "g",
+        "note": "en rondelles"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "ail",
+        "qty": 2,
+        "unit": "gousse"
+      },
+      {
+        "id": "laurier",
+        "qty": 3,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "quatre-épices en grains"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "carvi"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 2000,
+        "unit": "ml"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 30,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans un grand faitout, couvrez les travers avec le bouillon, portez à ébullition et écumez. Ajoutez laurier, quatre-épices et carvi et laissez frémir 50 min à couvert.",
+      "Pendant ce temps, faites fondre les oignons dans le saindoux 10 min à feu moyen jusqu'à ce qu'ils soient dorés, ajoutez l'ail et le kassler 3 min.",
+      "Hachez grossièrement la choucroute et ajoutez-la au faitout avec le contenu de la poêle. Laissez frémir 30 min.",
+      "Ajoutez les pommes de terre et la carotte, poursuivez 25 min jusqu'à ce que les pommes de terre soient tendres. Retirez les os des travers qui se détachent seuls.",
+      "Hors du feu, délayez la crème avec une louche de soupe et reversez-la. Goûtez (la choucroute sale), poivrez, parsemez d'aneth et servez."
+    ],
+    "tags": [
+      "batch cooking",
+      "fermenté",
+      "réconfortant",
+      "économique",
+      "riche en collagène",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "acidule",
+      "fume",
+      "reconfortant"
+    ],
+    "tips": "Comme toutes les soupes au chou, encore meilleure le lendemain. Bouillon, os et couenne fumés : collagène et minéraux."
+  },
+  {
+    "id": "fn-flaki-wolowe",
+    "name": "Flaki wołowe, soupe polonaise de tripes et jarret à la marjolaine",
+    "description": "La soupe de tripes de Varsovie : gras-double et jarret de bœuf mijotés en julienne de racines dans un bouillon d'os, relevée de marjolaine, de muscade et de paprika, liée au beurre.",
+    "emoji": "🥣",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 180,
+    "difficulty": "facile",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "tripes",
+        "qty": 1200,
+        "unit": "g",
+        "note": "gras-double blanchi, en fines lanières"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 900,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 2000,
+        "unit": "ml",
+        "note": "bouillon d'os maison"
+      },
+      {
+        "id": "carotte",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "laurier",
+        "qty": 3,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 2,
+        "unit": "pincee",
+        "note": "quatre-épices"
+      },
+      {
+        "id": "origan",
+        "qty": 2,
+        "unit": "cac",
+        "note": "marjolaine séchée"
+      },
+      {
+        "id": "muscade",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 900,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mettez le jarret entier et les tripes dans le bouillon avec le laurier et le quatre-épices. Portez à ébullition, écumez, puis laissez frémir 2 h à couvert.",
+      "Sortez le jarret, effilochez-le en lanières et remettez-le dans la soupe. Ajoutez carotte et céleri-rave et laissez frémir encore 30 min : les tripes doivent être fondantes sous la dent.",
+      "Pendant ce temps, faites cuire les pommes de terre en dés 20 min à l'eau salée.",
+      "Roux : faites fondre 50 g de beurre avec les oignons 8 min à feu moyen, saupoudrez la farine de riz et le paprika, mélangez 1 min puis délayez avec deux louches de bouillon.",
+      "Versez ce roux dans la soupe, ajoutez la marjolaine, la muscade et le piment, laissez frémir 10 min. La soupe doit être nappante.",
+      "Ajoutez le reste du beurre et les pommes de terre, rectifiez sel et poivre (généreusement), et servez très chaud."
+    ],
+    "tags": [
+      "abats",
+      "riche en collagène",
+      "batch cooking",
+      "économique",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "umami",
+      "epice",
+      "reconfortant"
+    ],
+    "tips": "Les tripes sont presque entièrement faites de collagène, et le bouillon d'os y ajoute glycine et minéraux. Se congèle sans problème."
+  },
+  {
+    "id": "fn-soljanka-viandes-fumees",
+    "name": "Soljanka aux viandes fumées, cornichons, câpres et citron",
+    "description": "Soupe aigre-salée de l'Allemagne de l'Est : bouillon de bœuf tomaté, kassler, saucisse fumée et jambon, cornichons, olives et câpres, servie avec une rondelle de citron et une cuillerée de crème aigre.",
+    "emoji": "🍋",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 40,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "bouillon-boeuf",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "porc-fume",
+        "qty": 300,
+        "unit": "g",
+        "note": "kassler, en dés"
+      },
+      {
+        "id": "saucisse-morteau",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en demi-rondelles"
+      },
+      {
+        "id": "jambon-blanc",
+        "qty": 150,
+        "unit": "g",
+        "note": "en lanières"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "cornichon",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "cornichons-saumure",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "capres",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "olive",
+        "qty": 60,
+        "unit": "g",
+        "note": "noires et vertes, en rondelles"
+      },
+      {
+        "id": "concentre-tomate",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g",
+        "note": "en dés"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 20,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans un faitout, faites fondre les oignons dans la graisse 8 min à feu moyen. Ajoutez le poivron 3 min, puis le concentré de tomate et le paprika 1 min en remuant.",
+      "Ajoutez le kassler, la saucisse et le jambon, faites revenir 4 min pour qu'ils rendent leur parfum fumé.",
+      "Versez le bouillon, les tomates concassées et les pommes de terre. Laissez frémir 20 min.",
+      "Ajoutez les cornichons, leur saumure, les olives et les câpres, laissez frémir encore 10 min. Goûtez : la soupe doit être franchement aigre et salée ; poivrez.",
+      "Servez dans des bols avec une rondelle de citron, une cuillerée de crème fraîche et de l'aneth."
+    ],
+    "tags": [
+      "rapide",
+      "réconfortant",
+      "riche en protéines",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "acidule",
+      "fume",
+      "umami"
+    ],
+    "tips": "Parfaite pour finir les restes de rôtis et de charcuteries. La saumure de cornichons lactofermentés apporte acidité et ferments."
+  },
+  {
+    "id": "fn-koenigsberger-klopse",
+    "name": "Königsberger Klopse, boulettes pochées sauce aux câpres",
+    "description": "Boulettes de veau et de porc relevées d'anchois, pochées dans un bouillon puis nappées d'une sauce blanche aux câpres, au citron et à la crème, liée au jaune d'œuf. Pommes de terre vapeur.",
+    "emoji": "🍽️",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 30,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "veau-hache",
+        "qty": 500,
+        "unit": "g"
+      },
+      {
+        "id": "porc-hache",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "anchois",
+        "qty": 6,
+        "unit": "piece",
+        "note": "hachés"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "haché très fin"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 3,
+        "unit": "cas",
+        "note": "fécule ; 1 pour la farce, 2 pour la sauce"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1000,
+        "unit": "ml"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "beurre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "capres",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Faites fondre l'oignon 5 min dans 10 g de beurre à feu doux, laissez tiédir.",
+      "Mélangez les viandes, l'oignon, les anchois, les œufs, 1 c. à soupe de fécule, la muscade, du poivre et peu de sel. Formez 16 boulettes de la taille d'une noix à mains mouillées.",
+      "Portez le bouillon à frémissement avec le laurier. Pochez les boulettes 12 min à petits frémissements, sans ébullition. Retirez-les et gardez 600 ml de bouillon.",
+      "Pendant ce temps, faites cuire les pommes de terre 25 min à la vapeur.",
+      "Sauce : faites fondre 40 g de beurre, ajoutez 2 c. à soupe de fécule et mélangez 1 min. Versez le bouillon réservé en fouettant et laissez épaissir 5 min. Ajoutez la crème, les câpres et le jus d'un demi-citron.",
+      "Hors du feu, fouettez les jaunes avec une louche de sauce et reversez en remuant. Remettez les boulettes 3 min dans la sauce à feu très doux sans bouillir. Servez avec les pommes de terre."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poche",
+    "flavors": [
+      "acidule",
+      "cremeux",
+      "umami"
+    ],
+    "tips": "Les anchois ne se sentent pas : ils assaisonnent en profondeur. Bouillon maison, jaunes et crème : une sauce aussi nourrissante que légère en bouche."
+  },
+  {
+    "id": "fn-frikadeller-chou-creme",
+    "name": "Frikadeller danoises, chou blanc à la crème et concombre aigre-doux",
+    "description": "Les boulettes plates danoises au porc, dorées au beurre, avec le chou blanc mijoté dans une béchamel au lait et à la muscade, des pommes de terre et une salade de concombre au vinaigre.",
+    "emoji": "🧆",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 30,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-hache",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "râpé"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "ml",
+        "note": "100 ml pour la farce, 200 ml pour le chou"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 600,
+        "unit": "g",
+        "note": "chou blanc, en fines lanières"
+      },
+      {
+        "id": "muscade",
+        "qty": 2,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g"
+      },
+      {
+        "id": "concombre",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 50,
+        "unit": "ml"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "aneth",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Concombre : tranchez-le très finement, mélangez avec le vinaigre, le miel, 2 c. à soupe d'eau, du sel et l'aneth. Laissez mariner au frais.",
+      "Mélangez le porc, l'oignon râpé, l'œuf, 100 ml de lait, 2 c. à soupe de farine de riz, 1 c. à café de sel, du poivre et une pincée de muscade. Laissez reposer 15 min.",
+      "Cuisez les pommes de terre 20 min à l'eau salée.",
+      "Chou : faites-le tomber 10 min à couvert dans 15 g de beurre et 50 ml d'eau à feu moyen. Saupoudrez 1 c. à soupe de farine de riz, versez 200 ml de lait et laissez épaissir 5 min. Muscade, sel, poivre.",
+      "Formez des boulettes ovales et aplaties à la cuillère trempée dans le beurre fondu. Faites-les dorer dans le reste du beurre à feu moyen 5 min par face, jusqu'à ce qu'elles soient bien brunes et que le jus qui perle soit clair.",
+      "Servez les frikadeller avec le chou à la crème, les pommes de terre et le concombre égoutté."
+    ],
+    "tags": [
+      "familial",
+      "économique",
+      "riche en protéines",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "acidule",
+      "reconfortant"
+    ],
+    "tips": "Froides, les frikadeller se glissent dans une boîte à lunch avec le concombre. Chou cuit doucement : doux à digérer et riche en vitamine C."
+  },
+  {
+    "id": "fn-zwiebelrostbraten",
+    "name": "Zwiebelrostbraten, steak viennois aux oignons croustillants",
+    "description": "Tranches de rumsteck saisies et nappées d'un jus court à la moutarde, couronnées d'une montagne d'oignons dorés au four, pommes de terre rôties à la graisse et cornichons.",
+    "emoji": "🧅",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 20,
+    "cookTime": 40,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "boeuf-steak",
+        "qty": 400,
+        "unit": "g",
+        "note": "rumsteck ou entrecôte, 2 tranches de 1,5 cm"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en rondelles très fines"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g",
+        "note": "en quartiers"
+      },
+      {
+        "id": "bouillon-boeuf",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "thym",
+        "qty": 2,
+        "unit": "brin"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 210 °C. Mélangez les quartiers de pommes de terre avec 15 g de graisse fondue, le thym et du sel sur une plaque.",
+      "Séparez les rondelles d'oignon, roulez-les dans la farine de riz mélangée au paprika, puis dans le reste de graisse fondue. Étalez-les sur une seconde plaque sans les superposer.",
+      "Enfournez les deux plaques 30 min, en remuant les oignons toutes les 10 min : ils doivent être bruns et croustillants, les pommes de terre dorées.",
+      "Entaillez le gras des steaks tous les 3 cm pour qu'ils ne se recourbent pas. Salez, poivrez et saisissez-les dans une poêle en fonte très chaude avec 10 g de beurre, 2 min par face. Réservez sur une assiette chaude.",
+      "Déglacez la poêle avec le bouillon, ajoutez la moutarde et réduisez de moitié 4 min à feu vif, puis montez avec le reste du beurre.",
+      "Nappez les steaks de jus, couvrez-les d'oignons croustillants et servez avec les pommes de terre et les cornichons."
+    ],
+    "tags": [
+      "riche en protéines",
+      "four",
+      "réconfortant",
+      "sans gluten",
+      "prise de masse"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "grille",
+      "umami"
+    ],
+    "tips": "Les oignons rôtis au four plutôt que frits gardent tout leur croustillant sans bain d'huile. Viande rouge : fer héminique, zinc et B12."
+  },
+  {
+    "id": "fn-wurzelfleisch-raifort",
+    "name": "Wurzelfleisch styrien, porc bouilli aux racines et raifort frais",
+    "description": "Échine de porc pochée dans un bouillon aigrelet au carvi avec une julienne de racines, servie dans son jus avec pommes de terre au beurre et beaucoup de raifort fraîchement râpé.",
+    "emoji": "🥕",
+    "category": "mijote",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 110,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-echine",
+        "qty": 1100,
+        "unit": "g",
+        "note": "en tranches épaisses de 3 cm"
+      },
+      {
+        "id": "carotte",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "celeri-rave",
+        "qty": 150,
+        "unit": "g",
+        "note": "en julienne"
+      },
+      {
+        "id": "navet",
+        "qty": 300,
+        "unit": "g",
+        "note": "ou rutabaga, en julienne"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "eau",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "vinaigre-cidre",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "girofle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "graines-fenouil",
+        "qty": 1,
+        "unit": "cac",
+        "note": "carvi"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 520,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "raifort",
+        "qty": 60,
+        "unit": "g",
+        "note": "racine fraîche"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout",
+        "note": "en grains"
+      }
+    ],
+    "steps": [
+      "Portez l'eau à ébullition avec le vinaigre, le laurier, le girofle, le carvi, 8 grains de poivre et 2 c. à café de sel.",
+      "Plongez l'échine, écumez, puis laissez frémir 1 h 15 à couvert à feu doux.",
+      "Ajoutez l'oignon et la julienne de carotte, céleri-rave et navet, laissez frémir 20 min : les légumes doivent rester légèrement croquants.",
+      "Pendant ce temps, faites cuire les pommes de terre 25 min à la vapeur, puis roulez-les dans le beurre.",
+      "Épluchez et râpez le raifort au dernier moment (il perd vite son piquant).",
+      "Servez la viande tranchée dans des assiettes creuses avec les racines, une louche de bouillon, les pommes de terre, un tas de raifort et la ciboulette."
+    ],
+    "tags": [
+      "mijoté",
+      "économique",
+      "riche en protéines",
+      "sans gluten",
+      "familial"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "piquant",
+      "acidule",
+      "herbace"
+    ],
+    "tips": "Un plat très digeste : viande pochée, bouillon et légumes racines. Le raifort frais, crucifère, apporte des composés soufrés aux effets anti-inflammatoires."
+  },
+  {
+    "id": "fn-poronkaristys-puree-airelles",
+    "name": "Poronkäristys, émincé de gibier lapon, purée au beurre et airelles",
+    "description": "Le plat de Laponie : gibier coupé en copeaux très fins, saisi au beurre puis étuvé avec des oignons, servi avec une purée beurrée, des airelles crues écrasées et des cornichons.",
+    "emoji": "🦌",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 40,
+    "restTime": 60,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "gibier",
+        "qty": 400,
+        "unit": "g",
+        "note": "renne, cerf ou chevreuil, partiellement congelé puis tranché en copeaux"
+      },
+      {
+        "id": "beurre",
+        "qty": 90,
+        "unit": "g",
+        "note": "50 g pour la viande, 40 g pour la purée"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "eau",
+        "qty": 200,
+        "unit": "ml"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 380,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "airelles",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "cornichon",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 1,
+        "unit": "feuille"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Placez la viande 1 h au congélateur pour la raffermir, puis tranchez-la en copeaux de 2 mm avec un couteau bien affûté.",
+      "Dans une cocotte, faites mousser 50 g de beurre à feu vif. Saisissez la viande en deux fois, 2 min par fournée, en séparant les copeaux à la spatule.",
+      "Remettez toute la viande, ajoutez l'oignon, le laurier, l'eau, sel et poivre. Couvrez et laissez étuver 35 min à feu doux, jusqu'à ce que la viande soit tendre et le jus réduit.",
+      "Pendant ce temps, cuisez les pommes de terre épluchées 20 min à l'eau salée. Écrasez-les avec le lait chaud et 40 g de beurre jusqu'à une purée souple.",
+      "Écrasez grossièrement les airelles à la fourchette.",
+      "Servez l'émincé et son jus sur la purée, avec les airelles et les cornichons."
+    ],
+    "tags": [
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten",
+      "une poêle"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "braise",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "umami"
+    ],
+    "tips": "Le renne et le cerf sont des viandes sauvages, riches en fer, en zinc et en oméga-3, très maigres : le beurre leur donne l'énergie."
+  },
+  {
+    "id": "fn-cock-a-leekie",
+    "name": "Cock-a-leekie, soupe écossaise au poulet, poireaux et pruneaux",
+    "description": "La soupe nationale écossaise : cuisses de poulet et un morceau de bœuf mijotés dans un bouillon d'os avec beaucoup de poireaux, un peu de riz et des pruneaux qui fondent dans le bouillon.",
+    "emoji": "🍲",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 110,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "poulet-cuisse",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "boeuf-jarret",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 1500,
+        "unit": "ml"
+      },
+      {
+        "id": "poireau",
+        "qty": 400,
+        "unit": "g",
+        "note": "en tronçons de 2 cm"
+      },
+      {
+        "id": "pruneaux",
+        "qty": 12,
+        "unit": "piece",
+        "note": "dénoyautés"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "thym",
+        "qty": 3,
+        "unit": "brin"
+      },
+      {
+        "id": "persil",
+        "qty": 10,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans un grand faitout, mettez les cuisses de poulet, le jarret, le laurier et le thym. Couvrez du bouillon et de 500 ml d'eau, portez à ébullition et écumez soigneusement.",
+      "Ajoutez la moitié des poireaux (ils se fondront dans le bouillon) et laissez frémir 1 h 15 à couvert.",
+      "Sortez les viandes, retirez peau et os du poulet, effilochez la chair et coupez le bœuf en dés.",
+      "Remettez les viandes dans le bouillon avec le riz, le reste des poireaux et les pruneaux. Laissez frémir 20 min jusqu'à ce que le riz soit très tendre.",
+      "Rectifiez sel et poivre, parsemez de persil et servez avec un pruneau dans chaque assiette."
+    ],
+    "tags": [
+      "réconfortant",
+      "familial",
+      "riche en collagène",
+      "batch cooking",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "reconfortant",
+      "fruite",
+      "umami"
+    ],
+    "tips": "Cuisses avec peau et os, jarret et bouillon maison : un bol riche en collagène et en gélatine, doux pour l'intestin."
+  },
+  {
+    "id": "fn-boller-i-karry",
+    "name": "Boller i karry, boulettes de porc danoises sauce curry, riz",
+    "description": "Le plat de cantine favori des Danois : boulettes de porc pochées, sauce crémeuse au curry doux, poireau et pomme, sur un riz blanc.",
+    "emoji": "🍛",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 25,
+    "cookTime": 35,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-hache",
+        "qty": 700,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "oignon",
+        "qty": 2,
+        "unit": "piece",
+        "note": "1 râpé pour la farce, 1 émincé pour la sauce"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 4,
+        "unit": "cas",
+        "note": "2 pour la farce, 2 pour la sauce"
+      },
+      {
+        "id": "lait",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "bouillon-volaille",
+        "qty": 700,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "garam-masala",
+        "qty": 1,
+        "unit": "cas",
+        "note": "curry doux"
+      },
+      {
+        "id": "curcuma",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "pomme",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "poireau",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en rondelles"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "riz-blanc",
+        "qty": 240,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Mélangez le porc, l'oignon râpé, l'œuf, le lait, 2 c. à soupe de farine de riz, 1 c. à café de sel et du poivre. Laissez reposer 15 min au frais.",
+      "Portez le bouillon à frémissement. Formez 24 boulettes à la cuillère mouillée et pochez-les en deux fois 8 min. Réservez-les et gardez le bouillon.",
+      "Faites cuire le riz 12 min à couvert dans 480 ml d'eau salée, puis laissez reposer 5 min.",
+      "Faites fondre le beurre et dorez l'oignon émincé et le poireau 6 min à feu moyen. Ajoutez le curry, le curcuma et la pomme, mélangez 2 min jusqu'à ce que les épices embaument.",
+      "Saupoudrez 2 c. à soupe de farine de riz, mélangez, puis versez 500 ml de bouillon de pochage en fouettant. Laissez épaissir 5 min, ajoutez la crème.",
+      "Remettez les boulettes 3 min dans la sauce et servez sur le riz."
+    ],
+    "tags": [
+      "familial",
+      "riche en protéines",
+      "batch cooking",
+      "sans gluten",
+      "lunch box"
+    ],
+    "seasons": [],
+    "technique": "poche",
+    "flavors": [
+      "epice",
+      "cremeux",
+      "fruite"
+    ],
+    "tips": "La sauce se prépare avec le bouillon de pochage : rien ne se perd. Se garde 3 jours au frais et se réchauffe très bien."
+  },
+  {
+    "id": "fn-bacon-and-cabbage",
+    "name": "Bacon and cabbage irlandais, sauce persil et pommes de terre",
+    "description": "Le dîner irlandais du dimanche : palette de porc demi-sel pochée aux clous de girofle, chou vert cuit dans le bouillon de cuisson, pommes de terre farineuses et sauce blanche au persil et à la moutarde.",
+    "emoji": "🥬",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "britannique",
+    "prepTime": 20,
+    "cookTime": 120,
+    "restTime": 720,
+    "difficulty": "tres-facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "porc-demi-sel",
+        "qty": 1000,
+        "unit": "g",
+        "note": "palette ou échine demi-sel, dessalée"
+      },
+      {
+        "id": "girofle",
+        "qty": 4,
+        "unit": "pincee",
+        "note": "clous"
+      },
+      {
+        "id": "laurier",
+        "qty": 2,
+        "unit": "feuille"
+      },
+      {
+        "id": "oignon",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "chou-vert",
+        "qty": 800,
+        "unit": "g",
+        "note": "chou de Milan, en quartiers"
+      },
+      {
+        "id": "pomme-de-terre-farineuse",
+        "qty": 680,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 400,
+        "unit": "ml"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "persil",
+        "qty": 8,
+        "unit": "g",
+        "note": "ciselé"
+      },
+      {
+        "id": "moutarde",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "La veille, faites dessaler la palette 12 h dans l'eau froide en changeant l'eau deux fois.",
+      "Mettez-la dans un faitout avec l'oignon piqué des clous de girofle et le laurier, couvrez d'eau froide, portez à frémissement et écumez. Laissez frémir 1 h 30 à couvert (25 min par 500 g + 25 min).",
+      "Sortez la viande, couvrez-la d'aluminium. Plongez les quartiers de chou dans le bouillon frémissant 12 min : ils doivent être tendres mais encore verts.",
+      "Pendant ce temps, cuisez les pommes de terre en robe 25 min à la vapeur et pelez-les.",
+      "Sauce persil : faites fondre 40 g de beurre, ajoutez la farine de riz 1 min, puis le lait en fouettant et 100 ml de bouillon. Laissez épaissir 5 min, ajoutez le persil et la moutarde, poivrez.",
+      "Tranchez la viande, servez avec le chou égoutté et beurré du reste de beurre, les pommes de terre et la sauce."
+    ],
+    "tags": [
+      "familial",
+      "économique",
+      "riche en protéines",
+      "sans gluten",
+      "réconfortant"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "lacte",
+      "herbace",
+      "reconfortant"
+    ],
+    "tips": "Le bouillon de cuisson, salé, sert de base à une soupe au chou le lendemain. Le chou cuit apporte vitamine C et K pour un minimum d'oxalates."
+  },
+  {
+    "id": "fn-pinnekjott-stappe-rutabaga",
+    "name": "Pinnekjøtt, côtes d'agneau à la vapeur et purée de rutabaga",
+    "description": "Le plat de Noël de l'ouest de la Norvège : côtes d'agneau salées une nuit, cuites longuement à la vapeur jusqu'à fondre, puis grillées, avec une purée de rutabaga, carotte et pommes de terre au beurre.",
+    "emoji": "🐑",
+    "category": "plat",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 20,
+    "cookTime": 170,
+    "restTime": 720,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "agneau-cotelette",
+        "qty": 1100,
+        "unit": "g",
+        "note": "poitrine ou carré en morceaux de 2 côtes"
+      },
+      {
+        "id": "sel",
+        "qty": 30,
+        "unit": "g",
+        "note": "gros sel pour la salaison"
+      },
+      {
+        "id": "navet",
+        "qty": 800,
+        "unit": "g",
+        "note": "rutabaga"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "carotte",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "creme-liquide",
+        "qty": 100,
+        "unit": "ml"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "eau",
+        "qty": 1000,
+        "unit": "ml"
+      },
+      {
+        "id": "airelles",
+        "qty": 80,
+        "unit": "g",
+        "optional": true
+      }
+    ],
+    "steps": [
+      "La veille, frottez les côtes de gros sel et laissez-les 12 h au réfrigérateur, couvertes.",
+      "Rincez les côtes. Dans un grand faitout, posez une grille ou des branches (bouleau, ou une grille de cuisson) et versez l'eau sous le niveau de la grille. Posez la viande dessus.",
+      "Couvrez et cuisez à la vapeur 2 h 30 à feu moyen-doux, en vérifiant l'eau toutes les 30 min : la viande doit se détacher de l'os.",
+      "Purée : 40 min avant la fin, cuisez le rutabaga, la carotte et les pommes de terre en cubes 25 min dans l'eau salée. Égouttez, écrasez au presse-purée avec le beurre, la crème, la muscade et beaucoup de poivre.",
+      "Préchauffez le gril du four à 250 °C. Disposez les côtes sur une plaque et faites-les griller 8 min, jusqu'à ce que le gras soit doré et crépitant.",
+      "Servez les côtes avec la purée de rutabaga et un peu du jus resté au fond du faitout, avec quelques airelles si vous le souhaitez."
+    ],
+    "tags": [
+      "week-end",
+      "riche en protéines",
+      "riche en collagène",
+      "sans gluten",
+      "préparation à l’avance"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "vapeur",
+    "flavors": [
+      "umami",
+      "reconfortant",
+      "lacte"
+    ],
+    "tips": "Morceaux d'agneau gras et sur l'os, cuits doucement : collagène, vitamine K2 et acides gras de pâturage."
+  },
+  {
+    "id": "fn-halaszle-truite-cabillaud",
+    "name": "Halászlé, soupe hongroise des pêcheurs au paprika",
+    "description": "La soupe rouge du Danube : un fumet monté aux oignons, poivron et tomate, coloré au paprika, où l'on poche truite et cabillaud, servie avec pommes de terre et crème aigre.",
+    "emoji": "🌶️",
+    "category": "soupe",
+    "mealTypes": [
+      "dejeuner",
+      "diner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 25,
+    "cookTime": 45,
+    "difficulty": "facile",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "truite",
+        "qty": 600,
+        "unit": "g",
+        "note": "filets, en tronçons de 5 cm (traditionnellement de la carpe)"
+      },
+      {
+        "id": "cabillaud",
+        "qty": 400,
+        "unit": "g",
+        "note": "en tronçons"
+      },
+      {
+        "id": "fumet-poisson",
+        "qty": 1500,
+        "unit": "ml",
+        "note": "maison avec têtes et arêtes"
+      },
+      {
+        "id": "oignon",
+        "qty": 3,
+        "unit": "piece",
+        "note": "émincés"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en lanières"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "paprika",
+        "qty": 2,
+        "unit": "cas",
+        "note": "doux de Szeged"
+      },
+      {
+        "id": "piment-frais",
+        "qty": 1,
+        "unit": "piece",
+        "note": "entier"
+      },
+      {
+        "id": "graisse-canard",
+        "qty": 20,
+        "unit": "g",
+        "note": "saindoux"
+      },
+      {
+        "id": "pomme-de-terre",
+        "qty": 600,
+        "unit": "g",
+        "note": "en morceaux"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Dans une grande casserole, faites fondre les oignons dans le saindoux 10 min à feu doux, sans coloration.",
+      "Ajoutez le fumet et laissez frémir 20 min, puis mixez finement : les oignons épaississent la soupe.",
+      "Hors du feu, délayez le paprika avec une louche de soupe et reversez-le. Ajoutez le poivron, la tomate, le piment entier et les pommes de terre ; salez. Laissez frémir 15 min.",
+      "Ajoutez les tronçons de poisson sans remuer (secouez seulement la casserole) et laissez pocher 8 min à petits frémissements, jusqu'à ce que la chair se détache.",
+      "Retirez le piment, servez la soupe brûlante dans des bols, avec une cuillerée de crème fraîche."
+    ],
+    "tags": [
+      "riche en protéines",
+      "réconfortant",
+      "sans gluten",
+      "économique"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poche",
+    "flavors": [
+      "epice",
+      "iode",
+      "piquant"
+    ],
+    "tips": "Fumet d'arêtes et têtes : collagène et minéraux. Le paprika apporte caroténoïdes et vitamine C ; ne le faites jamais chauffer à sec."
+  }
+]
