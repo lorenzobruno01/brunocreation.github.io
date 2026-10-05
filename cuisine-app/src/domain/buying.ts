@@ -285,3 +285,57 @@ export function nutrientGains(from: string, to: string, min = 1.4): Array<{ labe
     .slice(0, 5)
     .map((x) => ({ label: NUTRIENTS.find((n) => n.key === x.k)?.label.replace(/ \(.*\)/, '') ?? x.k, ratio: Math.min(10, Math.round(x.ratio * 10) / 10) }));
 }
+
+/** Conseil d'achat en une ligne, par famille (affiché sous chaque produit de la liste) */
+const SHORT: Record<string, string> = {
+  boeuf: 'Bœuf de race à viande nourri à l’herbe, chez le boucher ; sinon Label Rouge ou bio.',
+  agneau: 'Agneau d’herbe ou de prés-salés (Label Rouge, IGP, bio).',
+  porc: 'Porc plein air (Label Rouge, bio, race ancienne) ; charcuterie sans nitrites.',
+  volaille: 'Volaille fermière Label Rouge ou bio (81 jours minimum), de préférence entière ou en cuisses.',
+  abats: 'Abats d’animaux élevés à l’herbe ou bio : le foie concentre aussi ce que l’animal a mangé.',
+  oeufs: 'Code 0 (bio) ou 1 (plein air), idéalement de poules au pâturage ; jamais code 3.',
+  laitier: 'Entier, au lait cru ou AOP de préférence ; jamais allégé.',
+  'poisson-gras': 'Petits poissons sauvages (sardine, maquereau, hareng) ; conserves à l’huile d’olive.',
+  'poisson-blanc': 'Pêche de ligne ou MSC ; coquillages vivants (moules de bouchot, huîtres Label Rouge).',
+  vegetaux: 'De saison et local, bio pour ce qui se mange avec la peau.',
+  graisses: 'Beurre cru ou bio, graisses animales, huile d’olive vierge extra ; pas d’huile de graines.',
+  feculents: 'Produit brut (riz, pommes de terre, légumineuses en vrac) plutôt que précuit.',
+};
+
+/** Conseils propres à certains produits (prioritaires sur ceux de la famille) */
+const ITEM_TIPS: Record<string, string> = {
+  'boeuf-hache': 'Faites-le hacher devant vous dans un morceau entier (paleron, macreuse), 15 à 20 % de gras ; évitez la barquette « préparation de viande hachée ».',
+  'poulet-blanc': 'Volaille Label Rouge ou bio ; mieux encore, prenez des hauts de cuisse avec la peau.',
+  'poulet-entier': 'Poulet fermier Label Rouge ou bio ; gardez la carcasse pour un bouillon.',
+  'foie-volaille': 'Foies de volailles fermières ou bio, bien rosés et sans taches vertes.',
+  'foie-veau': 'Foie de veau élevé sous la mère ou bio ; 150 g par portion maximum.',
+  lait: 'Lait entier cru ou non homogénéisé, de vaches au pâturage.',
+  beurre: 'Beurre cru ou de baratte, AOP (Charentes-Poitou, Isigny) ou bio.',
+  'creme-fraiche': 'Crème crue ou AOP d’Isigny, épaisse et entière.',
+  'yaourt-nature': 'Yaourt au lait entier, sans sucre ni épaississant (ou fait maison).',
+  'yaourt-grec': 'Yaourt grec au lait entier (10 % MG), sans épaississant.',
+  comte: 'Comté AOP au lait cru, affiné 12 mois ou plus (vitamine K2).',
+  parmesan: 'Parmigiano Reggiano AOP (lait cru, affiné 24 mois).',
+  saumon: 'Saumon sauvage d’Alaska, ou d’élevage bio / Label Rouge d’Écosse ou d’Irlande.',
+  'saumon-fume': 'Saumon sauvage ou Label Rouge, fumé au bois, sans sucre ajouté.',
+  thon: 'Thon germon ou albacore pêché à la ligne ; pas plus d’une fois par semaine (mercure).',
+  'thon-conserve': 'Thon albacore ou germon au naturel ou à l’huile d’olive, pêché à la ligne.',
+  'sardine-conserve': 'Sardines entières à l’huile d’olive (on mange les arêtes : calcium).',
+  crevette: 'Crevettes sauvages ou bio plutôt que tropicales d’élevage intensif.',
+  moule: 'Moules de bouchot AOP du Mont-Saint-Michel ou Label Rouge.',
+  lardons: 'Lardons sans nitrites, de porc plein air.',
+  bacon: 'Bacon sans nitrites, de porc plein air.',
+  'jambon-blanc': 'Jambon « supérieur » sans nitrites, de porc plein air.',
+  'jambon-cru': 'Jambon sec affiné au sel seul (Bayonne, Serrano, Parme), sans nitrites.',
+  'huile-olive': 'Vierge extra, première pression à froid, en bouteille sombre (AOP si possible).',
+  'pomme-de-terre': 'Pommes de terre bio de préférence (moins de traitements anti-germination).',
+  'riz-blanc': 'Riz basmati ou riz de Camargue IGP.',
+  'bouillon-volaille': 'À faire avec la carcasse du poulet du dimanche : bien plus riche que les cubes.',
+  'bouillon-boeuf': 'À faire avec des os à moelle et du jarret demandés au boucher.',
+};
+
+export function quickTip(ing: Pick<Ingredient, 'id' | 'category'>): { text: string; guide: BuyGuide } | null {
+  const guide = guideFor(ing);
+  if (!guide) return null;
+  return { text: ITEM_TIPS[ing.id] ?? SHORT[guide.id] ?? guide.best[0], guide };
+}

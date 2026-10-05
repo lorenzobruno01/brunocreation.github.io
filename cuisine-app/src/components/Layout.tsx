@@ -14,7 +14,6 @@ const TABS = [
 
 const MORE = [
   { to: '/favoris', label: 'Mes favoris & historique', icon: '❤️' },
-  { to: '/acheter', label: 'Assistant courses : où et comment acheter', icon: '🧭' },
   { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
   { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },

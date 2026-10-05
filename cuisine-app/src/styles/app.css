@@ -1554,3 +1554,36 @@ hr.sep {
 .sync-dot.offline {
   background: var(--danger);
 }
+
+/* Conseils d'achat sous chaque produit de la liste */
+.advice {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--ink-2);
+  display: grid;
+  gap: 3px;
+  cursor: default;
+}
+.advice-up {
+  color: var(--ok);
+}
+.advice-more {
+  justify-self: start;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.shop-item:has(> .advice) {
+  flex-wrap: wrap;
+}
+.shop-item > .advice {
+  flex-basis: 100%;
+  padding-left: 42px;
+  margin-top: -4px;
+}

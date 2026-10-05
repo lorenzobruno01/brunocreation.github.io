@@ -20,7 +20,7 @@ Published by GitHub Pages at **https://lorenzobruno01.github.io/brunocreation.gi
 | Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
 | Profiles | Each person enters height, weight, age, activity and goal (muscle gain, maintenance, fat loss): calorie and protein targets are computed (Mifflin-St Jeor × activity) and drive the planner, portion sizes and every % of daily needs. Several people can share a household |
 | Accounts | Optional free accounts (Supabase, e-mail + password): planning, favourites, history, fridge, pantry, shopping list, added recipes and profile are saved to the account and synced across devices; each friend has their own account and data. Setup: `docs/COMPTES.md` |
-| Shopping assistant | Food shops around a postcode (OpenStreetMap), a sourced buying guide per food family (grass-fed, labels, egg codes, raw-milk cheese…) and more nutritious cuts computed from the USDA data (e.g. chicken thigh instead of breast) |
+| Shopping advice | In the shopping list, under each product: what to choose (labels, farming, cut), a more nutritious cut when relevant, and the nearest suitable shop around the postcode (OpenStreetMap); sourced buying guide per food family (grass-fed, labels, egg codes, raw-milk cheese…) and more nutritious cuts computed from the USDA data (e.g. chicken thigh instead of breast) |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
 ## Architecture
