@@ -66,6 +66,8 @@ export interface CloudState {
   pending?: number;
   /** temps réel actif */
   live?: boolean;
+  /** tables absentes du serveur (migration incomplète) : ignorées, les autres se synchronisent */
+  missing?: string[];
 }
 
 let state: CloudState = { status: cloudEnabled ? 'signed-out' : 'off' };
@@ -164,6 +166,13 @@ function runOrThrow(task: () => Promise<void>): Promise<void> {
 
 const isMissingTable = (e: { code?: string; message?: string } | null) => !!e && (e.code === '42P01' || e.code === 'PGRST205' || /does not exist|schema cache/i.test(e.message ?? ''));
 
+/** Tables absentes côté serveur pendant cette session (réessayées au prochain lancement ou sur demande) */
+const missing = new Set<string>();
+function noteMissing(remote: string) {
+  missing.add(remote);
+  set({ missing: [...missing] });
+}
+
 // ═════════════════════════════════════════════════════════════
 // Mode foyer : synchronisation élément par élément
 // ═════════════════════════════════════════════════════════════
@@ -229,19 +238,34 @@ async function flush() {
   set({ status: 'syncing' });
   const byTable = new Map<string, Map<string, (typeof items)[number]>>();
   for (const it of items) (byTable.get(it.table) ?? byTable.set(it.table, new Map()).get(it.table)!).set(it.id, it);
+  const kept = new Set<string>();
   for (const [t, rows] of byTable) {
     const remote = REMOTE[t as BackupTable];
+    if (missing.has(remote)) {
+      kept.add(t);
+      continue;
+    }
     const batch = [...rows.values()].map((r) => ({ household_id: hid, id: r.id, data: r.data ?? {}, deleted: r.data === null }));
     for (let i = 0; i < batch.length; i += 200) {
       const { error } = await supabase().from(remote).upsert(batch.slice(i, i + 200), { onConflict: 'household_id,id' });
+      if (isMissingTable(error)) {
+        // table absente du serveur : on garde ces modifications pour plus tard, le reste continue
+        noteMissing(remote);
+        kept.add(t);
+        break;
+      }
       if (error) throw error;
     }
   }
   const maxSeq = items[items.length - 1].seq!;
-  await db.outbox.where('seq').belowOrEqual(maxSeq).delete();
+  await db.outbox
+    .where('seq')
+    .belowOrEqual(maxSeq)
+    .filter((o) => !kept.has(o.table))
+    .delete();
   const left = await db.outbox.count();
   set({ status: 'synced', lastSync: new Date().toISOString(), error: undefined, pending: left });
-  if (left) scheduleFlush(100);
+  if (left > (await db.outbox.filter((o) => kept.has(o.table)).count())) scheduleFlush(100);
 }
 
 interface RemoteRow {
@@ -286,6 +310,7 @@ async function pullAll() {
   const cursors = { ...(meta.cursors ?? {}) };
   for (const t of BACKUP_TABLES) {
     const remote = REMOTE[t];
+    if (missing.has(remote)) continue;
     const since = cursors[remote];
     // marge de 5 s : une écriture concurrente ne peut pas être sautée (l'application est idempotente)
     const from = since ? new Date(Date.parse(since) - 5000).toISOString() : null;
@@ -294,6 +319,10 @@ async function pullAll() {
       let q = supabase().from(remote).select('id,data,deleted,updated_at').eq('household_id', hid);
       if (from) q = q.gt('updated_at', from);
       const { data, error } = await q.order('updated_at', { ascending: true }).order('id', { ascending: true }).range(offset, offset + 499);
+      if (isMissingTable(error)) {
+        noteMissing(remote);
+        break;
+      }
       if (error) throw error;
       const rows = (data ?? []) as RemoteRow[];
       await applyRows(t, rows);
@@ -436,7 +465,12 @@ export function resolveImport(addLocal: boolean) {
   });
 }
 
-export function syncNow() {
+/** retry : réessayer aussi les tables signalées absentes (bouton « Synchroniser maintenant ») */
+export function syncNow(retry = false) {
+  if (retry && missing.size) {
+    missing.clear();
+    set({ missing: [] });
+  }
   return run(async () => {
     if (state.legacy) return legacyPull();
     await flush();
