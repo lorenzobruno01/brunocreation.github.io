@@ -133,6 +133,7 @@ export function Settings() {
         <p className="small muted" style={{ margin: 0 }}>
           Taille, poids, âge, activité et objectif servent à calculer vos besoins en calories et en protéines, puis les % de vitamines, minéraux et acides aminés affichés partout. Ajoutez les personnes qui partagent vos repas : le planning « Nous deux » vise 100 % pour chacune.
         </p>
+        <Link to="/besoins" className="small">🎯 Voir le détail des besoins et les ajuster à la main ›</Link>
         <HouseholdEditor profiles={profiles} />
       </section>
 

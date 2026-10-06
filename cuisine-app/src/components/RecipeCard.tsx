@@ -5,6 +5,7 @@ import { RecipeVisual } from './RecipeVisual';
 import { toggleBasket, toggleFavorite } from '../db/db';
 import { useUserData } from '../hooks/library';
 import { formatDuration } from './format';
+import { useHideNumbers } from '../hooks/activeProfile';
 
 export function RecipeCard({
   recipe,
@@ -19,6 +20,7 @@ export function RecipeCard({
   const favorite = favorites.has(recipe.id);
   const inBasket = basket.has(recipe.id);
   const d = DIFFICULTIES[recipe.difficulty];
+  const hideNumbers = useHideNumbers();
   return (
     <div className="card rcard">
       <button
@@ -56,7 +58,7 @@ export function RecipeCard({
             </span>
           </div>
           <div className="rcard-meta">
-            <span>🔥 {recipe.nutrition.kcal} kcal</span>
+            {!hideNumbers && <span>🔥 {recipe.nutrition.kcal} kcal</span>}
             <span>🥩 {recipe.nutrition.protein} g prot.</span>
             {recipe.density != null && <span title="Indice de densité nutritionnelle (0–100)">🌿 {recipe.density}</span>}
           </div>

@@ -18,6 +18,7 @@ import { RecipeForm } from './pages/RecipeForm';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
+import { Needs } from './pages/Needs';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
@@ -82,6 +83,8 @@ function Shell() {
                 <Route path="/modifier/:id" element={<RecipeForm />} />
                 <Route path="/stats" element={<Stats />} />
                 <Route path="/reglages" element={<Settings />} />
+                <Route path="/besoins" element={<Needs />} />
+                <Route path="/besoins/:id" element={<Needs />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />
                 <Route path="/rejoindre/:code" element={<JoinHousehold />} />

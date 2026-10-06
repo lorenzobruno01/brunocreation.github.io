@@ -13,12 +13,15 @@ export async function phone(browser, mock, name = 'téléphone') {
   p.on('pageerror', (e) => errors.push(`${name} : ${e.message}`));
   return { ctx, p, errors, name };
 }
+/** Accueil en 5 étapes : prénom, activité, objectif, goûts (passés), besoins */
 export async function onboard(d, base, prenom) {
   await d.p.goto(base + '#/');
   await d.p.getByText('Créer mon profil').click({ timeout: 15000 });
   await d.p.getByPlaceholder('Votre prénom').fill(prenom);
+  for (let i = 0; i < 3; i++) await d.p.getByRole('button', { name: 'Suivant ›' }).click();
+  await d.p.getByRole('button', { name: 'Passer' }).click();
   d.p.once('dialog', (x) => x.dismiss());
-  await d.p.getByText('✅ Enregistrer').click();
+  await d.p.getByRole('button', { name: '✅ C’est parti' }).click();
   await wait(500);
 }
 export async function signup(d, base, email, { from = '#/compte' } = {}) {

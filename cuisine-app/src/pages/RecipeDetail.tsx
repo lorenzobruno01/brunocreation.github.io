@@ -17,9 +17,11 @@ import { NutritionPanel } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
 import type { IndexedRecipe } from '../domain/types';
+import { useHideNumbers } from '../hooks/activeProfile';
 
 export function RecipeDetail() {
   const { id } = useParams();
+  const hideNumbers = useHideNumbers();
   const { byId, recipes, lookup, seedIds, diets } = useLibrary();
   const { favorites, basket, pantry, fridge, settings } = useUserData();
   const recipe = id ? byId.get(id) : undefined;
@@ -78,7 +80,7 @@ export function RecipeDetail() {
             <Fact v={formatDuration(recipe.totalTime)} l={`⏱ ${recipe.prepTime} min actif`} />
             <Fact v={`${recipe.servings}`} l="👥 portions (base)" />
             <Fact v={diff.label} l="⭐ difficulté" />
-            <Fact v={`${recipe.nutrition.kcal}`} l="🔥 kcal / portion" />
+            {!hideNumbers && <Fact v={`${recipe.nutrition.kcal}`} l="🔥 kcal / portion" />}
             <Fact v={`${recipe.nutrition.protein} g`} l="🥩 protéines" />
             <Fact v={`${recipe.nutrition.carbs} / ${recipe.nutrition.fat} g`} l="glucides / lipides" />
           </div>

@@ -1,3 +1,4 @@
+import { withTargets } from '../domain/profile';
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS } from '../db/db';
@@ -103,10 +104,17 @@ export function useHistory() {
   return useLiveQuery(() => db.cooking.orderBy('date').reverse().toArray(), []) ?? [];
 }
 
-/** Membres du foyer (profils créés dans l'appli), triés par date de création */
-export function useProfiles(): NutritionProfile[] {
+/** Membres du foyer (profils créés dans l'appli), triés par date de création ; undefined pendant le chargement */
+export function useStoredProfiles(): NutritionProfile[] | undefined {
   const rows = useLiveQuery(() => db.profiles.toArray(), []);
-  return useMemo(() => (rows?.length ? [...rows].sort((a, b) => (a.createdAt ?? '').localeCompare(b.createdAt ?? '') || a.id.localeCompare(b.id)) : DEFAULT_PROFILES), [rows]);
+  // besoins recalculés à la lecture : un changement de src/config/targets.ts s'applique à tous
+  return useMemo(() => rows && [...rows].sort((a, b) => (a.createdAt ?? '').localeCompare(b.createdAt ?? '') || a.id.localeCompare(b.id)).map(withTargets), [rows]);
+}
+
+/** Membres du foyer ; profils d'exemple tant qu'aucun n'est créé */
+export function useProfiles(): NutritionProfile[] {
+  const rows = useStoredProfiles();
+  return rows?.length ? rows : DEFAULT_PROFILES;
 }
 
 export function useLastCooked(): Map<string, string> {

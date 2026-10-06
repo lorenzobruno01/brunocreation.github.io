@@ -174,7 +174,7 @@ export function Planner() {
           {eaters.map((e, i) => (
             <span key={e.profile.id}>
               {i > 0 && ' · '}
-              {icon(e)} <strong>{e.profile.name}</strong> {e.portions.toFixed(2).replace('.', ',')} portion ({e.profile.kcal} kcal/jour)
+              {icon(e)} <strong>{e.profile.name}</strong> {e.portions.toFixed(2).replace('.', ',')} portion{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal/jour)`}
             </span>
           ))}
           . Le planning vise 100 % des besoins de chacun.
@@ -182,7 +182,7 @@ export function Planner() {
       )}
       {!together && (
         <p className="small muted" style={{ margin: '0 0 10px' }}>
-          Objectif de {eaters[0].profile.name} : {eaters[0].profile.kcal} kcal/jour, soit environ {eaters[0].portions.toFixed(2).replace('.', ',')} portion de chaque plat. <Link to="/reglages">Modifier mon profil</Link>
+          {eaters[0].profile.hideNumbers ? `Part de ${eaters[0].profile.name} :` : `Objectif de ${eaters[0].profile.name} : ${eaters[0].profile.kcal} kcal/jour, soit`} environ {eaters[0].portions.toFixed(2).replace('.', ',')} portion de chaque plat. <Link to="/besoins">Voir mes besoins</Link>
         </p>
       )}
 
@@ -363,8 +363,9 @@ function CoveragePanel({ dates, reports: all, eaters, recipes }: { dates: string
   const profile = eaters[w].profile;
   const portions = eaters[w].portions;
   const reports = all[w];
+  const hideKcal = !!profile.hideNumbers;
   const rows = [
-    { key: 'kcal', label: '🔥 Énergie', group: 'macros' },
+    ...(hideKcal ? [] : [{ key: 'kcal', label: '🔥 Énergie', group: 'macros' }]),
     { key: 'protein', label: '🥩 Protéines', group: 'macros' },
     ...NUTRIENTS.filter((n) => n.key !== 'cl').map((n) => ({ key: n.key, label: n.label.replace(/ \(.*\)/, ''), group: n.group as string })),
   ];
@@ -444,7 +445,7 @@ function CoveragePanel({ dates, reports: all, eaters, recipes }: { dates: string
       </div>
       {day != null && reports[day] && (
         <div className="small muted">
-          {DAY_NAMES[day]} : {Math.round(reports[day]!.kcal)} kcal, {Math.round(reports[day]!.protein)} g de protéines, couverture {Math.round(reports[day]!.coverage)} %.
+          {DAY_NAMES[day]} : {hideKcal ? '' : `${Math.round(reports[day]!.kcal)} kcal, `}{Math.round(reports[day]!.protein)} g de protéines, couverture {Math.round(reports[day]!.coverage)} %.
         </div>
       )}
     </section>
@@ -551,7 +552,7 @@ function GenerateSheet({
             {eaters.map((e, i) => (
               <span key={e.profile.id}>
                 {i > 0 && ' et de '}
-                <strong>{e.profile.name}</strong> ({e.profile.kcal} kcal)
+                <strong>{e.profile.name}</strong>{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal)`}
               </span>
             ))}{' '}
             en 13 vitamines, 8 minéraux, électrolytes, oméga-3, fibres et acides aminés, tout en gardant de la variété (protéines différentes, jamais deux fois le même plat) et vos critères ci-dessous.
