@@ -9,7 +9,7 @@
 // ─────────────────────────────────────────────────────────────
 import type { IndexedRecipe, PlanEntry, Slot } from './types';
 import { dailyRef, NUTRIENTS, type NutritionProfile } from './micronutrients';
-import { generateWeek, isMainMeal, passesConstraints, type PlannerContext } from './planner';
+import { generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
 import { currentSeason } from './season';
 
 /** Nutriments visés (le sodium est une limite, le chlorure suit le sodium) */
@@ -206,6 +206,8 @@ function candidatesFor(slot: Slot, weekend: boolean, ctx: NutriPlanContext): Ind
     if (slot === 'midi' || slot === 'soir') return passesConstraints(r, c, weekend, ctx.favorites, season);
     // petit-déjeuner / collation : rapide en semaine sauf préparation à l'avance
     if (!weekend && r.totalTime > 25 && !r.tags.includes('préparation à l’avance')) return false;
+    // goûters de semaine tout simples (fruit + laitage, œufs durs…), sauf si l'option est désactivée
+    if (!weekend && slot === 'collation' && c.simpleSnacks !== false && !isSimple(r)) return false;
     if (c.excludeProteins?.length && r.mainProtein && c.excludeProteins.includes(r.mainProtein)) return false;
     if (c.seasonOnly && r.seasons.length && !r.seasons.includes(season)) return false;
     return true;

@@ -1,8 +1,8 @@
 [
   {
     "id": "quo-escalope-dinde-creme-champignons-riz",
-    "name": "Escalopes de dinde à la crème et aux champignons, riz blanc",
-    "description": "Le grand classique du soir de semaine : escalopes dorées au beurre, sauce crème-champignons déglacée au vin blanc, sur un riz bien beurré.",
+    "name": "Sauté de cuisse de dinde à la crème et aux champignons, riz blanc",
+    "description": "Le grand classique du soir de semaine : tranches de cuisse de dinde dorées au beurre, sauce crème-champignons déglacée au vin blanc, sur un riz bien beurré.",
     "emoji": "🦃",
     "category": "plat",
     "mealTypes": [
@@ -16,10 +16,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 320,
+        "id": "dinde-cuisse",
+        "qty": 380,
         "unit": "g",
-        "note": "2 grandes escalopes"
+        "note": "désossée, en tranches d’1 cm"
       },
       {
         "id": "champignon",
@@ -73,11 +73,11 @@
     ],
     "steps": [
       "Rincez le riz, puis cuisez-le 11 min dans 2 fois son volume d'eau salée frémissante, à couvert et à feu doux. Laissez reposer 5 min hors du feu, toujours couvert.",
-      "Pendant ce temps, coupez les escalopes en deux si elles sont grandes, épongez-les et salez-les.",
-      "Faites fondre 15 g de beurre à feu vif dans une grande poêle. Saisissez les escalopes 2 min 30 par face : elles doivent être bien dorées et blanches à cœur. Réservez sur une assiette couverte.",
+      "Pendant ce temps, épongez les tranches de cuisse et salez-les.",
+      "Faites fondre 15 g de beurre à feu vif dans une grande poêle. Saisissez la dinde 4 min par face : elle doit être bien dorée et cuite à cœur. Réservez sur une assiette couverte.",
       "Dans la même poêle à feu moyen, ajoutez le reste du beurre, l'échalote et les champignons. Faites-les sauter 5 à 6 min jusqu'à ce que leur eau soit évaporée et qu'ils colorent.",
       "Déglacez au vin blanc en grattant les sucs, laissez réduire 1 min, puis ajoutez la crème. Laissez bouillonner 2 min à feu doux : la sauce doit napper la cuillère.",
-      "Remettez les escalopes et leur jus dans la sauce 1 min pour les réchauffer. Poivrez, parsemez de persil et servez avec le riz."
+      "Remettez la dinde et son jus dans la sauce 1 min pour les réchauffer. Poivrez, parsemez de persil et servez avec le riz."
     ],
     "tags": [
       "rapide",
@@ -92,7 +92,7 @@
       "cremeux",
       "umami"
     ],
-    "tips": "Ajoutez 1 c. à café de moutarde dans la crème pour relever, ou remplacez la dinde par du blanc de poulet."
+    "tips": "Ajoutez 1 c. à café de moutarde dans la crème pour relever, ou remplacez la dinde par des hauts de cuisse de poulet."
   },
   {
     "id": "quo-cotes-porc-moutarde-haricots",
@@ -1747,8 +1747,8 @@
   },
   {
     "id": "quo-poulet-estragon-riz",
-    "name": "Blancs de poulet à l'estragon, riz pilaf",
-    "description": "Blancs de poulet dorés puis mijotés quelques minutes dans une sauce crème-vin blanc parfumée à l'estragon frais, avec un riz pilaf.",
+    "name": "Hauts de cuisse de poulet à l'estragon, riz pilaf",
+    "description": "hauts de cuisse de poulet dorés puis mijotés quelques minutes dans une sauce crème-vin blanc parfumée à l'estragon frais, avec un riz pilaf.",
     "emoji": "🍗",
     "category": "plat",
     "mealTypes": [
@@ -1762,8 +1762,8 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 340,
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 380,
         "unit": "g"
       },
       {
@@ -1821,10 +1821,10 @@
     ],
     "steps": [
       "Riz pilaf : faites revenir l'oignon dans 10 g de beurre 2 min, ajoutez le riz et nacrez-le 1 min. Versez le bouillon chaud, couvrez et cuisez 15 min à feu doux.",
-      "Coupez les blancs de poulet en deux dans l'épaisseur pour une cuisson rapide. Salez.",
-      "Faites dorer le poulet 3 min par face à feu moyen-vif dans le reste du beurre. Réservez.",
+      "Retirez l'excès de gras des hauts de cuisse et salez-les.",
+      "Faites dorer le poulet 5 min par face à feu moyen-vif dans le reste du beurre. Réservez.",
       "Faites suer l'échalote 1 min, déglacez au vin blanc et laissez réduire de moitié (2 min).",
-      "Ajoutez la crème et la moitié de l'estragon effeuillé, remettez le poulet et laissez mijoter 4 min à feu doux : il doit être blanc et juteux à cœur.",
+      "Ajoutez la crème et la moitié de l'estragon effeuillé, remettez le poulet et laissez mijoter 8 min à feu doux : il doit être cuit à cœur et fondant.",
       "Ajoutez le reste d'estragon ciselé, poivrez et servez avec le riz."
     ],
     "tags": [
@@ -2579,9 +2579,9 @@
         "note": "en rondelles de 1 cm"
       },
       {
-        "id": "poulet-blanc",
-        "qty": 4,
-        "unit": "piece",
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 500,
+        "unit": "g",
         "note": "en dés"
       },
       {
@@ -2626,7 +2626,7 @@
       "Béchamel : faites fondre le beurre, ajoutez la farine et fouettez 1 min. Versez le lait en fouettant et laissez épaissir 5 min à feu doux. Salez, poivrez, muscadez et ajoutez la moitié du comté.",
       "Salez les dés de poulet crus et répartissez-les dans un grand plat à gratin avec les pommes de terre et le chou-fleur.",
       "Nappez de béchamel en la faisant bien pénétrer, puis parsemez du reste de comté.",
-      "Enfournez 25 min : le dessus doit être bien doré et le poulet cuit (blanc à cœur quand on ouvre un morceau). Laissez reposer 5 min."
+      "Enfournez 25 min : le dessus doit être bien doré et le poulet cuit (plus aucune trace rosée quand on ouvre un morceau). Laissez reposer 5 min."
     ],
     "tags": [
       "four",
@@ -3404,8 +3404,8 @@
         "note": "fusilli"
       },
       {
-        "id": "poulet-blanc",
-        "qty": 260,
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 300,
         "unit": "g"
       },
       {
@@ -3465,7 +3465,7 @@
     ],
     "steps": [
       "Faites cuire les pâtes al dente dans l'eau salée (environ 10 min), égouttez-les et rincez-les rapidement à l'eau froide.",
-      "Salez le poulet et faites-le dorer 5 à 6 min par face dans 1 c. à soupe d'huile à feu moyen : il doit être blanc à cœur. Laissez tiédir puis taillez-le en lamelles.",
+      "Salez le poulet et faites-le dorer 6 à 7 min par face dans 1 c. à soupe d'huile à feu moyen : il doit être cuit à cœur. Laissez tiédir puis taillez-le en lamelles.",
       "Fouettez la moutarde avec le vinaigre, le reste d'huile, du sel et du poivre.",
       "Mélangez pâtes, poulet, comté, cornichons, tomates et ciboulette avec la vinaigrette.",
       "Ajoutez la roquette au moment de servir pour qu'elle reste croquante."
@@ -3628,8 +3628,8 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 320,
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 340,
         "unit": "g"
       },
       {
@@ -3698,7 +3698,7 @@
     "steps": [
       "Sauce : écrasez les anchois et l'ail au mortier ou à la fourchette. Fouettez avec le jaune d'œuf, la moutarde et le jus de citron, puis versez 4 c. à soupe d'huile en filet. Ajoutez la moitié du parmesan râpé et poivrez.",
       "Faites dorer les cubes de pain 4 min à feu moyen dans le beurre en remuant : ils doivent être croustillants.",
-      "Salez le poulet et faites-le cuire 5 à 6 min par face dans le reste d'huile à feu moyen : il doit être doré et blanc à cœur. Laissez reposer 3 min, puis tranchez-le.",
+      "Salez le poulet et faites-le cuire 6 à 7 min par face dans le reste d'huile à feu moyen : il doit être doré et cuit à cœur. Laissez reposer 3 min, puis tranchez-le.",
       "Lavez et séchez la romaine, coupez-la en gros morceaux et mélangez-la avec la sauce.",
       "Ajoutez poulet tiède et croûtons, puis le reste du parmesan en copeaux. Servez immédiatement."
     ],

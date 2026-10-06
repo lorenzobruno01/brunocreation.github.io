@@ -2203,8 +2203,8 @@
   },
   {
     "id": "sc-dinde-escalope-creme-courgettes",
-    "name": "Escalopes de dinde au comté et au jambon, courgettes à la crème",
-    "description": "Des escalopes de dinde roulées autour d’une tranche de jambon cru et de comté, dorées au beurre, avec des courgettes fondantes à la crème.",
+    "name": "Roulés de cuisse de dinde au comté et au jambon, courgettes à la crème",
+    "description": "Des morceaux de cuisse de dinde désossée roulés autour d’une tranche de jambon cru et de comté, dorés au beurre puis mijotés au vin blanc, avec des courgettes fondantes à la crème.",
     "emoji": "🦃",
     "category": "plat",
     "mealTypes": [
@@ -2218,10 +2218,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 360,
+        "id": "dinde-cuisse",
+        "qty": 420,
         "unit": "g",
-        "note": "2 grandes escalopes"
+        "note": "1 petite cuisse désossée, ouverte en 2 morceaux"
       },
       {
         "id": "jambon-cru",
@@ -2277,8 +2277,8 @@
       }
     ],
     "steps": [
-      "Aplatissez les escalopes, posez une tranche de jambon, une feuille de sauge et un bâtonnet de comté, roulez et fermez avec une pique.",
-      "Dorez les roulés dans 20 g de beurre à feu moyen 3 min sur chaque face, déglacez au vin blanc, couvrez et cuisez 8 min à feu doux.",
+      "Aplatissez les morceaux de cuisse entre deux feuilles de papier cuisson à 1 cm, posez une tranche de jambon, une feuille de sauge et un bâtonnet de comté, roulez et fermez avec une pique.",
+      "Dorez les roulés dans 20 g de beurre à feu moyen 3 min sur chaque face, déglacez au vin blanc, couvrez et cuisez 15 min à feu doux.",
       "Faites revenir les courgettes en dés dans le reste du beurre avec l’ail 8 min, ajoutez la crème et laissez réduire 2 min. Salez, poivrez.",
       "Coupez les roulés en tronçons et servez avec les courgettes et le jus de cuisson."
     ],
@@ -3498,9 +3498,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 300,
-        "unit": "g"
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 320,
+        "unit": "g",
+        "note": "avec la peau si possible"
       },
       {
         "id": "oeuf",
@@ -3569,7 +3570,7 @@
       }
     ],
     "steps": [
-      "Salez le poulet et cuisez-le dans le beurre 6 min par face à feu moyen. Laissez tiédir et tranchez.",
+      "Salez le poulet et cuisez-le dans le beurre 7 min côté peau puis 5 min de l’autre côté à feu moyen, jusqu’à ce qu’il soit doré et cuit à cœur. Laissez tiédir et tranchez.",
       "Cuisez les œufs 9 min, refroidissez et écalez. Faites dorer le bacon à sec 5 min.",
       "Fouettez l’huile, le vinaigre, la moutarde, sel et poivre.",
       "Disposez la laitue, puis en rangées le poulet, les œufs, le bacon émietté, le roquefort, les tomates et l’avocat. Arrosez de sauce et parsemez de ciboulette."

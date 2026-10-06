@@ -564,8 +564,8 @@
   },
   {
     "id": "ib-piccata-dinde-citron-capres",
-    "name": "Piccata de dinde au citron et aux câpres, riz au beurre",
-    "description": "Escalopes de dinde fines farinées et dorées au beurre, nappées d'une sauce minute au citron, vin blanc et câpres, avec un riz au beurre et au persil.",
+    "name": "Piccata de hauts de cuisse de poulet au citron et aux câpres, riz au beurre",
+    "description": "hauts de cuisse de poulet aplatis fines farinées et dorées au beurre, nappées d'une sauce minute au citron, vin blanc et câpres, avec un riz au beurre et au persil.",
     "emoji": "🍋",
     "category": "plat",
     "mealTypes": [
@@ -579,10 +579,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 3,
-        "unit": "piece",
-        "note": "coupées en deux et aplaties à 5 mm"
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 400,
+        "unit": "g",
+        "note": "ouverts à plat et aplatis à 1 cm"
       },
       {
         "id": "riz-blanc",
@@ -644,10 +644,10 @@
     ],
     "steps": [
       "Cuisez le riz dans 1,5 fois son volume d'eau salée, à couvert et à feu doux, 12 min, puis laissez gonfler 5 min hors du feu. Ajoutez 15 g de beurre et la moitié du persil.",
-      "Salez, poivrez les escalopes et farinez-les légèrement en tapotant pour retirer l'excédent.",
-      "Chauffez l'huile et 15 g de beurre dans une grande poêle à feu moyen-vif jusqu'à ce que le beurre mousse. Dorez les escalopes 2 min par face en deux fois, sans les surcharger ; elles doivent être blondes et juste cuites. Réservez sur une assiette chaude.",
+      "Salez, poivrez les hauts de cuisse et farinez-les légèrement en tapotant pour retirer l'excédent.",
+      "Chauffez l'huile et 15 g de beurre dans une grande poêle à feu moyen-vif jusqu'à ce que le beurre mousse. Dorez le poulet 4 à 5 min par face en deux fois, sans surcharger la poêle ; il doit être doré et cuit à cœur. Réservez sur une assiette chaude.",
       "Déglacez la poêle au vin blanc en grattant les sucs, laissez réduire de moitié (2 min), puis ajoutez le bouillon, le jus du citron et les câpres. Faites bouillonner 2 min.",
-      "Hors du feu, incorporez le reste du beurre froid en dés en faisant tourner la poêle : la sauce devient brillante et nappante. Remettez les escalopes 30 s dans la sauce, parsemez de persil et servez avec le riz."
+      "Hors du feu, incorporez le reste du beurre froid en dés en faisant tourner la poêle : la sauce devient brillante et nappante. Remettez le poulet 30 s dans la sauce, parsemez de persil et servez avec le riz."
     ],
     "tags": [
       "rapide",

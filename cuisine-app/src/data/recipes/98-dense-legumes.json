@@ -2188,7 +2188,7 @@
   {
     "id": "dl-salade-poulet-sarrasin-asperges-feta",
     "name": "Salade tiède de poulet, sarrasin grillé, asperges, petits pois et feta à la menthe",
-    "description": "Kasha de sarrasin croquante, asperges vertes, petits pois et radis, blanc de poulet grillé au citron, feta et menthe, vinaigrette à l’huile d’olive.",
+    "description": "Kasha de sarrasin croquante, asperges vertes, petits pois et radis, hauts de cuisse de poulet grillés au citron, feta et menthe, vinaigrette à l’huile d’olive.",
     "emoji": "🥗",
     "category": "salade-composee",
     "mealTypes": [
@@ -2202,9 +2202,9 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 2,
-        "unit": "piece"
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 320,
+        "unit": "g"
       },
       {
         "id": "sarrasin",
@@ -2278,7 +2278,7 @@
       "La veille : faites tremper le sarrasin 12 h (une nuit) dans de l’eau tiède additionnée d’1 c. à soupe de jus de citron ou de vinaigre de cidre. Rincez avant de cuire.",
       "Cuisez le sarrasin 10 min dans 2 fois son volume d’eau salée frémissante : il doit être tendre mais encore un peu croquant. Égouttez et étalez pour qu’il tiédisse.",
       "Coupez les asperges en tronçons de 4 cm et cuisez-les 3 min à l’eau bouillante salée avec les petits pois, puis rafraîchissez.",
-      "Aplatissez légèrement les blancs, frottez-les de 10 ml d’huile, du zeste de citron et du sel. Grillez 5 min par face dans une poêle-gril à feu moyen-vif : le cœur doit être juste blanc. Laissez reposer 3 min et tranchez.",
+      "Ouvrez les hauts de cuisse à plat, frottez-les de 10 ml d’huile, du zeste de citron et du sel. Grillez 6 à 7 min par face dans une poêle-gril à feu moyen-vif : le cœur doit être cuit, sans trace rosée. Laissez reposer 3 min et tranchez.",
       "Fouettez le jus du citron, la moutarde et 30 ml d’huile. Mélangez avec le sarrasin, les légumes, les radis en rondelles et la menthe ciselée.",
       "Dressez sur la roquette, ajoutez le poulet, la feta émiettée et les graines de courge torréfiées."
     ],
@@ -2302,8 +2302,8 @@
   },
   {
     "id": "dl-dinde-haricots-verts-tomates-amandes",
-    "name": "Escalopes de dinde, haricots verts, tomates et amandes, pommes de terre à l’ail",
-    "description": "Escalopes de dinde dorées au beurre, poêlée de haricots verts aux tomates cerises et amandes effilées grillées, pommes de terre sautées à l’ail et au persil.",
+    "name": "Cuisse de dinde poêlée, haricots verts, tomates et amandes, pommes de terre à l’ail",
+    "description": "Tranches de cuisse de dinde dorées au beurre, poêlée de haricots verts aux tomates cerises et amandes effilées grillées, pommes de terre sautées à l’ail et au persil.",
     "emoji": "🫛",
     "category": "plat",
     "mealTypes": [
@@ -2317,9 +2317,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 3,
-        "unit": "piece"
+        "id": "dinde-cuisse",
+        "qty": 400,
+        "unit": "g",
+        "note": "désossée, en 3 tranches épaisses"
       },
       {
         "id": "haricots-verts",
@@ -2393,7 +2394,7 @@
       "Coupez les pommes de terre en cubes de 2 cm et faites-les dorer dans l’huile d’olive 20 min à feu moyen en remuant, à couvert les 10 premières minutes. Ajoutez 2 gousses d’ail hachées et le persil les 2 dernières minutes.",
       "Cuisez les haricots verts 6 min à l’eau bouillante salée et rafraîchissez-les.",
       "Faites griller les amandes à sec 2 min à feu moyen jusqu’à ce qu’elles blondissent. Réservez.",
-      "Salez les escalopes et dorez-les dans 15 g de beurre 3 min par face à feu moyen-vif. Réservez au chaud.",
+      "Salez les tranches de cuisse et dorez-les dans 15 g de beurre 5 min par face à feu moyen, jusqu’à ce qu’elles soient cuites à cœur. Réservez au chaud.",
       "Dans la même poêle, faites sauter les tomates cerises coupées en deux avec le reste de beurre, l’ail restant et l’origan 2 min, ajoutez les haricots 2 min. Arrosez de citron.",
       "Servez la dinde avec les haricots parsemés d’amandes et les pommes de terre.",
       "Terminez le repas par un morceau de comté (son calcium limite l’absorption des oxalates)."

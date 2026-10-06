@@ -114,6 +114,7 @@ export function ConstraintsEditor({ value, onChange }: { value: PlannerConstrain
           <Chip on={!!value.seasonOnly} onClick={() => set({ seasonOnly: !value.seasonOnly })}>🍂 Uniquement de saison</Chip>
           <Chip on={!!value.favoritesOnly} onClick={() => set({ favoritesOnly: !value.favoritesOnly })}>❤️ Uniquement mes favoris</Chip>
           <Chip on={!!value.coldLunch} onClick={() => set({ coldLunch: !value.coldLunch })}>🥗 Midi en semaine : repas froid / lunch box</Chip>
+          <Chip on={value.simpleSnacks !== false} onClick={() => set({ simpleSnacks: value.simpleSnacks === false })}>🍎 Goûters tout simples en semaine (≤ 10 min)</Chip>
         </Row>
         <button className="btn sm ghost" onClick={() => onChange({})}>
           Réinitialiser les critères

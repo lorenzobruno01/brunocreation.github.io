@@ -356,7 +356,7 @@
       "herbace",
       "umami"
     ],
-    "tips": "Remplacez le veau par de l’escalope de dinde pour une version économique ; le temps de cuisson est identique."
+    "tips": "Remplacez le veau par des hauts de cuisse de poulet aplatis pour une version économique ; le temps de cuisson est identique."
   },
   {
     "id": "med-spaghetti-carbonara",
@@ -939,7 +939,7 @@
   {
     "id": "med-tacchino-tonnato",
     "name": "Dinde tonnato et pommes de terre tièdes",
-    "description": "La version piémontaise du vitello tonnato avec un rôti de dinde poché au vin blanc, tranché fin et nappé d’une sauce mayonnaise au thon, anchois et câpres.",
+    "description": "La version piémontaise du vitello tonnato avec un rôti de cuisse de dinde poché au vin blanc, tranché fin et nappé d’une sauce mayonnaise au thon, anchois et câpres.",
     "emoji": "🦃",
     "category": "plat",
     "mealTypes": [
@@ -948,16 +948,16 @@
     ],
     "cuisine": "italienne",
     "prepTime": 25,
-    "cookTime": 45,
+    "cookTime": 65,
     "restTime": 180,
     "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 800,
+        "id": "dinde-cuisse",
+        "qty": 1000,
         "unit": "g",
-        "note": "filet de dinde entier, ficelé en rôti"
+        "note": "2 cuisses désossées, roulées et ficelées en rôti"
       },
       {
         "id": "vin-blanc",
@@ -1040,7 +1040,7 @@
       }
     ],
     "steps": [
-      "Portez à frémissement l’eau, le vin blanc, la carotte, le céleri, le laurier et une cuillère de sel. Plongez le rôti : le liquide doit le couvrir. Pochez 35-40 min à petits frémissements, jusqu’à 70 °C à cœur.",
+      "Portez à frémissement l’eau, le vin blanc, la carotte, le céleri, le laurier et une cuillère de sel. Plongez le rôti : le liquide doit le couvrir. Pochez 55 à 60 min à petits frémissements, jusqu’à 75 °C à cœur.",
       "Laissez refroidir le rôti dans son bouillon au moins 1 h, puis enveloppez-le et mettez-le 2 h au frais : il se tranchera bien plus finement.",
       "Sauce : mixez les jaunes, le thon, les anchois, 1 cuillère de câpres et le jus de citron. Ajoutez l’huile en mince filet en mixant jusqu’à une mayonnaise épaisse, puis détendez avec 3-4 cuillères de bouillon de pochage : elle doit napper comme une crème.",
       "Cuisez les pommes de terre en robe des champs 20-25 min à l’eau salée, pelez-les tièdes et coupez-les en rondelles épaisses.",
@@ -1534,14 +1534,15 @@
     ],
     "cuisine": "italienne",
     "prepTime": 15,
-    "cookTime": 12,
+    "cookTime": 15,
     "difficulty": "tres-facile",
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 2,
-        "unit": "piece"
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 360,
+        "unit": "g",
+        "note": "avec la peau si possible"
       },
       {
         "id": "pain-levain",
@@ -1611,7 +1612,7 @@
     "steps": [
       "Couvrez l’oignon rouge d’eau froide avec 1 cuillère de vinaigre pendant 10 min pour l’adoucir.",
       "Coupez les tomates en gros morceaux au-dessus d’un saladier, salez-les et laissez-les rendre leur jus 10 min.",
-      "Aplatissez les blancs de poulet à 2 cm d’épaisseur, frottez-les d’1 cuillère d’huile, d’origan et de sel. Grillez-les 5-6 min par face sur une poêle-gril très chaude, jusqu’à 72 °C à cœur. Laissez reposer 5 min et tranchez.",
+      "Ouvrez les hauts de cuisse bien à plat, frottez-les d’1 cuillère d’huile, d’origan et de sel. Grillez-les 7 min côté peau puis 5 min de l’autre côté sur une poêle-gril très chaude, jusqu’à 75 °C à cœur. Laissez reposer 5 min et tranchez.",
       "Coupez le pain en cubes de 3 cm, faites-les dorer 3 min à sec dans la poêle, puis versez-les dans le saladier avec les tomates et leur jus.",
       "Ajoutez concombre en demi-rondelles, oignon égoutté, câpres, mozzarella déchirée, basilic, le reste de l’huile et du vinaigre. Mélangez et laissez le pain s’imbiber 10 min.",
       "Répartissez dans les assiettes et posez le poulet tranché par-dessus. Poivrez généreusement."
