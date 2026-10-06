@@ -1,7 +1,7 @@
 // Faux Supabase en mémoire (auth + PostgREST + RPC) pour les tests de bout en bout.
 // Vérifie aussi l'appartenance au foyer (équivalent des règles RLS).
 const H = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': '*', 'access-control-expose-headers': '*' };
-export function createMock({ legacy = false } = {}) {
+export function createMock({ legacy = false, missingTables = [] } = {}) {
   const db = { users: {}, households: {}, members: [], invitations: {}, user_data: {}, tables: {} };
   let clock = Date.parse('2026-10-06T08:00:00Z');
   const now = () => new Date((clock += 7)).toISOString().replace('Z', '+00:00');
@@ -54,6 +54,7 @@ export function createMock({ legacy = false } = {}) {
       if (m === 'GET') { const acc = req.headers()['accept'] || ''; const r = db.households[hid]; return acc.includes('pgrst.object') ? json(r) : json([r]); }
       if (m === 'PATCH') { Object.assign(db.households[hid], body()); return route.fulfill({ status: 204, headers: H }); }
     }
+    if (missingTables.includes(t)) return json({ code: 'PGRST205', message: `Could not find the table 'public.${t}' in the schema cache` }, 404);
     const tab = (db.tables[t] ??= {});
     if (m === 'POST') {
       stats.upserts++;

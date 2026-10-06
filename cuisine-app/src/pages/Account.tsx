@@ -310,13 +310,18 @@ export function Account() {
           {cloud.household && <div className="muted">{cloud.live ? '⚡ Temps réel actif' : '🔁 Mise à jour automatique toutes les 20 s'}</div>}
           {cloud.error && cloud.status === 'error' && <div className="muted">{cloud.error}</div>}
         </div>
+        {!!cloud.missing?.length && (
+          <div className="callout small" style={{ margin: 0 }}>
+            ⚠️ Le serveur ne trouve pas {cloud.missing.length > 1 ? 'les tables' : 'la table'} <code>{cloud.missing.join(', ')}</code> : ces données restent sur ce téléphone, tout le reste se synchronise. Dans Supabase, relancez le fichier <code>supabase/migrations/20261006000000_foyers.sql</code> (SQL Editor → Run), puis touchez « Synchroniser maintenant ».
+          </div>
+        )}
         {cloud.legacy && (
           <div className="callout small" style={{ margin: 0 }}>
             Le serveur utilise encore l’ancienne sauvegarde (une copie par compte). Pour activer les foyers partagés et la liste de courses en direct, exécutez la migration <code>supabase/migrations/20261006000000_foyers.sql</code> dans Supabase (voir le README).
           </div>
         )}
         <div className="row">
-          <button className="btn" onClick={() => syncNow()}>
+          <button className="btn" onClick={() => syncNow(true)}>
             🔄 Synchroniser maintenant
           </button>
           <Link className="btn" to="/reglages">

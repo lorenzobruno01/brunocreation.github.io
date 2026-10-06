@@ -137,3 +137,6 @@ begin
     end if;
   end loop;
 end $$;
+
+-- l'API (PostgREST) relit immédiatement la liste des tables
+notify pgrst, 'reload schema';
