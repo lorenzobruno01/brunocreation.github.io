@@ -1,0 +1,3926 @@
+[
+ {
+  "id": "cmbb-porc-effiloche-patate-douce-coleslaw",
+  "name": "Échine de porc effilochée au paprika fumé, patates douces rôties et coleslaw à la mayonnaise",
+  "description": "L'esprit du pulled pork américain : une échine confite 3 h 30 au four avec épices et vinaigre de cidre, effilochée à la fourchette, servie avec des quartiers de patate douce rôtis et un chou cru croquant lié à la mayonnaise maison.",
+  "emoji": "🍖",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "americaine",
+  "prepTime": 25,
+  "cookTime": 210,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 1000,
+    "unit": "g",
+    "note": "en un morceau, désossée"
+   },
+   {
+    "id": "paprika",
+    "qty": 2,
+    "unit": "cac",
+    "note": "fumé de préférence"
+   },
+   {
+    "id": "cumin",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "écrasées"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "émincé"
+   },
+   {
+    "id": "vinaigre-cidre",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 200,
+    "unit": "ml"
+   },
+   {
+    "id": "patate-douce",
+    "qty": 280,
+    "unit": "g",
+    "note": "en quartiers, avec la peau"
+   },
+   {
+    "id": "graisse-canard",
+    "qty": 20,
+    "unit": "g"
+   },
+   {
+    "id": "chou-vert",
+    "qty": 250,
+    "unit": "g",
+    "note": "très finement émincé"
+   },
+   {
+    "id": "carotte",
+    "qty": 60,
+    "unit": "g",
+    "note": "râpée"
+   },
+   {
+    "id": "mayonnaise",
+    "qty": 80,
+    "unit": "g"
+   },
+   {
+    "id": "moutarde",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 150 °C. Mélangez le paprika, le cumin, 2 c. à café de sel et l'ail écrasé, puis frottez-en toute la surface de l'échine.",
+   "Posez l'oignon émincé au fond d'une cocotte, l'échine par-dessus, versez le bouillon et 2 c. à soupe de vinaigre de cidre. Couvrez et enfournez 3 h 30 : la viande doit se détacher sans effort à la fourchette.",
+   "Pendant la dernière heure, mélangez le chou, la carotte, la mayonnaise, la moutarde et le reste du vinaigre ; salez, poivrez et laissez reposer au frais pour que le chou s'assouplisse.",
+   "45 min avant la fin, enrobez les quartiers de patate douce de graisse de canard fondue, salez et étalez-les sur une plaque. Montez le four à 200 °C après avoir sorti la cocotte (gardez-la couverte) et rôtissez les patates douces 25 à 30 min, jusqu'à ce qu'elles soient dorées sur les bords.",
+   "Effilochez l'échine avec deux fourchettes directement dans la cocotte et mélangez-la au jus réduit : elle doit être juteuse et brillante. Rectifiez le sel.",
+   "Servez le porc effiloché bien chaud avec les patates douces et le coleslaw froid."
+  ],
+  "tags": [
+   "familial",
+   "batch cooking",
+   "riche en protéines",
+   "week-end"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "braise",
+  "flavors": [
+   "fume",
+   "umami",
+   "acidule"
+  ],
+  "tips": "Les restes de porc effiloché se gardent 3 jours au frais dans leur jus et se réchauffent à la poêle avec un œuf au plat."
+ },
+ {
+  "id": "cmbb-colombo-porc-coco-riz",
+  "name": "Colombo de porc au lait de coco, pommes de terre, courgette et aubergine, riz blanc",
+  "description": "Le mijoté antillais du dimanche : morceaux d'échine dorés puis mijotés avec les épices colombo, le lait de coco et les légumes fondants, servi avec un riz blanc pour saucer.",
+  "emoji": "🍛",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "latino-americaine",
+  "prepTime": 25,
+  "cookTime": 75,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 800,
+    "unit": "g",
+    "note": "en cubes de 4 cm"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 400,
+    "unit": "g",
+    "note": "en gros cubes"
+   },
+   {
+    "id": "courgette",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en demi-rondelles épaisses"
+   },
+   {
+    "id": "aubergine",
+    "qty": 200,
+    "unit": "g",
+    "note": "en cubes"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 250,
+    "unit": "ml"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "émincé"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "gingembre",
+    "qty": 10,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "garam-masala",
+    "qty": 2,
+    "unit": "cac",
+    "note": "ou poudre à colombo"
+   },
+   {
+    "id": "coriandre-graines",
+    "qty": 1,
+    "unit": "cac",
+    "note": "moulues"
+   },
+   {
+    "id": "piment-frais",
+    "qty": 1,
+    "unit": "piece",
+    "note": "entier, non percé",
+    "optional": true
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "citron-vert",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "huile-coco",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Arrosez les cubes de porc du jus du citron vert, salez et laissez mariner 15 min pendant que vous préparez les légumes.",
+   "Dans une cocotte, faites chauffer l'huile de coco à feu vif et dorez le porc en deux fois, 5 min par fournée : les cubes doivent être bien colorés sur toutes les faces. Réservez.",
+   "Baissez à feu moyen, faites fondre l'oignon 5 min, puis ajoutez l'ail, le gingembre, le garam masala et la coriandre ; remuez 1 min jusqu'à ce que les épices embaument.",
+   "Remettez le porc, ajoutez le lait de coco, 200 ml d'eau, le thym et le piment entier. Couvrez et laissez mijoter 40 min à petits frémissements.",
+   "Ajoutez les pommes de terre, la courgette et l'aubergine, couvrez et poursuivez 25 min : les pommes de terre doivent être tendres sous la pointe du couteau et la sauce nappante. Retirez le piment.",
+   "Pendant ce temps, rincez le riz et cuisez-le 11 min à couvert dans 1,5 fois son volume d'eau salée, puis laissez-le reposer 5 min. Servez le colombo sur le riz."
+  ],
+  "tags": [
+   "mijoté",
+   "familial",
+   "épicé doux",
+   "batch cooking"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "epice",
+   "cremeux",
+   "reconfortant"
+  ],
+  "tips": "Encore meilleur réchauffé le lendemain ; détendez la sauce d'un trait d'eau."
+ },
+ {
+  "id": "cmbb-brochettes-porc-chorizo-pesto",
+  "name": "Brochettes d'échine et chorizo, pommes de terre écrasées au pesto et haricots verts",
+  "description": "Des brochettes d'échine marinées au paprika, ponctuées de rondelles de chorizo, grillées à la poêle-gril, avec un écrasé de pommes de terre au pesto et des haricots verts croquants.",
+  "emoji": "🍢",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "espagnole",
+  "prepTime": 25,
+  "cookTime": 25,
+  "restTime": 30,
+  "difficulty": "facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 320,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "chorizo",
+    "qty": 70,
+    "unit": "g",
+    "note": "en rondelles épaisses"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "ail",
+    "qty": 1,
+    "unit": "gousse",
+    "note": "râpée"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "jus"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 300,
+    "unit": "g",
+    "note": "grenailles ou chair ferme"
+   },
+   {
+    "id": "pesto",
+    "qty": 50,
+    "unit": "g"
+   },
+   {
+    "id": "haricots-verts",
+    "qty": 120,
+    "unit": "g",
+    "note": "équeutés"
+   },
+   {
+    "id": "tomate-cerise",
+    "qty": 100,
+    "unit": "g"
+   },
+   {
+    "id": "beurre",
+    "qty": 10,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Mélangez le porc avec le paprika, l'ail, le jus de citron et 1 c. à soupe d'huile d'olive. Laissez mariner 30 min (ou jusqu'au soir au frais).",
+   "Cuisez les pommes de terre entières 20 min dans l'eau salée frémissante ; ajoutez les haricots verts pour les 7 dernières minutes. Égouttez.",
+   "Enfilez sur des piques le porc en alternant avec les rondelles de chorizo et les tomates cerises. Salez légèrement (le chorizo l'est déjà).",
+   "Faites chauffer une poêle-gril avec 1 c. à soupe d'huile à feu moyen-vif et cuisez les brochettes 10 à 12 min en les tournant toutes les 3 min : le porc doit être doré, juste rosé au cœur, le chorizo grillé.",
+   "Écrasez grossièrement les pommes de terre à la fourchette avec le pesto et le reste d'huile d'olive. Poêlez les haricots verts 2 min dans le beurre et poivrez.",
+   "Servez les brochettes sur l'écrasé au pesto, les haricots verts à côté, arrosées du jus de cuisson."
+  ],
+  "tags": [
+   "barbecue",
+   "été",
+   "familial",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "printemps",
+   "ete"
+  ],
+  "technique": "grill",
+  "flavors": [
+   "grille",
+   "herbace",
+   "fume"
+  ],
+  "tips": "Au barbecue, comptez 10 min sur braises moyennes en retournant souvent : le chorizo noircit vite."
+ },
+ {
+  "id": "cmbb-saute-porc-normand-riz",
+  "name": "Sauté d'échine de porc au cidre, pommes et crème, riz blanc beurré",
+  "description": "Un classique normand de semaine : cubes d'échine dorés au beurre, mijotés au cidre brut avec champignons et quartiers de pomme, la sauce liée à la crème fraîche, sur un riz bien beurré.",
+  "emoji": "🍎",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 15,
+  "cookTime": 50,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 800,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "pomme",
+    "qty": 2,
+    "unit": "piece",
+    "note": "acidulées, en quartiers"
+   },
+   {
+    "id": "champignon",
+    "qty": 250,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "echalote",
+    "qty": 2,
+    "unit": "piece",
+    "note": "ciselées"
+   },
+   {
+    "id": "cidre",
+    "qty": 250,
+    "unit": "ml",
+    "note": "brut"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 150,
+    "unit": "ml",
+    "note": "épaisse"
+   },
+   {
+    "id": "beurre",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Épongez le porc et salez-le. Dans une sauteuse, faites mousser 20 g de beurre à feu vif et dorez la viande en deux fois, 5 min par fournée. Réservez.",
+   "À feu moyen, faites suer les échalotes et les champignons 5 min dans les sucs, puis versez le cidre en grattant le fond. Remettez le porc et le thym, couvrez et laissez mijoter 30 min à feu doux.",
+   "Pendant ce temps, dorez les quartiers de pomme 3 min par face dans 10 g de beurre : ils doivent être caramélisés mais encore fermes. Réservez.",
+   "Rincez le riz et cuisez-le 11 min à couvert dans 1,5 fois son volume d'eau salée ; hors du feu, ajoutez le reste du beurre et laissez reposer 5 min.",
+   "Découvrez la sauteuse, ajoutez la crème et laissez bouillonner 3 à 4 min à découvert : la sauce doit napper la cuillère. Ajoutez les pommes, poivrez.",
+   "Servez le sauté sur le riz beurré."
+  ],
+  "tags": [
+   "familial",
+   "terroir",
+   "automne",
+   "une cocotte"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "cremeux",
+   "fruite",
+   "reconfortant"
+  ]
+ },
+ {
+  "id": "cmbb-polenta-ragout-porc-chorizo",
+  "name": "Polenta crémeuse au parmesan, ragoût d'échine au chorizo, poivrons et aubergine",
+  "description": "Un ragoût rustique à l'italo-espagnole : échine mijotée à la tomate avec chorizo, poivrons et aubergine, versé sur une polenta onctueuse montée au beurre et au parmesan.",
+  "emoji": "🌽",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 20,
+  "cookTime": 70,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 700,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "chorizo",
+    "qty": 120,
+    "unit": "g",
+    "note": "en demi-rondelles"
+   },
+   {
+    "id": "poivron-rouge",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en lanières"
+   },
+   {
+    "id": "aubergine",
+    "qty": 250,
+    "unit": "g",
+    "note": "en cubes"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "émincé"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "vin-rouge",
+    "qty": 100,
+    "unit": "ml",
+    "optional": true
+   },
+   {
+    "id": "romarin",
+    "qty": 1,
+    "unit": "brin"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "polenta",
+    "qty": 200,
+    "unit": "g",
+    "note": "précuite ou traditionnelle"
+   },
+   {
+    "id": "beurre",
+    "qty": 30,
+    "unit": "g"
+   },
+   {
+    "id": "parmesan",
+    "qty": 60,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une cocotte, faites revenir le chorizo 2 min à feu moyen dans 1 c. à soupe d'huile pour qu'il rende sa graisse rouge ; retirez-le. Dorez-y le porc salé à feu vif, 6 min en deux fois.",
+   "Ajoutez l'oignon, l'ail, les poivrons et l'aubergine avec le reste de l'huile et faites revenir 8 min en remuant, jusqu'à ce que l'aubergine commence à fondre.",
+   "Versez le vin rouge et laissez réduire de moitié, puis ajoutez les tomates concassées, le romarin, le chorizo et 150 ml d'eau. Couvrez et laissez mijoter 50 min à feu doux : le porc doit être fondant et la sauce épaisse.",
+   "15 min avant de servir, portez 800 ml d'eau salée à ébullition, versez la polenta en pluie en fouettant, puis cuisez à feu doux en remuant (5 min pour une précuite, 40 min pour une traditionnelle à lancer plus tôt).",
+   "Hors du feu, incorporez le beurre et la moitié du parmesan à la polenta : elle doit être lisse et coulante.",
+   "Servez la polenta en assiettes creuses, le ragoût au centre, et parsemez du reste de parmesan. Poivrez."
+  ],
+  "tags": [
+   "mijoté",
+   "réconfortant",
+   "familial",
+   "hiver"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "umami",
+   "fume",
+   "reconfortant"
+  ],
+  "tips": "Le maïs n'étant pas nixtamalisé, alternez la polenta avec d'autres féculents dans la semaine."
+ },
+ {
+  "id": "cmbb-echine-grecque-choufleur-brocoli-feta",
+  "name": "Échine de porc à l'origan et au citron, chou-fleur et brocoli rôtis à la feta",
+  "description": "Inspiration « souvlaki » en plaque : tranches d'échine marinées citron-origan, rôties sur un lit de chou-fleur et de brocoli, finies avec de la feta émiettée qui fond légèrement dans la chaleur.",
+  "emoji": "🇬🇷",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "grecque",
+  "prepTime": 20,
+  "cookTime": 35,
+  "restTime": 30,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 380,
+    "unit": "g",
+    "note": "en 2 tranches épaisses d’1,5 cm"
+   },
+   {
+    "id": "citron",
+    "qty": 1,
+    "unit": "piece",
+    "note": "zeste et jus"
+   },
+   {
+    "id": "origan",
+    "qty": 2,
+    "unit": "cac",
+    "note": "séché"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "écrasées"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "chou-fleur",
+    "qty": 350,
+    "unit": "g",
+    "note": "en bouquets"
+   },
+   {
+    "id": "brocoli",
+    "qty": 250,
+    "unit": "g",
+    "note": "en bouquets"
+   },
+   {
+    "id": "oignon-rouge",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en quartiers"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 250,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "feta",
+    "qty": 100,
+    "unit": "g"
+   },
+   {
+    "id": "yaourt-grec",
+    "qty": 100,
+    "unit": "g",
+    "optional": true
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Mélangez le jus et le zeste du citron, l'origan, l'ail et 2 c. à soupe d'huile d'olive ; enrobez-en les tranches d'échine et laissez mariner 30 min.",
+   "Préchauffez le four à 220 °C. Sur une grande plaque, mélangez les quartiers de pomme de terre et l'oignon avec 1 c. à soupe d'huile, salez et enfournez 10 min.",
+   "Ajoutez le chou-fleur et le brocoli enrobés du reste d'huile, poussez les légumes sur les côtés et posez l'échine égouttée au centre. Enfournez 20 à 25 min en retournant la viande à mi-cuisson : elle doit être dorée et son jus clair.",
+   "Émiettez la feta sur les légumes et repassez 3 min au four, juste pour qu'elle tiédisse et blondisse.",
+   "Laissez reposer la viande 3 min, arrosez le tout du jus de la plaque, poivrez et servez avec le yaourt grec."
+  ],
+  "tags": [
+   "plaque au four",
+   "tout-en-un",
+   "riche en protéines",
+   "rapide à préparer"
+  ],
+  "seasons": [
+   "automne",
+   "hiver",
+   "printemps"
+  ],
+  "technique": "four",
+  "flavors": [
+   "acidule",
+   "herbace",
+   "grille"
+  ]
+ },
+ {
+  "id": "cmbb-poivrons-farcis-porc-chorizo-pesto",
+  "name": "Poivrons farcis au riz, échine et chorizo, gratinés à la mozzarella et nappés de pesto",
+  "description": "Des poivrons rouges garnis d'une farce généreuse d'échine hachée au couteau, de chorizo et de riz, cuits sur un fond de tomate, gratinés à la mozzarella et relevés d'une cuillerée de pesto au moment de servir.",
+  "emoji": "🫑",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 30,
+  "cookTime": 50,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "poivron-rouge",
+    "qty": 4,
+    "unit": "piece",
+    "note": "bien droits"
+   },
+   {
+    "id": "porc-echine",
+    "qty": 500,
+    "unit": "g",
+    "note": "hachée au couteau ou par le boucher"
+   },
+   {
+    "id": "chorizo",
+    "qty": 100,
+    "unit": "g",
+    "note": "en petits dés"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 120,
+    "unit": "g"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "ciselé"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "oeuf",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "mozzarella",
+    "qty": 125,
+    "unit": "g",
+    "note": "en tranches"
+   },
+   {
+    "id": "pesto",
+    "qty": 80,
+    "unit": "g"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Cuisez le riz 8 min dans l'eau salée bouillante (il finira de cuire au four), égouttez et laissez tiédir. Préchauffez le four à 190 °C.",
+   "Faites revenir l'oignon et l'ail 4 min dans 1 c. à soupe d'huile, ajoutez le chorizo 1 min, puis laissez tiédir. Dans un saladier, mélangez l'échine hachée, le riz, l'oignon-chorizo, l'œuf, sel et poivre.",
+   "Coupez un chapeau aux poivrons, épépinez-les et remplissez-les de farce en tassant légèrement.",
+   "Versez les tomates concassées salées dans un plat, posez les poivrons debout, coiffez-les de leur chapeau et arrosez du reste d'huile. Enfournez 40 min : la farce doit être cuite à cœur (75 °C) et les poivrons fondants.",
+   "Retirez les chapeaux, couvrez la farce de mozzarella et gratinez 8 à 10 min, jusqu'à ce qu'elle bouillonne et dore.",
+   "Servez chaque poivron sur la sauce tomate avec une cuillerée de pesto par-dessus."
+  ],
+  "tags": [
+   "familial",
+   "four",
+   "batch cooking",
+   "été"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "four",
+  "flavors": [
+   "umami",
+   "herbace",
+   "cremeux"
+  ]
+ },
+ {
+  "id": "cmbb-echine-petits-pois-francaise",
+  "name": "Échine de porc braisée aux petits pois à la française",
+  "description": "L'échine dorée puis braisée doucement sur un lit de petits pois, laitue, oignons nouveaux et carottes, comme les petits pois à la française de grand-mère, avec des pommes de terre nouvelles fondantes.",
+  "emoji": "🟢",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 20,
+  "cookTime": 75,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "porc-echine",
+    "qty": 900,
+    "unit": "g",
+    "note": "en rôti ficelé"
+   },
+   {
+    "id": "petits-pois",
+    "qty": 500,
+    "unit": "g",
+    "note": "frais écossés ou surgelés"
+   },
+   {
+    "id": "laitue",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "cœur, en lanières"
+   },
+   {
+    "id": "oignon-nouveau",
+    "qty": 6,
+    "unit": "piece"
+   },
+   {
+    "id": "carotte",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en rondelles"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 500,
+    "unit": "g",
+    "note": "nouvelles, entières"
+   },
+   {
+    "id": "beurre",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 250,
+    "unit": "ml"
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Salez le rôti d'échine sur toutes ses faces. Dans une cocotte, faites mousser 20 g de beurre à feu moyen-vif et dorez-le 10 min en le tournant : il doit être bien coloré partout.",
+   "Ajoutez les oignons nouveaux, les carottes et le thym autour de la viande, mouillez avec le bouillon, couvrez et laissez braiser 40 min à feu doux en arrosant de temps en temps.",
+   "Ajoutez les pommes de terre nouvelles, couvrez et poursuivez 20 min.",
+   "Ajoutez les petits pois, la laitue et le reste du beurre, couvrez et cuisez encore 10 à 12 min : les petits pois doivent être tendres et brillants, la laitue fondue.",
+   "Sortez le rôti, laissez-le reposer 5 min puis tranchez-le. Poivrez les légumes et servez les tranches sur les petits pois avec le jus de braisage."
+  ],
+  "tags": [
+   "printemps",
+   "familial",
+   "une cocotte",
+   "terroir"
+  ],
+  "seasons": [
+   "printemps",
+   "ete"
+  ],
+  "technique": "braise",
+  "flavors": [
+   "reconfortant",
+   "herbace",
+   "umami"
+  ]
+ },
+ {
+  "id": "cmbb-kari-thai-dinde-pdt-choufleur",
+  "name": "Kari jaune thaï de dinde, pommes de terre et chou-fleur, riz jasmin",
+  "description": "Le « gaeng kari » de Bangkok, doux et parfumé : dinde et pommes de terre mijotées dans le lait de coco avec pâte de curry, citronnelle et sauce poisson, chou-fleur ajouté en fin de cuisson, riz jasmin pour saucer.",
+  "emoji": "🍛",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "thai-vietnamienne",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 650,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "chou-fleur",
+    "qty": 400,
+    "unit": "g",
+    "note": "en petits bouquets"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 350,
+    "unit": "g",
+    "note": "en cubes de 2 cm"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 300,
+    "unit": "ml"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "finement émincé"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "râpées"
+   },
+   {
+    "id": "gingembre",
+    "qty": 15,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "pate-curry",
+    "qty": 2,
+    "unit": "cas",
+    "note": "jaune ou rouge"
+   },
+   {
+    "id": "citronnelle",
+    "qty": 1,
+    "unit": "piece",
+    "note": "tige écrasée"
+   },
+   {
+    "id": "sauce-poisson",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "citron-vert",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "huile-coco",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "coriandre",
+    "qty": 10,
+    "unit": "g",
+    "note": "fraîche"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g",
+    "note": "jasmin"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Rincez le riz jasmin jusqu'à ce que l'eau soit claire et laissez-le égoutter.",
+   "Dans une sauteuse, faites chauffer l'huile de coco à feu moyen et faites dorer l'oignon 6 min. Ajoutez l'ail, le gingembre et la pâte de curry, et remuez 1 min jusqu'à ce que le mélange embaume.",
+   "Versez la moitié du lait de coco et laissez bouillonner 2 min pour que la graisse se sépare légèrement, puis ajoutez la dinde et enrobez-la de pâte 3 min.",
+   "Ajoutez les pommes de terre, la citronnelle, le reste du lait de coco, la sauce poisson et 150 ml d'eau. Couvrez et laissez mijoter 12 min, puis ajoutez le chou-fleur et poursuivez 8 min : les pommes de terre doivent être tendres et le chou-fleur encore légèrement ferme.",
+   "Pendant ce temps, cuisez le riz 11 min à couvert dans 1,5 fois son volume d'eau salée, puis laissez-le reposer 5 min hors du feu.",
+   "Retirez la citronnelle, ajoutez le jus du citron vert, goûtez et rectifiez avec un trait de sauce poisson. Parsemez de coriandre et servez avec le riz."
+  ],
+  "tags": [
+   "épicé doux",
+   "familial",
+   "une cocotte",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "epice",
+   "cremeux",
+   "reconfortant"
+  ]
+ },
+ {
+  "id": "cmbb-dinde-poireaux-creme-pdt",
+  "name": "Blanquette express de dinde aux poireaux et pommes de terre",
+  "description": "Tout le réconfort d'une blanquette en 40 minutes : cubes de dinde pochés avec poireaux, champignons et pommes de terre dans un bouillon parfumé, sauce liée à la crème et au jaune d'œuf.",
+  "emoji": "🥣",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 15,
+  "cookTime": 30,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 700,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "poireau",
+    "qty": 300,
+    "unit": "g",
+    "note": "blancs et vert tendre, en tronçons"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 450,
+    "unit": "g",
+    "note": "chair ferme, en gros morceaux"
+   },
+   {
+    "id": "champignon",
+    "qty": 200,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 600,
+    "unit": "ml"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 150,
+    "unit": "ml"
+   },
+   {
+    "id": "jaune-oeuf",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "beurre",
+    "qty": 25,
+    "unit": "g"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "jus"
+   },
+   {
+    "id": "laurier",
+    "qty": 1,
+    "unit": "feuille"
+   },
+   {
+    "id": "muscade",
+    "qty": 1,
+    "unit": "pincee"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une cocotte, faites fondre le beurre à feu moyen et faites suer les poireaux 5 min sans coloration, puis ajoutez les champignons 3 min.",
+   "Ajoutez la dinde, les pommes de terre, le laurier et le bouillon chaud : le liquide doit juste couvrir. Portez à frémissement, écumez, couvrez et cuisez 20 min à feu doux.",
+   "Vérifiez la cuisson : les pommes de terre se percent sans résistance et la dinde est blanche à cœur. Prélevez 300 ml de bouillon et laissez-le réduire de moitié dans une petite casserole à feu vif (gardez le reste au chaud pour une soupe).",
+   "Hors du feu, fouettez la crème avec le jaune d'œuf et le jus de citron, versez-y le bouillon réduit en fouettant, puis remettez sur feu très doux 2 min sans bouillir, jusqu'à ce que la sauce nappe la cuillère.",
+   "Égouttez la viande et les légumes avec une écumoire, nappez de sauce, relevez de muscade et de poivre, et servez aussitôt."
+  ],
+  "tags": [
+   "familial",
+   "réconfortant",
+   "terroir",
+   "doux"
+  ],
+  "seasons": [
+   "automne",
+   "hiver",
+   "printemps"
+  ],
+  "technique": "poche",
+  "flavors": [
+   "cremeux",
+   "reconfortant",
+   "lacte"
+  ]
+ },
+ {
+  "id": "cmbb-dinde-parmigiana-polenta",
+  "name": "Escalopes de dinde à la parmigiana, aubergines et polenta crémeuse",
+  "description": "Le gratin du sud de l'Italie revisité en plat complet : escalopes de dinde saisies, aubergines rôties, sauce tomate au basilic et mozzarella fondante, servies sur une polenta au parmesan.",
+  "emoji": "🍆",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 25,
+  "cookTime": 40,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 4,
+    "unit": "piece",
+    "note": "aplaties"
+   },
+   {
+    "id": "aubergine",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en tranches d'1 cm"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "émincées"
+   },
+   {
+    "id": "basilic",
+    "qty": 10,
+    "unit": "g"
+   },
+   {
+    "id": "mozzarella",
+    "qty": 250,
+    "unit": "g",
+    "note": "égouttée, en tranches"
+   },
+   {
+    "id": "parmesan",
+    "qty": 60,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 5,
+    "unit": "cas"
+   },
+   {
+    "id": "polenta",
+    "qty": 180,
+    "unit": "g",
+    "note": "précuite"
+   },
+   {
+    "id": "beurre",
+    "qty": 30,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 220 °C. Badigeonnez les tranches d'aubergine de 3 c. à soupe d'huile, salez et rôtissez-les 20 min sur une plaque, jusqu'à ce qu'elles soient dorées et fondantes. Baissez le four à 200 °C.",
+   "Pendant ce temps, faites revenir l'ail 1 min dans 1 c. à soupe d'huile, ajoutez les tomates concassées et la moitié du basilic, salez et laissez réduire 10 min à feu doux.",
+   "Salez les escalopes et saisissez-les 2 min par face dans le reste d'huile, à feu vif, pour les dorer sans les cuire à fond.",
+   "Dans un plat, étalez un peu de sauce, puis les escalopes, les aubergines, le reste de sauce, la mozzarella et 20 g de parmesan. Enfournez 12 min : la mozzarella doit bouillonner et dorer par endroits.",
+   "Portez 750 ml d'eau salée à ébullition, versez la polenta en pluie en fouettant et cuisez 5 min à feu doux en remuant. Hors du feu, incorporez le beurre et le reste du parmesan.",
+   "Servez la parmigiana sur la polenta, parsemée du reste de basilic."
+  ],
+  "tags": [
+   "gratiné",
+   "familial",
+   "riche en protéines",
+   "été"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "four",
+  "flavors": [
+   "umami",
+   "cremeux",
+   "herbace"
+  ]
+ },
+ {
+  "id": "cmbb-paella-dinde-chorizo-haricots",
+  "name": "Paella de campagne à la dinde, chorizo, poivrons et haricots verts",
+  "description": "Une paella de l'intérieur des terres, sans fruits de mer : dinde et chorizo dorés, sofrito de tomate, poivrons et haricots verts, riz cuit dans le bouillon safrané jusqu'au fond légèrement croustillant.",
+  "emoji": "🥘",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "espagnole",
+  "prepTime": 20,
+  "cookTime": 40,
+  "difficulty": "intermediaire",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 600,
+    "unit": "g",
+    "note": "en cubes de 3 cm"
+   },
+   {
+    "id": "chorizo",
+    "qty": 120,
+    "unit": "g",
+    "note": "en rondelles"
+   },
+   {
+    "id": "riz-rond",
+    "qty": 280,
+    "unit": "g",
+    "note": "type bomba"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "râpées"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 150,
+    "unit": "g"
+   },
+   {
+    "id": "poivron-rouge",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en lanières"
+   },
+   {
+    "id": "haricots-verts",
+    "qty": 200,
+    "unit": "g",
+    "note": "coupés en deux"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac",
+    "note": "fumé"
+   },
+   {
+    "id": "safran",
+    "qty": 1,
+    "unit": "pincee"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 900,
+    "unit": "ml"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "citron",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en quartiers"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Faites infuser le safran dans le bouillon chaud. Dans une poêle à paella (ou une grande sauteuse), dorez le chorizo 2 min dans l'huile à feu moyen, puis retirez-le.",
+   "Dorez la dinde salée 5 min à feu vif dans l'huile rouge, puis repoussez-la sur les bords. Faites revenir le poivron et les haricots verts 4 min au centre.",
+   "Ajoutez l'ail, le paprika, les tomates râpées et les tomates concassées ; laissez réduire 5 min en remuant, jusqu'à obtenir un sofrito épais.",
+   "Versez le riz, mélangez 1 min pour le nacrer, puis versez le bouillon chaud et remettez le chorizo. Répartissez bien et ne remuez plus. Cuisez 10 min à feu vif puis 8 min à feu doux.",
+   "Montez le feu 1 à 2 min à la fin : le fond doit grésiller et sentir le grillé sans brûler. Couvrez d'un torchon et laissez reposer 5 min, puis servez avec les quartiers de citron."
+  ],
+  "tags": [
+   "convivial",
+   "une poêle",
+   "familial",
+   "week-end"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "poele",
+  "flavors": [
+   "fume",
+   "umami",
+   "grille"
+  ]
+ },
+ {
+  "id": "cmbb-roules-dinde-pesto-mozzarella",
+  "name": "Roulés de dinde au pesto et à la mozzarella, pommes de terre rôties au romarin",
+  "description": "Des escalopes de dinde roulées autour d'une cuillerée de pesto et d'un bâtonnet de mozzarella, dorées puis rôties au four avec des pommes de terre au romarin et des tomates cerises.",
+  "emoji": "🌀",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 3,
+    "unit": "piece",
+    "note": "fines, aplaties"
+   },
+   {
+    "id": "pesto",
+    "qty": 50,
+    "unit": "g"
+   },
+   {
+    "id": "mozzarella",
+    "qty": 100,
+    "unit": "g",
+    "note": "en bâtonnets"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 350,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "tomate-cerise",
+    "qty": 150,
+    "unit": "g"
+   },
+   {
+    "id": "romarin",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "en chemise"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 210 °C. Mélangez les pommes de terre avec 2 c. à soupe d'huile, le romarin, l'ail en chemise et du sel, et enfournez-les 15 min sur une plaque.",
+   "Salez légèrement les escalopes, tartinez-les de pesto en laissant 1 cm de bord, posez un bâtonnet de mozzarella et roulez-les serré. Maintenez avec une pique en bois.",
+   "Dorez les roulés 4 min dans le reste d'huile à feu moyen-vif, en les tournant pour colorer toutes les faces.",
+   "Posez les roulés et les tomates cerises au milieu des pommes de terre et poursuivez la cuisson 15 à 18 min : la dinde doit être blanche à cœur et la mozzarella filer légèrement aux extrémités.",
+   "Laissez reposer 2 min, coupez chaque roulé en deux en biais, poivrez et servez avec les pommes de terre et les tomates éclatées, arrosés du jus de la plaque."
+  ],
+  "tags": [
+   "familial",
+   "four",
+   "riche en protéines",
+   "rapide à préparer"
+  ],
+  "seasons": [],
+  "technique": "four",
+  "flavors": [
+   "herbace",
+   "cremeux",
+   "grille"
+  ]
+ },
+ {
+  "id": "cmbb-salade-riz-dinde-pesto-feta-avocat",
+  "name": "Salade de riz à la dinde grillée, pesto, feta, avocat et tomates cerises",
+  "description": "La salade de riz d'été qui se tient bien dans une boîte : riz assaisonné au pesto encore tiède, dinde grillée en lanières, feta, avocat, tomates cerises et roquette, avec un filet de citron.",
+  "emoji": "🥗",
+  "category": "salade-composee",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 20,
+  "cookTime": 15,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 2,
+    "unit": "piece"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 140,
+    "unit": "g"
+   },
+   {
+    "id": "pesto",
+    "qty": 60,
+    "unit": "g"
+   },
+   {
+    "id": "feta",
+    "qty": 80,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "avocat",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "tomate-cerise",
+    "qty": 150,
+    "unit": "g",
+    "note": "coupées en deux"
+   },
+   {
+    "id": "roquette",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "jus"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Rincez le riz et cuisez-le 11 min dans un grand volume d'eau salée bouillante. Égouttez, rincez rapidement à l'eau froide puis mélangez-le encore tiède avec le pesto pour qu'il s'en imprègne.",
+   "Salez les escalopes, badigeonnez-les d'1 c. à soupe d'huile et grillez-les 3 à 4 min par face à la poêle-gril bien chaude : elles doivent être marquées et blanches à cœur. Laissez reposer 3 min puis taillez-les en lanières.",
+   "Arrosez les dés d'avocat du jus de citron pour qu'ils ne noircissent pas.",
+   "Dans un grand saladier, mélangez le riz au pesto, les tomates cerises, la feta, l'avocat et la roquette avec le reste d'huile. Poivrez.",
+   "Disposez les lanières de dinde par-dessus et servez à température ambiante."
+  ],
+  "tags": [
+   "salade",
+   "lunch box",
+   "été",
+   "rapide"
+  ],
+  "seasons": [
+   "printemps",
+   "ete"
+  ],
+  "technique": "grill",
+  "flavors": [
+   "frais",
+   "herbace",
+   "acidule"
+  ]
+ },
+ {
+  "id": "cmbb-salade-cobb-dinde",
+  "name": "Salade Cobb à la dinde, bacon, avocat et œufs, sauce mayonnaise au roquefort",
+  "description": "La grande salade californienne présentée en rangées : dinde grillée, bacon croustillant, œufs durs, avocat, tomates et laitue, nappée d'une sauce crémeuse mayonnaise-yaourt au roquefort.",
+  "emoji": "🥑",
+  "category": "salade-composee",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "americaine",
+  "prepTime": 20,
+  "cookTime": 15,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 2,
+    "unit": "piece"
+   },
+   {
+    "id": "bacon",
+    "qty": 60,
+    "unit": "g",
+    "note": "en tranches"
+   },
+   {
+    "id": "oeuf",
+    "qty": 3,
+    "unit": "piece"
+   },
+   {
+    "id": "avocat",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "laitue",
+    "qty": 200,
+    "unit": "g",
+    "note": "romaine, émincée"
+   },
+   {
+    "id": "ciboulette",
+    "qty": 5,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "mayonnaise",
+    "qty": 50,
+    "unit": "g"
+   },
+   {
+    "id": "yaourt-grec",
+    "qty": 60,
+    "unit": "g"
+   },
+   {
+    "id": "roquefort",
+    "qty": 40,
+    "unit": "g",
+    "note": "émietté"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "jus"
+   },
+   {
+    "id": "beurre",
+    "qty": 10,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Plongez les œufs 10 min dans l'eau bouillante, refroidissez-les dans l'eau glacée, écalez-les et coupez-les en quartiers.",
+   "Faites griller le bacon à sec dans une poêle 4 à 5 min jusqu'à ce qu'il soit croustillant, puis égouttez-le sur du papier et cassez-le en morceaux.",
+   "Dans la graisse du bacon additionnée du beurre, cuisez les escalopes salées 3 à 4 min par face à feu moyen-vif, jusqu'à ce qu'elles soient dorées et blanches à cœur. Laissez reposer puis coupez-les en dés.",
+   "Pour la sauce, écrasez la moitié du roquefort avec la mayonnaise, le yaourt et le jus de citron, puis poivrez : elle doit être nappante.",
+   "Étalez la laitue dans un grand plat et disposez en rangées la dinde, le bacon, les œufs, l'avocat en dés et les tomates. Parsemez du reste de roquefort et de ciboulette et servez la sauce à part."
+  ],
+  "tags": [
+   "salade",
+   "riche en protéines",
+   "été",
+   "sans cuisson longue"
+  ],
+  "seasons": [
+   "printemps",
+   "ete"
+  ],
+  "technique": "poele",
+  "flavors": [
+   "cremeux",
+   "fume",
+   "frais"
+  ]
+ },
+ {
+  "id": "cmbb-dinde-basquaise-pdt",
+  "name": "Sauté de dinde à la basquaise, poivrons, tomates et pommes de terre au piment d'Espelette",
+  "description": "Le plat familial du Pays basque à la dinde : lanières dorées, piperade de poivrons et d'oignons mijotée à la tomate et au piment d'Espelette, pommes de terre cuites directement dans la sauce.",
+  "emoji": "🌶️",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 20,
+  "cookTime": 40,
+  "difficulty": "tres-facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 700,
+    "unit": "g",
+    "note": "en lanières épaisses"
+   },
+   {
+    "id": "poivron-rouge",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en lanières"
+   },
+   {
+    "id": "oignon",
+    "qty": 2,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 600,
+    "unit": "g",
+    "note": "en cubes de 2 cm"
+   },
+   {
+    "id": "piment-espelette",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "laurier",
+    "qty": 1,
+    "unit": "feuille"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "vin-blanc",
+    "qty": 100,
+    "unit": "ml",
+    "optional": true
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une cocotte, faites chauffer 2 c. à soupe d'huile à feu vif et dorez les lanières de dinde salées en deux fois, 3 min par fournée. Réservez.",
+   "Baissez à feu moyen, ajoutez le reste de l'huile, les oignons et les poivrons, et faites-les fondre 10 min en remuant : ils doivent être tendres et légèrement colorés.",
+   "Ajoutez l'ail et le piment d'Espelette 1 min, déglacez au vin blanc, puis ajoutez les tomates concassées, le thym, le laurier et 150 ml d'eau.",
+   "Ajoutez les pommes de terre, salez, couvrez et laissez mijoter 15 min.",
+   "Remettez la dinde et son jus, couvrez et poursuivez 8 à 10 min à feu doux : les pommes de terre doivent être fondantes et la sauce épaisse. Servez saupoudré d'une pincée de piment d'Espelette."
+  ],
+  "tags": [
+   "familial",
+   "une cocotte",
+   "terroir",
+   "économique"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "piquant",
+   "umami",
+   "reconfortant"
+  ]
+ },
+ {
+  "id": "cmbb-dinde-chorizo-patate-douce-brocoli",
+  "name": "Escalopes de dinde au chorizo, patate douce rôtie et brocoli au citron",
+  "description": "Un plat de semaine plein de couleurs : escalopes saisies dans la graisse rouge du chorizo, quartiers de patate douce rôtis au paprika et brocoli croquant au citron.",
+  "emoji": "🍠",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "espagnole",
+  "prepTime": 15,
+  "cookTime": 30,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 3,
+    "unit": "piece"
+   },
+   {
+    "id": "chorizo",
+    "qty": 60,
+    "unit": "g",
+    "note": "en petits dés"
+   },
+   {
+    "id": "patate-douce",
+    "qty": 140,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "brocoli",
+    "qty": 200,
+    "unit": "g",
+    "note": "en bouquets"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "zeste et jus"
+   },
+   {
+    "id": "ail",
+    "qty": 1,
+    "unit": "gousse",
+    "note": "émincée"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 210 °C. Mélangez les quartiers de patate douce avec 2 c. à soupe d'huile, le paprika et du sel, et rôtissez-les 25 à 30 min sur une plaque en les retournant à mi-cuisson.",
+   "Cuisez le brocoli 4 min à la vapeur : il doit rester vert vif et croquant.",
+   "Dans une poêle à feu moyen, faites revenir le chorizo 2 min avec le reste d'huile pour qu'il rende sa graisse. Retirez-le avec une écumoire.",
+   "Montez le feu et saisissez les escalopes salées 3 min par face dans la graisse du chorizo, jusqu'à ce qu'elles soient dorées et blanches à cœur. Réservez-les au chaud.",
+   "Faites sauter le brocoli et l'ail 1 min dans la poêle, ajoutez le chorizo, le zeste et le jus de citron, et servez aussitôt avec la dinde et les légumes rôtis."
+  ],
+  "tags": [
+   "rapide",
+   "semaine",
+   "riche en protéines",
+   "coloré"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "poele",
+  "flavors": [
+   "fume",
+   "acidule",
+   "grille"
+  ]
+ },
+ {
+  "id": "cmbb-plaque-dinde-butternut-choufleur-chorizo-feta",
+  "name": "Plaque rôtie de dinde, butternut, chou-fleur et chorizo, feta et yaourt au cumin",
+  "description": "Tout cuit ensemble sur la plaque : cubes de dinde, butternut et chou-fleur rôtis au cumin avec des dés de chorizo qui parfument l'ensemble, servis avec feta émiettée et un yaourt citronné.",
+  "emoji": "🎃",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "rustique",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "tres-facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "dinde-escalope",
+    "qty": 650,
+    "unit": "g",
+    "note": "en gros cubes"
+   },
+   {
+    "id": "chorizo",
+    "qty": 120,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "courge-butternut",
+    "qty": 600,
+    "unit": "g",
+    "note": "épluchée, en cubes de 2 cm"
+   },
+   {
+    "id": "chou-fleur",
+    "qty": 400,
+    "unit": "g",
+    "note": "en bouquets"
+   },
+   {
+    "id": "oignon-rouge",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en quartiers"
+   },
+   {
+    "id": "cumin",
+    "qty": 2,
+    "unit": "cac"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "feta",
+    "qty": 150,
+    "unit": "g"
+   },
+   {
+    "id": "yaourt-grec",
+    "qty": 200,
+    "unit": "g"
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "jus"
+   },
+   {
+    "id": "menthe",
+    "qty": 5,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 210 °C. Sur une grande plaque, mélangez la butternut, le chou-fleur et l'oignon rouge avec 3 c. à soupe d'huile, 1,5 c. à café de cumin et du sel. Enfournez 15 min.",
+   "Pendant ce temps, enrobez la dinde du reste d'huile et de cumin, salez légèrement.",
+   "Ajoutez la dinde et le chorizo sur la plaque, mélangez et poursuivez 18 à 20 min : la butternut doit être tendre et caramélisée, la dinde dorée et blanche à cœur.",
+   "Mélangez le yaourt avec le jus de citron, une pincée de sel et la moitié de la menthe.",
+   "Émiettez la feta sur la plaque à la sortie du four, parsemez du reste de menthe et servez avec le yaourt."
+  ],
+  "tags": [
+   "plaque au four",
+   "tout-en-un",
+   "automne",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "four",
+  "flavors": [
+   "epice",
+   "fume",
+   "acidule"
+  ]
+ },
+ {
+  "id": "cmbb-soupe-pistou-jambon-oeuf-poche",
+  "name": "Soupe au pistou complète, jambon, lardons et œuf poché",
+  "description": "La soupe provençale de fin d'été transformée en repas : légumes du jardin, pommes de terre et riz cuits dans un bouillon parfumé aux lardons, dés de jambon, un œuf poché par bol et une belle cuillerée de pistou.",
+  "emoji": "🍲",
+  "category": "soupe",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 25,
+  "cookTime": 40,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "jambon-blanc",
+    "qty": 240,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "lardons",
+    "qty": 80,
+    "unit": "g"
+   },
+   {
+    "id": "oeuf",
+    "qty": 4,
+    "unit": "piece",
+    "note": "très frais"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 400,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "courgette",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "haricots-verts",
+    "qty": 200,
+    "unit": "g",
+    "note": "en tronçons de 2 cm"
+   },
+   {
+    "id": "carotte",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "pelées, concassées"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "ciselé"
+   },
+   {
+    "id": "riz-rond",
+    "qty": 100,
+    "unit": "g"
+   },
+   {
+    "id": "pesto",
+    "qty": 120,
+    "unit": "g",
+    "note": "pistou maison de préférence"
+   },
+   {
+    "id": "parmesan",
+    "qty": 50,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "vinaigre-cidre",
+    "qty": 2,
+    "unit": "cas",
+    "note": "pour pocher les œufs"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une grande marmite, faites revenir les lardons 3 min dans l'huile d'olive à feu moyen, puis ajoutez l'oignon et la carotte et faites suer 5 min.",
+   "Ajoutez les pommes de terre, les tomates et 1,6 l d'eau, salez légèrement, portez à ébullition et laissez frémir 15 min.",
+   "Ajoutez les haricots verts, la courgette et le riz, et poursuivez 15 min : le riz doit être tendre et les légumes fondants mais entiers. Ajoutez le jambon les 2 dernières minutes.",
+   "Pendant ce temps, portez une casserole d'eau à frémissement avec le vinaigre. Cassez chaque œuf dans une tasse, faites un tourbillon et pochez-les 3 min : le blanc doit être pris et le jaune coulant. Égouttez sur du papier.",
+   "Hors du feu, délayez la moitié du pistou dans la soupe (sans la refaire bouillir pour garder le basilic vif). Poivrez.",
+   "Servez dans des bols larges avec un œuf poché, une cuillerée du reste de pistou et le parmesan."
+  ],
+  "tags": [
+   "soupe-repas",
+   "fin d'été",
+   "familial",
+   "provençal"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "bouilli",
+  "flavors": [
+   "herbace",
+   "reconfortant",
+   "umami"
+  ],
+  "tips": "La soupe est encore meilleure réchauffée ; ajoutez alors le pistou au dernier moment, dans les bols."
+ },
+ {
+  "id": "cmbb-caldeirada-cabillaud-coco-lardons",
+  "name": "Caldeirada de cabillaud au lait de coco, pommes de terre et lardons fumés",
+  "description": "Un ragoût de poisson à la façon des côtes lusophones : pommes de terre et cabillaud cuits en couches dans un bouillon de lait de coco, tomate et poivron, relevé par des lardons fumés et la coriandre.",
+  "emoji": "🐟",
+  "category": "mijote",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "portugaise",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "cabillaud",
+    "qty": 700,
+    "unit": "g",
+    "note": "en gros morceaux"
+   },
+   {
+    "id": "lardons",
+    "qty": 120,
+    "unit": "g",
+    "note": "fumés"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 600,
+    "unit": "g",
+    "note": "en rondelles d'1 cm"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 400,
+    "unit": "ml"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en rondelles"
+   },
+   {
+    "id": "poivron-rouge",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en lanières"
+   },
+   {
+    "id": "oignon",
+    "qty": 2,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "émincées"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "fumet-poisson",
+    "qty": 200,
+    "unit": "ml"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "coriandre",
+    "qty": 10,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "citron-vert",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Salez les morceaux de cabillaud, arrosez-les de jus de citron vert et réservez au frais.",
+   "Dans une large cocotte, faites dorer les lardons 4 min dans l'huile à feu moyen, puis ajoutez les oignons et l'ail et faites-les fondre 6 min.",
+   "Disposez par-dessus une couche de pommes de terre, puis les tomates et le poivron. Saupoudrez de paprika, versez le lait de coco et le fumet, salez légèrement, couvrez et laissez cuire 18 min à frémissement.",
+   "Quand les pommes de terre sont presque tendres, posez le cabillaud en une couche sur le dessus, couvrez et cuisez 7 à 8 min sans remuer : la chair doit devenir nacrée et se détacher en lamelles.",
+   "Parsemez de coriandre et servez directement dans la cocotte, en prenant toutes les couches à la louche."
+  ],
+  "tags": [
+   "poisson",
+   "une cocotte",
+   "familial",
+   "bord de mer"
+  ],
+  "seasons": [],
+  "technique": "mijote",
+  "flavors": [
+   "cremeux",
+   "fume",
+   "iode"
+  ]
+ },
+ {
+  "id": "cmbb-ginataang-courge-crevettes-lardons",
+  "name": "Ginataang kalabasa : courge et haricots verts au lait de coco, crevettes et lardons, riz blanc",
+  "description": "Le plat de tous les jours aux Philippines : courge et haricots verts mijotés dans le lait de coco avec crevettes et porc fumé, parfumés à l'ail, au gingembre et à la sauce poisson, servis sur du riz.",
+  "emoji": "🎃",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "thai-vietnamienne",
+  "prepTime": 20,
+  "cookTime": 25,
+  "difficulty": "tres-facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "crevette",
+    "qty": 600,
+    "unit": "g",
+    "note": "décortiquées"
+   },
+   {
+    "id": "lardons",
+    "qty": 150,
+    "unit": "g"
+   },
+   {
+    "id": "courge-butternut",
+    "qty": 600,
+    "unit": "g",
+    "note": "en cubes de 2 cm"
+   },
+   {
+    "id": "haricots-verts",
+    "qty": 200,
+    "unit": "g",
+    "note": "en tronçons de 4 cm"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 400,
+    "unit": "ml"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "émincé"
+   },
+   {
+    "id": "ail",
+    "qty": 4,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "gingembre",
+    "qty": 15,
+    "unit": "g",
+    "note": "en fins bâtonnets"
+   },
+   {
+    "id": "sauce-poisson",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "huile-coco",
+    "qty": 1,
+    "unit": "cas"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Rincez le riz et cuisez-le 11 min à couvert dans 1,5 fois son volume d'eau salée, puis laissez-le reposer 5 min.",
+   "Dans une sauteuse, faites dorer les lardons 4 min dans l'huile de coco à feu moyen, puis ajoutez l'oignon, l'ail et le gingembre et faites revenir 3 min.",
+   "Ajoutez la courge, le lait de coco, la sauce poisson et 100 ml d'eau. Couvrez et laissez mijoter 10 min.",
+   "Ajoutez les haricots verts et poursuivez 5 min à découvert : la courge doit être tendre et commencer à s'écraser en épaississant la sauce.",
+   "Ajoutez les crevettes et cuisez 3 min, juste jusqu'à ce qu'elles deviennent roses et opaques. Poivrez, goûtez et servez sur le riz."
+  ],
+  "tags": [
+   "rapide",
+   "une sauteuse",
+   "automne",
+   "cuisine du monde"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "cremeux",
+   "umami",
+   "iode"
+  ]
+ },
+ {
+  "id": "cmbb-clafoutis-choufleur-lardons-feta",
+  "name": "Clafoutis salé de chou-fleur aux lardons et à la feta",
+  "description": "Des bouquets de chou-fleur rôtis pris dans un appareil œufs-crème bien gonflé, avec lardons dorés et feta : un plat du soir doré et tremblotant à servir avec une salade verte.",
+  "emoji": "🥧",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 15,
+  "cookTime": 45,
+  "difficulty": "tres-facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "chou-fleur",
+    "qty": 700,
+    "unit": "g",
+    "note": "en petits bouquets"
+   },
+   {
+    "id": "lardons",
+    "qty": 150,
+    "unit": "g"
+   },
+   {
+    "id": "oeuf",
+    "qty": 8,
+    "unit": "piece"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 250,
+    "unit": "ml"
+   },
+   {
+    "id": "feta",
+    "qty": 150,
+    "unit": "g",
+    "note": "émiettée"
+   },
+   {
+    "id": "ciboulette",
+    "qty": 5,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "cumin",
+    "qty": 1,
+    "unit": "cac",
+    "note": "en graines"
+   },
+   {
+    "id": "laitue",
+    "qty": 200,
+    "unit": "g",
+    "note": "pour servir"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 200 °C. Faites cuire les bouquets de chou-fleur 6 min à la vapeur : ils doivent rester un peu fermes. Égouttez-les bien.",
+   "Faites dorer les lardons 4 min à sec dans une poêle, puis ajoutez le chou-fleur, l'huile d'olive et le cumin et faites colorer 5 min à feu moyen-vif, jusqu'à ce que les bouquets soient dorés par endroits.",
+   "Huilez légèrement un plat à gratin et répartissez-y le chou-fleur, les lardons et la feta.",
+   "Fouettez les œufs avec la crème, un peu de sel (la feta et les lardons sont salés) et du poivre. Versez sur le chou-fleur.",
+   "Baissez le four à 180 °C et enfournez 30 à 35 min : le clafoutis doit être gonflé, doré, et une lame plantée au centre doit ressortir sans liquide.",
+   "Laissez reposer 5 min, parsemez de ciboulette et servez avec la laitue assaisonnée."
+  ],
+  "tags": [
+   "végétal gourmand",
+   "familial",
+   "économique",
+   "four"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "four",
+  "flavors": [
+   "cremeux",
+   "fume",
+   "lacte"
+  ]
+ },
+ {
+  "id": "cmbb-aubergines-farcies-boeuf-lardons-mozzarella",
+  "name": "Aubergines farcies au bœuf et aux lardons, gratinées à la mozzarella",
+  "description": "Des demi-aubergines fondantes garnies de leur chair mêlée à du bœuf haché, des lardons, de la tomate et de l'origan, puis gratinées à la mozzarella : un plat méditerranéen généreux.",
+  "emoji": "🍆",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 25,
+  "cookTime": 55,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "aubergine",
+    "qty": 2,
+    "unit": "piece",
+    "note": "coupées en deux dans la longueur"
+   },
+   {
+    "id": "boeuf-hache",
+    "qty": 500,
+    "unit": "g"
+   },
+   {
+    "id": "lardons",
+    "qty": 100,
+    "unit": "g"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "ciselé"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "origan",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "mozzarella",
+    "qty": 200,
+    "unit": "g",
+    "note": "en tranches"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "basilic",
+    "qty": 5,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 200 °C. Quadrillez la chair des demi-aubergines sans percer la peau, badigeonnez-les de 2 c. à soupe d'huile, salez et rôtissez-les 25 min, face coupée vers le haut, jusqu'à ce que la chair soit fondante.",
+   "Laissez tiédir puis évidez-les à la cuillère en laissant 5 mm de chair contre la peau. Hachez grossièrement la chair prélevée.",
+   "Dans une poêle, faites dorer les lardons 3 min, ajoutez l'oignon, l'ail et le reste d'huile 4 min, puis le bœuf haché : faites-le revenir 5 min à feu vif en l'émiettant.",
+   "Ajoutez la chair d'aubergine, la moitié des tomates concassées et l'origan, et laissez réduire 5 min : la farce doit être épaisse. Salez peu et poivrez.",
+   "Garnissez les aubergines, posez-les sur le reste de tomates étalé dans un plat, couvrez de mozzarella et enfournez 15 min, jusqu'à ce qu'elle soit fondue et dorée. Parsemez de basilic."
+  ],
+  "tags": [
+   "familial",
+   "four",
+   "été",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "four",
+  "flavors": [
+   "umami",
+   "cremeux",
+   "herbace"
+  ]
+ },
+ {
+  "id": "cmbb-risotto-carbonara-lardons-petits-pois",
+  "name": "Risotto façon carbonara, lardons, petits pois et jaune d'œuf",
+  "description": "Tous les codes de la carbonara dans un risotto : lardons croustillants, riz nacré monté au parmesan et à la crème, petits pois sucrés et un jaune d'œuf cru posé sur chaque assiette.",
+  "emoji": "🍚",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 10,
+  "cookTime": 30,
+  "difficulty": "intermediaire",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "riz-rond",
+    "qty": 300,
+    "unit": "g",
+    "note": "arborio ou carnaroli"
+   },
+   {
+    "id": "lardons",
+    "qty": 160,
+    "unit": "g"
+   },
+   {
+    "id": "oeuf",
+    "qty": 2,
+    "unit": "piece"
+   },
+   {
+    "id": "jaune-oeuf",
+    "qty": 4,
+    "unit": "piece"
+   },
+   {
+    "id": "petits-pois",
+    "qty": 250,
+    "unit": "g"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 80,
+    "unit": "ml"
+   },
+   {
+    "id": "parmesan",
+    "qty": 100,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "echalote",
+    "qty": 2,
+    "unit": "piece",
+    "note": "ciselées"
+   },
+   {
+    "id": "vin-blanc",
+    "qty": 100,
+    "unit": "ml"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 1100,
+    "unit": "ml",
+    "note": "chaud"
+   },
+   {
+    "id": "beurre",
+    "qty": 30,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout",
+    "note": "fraîchement moulu, généreusement"
+   }
+  ],
+  "steps": [
+   "Faites dorer les lardons à sec 5 min dans une sauteuse jusqu'à ce qu'ils soient croustillants ; réservez-les en laissant la graisse.",
+   "Ajoutez 15 g de beurre et les échalotes, faites suer 3 min, puis versez le riz et remuez 2 min jusqu'à ce que les grains deviennent translucides sur les bords. Déglacez au vin blanc et laissez absorber.",
+   "Versez le bouillon chaud louche par louche, en remuant et en attendant qu'il soit absorbé avant d'en ajouter : comptez 17 à 18 min. Ajoutez les petits pois à mi-cuisson.",
+   "Fouettez les 2 œufs entiers avec la crème et la moitié du parmesan.",
+   "Hors du feu, quand le riz est crémeux et encore légèrement ferme, incorporez le reste du beurre, le mélange œufs-crème et les lardons en remuant vivement 1 min : la chaleur épaissit la sauce sans brouiller les œufs.",
+   "Servez dans des assiettes chaudes, creusez un nid au centre, déposez un jaune d'œuf cru, parsemez du reste de parmesan et poivrez généreusement."
+  ],
+  "tags": [
+   "réconfortant",
+   "italien",
+   "familial"
+  ],
+  "seasons": [
+   "printemps",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "cremeux",
+   "umami",
+   "fume"
+  ]
+ },
+ {
+  "id": "cmbb-involtini-aubergine-jambon-feta",
+  "name": "Involtini d'aubergine au jambon et à la feta, sauce tomate à l'origan",
+  "description": "De longues tranches d'aubergine grillées, roulées autour d'une tranche de jambon et d'un bâtonnet de feta, puis gratinées dans une sauce tomate à l'origan : simple, fondant et généreux.",
+  "emoji": "🍆",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "italienne",
+  "prepTime": 25,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "aubergine",
+    "qty": 1,
+    "unit": "piece",
+    "note": "grosse, en 8 tranches dans la longueur"
+   },
+   {
+    "id": "jambon-blanc",
+    "qty": 4,
+    "unit": "tranche",
+    "note": "coupées en deux"
+   },
+   {
+    "id": "feta",
+    "qty": 150,
+    "unit": "g",
+    "note": "en 8 bâtonnets"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "émincées"
+   },
+   {
+    "id": "origan",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 4,
+    "unit": "cas"
+   },
+   {
+    "id": "parmesan",
+    "qty": 30,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "basilic",
+    "qty": 5,
+    "unit": "g"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Badigeonnez les tranches d'aubergine de 3 c. à soupe d'huile et faites-les griller 3 min par face à la poêle-gril bien chaude : elles doivent être souples et marquées. Salez légèrement.",
+   "Préchauffez le four à 200 °C. Faites revenir l'ail 1 min dans le reste d'huile, ajoutez les tomates concassées et l'origan, salez peu et laissez réduire 10 min.",
+   "Sur chaque tranche d'aubergine, posez une demi-tranche de jambon et un bâtonnet de feta, puis roulez serré.",
+   "Versez la sauce dans un plat, rangez les involtini dessus, fermeture vers le bas, et parsemez de parmesan.",
+   "Enfournez 15 à 18 min : la sauce doit bouillonner et la feta commencer à fondre. Poivrez, parsemez de basilic et servez."
+  ],
+  "tags": [
+   "été",
+   "four",
+   "méditerranéen",
+   "familial"
+  ],
+  "seasons": [
+   "ete",
+   "automne"
+  ],
+  "technique": "four",
+  "flavors": [
+   "umami",
+   "herbace",
+   "acidule"
+  ],
+  "tips": "Accompagnez de riz ou de pommes de terre vapeur pour un repas plus copieux."
+ },
+ {
+  "id": "cmbb-gratin-polenta-butternut-jambon",
+  "name": "Gratin de polenta au lait, butternut et jambon, comté et sauge",
+  "description": "Un gratin montagnard doux et doré : polenta crémeuse cuite au lait, cubes de butternut rôtis à la sauge, jambon en lamelles et comté qui gratine en croûte.",
+  "emoji": "🧀",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 20,
+  "cookTime": 45,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "polenta",
+    "qty": 200,
+    "unit": "g",
+    "note": "précuite"
+   },
+   {
+    "id": "lait",
+    "qty": 500,
+    "unit": "ml",
+    "note": "entier"
+   },
+   {
+    "id": "courge-butternut",
+    "qty": 600,
+    "unit": "g",
+    "note": "épluchée, en cubes de 2 cm"
+   },
+   {
+    "id": "jambon-blanc",
+    "qty": 400,
+    "unit": "g",
+    "note": "en lamelles"
+   },
+   {
+    "id": "comte",
+    "qty": 120,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "beurre",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "sauge",
+    "qty": 6,
+    "unit": "feuille"
+   },
+   {
+    "id": "muscade",
+    "qty": 1,
+    "unit": "pincee"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Préchauffez le four à 210 °C. Mélangez la butternut avec 20 g de beurre fondu, la sauge ciselée et du sel, et rôtissez-la 20 min sur une plaque : elle doit être tendre et dorée.",
+   "Pendant ce temps, portez le lait et 300 ml d'eau salée à frémissement, versez la polenta en pluie en fouettant et cuisez 5 min à feu doux en remuant. Hors du feu, incorporez le reste du beurre, la muscade et la moitié du comté.",
+   "Beurrez un plat à gratin. Étalez la moitié de la polenta, puis le jambon et la butternut, et recouvrez du reste de polenta.",
+   "Parsemez du reste de comté et enfournez 20 min à 200 °C : le dessus doit être doré et croustillant.",
+   "Laissez reposer 5 min pour que le gratin se tienne, poivrez et servez en parts."
+  ],
+  "tags": [
+   "gratin",
+   "automne",
+   "familial",
+   "réconfortant"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "four",
+  "flavors": [
+   "cremeux",
+   "reconfortant",
+   "lacte"
+  ],
+  "tips": "Servez avec une salade de mâche à l'huile de noix pour la fraîcheur."
+ },
+ {
+  "id": "cmbb-salade-tiede-pdt-jambon-avocat-oeufs",
+  "name": "Salade tiède de pommes de terre au jambon, avocat et œufs mollets, mayonnaise moutardée",
+  "description": "Une salade-repas de bistrot : pommes de terre encore tièdes enrobées d'une mayonnaise à la moutarde et aux cornichons, jambon en lanières, avocat et œufs mollets au jaune coulant.",
+  "emoji": "🥚",
+  "category": "salade-composee",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 20,
+  "cookTime": 20,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "pomme-de-terre",
+    "qty": 350,
+    "unit": "g",
+    "note": "chair ferme"
+   },
+   {
+    "id": "jambon-blanc",
+    "qty": 200,
+    "unit": "g",
+    "note": "en lanières"
+   },
+   {
+    "id": "oeuf",
+    "qty": 4,
+    "unit": "piece"
+   },
+   {
+    "id": "avocat",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "mayonnaise",
+    "qty": 60,
+    "unit": "g"
+   },
+   {
+    "id": "moutarde",
+    "qty": 1,
+    "unit": "cas",
+    "note": "à l'ancienne"
+   },
+   {
+    "id": "cornichon",
+    "qty": 40,
+    "unit": "g",
+    "note": "émincés"
+   },
+   {
+    "id": "echalote",
+    "qty": 1,
+    "unit": "piece",
+    "note": "ciselée"
+   },
+   {
+    "id": "vinaigre-cidre",
+    "qty": 1,
+    "unit": "cas"
+   },
+   {
+    "id": "laitue",
+    "qty": 100,
+    "unit": "g"
+   },
+   {
+    "id": "ciboulette",
+    "qty": 5,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Cuisez les pommes de terre entières 18 à 20 min dans l'eau salée frémissante : la lame doit s'y enfoncer sans résistance. Égouttez, pelez-les tièdes et coupez-les en rondelles épaisses.",
+   "Arrosez-les aussitôt du vinaigre et de l'échalote : tièdes, elles absorbent mieux l'assaisonnement.",
+   "Plongez les œufs 6 min dans l'eau bouillante, refroidissez-les 2 min dans l'eau glacée puis écalez-les délicatement.",
+   "Mélangez la mayonnaise, la moutarde et les cornichons, puis enrobez-en les pommes de terre avec le jambon. Salez peu et poivrez.",
+   "Dressez sur la laitue, ajoutez l'avocat en tranches et les œufs mollets coupés en deux, et parsemez de ciboulette."
+  ],
+  "tags": [
+   "salade",
+   "bistrot",
+   "rapide",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "printemps",
+   "ete"
+  ],
+  "technique": "bouilli",
+  "flavors": [
+   "cremeux",
+   "acidule",
+   "frais"
+  ]
+ },
+ {
+  "id": "cmbb-jambalaya-jambon-chorizo-crevettes",
+  "name": "Jambalaya créole au jambon, chorizo et crevettes",
+  "description": "Le riz de La Nouvelle-Orléans cuit en une seule cocotte : la « sainte trinité » oignon-céleri-poivron, jambon, chorizo et tomates, riz gorgé de bouillon épicé, crevettes ajoutées à la fin.",
+  "emoji": "🦐",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "americaine",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "jambon-blanc",
+    "qty": 250,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "chorizo",
+    "qty": 120,
+    "unit": "g",
+    "note": "en demi-rondelles"
+   },
+   {
+    "id": "crevette",
+    "qty": 400,
+    "unit": "g",
+    "note": "décortiquées"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 280,
+    "unit": "g",
+    "note": "grain long"
+   },
+   {
+    "id": "tomates-concassees",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "haché"
+   },
+   {
+    "id": "celeri-branche",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "poivron-rouge",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en dés"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "paprika",
+    "qty": 2,
+    "unit": "cac"
+   },
+   {
+    "id": "piment-espelette",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "thym",
+    "qty": 3,
+    "unit": "brin"
+   },
+   {
+    "id": "laurier",
+    "qty": 2,
+    "unit": "feuille"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 700,
+    "unit": "ml"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "oignon-nouveau",
+    "qty": 3,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une cocotte, faites revenir le chorizo 2 min dans l'huile à feu moyen, puis ajoutez le jambon et faites-le dorer légèrement 3 min.",
+   "Ajoutez l'oignon, le céleri et le poivron et faites-les suer 6 min, puis l'ail, le paprika, le piment d'Espelette, le thym et le laurier 1 min.",
+   "Ajoutez le riz rincé et remuez 1 min pour l'enrober, puis versez les tomates concassées et le bouillon chaud. Salez légèrement, portez à ébullition, couvrez et cuisez 18 min à feu très doux sans remuer.",
+   "Enfoncez les crevettes dans le riz, couvrez et poursuivez 5 min hors du feu : elles doivent être roses et le riz avoir absorbé tout le liquide.",
+   "Retirez le laurier et le thym, égrainez à la fourchette, parsemez d'oignons nouveaux et servez."
+  ],
+  "tags": [
+   "une cocotte",
+   "épicé",
+   "convivial",
+   "familial"
+  ],
+  "seasons": [],
+  "technique": "mijote",
+  "flavors": [
+   "epice",
+   "fume",
+   "umami"
+  ]
+ },
+ {
+  "id": "cmbb-parmentier-jambon-puree-coco",
+  "name": "Parmentier de jambon, purée de pommes de terre et patate douce au lait de coco",
+  "description": "Un parmentier doux et original : jambon fondu avec oignons et crème de cuisson, sous une purée orangée de pommes de terre et de patate douce montée au lait de coco et au beurre, gratinée au comté.",
+  "emoji": "🥔",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 25,
+  "cookTime": 45,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "jambon-blanc",
+    "qty": 500,
+    "unit": "g",
+    "note": "en petits dés"
+   },
+   {
+    "id": "pomme-de-terre-farineuse",
+    "qty": 400,
+    "unit": "g"
+   },
+   {
+    "id": "patate-douce",
+    "qty": 160,
+    "unit": "g"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 200,
+    "unit": "ml"
+   },
+   {
+    "id": "oignon",
+    "qty": 2,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "beurre",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "comte",
+    "qty": 100,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "muscade",
+    "qty": 1,
+    "unit": "pincee"
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "laitue",
+    "qty": 200,
+    "unit": "g",
+    "note": "pour servir"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Épluchez les pommes de terre et la patate douce, coupez-les en morceaux égaux et cuisez-les 20 min dans l'eau salée : elles doivent s'écraser sous la fourchette.",
+   "Pendant ce temps, faites fondre les oignons 12 min dans 15 g de beurre avec le thym, à feu doux, jusqu'à ce qu'ils soient blonds et confits. Ajoutez le jambon et réchauffez 2 min.",
+   "Égouttez les légumes et écrasez-les au presse-purée avec le lait de coco chaud, le reste du beurre et la muscade. Salez : la purée doit être souple et lisse.",
+   "Préchauffez le four à 200 °C. Étalez le jambon aux oignons dans un plat, recouvrez de purée, striez la surface à la fourchette et parsemez de comté.",
+   "Enfournez 20 min, jusqu'à ce que le dessus soit bien gratiné. Poivrez et servez avec la laitue assaisonnée."
+  ],
+  "tags": [
+   "familial",
+   "gratin",
+   "réconfortant",
+   "batch cooking"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "four",
+  "flavors": [
+   "cremeux",
+   "reconfortant",
+   "sucre"
+  ]
+ },
+ {
+  "id": "cmbb-khao-pad-ananas-jambon-riz-coco",
+  "name": "Khao pad à l'ananas, jambon et œufs, riz cuit au lait de coco",
+  "description": "Le riz sauté thaï à l'ananas, avec un riz cuit la veille dans le lait de coco pour plus de rondeur : jambon doré, œufs brouillés, ananas caramélisé, oignons nouveaux et sauce poisson.",
+  "emoji": "🍍",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "thai-vietnamienne",
+  "prepTime": 15,
+  "cookTime": 30,
+  "difficulty": "facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "riz-blanc",
+    "qty": 160,
+    "unit": "g",
+    "note": "jasmin"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 150,
+    "unit": "ml"
+   },
+   {
+    "id": "jambon-blanc",
+    "qty": 220,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "oeuf",
+    "qty": 3,
+    "unit": "piece"
+   },
+   {
+    "id": "ananas",
+    "qty": 150,
+    "unit": "g",
+    "note": "frais, en dés"
+   },
+   {
+    "id": "oignon-nouveau",
+    "qty": 3,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "ail",
+    "qty": 2,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "piment-frais",
+    "qty": 1,
+    "unit": "piece",
+    "note": "émincé",
+    "optional": true
+   },
+   {
+    "id": "sauce-poisson",
+    "qty": 1,
+    "unit": "cas"
+   },
+   {
+    "id": "huile-coco",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "coriandre",
+    "qty": 5,
+    "unit": "g"
+   },
+   {
+    "id": "citron-vert",
+    "qty": 1,
+    "unit": "piece",
+    "note": "en quartiers"
+   }
+  ],
+  "steps": [
+   "Rincez le riz et cuisez-le 12 min à couvert avec le lait de coco et 100 ml d'eau, à feu très doux. Étalez-le sur une plaque et laissez-le refroidir complètement (idéalement la veille, au réfrigérateur) : un riz froid ne colle pas au sauté.",
+   "Dans un wok, faites chauffer 1 c. à soupe d'huile de coco à feu vif et faites dorer l'ananas 2 min pour le caraméliser légèrement. Réservez.",
+   "Faites dorer le jambon 2 min avec l'ail et le piment, poussez-le sur le côté, cassez les œufs dans le wok et brouillez-les 30 s jusqu'à ce qu'ils soient juste pris.",
+   "Ajoutez le reste d'huile et le riz froid, et faites sauter 3 à 4 min à feu vif en écrasant les grumeaux, jusqu'à ce que les grains soient chauds et légèrement grillés.",
+   "Ajoutez l'ananas, la sauce poisson et les oignons nouveaux, mélangez 1 min et servez avec la coriandre et les quartiers de citron vert."
+  ],
+  "tags": [
+   "restes",
+   "rapide",
+   "wok",
+   "cuisine du monde"
+  ],
+  "seasons": [],
+  "technique": "wok",
+  "flavors": [
+   "fruite",
+   "umami",
+   "acidule"
+  ]
+ },
+ {
+  "id": "cmbb-riz-jambon-champignons-creme-gratine",
+  "name": "Riz au jambon et aux champignons à la crème, gratiné au comté",
+  "description": "Le plat doudou des mercredis : riz pilaf beurré, jambon et champignons liés à la crème, le tout gratiné au comté jusqu'à former une croûte dorée.",
+  "emoji": "🍄",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 15,
+  "cookTime": 35,
+  "difficulty": "tres-facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g"
+   },
+   {
+    "id": "jambon-blanc",
+    "qty": 400,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "champignon",
+    "qty": 300,
+    "unit": "g",
+    "note": "émincés"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 200,
+    "unit": "ml"
+   },
+   {
+    "id": "comte",
+    "qty": 100,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "ciselé"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 400,
+    "unit": "ml"
+   },
+   {
+    "id": "beurre",
+    "qty": 30,
+    "unit": "g"
+   },
+   {
+    "id": "ciboulette",
+    "qty": 5,
+    "unit": "g",
+    "note": "ciselée"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une sauteuse, faites fondre 15 g de beurre et faites suer l'oignon 3 min. Ajoutez le riz et remuez 1 min jusqu'à ce qu'il devienne nacré, puis versez le bouillon chaud. Couvrez et cuisez 15 min à feu doux.",
+   "Pendant ce temps, faites sauter les champignons dans le reste du beurre 6 min à feu vif, jusqu'à ce que leur eau soit évaporée et qu'ils dorent.",
+   "Préchauffez le four à 210 °C. Mélangez le riz, les champignons, le jambon et la crème ; poivrez et salez peu.",
+   "Versez dans un plat à gratin, parsemez de comté et enfournez 15 min : le dessus doit être doré et la crème bouillonner sur les bords.",
+   "Parsemez de ciboulette et servez bien chaud."
+  ],
+  "tags": [
+   "familial",
+   "enfants",
+   "gratin",
+   "économique"
+  ],
+  "seasons": [],
+  "technique": "four",
+  "flavors": [
+   "cremeux",
+   "reconfortant",
+   "umami"
+  ]
+ },
+ {
+  "id": "cmbb-curry-goa-chorizo-oeufs-pdt",
+  "name": "Curry de Goa aux œufs, chorizo et pommes de terre, riz au lait de coco",
+  "description": "Un plat de la côte de Goa, où le chouriço portugais rencontre les épices indiennes : œufs durs et pommes de terre mijotés dans une sauce coco-tomate relevée au vinaigre, servis sur un riz parfumé.",
+  "emoji": "🥚",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "indienne",
+  "prepTime": 20,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "oeuf",
+    "qty": 8,
+    "unit": "piece"
+   },
+   {
+    "id": "chorizo",
+    "qty": 160,
+    "unit": "g",
+    "note": "en petits dés"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 500,
+    "unit": "g",
+    "note": "en cubes de 2 cm"
+   },
+   {
+    "id": "lait-coco",
+    "qty": 400,
+    "unit": "ml"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "concassées"
+   },
+   {
+    "id": "oignon",
+    "qty": 2,
+    "unit": "piece",
+    "note": "émincés"
+   },
+   {
+    "id": "ail",
+    "qty": 4,
+    "unit": "gousse",
+    "note": "râpées"
+   },
+   {
+    "id": "gingembre",
+    "qty": 15,
+    "unit": "g",
+    "note": "râpé"
+   },
+   {
+    "id": "garam-masala",
+    "qty": 2,
+    "unit": "cac"
+   },
+   {
+    "id": "cumin",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "vinaigre-cidre",
+    "qty": 1,
+    "unit": "cas"
+   },
+   {
+    "id": "beurre-clarifie",
+    "qty": 20,
+    "unit": "g"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 240,
+    "unit": "g",
+    "note": "basmati"
+   },
+   {
+    "id": "coriandre",
+    "qty": 10,
+    "unit": "g"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Plongez les œufs 9 min dans l'eau bouillante, refroidissez-les dans l'eau froide, écalez-les et entaillez-les de quelques coups de couteau pour que la sauce les pénètre.",
+   "Dans une sauteuse, faites revenir le chorizo 2 min dans le beurre clarifié à feu moyen, puis ajoutez les oignons et faites-les dorer 8 min dans la graisse rouge.",
+   "Ajoutez l'ail, le gingembre, le garam masala, le cumin et le paprika 1 min, puis les tomates, et laissez compoter 4 min.",
+   "Ajoutez les pommes de terre, 300 ml de lait de coco et 150 ml d'eau, salez, couvrez et laissez mijoter 15 min. Ajoutez les œufs et le vinaigre et poursuivez 5 min à découvert : les pommes de terre doivent être tendres et la sauce nappante.",
+   "Pendant ce temps, rincez le riz et cuisez-le 11 min à couvert avec le reste du lait de coco complété d'eau (1,5 fois le volume du riz) et une pincée de sel, puis laissez reposer 5 min.",
+   "Parsemez le curry de coriandre et servez avec le riz au lait de coco."
+  ],
+  "tags": [
+   "épicé",
+   "économique",
+   "cuisine du monde",
+   "familial"
+  ],
+  "seasons": [],
+  "technique": "mijote",
+  "flavors": [
+   "epice",
+   "cremeux",
+   "acidule"
+  ]
+ },
+ {
+  "id": "cmbb-cabillaud-fondue-poireaux-chorizo",
+  "name": "Dos de cabillaud sur fondue de poireaux à la crème, chips de chorizo et pommes de terre vapeur",
+  "description": "Un plat de brasserie : cabillaud nacré posé sur une fondue de poireaux à la crème, éclats de chorizo grillé pour le croquant et la couleur, pommes de terre vapeur pour saucer.",
+  "emoji": "🐟",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "francaise",
+  "prepTime": 15,
+  "cookTime": 30,
+  "difficulty": "facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "cabillaud",
+    "qty": 360,
+    "unit": "g",
+    "note": "2 dos avec la peau"
+   },
+   {
+    "id": "chorizo",
+    "qty": 50,
+    "unit": "g",
+    "note": "en fines rondelles"
+   },
+   {
+    "id": "poireau",
+    "qty": 200,
+    "unit": "g",
+    "note": "en fines rondelles"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 100,
+    "unit": "ml"
+   },
+   {
+    "id": "pomme-de-terre",
+    "qty": 180,
+    "unit": "g",
+    "note": "chair ferme"
+   },
+   {
+    "id": "beurre",
+    "qty": 30,
+    "unit": "g"
+   },
+   {
+    "id": "vin-blanc",
+    "qty": 50,
+    "unit": "ml",
+    "optional": true
+   },
+   {
+    "id": "citron",
+    "qty": 0.5,
+    "unit": "piece"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Cuisez les pommes de terre épluchées 20 min à la vapeur.",
+   "Faites fondre les poireaux 12 min dans 15 g de beurre à feu doux, avec une pincée de sel et un couvercle : ils doivent être fondants sans colorer. Déglacez au vin blanc, ajoutez la crème et laissez réduire 3 min.",
+   "Dans une poêle sèche, grillez les rondelles de chorizo 2 à 3 min à feu moyen jusqu'à ce qu'elles soient croustillantes. Égouttez-les sur du papier et gardez la graisse.",
+   "Salez le cabillaud, faites chauffer le reste du beurre avec 1 c. à café de graisse de chorizo et cuisez les dos 4 min côté peau puis 2 min de l'autre côté : la chair doit être nacrée et se détacher en lamelles.",
+   "Dressez la fondue de poireaux, posez le cabillaud par-dessus, parsemez des chips de chorizo, arrosez d'un trait de citron et servez avec les pommes de terre poivrées."
+  ],
+  "tags": [
+   "poisson",
+   "bistrot",
+   "rapide"
+  ],
+  "seasons": [
+   "automne",
+   "hiver",
+   "printemps"
+  ],
+  "technique": "poele",
+  "flavors": [
+   "cremeux",
+   "fume",
+   "iode"
+  ]
+ },
+ {
+  "id": "cmbb-arroz-cremoso-poulet-chorizo-champignons",
+  "name": "Arroz cremoso au poulet, chorizo et champignons",
+  "description": "Le riz « meloso » espagnol, entre risotto et paella : hauts de cuisse dorés, chorizo, champignons poêlés et riz rond cuit dans un bouillon au paprika, lié en fin de cuisson d'un trait de crème.",
+  "emoji": "🍄",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "espagnole",
+  "prepTime": 15,
+  "cookTime": 35,
+  "difficulty": "facile",
+  "servings": 4,
+  "ingredients": [
+   {
+    "id": "poulet-haut-cuisse-desosse",
+    "qty": 600,
+    "unit": "g",
+    "note": "en morceaux"
+   },
+   {
+    "id": "chorizo",
+    "qty": 120,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "riz-rond",
+    "qty": 280,
+    "unit": "g"
+   },
+   {
+    "id": "champignon",
+    "qty": 300,
+    "unit": "g",
+    "note": "en quartiers"
+   },
+   {
+    "id": "creme-fraiche",
+    "qty": 120,
+    "unit": "ml"
+   },
+   {
+    "id": "oignon",
+    "qty": 1,
+    "unit": "piece",
+    "note": "haché"
+   },
+   {
+    "id": "ail",
+    "qty": 3,
+    "unit": "gousse",
+    "note": "hachées"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac",
+    "note": "fumé"
+   },
+   {
+    "id": "vin-blanc",
+    "qty": 100,
+    "unit": "ml"
+   },
+   {
+    "id": "bouillon-volaille",
+    "qty": 1100,
+    "unit": "ml",
+    "note": "chaud"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 3,
+    "unit": "cas"
+   },
+   {
+    "id": "thym",
+    "qty": 2,
+    "unit": "brin"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   },
+   {
+    "id": "poivre",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Dans une sauteuse large, faites revenir le chorizo 2 min dans l'huile à feu moyen, retirez-le, puis dorez le poulet salé 6 min à feu vif dans la graisse rouge. Réservez avec le chorizo.",
+   "Faites sauter les champignons 5 min à feu vif jusqu'à ce qu'ils dorent, puis ajoutez l'oignon, l'ail et le paprika et faites revenir 3 min.",
+   "Ajoutez le riz et remuez 1 min, déglacez au vin blanc, puis remettez le poulet, le chorizo et le thym.",
+   "Versez les deux tiers du bouillon, portez à ébullition puis laissez cuire 15 min à feu moyen en remuant de temps en temps et en ajoutant du bouillon dès que le riz l'a absorbé : il doit rester bien humide.",
+   "Hors du feu, incorporez la crème : le riz doit être onctueux et légèrement coulant. Couvrez 3 min, poivrez et servez."
+  ],
+  "tags": [
+   "une sauteuse",
+   "familial",
+   "réconfortant"
+  ],
+  "seasons": [
+   "automne",
+   "hiver"
+  ],
+  "technique": "mijote",
+  "flavors": [
+   "cremeux",
+   "fume",
+   "umami"
+  ]
+ },
+ {
+  "id": "cmbb-bol-mexicain-poulet-chorizo-esquites",
+  "name": "Bol mexicain au poulet et chorizo, avocat et esquites à la mayonnaise",
+  "description": "Un bol à composer : riz au citron vert, poulet mariné au cumin et chorizo poêlés, esquites (maïs grillé lié à la mayonnaise et à la feta), avocat et salsa de tomate.",
+  "emoji": "🌮",
+  "category": "plat",
+  "mealTypes": [
+   "dejeuner",
+   "diner"
+  ],
+  "cuisine": "mexicaine",
+  "prepTime": 20,
+  "cookTime": 20,
+  "difficulty": "tres-facile",
+  "servings": 2,
+  "ingredients": [
+   {
+    "id": "poulet-blanc",
+    "qty": 300,
+    "unit": "g",
+    "note": "en lanières"
+   },
+   {
+    "id": "chorizo",
+    "qty": 60,
+    "unit": "g",
+    "note": "en dés"
+   },
+   {
+    "id": "riz-blanc",
+    "qty": 130,
+    "unit": "g"
+   },
+   {
+    "id": "mais",
+    "qty": 150,
+    "unit": "g",
+    "note": "en grains, égoutté"
+   },
+   {
+    "id": "mayonnaise",
+    "qty": 40,
+    "unit": "g"
+   },
+   {
+    "id": "feta",
+    "qty": 40,
+    "unit": "g",
+    "note": "émiettée"
+   },
+   {
+    "id": "avocat",
+    "qty": 1,
+    "unit": "piece"
+   },
+   {
+    "id": "tomate",
+    "qty": 2,
+    "unit": "piece",
+    "note": "en petits dés"
+   },
+   {
+    "id": "oignon-rouge",
+    "qty": 0.5,
+    "unit": "piece",
+    "note": "ciselé"
+   },
+   {
+    "id": "citron-vert",
+    "qty": 2,
+    "unit": "piece"
+   },
+   {
+    "id": "cumin",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "paprika",
+    "qty": 1,
+    "unit": "cac"
+   },
+   {
+    "id": "coriandre",
+    "qty": 10,
+    "unit": "g"
+   },
+   {
+    "id": "huile-olive",
+    "qty": 2,
+    "unit": "cas"
+   },
+   {
+    "id": "sel",
+    "qty": 1,
+    "unit": "au-gout"
+   }
+  ],
+  "steps": [
+   "Cuisez le riz rincé 11 min à couvert dans 1,5 fois son volume d'eau salée, laissez reposer 5 min puis arrosez-le du jus d'un citron vert.",
+   "Mélangez le poulet avec le cumin, le paprika, 1 c. à soupe d'huile et du sel. Préparez la salsa : tomates, oignon rouge, la moitié de la coriandre, un filet de citron vert et du sel.",
+   "Faites griller le maïs 5 min à sec dans une poêle très chaude, jusqu'à ce que des grains noircissent par endroits. Hors du feu, mélangez-le avec la mayonnaise, la feta et un trait de citron vert.",
+   "Dans la même poêle, faites revenir le chorizo 2 min, puis ajoutez le poulet et le reste d'huile et saisissez 6 min à feu vif : le poulet doit être doré et cuit à cœur.",
+   "Composez les bols : riz, poulet-chorizo, esquites, avocat en tranches, salsa. Parsemez du reste de coriandre et servez avec des quartiers de citron vert."
+  ],
+  "tags": [
+   "bol",
+   "rapide",
+   "coloré",
+   "riche en protéines"
+  ],
+  "seasons": [
+   "ete"
+  ],
+  "technique": "poele",
+  "flavors": [
+   "epice",
+   "cremeux",
+   "acidule"
+  ]
+ }
+]
