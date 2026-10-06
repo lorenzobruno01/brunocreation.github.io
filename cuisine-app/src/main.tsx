@@ -19,6 +19,8 @@ import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
 import { Needs } from './pages/Needs';
+import { MyDay } from './pages/MyDay';
+import { MyWeek } from './pages/MyWeek';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
@@ -84,6 +86,8 @@ function Shell() {
                 <Route path="/stats" element={<Stats />} />
                 <Route path="/reglages" element={<Settings />} />
                 <Route path="/besoins" element={<Needs />} />
+                <Route path="/ma-journee" element={<MyDay />} />
+                <Route path="/ma-semaine" element={<MyWeek />} />
                 <Route path="/besoins/:id" element={<Needs />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />

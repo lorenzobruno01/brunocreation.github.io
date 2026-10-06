@@ -17,3 +17,8 @@ export function relativeDays(iso: string): string {
   if (days < 30) return `il y a ${Math.round(days / 7)} sem.`;
   return `il y a ${Math.round(days / 30)} mois`;
 }
+
+/** « de bar », « d’œuf », « d’huîtres » */
+export function deName(name: string): string {
+  return /^[aeiouyhâàéèêëîïôœûù]/i.test(name) ? `d’${name}` : `de ${name}`;
+}

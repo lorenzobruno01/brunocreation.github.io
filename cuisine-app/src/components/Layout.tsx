@@ -14,6 +14,8 @@ const TABS = [
 ];
 
 const MORE = [
+  { to: '/ma-journee', label: 'Ma journée', icon: '☀️' },
+  { to: '/ma-semaine', label: 'Ma semaine : vitamines et minéraux', icon: '📊' },
   { to: '/favoris', label: 'Mes favoris & historique', icon: '❤️' },
   { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },

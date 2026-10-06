@@ -6,6 +6,7 @@
 import type { Ingredient, Recipe } from './types';
 import type { IngredientLookup } from './indexing';
 import { gramsEaten } from './indexing';
+import { retention } from '../config/retention';
 
 export type MicroKey =
   | 'fib' | 'vA' | 'vB1' | 'vB2' | 'vB3' | 'vB5' | 'vB6' | 'vB9' | 'vB12' | 'vC' | 'vD' | 'vE' | 'vK' | 'chol'
@@ -30,36 +31,41 @@ export interface NutrientDef {
   ref: [number, number];
   /** apport à ne pas dépasser (sodium) — l'objectif est de rester en dessous */
   limit?: boolean;
+  /** limite supérieure de sécurité (EFSA/ANSES), en moyenne sur la semaine */
+  upper?: number;
 }
 
 export type AminoKey = 'his' | 'ile' | 'leu' | 'lys' | 'saa' | 'aaa' | 'thr' | 'trp' | 'val';
 
-// Références : EFSA (DRV 2017–2023) — PRI/AI adulte 18–60 ans
+// Références : ANSES, « Références nutritionnelles pour la population »
+// (actualisation 2021) — RNP ou AS adulte ; EFSA pour la choline,
+// l'iode, le sodium et les acides aminés. Limites supérieures (upper) :
+// EFSA (2006–2024). Ajustements par âge et sexe : voir dailyRef().
 export const NUTRIENTS: NutrientDef[] = [
-  { key: 'vA', label: 'Vitamine A', unit: 'µg', group: 'vitamines', role: 'vision, peau, immunité', ref: [750, 650] },
-  { key: 'vB1', label: 'Vitamine B1 (thiamine)', unit: 'mg', group: 'vitamines', role: 'énergie, nerfs', ref: [1.2, 0.9] },
-  { key: 'vB2', label: 'Vitamine B2 (riboflavine)', unit: 'mg', group: 'vitamines', role: 'énergie, fatigue', ref: [1.6, 1.6] },
-  { key: 'vB3', label: 'Vitamine B3 (niacine)', unit: 'mg', group: 'vitamines', role: 'énergie, peau', ref: [16, 13] },
-  { key: 'vB5', label: 'Vitamine B5', unit: 'mg', group: 'vitamines', role: 'métabolisme, hormones', ref: [5, 5] },
-  { key: 'vB6', label: 'Vitamine B6', unit: 'mg', group: 'vitamines', role: 'protéines, système nerveux', ref: [1.7, 1.6] },
+  { key: 'vA', label: 'Vitamine A', unit: 'µg', group: 'vitamines', role: 'vision, peau, immunité', ref: [750, 650], upper: 3000 },
+  { key: 'vB1', label: 'Vitamine B1 (thiamine)', unit: 'mg', group: 'vitamines', role: 'énergie, nerfs', ref: [1.5, 1.2] },
+  { key: 'vB2', label: 'Vitamine B2 (riboflavine)', unit: 'mg', group: 'vitamines', role: 'énergie, fatigue', ref: [1.8, 1.5] },
+  { key: 'vB3', label: 'Vitamine B3 (niacine)', unit: 'mg', group: 'vitamines', role: 'énergie, peau', ref: [17, 14], upper: 900 },
+  { key: 'vB5', label: 'Vitamine B5', unit: 'mg', group: 'vitamines', role: 'métabolisme, hormones', ref: [5.8, 4.7] },
+  { key: 'vB6', label: 'Vitamine B6', unit: 'mg', group: 'vitamines', role: 'protéines, système nerveux', ref: [1.8, 1.5], upper: 12 },
   { key: 'vB9', label: 'Vitamine B9 (folates)', unit: 'µg', group: 'vitamines', role: 'cellules, sang', ref: [330, 330] },
   { key: 'vB12', label: 'Vitamine B12', unit: 'µg', group: 'vitamines', role: 'sang, nerfs', ref: [4, 4] },
   { key: 'vC', label: 'Vitamine C', unit: 'mg', group: 'vitamines', role: 'immunité, collagène, fer', ref: [110, 95] },
-  { key: 'vD', label: 'Vitamine D', unit: 'µg', group: 'vitamines', role: 'os, muscles, immunité', ref: [15, 15] },
-  { key: 'vE', label: 'Vitamine E', unit: 'mg', group: 'vitamines', role: 'antioxydant', ref: [13, 11] },
-  { key: 'vK', label: 'Vitamine K', unit: 'µg', group: 'vitamines', role: 'coagulation, os', ref: [70, 70] },
+  { key: 'vD', label: 'Vitamine D', unit: 'µg', group: 'vitamines', role: 'os, muscles, immunité', ref: [15, 15], upper: 100 },
+  { key: 'vE', label: 'Vitamine E', unit: 'mg', group: 'vitamines', role: 'antioxydant', ref: [10.5, 9.9], upper: 300 },
+  { key: 'vK', label: 'Vitamine K', unit: 'µg', group: 'vitamines', role: 'coagulation, os', ref: [79, 72] },
   { key: 'chol', label: 'Choline', unit: 'mg', group: 'vitamines', role: 'foie, cerveau', ref: [400, 400] },
-  { key: 'ca', label: 'Calcium', unit: 'mg', group: 'mineraux', role: 'os, muscles', ref: [950, 950] },
+  { key: 'ca', label: 'Calcium', unit: 'mg', group: 'mineraux', role: 'os, muscles', ref: [950, 950], upper: 2500 },
   { key: 'fe', label: 'Fer', unit: 'mg', group: 'mineraux', role: 'oxygène, énergie', ref: [11, 16] },
-  { key: 'zn', label: 'Zinc', unit: 'mg', group: 'mineraux', role: 'immunité, testostérone, peau', ref: [12.7, 9.3] },
-  { key: 'se', label: 'Sélénium', unit: 'µg', group: 'mineraux', role: 'thyroïde, antioxydant', ref: [70, 70] },
-  { key: 'i', label: 'Iode', unit: 'µg', group: 'mineraux', role: 'thyroïde', ref: [150, 150] },
-  { key: 'cu', label: 'Cuivre', unit: 'mg', group: 'mineraux', role: 'sang, collagène', ref: [1.6, 1.3] },
-  { key: 'mn', label: 'Manganèse', unit: 'mg', group: 'mineraux', role: 'os, métabolisme', ref: [3, 3] },
-  { key: 'p', label: 'Phosphore', unit: 'mg', group: 'mineraux', role: 'os, énergie', ref: [550, 550] },
+  { key: 'zn', label: 'Zinc', unit: 'mg', group: 'mineraux', role: 'immunité, testostérone, peau', ref: [11.7, 9.3], upper: 25 },
+  { key: 'se', label: 'Sélénium', unit: 'µg', group: 'mineraux', role: 'thyroïde, antioxydant', ref: [70, 70], upper: 255 },
+  { key: 'i', label: 'Iode', unit: 'µg', group: 'mineraux', role: 'thyroïde', ref: [150, 150], upper: 600 },
+  { key: 'cu', label: 'Cuivre', unit: 'mg', group: 'mineraux', role: 'sang, collagène', ref: [1.9, 1.5], upper: 5 },
+  { key: 'mn', label: 'Manganèse', unit: 'mg', group: 'mineraux', role: 'os, métabolisme', ref: [2.8, 2.5] },
+  { key: 'p', label: 'Phosphore', unit: 'mg', group: 'mineraux', role: 'os, énergie', ref: [700, 700] },
   { key: 'na', label: 'Sodium', unit: 'mg', group: 'electrolytes', role: 'hydratation (hors sel ajouté « au goût »)', ref: [2000, 2000], limit: true },
   { key: 'k', label: 'Potassium', unit: 'mg', group: 'electrolytes', role: 'cœur, muscles, tension', ref: [3500, 3500] },
-  { key: 'mg', label: 'Magnésium', unit: 'mg', group: 'electrolytes', role: 'muscles, sommeil, stress', ref: [350, 300] },
+  { key: 'mg', label: 'Magnésium', unit: 'mg', group: 'electrolytes', role: 'muscles, sommeil, stress', ref: [420, 360] },
   { key: 'cl', label: 'Chlorure', unit: 'mg', group: 'electrolytes', role: 'hydratation, digestion', ref: [3100, 3100] },
   { key: 'o3', label: 'Oméga-3 (total)', unit: 'g', group: 'lipides', role: 'anti-inflammatoire, cœur', ref: [2, 1.6] },
   { key: 'epa', label: 'EPA + DHA', unit: 'g', group: 'lipides', role: 'cerveau, inflammation', ref: [0.25, 0.25] },
@@ -138,7 +144,8 @@ export function computeDetailed(recipe: Recipe, lookup: IngredientLookup): Detai
     if (!g) continue;
     const f = g / 100;
     const m = MICROS[ing.id];
-    if (m) for (const [k, v] of Object.entries(m)) add(k, (v ?? 0) * f);
+    // valeurs crues × part conservée à la cuisson (USDA, src/config/retention.ts)
+    if (m) for (const [k, v] of Object.entries(m)) add(k, (v ?? 0) * f * retention(recipe.technique, ing.category, k));
     const prot = ing.protein * f;
     if (prot > 0) {
       const prof = aminoProfile(ing);
@@ -196,9 +203,15 @@ export const DEFAULT_PROFILES: NutritionProfile[] = [
   { id: 'elle', name: 'Ma copine', sex: 'femme', weight: 58, kcal: 2200, proteinPerKg: 1.6 },
 ];
 
-/** Besoin journalier d'un nutriment pour un profil */
-export function dailyRef(def: NutrientDef, p: NutritionProfile): number {
-  const base = p.sex === 'homme' ? def.ref[0] : def.ref[1];
+/** Besoin journalier d'un nutriment pour un profil (sexe, âge, poids) */
+export function dailyRef(def: NutrientDef, p: Pick<NutritionProfile, 'sex' | 'weight' | 'age'>): number {
+  let base = p.sex === 'homme' ? def.ref[0] : def.ref[1];
+  const age = p.age ?? 30;
+  // ANSES 2021 : calcium plus élevé avant 25 ans ; fer des femmes après la ménopause (≈ 50 ans)
+  if (def.key === 'ca' && age < 25) base = 1000;
+  if (def.key === 'fe' && p.sex === 'femme' && age >= 50) base = 11;
+  // vitamine D : 20 µg après 70 ans (EFSA)
+  if (def.key === 'vD' && age >= 70) base = 20;
   return def.group === 'acides-amines' ? base * p.weight : base;
 }
 

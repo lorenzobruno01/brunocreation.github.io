@@ -106,7 +106,7 @@ export function ServingsControl({ value, onChange }: { value: number; onChange: 
       <button onClick={prev} aria-label="Moins">
         −
       </button>
-      <span className="sv">👥 {value} pers.</span>
+      <span className="sv">👥 {Number.isInteger(value) ? `${value} pers.` : `${String(value).replace('.', ',')} portions`}</span>
       <button onClick={next} aria-label="Plus">
         +
       </button>

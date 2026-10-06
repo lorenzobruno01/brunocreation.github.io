@@ -10,9 +10,10 @@ import { GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
 import { SLOT_LABELS } from '../components/AddToPlanSheet';
-import { formatDateFr, formatDuration } from '../components/format';
+import { formatDateFr, formatDuration, deName } from '../components/format';
 import { ConstraintsEditor, loadConstraints } from '../components/ConstraintsEditor';
 import type { IndexedRecipe, MealType, PlanEntry, Slot } from '../domain/types';
+import { cookServings, dayShares, mainPortion, type Share } from '../domain/shares';
 
 const ALL_SLOTS: Slot[] = ['matin', 'midi', 'collation', 'soir'];
 const SLOTS_KEY = 'cuisine.planSlots';
@@ -74,16 +75,27 @@ export function Planner() {
   const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
   const byKey = new Map(plan.map((p) => [p.key, p]));
 
+  /** parts de chacun, jour par jour (selon l'énergie du jour de chaque personne) */
+  const sharesByDate = useMemo(() => {
+    const m = new Map<string, Share[]>();
+    for (const d of dates) {
+      const meals = plan.filter((p) => p.date === d && byId.has(p.recipeId)).map((p) => ({ recipe: byId.get(p.recipeId)!, slot: p.slot }));
+      if (meals.length) m.set(d, dayShares(meals, eaters.map((e) => e.profile), d, lookup));
+    }
+    return m;
+  }, [plan, byId, lookup, JSON.stringify(eaters.map((e) => e.profile)), dates[0]]); // eslint-disable-line react-hooks/exhaustive-deps
+
   /** un rapport par personne, jour par jour */
   const reports = useMemo(
     () =>
-      eaters.map((e) =>
+      eaters.map((e, i) =>
         dates.map((d) => {
           const rs = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)).filter(Boolean) as IndexedRecipe[];
-          return rs.length ? dayReport(d, rs, e.profile, () => e.portions) : null;
+          const share = sharesByDate.get(d)?.[i];
+          return rs.length ? dayReport(d, rs, e.profile, () => share?.portion ?? e.portions) : null;
         }),
       ),
-    [plan, byId, JSON.stringify(eaters), dates[0]], // eslint-disable-line react-hooks/exhaustive-deps
+    [plan, byId, sharesByDate, JSON.stringify(eaters), dates[0]], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   const place = async (date: string, slot: Slot, recipeId: string, servings = settings.defaultServings) => {
@@ -119,7 +131,14 @@ export function Planner() {
       constraints: opts.constraints,
       eaters,
     };
-    const entries = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
+    const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
+    // quantité à cuisiner = somme des parts du jour (courses au plus juste)
+    const lockedKeys = new Set(locked.map((l) => l.key));
+    const entries = generated.map((e) => {
+      if (lockedKeys.has(e.key)) return e;
+      const meals = generated.filter((x) => x.date === e.date && byId.has(x.recipeId)).map((x) => ({ recipe: byId.get(x.recipeId)!, slot: x.slot }));
+      return { ...e, servings: cookServings(dayShares(meals, eaters.map((x) => x.profile), e.date, lookup)) };
+    });
     await db.transaction('rw', db.plan, async () => {
       if (opts.replaceAll) await db.plan.bulkDelete(plan.map((p) => p.key));
       await db.plan.bulkPut(entries);
@@ -170,14 +189,14 @@ export function Planner() {
       </div>
       {together && (
         <p className="small muted" style={{ margin: '0 0 10px' }}>
-          Mêmes plats pour {profiles.length === 2 ? 'vous deux' : 'tout le foyer'}, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son objectif :{' '}
+          Mêmes plats pour {profiles.length === 2 ? 'vous deux' : 'tout le foyer'}, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son énergie du jour (plus les jours d’entraînement) :{' '}
           {eaters.map((e, i) => (
             <span key={e.profile.id}>
               {i > 0 && ' · '}
-              {icon(e)} <strong>{e.profile.name}</strong> {e.portions.toFixed(2).replace('.', ',')} portion{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal/jour)`}
+              {icon(e)} <strong>{e.profile.name}</strong> ≈ {e.portions.toFixed(2).replace('.', ',')} portion{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal/jour)`}
             </span>
           ))}
-          . Le planning vise 100 % des besoins de chacun.
+          . Le planning vise 100 % des besoins de chacun. <Link to="/ma-journee">Voir ma part du jour</Link>
         </p>
       )}
       {!together && (
@@ -335,6 +354,7 @@ export function Planner() {
       {menu && (
         <SlotMenu
           entry={menu}
+          shares={sharesByDate.get(menu.date)}
           onClose={() => setMenu(null)}
           onChange={() => {
             setPicker({ date: menu.date, slot: menu.slot });
@@ -477,13 +497,28 @@ function FragmentRows({ title, rows, reports }: { title: string; rows: Array<{ k
   );
 }
 
-function SlotMenu({ entry, onClose, onChange, onMove }: { entry: PlanEntry; onClose: () => void; onChange: () => void; onMove: () => void }) {
-  const { byId } = useLibrary();
+function SlotMenu({ entry, shares, onClose, onChange, onMove }: { entry: PlanEntry; shares?: Share[]; onClose: () => void; onChange: () => void; onMove: () => void }) {
+  const { byId, lookup } = useLibrary();
   const r = byId.get(entry.recipeId);
   if (!r) return null;
+  const main = mainPortion(r, lookup);
+  const fr = (v: number, d = 0) => v.toLocaleString('fr-FR', { maximumFractionDigits: d });
   return (
     <Sheet title={`${r.emoji} ${r.name}`} onClose={onClose}>
       <div className="stack">
+        {shares && shares.length > 0 && (
+          <div className="callout info small stack" style={{ margin: 0, gap: 2 }}>
+            <strong>🍽 La part de chacun</strong>
+            {shares.map((s) => (
+              <span key={s.profile.id}>
+                {s.profile.sex === 'homme' ? '👨' : '👩'} {s.profile.name} : {fr(s.portion, 2)} portion
+                {main ? ` ≈ ${fr(Math.round((main.grams * s.portion) / 5) * 5)} g ${deName(main.ing.name)}` : ''}
+                {s.profile.hideNumbers ? '' : ` · ${fr(r.nutrition.kcal * s.portion)} kcal`} · {fr(r.nutrition.protein * s.portion)} g de protéines
+              </span>
+            ))}
+            {shares.length > 1 && <span className="muted">À cuisiner : {fr(cookServings(shares), 1)} portions (quantités de la liste de courses).</span>}
+          </div>
+        )}
         <div className="row between">
           <span className="label">Portions</span>
           <ServingsControl value={entry.servings} onChange={(n) => db.plan.put({ ...entry, servings: n })} />
