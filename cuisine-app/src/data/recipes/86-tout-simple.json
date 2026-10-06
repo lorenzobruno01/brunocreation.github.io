@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "si-poire-roquefort",
+    "name": "Une poire bien mûre et un peu de roquefort",
+    "description": "Une poire fondante et un morceau de roquefort : l’accord classique, prêt en une minute.",
+    "emoji": "🍐",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "poire",
+        "qty": 180,
+        "unit": "g",
+        "note": "1 poire mûre"
+      },
+      {
+        "id": "roquefort",
+        "qty": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Lavez la poire et coupez-la en quartiers.",
+      "Servez avec le roquefort à température ambiante.",
+      "Croquez la poire avec un peu de fromage à chaque bouchée."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-orange-oeufs-durs",
+    "name": "Une orange et deux œufs durs",
+    "description": "Le goûter à emporter : deux œufs durs préparés à l’avance et une orange. Protéines complètes, choline et vitamine C.",
+    "emoji": "🍊",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 9,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Cuisez les œufs 9 min dans l’eau bouillante (ou préparez-en 6 d’avance pour la semaine), refroidissez-les et écalez-les.",
+      "Pelez l’orange.",
+      "Salez légèrement les œufs et mangez avec les quartiers d’orange."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "hiver",
+      "printemps"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "frais",
+      "fruite"
+    ]
+  },
+  {
+    "id": "si-raisin-chevre",
+    "name": "Une grappe de raisin et un crottin de chèvre",
+    "description": "Du raisin frais et un fromage de chèvre affiné : simple, frais, très bon.",
+    "emoji": "🍇",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "raisin",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "chevre-buche",
+        "qty": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Lavez le raisin.",
+      "Coupez le chèvre en rondelles.",
+      "Servez ensemble."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-kefir-banane",
+    "name": "Un grand verre de kéfir et une banane",
+    "description": "Un verre de kéfir de lait entier (fermenté, riche en bonnes bactéries) avec une banane : le goûter le plus rapide.",
+    "emoji": "🥛",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "kefir",
+        "qty": 300,
+        "unit": "ml"
+      },
+      {
+        "id": "banane",
+        "qty": 120,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Versez le kéfir bien frais dans un grand verre.",
+      "Épluchez la banane.",
+      "Buvez et mangez ensemble, ou mixez-les 20 s pour un smoothie."
+    ],
+    "tags": [
+      "rapide",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "lacte",
+      "fruite"
+    ]
+  },
+  {
+    "id": "si-fromage-blanc-fraises",
+    "name": "Fromage blanc entier et fraises",
+    "description": "Un bol de fromage blanc entier avec des fraises coupées : frais, léger mais riche en protéines.",
+    "emoji": "🍓",
+    "category": "collation",
+    "mealTypes": [
+      "collation",
+      "dessert"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "fromage-blanc",
+        "qty": 200,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "fraise",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Lavez et équeutez les fraises, coupez-les en deux.",
+      "Versez le fromage blanc dans un bol.",
+      "Ajoutez les fraises et un petit filet de miel."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "frais",
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-dattes-noix-lait",
+    "name": "Trois dattes, quelques noix et un verre de lait entier",
+    "description": "Le goûter énergétique des marcheurs : dattes, cerneaux de noix et un verre de lait entier.",
+    "emoji": "🌴",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "datte",
+        "qty": 60,
+        "unit": "g",
+        "note": "3 dattes Medjool"
+      },
+      {
+        "id": "noix",
+        "qty": 15,
+        "unit": "g",
+        "note": "quelques cerneaux"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "entier"
+      }
+    ],
+    "steps": [
+      "Dénoyautez les dattes.",
+      "Glissez un cerneau de noix dans chacune.",
+      "Servez avec un grand verre de lait entier."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "sucre",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-avocat-oeuf-dur",
+    "name": "Un demi-avocat citronné et un œuf dur",
+    "description": "Un demi-avocat au citron et à la fleur de sel, avec un œuf dur : bon gras, potassium, protéines.",
+    "emoji": "🥑",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 9,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "avocat",
+        "qty": 100,
+        "unit": "g",
+        "note": "½ gros avocat"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Cuisez les œufs 9 min, refroidissez et écalez-les.",
+      "Coupez l’avocat en deux, retirez le noyau, arrosez de citron et salez.",
+      "Mangez à la petite cuillère avec les œufs coupés en deux."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "bouilli",
+    "flavors": [
+      "frais",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "si-sardines-tomates-cerises",
+    "name": "Une boîte de sardines et des tomates cerises",
+    "description": "Ouvrir une boîte de sardines à l’huile d’olive et grignoter des tomates cerises : oméga-3, vitamine D et calcium des arêtes.",
+    "emoji": "🐟",
+    "category": "collation",
+    "mealTypes": [
+      "collation",
+      "dejeuner"
+    ],
+    "cuisine": "portugaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "sardine-conserve",
+        "qty": 100,
+        "unit": "g",
+        "note": "1 petite boîte"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Égouttez légèrement les sardines (gardez un peu d’huile).",
+      "Lavez les tomates cerises.",
+      "Arrosez les sardines de citron et mangez avec les tomates."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "iode",
+      "frais"
+    ]
+  },
+  {
+    "id": "si-clementines-skyr",
+    "name": "Deux clémentines et un pot de skyr",
+    "description": "Le duo d’hiver : deux clémentines et un skyr nature, très riche en protéines.",
+    "emoji": "🍊",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "clementine",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 8,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Pelez les clémentines.",
+      "Versez le skyr dans un bol avec le filet de miel.",
+      "Mangez les quartiers avec le skyr."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "lacte",
+      "frais"
+    ]
+  },
+  {
+    "id": "si-fruits-saison-yaourt",
+    "name": "Une salade de fruits de saison et un yaourt entier",
+    "description": "Deux ou trois fruits de saison coupés dans un bol, avec un yaourt entier nature : le dessert ou goûter de tous les jours.",
+    "emoji": "🍑",
+    "category": "collation",
+    "mealTypes": [
+      "collation",
+      "dessert",
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "kiwi",
+        "qty": 100,
+        "unit": "g",
+        "note": "1 kiwi"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "banane",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "yaourt-nature",
+        "qty": 125,
+        "unit": "g",
+        "note": "1 pot entier"
+      }
+    ],
+    "steps": [
+      "Pelez et coupez les fruits en morceaux.",
+      "Mélangez-les dans un bol avec le jus qu’ils rendent.",
+      "Servez avec le yaourt nature."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "frais",
+      "lacte"
+    ],
+    "tips": "Changez les fruits selon la saison : fraises, abricots, pêches, raisin, poire…"
+  },
+  {
+    "id": "si-lait-chaud-miel",
+    "name": "Un bol de lait entier chaud au miel et une banane",
+    "description": "Le goûter réconfortant de l’enfance : lait entier chauffé, une cuillère de miel, une pincée de cannelle, avec une banane.",
+    "emoji": "🍯",
+    "category": "collation",
+    "mealTypes": [
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 2,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "lait",
+        "qty": 300,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "miel",
+        "qty": 12,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "banane",
+        "qty": 120,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chauffez le lait sans le faire bouillir (2 min).",
+      "Ajoutez le miel et la cannelle et remuez.",
+      "Servez dans un bol avec la banane."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "réconfortant",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "reconfortant",
+      "lacte",
+      "sucre"
+    ]
+  },
+  {
+    "id": "si-oeufs-coque-kiwi",
+    "name": "Deux œufs à la coque, du beurre et un kiwi",
+    "description": "Deux œufs à la coque avec une noisette de beurre et de la fleur de sel, et un kiwi : le petit-déjeuner simple et complet.",
+    "emoji": "🥚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 4,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "kiwi",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "comte",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Plongez les œufs dans l’eau bouillante 3 min 30 (jaune coulant).",
+      "Ouvrez-les, ajoutez une noisette de beurre et un peu de sel.",
+      "Mangez avec le comté en lamelles et le kiwi coupé en deux à la petite cuillère."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "bouilli",
+    "flavors": [
+      "lacte",
+      "frais"
+    ]
+  },
+  {
+    "id": "si-omelette-nature-orange",
+    "name": "Omelette nature au beurre et une orange",
+    "description": "Trois œufs battus cuits au beurre en 2 minutes, et une orange : rien de plus simple.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 3,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Battez les œufs avec sel et poivre.",
+      "Faites mousser le beurre dans une poêle à feu moyen, versez les œufs et ramenez les bords vers le centre 1 à 2 min ; pliez l’omelette encore baveuse.",
+      "Servez avec l’orange en quartiers."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "lacte",
+      "frais"
+    ]
+  },
+  {
+    "id": "si-yaourt-banane-noisettes",
+    "name": "Grand bol de yaourt grec, banane, noisettes et miel",
+    "description": "Un grand bol de yaourt grec entier avec une banane, quelques noisettes et un filet de miel : 2 minutes et c’est prêt.",
+    "emoji": "🥣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 250,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "banane",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "noisette",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 12,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Versez le yaourt dans un grand bol.",
+      "Ajoutez la banane en rondelles et les noisettes concassées.",
+      "Terminez par le filet de miel."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "lacte",
+      "sucre",
+      "fruite"
+    ]
+  },
+  {
+    "id": "si-assiette-jambon-fromage-fruit",
+    "name": "Assiette rapide : jambon, fromage, œuf dur et un fruit",
+    "description": "Une assiette froide qui se prépare en 3 minutes : jambon blanc, fromage affiné, un œuf dur de la veille et un fruit.",
+    "emoji": "🍽️",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "jambon-blanc",
+        "qty": 80,
+        "unit": "g",
+        "note": "2 tranches"
+      },
+      {
+        "id": "comte",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "cuits durs la veille"
+      },
+      {
+        "id": "pomme",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Disposez le jambon roulé et le fromage sur une assiette.",
+      "Coupez les œufs durs en deux et posez une noisette de beurre dessus.",
+      "Ajoutez la pomme en quartiers."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "préparation à l’avance",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "umami",
+      "lacte",
+      "fruite"
+    ]
+  },
+  {
+    "id": "si-oeufs-brouilles-banane",
+    "name": "Œufs brouillés au beurre et une banane",
+    "description": "Des œufs brouillés crémeux au beurre en 3 minutes et une banane pour l’énergie.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 4,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "banane",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 3,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "au-gout"
+      }
+    ],
+    "steps": [
+      "Battez les œufs avec le sel.",
+      "Faites-les cuire à feu doux dans le beurre en remuant sans cesse 3 min, ajoutez la crème hors du feu.",
+      "Parsemez de ciboulette et servez avec la banane."
+    ],
+    "tags": [
+      "rapide",
+      "une poêle",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-riz-veille-oeuf-plat",
+    "name": "Bol de riz de la veille, œuf au plat et avocat",
+    "description": "Le petit-déjeuner salé anti-gaspi : du riz de la veille réchauffé au beurre, un œuf au plat et un peu d’avocat.",
+    "emoji": "🍚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "coreenne",
+    "prepTime": 3,
+    "cookTime": 6,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "riz-blanc",
+        "qty": 70,
+        "unit": "g",
+        "note": "pesé cru, cuit la veille"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "avocat",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Réchauffez le riz cuit dans la moitié du beurre 3 min à la poêle.",
+      "Poussez-le sur le côté, ajoutez le reste du beurre et faites cuire les œufs au plat 3 min.",
+      "Servez le riz surmonté des œufs, de l’avocat en tranches, d’un trait de sauce soja et d’oignon nouveau."
+    ],
+    "tags": [
+      "rapide",
+      "économique",
+      "une poêle",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "si-skyr-myrtilles-oeuf",
+    "name": "Skyr aux myrtilles et un œuf mollet",
+    "description": "Un bol de skyr aux myrtilles et un œuf mollet : simple, très protéiné, idéal avant le sport.",
+    "emoji": "🫐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 3,
+    "cookTime": 6,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "myrtille",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 12,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      }
+    ],
+    "steps": [
+      "Cuisez les œufs 6 min dans l’eau bouillante, refroidissez et écalez-les.",
+      "Mélangez le skyr avec les myrtilles et le miel.",
+      "Servez le bol avec les œufs mollets salés."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [],
+    "technique": "bouilli",
+    "flavors": [
+      "frais",
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "si-fruits-fromage-lait",
+    "name": "Fruits frais, fromage et un grand verre de lait",
+    "description": "Le petit-déjeuner sans cuisine : une poignée de fruits de saison, un morceau de fromage affiné et un grand verre de lait entier.",
+    "emoji": "🧀",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 3,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "raisin",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "poire",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "comte",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "entier"
+      }
+    ],
+    "steps": [
+      "Lavez les fruits et coupez la poire en quartiers.",
+      "Coupez le fromage en bâtonnets.",
+      "Servez avec un grand verre de lait."
+    ],
+    "tags": [
+      "rapide",
+      "repas froid",
+      "lunch box",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "fruite",
+      "lacte"
+    ]
+  }
+]

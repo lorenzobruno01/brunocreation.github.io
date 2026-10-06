@@ -720,7 +720,7 @@
   {
     "id": "fr2-roti-dinde-marrons",
     "name": "Rôti de dinde aux marrons et aux pommes",
-    "description": "Le rôti des fêtes de grand-mère, tous les jours : filet de dinde bardé de lard, rôti en cocotte au vin blanc avec marrons glacés au jus, pommes fruits et petits oignons.",
+    "description": "Le rôti des fêtes de grand-mère, tous les jours : rôti de cuisse de dinde bardé de lard, rôti en cocotte au vin blanc avec marrons glacés au jus, pommes fruits et petits oignons.",
     "emoji": "🌰",
     "category": "plat",
     "mealTypes": [
@@ -729,16 +729,16 @@
     ],
     "cuisine": "francaise",
     "prepTime": 20,
-    "cookTime": 70,
+    "cookTime": 95,
     "restTime": 10,
     "difficulty": "facile",
     "servings": 4,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 1000,
+        "id": "dinde-cuisse",
+        "qty": 1200,
         "unit": "g",
-        "note": "rôti de dinde (filet) ficelé"
+        "note": "cuisses désossées, roulées et ficelées en rôti"
       },
       {
         "id": "bacon",
@@ -808,7 +808,7 @@
     "steps": [
       "Salez et poivrez le rôti, enveloppez-le des tranches de bacon et glissez les feuilles de sauge dessous ; maintenez avec de la ficelle.",
       "Dans une cocotte, faites mousser 25 g de beurre à feu moyen-vif et dorez le rôti 8 min sur toutes les faces, jusqu'à ce que le lard soit croustillant.",
-      "Ajoutez les petits oignons et le thym, versez le vin blanc et 150 ml de bouillon. Couvrez et laissez cuire 45 min à feu doux (ou au four à 170 °C), en retournant le rôti à mi-cuisson ; le cœur doit atteindre 70 °C.",
+      "Ajoutez les petits oignons et le thym, versez le vin blanc et 150 ml de bouillon. Couvrez et laissez cuire 1 h 10 à feu doux (ou au four à 170 °C), en retournant le rôti à mi-cuisson ; le cœur doit atteindre 75 °C.",
       "Pendant ce temps, faites dorer les quartiers de pomme 6 min dans 15 g de beurre. Ajoutez les marrons, le reste du bouillon et du beurre, et laissez-les glacer 10 min à feu moyen en les roulant délicatement, jusqu'à ce qu'ils soient brillants.",
       "Sortez le rôti et laissez-le reposer 10 min sous aluminium. Faites réduire le jus de la cocotte 3 min à feu vif, ajoutez la crème et laissez bouillonner 1 min.",
       "Tranchez le rôti, nappez de sauce et servez avec les marrons, les pommes et les petits oignons."
@@ -2309,8 +2309,8 @@
   },
   {
     "id": "fr2-cordon-bleu-maison",
-    "name": "Cordon bleu maison, purée de céleri et pommes de terre",
-    "description": "Un vrai cordon bleu fait maison : blanc de poulet ouvert en portefeuille, farci de jambon et de comté, pané et doré au beurre clarifié. Avec une purée de céleri-pomme de terre.",
+    "name": "Cordon bleu maison de hauts de cuisse, purée de céleri et pommes de terre",
+    "description": "Un vrai cordon bleu fait maison : hauts de cuisse de poulet aplatis, farcis de jambon et de comté, pané et doré au beurre clarifié. Avec une purée de céleri-pomme de terre.",
     "emoji": "🧀",
     "category": "plat",
     "mealTypes": [
@@ -2324,10 +2324,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
-        "qty": 2,
-        "unit": "piece",
-        "note": "gros blancs"
+        "id": "poulet-haut-cuisse-desosse",
+        "qty": 440,
+        "unit": "g",
+        "note": "4 hauts de cuisse désossés"
       },
       {
         "id": "jambon-blanc",
@@ -2400,8 +2400,8 @@
     ],
     "steps": [
       "Purée : cuisez pommes de terre et céleri-rave épluchés et coupés en dés 25 min dans l'eau salée. Égouttez et écrasez avec le beurre et le lait chaud. Gardez au chaud.",
-      "Ouvrez chaque blanc en portefeuille dans l'épaisseur sans le séparer, puis aplatissez-le entre deux feuilles de papier cuisson à 1 cm d'épaisseur.",
-      "Garnissez une moitié d'une tranche de jambon pliée et de comté, en laissant 1 cm de bord libre. Refermez et pressez les bords.",
+      "Ouvrez les hauts de cuisse bien à plat et aplatissez-les entre deux feuilles de papier cuisson à 1 cm d'épaisseur.",
+      "Posez sur deux d'entre eux une tranche de jambon pliée et le comté, en laissant 1 cm de bord libre. Couvrez avec les deux autres et pressez bien les bords.",
       "Panez : farine, puis œuf battu salé, puis chapelure, en appuyant bien sur les bords pour sceller. Laissez reposer 10 min au frais si possible.",
       "Faites chauffer le beurre clarifié à feu moyen dans une grande poêle. Cuisez les cordons bleus 6 à 7 min par face, jusqu'à ce que la panure soit dorée et croustillante et le fromage fondant au cœur.",
       "Égouttez sur du papier absorbant et servez avec la purée et un quartier de citron."

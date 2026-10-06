@@ -23,7 +23,12 @@ export interface PlannerConstraints {
   coldLunch?: boolean; // midi en semaine : repas froids / lunch box
   minFish?: number; // nb minimum de repas de poisson
   maxAbats?: number;
+  /** collations (et petits-déjeuners si possible) tout simples en semaine — activé par défaut */
+  simpleSnacks?: boolean;
 }
+
+/** Recette « tout simple » : prête en 10 minutes, sans vraie cuisine */
+export const isSimple = (r: { totalTime: number }) => r.totalTime <= 10;
 
 export function passesConstraints(r: IndexedRecipe, c: PlannerConstraints, weekend: boolean, favorites: Set<string>, season: Season): boolean {
   const max = weekend ? c.maxTimeWeekend : c.maxTimeWeek;
@@ -179,6 +184,7 @@ export function generateWeek(ctx: PlannerContext, categoryOf: (id: string) => st
           s += shared * 5;
         }
         if (c.minFish && isFish && fishSoFar < c.minFish) s += 25 + (c.minFish - fishSoFar >= slotsLeft ? 100 : 0);
+        if (c.simpleSnacks !== false && !weekend && isSimple(r)) s += slot === 'collation' ? 35 : slot === 'matin' ? 15 : 0;
         if (c.coldLunch && !weekend && slot === 'midi' && (r.tags.includes('repas froid') || r.tags.includes('lunch box') || r.category === 'salade-composee')) s += 30;
         if (!best || s > best.s) best = { r, s };
       }

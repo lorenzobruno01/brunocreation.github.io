@@ -255,7 +255,7 @@
   {
     "id": "ori-chich-taouk-riz-toum",
     "name": "Chich taouk, riz au beurre et toum au yaourt",
-    "description": "Brochettes de blanc de poulet marinées au yaourt, citron et paprika, grillées à feu vif, avec un riz basmati au beurre et une sauce toum à l'ail bien relevée.",
+    "description": "Brochettes de hauts de cuisse de poulet marinées au yaourt, citron et paprika, grillées à feu vif, avec un riz basmati au beurre et une sauce toum à l'ail bien relevée.",
     "emoji": "🍢",
     "category": "plat",
     "mealTypes": [
@@ -270,7 +270,7 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "poulet-blanc",
+        "id": "poulet-haut-cuisse-desosse",
         "qty": 450,
         "unit": "g",
         "note": "en cubes de 3 cm"
@@ -366,7 +366,7 @@
       "acidule",
       "lacte"
     ],
-    "tips": "La marinade au yaourt peut se faire la veille : le poulet n'en sera que plus tendre."
+    "tips": "La marinade au yaourt peut se faire la veille : le poulet n'en sera que plus tendre. Les hauts de cuisse, utilisés au Liban, restent moelleux au gril et apportent plus de fer, de zinc et de B12 que le blanc."
   },
   {
     "id": "ori-mujaddara-cotelettes-agneau",
@@ -1395,10 +1395,10 @@
     "servings": 2,
     "ingredients": [
       {
-        "id": "dinde-escalope",
-        "qty": 400,
+        "id": "dinde-cuisse",
+        "qty": 450,
         "unit": "g",
-        "note": "en lanières"
+        "note": "désossée, en lanières"
       },
       {
         "id": "cumin",
@@ -1498,7 +1498,7 @@
     "steps": [
       "Préchauffez le four à 230 °C (chaleur tournante). Mélangez la dinde avec le cumin, le paprika, la moitié du curcuma, la cannelle, 2 c. à soupe d'huile, le jus d'un demi-citron, sel et poivre.",
       "Rincez le riz, mettez-le dans une casserole avec le reste de curcuma, 1,5 fois son volume d'eau et une pincée de sel. Portez à ébullition, couvrez et cuisez 12 min à feu très doux.",
-      "Étalez la dinde en une seule couche sur une plaque et enfournez 10 à 12 min, jusqu'à ce que les bords soient grillés et le centre juste cuit (blanc et juteux).",
+      "Étalez la dinde en une seule couche sur une plaque et enfournez 14 à 16 min, jusqu'à ce que les bords soient grillés et le centre cuit et juteux.",
       "Massez le chou avec une pincée de sel, le reste d'huile et un filet de citron 1 min pour l'assouplir. Coupez concombre, tomates cerises et oignon rouge.",
       "Sauce : fouettez tahini, yaourt, ail râpé, le jus restant du citron et 2 c. à soupe d'eau.",
       "Montez les bowls : riz, dinde, crudités et pickles en sections, sauce par-dessus et persil ciselé."
