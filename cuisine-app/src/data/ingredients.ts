@@ -435,6 +435,8 @@ export const INGREDIENTS: Ingredient[] = [
   I('gochujang', 'gochujang', 'condiment', [230, 5, 47, 2], { al: ['pâte de piment coréenne', 'doenjang', 'sambal'], pkg: 200, e: '🌶️' }),
   I('pate-curry', 'pâte de curry thaïe', 'condiment', [150, 3, 15, 9], { al: ['curry vert', 'curry rouge', 'pâte de curry', 'doubanjiang'], pkg: 110, e: '🌶️' }),
   I('harissa', 'harissa', 'condiment', [80, 3, 10, 3.5], { al: ['pâte de piment', 'chermoula'], st: true, pkg: 140, e: '🌶️' }),
+  I('pesto', 'pesto maison', 'condiment', [420, 5, 6, 42], { al: ['pesto', 'pesto alla genovese', 'pistou', 'pesto rosso', 'sauce au basilic'], pkg: 190, e: '🌿' }),
+  I('mayonnaise', 'mayonnaise maison', 'condiment', [700, 1.5, 0.5, 77], { al: ['mayonnaise', 'mayo', 'aïoli', 'aioli', 'sauce rémoulade', 'sauce tartare'], d: 0.95, pkg: 200, e: '🥚' }),
   I('tahini', 'tahini', 'condiment', [600, 18, 21, 54], { al: ['tahiné', 'crème de sésame', 'purée de sésame'], pkg: 250, e: '🫙' }),
   I('bouillon-volaille', 'bouillon de volaille maison', 'condiment', [15, 2, 0.5, 0.5], { u: 'ml', al: ['bouillon de poulet', 'fond blanc', 'bouillon', 'bouillon d’os', 'bouillon de légumes'], st: false, pkg: 1000, e: '🍲' }),
   I('bouillon-boeuf', 'bouillon de bœuf maison', 'condiment', [15, 2.5, 0.3, 0.5], { u: 'ml', al: ['fond brun', 'fond de veau', 'bouillon de bœuf', 'bouillon d’os de bœuf'], pkg: 1000, e: '🍲' }),

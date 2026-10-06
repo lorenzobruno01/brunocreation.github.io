@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { db, saveSettings } from '../db/db';
-import { cloudEnabled, useCloud } from '../cloud/sync';
+import { cloudEnabled, ME_KEY, useCloud } from '../cloud/sync';
 import { newProfile } from '../domain/profile';
 import type { NutritionProfile } from '../domain/micronutrients';
 import { EXPLAIN } from '../config/targets';
@@ -12,11 +12,11 @@ import { setActiveProfile } from '../hooks/activeProfile';
 import { Sheet } from './ui';
 
 const STEPS = [
-  { key: 'identite', title: '🧍 Vous' },
-  { key: 'activite', title: '🏃 Votre activité' },
-  { key: 'objectif', title: '🎯 Votre objectif' },
-  { key: 'gouts', title: '😋 Vos goûts' },
-  { key: 'besoins', title: '✅ Vos besoins' },
+  { key: 'identite', title: '🧍 Vous', other: '🧍 Qui mange avec vous ?' },
+  { key: 'activite', title: '🏃 Votre activité', other: '🏃 Son activité' },
+  { key: 'objectif', title: '🎯 Votre objectif', other: '🎯 Son objectif' },
+  { key: 'gouts', title: '😋 Vos goûts', other: '😋 Ses goûts' },
+  { key: 'besoins', title: '✅ Vos besoins', other: '✅ Les besoins de chacun' },
 ] as const;
 
 /** Premier lancement : qui mange, avec quels besoins ; ou connexion à un compte existant */
@@ -49,6 +49,11 @@ export function Onboarding() {
     await saveProfiles(clean);
     await saveSettings({ onboarded: true, defaultServings: Math.max(1, clean.length), planFor: clean.length > 1 ? 'nous' : clean[0].id });
     setActiveProfile(clean[0].id);
+    try {
+      localStorage.setItem(ME_KEY, clean[0].id);
+    } catch {
+      /* indisponible */
+    }
   };
 
   if (step < 0)
@@ -80,11 +85,11 @@ export function Onboarding() {
     );
 
   const s = STEPS[step];
-  const who = idx === 0 ? '' : ` — ${p.name || `personne ${idx + 1}`}`;
+  const who = idx === 0 || s.key === 'identite' || s.key === 'besoins' ? '' : p.name ? ` (${p.name})` : '';
   const next = () => setStep(step + 1);
   return (
     <Sheet
-      title={`${s.title}${who}`}
+      title={`${idx === 0 ? s.title : s.other}${who}`}
       onClose={() => setLater(true)}
       footer={
         <div className="stack" style={{ gap: 8 }}>

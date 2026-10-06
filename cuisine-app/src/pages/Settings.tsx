@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
 import { useUserData, useLibrary, useProfiles } from '../hooks/library';
 import { HouseholdEditor } from '../components/Household';
+import { WhoAmI } from '../components/WhoAmI';
 import { cloudEnabled, useCloud } from '../cloud/sync';
 import { clearIncidents, readIncidents } from '../domGuard';
 import { DIET_BY_ID, DIET_PROFILES, type DietProfileId } from '../domain/digestion';
@@ -16,6 +17,7 @@ export function Settings() {
   const toast = useToast();
   const cloud = useCloud();
   const profiles = useProfiles();
+  const [whoOpen, setWhoOpen] = useState(false);
 
   const download = async () => {
     const json = await exportData();
@@ -134,7 +136,13 @@ export function Settings() {
           Taille, poids, âge, activité et objectif servent à calculer vos besoins en calories et en protéines, puis les % de vitamines, minéraux et acides aminés affichés partout. Ajoutez les personnes qui partagent vos repas : le planning « Nous deux » vise 100 % pour chacune.
         </p>
         <Link to="/besoins" className="small">🎯 Voir le détail des besoins et les ajuster à la main ›</Link>
+        {cloud.household && (
+          <button className="btn sm" style={{ alignSelf: 'flex-start' }} onClick={() => setWhoOpen(true)}>
+            👤 Ce n’est pas le bon profil « vous » ? Choisir le mien
+          </button>
+        )}
         <HouseholdEditor profiles={profiles} />
+        {whoOpen && <WhoAmI forced onClose={() => setWhoOpen(false)} />}
       </section>
 
       <section className="card pad stack">

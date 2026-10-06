@@ -22,6 +22,9 @@ export default async function ({ browser, base }) {
   check(Object.keys(mock.db.households).length === 1, 'pas de foyer créé pour rien quand on arrive par une invitation');
   await B.p.getByRole('button', { name: 'Rejoindre ce foyer' }).click();
   await wait(2500);
+  // « Qui êtes-vous ? » : Julie garde le profil créé sur son téléphone
+  await B.p.getByRole('button', { name: /Le profil que j’avais créé/ }).click();
+  await wait(1000);
   check(mock.db.members.filter((m) => m.household_id === hid).length === 2, 'deux membres');
   await B.p.goto(base + '#/semaine');
   await B.p.locator('.slot-name').first().waitFor();

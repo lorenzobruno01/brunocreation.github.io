@@ -12,6 +12,7 @@
 // Si la migration « foyers » n'a pas encore été exécutée sur le serveur,
 // l'appli continue avec l'ancien mode (une copie complète par compte).
 // ─────────────────────────────────────────────────────────────
+import type { NutritionProfile } from '../domain/micronutrients';
 import { useSyncExternalStore } from 'react';
 import { createClient, type RealtimeChannel, type SupabaseClient, type User } from '@supabase/supabase-js';
 import { liveQuery } from 'dexie';
@@ -68,6 +69,8 @@ export interface CloudState {
   live?: boolean;
   /** tables absentes du serveur (migration incomplète) : ignorées, les autres se synchronisent */
   missing?: string[];
+  /** profils de ce téléphone mis de côté en rejoignant un foyer (« Qui êtes-vous ? ») */
+  carry?: NutritionProfile[];
 }
 
 let state: CloudState = { status: cloudEnabled ? 'signed-out' : 'off' };
@@ -435,11 +438,41 @@ async function connect() {
 }
 
 /** Le premier profil sans compte devient celui de l'utilisateur connecté */
+/** Profil de la personne qui utilise ce téléphone (choisi à l'accueil ou dans « Qui êtes-vous ? ») */
+export const ME_KEY = 'cuisine.me';
+export function myProfileId(): string | null {
+  try {
+    return localStorage.getItem(ME_KEY);
+  } catch {
+    return null;
+  }
+}
+
+/** Ce téléphone appartient à ce profil (le compte connecté y est relié) */
+export async function setMyProfile(id: string) {
+  try {
+    localStorage.setItem(ME_KEY, id);
+  } catch {
+    /* indisponible */
+  }
+  const now = new Date().toISOString();
+  if (user) {
+    const all = await db.profiles.toArray();
+    const changes = all
+      .filter((p) => (p.id === id && p.userId !== user!.id) || (p.id !== id && p.userId === user!.id))
+      .map((p) => ({ ...p, userId: p.id === id ? user!.id : undefined, updatedAt: now }));
+    if (changes.length) await db.profiles.bulkPut(changes);
+  }
+  set({ carry: undefined });
+}
+
 async function claimProfile() {
   if (!user) return;
-  const all = await db.profiles.toArray();
+  const all = (await db.profiles.toArray()).sort((a, b) => (a.createdAt ?? '').localeCompare(b.createdAt ?? ''));
   if (all.some((p) => p.userId === user!.id)) return;
-  const free = all.find((p) => !p.userId);
+  // le profil choisi sur ce téléphone, sinon le premier créé (jamais celui d'un autre compte)
+  const me = myProfileId();
+  const free = all.find((p) => p.id === me && !p.userId) ?? all.find((p) => !p.userId);
   if (free) await db.profiles.put({ ...free, userId: user.id, updatedAt: new Date().toISOString() });
 }
 
@@ -515,9 +548,9 @@ export function joinHousehold(code: string) {
     patchMeta({ householdId: hid as string, householdName: h?.name ?? 'Foyer', cursors: {} });
     set({ household: { id: hid as string, name: h?.name ?? 'Foyer' }, pendingImport: false });
     await pullAll();
-    // mon profil rejoint le foyer (s'il n'y est pas déjà)
+    // la personne choisira « qui elle est » : un profil existant du foyer, son profil de ce téléphone ou un nouveau
     const there = (await db.profiles.toArray()).some((p) => p.userId === user!.id);
-    if (!there && mine.length) await db.profiles.bulkPut(mine.map((p) => ({ ...p, updatedAt: new Date().toISOString() })));
+    if (!there) set({ carry: mine });
     subscribeRealtime(hid as string);
     loadMembers(hid as string);
   });
