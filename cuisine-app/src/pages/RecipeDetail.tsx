@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useLibrary, useUserData } from '../hooks/library';
+import { useLibrary, useStoredProfiles, useUserData } from '../hooks/library';
+import { recipeConflict } from '../domain/allergens';
 import { RecipeVisual } from '../components/RecipeVisual';
 import { RecipeCard } from '../components/RecipeCard';
 import { Empty, ServingsControl, Sheet, useToast } from '../components/ui';
@@ -22,6 +23,7 @@ import { useHideNumbers } from '../hooks/activeProfile';
 export function RecipeDetail() {
   const { id } = useParams();
   const hideNumbers = useHideNumbers();
+  const household = useStoredProfiles() ?? [];
   const { byId, recipes, lookup, seedIds, diets } = useLibrary();
   const { favorites, basket, pantry, fridge, settings } = useUserData();
   const recipe = id ? byId.get(id) : undefined;
@@ -45,6 +47,7 @@ export function RecipeDetail() {
   const diff = DIFFICULTIES[recipe.difficulty];
   const available = new Set([...pantry, ...fridge]);
   const issues = recipe.source !== 'seed' ? checkPhilosophy(recipe, lookup) : [];
+  const conflicts = household.map((p) => recipeConflict(recipe, [p], lookup)).filter(Boolean);
 
   const toggleCheck = (i: number) => {
     const next = new Set(checked);
@@ -75,6 +78,12 @@ export function RecipeDetail() {
             </div>
             <h1>{recipe.name}</h1>
             <p style={{ margin: '0 0 12px', color: 'var(--ink-2)' }}>{recipe.description}</p>
+            {conflicts.map((c) => (
+              <div key={c!.profile.id} className="callout small" style={{ margin: '0 0 12px' }}>
+                ⚠️ {c!.profile.name} : {c!.ingredient ? `${c!.ingredient.name} — ` : ''}
+                {c!.reason}. Ce plat n’est pas proposé dans le planning quand {c!.profile.name} mange avec vous.
+              </div>
+            ))}
           </div>
           <div className="facts">
             <Fact v={formatDuration(recipe.totalTime)} l={`⏱ ${recipe.prepTime} min actif`} />

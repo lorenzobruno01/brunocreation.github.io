@@ -99,6 +99,8 @@ describe('allergies et intolérances', () => {
     expect(ingredientConflict(p, get('amande'))).toMatch(/coque/);
     expect(ingredientConflict(p, get('crevette'))).toMatch(/crustac/);
     expect(ingredientConflict(p, get('noix-coco'))).toBeNull();
+    expect(ingredientConflict({ allergies: ['poisson'] }, get('foie-morue'))).toMatch(/poisson/);
+    expect(ingredientConflict({ allergies: ['poisson'] }, get('dashi'))).toMatch(/poisson/);
     expect(ingredientConflict(p, get('riz-blanc'))).toBeNull();
   });
   it('lactose : les fromages affinés restent permis', () => {

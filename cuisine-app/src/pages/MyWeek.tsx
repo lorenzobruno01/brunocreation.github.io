@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLibrary } from '../hooks/library';
 import { setActiveProfile, useActiveProfile } from '../hooks/activeProfile';
 import { usePlanAnalysis } from '../hooks/plan';
 import { mondayOf, weekDates, DAY_NAMES } from '../domain/season';
 import { formatAmount, GROUP_LABELS } from '../domain/micronutrients';
-import { foodSourcesFor, WEEK_NUTRIENTS } from '../domain/week';
+import { commonIngredients, foodSourcesFor, WEEK_NUTRIENTS } from '../domain/week';
 import { bestSourcesOf } from '../domain/nutriPlanner';
 import { formatDateFr, deName } from '../components/format';
 import { Empty } from '../components/ui';
@@ -31,6 +31,7 @@ export function MyWeek() {
   monday.setDate(monday.getDate() + offset * 7);
   const dates = weekDates(monday);
   const { recipes, ingredients } = useLibrary();
+  const common = useMemo(() => commonIngredients(recipes), [recipes]);
   const active = useActiveProfile();
   const { weeks, eaters, loaded } = usePlanAnalysis(dates);
   const w = weeks.find((x) => x.profile.id === active.id) ?? weeks[0];
@@ -102,7 +103,7 @@ export function MyWeek() {
           <section className="card pad stack">
             <h2 style={{ margin: 0 }}>{w.gaps.length ? '🎯 Ce qui manque sur la semaine' : '🎉 Tout est couvert cette semaine'}</h2>
             {w.gaps.map((def) => {
-              const foods = foodSourcesFor(def, w.profile, ingredients);
+              const foods = foodSourcesFor(def, w.profile, ingredients, 3, common);
               const recs = bestSourcesOf(def.key, recipes, (r) => r.mealTypes.includes('dejeuner') || r.mealTypes.includes('diner'), 2);
               return (
                 <div key={def.key} className="stack" style={{ gap: 4, borderTop: '1px solid var(--line)', paddingTop: 8 }}>

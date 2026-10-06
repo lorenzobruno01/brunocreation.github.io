@@ -4,7 +4,8 @@
 // sont regroupés en familles reconnues à partir des identifiants et
 // catégories d'ingrédients de la base.
 // ─────────────────────────────────────────────────────────────
-import type { Ingredient } from './types';
+import type { Ingredient, IndexedRecipe, Recipe } from './types';
+import type { IngredientLookup } from './indexing';
 import type { NutritionProfile } from './micronutrients';
 
 type Rule = (i: Ingredient) => boolean;
@@ -18,7 +19,7 @@ export const ALLERGENS: Record<string, { label: string; emoji: string; match: Ru
   },
   lait: { label: 'Lait (protéines de lait)', emoji: '🥛', match: (i) => i.category === 'laitier' },
   oeufs: { label: 'Œufs', emoji: '🥚', match: (i) => i.category === 'oeufs' && i.id !== 'oeufs-poisson' },
-  poisson: { label: 'Poisson', emoji: '🐟', match: (i) => i.category === 'poisson' || /^(fumet-poisson|sauce-poisson|oeufs-poisson|anchois)/.test(i.id) },
+  poisson: { label: 'Poisson', emoji: '🐟', match: (i) => i.category === 'poisson' || /^(fumet-poisson|sauce-poisson|oeufs-poisson|anchois|foie-morue|huile-foie-morue|dashi|bonite|katsuobushi|tarama|poutargue|surimi)/.test(i.id) },
   crustaces: { label: 'Crustacés', emoji: '🦐', match: ids(/^(crevette|crabe|langoustine|homard|ecrevisse|tourteau)/) },
   mollusques: { label: 'Mollusques', emoji: '🦪', match: ids(/^(moule|huitre|palourde|saint-jacques|calamar|poulpe|seiche|escargot|coque|bulot)/) },
   'fruits-a-coque': {
@@ -74,4 +75,46 @@ export function excludedIngredients(p: Pick<NutritionProfile, 'allergies' | 'int
     if (why) out.set(i.id, why);
   }
   return out;
+}
+
+export interface RecipeConflict {
+  profile: NutritionProfile;
+  ingredient?: Ingredient;
+  reason: string;
+}
+
+/** Première raison pour laquelle une recette ne convient pas à l'une des personnes (null si elle convient à tous) */
+export function recipeConflict(r: Pick<Recipe, 'ingredients' | 'flavors'>, profiles: NutritionProfile[], lookup: IngredientLookup): RecipeConflict | null {
+  for (const p of profiles) {
+    if (p.spice === 0 && r.flavors?.includes('piquant')) return { profile: p, reason: 'plat piquant' };
+    if (!p.allergies?.length && !p.intolerances?.length && !p.dislikes?.length) continue;
+    for (const ri of r.ingredients) {
+      if (ri.optional) continue;
+      const ing = lookup(ri.id);
+      if (!ing) continue;
+      const why = ingredientConflict(p, ing);
+      if (why) return { profile: p, ingredient: ing, reason: why };
+    }
+  }
+  return null;
+}
+
+const TEXTURE_OF = (r: IndexedRecipe): string[] => {
+  const t: string[] = [];
+  if (r.flavors.includes('cremeux') || r.category === 'soupe') t.push('cremeux');
+  if (r.flavors.includes('grille') || ['grill', 'four', 'roti'].includes(r.technique)) t.push('grille');
+  if (['mijote', 'braise'].includes(r.technique)) t.push('fondant');
+  if (['cru', 'sans-cuisson'].includes(r.technique)) t.push('cru');
+  if (r.category === 'salade-composee') t.push('croquant');
+  return t;
+};
+
+/** Petit bonus quand un plat contient ce que la personne aime (0 à ~10) */
+export function preferenceBonus(r: IndexedRecipe, p: NutritionProfile): number {
+  let b = 0;
+  if (p.likes?.length) b += r.ingredients.filter((i) => p.likes!.includes(i.id)).length * 4;
+  if (p.textures?.length) b += TEXTURE_OF(r).filter((t) => p.textures!.includes(t)).length * 2;
+  if ((p.spice ?? 1) >= 2 && r.flavors.includes('piquant')) b += 2;
+  if (p.spice === 1 && r.flavors.includes('piquant')) b -= 2;
+  return Math.min(10, b);
 }

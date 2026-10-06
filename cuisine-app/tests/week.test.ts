@@ -107,3 +107,39 @@ describe('raisonnement à la semaine', () => {
     expect(src[0].pct).toBeGreaterThan(15);
   });
 });
+
+import { recipeConflict } from '../src/domain/allergens';
+
+describe('générateur : ≥ 100 % sur la semaine pour chacun', () => {
+  const dates = ['2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18'];
+  const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+  const ines = newProfile({ ...elle, allergies: ['crustaces'], intolerances: ['lactose'], dislikes: ['foie-volaille'], spice: 0 });
+  const plan = generateNutriWeek({ recipes: library, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots, servings: 2, seed: 5, eaters: householdEaters([lui, ines]), lookup }, (id) => lookup(id)?.category);
+  const weeks = analyzeWeek(plan, byId, [lui, ines], lookup);
+  it('aucun plat interdit pour l’un des deux', () => {
+    for (const e of plan) expect(recipeConflict(byId.get(e.recipeId)!, [lui, ines], lookup)).toBeNull();
+  });
+  it('100 % de chaque nutriment pour chacun, sans excès', () => {
+    for (const w of weeks) {
+      expect(w.gaps.map((g) => `${w.profile.name} ${g.key} ${Math.round(w.pct[g.key])}`)).toEqual([]);
+      expect(w.excess.map((e) => e.def.key)).toEqual([]);
+    }
+  });
+  it('jamais deux fois la même recette', () => {
+    expect(new Set(plan.map((e) => e.recipeId)).size).toBe(plan.length);
+  });
+});
+
+describe('générateur : dit quand c’est impossible', () => {
+  it('sans poisson ni fruits de mer, l’EPA + DHA est signalé comme manque, avec des solutions', () => {
+    const dates = ['2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18'];
+    const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+    const p = newProfile({ ...elle, allergies: ['poisson', 'crustaces', 'mollusques'] });
+    const plan = generateNutriWeek({ recipes: library, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots, servings: 1, seed: 2, eaters: [{ profile: p, portions: 1 }], lookup }, (id) => lookup(id)?.category);
+    const [w] = analyzeWeek(plan, byId, [p], lookup);
+    const epa = w.gaps.find((g) => g.key === 'epa');
+    expect(epa).toBeDefined();
+    const src = foodSourcesFor(epa!, p, INGREDIENTS);
+    expect(src.every((s) => s.ing.category !== 'poisson' && s.ing.category !== 'fruits-de-mer')).toBe(true);
+  });
+});

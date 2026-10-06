@@ -126,6 +126,22 @@ const PORTION: Partial<Record<IngredientCategory, number>> = {
   herbe: 10,
 };
 
+/** Portions réalistes pour les aliments qu'on mange en petite quantité */
+const PORTION_ID: Array<[RegExp, number]> = [
+  [/^(anchois|oeufs-poisson|caviar)/, 30],
+  [/^(piment|ail|gingembre|curcuma)/, 15],
+  [/^algue/, 3],
+  [/^(parmesan|pecorino|comte|cheddar|manchego|roquefort|gruyere|beaufort|reblochon|camembert|feta|halloumi|chevre-buche|mozzarella|paneer)/, 40],
+  [/^(raisins-secs|pruneau|datte|abricot-sec|figue-seche|cranberr)/, 40],
+  [/^(graines|pignons|amande|noix|noisette|pistache|cajou|macadamia|sesame|chocolat|cacao)/, 25],
+  [/^jaune-oeuf/, 40],
+  [/^(morue-salee|jambon-cru|chorizo|saucisson|lardons|bacon|saumon-fume|maquereau-fume)/, 60],
+];
+export function usualPortion(ing: Ingredient): number | undefined {
+  for (const [re, g] of PORTION_ID) if (re.test(ing.id)) return g;
+  return PORTION[ing.category];
+}
+
 export interface FoodSource {
   ing: Ingredient;
   grams: number;
@@ -134,13 +150,23 @@ export interface FoodSource {
   pct: number;
 }
 
+/** Ingrédients techniques ou peu courants, jamais proposés comme « aliment à ajouter » */
+const NOT_A_FOOD = /^(levure|gelatine|farine|fecule|panure|sucre|sel|bicarbonate|agar|escargot|os-|carcasse|pied-veau|tripes|cervelle|fumet|bouillon|concentre|sauce)/;
+
+/** Ingrédients courants : présents dans au moins `min` recettes */
+export function commonIngredients(recipes: Array<{ ingredients: Array<{ id: string }> }>, min = 8): Set<string> {
+  const n = new Map<string, number>();
+  for (const r of recipes) for (const i of new Set(r.ingredients.map((x) => x.id))) n.set(i, (n.get(i) ?? 0) + 1);
+  return new Set([...n].filter(([, c]) => c >= min).map(([id]) => id));
+}
+
 /** Aliments simples qui apportent le plus d'un nutriment, adaptés à la personne */
-export function foodSourcesFor(def: NutrientDef, profile: NutritionProfile, ingredients: Ingredient[], n = 3): FoodSource[] {
+export function foodSourcesFor(def: NutrientDef, profile: NutritionProfile, ingredients: Ingredient[], n = 3, common?: Set<string>): FoodSource[] {
   const ref = dailyRef(def, profile);
   return ingredients
-    .filter((i) => PORTION[i.category] && MICROS[i.id]?.[def.key as keyof (typeof MICROS)[string]] && !i.flags?.includes('eviter') && !i.flags?.includes('transforme') && !ingredientConflict(profile, i))
+    .filter((i) => usualPortion(i) && !i.staple && !NOT_A_FOOD.test(i.id) && (!common || common.has(i.id)) && MICROS[i.id]?.[def.key as keyof (typeof MICROS)[string]] && !i.flags?.includes('eviter') && !i.flags?.includes('transforme') && !ingredientConflict(profile, i))
     .map((ing) => {
-      const grams = PORTION[ing.category]!;
+      const grams = usualPortion(ing)!;
       const amount = ((MICROS[ing.id][def.key as keyof (typeof MICROS)[string]] ?? 0) * grams) / 100;
       const liked = profile.likes?.includes(ing.id) ? 1.3 : 1;
       return { ing, grams, amount, pct: (amount / ref) * 100, rank: (amount / ref) * liked };

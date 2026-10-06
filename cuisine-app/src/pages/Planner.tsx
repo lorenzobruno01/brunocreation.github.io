@@ -14,6 +14,8 @@ import { formatDateFr, formatDuration, deName } from '../components/format';
 import { ConstraintsEditor, loadConstraints } from '../components/ConstraintsEditor';
 import type { IndexedRecipe, MealType, PlanEntry, Slot } from '../domain/types';
 import { cookServings, dayShares, mainPortion, type Share } from '../domain/shares';
+import { recipeConflict } from '../domain/allergens';
+import { WeekVerdict } from '../components/WeekVerdict';
 
 const ALL_SLOTS: Slot[] = ['matin', 'midi', 'collation', 'soir'];
 const SLOTS_KEY = 'cuisine.planSlots';
@@ -119,7 +121,8 @@ export function Planner() {
     await new Promise((r) => setTimeout(r, 30)); // laisser l'écran afficher « calcul en cours »
     const locked = opts.replaceAll ? [] : plan.filter((p) => slots.includes(p.slot));
     const ctx = {
-      recipes,
+      // allergies, intolérances, aliments détestés : exclus pour toute la tablée
+      recipes: recipes.filter((r) => !recipeConflict(r, eaters.map((e) => e.profile), lookup)),
       favorites,
       lastCooked,
       available: new Set([...fridge, ...pantry]),
@@ -130,6 +133,7 @@ export function Planner() {
       shareIngredients: opts.share,
       constraints: opts.constraints,
       eaters,
+      lookup,
     };
     const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
     // quantité à cuisiner = somme des parts du jour (courses au plus juste)
@@ -337,6 +341,7 @@ export function Planner() {
         })}
       </div>
 
+      {hasDays && <WeekVerdict dates={dates} slots={slots} />}
       {hasDays && <CoveragePanel dates={dates} reports={reports} eaters={eaters} recipes={recipes} />}
 
       {picker && (

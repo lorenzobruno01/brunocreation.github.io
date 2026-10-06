@@ -11,6 +11,10 @@ import type { IndexedRecipe, PlanEntry, Slot } from './types';
 import { dailyRef, NUTRIENTS, type NutritionProfile } from './micronutrients';
 import { generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
 import { currentSeason } from './season';
+import type { IngredientLookup } from './indexing';
+import { dayKcal, needs } from './profile';
+import { preferenceBonus, recipeConflict } from './allergens';
+import { SHARE_LIMITS, SLOT_SHARE } from './shares';
 
 /** Nutriments visés (le sodium est une limite, le chlorure suit le sodium) */
 const TARGETS = NUTRIENTS.filter((n) => n.key !== 'na' && n.key !== 'cl');
@@ -92,44 +96,14 @@ export interface NutriPlanContext extends PlannerContext {
   /** objectif pour plusieurs personnes qui mangent les mêmes plats */
   eaters?: Eater[];
   passes?: number;
+  /** base d'ingrédients : allergies, intolérances et goûts de chacun */
+  lookup?: IngredientLookup;
 }
 
 function eatersOf(ctx: NutriPlanContext): Eater[] {
   if (ctx.eaters?.length) return ctx.eaters;
   if (ctx.profile) return [{ profile: ctx.profile, portions: 1 }];
   throw new Error('Profil nutritionnel manquant');
-}
-
-/** Score d'une journée (plus haut = mieux) */
-function dayScore(day: IndexedRecipe[], profile: NutritionProfile, refs: Record<string, number>, portions = 1): number {
-  const sum: Record<string, number> = {};
-  let kcal = 0;
-  let protein = 0;
-  for (const r of day) {
-    kcal += r.nutrition.kcal * portions;
-    protein += r.nutrition.protein * portions;
-    const m = r.micros;
-    if (m) for (const k in m) sum[k] = (sum[k] ?? 0) + m[k] * portions;
-  }
-  let s = 0;
-  let w = 0;
-  for (const n of TARGETS) {
-    const ww = WEIGHT[n.group] ?? 1;
-    const ratio = (sum[n.key] ?? 0) / refs[n.key];
-    // gain décroissant : les derniers % manquants comptent le plus
-    s += ww * Math.min(1, ratio) * 100 - ww * Math.max(0, 0.6 - ratio) * 40;
-    w += ww;
-  }
-  s /= w;
-  // énergie : viser l'objectif (± 8 % toléré)
-  const dev = Math.abs(kcal / profile.kcal - 1);
-  s -= Math.max(0, dev - 0.08) * 120;
-  // protéines : au moins l'objectif
-  const pTarget = profile.weight * profile.proteinPerKg;
-  if (protein < pTarget) s -= ((pTarget - protein) / pTarget) * 40;
-  // sodium : au-delà de 2,3 g (hors sel ajouté)
-  if ((sum.na ?? 0) > 2300) s -= ((sum.na - 2300) / 1000) * 6;
-  return s;
 }
 
 const FISH = new Set(['poisson-gras', 'poisson-blanc', 'fruits-de-mer']);
@@ -214,71 +188,217 @@ function candidatesFor(slot: Slot, weekend: boolean, ctx: NutriPlanContext): Ind
   });
 }
 
-/** Score d'une journée pour toute la tablée : moyenne, avec un poids sur la personne la moins bien couverte */
-function householdScore(day: IndexedRecipe[], eaters: Eater[], refs: Array<Record<string, number>>): number {
-  if (eaters.length === 1) return dayScore(day, eaters[0].profile, refs[0], eaters[0].portions);
-  const scores = eaters.map((e, i) => dayScore(day, e.profile, refs[i], e.portions));
+// ── Optimisation à la semaine ──────────────────────────────
+// Chaque personne mange une part de chaque plat proportionnelle à son
+// énergie du jour (jours d'entraînement compris). L'objectif principal
+// est la moyenne de la semaine : ≥ 100 % de chaque nutriment, sans
+// dépasser les limites de sécurité (vitamine A, sélénium, zinc…).
+
+const KEYS = NUTRIENTS.map((n) => n.key as string);
+const K = KEYS.length;
+const IDX = Object.fromEntries(KEYS.map((k, i) => [k, i]));
+const T_IDX = TARGETS.map((n) => IDX[n.key]);
+const T_W = TARGETS.map((n) => WEIGHT[n.group] ?? 1);
+const T_WSUM = T_W.reduce((a, b) => a + b, 0);
+const UPPER = NUTRIENTS.filter((n) => n.upper).map((n) => ({ i: IDX[n.key], upper: n.upper! }));
+const NA = IDX.na;
+const SODIUM_LIMIT = NUTRIENTS.find((n) => n.key === 'na')!.ref[0];
+
+interface EaterTarget {
+  profile: NutritionProfile;
+  refs: Float64Array;
+  /** énergie et protéines visées par jour de la semaine (0 = lundi) */
+  kcal: number[];
+  protein: number;
+}
+
+interface DayEval {
+  /** apports du jour par personne */
+  vec: Float64Array[];
+  /** pénalités du jour (énergie, protéines) par personne */
+  pen: number[];
+}
+
+function microVec(r: IndexedRecipe): Float64Array {
+  const v = new Float64Array(K);
+  const m = r.micros;
+  if (m) for (let i = 0; i < K; i++) v[i] = m[KEYS[i]] ?? 0;
+  return v;
+}
+
+function evalDay(day: Array<{ r: IndexedRecipe; slot: Slot } | undefined>, weekday: number, targets: EaterTarget[], vecs: Map<string, Float64Array>): DayEval {
+  let kcalAtOne = 0;
+  let protAtOne = 0;
+  let frac = 0;
+  const base = new Float64Array(K);
+  for (const x of day) {
+    if (!x) continue;
+    kcalAtOne += x.r.nutrition.kcal;
+    protAtOne += x.r.nutrition.protein;
+    frac += SLOT_SHARE[x.slot];
+    const v = vecs.get(x.r.id)!;
+    for (let i = 0; i < K; i++) base[i] += v[i];
+  }
+  frac = Math.min(1, frac);
+  const vec: Float64Array[] = [];
+  const pen: number[] = [];
+  for (const t of targets) {
+    const tk = t.kcal[weekday] * frac;
+    const portion = kcalAtOne ? Math.min(SHARE_LIMITS.max, Math.max(SHARE_LIMITS.min, tk / kcalAtOne)) : 0;
+    const v = new Float64Array(K);
+    for (let i = 0; i < K; i++) v[i] = base[i] * portion;
+    vec.push(v);
+    let p = 0;
+    if (kcalAtOne) {
+      const dev = Math.abs((kcalAtOne * portion) / tk - 1);
+      p += Math.max(0, dev - 0.08) * 120;
+      const tp = t.protein * frac;
+      const prot = protAtOne * portion;
+      if (prot < tp) p += ((tp - prot) / tp) * 40;
+    }
+    pen.push(p);
+  }
+  return { vec, pen };
+}
+
+/** Score de la semaine pour une personne (≈ 100 si tout est couvert sans excès) */
+function weekScore(sum: Float64Array, t: EaterTarget, days: number): number {
+  if (!days) return 0;
+  let s = 0;
+  for (let j = 0; j < T_IDX.length; j++) {
+    const ratio = sum[T_IDX[j]] / days / t.refs[T_IDX[j]];
+    // les derniers % manquants comptent le plus : on veut ≥ 100 % pour chacun
+    s += T_W[j] * (Math.min(1, ratio) * 100 - Math.max(0, 1 - ratio) * 80);
+  }
+  s /= T_WSUM;
+  for (const u of UPPER) {
+    const avg = sum[u.i] / days;
+    if (avg > u.upper * 0.95) s -= (avg / (u.upper * 0.95) - 1) * 150;
+  }
+  // sodium des recettes (hors sel ajouté à table) : rester sous le repère
+  const na = sum[NA] / days;
+  if (na > SODIUM_LIMIT * 0.95) s -= ((na - SODIUM_LIMIT * 0.95) / 1000) * 30;
+  return s;
+}
+
+function combine(scores: number[]): number {
+  if (scores.length === 1) return scores[0];
   const mean = scores.reduce((a, b) => a + b, 0) / scores.length;
   return 0.5 * mean + 0.5 * Math.min(...scores);
 }
 
-export function generateNutriWeek(ctx: NutriPlanContext, categoryOf: (id: string) => string | undefined): PlanEntry[] {
-  const eaters = eatersOf(ctx);
-  const refs = eaters.map((e) => refsFor(e.profile));
+export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: string) => string | undefined): PlanEntry[] {
+  const eaters = eatersOf(input);
+  const profiles = eaters.map((e) => e.profile);
+  // allergies, intolérances, aliments détestés, piquant : exclus pour toute la tablée
+  const ctx: NutriPlanContext = input.lookup ? { ...input, recipes: input.recipes.filter((r) => !recipeConflict(r, profiles, input.lookup!)) } : input;
+  const targets: EaterTarget[] = profiles.map((p) => {
+    const refs = refsFor(p);
+    return {
+      profile: p,
+      refs: Float64Array.from(KEYS.map((k) => refs[k] || 1)),
+      kcal: [0, 1, 2, 3, 4, 5, 6].map((d) => dayKcal(p, d)),
+      protein: needs(p)?.protein ?? p.weight * p.proteinPerKg,
+    };
+  });
   const byId = new Map(ctx.recipes.map((r) => [r.id, r]));
+  for (const l of ctx.locked) {
+    const r = input.recipes.find((x) => x.id === l.recipeId);
+    if (r) byId.set(r.id, r);
+  }
+  const vecs = new Map<string, Float64Array>();
+  for (const r of byId.values()) vecs.set(r.id, microVec(r));
+  const bonus = (r: IndexedRecipe) => profiles.reduce((s, p) => s + preferenceBonus(r, p), 0);
+
   // 1. semaine variée de départ
   const start = generateWeek(ctx, categoryOf);
   const locked = new Set(ctx.locked.map((l) => l.key));
-  const grid = ctx.dates.map((date) => ctx.slots.map((slot) => start.find((e) => e.key === `${date}|${slot}`)));
-  const weekendOf = (date: string) => {
-    const d = new Date(date + 'T12:00:00').getDay();
-    return d === 0 || d === 6;
-  };
+  const weekdayOf = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
+  const weekendOf = (date: string) => weekdayOf(date) >= 5;
   const pools = new Map<string, IndexedRecipe[]>();
   for (const slot of ctx.slots) for (const we of [false, true]) pools.set(`${slot}|${we}`, candidatesFor(slot, we, ctx));
 
-  const cur: Array<Array<IndexedRecipe | undefined>> = grid.map((row) => row.map((e) => (e ? byId.get(e.recipeId) : undefined)));
+  const cur: Array<Array<IndexedRecipe | undefined>> = ctx.dates.map((date) =>
+    ctx.slots.map((slot) => {
+      const e = start.find((x) => x.key === `${date}|${slot}`);
+      return e ? byId.get(e.recipeId) : undefined;
+    }),
+  );
+  const dayOf = (d: number) => cur[d].map((r, si) => (r ? { r, slot: ctx.slots[si] } : undefined));
   const flat = () => {
     const out: Array<{ slot: Slot; r: IndexedRecipe; day: number }> = [];
     cur.forEach((row, day) => row.forEach((r, si) => r && out.push({ slot: ctx.slots[si], r, day })));
     return out;
   };
-  const dayScores = cur.map((row) => householdScore(row.filter(Boolean) as IndexedRecipe[], eaters, refs));
+  const evals = cur.map((_, d) => evalDay(dayOf(d), weekdayOf(ctx.dates[d]), targets, vecs));
+  const sums = targets.map((_, e) => {
+    const s = new Float64Array(K);
+    for (const ev of evals) for (let i = 0; i < K; i++) s[i] += ev.vec[e][i];
+    return s;
+  });
+  const filledDays = () => cur.filter((row) => row.some(Boolean)).length;
+  let nDays = filledDays();
+  let dayPen = evals.reduce((s, ev) => s + combine(ev.pen), 0);
+  let prefs = flat().reduce((s, x) => s + bonus(x.r), 0);
+  const objective = (weekScores: number[], days: number, pen: number, pr: number) => days * combine(weekScores) - pen + pr;
   let variety = varietyPenalty(flat(), ctx);
+  let total = objective(targets.map((t, e) => weekScore(sums[e], t, nDays)), nDays, dayPen, prefs) - variety;
 
-  // 2. optimisation locale
+  // 2. optimisation locale, créneau par créneau
+  const tmp = targets.map(() => new Float64Array(K));
   const passes = ctx.passes ?? 4;
   for (let pass = 0; pass < passes; pass++) {
     let improved = false;
     for (let d = 0; d < ctx.dates.length; d++) {
+      const wd = weekdayOf(ctx.dates[d]);
       for (let si = 0; si < ctx.slots.length; si++) {
         const key = `${ctx.dates[d]}|${ctx.slots[si]}`;
         if (locked.has(key)) continue;
         const pool = pools.get(`${ctx.slots[si]}|${weekendOf(ctx.dates[d])}`) ?? [];
         const before = cur[d][si];
+        const oldEval = evals[d];
+        const wasEmpty = !cur[d].some(Boolean);
         let best = before;
-        let bestTotal = dayScores[d] - variety;
-        let bestDay = dayScores[d];
+        let bestTotal = total;
+        let bestEval = oldEval;
         let bestVar = variety;
         for (const cand of pool) {
           if (cand === before) continue;
           cur[d][si] = cand;
-          const ds = householdScore(cur[d].filter(Boolean) as IndexedRecipe[], eaters, refs);
-          // estimation rapide de la variété avant le calcul complet
-          if (ds - variety + 70 < bestTotal) continue;
+          const ev = evalDay(dayOf(d), wd, targets, vecs);
+          const days = nDays + (wasEmpty ? 1 : 0);
+          const ws = targets.map((t, e) => {
+            const s = tmp[e];
+            const a = sums[e];
+            const o = oldEval.vec[e];
+            const n = ev.vec[e];
+            for (let i = 0; i < K; i++) s[i] = a[i] - o[i] + n[i];
+            return weekScore(s, t, days);
+          });
+          const pen = dayPen - combine(oldEval.pen) + combine(ev.pen);
+          const pr = prefs - (before ? bonus(before) : 0) + bonus(cand);
+          const quick = objective(ws, days, pen, pr) - variety;
+          // la variété varie rarement de plus de 70 points : on évite son calcul complet
+          if (quick + 70 < bestTotal) continue;
           const v = varietyPenalty(flat(), ctx);
-          if (ds - v > bestTotal + 0.01) {
+          const t = quick + variety - v;
+          if (t > bestTotal + 0.01) {
             best = cand;
-            bestTotal = ds - v;
-            bestDay = ds;
+            bestTotal = t;
+            bestEval = ev;
             bestVar = v;
           }
         }
         cur[d][si] = best;
         if (best !== before) {
           improved = true;
-          dayScores[d] = bestDay;
+          for (let e = 0; e < targets.length; e++) for (let i = 0; i < K; i++) sums[e][i] += bestEval.vec[e][i] - oldEval.vec[e][i];
+          dayPen += combine(bestEval.pen) - combine(oldEval.pen);
+          prefs += bonus(best!) - (before ? bonus(before) : 0);
+          evals[d] = bestEval;
           variety = bestVar;
+          total = bestTotal;
+          nDays = filledDays();
         }
       }
     }
