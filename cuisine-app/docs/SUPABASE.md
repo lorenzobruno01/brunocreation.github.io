@@ -23,6 +23,8 @@ Ouvrez **SQL Editor**, puis **New query**. Pour chaque fichier ci-dessous, colle
 
 Pour vérifier : dans **Table Editor**, vous devez voir `households`, `household_members`, `invitations`, `meal_plans`, `shopping_items`… Dans **Database → Publications → supabase_realtime**, les tables du foyer doivent être cochées.
 
+Si l'appli indique « Le serveur ne trouve pas les tables … », exécutez `supabase/reparer-tables-partagees.sql`. Ce script recrée les tables partagées manquantes et peut être relancé sans risque.
+
 Tant que la seconde migration n'est pas exécutée, l'appli continue en « ancien mode » (une copie par compte) et le signale dans **Mon compte**. Dès qu'elle l'est, chaque appareil bascule automatiquement à sa prochaine connexion. Le foyer est créé, et l'ancienne sauvegarde y est reprise.
 
 ## 3. Connexion par e-mail
