@@ -22,6 +22,7 @@ import { Needs } from './pages/Needs';
 import { MyDay } from './pages/MyDay';
 import { Learned } from './pages/Learned';
 import { Weight } from './pages/Weight';
+import { Batch } from './pages/Batch';
 import { MyWeek } from './pages/MyWeek';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
@@ -91,6 +92,7 @@ function Shell() {
                 <Route path="/ma-journee" element={<MyDay />} />
                 <Route path="/appris" element={<Learned />} />
                 <Route path="/poids" element={<Weight />} />
+                <Route path="/batch" element={<Batch />} />
                 <Route path="/ma-semaine" element={<MyWeek />} />
                 <Route path="/besoins/:id" element={<Needs />} />
                 <Route path="/sources" element={<Sources />} />

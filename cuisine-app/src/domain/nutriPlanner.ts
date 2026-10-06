@@ -7,7 +7,7 @@
 // (on remplace créneau par créneau le plat qui améliore le plus
 // la couverture globale), plusieurs passes.
 // ─────────────────────────────────────────────────────────────
-import type { Feedback, IndexedRecipe, PlanEntry, Slot } from './types';
+import type { Feedback, IndexedRecipe, PlanEntry, Slot, SlotMode } from './types';
 import { dailyRef, NUTRIENTS, type NutritionProfile } from './micronutrients';
 import { generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
 import { currentSeason } from './season';
@@ -101,6 +101,51 @@ export interface NutriPlanContext extends PlannerContext {
   lookup?: IngredientLookup;
   /** retours après les repas : plats aimés, à ne pas refaire, ingrédients suspects */
   feedback?: Feedback[];
+  /** gabarit de semaine : `${jour 0-6}|${créneau}` → temps dispo, dehors, restes, batch */
+  template?: Record<string, SlotMode>;
+  /** ingrédients à utiliser vite (frigo, restes) : favorisés en début de semaine */
+  useSoon?: Set<string>;
+  /** coût estimé d'une portion (€) et budget de la semaine */
+  costOf?: (r: IndexedRecipe) => number;
+  budget?: number;
+}
+
+/** Applique le gabarit à un planning déjà fait (mode « variété ») : dehors retirés, restes liés */
+export function applyTemplate(entries: PlanEntry[], dates: string[], slots: Slot[], template?: Record<string, SlotMode>): PlanEntry[] {
+  if (!template) return entries;
+  const wd = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
+  const links = leftoverLinks(dates, slots, template);
+  const byKey = new Map(entries.map((e) => [e.key, e]));
+  return entries
+    .filter((e) => template[`${wd(e.date)}|${e.slot}`] !== 'dehors')
+    .map((e) => {
+      const src = links.get(e.key);
+      const s = src && byKey.get(src);
+      return s ? { ...e, recipeId: s.recipeId, servings: 0, leftoverOf: src } : e;
+    });
+}
+
+/** Plat qui se prépare à l'avance et se garde quelques jours */
+export function batchFriendly(r: IndexedRecipe): boolean {
+  return ['mijote', 'braise', 'four', 'roti'].includes(r.technique) || ['soupe', 'mijote'].includes(r.category) || r.tags.some((t) => /avance|se conserve|batch/.test(t));
+}
+
+const MAIN_SLOTS: Slot[] = ['midi', 'soir'];
+
+/** Créneaux « restes » → créneau d'origine (repas principal précédent, même semaine) */
+export function leftoverLinks(dates: string[], slots: Slot[], template: Record<string, SlotMode> | undefined): Map<string, string> {
+  const links = new Map<string, string>();
+  if (!template) return links;
+  const wd = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
+  let lastMain: string | undefined;
+  for (const date of dates)
+    for (const slot of slots) {
+      const mode = template[`${wd(date)}|${slot}`];
+      const key = `${date}|${slot}`;
+      if (mode === 'restes' && lastMain) links.set(key, lastMain);
+      else if (MAIN_SLOTS.includes(slot) && mode !== 'dehors' && mode !== 'restes') lastMain = key;
+    }
+  return links;
 }
 
 function eatersOf(ctx: NutriPlanContext): Eater[] {
@@ -269,7 +314,8 @@ function weekScore(sum: Float64Array, t: EaterTarget, days: number): number {
   if (!days) return 0;
   let s = 0;
   for (let j = 0; j < T_IDX.length; j++) {
-    const ratio = sum[T_IDX[j]] / days / t.refs[T_IDX[j]];
+    // marge de 3 % : on vise un peu au-dessus de 100 % pour ne pas finir à 99 %
+    const ratio = sum[T_IDX[j]] / days / t.refs[T_IDX[j]] / 1.03;
     // les derniers % manquants comptent le plus : on veut ≥ 100 % pour chacun
     s += T_W[j] * (Math.min(1, ratio) * 100 - Math.max(0, 1 - ratio) * 80);
   }
@@ -318,24 +364,79 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
   const bonus = (r: IndexedRecipe) =>
     profiles.reduce((s, p, i) => s + preferenceBonus(r, p) + learnedBonus(learned[i].scores, r.id) - r.ingredients.filter((x) => learned[i].suspects.has(x.id)).length * 6, 0);
 
-  // 1. semaine variée de départ
-  const start = generateWeek(ctx, categoryOf);
-  const locked = new Set(ctx.locked.map((l) => l.key));
+  // 0. gabarit : dehors (rien), restes (lié à un repas), temps disponible, batch
   const weekdayOf = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
   const weekendOf = (date: string) => weekdayOf(date) >= 5;
-  const pools = new Map<string, IndexedRecipe[]>();
-  for (const slot of ctx.slots) for (const we of [false, true]) pools.set(`${slot}|${we}`, candidatesFor(slot, we, ctx));
+  const modeOf = (d: number, si: number): SlotMode => ctx.template?.[`${weekdayOf(ctx.dates[d])}|${ctx.slots[si]}`] ?? 'libre';
+  const locked = new Set(ctx.locked.map((l) => l.key));
+  const links = leftoverLinks(ctx.dates, ctx.slots, ctx.template);
+  const cellOf = (key: string): [number, number] => {
+    const [date, slot] = key.split('|');
+    return [ctx.dates.indexOf(date), ctx.slots.indexOf(slot as Slot)];
+  };
+  const deps = new Map<string, Array<[number, number]>>();
+  for (const [k, src] of links) if (!locked.has(k)) (deps.get(src) ?? deps.set(src, []).get(src)!).push(cellOf(k));
+  const isDep = (d: number, si: number) => links.has(`${ctx.dates[d]}|${ctx.slots[si]}`) && !locked.has(`${ctx.dates[d]}|${ctx.slots[si]}`);
+  const isOff = (d: number, si: number) => modeOf(d, si) === 'dehors' && !locked.has(`${ctx.dates[d]}|${ctx.slots[si]}`);
 
+  const pools = new Map<string, IndexedRecipe[]>();
+  const poolOf = (d: number, si: number): IndexedRecipe[] => {
+    const slot = ctx.slots[si];
+    const we = weekendOf(ctx.dates[d]);
+    const mode = modeOf(d, si);
+    const k = `${slot}|${we}|${mode}`;
+    let pool = pools.get(k);
+    if (!pool) {
+      const base = candidatesFor(slot, we, ctx);
+      const limit = mode === '15' || mode === '30' || mode === '45' ? Number(mode) : 0;
+      // peu de plats très rapides : on élargit par paliers de 10 min plutôt que d'ignorer la limite
+      pool = base;
+      for (let extra = 0; extra <= 30; extra += 10) {
+        const filtered = base.filter((r) => (!limit || r.totalTime <= limit + extra) && (mode !== 'batch' || batchFriendly(r)));
+        if (filtered.length >= 3) {
+          pool = filtered;
+          break;
+        }
+      }
+      pools.set(k, pool);
+    }
+    return pool;
+  };
+
+  // 1. semaine variée de départ, ajustée au gabarit
+  const start = generateWeek(ctx, categoryOf);
   const cur: Array<Array<IndexedRecipe | undefined>> = ctx.dates.map((date) =>
     ctx.slots.map((slot) => {
       const e = start.find((x) => x.key === `${date}|${slot}`);
       return e ? byId.get(e.recipeId) : undefined;
     }),
   );
+  const used = new Set<string>();
+  for (let d = 0; d < ctx.dates.length; d++)
+    for (let si = 0; si < ctx.slots.length; si++) {
+      const key = `${ctx.dates[d]}|${ctx.slots[si]}`;
+      if (locked.has(key)) continue;
+      if (isOff(d, si) || isDep(d, si)) {
+        cur[d][si] = undefined;
+        continue;
+      }
+      const pool = poolOf(d, si);
+      if (!cur[d][si] || !pool.includes(cur[d][si]!)) cur[d][si] = pool.find((r) => !used.has(r.id)) ?? pool[0];
+      if (cur[d][si]) used.add(cur[d][si]!.id);
+    }
+  const syncDeps = (d: number, si: number) => {
+    for (const [dd, ss] of deps.get(`${ctx.dates[d]}|${ctx.slots[si]}`) ?? []) cur[dd][ss] = cur[d][si];
+  };
+  for (const src of deps.keys()) {
+    const [d, si] = cellOf(src);
+    if (d >= 0 && si >= 0) syncDeps(d, si);
+  }
+
   const dayOf = (d: number) => cur[d].map((r, si) => (r ? { r, slot: ctx.slots[si] } : undefined));
+  /** liste pour la variété : les restes ne sont pas des doublons */
   const flat = () => {
     const out: Array<{ slot: Slot; r: IndexedRecipe; day: number }> = [];
-    cur.forEach((row, day) => row.forEach((r, si) => r && out.push({ slot: ctx.slots[si], r, day })));
+    cur.forEach((row, day) => row.forEach((r, si) => r && !isDep(day, si) && out.push({ slot: ctx.slots[si], r, day })));
     return out;
   };
   const evals = cur.map((_, d) => evalDay(dayOf(d), weekdayOf(ctx.dates[d]), targets, vecs));
@@ -347,9 +448,22 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
   const filledDays = () => cur.filter((row) => row.some(Boolean)).length;
   let nDays = filledDays();
   let dayPen = evals.reduce((s, ev) => s + combine(ev.pen), 0);
-  let prefs = flat().reduce((s, x) => s + bonus(x.r), 0);
+  const soon = ctx.useSoon ?? new Set<string>();
+  /** bonus : goûts, apprentissage, ingrédients à utiliser vite en début de semaine */
+  const cellBonus = (r: IndexedRecipe, d: number) => bonus(r) + (soon.size && d < 3 ? r.ingredients.filter((i) => soon.has(i.id)).length * (6 - d * 2) : 0);
+  let prefs = 0;
+  cur.forEach((row, d) => row.forEach((r, si) => r && !isDep(d, si) && (prefs += cellBonus(r, d))));
   const objective = (weekScores: number[], days: number, pen: number, pr: number) => days * combine(weekScores) - pen + pr;
-  let variety = varietyPenalty(flat(), ctx);
+  const extra = () => varietyPenalty(flat(), ctx) + budgetPenalty();
+  /** budget : au-delà, chaque euro compte */
+  const budgetPenalty = () => {
+    if (!ctx.budget || !ctx.costOf) return 0;
+    const portions = eaters.reduce((s, e) => s + e.portions, 0);
+    let cost = 0;
+    cur.forEach((row, d) => row.forEach((r, si) => r && !isDep(d, si) && (cost += ctx.costOf!(r) * portions * (deps.get(`${ctx.dates[d]}|${ctx.slots[si]}`)?.length ? 2 : 1))));
+    return Math.max(0, cost - ctx.budget) * 4;
+  };
+  let variety = extra();
   let total = objective(targets.map((t, e) => weekScore(sums[e], t, nDays)), nDays, dayPen, prefs) - variety;
 
   // 2. optimisation locale, créneau par créneau
@@ -358,52 +472,58 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
   for (let pass = 0; pass < passes; pass++) {
     let improved = false;
     for (let d = 0; d < ctx.dates.length; d++) {
-      const wd = weekdayOf(ctx.dates[d]);
       for (let si = 0; si < ctx.slots.length; si++) {
         const key = `${ctx.dates[d]}|${ctx.slots[si]}`;
-        if (locked.has(key)) continue;
-        const pool = pools.get(`${ctx.slots[si]}|${weekendOf(ctx.dates[d])}`) ?? [];
+        if (locked.has(key) || isOff(d, si) || isDep(d, si)) continue;
+        const pool = poolOf(d, si);
         const before = cur[d][si];
-        const oldEval = evals[d];
-        const wasEmpty = !cur[d].some(Boolean);
+        const affected = [...new Set([d, ...(deps.get(key) ?? []).map(([dd]) => dd)])];
+        const oldEvals = affected.map((x) => evals[x]);
         let best = before;
         let bestTotal = total;
-        let bestEval = oldEval;
+        let bestEvals = oldEvals;
         let bestVar = variety;
         for (const cand of pool) {
           if (cand === before) continue;
           cur[d][si] = cand;
-          const ev = evalDay(dayOf(d), wd, targets, vecs);
-          const days = nDays + (wasEmpty ? 1 : 0);
+          syncDeps(d, si);
+          const evs = affected.map((x) => evalDay(dayOf(x), weekdayOf(ctx.dates[x]), targets, vecs));
+          const days = filledDays();
           const ws = targets.map((t, e) => {
             const s = tmp[e];
-            const a = sums[e];
-            const o = oldEval.vec[e];
-            const n = ev.vec[e];
-            for (let i = 0; i < K; i++) s[i] = a[i] - o[i] + n[i];
+            s.set(sums[e]);
+            for (let a = 0; a < affected.length; a++) {
+              const o = oldEvals[a].vec[e];
+              const n = evs[a].vec[e];
+              for (let i = 0; i < K; i++) s[i] += n[i] - o[i];
+            }
             return weekScore(s, t, days);
           });
-          const pen = dayPen - combine(oldEval.pen) + combine(ev.pen);
-          const pr = prefs - (before ? bonus(before) : 0) + bonus(cand);
+          let pen = dayPen;
+          for (let a = 0; a < affected.length; a++) pen += combine(evs[a].pen) - combine(oldEvals[a].pen);
+          const pr = prefs - (before ? cellBonus(before, d) : 0) + cellBonus(cand, d);
           const quick = objective(ws, days, pen, pr) - variety;
           // la variété varie rarement de plus de 70 points : on évite son calcul complet
           if (quick + 70 < bestTotal) continue;
-          const v = varietyPenalty(flat(), ctx);
+          const v = extra();
           const t = quick + variety - v;
           if (t > bestTotal + 0.01) {
             best = cand;
             bestTotal = t;
-            bestEval = ev;
+            bestEvals = evs;
             bestVar = v;
           }
         }
         cur[d][si] = best;
+        syncDeps(d, si);
         if (best !== before) {
           improved = true;
-          for (let e = 0; e < targets.length; e++) for (let i = 0; i < K; i++) sums[e][i] += bestEval.vec[e][i] - oldEval.vec[e][i];
-          dayPen += combine(bestEval.pen) - combine(oldEval.pen);
-          prefs += bonus(best!) - (before ? bonus(before) : 0);
-          evals[d] = bestEval;
+          for (let a = 0; a < affected.length; a++) {
+            for (let e = 0; e < targets.length; e++) for (let i = 0; i < K; i++) sums[e][i] += bestEvals[a].vec[e][i] - oldEvals[a].vec[e][i];
+            dayPen += combine(bestEvals[a].pen) - combine(oldEvals[a].pen);
+            evals[affected[a]] = bestEvals[a];
+          }
+          prefs += cellBonus(best!, d) - (before ? cellBonus(before, d) : 0);
           variety = bestVar;
           total = bestTotal;
           nDays = filledDays();
@@ -412,6 +532,7 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
     }
     if (!improved) break;
   }
+  void nDays;
 
   const out: PlanEntry[] = [];
   cur.forEach((row, d) =>
@@ -421,7 +542,8 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
       const slot = ctx.slots[si];
       const key = `${date}|${slot}`;
       const lockedEntry = ctx.locked.find((l) => l.key === key);
-      out.push(lockedEntry ?? { key, date, slot, recipeId: r.id, servings: ctx.servings });
+      const src = isDep(d, si) ? links.get(key) : undefined;
+      out.push(lockedEntry ?? { key, date, slot, recipeId: r.id, servings: src ? 0 : ctx.servings, ...(src ? { leftoverOf: src } : {}) });
     }),
   );
   return out;

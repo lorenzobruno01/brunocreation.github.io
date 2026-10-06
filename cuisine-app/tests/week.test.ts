@@ -143,3 +143,49 @@ describe('générateur : dit quand c’est impossible', () => {
     expect(src.every((s) => s.ing.category !== 'poisson' && s.ing.category !== 'fruits-de-mer')).toBe(true);
   });
 });
+
+import { batchFriendly, leftoverLinks } from '../src/domain/nutriPlanner';
+import { planServings } from '../src/domain/shares';
+import type { SlotMode } from '../src/domain/types';
+
+describe('gabarit de semaine', () => {
+  const dates = ['2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18'];
+  const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+  // lundi midi dehors, mardi midi restes du lundi soir, mercredi soir 15 min, dimanche soir batch
+  const template: Record<string, SlotMode> = { '0|midi': 'dehors', '1|midi': 'restes', '2|soir': '15', '6|soir': 'batch', '3|midi': 'restes' };
+  const ctx = { recipes: library, favorites: new Set<string>(), lastCooked: new Map(), available: new Set<string>(), locked: [], dates, slots, servings: 2, seed: 6, eaters: householdEaters([lui, elle]), lookup, template };
+  const plan = generateNutriWeek(ctx, (id) => lookup(id)?.category);
+  const at = (date: string, slot: Slot) => plan.find((e) => e.key === `${date}|${slot}`);
+  it('liens « restes » : le repas principal précédent', () => {
+    const links = leftoverLinks(dates, slots, template);
+    expect(links.get('2026-10-13|midi')).toBe('2026-10-12|soir');
+    expect(links.get('2026-10-15|midi')).toBe('2026-10-14|soir');
+  });
+  it('dehors : rien de prévu ; restes : même plat, rien à cuisiner', () => {
+    expect(at('2026-10-12', 'midi')).toBeUndefined();
+    const r = at('2026-10-13', 'midi')!;
+    expect(r.leftoverOf).toBe('2026-10-12|soir');
+    expect(r.recipeId).toBe(at('2026-10-12', 'soir')!.recipeId);
+    expect(r.servings).toBe(0);
+  });
+  it('temps disponible et batch respectés', () => {
+    expect(byId.get(at('2026-10-14', 'soir')!.recipeId)!.totalTime).toBeLessThanOrEqual(25);
+    expect(batchFriendly(byId.get(at('2026-10-18', 'soir')!.recipeId)!)).toBe(true);
+  });
+  it('la semaine reste à 100 % pour chacun', () => {
+    for (const w of analyzeWeek(plan, byId, [lui, elle], lookup)) expect(w.gaps.map((g) => `${g.key} ${Math.round(w.pct[g.key])}`)).toEqual([]);
+  });
+  it('quantité cuisinée = parts du jour + parts des restes', () => {
+    const withServ = planServings(plan, byId, [lui, elle], lookup);
+    const src = withServ.find((e) => e.key === '2026-10-12|soir')!;
+    const plain = withServ.find((e) => e.key === '2026-10-16|soir')!;
+    expect(src.servings).toBeGreaterThan(plain.servings * 1.5);
+    expect(withServ.find((e) => e.key === '2026-10-13|midi')!.servings).toBe(0);
+  });
+  it('ingrédients à utiliser vite : favorisés en début de semaine', () => {
+    const soon = new Set(['courgette']);
+    const p2 = generateNutriWeek({ ...ctx, template: undefined, useSoon: soon }, (id) => lookup(id)?.category);
+    const early = p2.filter((e) => e.date <= '2026-10-14').some((e) => byId.get(e.recipeId)!.ingredients.some((i) => i.id === 'courgette'));
+    expect(early).toBe(true);
+  });
+});

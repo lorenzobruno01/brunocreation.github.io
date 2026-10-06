@@ -15,6 +15,7 @@ import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
 import { FeedbackSheet } from '../components/FeedbackSheet';
+import { addLeftover } from '../components/Leftovers';
 import { NutritionPanel } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
@@ -117,6 +118,15 @@ export function RecipeDetail() {
               }}
             >
               ✅ J’ai cuisiné ce plat
+            </button>
+            <button
+              className="btn"
+              onClick={async () => {
+                await addLeftover({ label: recipe.name, recipeId: recipe.id, ingredientIds: [] });
+                toast('Restes notés : à placer au menu depuis « Frigo » ♻️');
+              }}
+            >
+              ♻️ Il en reste
             </button>
             <button className="btn" onClick={() => toggleFavorite(recipe.id)}>
               {fav ? '💔 Retirer' : '❤️ Favori'}

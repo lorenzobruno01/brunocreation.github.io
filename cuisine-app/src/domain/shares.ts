@@ -4,7 +4,7 @@
 // d'entraînement compris). Si la part ne suffit pas (plafond de 2
 // portions, journée légère), on propose un complément en vrais aliments.
 // ─────────────────────────────────────────────────────────────
-import type { Ingredient, IndexedRecipe, Slot } from './types';
+import type { Ingredient, IndexedRecipe, PlanEntry, Slot } from './types';
 import type { IngredientLookup } from './indexing';
 import { gramsEaten } from './indexing';
 import { MICROS, type NutritionProfile } from './micronutrients';
@@ -117,4 +117,23 @@ export function mainPortion(r: IndexedRecipe, lookup: IngredientLookup): { ing: 
     if (!best || rank(ing.category) > rank(best.ing.category) || (rank(ing.category) === rank(best.ing.category) && g > best.grams)) best = { ing, grams: g };
   }
   return best;
+}
+
+/**
+ * Portions à cuisiner pour chaque créneau du planning : somme des parts du
+ * jour, plus celles des repas « restes » qui en dépendent. Les restes
+ * eux-mêmes ne coûtent rien à cuisiner ni à acheter.
+ */
+export function planServings(entries: PlanEntry[], byId: Map<string, IndexedRecipe>, profiles: NutritionProfile[], lookup: IngredientLookup): PlanEntry[] {
+  const sharesOf = new Map<string, Share[]>();
+  for (const date of new Set(entries.map((e) => e.date))) {
+    const meals = entries.filter((e) => e.date === date && byId.has(e.recipeId)).map((e) => ({ recipe: byId.get(e.recipeId)!, slot: e.slot }));
+    sharesOf.set(date, dayShares(meals, profiles, date, lookup));
+  }
+  const sum = (date: string) => (sharesOf.get(date) ?? []).reduce((s, x) => s + x.portion, 0);
+  return entries.map((e) => {
+    if (e.leftoverOf) return { ...e, servings: 0 };
+    const portions = sum(e.date) + entries.filter((x) => x.leftoverOf === e.key).reduce((s, x) => s + sum(x.date), 0);
+    return { ...e, servings: Math.max(1, Math.ceil(portions * 2 - 0.05) / 2) };
+  });
 }

@@ -13,7 +13,12 @@ import { SLOT_LABELS } from '../components/AddToPlanSheet';
 import { formatDateFr, formatDuration, deName } from '../components/format';
 import { ConstraintsEditor, loadConstraints } from '../components/ConstraintsEditor';
 import type { IndexedRecipe, MealType, PlanEntry, Slot } from '../domain/types';
-import { cookServings, dayShares, mainPortion, type Share } from '../domain/shares';
+import { cookServings, dayShares, mainPortion, planServings, type Share } from '../domain/shares';
+import { applyTemplate } from '../domain/nutriPlanner';
+import { recipeCost } from '../domain/shopping';
+import { SLOT_MODES, useWeekTemplate } from '../hooks/plan';
+import { TemplateSheet } from '../components/TemplateSheet';
+import { useHideNumbers } from '../hooks/activeProfile';
 import { recipeConflict } from '../domain/allergens';
 import { WeekVerdict } from '../components/WeekVerdict';
 
@@ -49,6 +54,10 @@ export function Planner() {
   const [moving, setMoving] = useState<PlanEntry | null>(null);
   const [dragOver, setDragOver] = useState<string | null>(null);
   const [genOpen, setGenOpen] = useState(false);
+  const [tplOpen, setTplOpen] = useState(false);
+  const template = useWeekTemplate();
+  const hideNumbers = useHideNumbers();
+  const weekday = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
   const [busy, setBusy] = useState(false);
   const toast = useToast();
   const navigate = useNavigate();
@@ -135,15 +144,17 @@ export function Planner() {
       eaters,
       lookup,
       feedback: await db.feedback.toArray(),
+      template,
+      // frigo « à utiliser vite » et restes : en début de semaine
+      useSoon: new Set([...(await db.fridge.toArray()).filter((f) => f.useSoon).map((f) => f.ingredientId), ...(await db.leftovers.toArray()).flatMap((l) => l.ingredientIds)]),
+      costOf: (r: IndexedRecipe) => recipeCost(r, lookup),
+      budget: settings.weeklyBudget,
     };
-    const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
-    // quantité à cuisiner = somme des parts du jour (courses au plus juste)
+    const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : applyTemplate(generateWeek(ctx, (id) => lookup(id)?.category), dates, slots, template);
+    // quantité à cuisiner = somme des parts du jour (+ restes) : courses au plus juste
     const lockedKeys = new Set(locked.map((l) => l.key));
-    const entries = generated.map((e) => {
-      if (lockedKeys.has(e.key)) return e;
-      const meals = generated.filter((x) => x.date === e.date && byId.has(x.recipeId)).map((x) => ({ recipe: byId.get(x.recipeId)!, slot: x.slot }));
-      return { ...e, servings: cookServings(dayShares(meals, eaters.map((x) => x.profile), e.date, lookup)) };
-    });
+    const sized = planServings(generated, byId, eaters.map((x) => x.profile), lookup);
+    const entries = sized.map((e, i) => (lockedKeys.has(e.key) ? generated[i] : e));
     await db.transaction('rw', db.plan, async () => {
       if (opts.replaceAll) await db.plan.bulkDelete(plan.map((p) => p.key));
       await db.plan.bulkPut(entries);
@@ -220,6 +231,12 @@ export function Planner() {
       </div>
 
       <div className="row" style={{ marginBottom: 14 }}>
+        <button className="btn" onClick={() => setTplOpen(true)}>
+          🗓 Ma semaine type
+        </button>
+        <Link className="btn" to={`/batch?du=${dates[0]}`}>
+          📦 Batch cooking
+        </Link>
         <button className="btn primary" onClick={() => setGenOpen(true)} disabled={busy}>
           {busy ? <><span className="spinner" style={{ width: 18, height: 18 }} /> Optimisation en cours…</> : '🎯 Générer ma semaine'}
         </button>
@@ -317,17 +334,25 @@ export function Planner() {
                         else setPicker({ date: d, slot: s });
                       }}
                     >
-                      <span className="slot-label">{SLOT_LABELS[s]}</span>
+                      <span className="slot-label">
+                        {SLOT_LABELS[s]}
+                        {template[`${weekday(d)}|${s}`] && template[`${weekday(d)}|${s}`] !== 'restes' && template[`${weekday(d)}|${s}`] !== 'dehors' && <span className="mode"> · {SLOT_MODES[template[`${weekday(d)}|${s}`]].short}</span>}
+                      </span>
                       {r ? (
                         <>
+                          {e?.leftoverOf && <span className="mode">♻️ Restes</span>}
                           <span className="slot-name">
                             {r.emoji} {r.name}
                           </span>
                           <span className="small muted">
-                            ⏱ {formatDuration(r.totalTime)} · 🔥 {r.nutrition.kcal}
+                            {e?.leftoverOf ? 'rien à cuisiner' : `⏱ ${formatDuration(r.totalTime)}${hideNumbers ? '' : ` · 🔥 ${r.nutrition.kcal}`}`}
                           </span>
                           {(r.restTime ?? 0) >= 360 && <span className="small" style={{ color: 'var(--primary-2)', fontWeight: 800 }}>🌙 À préparer la veille</span>}
                         </>
+                      ) : template[`${weekday(d)}|${s}`] === 'dehors' ? (
+                        <span className="muted small" style={{ margin: 'auto' }}>
+                          🍽 Dehors
+                        </span>
                       ) : (
                         <span className="muted" style={{ fontSize: '1.4rem', margin: 'auto' }}>
                           +
@@ -357,6 +382,7 @@ export function Planner() {
         />
       )}
 
+      {tplOpen && <TemplateSheet onClose={() => setTplOpen(false)} />}
       {menu && (
         <SlotMenu
           entry={menu}
@@ -512,6 +538,16 @@ function SlotMenu({ entry, shares, onClose, onChange, onMove }: { entry: PlanEnt
   return (
     <Sheet title={`${r.emoji} ${r.name}`} onClose={onClose}>
       <div className="stack">
+        {entry.leftoverOf?.startsWith('reste:') && (
+          <div className="callout small" style={{ margin: 0 }}>
+            ♻️ Restes gardés au frigo : rien à cuisiner ni à acheter.
+          </div>
+        )}
+        {entry.leftoverOf && !entry.leftoverOf.startsWith('reste:') && (
+          <div className="callout small" style={{ margin: 0 }}>
+            ♻️ Restes du {formatDateFr(entry.leftoverOf.split('|')[0], { weekday: 'long' })} {SLOT_LABELS[entry.leftoverOf.split('|')[1] as Slot].slice(3).toLowerCase()} : la quantité est déjà prévue dans ce repas-là. Pensez à mettre une boîte de côté.
+          </div>
+        )}
         {shares && shares.length > 0 && (
           <div className="callout info small stack" style={{ margin: 0, gap: 2 }}>
             <strong>🍽 La part de chacun</strong>
@@ -525,10 +561,12 @@ function SlotMenu({ entry, shares, onClose, onChange, onMove }: { entry: PlanEnt
             {shares.length > 1 && <span className="muted">À cuisiner : {fr(cookServings(shares), 1)} portions (quantités de la liste de courses).</span>}
           </div>
         )}
-        <div className="row between">
-          <span className="label">Portions</span>
-          <ServingsControl value={entry.servings} onChange={(n) => db.plan.put({ ...entry, servings: n })} />
-        </div>
+        {!entry.leftoverOf && (
+          <div className="row between">
+            <span className="label">Portions</span>
+            <ServingsControl value={entry.servings} onChange={(n) => db.plan.put({ ...entry, servings: n })} />
+          </div>
+        )}
         <div className="menu-list">
           <Link to={`/recette/${r.id}`}>
             <span className="mi">📖</span>Voir la recette

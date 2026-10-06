@@ -6,6 +6,7 @@ import type { IndexedRecipe, ShoppingAisle, ShoppingItem, StandardUnit } from '.
 import type { IngredientLookup } from './indexing';
 import { toStandard, formatStandard } from './units';
 import { AISLES } from './labels';
+import { costOf, purchaseFor } from '../config/formats';
 
 export interface Selection {
   recipe: IndexedRecipe;
@@ -182,9 +183,22 @@ export function shoppingToText(items: ShoppingItem[], lookup: IngredientLookup):
   for (const [aisle, list] of [...byAisle.entries()].sort((a, b) => AISLES[a[0]].order - AISLES[b[0]].order)) {
     parts.push('', `${AISLES[aisle].emoji} ${AISLES[aisle].label}`);
     for (const it of list) {
-      const q = itemQtyLabel(it, it.ingredientId ? lookup(it.ingredientId)?.pieceWeight : undefined);
+      const ing = it.ingredientId ? lookup(it.ingredientId) : undefined;
+      const q = ing && it.unit !== 'autre' && it.qty ? purchaseFor(ing, it.qty).text : itemQtyLabel(it, ing?.pieceWeight);
       parts.push(`${it.checked ? '☑' : '☐'} ${it.label}${q ? ` — ${q}` : ''}`);
     }
   }
   return parts.join('\n');
+}
+
+/** Coût estimé d'une portion (€), d'après les prix moyens de src/config/formats.ts */
+export function recipeCost(recipe: IndexedRecipe, lookup: IngredientLookup): number {
+  let c = 0;
+  for (const ri of recipe.ingredients) {
+    const ing = lookup(ri.id);
+    if (!ing || ing.staple || ri.unit === 'au-gout') continue;
+    const std = toStandard(ri.qty, ri.unit, ing);
+    if (std) c += costOf(ing, std.qty);
+  }
+  return c / Math.max(1, recipe.servings);
 }

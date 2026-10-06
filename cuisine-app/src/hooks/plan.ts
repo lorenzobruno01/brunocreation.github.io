@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/db';
 import type { NutritionProfile } from '../domain/micronutrients';
-import type { PlanEntry, Settings } from '../domain/types';
+import type { PlanEntry, Settings, SlotMode } from '../domain/types';
 import { analyzeWeek, type PersonWeek } from '../domain/week';
 import { useLibrary, useProfiles, useUserData } from './library';
 
@@ -23,4 +23,26 @@ export function usePlanAnalysis(dates: string[]): { plan: PlanEntry[]; weeks: Pe
   const plan = useMemo(() => rows ?? [], [rows]);
   const weeks = useMemo(() => analyzeWeek(plan, byId, eaters, lookup), [plan, byId, lookup, JSON.stringify(eaters)]); // eslint-disable-line react-hooks/exhaustive-deps
   return { plan, weeks, eaters, loaded: rows !== undefined };
+}
+
+export const SLOT_MODES: Record<SlotMode, { label: string; short: string }> = {
+  libre: { label: 'Normal', short: '' },
+  '15': { label: '⚡ 15 min max', short: '⚡ 15 min' },
+  '30': { label: '⏱ 30 min max', short: '⏱ 30 min' },
+  '45': { label: '⏱ 45 min max', short: '⏱ 45 min' },
+  long: { label: '🍲 J’ai le temps', short: '🍲 long' },
+  dehors: { label: '🍽 Dehors', short: '🍽 Dehors' },
+  restes: { label: '♻️ Restes', short: '♻️ Restes' },
+  batch: { label: '📦 Batch cooking', short: '📦 Batch' },
+};
+
+/** Gabarit de semaine du foyer : `${jour 0-6}|${créneau}` → mode */
+export function useWeekTemplate(): Record<string, SlotMode> {
+  const row = useLiveQuery(() => db.weekTemplate.get('template'), []);
+  return useMemo(() => row?.slots ?? {}, [row]);
+}
+
+export function saveWeekTemplate(slots: Record<string, SlotMode>) {
+  const clean = Object.fromEntries(Object.entries(slots).filter(([, m]) => m !== 'libre'));
+  return db.weekTemplate.put({ key: 'template', slots: clean });
 }
