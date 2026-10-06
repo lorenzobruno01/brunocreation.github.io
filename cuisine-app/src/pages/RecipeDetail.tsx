@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useLibrary, useUserData } from '../hooks/library';
+import { useLibrary, useStoredProfiles, useUserData } from '../hooks/library';
+import { recipeConflict } from '../domain/allergens';
 import { RecipeVisual } from '../components/RecipeVisual';
 import { RecipeCard } from '../components/RecipeCard';
 import { Empty, ServingsControl, Sheet, useToast } from '../components/ui';
@@ -13,13 +14,20 @@ import { findSimilar } from '../domain/similarity';
 import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
+import { FeedbackSheet } from '../components/FeedbackSheet';
+import { addLeftover } from '../components/Leftovers';
 import { NutritionPanel } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
 import type { IndexedRecipe } from '../domain/types';
+import { useHideNumbers } from '../hooks/activeProfile';
 
 export function RecipeDetail() {
   const { id } = useParams();
+  const hideNumbers = useHideNumbers();
+  const household = useStoredProfiles() ?? [];
+  const [search] = useSearchParams();
+  const [feedbackFor, setFeedbackFor] = useState<{ cookedId: string; date: string } | null>(() => (search.get('avis') ? { cookedId: search.get('avis')!, date: new Date().toISOString() } : null));
   const { byId, recipes, lookup, seedIds, diets } = useLibrary();
   const { favorites, basket, pantry, fridge, settings } = useUserData();
   const recipe = id ? byId.get(id) : undefined;
@@ -29,7 +37,7 @@ export function RecipeDetail() {
   const [subFor, setSubFor] = useState<string | null>(null);
   const toast = useToast();
   const navigate = useNavigate();
-  const history = useLiveQuery(() => (id ? db.history.where('recipeId').equals(id).reverse().sortBy('date') : []), [id]) ?? [];
+  const history = useLiveQuery(() => (id ? db.cooking.where('recipeId').equals(id).reverse().sortBy('date') : []), [id]) ?? [];
 
   const similar = useMemo(() => (recipe ? findSimilar(recipe, recipes, 6, 0.3) : []), [recipe, recipes]);
 
@@ -43,6 +51,7 @@ export function RecipeDetail() {
   const diff = DIFFICULTIES[recipe.difficulty];
   const available = new Set([...pantry, ...fridge]);
   const issues = recipe.source !== 'seed' ? checkPhilosophy(recipe, lookup) : [];
+  const conflicts = household.map((p) => recipeConflict(recipe, [p], lookup)).filter(Boolean);
 
   const toggleCheck = (i: number) => {
     const next = new Set(checked);
@@ -73,12 +82,18 @@ export function RecipeDetail() {
             </div>
             <h1>{recipe.name}</h1>
             <p style={{ margin: '0 0 12px', color: 'var(--ink-2)' }}>{recipe.description}</p>
+            {conflicts.map((c) => (
+              <div key={c!.profile.id} className="callout small" style={{ margin: '0 0 12px' }}>
+                ⚠️ {c!.profile.name} : {c!.ingredient ? `${c!.ingredient.name} — ` : ''}
+                {c!.reason}. Ce plat n’est pas proposé dans le planning quand {c!.profile.name} mange avec vous.
+              </div>
+            ))}
           </div>
           <div className="facts">
             <Fact v={formatDuration(recipe.totalTime)} l={`⏱ ${recipe.prepTime} min actif`} />
             <Fact v={`${recipe.servings}`} l="👥 portions (base)" />
             <Fact v={diff.label} l="⭐ difficulté" />
-            <Fact v={`${recipe.nutrition.kcal}`} l="🔥 kcal / portion" />
+            {!hideNumbers && <Fact v={`${recipe.nutrition.kcal}`} l="🔥 kcal / portion" />}
             <Fact v={`${recipe.nutrition.protein} g`} l="🥩 protéines" />
             <Fact v={`${recipe.nutrition.carbs} / ${recipe.nutrition.fat} g`} l="glucides / lipides" />
           </div>
@@ -97,11 +112,21 @@ export function RecipeDetail() {
             <button
               className="btn"
               onClick={async () => {
-                await markCooked(recipe.id);
+                const e = await markCooked(recipe.id, household.map((p) => p.id), n);
                 toast('Ajoutée à l’historique 🕒');
+                setFeedbackFor({ cookedId: e.id, date: e.date });
               }}
             >
               ✅ J’ai cuisiné ce plat
+            </button>
+            <button
+              className="btn"
+              onClick={async () => {
+                await addLeftover({ label: recipe.name, recipeId: recipe.id, ingredientIds: [] });
+                toast('Restes notés : à placer au menu depuis « Frigo » ♻️');
+              }}
+            >
+              ♻️ Il en reste
             </button>
             <button className="btn" onClick={() => toggleFavorite(recipe.id)}>
               {fav ? '💔 Retirer' : '❤️ Favori'}
@@ -238,6 +263,17 @@ export function RecipeDetail() {
 
       {planOpen && <AddToPlanSheet recipe={recipe} servings={n} onClose={() => setPlanOpen(false)} />}
       {subFor && <SubstituteSheet recipe={recipe} ingredientId={subFor} onClose={() => setSubFor(null)} />}
+      {feedbackFor && (
+        <FeedbackSheet
+          cookedId={feedbackFor.cookedId}
+          recipeId={recipe.id}
+          date={feedbackFor.date}
+          onClose={() => {
+            setFeedbackFor(null);
+            if (search.get('avis')) navigate(`/recette/${recipe.id}`, { replace: true });
+          }}
+        />
+      )}
     </div>
   );
 }

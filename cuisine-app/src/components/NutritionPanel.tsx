@@ -1,21 +1,23 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { IndexedRecipe } from '../domain/types';
-import { useLibrary, useUserData } from '../hooks/library';
-import { computeDetailed, dailyRef, DEFAULT_PROFILES, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
-import { saveSettings } from '../db/db';
+import { useLibrary, useProfiles } from '../hooks/library';
+import { computeDetailed, dailyRef, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
+import { setActiveProfile, useActiveProfile } from '../hooks/activeProfile';
 import { householdEaters } from '../domain/nutriPlanner';
+import { needs } from '../domain/profile';
 
 /** Apports d'une portion : macros + vitamines, minéraux, électrolytes, acides aminés, en % des besoins du jour */
 export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe; portions?: number }) {
   const { lookup } = useLibrary();
-  const { settings } = useUserData();
-  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
-  const profile = profiles.find((p) => p.id === settings.activeProfile) ?? profiles[0];
+  const profiles = useProfiles();
+  const profile = useActiveProfile();
   const [open, setOpen] = useState(false);
   const detail = useMemo(() => computeDetailed(recipe, lookup), [recipe, lookup]);
   const n = recipe.nutrition;
-  const proteinTarget = profile.weight * profile.proteinPerKg;
+  const nd = needs(profile);
+  const proteinTarget = nd?.protein ?? profile.weight * profile.proteinPerKg;
+  const hide = !!profile.hideNumbers;
   const pct = (v: number, ref: number) => (ref ? Math.round(((v * portions) / ref) * 100) : 0);
 
   const rows = NUTRIENTS.map((d) => ({ d, v: detail[d.key] ?? 0, ref: dailyRef(d, profile) }));
@@ -28,14 +30,14 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
         <h2 style={{ margin: 0 }}>🔬 Apports nutritionnels</h2>
         <div className="chips">
           {profiles.map((p) => (
-            <button key={p.id} className={`chip ${p.id === profile.id ? 'on' : ''}`} onClick={() => saveSettings({ activeProfile: p.id })}>
+            <button key={p.id} className={`chip ${p.id === profile.id ? 'on' : ''}`} onClick={() => setActiveProfile(p.id)}>
               {p.sex === 'homme' ? '👨' : '👩'} {p.name}
             </button>
           ))}
         </div>
       </div>
       <p className="small muted" style={{ margin: 0 }}>
-        Pour {portions === 1 ? '1 portion' : `${portions} portions`}, en % des besoins journaliers de {profile.name} ({profile.weight} kg, objectif {profile.kcal} kcal et {Math.round(proteinTarget)} g de protéines/jour). <Link to="/reglages">Modifier les profils</Link>
+        Pour {portions === 1 ? '1 portion' : `${portions} portions`}, en % des besoins journaliers de {profile.name} {hide ? '' : ` (${profile.weight} kg, objectif ${profile.kcal} kcal et ${Math.round(proteinTarget)} g de protéines/jour)`}. <Link to="/besoins">Voir les besoins</Link>
       </p>
       {profiles.length > 1 && (
         <p className="small muted" style={{ margin: 0 }}>
@@ -65,10 +67,10 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
       })()}
 
       <div className="stack" style={{ gap: 4 }}>
-        <Bar label="🔥 Énergie" value={`${n.kcal * portions} kcal`} pct={pct(n.kcal, profile.kcal)} />
+        {!hide && <Bar label="🔥 Énergie" value={`${n.kcal * portions} kcal`} pct={pct(n.kcal, profile.kcal)} />}
         <Bar label="🥩 Protéines" value={`${n.protein * portions} g`} pct={pct(n.protein, proteinTarget)} />
-        <Bar label="🍚 Glucides" value={`${n.carbs * portions} g`} pct={pct(n.carbs * 4, profile.kcal * 0.45)} hint="référence : 45 % de l’énergie" />
-        <Bar label="🧈 Lipides" value={`${n.fat * portions} g`} pct={pct(n.fat * 9, profile.kcal * 0.35)} hint="référence : 35 % de l’énergie" />
+        <Bar label="🍚 Glucides" value={`${n.carbs * portions} g`} pct={pct(n.carbs, nd?.carbs ?? (profile.kcal * 0.45) / 4)} hint={nd ? `besoin : ${nd.carbs} g/jour` : 'référence : 45 % de l’énergie'} />
+        <Bar label="🧈 Lipides" value={`${n.fat * portions} g`} pct={pct(n.fat, nd?.fat ?? (profile.kcal * 0.35) / 9)} hint={nd ? `besoin : ${nd.fat} g/jour` : 'référence : 35 % de l’énergie'} />
       </div>
 
       {strengths.length > 0 && (

@@ -18,7 +18,14 @@ import { RecipeForm } from './pages/RecipeForm';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
-import { Account } from './pages/Account';
+import { Needs } from './pages/Needs';
+import { MyDay } from './pages/MyDay';
+import { Learned } from './pages/Learned';
+import { Weight } from './pages/Weight';
+import { Batch } from './pages/Batch';
+import { StravaReturn } from './components/StravaReturn';
+import { MyWeek } from './pages/MyWeek';
+import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
@@ -82,13 +89,22 @@ function Shell() {
                 <Route path="/modifier/:id" element={<RecipeForm />} />
                 <Route path="/stats" element={<Stats />} />
                 <Route path="/reglages" element={<Settings />} />
+                <Route path="/besoins" element={<Needs />} />
+                <Route path="/ma-journee" element={<MyDay />} />
+                <Route path="/appris" element={<Learned />} />
+                <Route path="/poids" element={<Weight />} />
+                <Route path="/batch" element={<Batch />} />
+                <Route path="/ma-semaine" element={<MyWeek />} />
+                <Route path="/besoins/:id" element={<Needs />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />
+                <Route path="/rejoindre/:code" element={<JoinHousehold />} />
                 <Route path="/acheter" element={<Navigate to="/courses" replace />} />
                 <Route path="*" element={<Home />} />
               </Routes>
             </ErrorBoundary>
             <Onboarding />
+            <StravaReturn />
           </Layout>
         }
       />

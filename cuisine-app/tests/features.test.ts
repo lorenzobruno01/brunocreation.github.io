@@ -7,6 +7,7 @@ import { matchBoolean, parseIngredientQuery } from '../src/domain/ingredientQuer
 import { computeDetailed, MICROS, NUTRIENTS } from '../src/domain/micronutrients';
 import { generateWeek } from '../src/domain/planner';
 import type { Recipe } from '../src/domain/types';
+import { analyzeWeek } from '../src/domain/week';
 
 const lookup = (id: string) => INGREDIENT_BY_ID[id];
 const dir = join(__dirname, '../src/data/recipes');
@@ -100,7 +101,7 @@ describe('créateur de recettes intégré', () => {
 });
 
 describe('planificateur densité nutritionnelle', () => {
-  it('approche 100 % des besoins chaque jour', () => {
+  it('atteint 100 % des besoins sur la semaine, sans journée vraiment creuse', () => {
     const lib = library.map((r) => {
       r.micros = cd(r, lookup);
       r.density = densityScore(r.micros, r.nutrition.kcal);
@@ -112,9 +113,12 @@ describe('planificateur densité nutritionnelle', () => {
     expect(plan).toHaveLength(28);
     expect(new Set(plan.map((p) => p.recipeId)).size).toBe(28);
     const byId = new Map(lib.map((r) => [r.id, r]));
-    for (const d of dates) {
-      const rep = dayReport(d, plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)!), profile);
-      expect(rep.coverage).toBeGreaterThan(95);
+    const [w] = analyzeWeek(plan, byId, [profile], lookup);
+    expect(w.gaps.map((g) => g.key)).toEqual([]);
+    for (const d of w.days) {
+      const share = d.share;
+      const rep = dayReport(d.date, plan.filter((p) => p.date === d.date).map((p) => byId.get(p.recipeId)!), profile, () => share.portion);
+      expect(rep.coverage).toBeGreaterThan(85);
     }
   }, 30000);
 
@@ -130,13 +134,13 @@ describe('planificateur densité nutritionnelle', () => {
     const plan = generateNutriWeek({ recipes: lib, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots: ['matin', 'midi', 'collation', 'soir'], servings: 2, seed: 1, eaters }, (id) => lookup(id)?.category);
     expect(plan).toHaveLength(28);
     const byId = new Map(lib.map((r) => [r.id, r]));
-    for (const d of dates) {
-      const day = plan.filter((p) => p.date === d).map((p) => byId.get(p.recipeId)!);
-      for (const e of eaters) {
-        const rep = dayReport(d, day, e.profile, () => e.portions);
-        expect(rep.coverage).toBeGreaterThan(90);
-        expect(rep.pct.kcal).toBeGreaterThan(85);
-        expect(rep.pct.kcal).toBeLessThan(115);
+    const weeks = analyzeWeek(plan, byId, DEFAULT_PROFILES, lookup);
+    for (const w of weeks) {
+      expect(w.gaps.map((g) => g.key)).toEqual([]);
+      for (const d of w.days) {
+        // énergie du jour (part + compléments éventuels) proche de l'objectif
+        expect(d.kcal / d.share.target.kcal).toBeGreaterThan(0.85);
+        expect(d.kcal / d.share.target.kcal).toBeLessThan(1.15);
       }
     }
   }, 60000);

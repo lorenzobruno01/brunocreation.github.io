@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useUserData } from '../hooks/library';
+import { useStoredProfiles, useUserData } from '../hooks/library';
+import { setActiveProfile, useActiveProfile } from '../hooks/activeProfile';
 import { Sheet } from './ui';
 import { cloudEnabled, useCloud } from '../cloud/sync';
 
@@ -13,17 +14,25 @@ const TABS = [
 ];
 
 const MORE = [
+  { to: '/ma-journee', label: 'Ma journée', icon: '☀️' },
+  { to: '/ma-semaine', label: 'Ma semaine : vitamines et minéraux', icon: '📊' },
   { to: '/favoris', label: 'Mes favoris & historique', icon: '❤️' },
   { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
   { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
   { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },
   { to: '/sources', label: 'Sources & méthode nutritionnelle', icon: '📚' },
   { to: '/compte', label: 'Mon compte', icon: '👤' },
+  { to: '/besoins', label: 'Mes besoins', icon: '🎯' },
+  { to: '/poids', label: 'Mon poids', icon: '⚖️' },
+  { to: '/appris', label: 'Mes avis et ce que l’appli a appris', icon: '🧠' },
   { to: '/reglages', label: 'Mon profil & réglages', icon: '⚙️' },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
   const [more, setMore] = useState(false);
+  const [who, setWho] = useState(false);
+  const profiles = useStoredProfiles() ?? [];
+  const active = useActiveProfile(profiles);
   const { basket } = useUserData();
   const cloud = useCloud();
   return (
@@ -46,6 +55,11 @@ export function Layout({ children }: { children: ReactNode }) {
             <Link to="/recettes?focus=1" className="icon-btn" aria-label="Rechercher" style={{ textDecoration: 'none' }}>
               🔎
             </Link>
+            {profiles.length > 1 && (
+              <button className="who-btn" onClick={() => setWho(true)} aria-label={`Profil actif : ${active.name}. Changer`} title="Qui regarde ?">
+                {active.sex === 'homme' ? '👨' : '👩'} <span>{active.name}</span>
+              </button>
+            )}
             {cloudEnabled && (
               <Link to="/compte" className="icon-btn" aria-label={cloud.email ? `Compte : ${cloud.email}` : 'Se connecter'} title={cloud.email ?? 'Se connecter'} style={{ textDecoration: 'none', position: 'relative' }}>
                 👤
@@ -58,7 +72,15 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </header>
-      <main>{children}</main>
+      <main>
+        {cloud.pendingImport && (
+          <Link to="/compte" className="callout info small row between" style={{ textDecoration: 'none', color: 'inherit', margin: '12px 16px 0' }}>
+            <span>📥 Des données de ce téléphone peuvent être ajoutées à votre foyer.</span>
+            <span>›</span>
+          </Link>
+        )}
+        {children}
+      </main>
       <nav className="tabbar" aria-label="Navigation">
         {TABS.map((t) => (
           <NavLink key={t.to} to={t.to} end={t.end}>
@@ -68,6 +90,33 @@ export function Layout({ children }: { children: ReactNode }) {
           </NavLink>
         ))}
       </nav>
+      {who && (
+        <Sheet title="Qui regarde ?" onClose={() => setWho(false)}>
+          <div className="stack">
+            <p className="small muted" style={{ margin: 0 }}>
+              Les pourcentages des recettes, « Mes besoins » et l’affichage des chiffres suivent le profil choisi sur ce téléphone.
+            </p>
+            <div className="choice-list">
+              {profiles.map((p) => (
+                <button
+                  key={p.id}
+                  className={`choice ${p.id === active.id ? 'on' : ''}`}
+                  onClick={() => {
+                    setActiveProfile(p.id);
+                    setWho(false);
+                  }}
+                >
+                  <span className="ce">{p.sex === 'homme' ? '👨' : '👩'}</span>
+                  <strong>{p.name}</strong>
+                </button>
+              ))}
+            </div>
+            <Link to="/besoins" className="btn" onClick={() => setWho(false)}>
+              🎯 Voir les besoins de {active.name}
+            </Link>
+          </div>
+        </Sheet>
+      )}
       {more && (
         <Sheet title="Menu" onClose={() => setMore(false)}>
           <div className="menu-list" onClick={() => setMore(false)}>

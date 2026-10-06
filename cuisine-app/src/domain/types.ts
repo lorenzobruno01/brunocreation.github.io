@@ -2,7 +2,6 @@
 // Modèle de données — partagé par l'UI, la base locale, les
 // scripts de validation et le générateur IA.
 // ─────────────────────────────────────────────────────────────
-import type { NutritionProfile } from './micronutrients';
 
 export type IngredientCategory =
   | 'viande'
@@ -242,10 +241,54 @@ export interface IndexedRecipe extends Recipe {
 
 // ── Données utilisateur (persistées) ────────────────────────
 
+/** Recette cuisinée (historique partagé du foyer) */
 export interface HistoryEntry {
-  id?: number;
+  /** identifiant texte (synchronisable entre appareils) */
+  id: string;
   recipeId: string;
   date: string; // ISO
+  /** membres qui ont mangé ce repas */
+  profileIds?: string[];
+  servings?: number;
+}
+
+/** Retour d'un membre après un repas */
+export interface Feedback {
+  id: string; // `${cookedId}|${profileId}`
+  cookedId: string;
+  recipeId: string;
+  profileId: string;
+  date: string;
+  /** goût de 1 à 5 */
+  taste?: number;
+  digestion?: 'bien' | 'lourd' | 'inconfort';
+  again?: 'oui' | 'peut-etre' | 'non';
+  note?: string;
+}
+
+export interface WeightLog {
+  id: string; // `${profileId}|${date}`
+  profileId: string;
+  date: string; // AAAA-MM-JJ
+  kg: number;
+}
+
+/** Restes disponibles (« Il me reste… ») */
+export interface Leftover {
+  id: string;
+  label: string;
+  ingredientIds: string[];
+  recipeId?: string;
+  createdAt: string;
+  /** à consommer avant (AAAA-MM-JJ) */
+  useBy?: string;
+}
+
+/** Gabarit de semaine : contrainte par jour (0 = lundi) et par repas */
+export type SlotMode = 'libre' | '15' | '30' | '45' | 'long' | 'dehors' | 'restes' | 'batch';
+export interface WeekTemplate {
+  key: 'template';
+  slots: Record<string, SlotMode>; // clé `${jour}|${repas}`
 }
 
 export interface PantryItem {
@@ -263,6 +306,10 @@ export interface PlanEntry {
   slot: Slot;
   recipeId: string;
   servings: number;
+  /** restes d'un autre créneau (clé) : rien à cuisiner ni à acheter */
+  leftoverOf?: string;
+  /** date d'ajout au planning (on ne demande un avis que pour un repas prévu à l'avance) */
+  createdAt?: string;
 }
 
 export interface ShoppingItem {
@@ -283,14 +330,16 @@ export interface Settings {
   apiKey?: string;
   model?: string;
   householdName?: string;
-  /** profils nutritionnels du foyer (besoins journaliers) */
-  profiles?: NutritionProfile[];
   activeProfile?: string;
   /** le profil du foyer a été configuré (premier lancement terminé) */
   onboarded?: boolean;
   /** assistant courses : code postal et rayon de recherche (km) */
   shopCp?: string;
   shopRadius?: number;
+  /** budget courses de la semaine (€), facultatif */
+  weeklyBudget?: number;
+  /** liste de courses groupée par rayon ou par commerce */
+  shopGroup?: 'rayon' | 'commerce';
   /** planning : « nous » (tous les profils partagent les repas) ou l'id d'un profil */
   planFor?: string;
   /** créer automatiquement une recette quand une recherche ne donne rien */

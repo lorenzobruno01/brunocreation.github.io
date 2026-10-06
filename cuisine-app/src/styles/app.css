@@ -1213,8 +1213,10 @@ img {
 .shop-item .sq {
   margin-left: auto;
   font-weight: 900;
-  white-space: nowrap;
   text-align: right;
+  max-width: 38%;
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 .shop-item .sr {
   font-size: 0.76rem;
@@ -1586,4 +1588,137 @@ hr.sep {
   flex-basis: 100%;
   padding-left: 42px;
   margin-top: -4px;
+}
+
+/* ── Choix en cartes (accueil, profil) ──────────────── */
+.choice-list {
+  display: grid;
+  gap: 8px;
+}
+@media (min-width: 640px) {
+  .choice-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.choice .ce {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.choice strong {
+  display: block;
+}
+.choice .ch {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-3);
+}
+.choice.on {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+.wizard-dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.wizard-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  background: var(--line);
+}
+.wizard-dots span.on {
+  background: var(--primary);
+  width: 22px;
+}
+.needs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+@media (min-width: 640px) {
+  .needs-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.need {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px;
+  background: var(--surface);
+}
+.need .nv {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+.need .nl {
+  font-size: 0.8rem;
+  color: var(--ink-3);
+}
+.need input {
+  margin-top: 6px;
+}
+.profile-section {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.profile-section > summary {
+  font-weight: 800;
+  cursor: pointer;
+  padding: 4px 0 10px;
+}
+.who-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 120px;
+  min-height: 36px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: inherit;
+  font-weight: 800;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.who-btn span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.template-grid {
+  display: grid;
+  grid-template-columns: 34px repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  align-items: center;
+}
+.tsel {
+  min-height: 34px;
+  padding: 2px 4px;
+  font-size: 0.72rem;
+  border-radius: 8px;
+}
+.tsel.on {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+.slot .mode {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--primary-2);
 }

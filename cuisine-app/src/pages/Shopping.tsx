@@ -12,7 +12,18 @@ import { Empty, ServingsControl, useToast } from '../components/ui';
 import { RecipePicker } from '../components/RecipePicker';
 import { quickTip, nutrientGains, SHOPS, UPGRADES } from '../domain/buying';
 import { GuideCard, NearbyShops, StoreLine, useNearbyStores } from '../components/BuyingAdvice';
-import type { ShoppingAisle, ShoppingItem, StandardUnit } from '../domain/types';
+import type { Ingredient, IngredientCategory, ShoppingAisle, ShoppingItem, StandardUnit } from '../domain/types';
+import { costOf, purchaseFor } from '../config/formats';
+import { guideFor, type ShopKind } from '../domain/buying';
+import { saveSettings } from '../db/db';
+
+const SHOP_OF: Partial<Record<IngredientCategory, ShopKind>> = { viande: 'boucherie', abats: 'boucherie', volaille: 'volailler', poisson: 'poissonnerie', 'fruits-de-mer': 'poissonnerie', legume: 'primeur', fruit: 'primeur', herbe: 'primeur' };
+/** Commerce conseillé pour un ingrédient */
+export function shopOf(ing?: Ingredient): ShopKind {
+  if (!ing) return 'supermarche';
+  if (ing.category === 'laitier' && /^(comte|parmesan|beaufort|gruyere|pecorino|reblochon|camembert|roquefort|manchego|chevre)/.test(ing.id)) return 'fromagerie';
+  return SHOP_OF[ing.category] ?? (guideFor(ing)?.shops.find((s) => s !== 'bio' && s !== 'marche') as ShopKind | undefined) ?? 'supermarche';
+}
 
 interface Meta {
   generatedAt: string;
@@ -62,7 +73,8 @@ export function Shopping() {
     if (source === 'selection') {
       return [...basket.entries()].map(([id, servings]) => ({ recipe: byId.get(id)!, servings })).filter((s) => s.recipe);
     }
-    return plan.map((p) => ({ recipe: byId.get(p.recipeId)!, servings: p.servings })).filter((s) => s.recipe);
+    // les restes (portions 0) sont déjà comptés dans le plat d'origine
+    return plan.filter((p) => p.servings > 0).map((p) => ({ recipe: byId.get(p.recipeId)!, servings: p.servings })).filter((s) => s.recipe);
   }, [source, basket, plan, byId]);
 
   const generate = async () => {
@@ -89,15 +101,32 @@ export function Shopping() {
   const toggleItem = (it: ShoppingItem) => db.shopping.put({ ...it, checked: !it.checked });
   const done = items.filter((i) => i.checked).length;
 
+  const group = settings.shopGroup ?? 'rayon';
+  const purchases = useMemo(() => {
+    const m = new Map<string, { text: string; leftover: number; unit: StandardUnit; cost: number }>();
+    for (const it of items) {
+      const ing = it.ingredientId ? lookup(it.ingredientId) : undefined;
+      if (!ing || it.unit === 'autre' || !it.qty) continue;
+      const p = purchaseFor(ing, it.qty);
+      m.set(it.key, { text: p.text, leftover: p.leftover, unit: p.unit, cost: costOf(ing, p.bought) });
+    }
+    return m;
+  }, [items, lookup]);
+  const totalCost = [...purchases.values()].reduce((s, p) => s + p.cost, 0);
+  const leftToBuy = items.filter((i) => !i.checked).reduce((s, i) => s + (purchases.get(i.key)?.cost ?? 0), 0);
+
   const byAisle = useMemo(() => {
-    const m = new Map<ShoppingAisle, ShoppingItem[]>();
+    const m = new Map<string, ShoppingItem[]>();
     for (const it of items) {
       if (hideChecked && it.checked) continue;
-      (m.get(it.aisle) ?? m.set(it.aisle, []).get(it.aisle)!).push(it);
+      const k = group === 'commerce' ? shopOf(it.ingredientId ? lookup(it.ingredientId) : undefined) : it.aisle;
+      (m.get(k) ?? m.set(k, []).get(k)!).push(it);
     }
     for (const list of m.values()) list.sort((a, b) => Number(a.checked) - Number(b.checked) || a.label.localeCompare(b.label, 'fr'));
-    return [...m.entries()].sort((a, b) => AISLES[a[0]].order - AISLES[b[0]].order);
-  }, [items, hideChecked]);
+    const order = (k: string) => (group === 'commerce' ? Object.keys(SHOPS).indexOf(k) : AISLES[k as ShoppingAisle].order);
+    return [...m.entries()].sort((a, b) => order(a[0]) - order(b[0]));
+  }, [items, hideChecked, group, lookup]);
+  const groupTitle = (k: string) => (group === 'commerce' ? `${SHOPS[k as ShopKind].emoji} ${SHOPS[k as ShopKind].label}` : `${AISLES[k as ShoppingAisle].emoji} ${AISLES[k as ShoppingAisle].label}`);
 
   const share = async () => {
     const text = shoppingToText(items, lookup);
@@ -227,6 +256,14 @@ export function Shopping() {
                     {meta ? `${meta.source} · ` : ''}
                     {done}/{items.length} dans le panier
                   </span>
+                  <div className="segmented" style={{ minWidth: 200 }}>
+                    <button className={group === 'rayon' ? 'on' : ''} onClick={() => saveSettings({ shopGroup: 'rayon' })}>
+                      Par rayon
+                    </button>
+                    <button className={group === 'commerce' ? 'on' : ''} onClick={() => saveSettings({ shopGroup: 'commerce' })}>
+                      Par commerce
+                    </button>
+                  </div>
                   <div className="row">
                     <button className={`chip ${hideChecked ? 'on' : ''}`} onClick={() => setHideChecked(!hideChecked)}>
                       Masquer cochés
@@ -263,11 +300,37 @@ export function Shopping() {
                 </details>
               )}
 
+              <div className="callout info small stack" style={{ marginBottom: 14, gap: 6 }} aria-label="Budget">
+                <div className="row between nowrap">
+                  <span>
+                    💶 Estimation : <strong>{Math.round(totalCost)} €</strong>
+                    {done > 0 ? ` · reste ${Math.round(leftToBuy)} € à acheter` : ''}
+                  </span>
+                  <label className="row nowrap small" style={{ gap: 4 }}>
+                    Budget
+                    <input
+                      className="input"
+                      style={{ width: 80, minHeight: 34, padding: '4px 8px' }}
+                      inputMode="numeric"
+                      aria-label="Budget de la semaine (€)"
+                      defaultValue={settings.weeklyBudget ?? ''}
+                      placeholder="€"
+                      onBlur={(e) => saveSettings({ weeklyBudget: Number(e.target.value) > 0 ? Number(e.target.value) : undefined })}
+                    />
+                  </label>
+                </div>
+                {settings.weeklyBudget && totalCost > settings.weeklyBudget && (
+                  <span>
+                    ⚠️ Au-dessus du budget de {Math.round(totalCost - settings.weeklyBudget)} €. Pistes : morceaux à mijoter (paleron, joue, jarret), cuisses plutôt que filets, sardines et maquereaux, abats, légumes de saison au marché en fin de matinée. Le générateur tient compte du budget à la prochaine semaine.
+                  </span>
+                )}
+                <span className="muted">Prix moyens en qualité recommandée (fermier, Label Rouge, bio) : un ordre de grandeur, pas un ticket de caisse.</span>
+              </div>
               <NearbyShops shops={shops} />
               {byAisle.map(([aisle, list]) => (
                 <section key={aisle} className="aisle">
                   <h3>
-                    {AISLES[aisle].emoji} {AISLES[aisle].label} <span className="tag">{list.filter((i) => !i.checked).length}</span>
+                    {groupTitle(aisle)} <span className="tag">{list.filter((i) => !i.checked).length}</span>
                   </h3>
                   <div className="card">
                     {list.map((it) => {
@@ -280,8 +343,14 @@ export function Shopping() {
                               {ing?.emoji ?? '•'} {cap(it.label)}
                             </div>
                             {it.recipes.length > 0 && <div className="sr">pour : {it.recipes.join(', ')}</div>}
+                            {purchases.get(it.key) && (
+                              <div className="sr">
+                                besoin : {itemQtyLabel(it, ing?.pieceWeight)}
+                                {purchases.get(it.key)!.leftover > 0.05 * it.qty && purchases.get(it.key)!.leftover >= (it.unit === 'piece' ? 1 : 30) ? ` · il en restera ${formatStandard(purchases.get(it.key)!.leftover, it.unit as StandardUnit)}` : ''} · ≈ {purchases.get(it.key)!.cost.toFixed(2).replace('.', ',')} €
+                              </div>
+                            )}
                           </div>
-                          <span className="sq">{itemQtyLabel(it, ing?.pieceWeight)}</span>
+                          <span className="sq">{purchases.get(it.key)?.text ?? itemQtyLabel(it, ing?.pieceWeight)}</span>
                           {it.key.startsWith('custom:') && (
                             <button
                               className="icon-btn"

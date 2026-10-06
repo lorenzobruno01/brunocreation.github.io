@@ -6,6 +6,9 @@ import { currentSeason } from '../domain/season';
 import { SEASONS } from '../domain/labels';
 import type { IndexedRecipe } from '../domain/types';
 import { similarity } from '../domain/similarity';
+import { HomeToday } from '../components/HomeToday';
+import { useStoredProfiles } from '../hooks/library';
+import { useActiveProfile } from '../hooks/activeProfile';
 
 /** Graine du jour : les suggestions changent chaque jour mais restent stables dans la journée */
 function dailySeed(): number {
@@ -32,6 +35,9 @@ function pickVaried(pool: IndexedRecipe[], n: number, score: (r: IndexedRecipe) 
 export function Home() {
   const { recipes } = useLibrary();
   const { favorites, lastCooked, fridge, pantry } = useUserData();
+  const stored = useStoredProfiles();
+  const me = useActiveProfile(stored ?? []);
+  const firstName = stored?.length && me.name && !/^(moi|personne \d+)$/i.test(me.name) ? ` ${me.name}` : '';
   const season = currentSeason();
   const hour = new Date().getHours();
   const greeting = hour < 11 ? 'Bonjour' : hour < 18 ? 'Bon après-midi' : 'Bonsoir';
@@ -82,7 +88,10 @@ export function Home() {
     <div className="page">
       <section className="hero">
         <span className="deco">🥘</span>
-        <h1>{greeting} !</h1>
+        <h1>
+          {greeting}
+          {firstName} !
+        </h1>
         <p>Que voulez-vous cuisiner ? {recipes.length} recettes vous attendent.</p>
         <div className="quick-actions">
           <Link className="qa" to="/recettes?focus=1">
@@ -102,6 +111,8 @@ export function Home() {
           </Link>
         </div>
       </section>
+
+      <HomeToday />
 
       <Row title={`${s.emoji} Idées du moment`} subtitle={`Sélection de ${s.label.toLowerCase()} — renouvelée chaque jour`} items={sections.moment} link="/recettes" />
       <Row title="🌿 Les plus denses en nutriments" subtitle="Vitamines, minéraux, oméga-3 : le meilleur pour la santé" items={sections.dense} link="/recettes?sort=densite" />

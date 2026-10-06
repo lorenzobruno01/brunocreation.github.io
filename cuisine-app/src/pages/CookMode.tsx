@@ -109,9 +109,9 @@ export function CookMode() {
             <button
               className="btn primary lg"
               onClick={async () => {
-                await markCooked(recipe.id);
+                const e = await markCooked(recipe.id, undefined, servings);
                 toast('Ajoutée à l’historique');
-                navigate(`/recette/${recipe.id}`);
+                navigate(`/recette/${recipe.id}?avis=${e.id}`);
               }}
             >
               ✅ Marquer comme cuisinée

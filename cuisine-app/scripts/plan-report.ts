@@ -10,6 +10,8 @@ import { indexRecipe } from '../src/domain/indexing';
 import { computeDetailed, DEFAULT_PROFILES, NUTRIENTS } from '../src/domain/micronutrients';
 import { analyzeDigestion, compatibility, DIET_BY_ID, type DietProfileId } from '../src/domain/digestion';
 import { dayReport, generateNutriWeek, householdEaters } from '../src/domain/nutriPlanner';
+import { analyzeWeek } from '../src/domain/week';
+import { newProfile } from '../src/domain/profile';
 import type { Recipe, Slot } from '../src/domain/types';
 
 const diets = (process.argv[2] ?? 'wapf').split(',') as DietProfileId[];
@@ -31,9 +33,16 @@ const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
 const count = (s: Slot) => recipes.filter((r) => (s === 'matin' ? r.mealTypes.includes('petit-dejeuner') : s === 'collation' ? r.mealTypes.includes('collation') : r.mealTypes.includes('dejeuner') || r.mealTypes.includes('diner'))).length;
 console.log(`Profil ${diets.join(' + ')} : ${recipes.length} recettes (matin ${count('matin')}, midi/soir ${count('midi')}, collation ${count('collation')})`);
 
-const eaters = householdEaters(DEFAULT_PROFILES);
+// profils réalistes : lui prend du muscle (4 séances), elle reste en forme
+const PROFILES = process.env.DEFAULTS
+  ? DEFAULT_PROFILES
+  : [
+      newProfile({ id: 'lui', name: 'Lui', sex: 'homme', age: 30, height: 182, weight: 76, daily: 'sedentaire', sport: { sessions: 4, type: 'musculation', minutes: 60 }, trainingDays: [0, 1, 3, 4], objective: 'prise-de-muscle' }),
+      newProfile({ id: 'elle', name: 'Elle', sex: 'femme', age: 29, height: 164, weight: 56, daily: 'leger', objective: 'maintien' }),
+    ];
+const eaters = householdEaters(PROFILES);
 const dates = ['2026-10-05', '2026-10-06', '2026-10-07', '2026-10-08', '2026-10-09', '2026-10-10', '2026-10-11'];
-const plan = generateNutriWeek({ recipes, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots, servings: 2, seed: 1, eaters }, (id) => lookup(id)?.category);
+const plan = generateNutriWeek({ recipes, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots, servings: 2, seed: Number(process.env.SEED ?? 1), eaters, lookup }, (id) => lookup(id)?.category);
 const byId = new Map(recipes.map((r) => [r.id, r]));
 console.log(`${plan.length} créneaux remplis, ${new Set(plan.map((p) => p.recipeId)).size} recettes différentes`);
 const gaps = new Map<string, number>();
@@ -51,3 +60,11 @@ for (const [k, n] of [...gaps].sort((a, b) => b[1] - a[1])) {
   const [who, key] = k.split(' · ');
   console.log(`  < 80 % : ${who} · ${label(key)} (${n} j)`);
 }
+
+console.log('— Semaine (moyenne des jours, parts du jour, compléments compris) —');
+const t0 = Date.now();
+for (const w of analyzeWeek(plan, byId, PROFILES, lookup)) {
+  const low = w.gaps.map((g) => `${g.label.replace(/ \(.*\)/, '')} ${Math.round(w.pct[g.key])} %`);
+  console.log(`${w.profile.name} : couverture ${w.coverage.toFixed(1)} % · manques : ${low.join(', ') || 'aucun'} · excès : ${w.excess.map((e) => e.def.label).join(', ') || 'aucun'}`);
+}
+void t0;

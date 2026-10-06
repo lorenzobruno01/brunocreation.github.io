@@ -10,6 +10,7 @@ import { db } from '../db/db';
 import { useNavigate } from 'react-router-dom';
 import { filterByMode, matchRecipes, availableCount, type MatchMode, type MatchResult } from '../domain/matching';
 import { setFridge } from '../db/db';
+import { LeftoversCard } from '../components/Leftovers';
 import { MEAL_TYPES } from '../domain/labels';
 import type { MealType } from '../domain/types';
 
@@ -89,6 +90,8 @@ export function Fridge() {
           })}
         </div>
       )}
+
+      {tab !== 'avance' && <LeftoversCard fridge={fridge} />}
 
       {tab === 'avance' ? (
         <BooleanSearch />
