@@ -132,9 +132,14 @@ begin
     execute format('drop trigger if exists horodatage on public.%I', t);
     execute format('create trigger horodatage before insert or update on public.%I for each row execute function public.touch_row()', t);
     -- temps réel (liste de courses cochée en direct, planning partagé…)
-    if not exists (select 1 from pg_publication_tables where pubname = 'supabase_realtime' and schemaname = 'public' and tablename = t) then
-      execute format('alter publication supabase_realtime add table public.%I', t);
-    end if;
+    -- facultatif : si la publication n'existe pas ou refuse l'ajout, on continue (l'appli relève toutes les 20 s)
+    begin
+      if not exists (select 1 from pg_publication_tables where pubname = 'supabase_realtime' and schemaname = 'public' and tablename = t) then
+        execute format('alter publication supabase_realtime add table public.%I', t);
+      end if;
+    exception when others then
+      raise notice 'temps réel non activé pour % : %', t, sqlerrm;
+    end;
   end loop;
 end $$;
 
