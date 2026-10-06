@@ -4,10 +4,6 @@ import { useLibrary, useUserData } from '../hooks/library';
 import { IngredientPicker } from '../components/IngredientPicker';
 import { RecipeCard } from '../components/RecipeCard';
 import { Empty, useProgressive } from '../components/ui';
-import { BooleanSearch } from '../components/BooleanSearch';
-import { composeRecipe } from '../domain/composer';
-import { db } from '../db/db';
-import { useNavigate } from 'react-router-dom';
 import { filterByMode, matchRecipes, availableCount, type MatchMode, type MatchResult } from '../domain/matching';
 import { setFridge } from '../db/db';
 import { LeftoversCard } from '../components/Leftovers';
@@ -17,10 +13,11 @@ import type { MealType } from '../domain/types';
 export function Fridge() {
   const { recipes, lookup } = useLibrary();
   const { fridge, pantry } = useUserData();
-  const [mode, setMode] = useState<MatchMode>('maintenant');
+  const [mode, setMode] = useState<MatchMode>('tout');
   const [usePantry, setUsePantry] = useState(true);
   const [meal, setMeal] = useState<MealType | null>(null);
-  const [tab, setTab] = useState<'choix' | 'resultats' | 'avance'>(fridge.size ? 'resultats' : 'choix');
+  const [tab, setTab] = useState<'choix' | 'resultats'>(fridge.size ? 'resultats' : 'choix');
+  const [combo, setCombo] = useState<'tous' | 'un' | null>(null);
 
   const usage = useMemo(() => {
     const m = new Map<string, number>();
@@ -40,11 +37,16 @@ export function Fridge() {
     return matchRecipes(pool, fridge, usePantry ? pantry : new Set(), lookup);
   }, [recipes, fridge, pantry, usePantry, lookup, meal]);
 
+  // « tous mes ingrédients » par défaut dès 2 ingrédients cochés
+  const together = (combo ?? (fridge.size >= 2 ? 'tous' : 'un')) === 'tous';
+  const withAll = useMemo(() => all.filter((m) => m.covered >= fridge.size), [all, fridge.size]);
+  const base = together ? withAll : all;
   const counts = useMemo(
-    () => ({ maintenant: filterByMode(all, 'maintenant').length, presque: filterByMode(all, 'presque').length, tout: all.length }),
-    [all],
+    () => ({ maintenant: filterByMode(base, 'maintenant').length, presque: filterByMode(base, 'presque').length, tout: base.length }),
+    [base],
   );
-  const results = useMemo(() => filterByMode(all, mode), [all, mode]);
+  const results = useMemo(() => filterByMode(base, mode), [base, mode]);
+  const names = [...fridge].map((id) => lookup(id)?.name).filter(Boolean) as string[];
   const { visible, sentinel } = useProgressive(results, 24);
 
   return (
@@ -65,10 +67,7 @@ export function Fridge() {
               🍽️ Recettes
               <span className="cnt">{counts.tout} correspondance{counts.tout > 1 ? 's' : ''}</span>
             </button>
-            <button className={tab === 'avance' ? 'on' : ''} onClick={() => setTab('avance')}>
-              🔀 ET / OU
-              <span className="cnt">recherche précise</span>
-            </button>
+
           </div>
           {fridge.size > 0 && (
             <button className="btn sm ghost" onClick={() => setFridge([])}>
@@ -78,7 +77,7 @@ export function Fridge() {
         </div>
       </div>
 
-      {fridge.size > 0 && tab !== 'avance' && (
+      {fridge.size > 0 && (
         <div className="chips" style={{ margin: '4px 0 12px' }}>
           {[...fridge].map((id) => {
             const i = lookup(id);
@@ -91,32 +90,40 @@ export function Fridge() {
         </div>
       )}
 
-      {tab !== 'avance' && <LeftoversCard fridge={fridge} />}
+      <LeftoversCard fridge={fridge} />
 
-      {tab === 'avance' ? (
-        <BooleanSearch />
-      ) : tab === 'choix' ? (
+      {tab === 'choix' ? (
         <>
           <IngredientPicker selected={fridge} onToggle={toggle} marked={pantry} markedLabel="placard" usage={usage} />
           {fridge.size > 0 && (
             <div style={{ position: 'sticky', bottom: 'calc(var(--tabbar-h) + 12px)', marginTop: 16 }}>
               <button className="btn primary lg block" onClick={() => setTab('resultats')} style={{ boxShadow: 'var(--shadow-lg)' }}>
-                Voir les {counts.tout} recettes →
+                {fridge.size >= 2 ? `Voir les ${withAll.length} recettes avec tous ces ingrédients →` : `Voir les ${all.length} recettes →`}
               </button>
             </div>
           )}
         </>
       ) : (
         <>
-          <div className="segmented" style={{ marginBottom: 10 }}>
-            <button className={mode === 'maintenant' ? 'on' : ''} onClick={() => setMode('maintenant')}>
-              ✅ Je peux cuisiner maintenant<span className="cnt">{counts.maintenant}</span>
+          {fridge.size >= 2 && (
+            <div className="segmented" style={{ marginBottom: 10 }} role="group" aria-label="Ingrédients à utiliser">
+              <button className={together ? 'on' : ''} onClick={() => setCombo('tous')}>
+                🧺 Avec tous mes ingrédients<span className="cnt">{withAll.length} recette{withAll.length > 1 ? 's' : ''}</span>
+              </button>
+              <button className={!together ? 'on' : ''} onClick={() => setCombo('un')}>
+                🔀 Avec au moins un<span className="cnt">{all.length} recette{all.length > 1 ? 's' : ''}</span>
+              </button>
+            </div>
+          )}
+          <div className="chips scroll" style={{ marginBottom: 10 }}>
+            <button className={`chip ${mode === 'tout' ? 'on' : ''}`} onClick={() => setMode('tout')}>
+              👀 Toutes ({counts.tout})
             </button>
-            <button className={mode === 'presque' ? 'on' : ''} onClick={() => setMode('presque')}>
-              🛒 Il me manque presque rien<span className="cnt">{counts.presque}</span>
+            <button className={`chip ${mode === 'maintenant' ? 'on' : ''}`} onClick={() => setMode('maintenant')}>
+              ✅ Sans rien acheter ({counts.maintenant})
             </button>
-            <button className={mode === 'tout' ? 'on' : ''} onClick={() => setMode('tout')}>
-              👀 Montre-moi tout<span className="cnt">{counts.tout}</span>
+            <button className={`chip ${mode === 'presque' ? 'on' : ''}`} onClick={() => setMode('presque')}>
+              🛒 Il manque 1 ou 2 choses ({counts.presque})
             </button>
           </div>
           <div className="chips scroll" style={{ marginBottom: 12 }}>
@@ -138,11 +145,15 @@ export function Fridge() {
             </div>
           )}
           {results.length === 0 ? (
-            <Empty emoji="🧐" title={mode === 'maintenant' ? 'Rien de réalisable à 100 % pour l’instant' : 'Aucune recette'}>
-              <ComposeFromFridge />
-              {mode === 'maintenant' && counts.presque > 0 && (
-                <button className="btn" onClick={() => setMode('presque')}>
-                  Voir les {counts.presque} recettes où il manque 1–2 ingrédients
+            <Empty emoji="🧐" title={together && !withAll.length ? `Aucune recette avec à la fois ${names.join(', ')}` : mode === 'maintenant' ? 'Rien de réalisable sans courses pour l’instant' : 'Aucune recette'}>
+              {together && !withAll.length && all.length > 0 && (
+                <button className="btn primary" onClick={() => setCombo('un')}>
+                  Voir les {all.length} recettes avec au moins un de ces ingrédients
+                </button>
+              )}
+              {mode !== 'tout' && counts.tout > 0 && (
+                <button className="btn" onClick={() => setMode('tout')}>
+                  Voir les {counts.tout} recettes, même s’il manque des ingrédients
                 </button>
               )}
             </Empty>
@@ -185,29 +196,5 @@ function MatchCard({ m }: { m: MatchResult }) {
         </div>
       )}
     </div>
-  );
-}
-
-/** Compose une recette (gratuit, sans IA) à partir des ingrédients sélectionnés */
-function ComposeFromFridge() {
-  const { lookup, recipes } = useLibrary();
-  const { fridge, pantry, settings } = useUserData();
-  const navigate = useNavigate();
-  const go = async () => {
-    const ings = [...fridge].map(lookup).filter(Boolean);
-    const rank = (c: string) => (['viande', 'volaille', 'abats', 'poisson', 'fruits-de-mer', 'oeufs'].includes(c) ? 0 : c === 'feculent' ? 1 : c === 'legume' ? 2 : 3);
-    const chosen = ings.sort((a, b) => rank(a!.category) - rank(b!.category)).slice(0, 4);
-    const query = { groups: chosen.map((i) => [{ label: i!.name, ids: [i!.id] }]), exclude: [] };
-    const r = composeRecipe(query, lookup, { servings: settings.defaultServings, available: new Set([...fridge, ...pantry]), existingNames: new Set(recipes.map((x) => x.name.toLowerCase())) });
-    if (!r) return;
-    await db.recipes.put(r);
-    navigate(`/recette/${r.id}`);
-  };
-  return (
-    <p>
-      <button className="btn primary" onClick={go}>
-        ✨ Composer une recette avec mes ingrédients
-      </button>
-    </p>
   );
 }

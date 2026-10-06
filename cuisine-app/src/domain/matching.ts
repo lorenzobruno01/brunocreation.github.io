@@ -20,13 +20,16 @@ export const EQUIVALENTS: string[][] = [
   ['pain-seigle', 'pain-levain'],
   ['beurre', 'beurre-clarifie'],
   ['lait', 'kefir'],
-  ['poulet-cuisse', 'poulet-haut-cuisse-desosse'],
+  ['poulet-cuisse', 'poulet-haut-cuisse-desosse', 'poulet-blanc', 'poulet-aile', 'poulet-entier'],
+  ['dinde-escalope', 'dinde-cuisse', 'dinde-hachee'],
+  ['boeuf-paleron', 'boeuf-joue', 'boeuf-jarret'],
   ['bouillon-volaille', 'bouillon-boeuf'],
   ['lardons', 'bacon', 'pancetta'],
   ['cabillaud', 'bar', 'sole', 'lotte'],
   ['laitue', 'mache'],
   ['courge-butternut', 'potimarron'],
   ['champignon', 'champignon-forestier'],
+  ['tomates-concassees', 'concentre-tomate'],
   ['framboise', 'myrtille', 'fraise'],
   ['peche', 'nectarine', 'abricot'],
   ['orange', 'clementine'],
@@ -50,6 +53,8 @@ export interface MatchResult {
   missing: string[]; // ids manquants importants
   missingMinor: string[]; // condiments / épicerie manquants
   usedSelected: number; // nb d'ingrédients sélectionnés par l'utilisateur utilisés
+  /** nb d'ingrédients cochés présents dans la recette (directement ou par un équivalent) */
+  covered: number;
   score: number;
 }
 
@@ -109,15 +114,18 @@ export function matchRecipes(
       (isMinor(ing) ? missingMinor : missing).push(id);
     }
     if (selected.size && usedSelected === 0) continue;
+    const inRecipe = new Set(recipe.ingredients.map((i) => i.id));
+    let covered = 0;
+    for (const id of selected) if (inRecipe.has(id) || equivalentsOf(id).some((e) => inRecipe.has(e))) covered++;
     const ratio = wTotal ? wHave / wTotal : 0;
     // Priorité : peu de manques, beaucoup d'ingrédients sélectionnés utilisés, bon ratio pondéré
     const score =
       ratio * 100 +
       usedSelected * 12 +
-      (selected.size ? (usedSelected / selected.size) * 25 : 0) -
+      (selected.size ? (covered / selected.size) * 40 : 0) -
       missing.length * 14 -
       missingMinor.length * 4;
-    out.push({ recipe, total: main.length, have, substitutes, missing, missingMinor, usedSelected, score });
+    out.push({ recipe, total: main.length, have, substitutes, missing, missingMinor, usedSelected, covered, score });
   }
   return out.sort((a, b) => b.score - a.score);
 }

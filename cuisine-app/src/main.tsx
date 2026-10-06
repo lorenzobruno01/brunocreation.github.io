@@ -24,11 +24,13 @@ import { Learned } from './pages/Learned';
 import { Weight } from './pages/Weight';
 import { Batch } from './pages/Batch';
 import { StravaReturn } from './components/StravaReturn';
+import { WhoAmI } from './components/WhoAmI';
 import { MyWeek } from './pages/MyWeek';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
+import { removeComposedRecipes } from './db/db';
 import { installDomGuard, logIncident } from './domGuard';
 
 // Extensions de navigateur qui modifient la page : éviter le plantage au changement de page
@@ -49,6 +51,8 @@ navigator.storage?.persist?.().catch(() => {});
 
 // Compte et synchronisation (si activés dans src/cloud/config.ts)
 initCloud();
+// après le démarrage de la synchronisation, pour que les suppressions partent aussi vers le foyer
+setTimeout(() => void removeComposedRecipes(), 4000);
 
 function ScrollTop() {
   const { pathname } = useLocation();
@@ -105,6 +109,7 @@ function Shell() {
             </ErrorBoundary>
             <Onboarding />
             <StravaReturn />
+            <WhoAmI />
           </Layout>
         }
       />

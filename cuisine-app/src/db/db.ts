@@ -238,3 +238,30 @@ export async function importData(json: string, mode: 'merge' | 'replace' = 'merg
     }
   });
 }
+
+/**
+ * Nettoyage unique : l'ancien « créateur de recettes » produisait des
+ * doublons de recettes existantes (« … (version maison) »). Ils sont
+ * retirés (et du foyer, via la synchronisation). Les recettes ajoutées à
+ * la main ne sont pas touchées.
+ */
+export async function removeComposedRecipes(): Promise<number> {
+  const KEY = 'cuisine.cleanup.composer';
+  try {
+    if (localStorage.getItem(KEY)) return 0;
+  } catch {
+    return 0;
+  }
+  const ids = (await db.recipes.toArray()).filter((r) => r.id.startsWith('maison-') && r.tags?.includes('création maison')).map((r) => r.id);
+  if (ids.length) {
+    await db.recipes.bulkDelete(ids);
+    await db.favorites.bulkDelete(ids);
+    await db.basket.bulkDelete(ids);
+  }
+  try {
+    localStorage.setItem(KEY, '1');
+  } catch {
+    /* indisponible */
+  }
+  return ids.length;
+}
