@@ -134,6 +134,7 @@ export function Planner() {
       constraints: opts.constraints,
       eaters,
       lookup,
+      feedback: await db.feedback.toArray(),
     };
     const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : generateWeek(ctx, (id) => lookup(id)?.category);
     // quantité à cuisiner = somme des parts du jour (courses au plus juste)

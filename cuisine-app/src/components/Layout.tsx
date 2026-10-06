@@ -23,6 +23,8 @@ const MORE = [
   { to: '/sources', label: 'Sources & méthode nutritionnelle', icon: '📚' },
   { to: '/compte', label: 'Mon compte', icon: '👤' },
   { to: '/besoins', label: 'Mes besoins', icon: '🎯' },
+  { to: '/poids', label: 'Mon poids', icon: '⚖️' },
+  { to: '/appris', label: 'Mes avis et ce que l’appli a appris', icon: '🧠' },
   { to: '/reglages', label: 'Mon profil & réglages', icon: '⚙️' },
 ];
 

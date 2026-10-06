@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useLibrary, useStoredProfiles, useUserData } from '../hooks/library';
 import { recipeConflict } from '../domain/allergens';
@@ -14,6 +14,7 @@ import { findSimilar } from '../domain/similarity';
 import { equivalentsOf } from '../domain/matching';
 import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
+import { FeedbackSheet } from '../components/FeedbackSheet';
 import { NutritionPanel } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
@@ -24,6 +25,8 @@ export function RecipeDetail() {
   const { id } = useParams();
   const hideNumbers = useHideNumbers();
   const household = useStoredProfiles() ?? [];
+  const [search] = useSearchParams();
+  const [feedbackFor, setFeedbackFor] = useState<{ cookedId: string; date: string } | null>(() => (search.get('avis') ? { cookedId: search.get('avis')!, date: new Date().toISOString() } : null));
   const { byId, recipes, lookup, seedIds, diets } = useLibrary();
   const { favorites, basket, pantry, fridge, settings } = useUserData();
   const recipe = id ? byId.get(id) : undefined;
@@ -108,8 +111,9 @@ export function RecipeDetail() {
             <button
               className="btn"
               onClick={async () => {
-                await markCooked(recipe.id);
+                const e = await markCooked(recipe.id, household.map((p) => p.id), n);
                 toast('Ajoutée à l’historique 🕒');
+                setFeedbackFor({ cookedId: e.id, date: e.date });
               }}
             >
               ✅ J’ai cuisiné ce plat
@@ -249,6 +253,17 @@ export function RecipeDetail() {
 
       {planOpen && <AddToPlanSheet recipe={recipe} servings={n} onClose={() => setPlanOpen(false)} />}
       {subFor && <SubstituteSheet recipe={recipe} ingredientId={subFor} onClose={() => setSubFor(null)} />}
+      {feedbackFor && (
+        <FeedbackSheet
+          cookedId={feedbackFor.cookedId}
+          recipeId={recipe.id}
+          date={feedbackFor.date}
+          onClose={() => {
+            setFeedbackFor(null);
+            if (search.get('avis')) navigate(`/recette/${recipe.id}`, { replace: true });
+          }}
+        />
+      )}
     </div>
   );
 }

@@ -7,13 +7,14 @@
 // (on remplace créneau par créneau le plat qui améliore le plus
 // la couverture globale), plusieurs passes.
 // ─────────────────────────────────────────────────────────────
-import type { IndexedRecipe, PlanEntry, Slot } from './types';
+import type { Feedback, IndexedRecipe, PlanEntry, Slot } from './types';
 import { dailyRef, NUTRIENTS, type NutritionProfile } from './micronutrients';
 import { generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
 import { currentSeason } from './season';
 import type { IngredientLookup } from './indexing';
 import { dayKcal, needs } from './profile';
 import { preferenceBonus, recipeConflict } from './allergens';
+import { learnedBonus, recipeScores, suspectIngredients } from './learning';
 import { SHARE_LIMITS, SLOT_SHARE } from './shares';
 
 /** Nutriments visés (le sodium est une limite, le chlorure suit le sodium) */
@@ -98,6 +99,8 @@ export interface NutriPlanContext extends PlannerContext {
   passes?: number;
   /** base d'ingrédients : allergies, intolérances et goûts de chacun */
   lookup?: IngredientLookup;
+  /** retours après les repas : plats aimés, à ne pas refaire, ingrédients suspects */
+  feedback?: Feedback[];
 }
 
 function eatersOf(ctx: NutriPlanContext): Eater[] {
@@ -308,7 +311,12 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
   }
   const vecs = new Map<string, Float64Array>();
   for (const r of byId.values()) vecs.set(r.id, microVec(r));
-  const bonus = (r: IndexedRecipe) => profiles.reduce((s, p) => s + preferenceBonus(r, p), 0);
+  const learned = profiles.map((p) => ({
+    scores: recipeScores(ctx.feedback ?? [], p.id),
+    suspects: new Set(input.lookup && ctx.feedback?.length ? suspectIngredients(ctx.feedback, p.id, (id) => input.recipes.find((r) => r.id === id), input.lookup, p.learnDismissed).map((x) => x.ingredient.id) : []),
+  }));
+  const bonus = (r: IndexedRecipe) =>
+    profiles.reduce((s, p, i) => s + preferenceBonus(r, p) + learnedBonus(learned[i].scores, r.id) - r.ingredients.filter((x) => learned[i].suspects.has(x.id)).length * 6, 0);
 
   // 1. semaine variée de départ
   const start = generateWeek(ctx, categoryOf);

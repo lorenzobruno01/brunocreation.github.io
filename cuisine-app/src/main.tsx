@@ -20,6 +20,8 @@ import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
 import { Needs } from './pages/Needs';
 import { MyDay } from './pages/MyDay';
+import { Learned } from './pages/Learned';
+import { Weight } from './pages/Weight';
 import { MyWeek } from './pages/MyWeek';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
@@ -87,6 +89,8 @@ function Shell() {
                 <Route path="/reglages" element={<Settings />} />
                 <Route path="/besoins" element={<Needs />} />
                 <Route path="/ma-journee" element={<MyDay />} />
+                <Route path="/appris" element={<Learned />} />
+                <Route path="/poids" element={<Weight />} />
                 <Route path="/ma-semaine" element={<MyWeek />} />
                 <Route path="/besoins/:id" element={<Needs />} />
                 <Route path="/sources" element={<Sources />} />

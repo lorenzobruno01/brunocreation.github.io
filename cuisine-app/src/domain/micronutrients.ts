@@ -194,6 +194,12 @@ export interface NutritionProfile {
   hideNumbers?: boolean;
   /** cibles saisies à la main (remplacent le calcul) */
   overrides?: { kcal?: number; protein?: number; fat?: number; carbs?: number };
+  /** ajustements acceptés après un bilan du poids */
+  adjustments?: Array<{ date: string; from: number; to: number; reason: string }>;
+  /** bilan du poids reporté jusqu'à cette date */
+  reviewSnoozedUntil?: string;
+  /** ingrédients suspects écartés à tort (« ce n'est pas lui ») */
+  learnDismissed?: string[];
   createdAt?: string;
   updatedAt?: string;
 }

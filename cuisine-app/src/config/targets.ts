@@ -120,6 +120,31 @@ export const SAFETY = {
   adultAge: 18,
 };
 
+/**
+ * Bilan du poids sur 14 jours : évolution attendue par semaine, en % du
+ * poids. Repères : Helms et al. 2014 (perte 0,5 à 1 %/sem.), Iraki et al.
+ * 2019 (prise de muscle ≈ 0,25 à 0,5 %/mois chez le pratiquant entraîné,
+ * plus chez le débutant). 1 kg de variation ≈ 7 700 kcal.
+ */
+export const WEIGHT_REVIEW = {
+  days: 14,
+  minWeighIns: 6,
+  /** fourchette visée, % du poids par semaine */
+  expected: {
+    'prise-de-muscle': { prudent: [0.05, 0.2], standard: [0.1, 0.3] },
+    maintien: { prudent: [-0.15, 0.15], standard: [-0.15, 0.15] },
+    'perte-de-poids': { prudent: [-0.5, -0.2], standard: [-0.8, -0.4] },
+    performance: { prudent: [-0.15, 0.15], standard: [-0.15, 0.15] },
+  } as Record<Objective, Record<Pace, [number, number]>>,
+  kcalPerKg: 7700,
+  /** pas d'ajustement proposé */
+  step: 50,
+  maxStep: 300,
+  minStep: 100,
+  /** lissage de la courbe (moyenne mobile exponentielle) */
+  smoothing: 0.25,
+};
+
 /** Repères d'affichage (« Mes besoins ») */
 export const EXPLAIN = {
   disclaimer:

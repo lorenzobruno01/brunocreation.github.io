@@ -11,6 +11,10 @@ import { formatDateFr, deName } from '../components/format';
 import { Empty } from '../components/ui';
 import { RecipeVisual } from '../components/RecipeVisual';
 import type { Slot } from '../domain/types';
+import { usePendingFeedback } from '../hooks/feedback';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '../db/db';
+import { reviewWeight } from '../domain/weight';
 
 const ORDER: Slot[] = ['matin', 'midi', 'collation', 'soir'];
 const fr = (v: number, d = 0) => v.toLocaleString('fr-FR', { maximumFractionDigits: d });
@@ -37,6 +41,10 @@ export function MyDay() {
   const me = week?.profile ?? active;
   const day = week?.days.find((x) => x.date === date);
   const hide = !!me.hideNumbers;
+  const pending = usePendingFeedback(me.id);
+  const logs = useLiveQuery(() => db.weights.where('profileId').equals(me.id).toArray(), [me.id]);
+  const review = logs && !hide ? reviewWeight(me, logs) : null;
+  const showReview = review?.proposal && !(me.reviewSnoozedUntil && me.reviewSnoozedUntil > isoDate(new Date()));
   const others = weeks.filter((_, i) => i !== wi).map((w) => w.days.find((x) => x.date === date)).filter(Boolean);
 
   const lows = day
@@ -63,6 +71,20 @@ export function MyDay() {
           ›
         </button>
       </div>
+      {pending.length > 0 && (
+        <Link to="/appris" className="callout info small row between nowrap" style={{ textDecoration: 'none', color: 'inherit', margin: 0 }}>
+          <span>
+            💬 {pending.length} repas attend{pending.length > 1 ? 'ent' : ''} votre avis
+          </span>
+          <span>›</span>
+        </Link>
+      )}
+      {showReview && (
+        <Link to="/poids" className="callout small row between nowrap" style={{ textDecoration: 'none', color: 'inherit', margin: 0 }}>
+          <span>⚖️ Bilan du poids : une proposition d’ajustement vous attend</span>
+          <span>›</span>
+        </Link>
+      )}
       {!active.id || !loaded ? null : !eaters.some((p) => p.id === active.id) ? (
         <div className="callout small">Le planning est fait pour {eaters.map((p) => p.name).join(', ')}. Choisissez ce profil (en haut) ou planifiez pour tout le foyer.</div>
       ) : !day ? (
