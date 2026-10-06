@@ -96,3 +96,24 @@ describe('suivi du poids', () => {
     expect(r.proposal!).toBeGreaterThan(r.kcal);
   });
 });
+
+import { pendingMeals } from '../src/hooks/feedback';
+
+describe('avis en attente', () => {
+  const now = new Date('2026-10-06T20:00:00');
+  const plan = [
+    { key: '2026-10-05|soir', date: '2026-10-05', slot: 'soir' as const, recipeId: 'a', createdAt: '2026-10-04T10:00:00' },
+    { key: '2026-10-05|midi', date: '2026-10-05', slot: 'midi' as const, recipeId: 'b', createdAt: '2026-10-06T09:00:00' },
+    { key: '2026-10-06|soir', date: '2026-10-06', slot: 'soir' as const, recipeId: 'c', createdAt: '2026-10-04T10:00:00' },
+    { key: '2026-10-06|midi', date: '2026-10-06', slot: 'midi' as const, recipeId: 'd', createdAt: '2026-10-04T10:00:00' },
+  ];
+  it('repas prévus à l’avance et déjà passés, sans avis', () => {
+    const p = pendingMeals(plan, [], new Set(['plan:2026-10-06|midi|lo']), 'lo', now);
+    expect(p.map((x) => x.recipeId)).toEqual(['a']);
+  });
+  it('un plat marqué « cuisiné » demande un avis une seule fois', () => {
+    const p = pendingMeals(plan, [{ id: 'c1', recipeId: 'a', date: '2026-10-05T19:30:00' }], new Set(), 'lo', now);
+    expect(p.filter((x) => x.recipeId === 'a')).toHaveLength(1);
+    expect(p.find((x) => x.recipeId === 'a')!.cookedId).toBe('c1');
+  });
+});

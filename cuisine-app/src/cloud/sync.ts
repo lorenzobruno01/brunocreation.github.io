@@ -612,6 +612,12 @@ export async function signIn(email: string, password: string) {
   if (error) throw new Error(tr(error.message));
 }
 
+/** Connexion avec Google (facultatif : fournisseur à activer dans Supabase, voir docs/SUPABASE.md) */
+export async function signInWithGoogle() {
+  const { error } = await supabase().auth.signInWithOAuth({ provider: 'google', options: { redirectTo: siteUrl() } });
+  if (error) throw new Error(tr(error.message));
+}
+
 /** Connexion sans mot de passe : lien magique envoyé par e-mail */
 export async function sendMagicLink(email: string) {
   const { error } = await supabase().auth.signInWithOtp({ email, options: { emailRedirectTo: siteUrl(), shouldCreateUser: true } });

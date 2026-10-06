@@ -11,6 +11,7 @@ import {
   resolveImport,
   sendMagicLink,
   sendPasswordReset,
+  signInWithGoogle,
   signIn,
   signOut,
   signUp,
@@ -19,6 +20,7 @@ import {
   useCloud,
 } from '../cloud/sync';
 import { useToast } from '../components/ui';
+import { FEATURES } from '../cloud/config';
 
 const STATUS: Record<string, string> = {
   syncing: '🔄 Synchronisation…',
@@ -66,6 +68,11 @@ export function LoginForm({ intro }: { intro?: string }) {
   return (
     <section className="card pad stack">
       {intro && <p style={{ margin: 0 }}>{intro}</p>}
+      {FEATURES.google && (
+        <button className="btn" onClick={() => signInWithGoogle().catch((e) => alert((e as Error).message))}>
+          <strong>G</strong> Continuer avec Google
+        </button>
+      )}
       <div className="segmented">
         <button className={mode === 'magic' ? 'on' : ''} onClick={() => setMode('magic')}>
           ✉️ Lien par e-mail

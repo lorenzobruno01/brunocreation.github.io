@@ -52,7 +52,7 @@ export function LeftoversCard({ fridge }: { fridge: Set<string> }) {
         if (n === 0 && slot === 'midi' && new Date().getHours() >= 13) continue;
         const key = `${date}|${slot}`;
         if (await db.plan.get(key)) continue;
-        await db.plan.put({ key, date, slot, recipeId: l.recipeId!, servings: 0, leftoverOf: `reste:${l.id}` });
+        await db.plan.put({ key, date, slot, recipeId: l.recipeId!, servings: 0, leftoverOf: `reste:${l.id}`, createdAt: new Date().toISOString() });
         toast(`Au menu : ${formatDateFr(date, { weekday: 'long' })} ${slot === 'midi' ? 'midi' : 'soir'} ♻️`);
         return;
       }

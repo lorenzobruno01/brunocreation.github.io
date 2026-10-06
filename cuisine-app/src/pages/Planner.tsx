@@ -110,7 +110,7 @@ export function Planner() {
   );
 
   const place = async (date: string, slot: Slot, recipeId: string, servings = settings.defaultServings) => {
-    await db.plan.put({ key: `${date}|${slot}`, date, slot, recipeId, servings });
+    await db.plan.put({ key: `${date}|${slot}`, date, slot, recipeId, servings, createdAt: new Date().toISOString() });
   };
 
   const move = async (from: PlanEntry, toKey: string) => {
@@ -154,7 +154,8 @@ export function Planner() {
     // quantité à cuisiner = somme des parts du jour (+ restes) : courses au plus juste
     const lockedKeys = new Set(locked.map((l) => l.key));
     const sized = planServings(generated, byId, eaters.map((x) => x.profile), lookup);
-    const entries = sized.map((e, i) => (lockedKeys.has(e.key) ? generated[i] : e));
+    const now = new Date().toISOString();
+    const entries = sized.map((e, i) => (lockedKeys.has(e.key) ? generated[i] : { ...e, createdAt: now }));
     await db.transaction('rw', db.plan, async () => {
       if (opts.replaceAll) await db.plan.bulkDelete(plan.map((p) => p.key));
       await db.plan.bulkPut(entries);

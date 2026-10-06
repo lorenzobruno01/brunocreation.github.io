@@ -7,6 +7,8 @@ import { bmi, needs, objectiveOf, withTargets } from '../domain/profile';
 import { DAILY_ACTIVITY, OBJECTIVES, SPORTS, type DailyActivity, type Objective, type SportType } from '../config/targets';
 import { ALLERGENS, INTOLERANCES, SPICE_LEVELS, TEXTURES } from '../domain/allergens';
 import { searchIngredients, useLibrary } from '../hooks/library';
+import { FEATURES } from '../cloud/config';
+import { stravaAuthorizeUrl } from '../cloud/remote';
 
 export type FieldsProps = { p: NutritionProfile; set: (patch: Partial<NutritionProfile>) => void };
 
@@ -78,6 +80,19 @@ export function ActivityFields({ p, set }: FieldsProps) {
   const daily = p.daily ?? 'leger';
   return (
     <div className="stack">
+      {FEATURES.strava && (
+        <button
+          type="button"
+          className="btn sm"
+          style={{ alignSelf: 'flex-start' }}
+          onClick={() => {
+            sessionStorage.setItem('cuisine.stravaFor', p.id);
+            location.href = stravaAuthorizeUrl();
+          }}
+        >
+          🟧 Importer mes séances depuis Strava
+        </button>
+      )}
       <div className="field">
         <label>En dehors du sport, votre journée type</label>
         <div className="choice-list">

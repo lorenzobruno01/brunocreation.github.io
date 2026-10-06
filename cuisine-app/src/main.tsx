@@ -23,6 +23,7 @@ import { MyDay } from './pages/MyDay';
 import { Learned } from './pages/Learned';
 import { Weight } from './pages/Weight';
 import { Batch } from './pages/Batch';
+import { StravaReturn } from './components/StravaReturn';
 import { MyWeek } from './pages/MyWeek';
 import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
@@ -103,6 +104,7 @@ function Shell() {
               </Routes>
             </ErrorBoundary>
             <Onboarding />
+            <StravaReturn />
           </Layout>
         }
       />

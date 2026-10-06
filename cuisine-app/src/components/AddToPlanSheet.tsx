@@ -23,7 +23,7 @@ export function AddToPlanSheet({ recipe, servings, onClose }: { recipe: IndexedR
   ];
 
   const add = async (date: string, slot: Slot) => {
-    await db.plan.put({ key: `${date}|${slot}`, date, slot, recipeId: recipe.id, servings });
+    await db.plan.put({ key: `${date}|${slot}`, date, slot, recipeId: recipe.id, servings, createdAt: new Date().toISOString() });
     toast(`Ajoutée au ${new Date(date + 'T12:00').toLocaleDateString('fr-FR', { weekday: 'long' })} ${slot}`);
     onClose();
   };

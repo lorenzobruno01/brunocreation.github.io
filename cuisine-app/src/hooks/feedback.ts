@@ -17,7 +17,7 @@ export interface PendingMeal {
 const SLOT_HOUR: Record<Slot, number> = { matin: 10, midi: 14, collation: 17, soir: 21 };
 
 export function pendingMeals(
-  plan: Array<{ key: string; date: string; slot: Slot; recipeId: string }>,
+  plan: Array<{ key: string; date: string; slot: Slot; recipeId: string; createdAt?: string }>,
   cooking: Array<{ id: string; recipeId: string; date: string }>,
   feedbackIds: Set<string>,
   profileId: string,
@@ -38,6 +38,9 @@ export function pendingMeals(
   for (const e of plan) {
     if (e.date < start || e.date > today) continue;
     if (e.date === today && now.getHours() < SLOT_HOUR[e.slot]) continue;
+    // repas ajouté après coup (semaine générée en cours de route) : pas mangé tel quel
+    const mealTime = new Date(`${e.date}T${String(SLOT_HOUR[e.slot] - 1).padStart(2, '0')}:00:00`);
+    if (!e.createdAt || new Date(e.createdAt) > mealTime) continue;
     if (seen.has(`${e.date}|${e.recipeId}`)) continue;
     const cookedId = `plan:${e.key}`;
     if (!feedbackIds.has(`${cookedId}|${profileId}`)) out.push({ cookedId, recipeId: e.recipeId, date: e.date, slot: e.slot });

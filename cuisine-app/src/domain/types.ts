@@ -308,6 +308,8 @@ export interface PlanEntry {
   servings: number;
   /** restes d'un autre créneau (clé) : rien à cuisiner ni à acheter */
   leftoverOf?: string;
+  /** date d'ajout au planning (on ne demande un avis que pour un repas prévu à l'avance) */
+  createdAt?: string;
 }
 
 export interface ShoppingItem {

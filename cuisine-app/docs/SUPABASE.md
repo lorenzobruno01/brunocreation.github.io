@@ -62,3 +62,44 @@ Tant que la seconde migration n'est pas exécutée, l'appli continue en « ancie
   - la liste cochée en direct ;
   - le mode hors ligne ;
   - la reprise de l'ancienne sauvegarde.
+
+## 6. Options facultatives (désactivées par défaut)
+
+Tout fonctionne sans elles, gratuitement. Elles ne mettent **aucun secret dans le navigateur** : les clés restent dans des fonctions serveur Supabase (Edge Functions).
+
+### Préparation commune
+
+1. Exécutez `supabase/migrations/20261007000000_options.sql` dans le SQL Editor. Il crée le quota de l'assistant et le coffre des jetons Strava, invisibles depuis le navigateur.
+2. Installez l'outil Supabase sur un ordinateur (`npm i -g supabase`), puis lancez `supabase login` et `supabase link --project-ref qjtlbelxragbagfoncrh`.
+
+### Assistant IA (payant : facturé par Anthropic à l'usage)
+
+```bash
+supabase secrets set ANTHROPIC_API_KEY=sk-ant-…   # jamais dans le code ni dans le site
+supabase secrets set AI_DAILY_LIMIT=10            # questions par personne et par jour
+# facultatif : supabase secrets set ANTHROPIC_MODEL=claude-haiku-4-5-20251001
+supabase functions deploy assistant
+```
+
+Construisez ensuite le site avec `VITE_FEATURE_AI=1`. Le bouton « Demander à l'assistant » apparaît sous les demandes de l'accueil, pour les personnes connectées.
+
+Sans cette option, les demandes (« combler mon manque de fer », « une recette pour deux ce soir en 30 min », « utiliser ce qui doit partir vite »…) sont traitées sur l'appareil, sans IA (`src/domain/requests.ts`).
+
+### Strava
+
+1. Créez une application sur https://www.strava.com/settings/api. Dans « Authorization Callback Domain », indiquez `lorenzobruno01.github.io`.
+2. Enregistrez les identifiants côté serveur, puis déployez la fonction :
+
+   ```bash
+   supabase secrets set STRAVA_CLIENT_ID=12345 STRAVA_CLIENT_SECRET=…
+   supabase functions deploy strava
+   ```
+
+3. Construisez le site avec `VITE_FEATURE_STRAVA=1` et `VITE_STRAVA_CLIENT_ID=12345`. L'identifiant est public, le secret ne l'est pas.
+
+Le bouton « Importer mes séances depuis Strava » apparaît dans le profil (Activité et sport). Il résume les 4 dernières semaines (séances par semaine, durée, type, jours habituels) et ne modifie le profil qu'après accord.
+
+### Connexion avec Google
+
+1. Dans **Authentication → Sign In / Providers → Google**, collez l'identifiant OAuth créé dans Google Cloud Console. Son URI de redirection autorisée est celle affichée par Supabase.
+2. Construisez le site avec `VITE_FEATURE_GOOGLE=1`.
