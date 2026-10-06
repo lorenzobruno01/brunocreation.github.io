@@ -2,11 +2,11 @@ import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, saveSettings } from '../db/db';
-import { useLibrary, useUserData } from '../hooks/library';
+import { useLibrary, useProfiles, useUserData } from '../hooks/library';
 import { DAY_NAMES, isoDate, mondayOf, weekDates } from '../domain/season';
 import { generateWeek, type PlannerConstraints } from '../domain/planner';
 import { generateNutriWeek, dayReport, bestSourcesOf, householdEaters, soloEater, type DayReport, type Eater } from '../domain/nutriPlanner';
-import { DEFAULT_PROFILES, GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
+import { GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
 import { SLOT_LABELS } from '../components/AddToPlanSheet';
@@ -50,7 +50,7 @@ export function Planner() {
   const toast = useToast();
   const navigate = useNavigate();
 
-  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
+  const profiles = useProfiles();
   // Par défaut, le planning est fait pour toute la tablée : mêmes plats, part adaptée à chacun
   const planFor = settings.planFor ?? (profiles.length > 1 ? 'nous' : profiles[0].id);
   const together = planFor === 'nous' && profiles.length > 1;

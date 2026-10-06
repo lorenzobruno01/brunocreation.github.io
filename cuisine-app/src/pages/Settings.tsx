@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { exportData, importData, saveSettings, db } from '../db/db';
-import { useUserData, useLibrary } from '../hooks/library';
-import { DEFAULT_PROFILES } from '../domain/micronutrients';
+import { useUserData, useLibrary, useProfiles } from '../hooks/library';
 import { HouseholdEditor } from '../components/Household';
 import { cloudEnabled, useCloud } from '../cloud/sync';
 import { clearIncidents, readIncidents } from '../domGuard';
@@ -16,7 +15,7 @@ export function Settings() {
   const file = useRef<HTMLInputElement>(null);
   const toast = useToast();
   const cloud = useCloud();
-  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
+  const profiles = useProfiles();
 
   const download = async () => {
     const json = await exportData();
@@ -173,7 +172,7 @@ export function Settings() {
             className="btn danger"
             onClick={async () => {
               if (!confirm('Supprimer toutes vos données (favoris, planning, courses, recettes ajoutées…) ? La bibliothèque de base reste.')) return;
-              await Promise.all([db.recipes, db.hidden, db.favorites, db.history, db.pantry, db.fridge, db.plan, db.basket, db.shopping].map((t) => t.clear()));
+              await Promise.all([db.recipes, db.hidden, db.favorites, db.cooking, db.pantry, db.fridge, db.plan, db.basket, db.shopping].map((t) => t.clear()));
               toast('Données réinitialisées');
             }}
           >

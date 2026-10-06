@@ -10,9 +10,13 @@ Les comptes utilisent **Supabase**, un service de base de données avec connexio
    - **Region** : *West EU (Paris)* ou *Central EU (Frankfurt)*.
 3. Cliquez sur **Create new project**, puis attendez environ 1 minute.
 
-## 2. Créer la table des données
+## 2. Créer les tables (migrations)
+
+> Exécutez, dans l’ordre, les deux fichiers de `cuisine-app/supabase/migrations/` (voir aussi `docs/SUPABASE.md`). Le premier est l’ancienne table ci-dessous ; le second ajoute les foyers et la synchronisation partagée.
+
+### Ancienne table (premier fichier)
 1. Dans le menu de gauche, ouvrez **SQL Editor**, puis **New query**.
-2. Collez tout le contenu du fichier `cuisine-app/supabase/schema.sql`.
+2. Collez tout le contenu du fichier `cuisine-app/supabase/migrations/20261005000000_user_data.sql`, puis faites de même avec `20261006000000_foyers.sql`.
 3. Cliquez sur **Run**. Le message attendu est « Success. No rows returned ».
 
 ## 3. Régler la connexion par e-mail

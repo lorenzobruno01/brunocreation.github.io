@@ -19,7 +19,7 @@ Published by GitHub Pages at **https://lorenzobruno01.github.io/brunocreation.gi
 | Digestion | Every recipe is checked for traditional preparation (soaked oats with acid and rye flour, soaked buckwheat, quinoa, brown rice and lentils, nut limits), seed oils, unfermented soy, flax, oxalates per portion, liver portions and raw-fish safety. Eight selectable eating approaches (Weston A. Price by default, anti-inflammatory, Ray Peat-inspired, GAPS, low-FODMAP, low-oxalate, phytoestrogen-cautious, Primal) filter the whole app. The sourced documentation is readable in the app (Sources page) |
 | Recipe creator | When an AND / OR ingredient search finds nothing, a built-in composer writes a complete recipe from those ingredients (free, no AI or API key) |
 | Profiles | Each person enters height, weight, age, activity and goal (muscle gain, maintenance, fat loss): calorie and protein targets are computed (Mifflin-St Jeor × activity) and drive the planner, portion sizes and every % of daily needs. Several people can share a household |
-| Accounts | Optional free accounts (Supabase, e-mail + password): planning, favourites, history, fridge, pantry, shopping list, added recipes and profile are saved to the account and synced across devices; each friend has their own account and data. Setup: `docs/COMPTES.md` |
+| Accounts & households | Optional free accounts (Supabase: magic link or password). A household shares planning, shopping list (ticked live), pantry, fridge, favourites and private recipes; members join with an invitation link or code. Offline-first: changes queue up and sync when the network returns. Setup: `docs/SUPABASE.md` |
 | Shopping advice | In the shopping list, under each product: what to choose (labels, farming, cut), a more nutritious cut when relevant, and the nearest suitable shop around the postcode (OpenStreetMap); sourced buying guide per food family (grass-fed, labels, egg codes, raw-milk cheese…) and more nutritious cuts computed from the USDA data (e.g. chicken thigh instead of breast) |
 | Statistics | Breakdown by cuisine, protein, meal, difficulty and technique; under-represented categories are flagged |
 
@@ -57,7 +57,11 @@ cuisine-app/
 - **Structured, normalised data.** Each recipe references `ingredient_id`s. Aliases (« PDT », « pommes de terre ») point to the same ingredient. Nutrition is computed from the quantities.
 - **Persistence.** Data lives in the browser (IndexedDB) first. When signed in, a full copy is stored in the user's row of the `user_data` table (row-level security: each user only sees their own row) and pulled on other devices; it can also be exported and imported as JSON.
 - **Scale.** Recipes are indexed in memory and lists load progressively, which is enough for several thousand recipes. To add recipes, drop a JSON file into `src/data/recipes/` and run the validator.
-- **No paid services.** Everything runs in the browser, with no AI and no API key. Accounts are optional and use Supabase's free tier (`src/cloud/`, `supabase/schema.sql`); without them the app works entirely offline.
+- **No paid services.** Everything runs in the browser, with no AI and no API key. Accounts are optional and use Supabase's free tier (`src/cloud/`, `supabase/migrations/`); without them the app works entirely offline.
+
+## Accounts & sync setup
+
+Step by step (project, SQL migrations, e-mail settings, tests): **`docs/SUPABASE.md`**.
 
 ## Development
 
@@ -66,6 +70,7 @@ cd cuisine-app
 npm install
 npm run dev        # http://localhost:5173/cuisine/
 npm test           # domain tests
+npm run test:e2e   # end-to-end scenarios in a real browser (phone size, mocked Supabase)
 npm run validate   # validate the recipe library
 npm run build      # validate + typecheck + build into ../cuisine (published by GitHub Pages)
 ```

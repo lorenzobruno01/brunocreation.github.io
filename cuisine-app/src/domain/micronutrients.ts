@@ -164,6 +164,31 @@ export interface NutritionProfile {
   goal?: 'prise-de-masse' | 'maintien' | 'perte-de-poids';
   /** objectifs kcal / protéines saisis à la main (sinon calculés) */
   manualTargets?: boolean;
+  // ── Profil complet (membre du foyer) ──
+  /** compte associé (membre qui se connecte) ; absent pour un membre sans compte */
+  userId?: string;
+  /** activité quotidienne hors sport */
+  daily?: 'sedentaire' | 'leger' | 'actif' | 'tres-actif';
+  sport?: { sessions: number; type: 'musculation' | 'course' | 'collectif' | 'autre'; minutes: number };
+  /** jours d'entraînement habituels (0 = lundi … 6 = dimanche) */
+  trainingDays?: number[];
+  /** objectif détaillé (« performance » s'ajoute aux trois historiques) */
+  objective?: 'prise-de-muscle' | 'maintien' | 'perte-de-poids' | 'performance';
+  pace?: 'prudent' | 'standard';
+  /** ingrédients (ids) aimés, détestés, mal tolérés ; allergies (ids ou familles) */
+  likes?: string[];
+  dislikes?: string[];
+  intolerances?: string[];
+  allergies?: string[];
+  /** 0 = pas du tout piquant … 3 = très piquant */
+  spice?: number;
+  textures?: string[];
+  /** ne pas afficher calories ni poids */
+  hideNumbers?: boolean;
+  /** cibles saisies à la main (remplacent le calcul) */
+  overrides?: { kcal?: number; protein?: number; fat?: number; carbs?: number };
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export const DEFAULT_PROFILES: NutritionProfile[] = [

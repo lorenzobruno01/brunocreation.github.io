@@ -42,7 +42,7 @@ export function Favorites() {
             <button
               className="btn sm ghost"
               onClick={async () => {
-                if (confirm('Effacer tout l’historique ?')) await db.history.clear();
+                if (confirm('Effacer tout l’historique ?')) await db.cooking.clear();
               }}
             >
               Effacer
@@ -68,7 +68,7 @@ export function Favorites() {
                     aria-label="Retirer de l’historique"
                     onClick={(e) => {
                       e.preventDefault();
-                      if (h.id != null) db.history.delete(h.id);
+                      if (h.id != null) db.cooking.delete(h.id);
                     }}
                   >
                     ✕

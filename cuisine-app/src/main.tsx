@@ -18,7 +18,7 @@ import { RecipeForm } from './pages/RecipeForm';
 import { Stats } from './pages/Stats';
 import { Settings } from './pages/Settings';
 import { Sources } from './pages/Sources';
-import { Account } from './pages/Account';
+import { Account, JoinHousehold } from './pages/Account';
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
@@ -84,6 +84,7 @@ function Shell() {
                 <Route path="/reglages" element={<Settings />} />
                 <Route path="/sources" element={<Sources />} />
                 <Route path="/compte" element={<Account />} />
+                <Route path="/rejoindre/:code" element={<JoinHousehold />} />
                 <Route path="/acheter" element={<Navigate to="/courses" replace />} />
                 <Route path="*" element={<Home />} />
               </Routes>

@@ -5,12 +5,13 @@ import { db, saveSettings } from '../db/db';
 import { cloudEnabled, useCloud } from '../cloud/sync';
 import { newProfile } from '../domain/profile';
 import type { NutritionProfile } from '../domain/micronutrients';
-import { HouseholdEditor } from './Household';
+import { HouseholdEditor, saveProfiles } from './Household';
 import { Sheet } from './ui';
 
 /** Premier lancement : qui mange, avec quels besoins ; ou connexion à un compte existant */
 export function Onboarding() {
   const row = useLiveQuery(async () => (await db.settings.get('settings')) ?? null, []);
+  const stored = useLiveQuery(() => db.profiles.toArray(), []);
   const cloud = useCloud();
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -19,16 +20,17 @@ export function Onboarding() {
   const [profiles, setProfiles] = useState<NutritionProfile[] | null>(null);
   // connecté avec un profil créé sur un autre appareil : l'accueil est terminé
   useEffect(() => {
-    if (cloud.email && row && !row.onboarded && row.profiles?.length) saveSettings({ onboarded: true });
-  }, [cloud.email, row]);
+    if (cloud.email && row && !row.onboarded && stored?.length) saveSettings({ onboarded: true });
+  }, [cloud.email, row, stored]);
 
   if (row === undefined || row?.onboarded || later || pathname === '/compte' || cloud.status === 'syncing') return null;
-  if (cloud.email && row?.profiles?.length) return null;
-  const list = profiles ?? (row?.profiles?.length ? row.profiles.map((p) => newProfile({ ...p })) : [newProfile({ name: '' })]);
+  if (stored === undefined || (cloud.email && stored.length)) return null;
+  const list = profiles ?? (stored.length ? stored.map((p) => newProfile({ ...p })) : [newProfile({ name: '' })]);
 
   const finish = async () => {
     const clean = list.map((p, i) => ({ ...p, name: p.name.trim() || (i === 0 ? 'Moi' : `Personne ${i + 1}`) }));
-    await saveSettings({ profiles: clean, onboarded: true, defaultServings: Math.max(1, clean.length), planFor: clean.length > 1 ? 'nous' : clean[0].id });
+    await saveProfiles(clean);
+    await saveSettings({ onboarded: true, defaultServings: Math.max(1, clean.length), planFor: clean.length > 1 ? 'nous' : clean[0].id });
   };
 
   return (

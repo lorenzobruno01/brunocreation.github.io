@@ -58,7 +58,15 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </header>
-      <main>{children}</main>
+      <main>
+        {cloud.pendingImport && (
+          <Link to="/compte" className="callout info small row between" style={{ textDecoration: 'none', color: 'inherit', margin: '12px 16px 0' }}>
+            <span>📥 Des données de ce téléphone peuvent être ajoutées à votre foyer.</span>
+            <span>›</span>
+          </Link>
+        )}
+        {children}
+      </main>
       <nav className="tabbar" aria-label="Navigation">
         {TABS.map((t) => (
           <NavLink key={t.to} to={t.to} end={t.end}>

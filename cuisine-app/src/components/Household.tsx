@@ -1,15 +1,28 @@
-import { saveSettings } from '../db/db';
-import { DEFAULT_PROFILES, type NutritionProfile } from '../domain/micronutrients';
+import { db, saveSettings } from '../db/db';
+import type { NutritionProfile } from '../domain/micronutrients';
 import { newProfile } from '../domain/profile';
 import { ProfileEditor } from './ProfileEditor';
 
-/** Les personnes qui mangent ensemble, chacune avec ses besoins */
-export function useHouseholdProfiles(settingsProfiles?: NutritionProfile[]): NutritionProfile[] {
-  return settingsProfiles?.length ? settingsProfiles : DEFAULT_PROFILES;
+/** Enregistre la liste des membres (ajouts, modifications, retraits) */
+export async function saveProfiles(next: NutritionProfile[]) {
+  const now = new Date().toISOString();
+  const keep = new Set(next.map((p) => p.id));
+  await db.transaction('rw', db.profiles, async () => {
+    const cur = await db.profiles.toArray();
+    await db.profiles.bulkDelete(cur.filter((p) => !keep.has(p.id)).map((p) => p.id));
+    const byId = new Map(cur.map((p) => [p.id, JSON.stringify(p)]));
+    const changed = next.filter((p) => byId.get(p.id) !== JSON.stringify(p));
+    await db.profiles.bulkPut(changed.map((p) => ({ ...p, createdAt: p.createdAt ?? now, updatedAt: now })));
+  });
 }
 
 export function HouseholdEditor({ profiles, onChange }: { profiles: NutritionProfile[]; onChange?: (p: NutritionProfile[]) => void }) {
-  const save = onChange ?? ((p: NutritionProfile[]) => saveSettings({ profiles: p, defaultServings: Math.max(1, p.length) }));
+  const save =
+    onChange ??
+    ((p: NutritionProfile[]) => {
+      saveProfiles(p);
+      saveSettings({ defaultServings: Math.max(1, p.length) });
+    });
   return (
     <div className="stack">
       {profiles.map((p, i) => (

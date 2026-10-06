@@ -3,7 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, DEFAULT_SETTINGS } from '../db/db';
 import { INGREDIENTS } from '../data/ingredients';
 import { indexRecipe } from '../domain/indexing';
-import { computeDetailed, densityScore } from '../domain/micronutrients';
+import { computeDetailed, DEFAULT_PROFILES, densityScore, type NutritionProfile } from '../domain/micronutrients';
 import { analyzeDigestion, compatibility, DIET_PROFILES } from '../domain/digestion';
 import type { Ingredient, IndexedRecipe, Recipe, Settings } from '../domain/types';
 import { norm } from '../domain/text';
@@ -100,7 +100,13 @@ export function useFavorites(): Set<string> {
 }
 
 export function useHistory() {
-  return useLiveQuery(() => db.history.orderBy('date').reverse().toArray(), []) ?? [];
+  return useLiveQuery(() => db.cooking.orderBy('date').reverse().toArray(), []) ?? [];
+}
+
+/** Membres du foyer (profils créés dans l'appli), triés par date de création */
+export function useProfiles(): NutritionProfile[] {
+  const rows = useLiveQuery(() => db.profiles.toArray(), []);
+  return useMemo(() => (rows?.length ? [...rows].sort((a, b) => (a.createdAt ?? '').localeCompare(b.createdAt ?? '') || a.id.localeCompare(b.id)) : DEFAULT_PROFILES), [rows]);
 }
 
 export function useLastCooked(): Map<string, string> {

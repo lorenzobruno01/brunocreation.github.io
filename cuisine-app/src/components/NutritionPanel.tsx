@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { IndexedRecipe } from '../domain/types';
-import { useLibrary, useUserData } from '../hooks/library';
-import { computeDetailed, dailyRef, DEFAULT_PROFILES, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
+import { useLibrary, useProfiles, useUserData } from '../hooks/library';
+import { computeDetailed, dailyRef, densityLabel, densityScore, formatAmount, GROUP_LABELS, NUTRIENTS, type NutrientDef } from '../domain/micronutrients';
 import { saveSettings } from '../db/db';
 import { householdEaters } from '../domain/nutriPlanner';
 
@@ -10,7 +10,7 @@ import { householdEaters } from '../domain/nutriPlanner';
 export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe; portions?: number }) {
   const { lookup } = useLibrary();
   const { settings } = useUserData();
-  const profiles = settings.profiles?.length ? settings.profiles : DEFAULT_PROFILES;
+  const profiles = useProfiles();
   const profile = profiles.find((p) => p.id === settings.activeProfile) ?? profiles[0];
   const [open, setOpen] = useState(false);
   const detail = useMemo(() => computeDetailed(recipe, lookup), [recipe, lookup]);

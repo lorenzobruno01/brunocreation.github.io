@@ -29,7 +29,7 @@ export function RecipeDetail() {
   const [subFor, setSubFor] = useState<string | null>(null);
   const toast = useToast();
   const navigate = useNavigate();
-  const history = useLiveQuery(() => (id ? db.history.where('recipeId').equals(id).reverse().sortBy('date') : []), [id]) ?? [];
+  const history = useLiveQuery(() => (id ? db.cooking.where('recipeId').equals(id).reverse().sortBy('date') : []), [id]) ?? [];
 
   const similar = useMemo(() => (recipe ? findSimilar(recipe, recipes, 6, 0.3) : []), [recipe, recipes]);
 
