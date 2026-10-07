@@ -7,7 +7,7 @@ import { computeDetailed, dailyRef, NUTRIENTS } from '../src/domain/micronutrien
 import { retention } from '../src/config/retention';
 import { cookServings, dayShares, mainPortion } from '../src/domain/shares';
 import { analyzeWeek, foodSourcesFor } from '../src/domain/week';
-import { generateNutriWeek, householdEaters } from '../src/domain/nutriPlanner';
+import { generateNutriWeek, householdEaters, recentPlanned } from '../src/domain/nutriPlanner';
 import { newProfile } from '../src/domain/profile';
 import type { Recipe, Slot } from '../src/domain/types';
 
@@ -127,6 +127,35 @@ describe('générateur : ≥ 100 % sur la semaine pour chacun', () => {
   });
   it('jamais deux fois la même recette', () => {
     expect(new Set(plan.map((e) => e.recipeId)).size).toBe(plan.length);
+  });
+});
+
+describe('variété d’une semaine à l’autre', () => {
+  const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+  const week = (start: number) => [...Array(7)].map((_, i) => `2026-10-${String(start + i).padStart(2, '0')}`);
+  const eaters = householdEaters([lui, elle]);
+  const w1 = generateNutriWeek({ recipes: library, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates: week(5), slots, servings: 2, seed: 7, eaters }, (id) => lookup(id)?.category);
+  const recent = recentPlanned(w1, '2026-10-12');
+  const w2 = generateNutriWeek({ recipes: library, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates: week(12), slots, servings: 2, seed: 8, eaters, recent }, (id) => lookup(id)?.category);
+  it('historique : la semaine dernière pèse plus que les précédentes, les restes ne comptent pas', () => {
+    const h = recentPlanned(
+      [
+        { key: 'a', date: '2026-10-08', slot: 'soir', recipeId: 'x', servings: 2 },
+        { key: 'b', date: '2026-09-20', slot: 'soir', recipeId: 'y', servings: 2 },
+        { key: 'c', date: '2026-10-09', slot: 'midi', recipeId: 'z', servings: 0, leftoverOf: 'a' },
+        { key: 'd', date: '2026-10-12', slot: 'soir', recipeId: 'w', servings: 2 },
+      ],
+      '2026-10-12',
+    );
+    expect(h.get('x')).toBe(1);
+    expect(h.get('y')).toBeLessThan(1);
+    expect(h.has('z')).toBe(false);
+    expect(h.has('w')).toBe(false);
+  });
+  it('aucun plat de midi ou du soir repris de la semaine précédente, toujours 100 %', () => {
+    const before = new Set(w1.filter((e) => e.slot === 'midi' || e.slot === 'soir').map((e) => e.recipeId));
+    expect(w2.filter((e) => (e.slot === 'midi' || e.slot === 'soir') && before.has(e.recipeId))).toEqual([]);
+    for (const w of analyzeWeek(w2, byId, [lui, elle], lookup)) expect(w.coverage).toBeGreaterThan(99);
   });
 });
 
