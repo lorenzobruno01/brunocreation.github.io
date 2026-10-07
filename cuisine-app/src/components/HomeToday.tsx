@@ -4,7 +4,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/db';
 import { useLibrary, useStoredProfiles, useUserData } from '../hooks/library';
 import { useActiveProfile } from '../hooks/activeProfile';
-import { usePlanAnalysis } from '../hooks/plan';
+import { usePlanAnalysis, useStreak } from '../hooks/plan';
 import { usePendingFeedback } from '../hooks/feedback';
 import { isoDate, mondayOf, weekDates } from '../domain/season';
 import { commonIngredients, foodSourcesFor } from '../domain/week';
@@ -37,6 +37,7 @@ export function HomeToday() {
   const logs = useLiveQuery(() => db.weights.where('profileId').equals(me.id).toArray(), [me.id]);
   const common = useMemo(() => commonIngredients(recipes), [recipes]);
   const cloud = useCloud();
+  const streak = useStreak();
   const [q, setQ] = useState('');
   const [answer, setAnswer] = useState<RequestAnswer | null>(null);
   const [ai, setAi] = useState<{ text?: string; error?: string; busy?: boolean } | null>(null);
@@ -78,6 +79,11 @@ export function HomeToday() {
             </Link>
           )}
         </div>
+        {streak > 0 && (
+          <div className="small" style={{ fontWeight: 800 }}>
+            🔥 {streak} semaine{streak > 1 ? 's' : ''} à 100 % {streak > 1 ? 'd’affilée' : ''} — continuez !
+          </div>
+        )}
         {entries.length ? (
           ORDER.map((slot) => {
             const e = entries.find((x) => x.slot === slot);

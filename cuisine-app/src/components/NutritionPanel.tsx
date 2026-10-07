@@ -25,9 +25,12 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
   const groups = [...new Set(NUTRIENTS.map((d) => d.group))];
 
   return (
-    <section className="card pad stack">
+    <details className="card pad stack fold">
+      <summary>
+        <h2 style={{ margin: 0, display: 'inline' }}>🔬 Tous les apports nutritionnels</h2>
+      </summary>
       <div className="row between">
-        <h2 style={{ margin: 0 }}>🔬 Apports nutritionnels</h2>
+        <span className="small muted">Pour qui :</span>
         <div className="chips">
           {profiles.map((p) => (
             <button key={p.id} className={`chip ${p.id === profile.id ? 'on' : ''}`} onClick={() => setActiveProfile(p.id)}>
@@ -105,7 +108,7 @@ export function NutritionPanel({ recipe, portions = 1 }: { recipe: IndexedRecipe
           Estimations à partir des tables Ciqual / USDA (aliments crus, valeurs moyennes) ; la cuisson réduit surtout la vitamine C et certaines vitamines B. Acides aminés : besoins OMS (mg/kg/jour). Le sel ajouté « au goût » n’est pas compté. Références : EFSA.
         </p>
       )}
-    </section>
+    </details>
   );
 }
 
@@ -123,5 +126,38 @@ function Bar({ label, value, pct, hint, limit }: { label: string; value: string;
         <div style={{ width: `${Math.min(100, pct)}%`, background: color }} />
       </div>
     </div>
+  );
+}
+
+/** « Pourquoi c'est bon pour vous » : 3 raisons simples, pour le profil actif */
+export function WhyGood({ recipe }: { recipe: IndexedRecipe }) {
+  const { lookup } = useLibrary();
+  const profile = useActiveProfile();
+  const detail = useMemo(() => computeDetailed(recipe, lookup), [recipe, lookup]);
+  const best = NUTRIENTS.filter((d) => !d.limit && d.group !== 'acides-amines' && d.key !== 'cl')
+    .map((d) => ({ d, pct: Math.round(((detail[d.key] ?? 0) / dailyRef(d, profile)) * 100) }))
+    .filter((x) => x.pct >= 30)
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, 3);
+  const prot = recipe.nutrition.protein;
+  const dl = densityLabel(densityScore(detail, recipe.nutrition.kcal));
+  const reasons: string[] = [];
+  if (prot >= 25) reasons.push(`🥩 ${prot} g de protéines par portion, de quoi bien nourrir les muscles`);
+  for (const b of best) reasons.push(`✨ Riche en ${b.d.label.replace(/ \(.*\)/, '').toLowerCase()} (${b.pct} % du besoin du jour) : ${b.d.role}`);
+  if (recipe.digest?.fermented) reasons.push('🫙 Contient un aliment fermenté, bon pour le microbiote');
+  if (recipe.digest?.broth) reasons.push('🍲 Bouillon d’os : collagène et minéraux');
+  if (!reasons.length) return null;
+  return (
+    <section className="card pad stack why-good">
+      <h2 style={{ margin: 0 }}>🌿 Pourquoi c’est bon pour {profile.name && !/^moi$/i.test(profile.name) ? profile.name : 'vous'}</h2>
+      <ul className="stack" style={{ margin: 0, paddingLeft: 0, listStyle: 'none', gap: 6 }}>
+        {reasons.slice(0, 4).map((r) => (
+          <li key={r}>{r}</li>
+        ))}
+      </ul>
+      <span className="small muted">
+        {dl.emoji} Densité nutritionnelle {dl.label.toLowerCase()}
+      </span>
+    </section>
   );
 }

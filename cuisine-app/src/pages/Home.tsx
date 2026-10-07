@@ -86,28 +86,19 @@ export function Home() {
 
   return (
     <div className="page">
-      <section className="hero">
+      <section className="hero compact">
         <span className="deco">🥘</span>
         <h1>
           {greeting}
           {firstName} !
         </h1>
-        <p>Que voulez-vous cuisiner ? {recipes.length} recettes vous attendent.</p>
-        <div className="quick-actions">
-          <Link className="qa" to="/recettes?focus=1">
-            <span className="qi">🔎</span>Rechercher une recette<span className="qs">nom, ingrédient, « dîner rapide »…</span>
+        <p>{stored?.length ? 'Voici votre journée.' : `${recipes.length} recettes nourrissantes, une semaine qui couvre 100 % de vos besoins.`}</p>
+        <div className="row nowrap" style={{ gap: 8 }}>
+          <Link className="btn" to="/recettes?focus=1">
+            🔎 Rechercher
           </Link>
-          <Link className="qa" to="/frigo">
-            <span className="qi">🥕</span>J’ai ces ingrédients
-          </Link>
-          <Link className="qa" to="/favoris">
-            <span className="qi">❤️</span>Mes favoris<span className="qs">{favorites.size} recette{favorites.size > 1 ? 's' : ''}</span>
-          </Link>
-          <Link className="qa" to="/semaine">
-            <span className="qi">📅</span>Planifier ma semaine
-          </Link>
-          <Link className="qa" to="/courses">
-            <span className="qi">🛒</span>Ma liste de courses
+          <Link className="btn" to="/frigo">
+            🥕 J’ai ces ingrédients
           </Link>
         </div>
       </section>

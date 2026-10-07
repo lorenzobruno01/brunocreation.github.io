@@ -18,6 +18,7 @@ import { applyTemplate } from '../domain/nutriPlanner';
 import { recipeCost } from '../domain/shopping';
 import { SLOT_MODES, useWeekTemplate } from '../hooks/plan';
 import { TemplateSheet } from '../components/TemplateSheet';
+import { shareImage, weekMenuImage } from '../components/shareMenu';
 import { useHideNumbers } from '../hooks/activeProfile';
 import { recipeConflict } from '../domain/allergens';
 import { WeekVerdict } from '../components/WeekVerdict';
@@ -174,7 +175,7 @@ export function Planner() {
   return (
     <div className="page">
       <div className="row between">
-        <h1 style={{ margin: 0 }}>📅 Ma semaine</h1>
+        <h1 style={{ margin: 0 }}>📅 Planning</h1>
         <div className="row">
           <button className="icon-btn" onClick={() => setOffset(offset - 1)} aria-label="Semaine précédente">
             ◀
@@ -188,7 +189,7 @@ export function Planner() {
         </div>
       </div>
       <p className="muted" style={{ margin: '4px 0 12px' }}>
-        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}. Objectif : couvrir chaque jour 100 % des besoins en vitamines, minéraux, électrolytes et acides aminés.
+        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}. Objectif : 100 % des besoins en vitamines, minéraux et acides aminés en moyenne sur la semaine. Un jour un peu plus léger est compensé par les autres, comme le fait le corps avec ses réserves.
       </p>
 
       <div className="row" style={{ marginBottom: 10 }}>
@@ -235,6 +236,22 @@ export function Planner() {
         <button className="btn" onClick={() => setTplOpen(true)}>
           🗓 Ma semaine type
         </button>
+        {plan.length > 0 && (
+          <button
+            className="btn"
+            onClick={async () => {
+              try {
+                const blob = await weekMenuImage(dates, plan, byId, slots, reports.every((rs) => rs.filter(Boolean).every((r) => r!.coverage >= 99.5)));
+                const how = await shareImage(blob, `menu-${dates[0]}.png`, 'Notre menu de la semaine 🍽️');
+                if (how === 'downloaded') toast('Image du menu téléchargée');
+              } catch {
+                /* partage annulé */
+              }
+            }}
+          >
+            📤 Partager le menu
+          </button>
+        )}
         <Link className="btn" to={`/batch?du=${dates[0]}`}>
           📦 Batch cooking
         </Link>

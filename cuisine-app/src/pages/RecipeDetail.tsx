@@ -16,7 +16,7 @@ import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
 import { FeedbackSheet } from '../components/FeedbackSheet';
 import { addLeftover } from '../components/Leftovers';
-import { NutritionPanel } from '../components/NutritionPanel';
+import { NutritionPanel, WhyGood } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
 import type { IndexedRecipe } from '../domain/types';
@@ -75,6 +75,15 @@ export function RecipeDetail() {
               {fav ? '❤️' : '🤍'}
             </button>
           </div>
+          {recipe.photoCredit && (
+            <div className="small muted" style={{ marginTop: -6 }}>
+              📷 Photo d’illustration :{' '}
+              <a href={recipe.photoCredit.source} target="_blank" rel="noreferrer">
+                {recipe.photoCredit.author}
+              </a>
+              , {recipe.photoCredit.license}
+            </div>
+          )}
           <div>
             <div className="row small muted" style={{ marginBottom: 4 }}>
               <span>{cuisine.emoji} {cuisine.label}</span>·<span>{CATEGORIES[recipe.category].label}</span>·
@@ -157,6 +166,7 @@ export function RecipeDetail() {
               </ul>
             </div>
           )}
+          <WhyGood recipe={recipe} />
           <section className="card pad">
             <div className="row between" style={{ marginBottom: 8 }}>
               <h2 style={{ margin: 0 }}>Ingrédients</h2>

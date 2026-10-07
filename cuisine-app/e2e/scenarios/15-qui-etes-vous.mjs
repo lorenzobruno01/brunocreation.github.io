@@ -1,13 +1,13 @@
 // Lorenzo crée son profil et celui d'Emma, l'invite ; Emma rejoint et choisit
 // « Emma » (Lorenzo est indisponible : c'est son compte). Pas de doublon.
-import { check, createMock, idb, phone, signup, wait } from '../helpers.mjs';
+import { check, createMock, idb, phone, signup, wait, startProfile } from '../helpers.mjs';
 
 export default async function ({ browser, base }) {
   const mock = createMock();
   const A = await phone(browser, mock, 'Lorenzo');
   const p = A.p;
   await p.goto(base + '#/');
-  await p.getByText('Créer mon profil').click({ timeout: 15000 });
+  await startProfile(p);
   check(/🧍 Vous/.test(await p.locator('.sheet h2').innerText()), 'titre « Vous » pour soi');
   await p.getByPlaceholder('Votre prénom').fill('Lorenzo');
   for (let i = 0; i < 3; i++) await p.getByRole('button', { name: 'Suivant ›' }).click();

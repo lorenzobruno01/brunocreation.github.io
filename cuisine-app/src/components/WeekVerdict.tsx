@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { usePlanAnalysis } from '../hooks/plan';
+import { usePlanAnalysis, useStreak, weekComplete } from '../hooks/plan';
 import { useLibrary } from '../hooks/library';
 import { commonIngredients, foodSourcesFor } from '../domain/week';
 import { useMemo } from 'react';
@@ -9,12 +9,23 @@ import { deName } from './format';
 /** Bilan de la semaine par personne : 100 % atteint, ou ce qu'il faudrait ajouter */
 export function WeekVerdict({ dates, slots }: { dates: string[]; slots: Slot[] }) {
   const { ingredients, recipes } = useLibrary();
+  const streak = useStreak();
+  const WeekBadge = () => (
+    <div className="week-badge">
+      <span className="wb-icon">🏆</span>
+      <span>
+        <strong>Semaine à 100 %</strong>
+        <span className="small">{streak > 1 ? `🔥 ${streak} semaines d’affilée !` : 'Tous les besoins de chacun sont couverts.'}</span>
+      </span>
+    </div>
+  );
   const common = useMemo(() => commonIngredients(recipes), [recipes]);
   const { weeks, loaded } = usePlanAnalysis(dates);
   if (!loaded || !weeks.length || !weeks[0].days.length) return null;
   const partial = slots.length < 4;
   return (
     <section className="card pad section stack" aria-label="Bilan de la semaine">
+      {weekComplete(weeks) && <WeekBadge />}
       {weeks.map((w) => {
         const name = weeks.length > 1 ? w.profile.name : 'vous';
         if (!w.gaps.length && !w.excess.length)

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { IndexedRecipe, Recipe } from '../domain/types';
 import { CUISINES } from '../domain/labels';
 
@@ -32,10 +33,12 @@ export function RecipeVisual({
   children?: React.ReactNode;
 }) {
   const cuisine = CUISINES[recipe.cuisine];
-  if (recipe.photo) {
+  // photo indisponible (hors ligne, fichier retiré) : on revient à l'illustration
+  const [broken, setBroken] = useState(false);
+  if (recipe.photo && !broken) {
     return (
       <div className="rvisual">
-        <img src={recipe.photo} alt={recipe.name} loading="lazy" />
+        <img src={recipe.photo} alt={recipe.name} loading="lazy" referrerPolicy="no-referrer" onError={() => setBroken(true)} />
         {showFlag && cuisine && <span className="flag">{cuisine.emoji} {cuisine.label}</span>}
         {children}
       </div>

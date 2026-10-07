@@ -6,15 +6,22 @@ import { INGREDIENTS } from '../data/ingredients';
 import { indexRecipe } from '../domain/indexing';
 import { computeDetailed, DEFAULT_PROFILES, densityScore, type NutritionProfile } from '../domain/micronutrients';
 import { analyzeDigestion, compatibility, DIET_PROFILES } from '../domain/digestion';
-import type { Ingredient, IndexedRecipe, Recipe, Settings } from '../domain/types';
+import type { Ingredient, IndexedRecipe, Recipe, Settings, PhotoCredit } from '../domain/types';
 import { norm } from '../domain/text';
 
 // Les recettes de base sont des fichiers JSON chargés à la demande (découpage par fichier).
 const seedModules = import.meta.glob<{ default: Recipe[] }>('../data/recipes/*.json');
 
 async function loadSeed(): Promise<Recipe[]> {
-  const mods = await Promise.all(Object.values(seedModules).map((load) => load()));
-  return mods.flatMap((m) => m.default.map((r) => ({ ...r, source: 'seed' as const, createdAt: r.createdAt ?? '2026-10-01T00:00:00.000Z' })));
+  const [mods, photos] = await Promise.all([Promise.all(Object.values(seedModules).map((load) => load())), import('../data/photos.json')]);
+  // photos libres de droits (Wikimedia Commons), chargées par le navigateur ; crédits dans src/data/photos.json
+  const P = photos.default as Record<string, { url?: string } & PhotoCredit>;
+  return mods.flatMap((m) =>
+    m.default.map((r) => {
+      const ph = P[r.id];
+      return { ...r, source: 'seed' as const, createdAt: r.createdAt ?? '2026-10-01T00:00:00.000Z', ...(ph?.url && !r.photo ? { photo: ph.url, photoCredit: { author: ph.author, license: ph.license, source: ph.source } } : {}) };
+    }),
+  );
 }
 
 interface LibraryValue {

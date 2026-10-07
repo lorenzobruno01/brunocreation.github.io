@@ -14,9 +14,15 @@ export async function phone(browser, mock, name = 'téléphone') {
   return { ctx, p, errors, name };
 }
 /** Accueil en 5 étapes : prénom, activité, objectif, goûts (passés), besoins */
+/** Passe les écrans de présentation et ouvre la création de profil */
+export async function startProfile(p) {
+  await p.getByRole('dialog', { name: 'Présentation' }).waitFor({ timeout: 15000 });
+  for (let i = 0; i < 3 && !(await p.getByRole('button', { name: /Créer mon profil/ }).isVisible()); i++) await p.getByRole('button', { name: 'Suivant ›' }).click();
+  await p.getByRole('button', { name: /Créer mon profil/ }).click();
+}
 export async function onboard(d, base, prenom) {
   await d.p.goto(base + '#/');
-  await d.p.getByText('Créer mon profil').click({ timeout: 15000 });
+  await startProfile(d.p);
   await d.p.getByPlaceholder('Votre prénom').fill(prenom);
   for (let i = 0; i < 3; i++) await d.p.getByRole('button', { name: 'Suivant ›' }).click();
   await d.p.getByRole('button', { name: 'Passer' }).click();

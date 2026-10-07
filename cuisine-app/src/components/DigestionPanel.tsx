@@ -27,8 +27,11 @@ export function DigestionPanel({ recipe }: { recipe: IndexedRecipe }) {
   const d = useMemo(() => analyzeDigestion(recipe, lookup), [recipe, lookup]);
   const ox = OX_LABEL[d.oxalateLevel];
   return (
-    <section className="card pad stack">
-      <h2 style={{ margin: 0 }}>🌾 Digestion & préparation</h2>
+    <details className="card pad stack fold">
+      <summary>
+        <h2 style={{ margin: 0, display: 'inline' }}>🌾 Digestion et compatibilité</h2>
+        <span className="small muted"> · {recipe.incompatible && diets.some((x) => recipe.incompatible![x]) ? '⚠️ hors de votre approche' : '✅ compatible avec votre approche'}</span>
+      </summary>
       <div className="chips">
         <span className={`tag ${ox.cls}`}>💎 Oxalates {ox.label} (≈ {d.oxalateMg} mg/portion)</span>
         {d.fermented && <span className="tag ok">🫙 Contient un fermenté</span>}
@@ -50,9 +53,9 @@ export function DigestionPanel({ recipe }: { recipe: IndexedRecipe }) {
         </ul>
       )}
       <div>
-        <span className="label">Compatibilité avec les approches alimentaires</span>
+        <span className="label">Compatibilité avec vos approches</span>
         <div className="stack" style={{ gap: 4, marginTop: 6 }}>
-          {DIET_PROFILES.map((p) => {
+          {DIET_PROFILES.filter((p) => diets.includes(p.id)).map((p) => {
             const why = recipe.incompatible?.[p.id];
             const active = diets.includes(p.id);
             return (
@@ -71,6 +74,6 @@ export function DigestionPanel({ recipe }: { recipe: IndexedRecipe }) {
       <p className="small muted" style={{ margin: 0 }}>
         Règles fondées sur des sources documentées (WAPF, Monash FODMAP, listes d’oxalates Harvard/OHF, EFSA, études sur le trempage et le levain). <Link to="/sources">Voir les sources et la méthode</Link> · <Link to="/reglages">Choisir mon approche</Link>
       </p>
-    </section>
+    </details>
   );
 }

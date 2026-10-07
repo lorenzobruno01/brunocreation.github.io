@@ -4,32 +4,17 @@ import { useStoredProfiles, useUserData } from '../hooks/library';
 import { setActiveProfile, useActiveProfile } from '../hooks/activeProfile';
 import { Sheet } from './ui';
 import { cloudEnabled, useCloud } from '../cloud/sync';
+import { BRAND } from '../config/brand';
 
 const TABS = [
   { to: '/', label: 'Accueil', icon: '🏠', end: true },
   { to: '/recettes', label: 'Recettes', icon: '🍽️' },
-  { to: '/frigo', label: 'Frigo', icon: '🥕' },
-  { to: '/semaine', label: 'Semaine', icon: '📅' },
+  { to: '/semaine', label: 'Planning', icon: '📅' },
   { to: '/courses', label: 'Courses', icon: '🛒' },
-];
-
-const MORE = [
-  { to: '/ma-journee', label: 'Ma journée', icon: '☀️' },
-  { to: '/ma-semaine', label: 'Ma semaine : vitamines et minéraux', icon: '📊' },
-  { to: '/favoris', label: 'Mes favoris & historique', icon: '❤️' },
-  { to: '/garde-manger', label: 'Garde-manger', icon: '🏠' },
-  { to: '/ajouter', label: 'Ajouter une recette', icon: '➕' },
-  { to: '/stats', label: 'Statistiques de la bibliothèque', icon: '📊' },
-  { to: '/sources', label: 'Sources & méthode nutritionnelle', icon: '📚' },
-  { to: '/compte', label: 'Mon compte', icon: '👤' },
-  { to: '/besoins', label: 'Mes besoins', icon: '🎯' },
-  { to: '/poids', label: 'Mon poids', icon: '⚖️' },
-  { to: '/appris', label: 'Mes avis et ce que l’appli a appris', icon: '🧠' },
-  { to: '/reglages', label: 'Mon profil & réglages', icon: '⚙️' },
+  { to: '/moi', label: 'Moi', icon: '👤' },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
-  const [more, setMore] = useState(false);
   const [who, setWho] = useState(false);
   const profiles = useStoredProfiles() ?? [];
   const active = useActiveProfile(profiles);
@@ -40,8 +25,8 @@ export function Layout({ children }: { children: ReactNode }) {
       <header className="topbar">
         <div className="topbar-inner">
           <Link to="/" className="brand">
-            <span className="brand-mark">🍲</span>
-            <span>Notre Cuisine</span>
+            <img className="brand-mark" src="icon.svg" alt="" width={32} height={32} />
+            <span>{BRAND.name}</span>
           </Link>
           <nav className="topnav" aria-label="Navigation principale">
             {TABS.map((t) => (
@@ -62,13 +47,11 @@ export function Layout({ children }: { children: ReactNode }) {
             )}
             {cloudEnabled && (
               <Link to="/compte" className="icon-btn" aria-label={cloud.email ? `Compte : ${cloud.email}` : 'Se connecter'} title={cloud.email ?? 'Se connecter'} style={{ textDecoration: 'none', position: 'relative' }}>
-                👤
+                {cloud.email ? '☁️' : '🔑'}
                 {cloud.email && <span className={`sync-dot ${cloud.status}`} />}
               </Link>
             )}
-            <button className="icon-btn" aria-label="Menu" onClick={() => setMore(true)}>
-              ☰
-            </button>
+
           </div>
         </div>
       </header>
@@ -117,18 +100,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </Sheet>
       )}
-      {more && (
-        <Sheet title="Menu" onClose={() => setMore(false)}>
-          <div className="menu-list" onClick={() => setMore(false)}>
-            {MORE.map((m) => (
-              <Link key={m.to} to={m.to}>
-                <span className="mi">{m.icon}</span>
-                {m.label}
-              </Link>
-            ))}
-          </div>
-        </Sheet>
-      )}
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useLibrary, useUserData } from '../hooks/library';
 import { RecipeCard } from '../components/RecipeCard';
 import { FiltersPanel } from '../components/FiltersPanel';
@@ -21,7 +21,7 @@ function loadFilters(): Filters {
   }
 }
 
-const EXAMPLES = ['saumon', 'pommes de terre', 'dîner rapide', 'italien', 'œufs fromage', 'foie', 'week-end', 'agneau', 'kéfir'];
+const EXAMPLES = ['poulet', 'rapide', 'gratin', 'saumon', 'pommes de terre', 'soupe', 'œufs', 'mijoté'];
 
 export function Recipes() {
   const { recipes, lookup, ingredients } = useLibrary();
@@ -72,7 +72,12 @@ export function Recipes() {
 
   return (
     <div className="page">
-      <h1>🍽️ Toutes les recettes</h1>
+      <div className="row between nowrap">
+        <h1>🍽️ Toutes les recettes</h1>
+        <Link to="/frigo" className="btn sm">
+          🥕 J’ai ces ingrédients
+        </Link>
+      </div>
       <div className="sticky-bar stack" style={{ gap: 10 }}>
         <SearchInput value={q} onChange={setQ} placeholder="Nom, ingrédient, cuisine… ex. « dîner rapide »" autoFocus={params.get('focus') === '1'} />
         <div className="chips scroll">
