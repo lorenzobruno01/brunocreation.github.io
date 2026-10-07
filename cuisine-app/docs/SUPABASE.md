@@ -39,7 +39,7 @@ Tant que la seconde migration n'est pas exécutée, l'appli continue en « ancie
 - **Site URL** : `https://lorenzobruno01.github.io/brunocreation.github.io/cuisine/`
 - **Redirect URLs** : ajoutez la même adresse. Les liens magiques et les liens « mot de passe oublié » y reviennent.
 
-**Code à 6 chiffres dans l'e-mail (pour l'appli installée sur l'écran d'accueil)** : sur iPhone, un lien reçu par e-mail s'ouvre dans Safari, pas dans l'appli installée. Pour pouvoir recopier un code à la place :
+**Code à 6 chiffres dans l'e-mail (facultatif)** : sur iPhone, un lien reçu par e-mail s'ouvre dans Safari, pas dans l'appli installée. La solution simple est le mot de passe, à choisir dans « Mon compte » ou avec « Mot de passe oublié ». Pour recevoir aussi un code à recopier, il faut modifier le modèle d'e-mail, ce que Supabase n'autorise qu'avec un SMTP personnalisé (**Authentication → Emails → SMTP Settings** ; Brevo et Resend ont une offre gratuite). Ensuite :
 
 1. Allez dans **Authentication → Emails → Templates**, puis ouvrez le modèle **Magic Link**.
 2. Remplacez son contenu par :
@@ -51,6 +51,7 @@ Tant que la seconde migration n'est pas exécutée, l'appli continue en « ancie
    ```
 
 3. Faites de même pour le modèle **Confirm signup**, avec le même texte.
+4. Construisez le site avec `VITE_FEATURE_EMAIL_CODE=1` : le champ « code » apparaît alors dans l'écran de connexion.
 
 Une fois connecté, chacun peut aussi choisir un mot de passe dans **Mon compte**.
 
