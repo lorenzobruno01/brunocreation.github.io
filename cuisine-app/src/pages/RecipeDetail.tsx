@@ -75,6 +75,15 @@ export function RecipeDetail() {
               {fav ? '❤️' : '🤍'}
             </button>
           </div>
+          {recipe.photoCredit && (
+            <div className="small muted" style={{ marginTop: -6 }}>
+              📷 Photo d’illustration :{' '}
+              <a href={recipe.photoCredit.source} target="_blank" rel="noreferrer">
+                {recipe.photoCredit.author}
+              </a>
+              , {recipe.photoCredit.license}
+            </div>
+          )}
           <div>
             <div className="row small muted" style={{ marginBottom: 4 }}>
               <span>{cuisine.emoji} {cuisine.label}</span>·<span>{CATEGORIES[recipe.category].label}</span>·

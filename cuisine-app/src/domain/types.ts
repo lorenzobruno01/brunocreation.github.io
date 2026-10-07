@@ -183,11 +183,20 @@ export interface RecipeIngredient {
   optional?: boolean;
 }
 
+export interface PhotoCredit {
+  author: string;
+  license: string;
+  /** page de la photo (Wikimedia Commons…) */
+  source: string;
+}
+
 export interface Recipe {
   id: string;
   name: string;
   description: string;
   photo?: string; // URL ou data-URL (recettes ajoutées)
+  /** crédit d'une photo sous licence libre (obligatoire pour CC BY / BY-SA) */
+  photoCredit?: PhotoCredit;
   emoji?: string;
   category: RecipeCategory;
   mealTypes: MealType[];
