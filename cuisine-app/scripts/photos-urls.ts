@@ -4,12 +4,15 @@
  * Les photos sont hébergées avec le site : pas de dépendance à Wikimedia.
  *   npx tsx scripts/photos-urls.ts
  */
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = join(import.meta.dirname, '..');
 const file = join(root, 'src/data/photos.json');
-const meta = JSON.parse(readFileSync(join(root, '../photos-work/chosen-meta.json'), 'utf8')) as Record<string, { file: string; author: string; license: string; source: string }>;
+// chosen-meta.json (premières photos) + chosen-meta-<lot>.json (un fichier par lot du robot)
+const work = join(root, '../photos-work');
+const meta: Record<string, { file: string; author: string; license: string; source: string }> = {};
+for (const f of readdirSync(work).filter((f) => /^chosen-meta.*\.json$/.test(f)).sort()) Object.assign(meta, JSON.parse(readFileSync(join(work, f), 'utf8')));
 const photos: Record<string, object> = {};
 for (const [id, m] of Object.entries(meta)) {
   if (!existsSync(join(root, 'public/photos', `${id}.webp`))) continue;
