@@ -150,13 +150,15 @@ def do_chosen():
     cands = all_candidates()
     out_dir = os.path.join(HERE, '..', 'cuisine-app', 'public', 'photos')
     os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(HERE, 'chosen-meta.json')
-    meta = json.load(open(path)) if os.path.exists(path) else {}
+    meta = {}
+    for f in sorted(glob.glob(os.path.join(HERE, 'chosen-meta*.json'))):
+        meta.update(json.load(open(f)))
+    done = set(meta)
     for i, (rid, pick) in enumerate(chosen.items()):
         if not mine(rid):
             continue
         target = os.path.join(out_dir, f'{rid}.webp')
-        if rid in meta and os.path.exists(target):
+        if rid in done and os.path.exists(target):
             continue
         if isinstance(pick, dict):
             c = cands[rid][pick['c'] - 1]
@@ -184,7 +186,11 @@ def do_chosen():
         meta[rid] = info
         print(i, rid, os.path.getsize(target) // 1024, 'ko', flush=True)
         time.sleep(0.3)
-    json.dump(meta, open(os.path.join(HERE, f'chosen-meta-{SHARD}.json'), 'w'), ensure_ascii=False, indent=1)
+    mine_meta = {k: v for k, v in meta.items() if k not in done or not os.path.exists(os.path.join(out_dir, f'{k}.webp')) or k in chosen and mine(k)}
+    path = os.path.join(HERE, f'chosen-meta-{SHARD}.json')
+    old = json.load(open(path)) if os.path.exists(path) else {}
+    old.update({k: v for k, v in mine_meta.items() if mine(k)})
+    json.dump(old, open(path, 'w'), ensure_ascii=False, indent=1)
 
 
 if __name__ == '__main__':
