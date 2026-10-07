@@ -21,9 +21,11 @@ export function createMock({ legacy = false, missingTables = [] } = {}) {
     // ── auth
     if (path === '/auth/v1/signup') { const b = body(); if (Object.values(db.users).some((u) => u.email === b.email)) return json({ code: 'user_already_exists', msg: 'User already registered' }, 422); const u = { id: uid(), email: b.email, password: b.password }; db.users[u.id] = u; return json(session(u)); }
     if (path === '/auth/v1/token') { const b = body(); const u = Object.values(db.users).find((x) => x.email === b.email && x.password === b.password); if (!u) return json({ error: 'invalid_grant', error_description: 'Invalid login credentials', msg: 'Invalid login credentials', code: 'invalid_credentials' }, 400); return json(session(u)); }
+    if (path === '/auth/v1/user' && m === 'PUT') { const b = body(); if (me && b.password) db.users[me].password = b.password; return json({ id: me, email: db.users[me].email, aud: 'authenticated' }); }
     if (path === '/auth/v1/user') return me ? json({ id: me, email: db.users[me].email, aud: 'authenticated' }) : json({ msg: 'no' }, 401);
     if (path === '/auth/v1/logout') return route.fulfill({ status: 204, headers: H });
-    if (path === '/auth/v1/otp') return json({});
+    if (path === '/auth/v1/otp') { const b = body(); db.otp = { email: b.email, code: '123456' }; return json({}); }
+    if (path === '/auth/v1/verify') { const b = body(); if (!db.otp || b.email !== db.otp.email || b.token !== db.otp.code) return json({ code: 'otp_expired', msg: 'Token has expired or is invalid' }, 403); let u = Object.values(db.users).find((x) => x.email === b.email); if (!u) { u = { id: uid(), email: b.email }; db.users[u.id] = u; } return json(session(u)); }
     // ── legacy
     if (path === '/rest/v1/user_data') {
       if (m === 'GET') { const row = db.user_data[me]; const acc = req.headers()['accept'] || ''; if (acc.includes('pgrst.object')) return row ? json(row) : json({ code: 'PGRST116', message: 'no rows' }, 406); return json(row ? [row] : []); }
@@ -47,6 +49,7 @@ export function createMock({ legacy = false, missingTables = [] } = {}) {
         return json(rows.map((r) => ({ ...r, households: { name: db.households[r.household_id].name } })));
       }
       if (m === 'DELETE') { db.members = db.members.filter((r) => !(r.user_id === me && r.household_id === q.get('household_id').slice(3))); return route.fulfill({ status: 204, headers: H }); }
+      if (m === 'PATCH') { const b = body(); for (const r of db.members) if (r.user_id === me && r.user_id === q.get('user_id').slice(3) && r.household_id === q.get('household_id').slice(3)) Object.assign(r, b); return route.fulfill({ status: 204, headers: H }); }
     }
     if (t === 'households') {
       const hid = (q.get('id') || '').slice(3);

@@ -10,8 +10,10 @@ import {
   renameHousehold,
   resolveImport,
   sendMagicLink,
+  verifyEmailCode,
   sendPasswordReset,
   signInWithGoogle,
+  setDisplayName,
   signIn,
   signOut,
   signUp,
@@ -30,10 +32,22 @@ const STATUS: Record<string, string> = {
 };
 
 /** Formulaire de connexion : mot de passe, lien magique, création de compte, oubli */
+/** Site ouvert comme une appli installée sur l'écran d'accueil */
+const isInstalledApp = () => {
+  try {
+    return window.matchMedia('(display-mode: standalone)').matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
+  } catch {
+    return false;
+  }
+};
+
 export function LoginForm({ intro }: { intro?: string }) {
-  const [mode, setMode] = useState<'magic' | 'login' | 'signup' | 'reset'>('magic');
+  // le mot de passe d'abord : il marche partout, y compris dans l'appli installée
+  const [mode, setMode] = useState<'magic' | 'login' | 'signup' | 'reset'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [sent, setSent] = useState(false);
+  const [otp, setOtp] = useState('');
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
 
@@ -47,8 +61,13 @@ export function LoginForm({ intro }: { intro?: string }) {
         } catch {
           /* stockage indisponible */
         }
-        await sendMagicLink(email.trim());
-        setMsg({ ok: true, text: '📧 Lien envoyé ! Ouvrez l’e-mail sur cet appareil et touchez le lien pour vous connecter.' });
+        if (sent && otp.trim()) {
+          await verifyEmailCode(email.trim(), otp);
+        } else {
+          await sendMagicLink(email.trim());
+          setSent(true);
+          setMsg({ ok: true, text: isInstalledApp() ? '📧 E-mail envoyé ! Recopiez ici le code à 6 chiffres qu’il contient (le lien, lui, s’ouvrirait dans le navigateur).' : '📧 E-mail envoyé ! Touchez le lien qu’il contient, ou recopiez ici le code à 6 chiffres.' });
+        }
       } else if (mode === 'signup') {
         const { needsConfirmation } = await signUp(email.trim(), password);
         setMsg(needsConfirmation ? { ok: true, text: '📧 Compte créé ! Cliquez sur le lien reçu par e-mail pour le confirmer, puis connectez-vous ici.' } : { ok: true, text: 'Compte créé, vous êtes connecté·e ✅' });
@@ -74,14 +93,20 @@ export function LoginForm({ intro }: { intro?: string }) {
         </button>
       )}
       <div className="segmented">
-        <button className={mode === 'magic' ? 'on' : ''} onClick={() => setMode('magic')}>
-          ✉️ Lien par e-mail
-          <span className="cnt">sans mot de passe</span>
-        </button>
         <button className={mode === 'login' || mode === 'signup' || mode === 'reset' ? 'on' : ''} onClick={() => setMode('login')}>
           🔑 Mot de passe
+          <span className="cnt">recommandé</span>
+        </button>
+        <button className={mode === 'magic' ? 'on' : ''} onClick={() => setMode('magic')}>
+          ✉️ Code par e-mail
+          <span className="cnt">sans mot de passe</span>
         </button>
       </div>
+      {isInstalledApp() && mode === 'magic' && (
+        <div className="callout info small" style={{ margin: 0 }}>
+          📱 Dans l’appli installée, le lien de l’e-mail s’ouvre dans le navigateur : recopiez plutôt le code à 6 chiffres, ou utilisez un mot de passe.
+        </div>
+      )}
       {mode !== 'magic' && (
         <div className="chips">
           <button className={`chip ${mode === 'login' ? 'on' : ''}`} onClick={() => setMode('login')}>
@@ -109,9 +134,15 @@ export function LoginForm({ intro }: { intro?: string }) {
             <input className="input" type="password" autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} required minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
         )}
+        {mode === 'magic' && sent && (
+          <div className="field">
+            <label>Code reçu par e-mail</label>
+            <input className="input" inputMode="numeric" aria-label="Code reçu par e-mail" autoComplete="one-time-code" placeholder="123456" maxLength={8} value={otp} onChange={(e) => setOtp(e.target.value)} />
+          </div>
+        )}
         {msg && <div className={`callout small ${msg.ok ? 'ok' : 'danger'}`}>{msg.text}</div>}
         <button className="btn primary lg" type="submit" disabled={busy}>
-          {busy ? '…' : mode === 'magic' ? 'Recevoir mon lien de connexion' : mode === 'signup' ? 'Créer mon compte' : mode === 'login' ? 'Se connecter' : 'Recevoir le lien'}
+          {busy ? '…' : mode === 'magic' ? (sent && otp.trim() ? 'Me connecter avec ce code' : sent ? 'Renvoyer un e-mail' : 'Recevoir mon code de connexion') : mode === 'signup' ? 'Créer mon compte' : mode === 'login' ? 'Se connecter' : 'Recevoir le lien'}
         </button>
       </form>
       {mode === 'login' && (
@@ -185,12 +216,15 @@ function HouseholdCard() {
       </p>
       {cloud.members && (
         <div className="stack" style={{ gap: 4 }}>
-          {cloud.members.map((m) => (
-            <div key={m.userId} className="small">
-              {m.role === 'proprietaire' ? '👑' : '👤'} <strong>{m.name}</strong>
-              {m.userId === cloud.userId && <span className="muted"> (vous)</span>}
-            </div>
-          ))}
+          {cloud.members.map((m) =>
+            m.userId === cloud.userId ? (
+              <MyName key={m.userId} name={m.name} owner={m.role === 'proprietaire'} />
+            ) : (
+              <div key={m.userId} className="small">
+                {m.role === 'proprietaire' ? '👑' : '👤'} <strong>{m.name}</strong>
+              </div>
+            ),
+          )}
         </div>
       )}
       {code ? (
@@ -331,7 +365,7 @@ export function Account() {
       </section>
 
       <HouseholdCard />
-      {cloud.recovery && <NewPassword />}
+      {cloud.recovery ? <NewPassword /> : <PasswordCard />}
 
       <section className="card pad stack">
         <h2 style={{ margin: 0 }}>Se déconnecter</h2>
@@ -422,13 +456,30 @@ export function JoinHousehold() {
   );
 }
 
+/** Choisir ou changer son mot de passe une fois connecté (après une connexion par e-mail) */
+function PasswordCard() {
+  const [open, setOpen] = useState(false);
+  if (!open)
+    return (
+      <section className="card pad stack">
+        <div className="row between nowrap">
+          <span className="small">🔑 Connecté·e par e-mail ? Choisissez un mot de passe pour vous connecter directement, y compris dans l’appli installée sur l’écran d’accueil.</span>
+          <button className="btn sm" onClick={() => setOpen(true)}>
+            Choisir
+          </button>
+        </div>
+      </section>
+    );
+  return <NewPassword />;
+}
+
 function NewPassword() {
   const [pw, setPw] = useState('');
   const [msg, setMsg] = useState('');
   return (
     <section className="card pad stack">
-      <h2 style={{ margin: 0 }}>🔑 Nouveau mot de passe</h2>
-      <input className="input" type="password" autoComplete="new-password" minLength={6} value={pw} onChange={(e) => setPw(e.target.value)} />
+      <h2 style={{ margin: 0 }}>🔑 Mon mot de passe</h2>
+      <input className="input" type="password" autoComplete="new-password" minLength={6} placeholder="6 caractères minimum" aria-label="Nouveau mot de passe" value={pw} onChange={(e) => setPw(e.target.value)} />
       <button
         className="btn primary"
         onClick={async () => {
@@ -444,5 +495,42 @@ function NewPassword() {
       </button>
       {msg && <div className="small">{msg}</div>}
     </section>
+  );
+}
+
+/** Mon nom dans le foyer, modifiable */
+function MyName({ name, owner }: { name: string; owner: boolean }) {
+  const [edit, setEdit] = useState(false);
+  const [value, setValue] = useState(name);
+  const toast = useToast();
+  if (!edit)
+    return (
+      <div className="small row nowrap" style={{ gap: 6 }}>
+        <span>
+          {owner ? '👑' : '👤'} <strong>{name}</strong> <span className="muted">(vous)</span>
+        </span>
+        <button className="btn ghost sm" onClick={() => setEdit(true)}>
+          ✏️ Changer mon nom
+        </button>
+      </div>
+    );
+  return (
+    <form
+      className="row nowrap"
+      style={{ gap: 6 }}
+      onSubmit={async (e) => {
+        e.preventDefault();
+        try {
+          await setDisplayName(value);
+          setEdit(false);
+          toast('Nom mis à jour ✅');
+        } catch (err) {
+          toast((err as Error).message);
+        }
+      }}
+    >
+      <input className="input" value={value} maxLength={40} aria-label="Mon nom dans le foyer" onChange={(e) => setValue(e.target.value)} autoFocus />
+      <button className="btn sm primary">OK</button>
+    </form>
   );
 }

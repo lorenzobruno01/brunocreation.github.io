@@ -39,6 +39,21 @@ Tant que la seconde migration n'est pas exécutée, l'appli continue en « ancie
 - **Site URL** : `https://lorenzobruno01.github.io/brunocreation.github.io/cuisine/`
 - **Redirect URLs** : ajoutez la même adresse. Les liens magiques et les liens « mot de passe oublié » y reviennent.
 
+**Code à 6 chiffres dans l'e-mail (pour l'appli installée sur l'écran d'accueil)** : sur iPhone, un lien reçu par e-mail s'ouvre dans Safari, pas dans l'appli installée. Pour pouvoir recopier un code à la place :
+
+1. Allez dans **Authentication → Emails → Templates**, puis ouvrez le modèle **Magic Link**.
+2. Remplacez son contenu par :
+
+   ```html
+   <h2>Connexion à Notre Cuisine</h2>
+   <p>Votre code : <strong style="font-size:24px;letter-spacing:4px">{{ .Token }}</strong></p>
+   <p>Ou touchez ce lien depuis le navigateur : <a href="{{ .ConfirmationURL }}">me connecter</a></p>
+   ```
+
+3. Faites de même pour le modèle **Confirm signup**, avec le même texte.
+
+Une fois connecté, chacun peut aussi choisir un mot de passe dans **Mon compte**.
+
 **Google (facultatif)** : **Authentication → Sign In / Providers → Google**. Il faut un identifiant OAuth créé dans Google Cloud Console, avec comme URL de redirection celle indiquée par Supabase. Tant que ce n'est pas fait, l'appli propose le lien magique et le mot de passe.
 
 ## 4. Comment fonctionne la synchronisation

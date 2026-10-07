@@ -1,0 +1,2563 @@
+[
+  {
+    "id": "pdjx-skyr-abricots-grilles-noix",
+    "name": "Skyr aux abricots grillés, miel et noix",
+    "description": "Des abricots coupés en deux, caramélisés quelques minutes sous le gril avec une noisette de beurre, posés tièdes sur un skyr bien froid avec des noix et un filet de miel.",
+    "emoji": "🍑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 4,
+    "cookTime": 6,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "skyr",
+        "qty": 400,
+        "unit": "g",
+        "note": "bien froid"
+      },
+      {
+        "id": "abricot",
+        "qty": 6,
+        "unit": "piece",
+        "note": "mûrs, coupés en deux et dénoyautés"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "noix",
+        "qty": 25,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas",
+        "note": "cru"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Allumez le gril du four. Disposez les demi-abricots face coupée vers le haut dans un plat, posez un petit copeau de beurre sur chacun.",
+      "Enfournez 5 à 6 min à 10 cm du gril, jusqu’à ce que les bords dorent et que la chair commence à fondre.",
+      "Pendant ce temps, fouettez le skyr avec la crème fraîche et la vanille 20 secondes pour l’assouplir, puis répartissez-le dans deux bols.",
+      "Posez les abricots chauds et leur jus beurré sur le skyr, parsemez de noix et arrosez de miel. Servez aussitôt, le contraste chaud-froid fait tout."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "lacte"
+    ],
+    "tips": "Hors saison, des abricots au sirop léger bien égouttés font l’affaire."
+  },
+  {
+    "id": "pdjx-pancakes-banane-oeufs-ricotta",
+    "name": "Pancakes banane, œufs et ricotta aux myrtilles",
+    "description": "Des pancakes épais et moelleux sans farine de blé : banane écrasée, œufs, ricotta et un peu de farine de riz, dorés au beurre et servis avec des myrtilles chaudes.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "banane",
+        "qty": 2,
+        "unit": "piece",
+        "note": "bien mûres"
+      },
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "ricotta",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "levure-chimique",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "myrtille",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "id": "sirop-erable",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Écrasez les bananes à la fourchette dans un saladier jusqu’à obtenir une purée presque lisse. Ajoutez les œufs, la ricotta, la farine de riz et la levure, puis fouettez 30 secondes.",
+      "Faites chauffer une grande poêle à feu moyen avec un tiers du beurre. Versez des petites louches de pâte (8 cm de diamètre) et laissez cuire 2 min, jusqu’à ce que des bulles apparaissent en surface.",
+      "Retournez délicatement à la spatule et cuisez encore 1 min 30. Recommencez avec le reste de beurre et de pâte (environ 10 pancakes).",
+      "Dans la poêle encore chaude, faites éclater les myrtilles 1 min avec le sirop d’érable. Nappez-en les pancakes et servez."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "enfants"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "reconfortant"
+    ],
+    "tips": "Gardez les pancakes au chaud dans le four à 80 °C pendant que vous cuisez la suite."
+  },
+  {
+    "id": "pdjx-oeufs-brouilles-pain-perdu",
+    "name": "Œufs brouillés au miel et à la cannelle, façon pain perdu",
+    "description": "Toute la gourmandise du pain perdu, sans pain : des œufs brouillés crémeux au lait, parfumés de cannelle et de vanille, avec des lamelles de pomme dorées au beurre.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 4,
+    "cookTime": 8,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "extra-frais"
+      },
+      {
+        "id": "lait",
+        "qty": 3,
+        "unit": "cas",
+        "note": "entier"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "pomme",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en fines lamelles"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Faites fondre 10 g de beurre dans une poêle à feu moyen et dorez les lamelles de pomme 4 min en les retournant à mi-cuisson. Réservez-les sur l’assiette.",
+      "Fouettez les œufs avec le lait, la cannelle et la vanille 30 secondes, jusqu’à ce que le mélange soit mousseux.",
+      "Baissez le feu au minimum, ajoutez le reste de beurre et versez les œufs. Remuez sans cesse à la spatule 3 min, en ramenant les bords vers le centre, et retirez du feu quand ils sont encore baveux.",
+      "Incorporez la crème fraîche hors du feu, dressez sur les pommes et arrosez de miel. Servez immédiatement."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "cremeux",
+      "reconfortant"
+    ],
+    "tips": "La cuisson très douce est le secret : des œufs brouillés trop chauds deviennent granuleux."
+  },
+  {
+    "id": "pdjx-riz-au-lait-jaunes-poire",
+    "name": "Riz au lait aux jaunes d’œufs, poire au beurre et skyr",
+    "description": "Un riz au lait onctueux enrichi de jaunes d’œufs et préparé la veille, servi frais avec une poire poêlée au beurre et une belle cuillerée de skyr pour tenir jusqu’à midi.",
+    "emoji": "🍚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 5,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "riz-rond",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "lait",
+        "qty": 600,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "poire",
+        "qty": 1,
+        "unit": "piece",
+        "note": "mûre, en quartiers"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 200,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "La veille : rincez le riz, portez le lait à frémissement avec la vanille, versez le riz et laissez cuire 25 min à feu très doux en remuant souvent, jusqu’à ce que les grains soient tendres et le lait épaissi.",
+      "Hors du feu, fouettez les jaunes avec 3 c. à soupe du riz chaud, puis reversez dans la casserole et remuez 1 min sur feu doux sans faire bouillir. Ajoutez le miel, couvrez au contact et réfrigérez la nuit.",
+      "Le matin, faites dorer les quartiers de poire 4 min au beurre dans une petite poêle.",
+      "Répartissez le riz au lait froid dans deux bols, ajoutez le skyr et les poires tièdes avec leur jus beurré."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "riche en protéines",
+      "sans gluten",
+      "batch cooking"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "sucre",
+      "lacte",
+      "reconfortant"
+    ],
+    "tips": "Le riz au lait se garde 3 jours au frais : doublez les quantités.",
+    "restTime": 480
+  },
+  {
+    "id": "pdjx-compotee-pommes-poires-creme-crue",
+    "name": "Compotée pommes-poires au beurre, fromage blanc et crème crue",
+    "description": "Une compotée minute de pommes et poires fondues au beurre, encore tiède, sur un mélange fromage blanc-skyr, avec une cuillerée de crème crue et des noisettes grillées.",
+    "emoji": "🍏",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "pomme",
+        "qty": 2,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "poire",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 300,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 4,
+        "unit": "cas",
+        "note": "crue de préférence"
+      },
+      {
+        "id": "noisette",
+        "qty": 25,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Faites fondre le beurre dans une casserole, ajoutez les dés de pommes et de poire avec la cannelle et 2 c. à soupe d’eau.",
+      "Couvrez et laissez compoter 8 min à feu moyen-doux en remuant deux fois, jusqu’à ce que les fruits soient fondants mais gardent quelques morceaux.",
+      "Pendant ce temps, faites griller les noisettes à sec 2 min dans une petite poêle, et mélangez le fromage blanc avec le skyr.",
+      "Répartissez le mélange lacté dans deux bols, ajoutez la compotée tiède, la crème crue, les noisettes et le miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-bol-glace-skyr-kefir-myrtilles-jaune",
+    "name": "Bol glacé skyr-kéfir aux myrtilles et jaune d’œuf",
+    "description": "Un bol épais et violet façon glace : skyr, kéfir, myrtilles surgelées et un jaune d’œuf cru pour la vitamine A et la choline, avec des graines de courge croquantes.",
+    "emoji": "🫐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "nordique",
+    "prepTime": 5,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "kefir",
+        "qty": 150,
+        "unit": "ml"
+      },
+      {
+        "id": "skyr",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "myrtille",
+        "qty": 100,
+        "unit": "g",
+        "note": "surgelées"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 1,
+        "unit": "piece",
+        "note": "extra-frais, bio"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cac"
+      }
+    ],
+    "steps": [
+      "Mettez dans le blender le kéfir, le skyr, les myrtilles surgelées, le miel et le jaune d’œuf.",
+      "Mixez 40 secondes à pleine vitesse, en raclant les parois une fois, jusqu’à obtenir une texture de glace à l’italienne.",
+      "Versez dans un bol, parsemez de graines de courge grossièrement concassées. Dégustez à la cuillère tout de suite."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "mixe",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "frais"
+    ],
+    "tips": "Utilisez uniquement des œufs extra-frais de poules élevées en plein air pour le jaune cru."
+  },
+  {
+    "id": "pdjx-crepes-farine-riz-marrons",
+    "name": "Crêpes à la farine de riz, fromage blanc et crème de marrons",
+    "description": "Des crêpes fines sans blé, à la farine de riz et aux œufs, garnies de fromage blanc entier et d’un trait de crème de marrons : un goûter d’Ardèche devenu petit-déjeuner.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 5,
+    "cookTime": 15,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "farine-riz",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g",
+        "note": "fondu + pour la poêle"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 200,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "creme-marrons",
+        "qty": 40,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Fouettez la farine de riz, le sel et les œufs, puis versez le lait petit à petit en fouettant pour éviter les grumeaux. Ajoutez la moitié du beurre fondu.",
+      "Chauffez une poêle à crêpes à feu moyen-vif, graissez-la d’un peu de beurre et versez une petite louche de pâte en tournant la poêle pour la répartir.",
+      "Cuisez 1 min, retournez et cuisez 30 secondes de l’autre côté. Recommencez jusqu’à épuisement de la pâte (environ 8 crêpes), en remuant la pâte à chaque fois car la farine de riz se dépose.",
+      "Tartinez chaque crêpe de fromage blanc, ajoutez un trait de crème de marrons, pliez en quatre et servez."
+    ],
+    "tags": [
+      "sans gluten",
+      "enfants",
+      "week-end"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "lacte",
+      "reconfortant"
+    ]
+  },
+  {
+    "id": "pdjx-ricotta-skyr-figues-pistaches",
+    "name": "Ricotta fouettée au skyr, figues fraîches, miel et pistaches",
+    "description": "Une ricotta battue avec du skyr jusqu’à devenir mousseuse, des figues fraîches en quartiers, quelques pistaches et du miel : le petit-déjeuner sicilien de fin d’été.",
+    "emoji": "🟣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 5,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "ricotta",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "figue",
+        "qty": 3,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "pistache",
+        "qty": 15,
+        "unit": "g",
+        "note": "concassées"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "citron",
+        "qty": 0.25,
+        "unit": "piece",
+        "note": "zeste"
+      }
+    ],
+    "steps": [
+      "Fouettez la ricotta et le skyr au fouet à main 1 min, jusqu’à obtenir une crème lisse et aérienne.",
+      "Râpez le zeste de citron par-dessus et mélangez, puis étalez la crème en creusant le centre dans une assiette creuse.",
+      "Disposez les quartiers de figues dans le creux, parsemez de pistaches concassées et arrosez de miel juste avant de servir."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-lassi-peche-safran",
+    "name": "Lassi épais à la pêche, au safran et à la cardamome",
+    "description": "Un lassi à boire ou à la cuillère : yaourt entier et skyr mixés avec une pêche bien mûre, quelques pistils de safran infusés et une pointe de cardamome.",
+    "emoji": "🥭",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "indienne",
+    "prepTime": 5,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "peche",
+        "qty": 1,
+        "unit": "piece",
+        "note": "bien mûre, pelée"
+      },
+      {
+        "id": "lait",
+        "qty": 80,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "safran",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "cardamome",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      }
+    ],
+    "steps": [
+      "Faites infuser le safran 3 min dans le lait légèrement tiédi (10 secondes au feu).",
+      "Coupez la pêche en morceaux et mettez-les dans le blender avec le yaourt, le skyr, le lait safrané, la cardamome et le miel.",
+      "Mixez 30 secondes jusqu’à ce que ce soit parfaitement lisse et mousseux, versez dans un grand verre et servez bien frais."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "mixe",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "epice"
+    ]
+  },
+  {
+    "id": "pdjx-faisselle-fraises-menthe",
+    "name": "Faisselle aux fraises, menthe et graines de courge",
+    "description": "Une faisselle bien égouttée, enrichie de skyr, avec des fraises de saison coupées et macérées deux minutes au miel et à la menthe fraîche.",
+    "emoji": "🍓",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 7,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "fromage-blanc",
+        "qty": 250,
+        "unit": "g",
+        "note": "faisselle entière égouttée"
+      },
+      {
+        "id": "skyr",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "fraise",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "menthe",
+        "qty": 4,
+        "unit": "feuille"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Équeutez les fraises et coupez-les en quatre. Ciselez finement la menthe.",
+      "Mélangez les fraises avec la menthe et le miel, et laissez macérer 2 à 3 min pour qu’elles rendent leur jus.",
+      "Démoulez la faisselle dans un bol, ajoutez le skyr à côté, versez les fraises et leur jus et parsemez de graines de courge."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "cru",
+    "flavors": [
+      "sucre",
+      "frais",
+      "fruite"
+    ]
+  },
+  {
+    "id": "pdjx-cottage-peches-poelees-vanille",
+    "name": "Cottage cheese, pêches poêlées au beurre vanillé",
+    "description": "Des quartiers de pêche saisis au beurre vanillé jusqu’à caraméliser légèrement, versés chauds sur un grand bol de cottage cheese, avec quelques noix.",
+    "emoji": "🍑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 4,
+    "cookTime": 5,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "cottage",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "peche",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en quartiers"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "noix",
+        "qty": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Faites mousser le beurre avec la vanille dans une petite poêle à feu moyen-vif.",
+      "Ajoutez les quartiers de pêche et faites-les dorer 2 min par face, jusqu’à ce qu’ils soient caramélisés sur les bords et fondants à cœur. Arrosez de miel en fin de cuisson.",
+      "Versez le cottage cheese dans un bol, ajoutez les pêches chaudes avec leur beurre, parsemez de noix et servez."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "lacte"
+    ]
+  },
+  {
+    "id": "pdjx-syrniki-cottage-airelles",
+    "name": "Syrniki au cottage cheese et à la farine de riz, airelles et skyr",
+    "description": "Les petites galettes de fromage frais d’Europe de l’Est, ici au cottage cheese et à la farine de riz, dorées au beurre et servies avec du skyr et des airelles.",
+    "emoji": "🥞",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "cottage",
+        "qty": 250,
+        "unit": "g",
+        "note": "bien égoutté"
+      },
+      {
+        "id": "oeuf",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 40,
+        "unit": "g",
+        "note": "+ 1 c. à soupe pour fariner"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "airelles",
+        "qty": 30,
+        "unit": "g",
+        "note": "en confiture ou fraîches cuites"
+      }
+    ],
+    "steps": [
+      "Écrasez le cottage cheese à la fourchette, puis mélangez-le avec l’œuf, la farine de riz et la vanille jusqu’à obtenir une pâte épaisse.",
+      "Avec les mains farinées, façonnez 8 petites galettes de 1,5 cm d’épaisseur et roulez-les dans un peu de farine de riz.",
+      "Faites chauffer le beurre dans une poêle à feu moyen et cuisez les galettes 3 à 4 min par face, jusqu’à ce qu’elles soient bien dorées.",
+      "Servez chaud avec le skyr et les airelles."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten",
+      "enfants"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "lacte",
+      "acidule"
+    ]
+  },
+  {
+    "id": "pdjx-omelette-soufflee-myrtilles",
+    "name": "Omelette soufflée aux myrtilles et à la crème",
+    "description": "Les blancs montés en neige, les jaunes battus avec la crème, le tout gonflé dans la poêle puis passé sous le gril : une omelette aérienne garnie de myrtilles chaudes.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 6,
+    "cookTime": 8,
+    "difficulty": "facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece",
+        "note": "blancs et jaunes séparés"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "myrtille",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "vanille",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Allumez le gril du four. Montez les blancs en neige ferme avec une pincée de sel. Battez les jaunes avec la crème, la vanille et la moitié du miel.",
+      "Incorporez délicatement les blancs aux jaunes à la spatule, en soulevant la masse.",
+      "Faites fondre le beurre dans une poêle allant au four à feu moyen, versez l’appareil, lissez et cuisez 3 min sans toucher. Parsemez de myrtilles.",
+      "Glissez la poêle 3 à 4 min sous le gril, jusqu’à ce que l’omelette soit gonflée et blonde. Pliez-la en deux, arrosez du reste de miel et servez immédiatement."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "four",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-labneh-dattes-orange-fleur",
+    "name": "Labneh sucré à l’orange, dattes et eau de fleur d’oranger",
+    "description": "Un mélange épais de yaourt égoutté et de skyr parfumé de fleur d’oranger, avec des suprêmes d’orange, des dattes moelleuses et quelques pistaches.",
+    "emoji": "🍊",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 8,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g",
+        "note": "entier, égoutté"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "orange",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "datte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "dénoyautées, en lamelles"
+      },
+      {
+        "id": "pistache",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "cardamome",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Pelez l’orange à vif au couteau, puis levez les suprêmes entre les membranes au-dessus d’un bol pour récupérer le jus.",
+      "Mélangez le yaourt, le skyr, la cardamome et 1 c. à soupe du jus d’orange (ajoutez quelques gouttes d’eau de fleur d’oranger si vous en avez).",
+      "Étalez dans une assiette creuse, disposez les suprêmes et les dattes, et parsemez de pistaches concassées."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "hiver"
+    ],
+    "technique": "sans-cuisson",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "frais"
+    ]
+  },
+  {
+    "id": "pdjx-halloumi-grille-melon-menthe",
+    "name": "Halloumi grillé, melon, menthe et miel",
+    "description": "Des tranches de halloumi saisies jusqu’à ce qu’elles soient dorées et grinçantes, avec du melon bien froid, de la menthe et un filet de miel : le sucré-salé chypriote.",
+    "emoji": "🍈",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 5,
+    "cookTime": 5,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "halloumi",
+        "qty": 100,
+        "unit": "g",
+        "note": "en tranches de 1 cm"
+      },
+      {
+        "id": "melon",
+        "qty": 250,
+        "unit": "g",
+        "note": "bien froid, en tranches"
+      },
+      {
+        "id": "menthe",
+        "qty": 5,
+        "unit": "feuille"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 100,
+        "unit": "g",
+        "note": "entier"
+      }
+    ],
+    "steps": [
+      "Coupez le melon en tranches fines, retirez la peau et disposez-les dans l’assiette avec le yaourt grec.",
+      "Huilez légèrement une poêle-gril ou une poêle en fonte et chauffez-la à feu vif. Saisissez le halloumi 2 min par face, jusqu’à ce qu’il soit bien doré.",
+      "Posez le halloumi brûlant sur le melon, arrosez de miel, parsemez de menthe ciselée et servez tout de suite."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "sucre",
+      "frais",
+      "umami"
+    ]
+  },
+  {
+    "id": "pdjx-flognarde-poires-farine-riz",
+    "name": "Flognarde aux poires et à la farine de riz",
+    "description": "Le flan aux fruits du Limousin, version sans blé : des poires fondantes noyées dans un appareil aux œufs, au lait entier et à la crème, cuit au four la veille et mangé froid au réveil.",
+    "emoji": "🍮",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 10,
+    "cookTime": 30,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "entier"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 60,
+        "unit": "ml"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "poire",
+        "qty": 2,
+        "unit": "piece",
+        "note": "mûres, en lamelles"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C. Beurrez un petit plat à gratin et rangez-y les lamelles de poire en rosace.",
+      "Fouettez les œufs avec le miel et la muscade jusqu’à ce qu’ils blanchissent, ajoutez la farine de riz, puis la crème et le lait en filet.",
+      "Versez sur les poires, parsemez du reste de beurre en copeaux et enfournez 30 min, jusqu’à ce que la flognarde soit gonflée, dorée et à peine tremblotante au centre.",
+      "Laissez refroidir puis réfrigérez la nuit : le matin, coupez des parts et servez froid."
+    ],
+    "tags": [
+      "préparation à l’avance",
+      "sans gluten",
+      "week-end",
+      "enfants"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "four",
+    "flavors": [
+      "sucre",
+      "reconfortant",
+      "lacte"
+    ]
+  },
+  {
+    "id": "pdjx-frittelle-ricotta-citron-fraises",
+    "name": "Frittelle de ricotta au citron, fraises et skyr",
+    "description": "De petites galettes italiennes de ricotta et d’œufs au zeste de citron, liées à la farine de riz et dorées au beurre, servies avec des fraises fraîches et du skyr.",
+    "emoji": "🍋",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "ricotta",
+        "qty": 250,
+        "unit": "g",
+        "note": "bien égouttée"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "farine-riz",
+        "qty": 40,
+        "unit": "g"
+      },
+      {
+        "id": "citron",
+        "qty": 1,
+        "unit": "piece",
+        "note": "zeste"
+      },
+      {
+        "id": "beurre",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "fraise",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Mélangez la ricotta, les œufs, la farine de riz et le zeste de citron jusqu’à obtenir une pâte épaisse et homogène.",
+      "Faites chauffer la moitié du beurre dans une poêle à feu moyen. Déposez des cuillerées de pâte en les aplatissant légèrement.",
+      "Cuisez 2 min 30 par face, jusqu’à ce qu’elles soient dorées et prises. Renouvelez avec le reste de beurre et de pâte.",
+      "Servez avec les fraises coupées, le skyr et un filet de miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "acidule",
+      "fruite"
+    ]
+  },
+  {
+    "id": "pdjx-lait-de-poule-banane-muscade",
+    "name": "Lait de poule à la banane, aux dattes et à la muscade",
+    "description": "Un verre épais et réconfortant : lait entier, skyr, deux jaunes d’œufs, banane et dattes mixés avec une râpure de muscade. Un vrai repas à boire.",
+    "emoji": "🥛",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 4,
+    "cookTime": 0,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "lait",
+        "qty": 250,
+        "unit": "ml",
+        "note": "entier, cru si possible"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "jaune-oeuf",
+        "qty": 2,
+        "unit": "piece",
+        "note": "extra-frais, bio"
+      },
+      {
+        "id": "banane",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "datte",
+        "qty": 2,
+        "unit": "piece",
+        "note": "dénoyautées"
+      },
+      {
+        "id": "muscade",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Mettez les dattes dénoyautées dans le blender avec le lait et laissez-les ramollir 2 min.",
+      "Ajoutez la banane en morceaux, le skyr et les jaunes d’œufs.",
+      "Mixez 40 secondes jusqu’à ce que ce soit parfaitement lisse et mousseux. Versez dans un grand verre, râpez la muscade par-dessus et buvez aussitôt."
+    ],
+    "tags": [
+      "rapide",
+      "sans cuisson",
+      "riche en protéines",
+      "sans gluten",
+      "prise de masse"
+    ],
+    "seasons": [],
+    "technique": "mixe",
+    "flavors": [
+      "sucre",
+      "lacte",
+      "reconfortant"
+    ],
+    "tips": "Utilisez uniquement des œufs extra-frais de poules élevées en plein air pour les jaunes crus."
+  },
+  {
+    "id": "pdjx-chevre-frais-poire-grillee-thym",
+    "name": "Chèvre frais et fromage blanc, poire grillée au thym et miel",
+    "description": "Une poire coupée en tranches épaisses, grillée au beurre avec du thym, posée sur un mélange de chèvre frais et de fromage blanc : sucré, herbacé, très rassasiant.",
+    "emoji": "🍐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 4,
+    "cookTime": 8,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "fromage-frais-chevre",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 150,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "poire",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en tranches épaisses"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "thym",
+        "qty": 1,
+        "unit": "brin"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      },
+      {
+        "id": "noix",
+        "qty": 15,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Faites chauffer le beurre dans une poêle-gril ou une poêle en fonte à feu moyen-vif avec le brin de thym.",
+      "Grillez les tranches de poire 3 à 4 min par face, jusqu’à ce qu’elles soient marquées et tendres.",
+      "Pendant ce temps, écrasez le chèvre frais avec le fromage blanc à la fourchette jusqu’à obtenir une crème.",
+      "Étalez la crème dans une assiette, posez les poires chaudes, effeuillez le thym, parsemez de noix et arrosez de miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "grill",
+    "flavors": [
+      "sucre",
+      "herbace",
+      "lacte"
+    ]
+  },
+  {
+    "id": "pdjx-skyr-chataignes-poelees-marrons",
+    "name": "Skyr aux châtaignes poêlées et crème de marrons",
+    "description": "Des châtaignes cuites rissolées au beurre jusqu’à être croustillantes, sur un skyr épais marbré de crème de marrons : un petit-déjeuner d’automne ardéchois.",
+    "emoji": "🌰",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "rustique",
+    "prepTime": 3,
+    "cookTime": 6,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "skyr",
+        "qty": 250,
+        "unit": "g"
+      },
+      {
+        "id": "chataigne",
+        "qty": 80,
+        "unit": "g",
+        "note": "cuites, sous vide"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "creme-marrons",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 1,
+        "unit": "cas"
+      }
+    ],
+    "steps": [
+      "Émiettez grossièrement les châtaignes cuites entre vos doigts.",
+      "Faites mousser le beurre dans une petite poêle et rissolez les châtaignes 5 à 6 min à feu moyen en remuant, jusqu’à ce qu’elles soient dorées et croustillantes.",
+      "Mélangez le skyr avec la crème fraîche, versez dans un bol, marbrez avec la crème de marrons et ajoutez les châtaignes chaudes."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "reconfortant",
+      "grille"
+    ]
+  },
+  {
+    "id": "pdjx-ananas-poele-gingembre-coco-skyr",
+    "name": "Ananas poêlé au gingembre, skyr à la noix de coco",
+    "description": "Des cubes d’ananas caramélisés au beurre avec du gingembre frais et un trait de citron vert, sur un skyr mélangé à la noix de coco râpée.",
+    "emoji": "🍍",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "latino-americaine",
+    "prepTime": 5,
+    "cookTime": 5,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "skyr",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "ananas",
+        "qty": 150,
+        "unit": "g",
+        "note": "en cubes"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "gingembre",
+        "qty": 5,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "citron-vert",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "noix-coco",
+        "qty": 10,
+        "unit": "g",
+        "note": "râpée"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cac"
+      }
+    ],
+    "steps": [
+      "Faites chauffer le beurre dans une poêle à feu vif. Ajoutez l’ananas et le gingembre râpé.",
+      "Faites sauter 4 min, jusqu’à ce que l’ananas soit doré et légèrement caramélisé ; arrosez du jus du demi-citron vert hors du feu.",
+      "Pendant ce temps, toastez la noix de coco 1 min à sec dans une autre petite poêle et mélangez-en la moitié au skyr.",
+      "Versez le skyr dans un bol, ajoutez l’ananas chaud, le reste de coco et le miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "hiver",
+      "printemps"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "epice"
+    ]
+  },
+  {
+    "id": "pdjx-quetsches-rotis-fromage-blanc-noisettes",
+    "name": "Quetsches rôties à la cannelle, fromage blanc et noisettes",
+    "description": "Des prunes coupées en deux, rôties au four avec beurre et cannelle jusqu’à rendre un jus sirupeux, servies sur un mélange de fromage blanc et de skyr avec des noisettes.",
+    "emoji": "🫐",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner",
+      "collation"
+    ],
+    "cuisine": "europe-centrale",
+    "prepTime": 3,
+    "cookTime": 12,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "prune",
+        "qty": 8,
+        "unit": "piece",
+        "note": "quetsches, coupées en deux"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "cannelle",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "fromage-blanc",
+        "qty": 300,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "skyr",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "id": "noisette",
+        "qty": 25,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 220 °C (chaleur tournante). Disposez les demi-prunes face coupée vers le haut dans un petit plat.",
+      "Parsemez de copeaux de beurre, de cannelle et arrosez de miel. Enfournez 12 min, avec les noisettes posées sur un coin du plat pour les torréfier.",
+      "Mélangez le fromage blanc et le skyr, répartissez dans deux bols.",
+      "Ajoutez les prunes chaudes et leur jus, et concassez les noisettes par-dessus."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "four",
+    "flavors": [
+      "sucre",
+      "fruite",
+      "acidule"
+    ]
+  },
+  {
+    "id": "pdjx-yaourt-skyr-nectarine-crumble-graines",
+    "name": "Bol yaourt-skyr, nectarine et crumble minute de graines de courge",
+    "description": "Un crumble express sans farine : graines de courge et noix de coco toastées au beurre et au miel, sur un bol de yaourt grec et de skyr avec une nectarine juteuse.",
+    "emoji": "🥣",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "grecque",
+    "prepTime": 5,
+    "cookTime": 4,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "yaourt-grec",
+        "qty": 150,
+        "unit": "g",
+        "note": "entier"
+      },
+      {
+        "id": "skyr",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "nectarine",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en dés"
+      },
+      {
+        "id": "graines-courge",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "noix-coco",
+        "qty": 15,
+        "unit": "g",
+        "note": "râpée"
+      },
+      {
+        "id": "beurre",
+        "qty": 8,
+        "unit": "g"
+      },
+      {
+        "id": "miel",
+        "qty": 2,
+        "unit": "cac"
+      }
+    ],
+    "steps": [
+      "Faites fondre le beurre dans une petite poêle à feu moyen, ajoutez les graines de courge et la noix de coco.",
+      "Faites dorer 3 min en remuant, puis ajoutez 1 c. à café de miel et laissez caraméliser 30 secondes. Étalez sur une assiette : le crumble durcit en refroidissant.",
+      "Mélangez le yaourt et le skyr dans un bol, ajoutez la nectarine en dés, le crumble concassé et le reste de miel."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "fermenté",
+      "sans gluten"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "sucre",
+      "grille",
+      "fruite"
+    ]
+  },
+  {
+    "id": "pdjx-sabayon-miel-fraises-skyr",
+    "name": "Sabayon chaud au miel sur fraises et skyr",
+    "description": "Des jaunes d’œufs fouettés au bain-marie avec le miel jusqu’à devenir une mousse tiède et légère, nappés sur un bol de skyr et de fraises fraîches.",
+    "emoji": "🍓",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 5,
+    "cookTime": 6,
+    "difficulty": "facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "jaune-oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "miel",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "eau",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "citron",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "zeste"
+      },
+      {
+        "id": "skyr",
+        "qty": 300,
+        "unit": "g"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 3,
+        "unit": "cas"
+      },
+      {
+        "id": "fraise",
+        "qty": 250,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Coupez les fraises en quatre. Fouettez le skyr avec la crème fraîche et répartissez-le avec les fraises dans deux bols.",
+      "Dans un cul-de-poule, fouettez les jaunes, le miel, l’eau et le zeste de citron 30 secondes.",
+      "Posez le cul-de-poule sur une casserole d’eau frémissante sans qu’il touche l’eau, et fouettez sans arrêt 5 à 6 min, jusqu’à ce que la mousse triple de volume et forme un ruban épais (environ 70 °C).",
+      "Nappez aussitôt les fraises et le skyr de sabayon tiède et servez."
+    ],
+    "tags": [
+      "rapide",
+      "riche en protéines",
+      "sans gluten"
+    ],
+    "seasons": [
+      "printemps",
+      "ete"
+    ],
+    "technique": "vapeur",
+    "flavors": [
+      "sucre",
+      "cremeux",
+      "fruite"
+    ]
+  },
+  {
+    "id": "pdjx-oeufs-brouilles-chevre-tomates",
+    "name": "Œufs brouillés au chèvre frais, tomates poêlées et ciboulette",
+    "description": "Des œufs brouillés à feu doux, rendus crémeux par du chèvre frais émietté en fin de cuisson, avec des tomates saisies à l’huile d’olive et beaucoup de ciboulette.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 4,
+    "cookTime": 8,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "fromage-frais-chevre",
+        "qty": 50,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en tranches épaisses"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Chauffez l’huile d’olive dans une poêle à feu vif et saisissez les tranches de tomate 1 min par face. Salez et réservez dans l’assiette.",
+      "Battez les œufs avec le sel et le poivre. Baissez le feu au minimum, faites fondre le beurre et versez les œufs.",
+      "Remuez sans cesse à la spatule 3 min, en ramenant les bords vers le centre. Quand ils sont encore baveux, ajoutez le chèvre émietté et retirez du feu.",
+      "Dressez sur les tomates et parsemez de ciboulette ciselée."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "cremeux",
+      "herbace",
+      "umami"
+    ]
+  },
+  {
+    "id": "pdjx-omelette-champignons-comte",
+    "name": "Omelette baveuse aux champignons et au comté",
+    "description": "Des champignons de Paris saisis au beurre jusqu’à être bien dorés, enveloppés dans une omelette baveuse avec du comté râpé qui file.",
+    "emoji": "🍄",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 5,
+    "cookTime": 8,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "champignon",
+        "qty": 120,
+        "unit": "g",
+        "note": "émincés"
+      },
+      {
+        "id": "comte",
+        "qty": 30,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Faites chauffer 10 g de beurre dans une poêle à feu vif et saisissez les champignons 4 min sans remuer au début, jusqu’à ce qu’ils soient dorés. Salez et réservez.",
+      "Battez les œufs à la fourchette avec le poivre. Remettez la poêle à feu moyen avec le reste de beurre et versez les œufs.",
+      "Ramenez les bords vers le centre pendant 1 min, puis laissez prendre 1 min : le dessus doit rester baveux.",
+      "Répartissez les champignons et le comté sur une moitié, repliez l’omelette et glissez-la dans l’assiette."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "automne",
+      "hiver"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-huevos-rancheros-sans-tortilla",
+    "name": "Œufs au plat à la mexicaine, sauce tomate pimentée et avocat",
+    "description": "L’esprit des huevos rancheros sans tortilla : des œufs au plat cuits dans une sauce tomate minute au cumin et au piment, servis avec de l’avocat et de la feta émiettée.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "mexicaine",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oignon",
+        "qty": 0.25,
+        "unit": "piece",
+        "note": "finement haché"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "avocat",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "feta",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "id": "coriandre",
+        "qty": 3,
+        "unit": "brin"
+      }
+    ],
+    "steps": [
+      "Faites revenir l’oignon dans l’huile d’olive 2 min à feu moyen dans une petite poêle. Ajoutez le cumin, le piment et les tomates, salez et laissez réduire 3 min.",
+      "Creusez trois puits dans la sauce et cassez-y les œufs. Couvrez et cuisez 4 à 5 min à feu doux, jusqu’à ce que les blancs soient pris et les jaunes coulants.",
+      "Pendant ce temps, coupez l’avocat en tranches.",
+      "Servez dans la poêle avec l’avocat, la feta émiettée et la coriandre ciselée."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "piquant",
+      "epice",
+      "umami"
+    ]
+  },
+  {
+    "id": "pdjx-chakchouka-poivrons-feta",
+    "name": "Chakchouka express aux poivrons grillés et à la feta",
+    "description": "Des œufs pochés dans une sauce de tomates et de poivrons grillés au cumin et au paprika, terminée à la feta : le grand classique du Maghreb en un quart d’heure.",
+    "emoji": "🍅",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "nord-africaine",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "tomates-concassees",
+        "qty": 400,
+        "unit": "g"
+      },
+      {
+        "id": "poivron-grille",
+        "qty": 120,
+        "unit": "g",
+        "note": "en lanières"
+      },
+      {
+        "id": "ail",
+        "qty": 1,
+        "unit": "gousse",
+        "note": "émincée"
+      },
+      {
+        "id": "cumin",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "paprika",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "feta",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Chauffez l’huile d’olive dans une sauteuse à feu moyen, faites revenir l’ail 30 secondes avec le cumin et le paprika.",
+      "Ajoutez les tomates et les poivrons grillés, salez et laissez mijoter 4 min à feu vif pour faire réduire.",
+      "Creusez cinq puits, cassez-y les œufs, couvrez et cuisez 5 min à feu doux jusqu’à ce que les blancs soient pris.",
+      "Émiettez la feta par-dessus et servez directement dans la sauteuse."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "mijote",
+    "flavors": [
+      "epice",
+      "umami",
+      "acidule"
+    ]
+  },
+  {
+    "id": "pdjx-oeufs-mollets-halloumi-concombre",
+    "name": "Œufs mollets, halloumi poêlé, concombre et olives",
+    "description": "Un plateau de petit-déjeuner du Levant : œufs mollets au jaune coulant, halloumi doré à la poêle, concombre et tomate, olives et huile d’olive au zaatar.",
+    "emoji": "🥚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "levantine",
+    "prepTime": 5,
+    "cookTime": 7,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "halloumi",
+        "qty": 60,
+        "unit": "g",
+        "note": "en tranches"
+      },
+      {
+        "id": "concombre",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "id": "tomate",
+        "qty": 1,
+        "unit": "piece"
+      },
+      {
+        "id": "olive",
+        "qty": 20,
+        "unit": "g"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "zaatar",
+        "qty": 1,
+        "unit": "cac"
+      }
+    ],
+    "steps": [
+      "Plongez les œufs dans une casserole d’eau bouillante et cuisez exactement 6 min, puis refroidissez-les 1 min sous l’eau froide et écalez-les.",
+      "Pendant ce temps, saisissez les tranches de halloumi 2 min par face dans une poêle à feu vif, sans matière grasse.",
+      "Coupez le concombre et la tomate en morceaux, disposez-les dans l’assiette avec les olives.",
+      "Ajoutez les œufs coupés en deux et le halloumi chaud, arrosez d’huile d’olive mélangée au zaatar."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "frais",
+      "umami",
+      "herbace"
+    ]
+  },
+  {
+    "id": "pdjx-menemen-turc-poivron",
+    "name": "Menemen, œufs brouillés turcs aux tomates et poivron",
+    "description": "Le petit-déjeuner stambouliote : poivron et tomates fondus au beurre, puis des œufs brouillés dedans juste ce qu’il faut, avec du yaourt et une pincée de piment.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "turque",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate",
+        "qty": 2,
+        "unit": "piece",
+        "note": "bien mûres, râpées"
+      },
+      {
+        "id": "poivron-rouge",
+        "qty": 0.5,
+        "unit": "piece",
+        "note": "émincé"
+      },
+      {
+        "id": "beurre",
+        "qty": 15,
+        "unit": "g"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "yaourt-grec",
+        "qty": 60,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Faites fondre le beurre dans une poêle à feu moyen et faites revenir le poivron 3 min jusqu’à ce qu’il s’attendrisse.",
+      "Ajoutez la pulpe de tomate râpée, salez et laissez réduire 4 min, jusqu’à ce que le mélange soit compoté.",
+      "Cassez les œufs directement dans la poêle, remuez doucement 2 min pour les brouiller grossièrement en gardant des morceaux de blanc et de jaune.",
+      "Retirez du feu encore crémeux, saupoudrez de piment et servez avec le yaourt."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "piquant",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-gyeran-mari-carotte-cheddar",
+    "name": "Gyeran-mari, omelette roulée coréenne carotte, ciboule et cheddar",
+    "description": "Une omelette roulée en couches fines, garnie de carotte et de ciboule finement hachées, avec un cœur de cheddar fondant, découpée en tronçons.",
+    "emoji": "🥚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "coreenne",
+    "prepTime": 6,
+    "cookTime": 6,
+    "difficulty": "facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 3,
+        "unit": "piece"
+      },
+      {
+        "id": "carotte",
+        "qty": 30,
+        "unit": "g",
+        "note": "en très petits dés"
+      },
+      {
+        "id": "oignon-nouveau",
+        "qty": 1,
+        "unit": "piece",
+        "note": "ciselé"
+      },
+      {
+        "id": "cheddar",
+        "qty": 30,
+        "unit": "g",
+        "note": "en bâtonnet"
+      },
+      {
+        "id": "sauce-soja",
+        "qty": 1,
+        "unit": "cac"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Battez les œufs avec la sauce soja, puis ajoutez la carotte et la ciboule.",
+      "Graissez une poêle (rectangulaire idéalement) de beurre à feu moyen-doux, versez un tiers des œufs et laissez prendre 1 min.",
+      "Posez le cheddar à une extrémité et roulez l’omelette sur elle-même. Poussez le rouleau au bord, versez un autre tiers en soulevant le rouleau pour que l’œuf coule dessous, puis roulez à nouveau ; recommencez une dernière fois.",
+      "Laissez reposer 1 min, puis coupez en tronçons de 2 cm."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs",
+      "enfants"
+    ],
+    "seasons": [],
+    "technique": "poele",
+    "flavors": [
+      "umami",
+      "lacte"
+    ]
+  },
+  {
+    "id": "pdjx-oeufs-cocotte-jambon-creme",
+    "name": "Œufs cocotte au jambon blanc, crème et comté",
+    "description": "Des œufs cuits au four dans des ramequins sur un lit de jambon blanc, avec une cuillerée de crème et du comté râpé : la coque reste coulante.",
+    "emoji": "🥚",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "francaise",
+    "prepTime": 4,
+    "cookTime": 11,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 4,
+        "unit": "piece"
+      },
+      {
+        "id": "jambon-blanc",
+        "qty": 2,
+        "unit": "tranche"
+      },
+      {
+        "id": "creme-fraiche",
+        "qty": 4,
+        "unit": "cas"
+      },
+      {
+        "id": "comte",
+        "qty": 30,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "beurre",
+        "qty": 10,
+        "unit": "g"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Préchauffez le four à 200 °C et faites chauffer de l’eau. Beurrez quatre ramequins.",
+      "Déchirez le jambon et répartissez-le au fond, cassez un œuf dans chaque ramequin, ajoutez 1 c. à soupe de crème et le comté, poivrez.",
+      "Posez les ramequins dans un plat, versez de l’eau chaude à mi-hauteur et enfournez 10 à 11 min : le blanc doit être pris et le jaune encore coulant.",
+      "Parsemez de ciboulette ciselée et servez aussitôt."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [],
+    "technique": "four",
+    "flavors": [
+      "cremeux",
+      "umami"
+    ]
+  },
+  {
+    "id": "pdjx-frittata-courgette-mozzarella",
+    "name": "Frittata courgette, mozzarella et basilic",
+    "description": "Une frittata épaisse aux courgettes en rondelles fines, saisies à l’huile d’olive, avec de la mozzarella fondante et du basilic, finie quelques minutes sous le gril.",
+    "emoji": "🍳",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "italienne",
+    "prepTime": 5,
+    "cookTime": 10,
+    "difficulty": "tres-facile",
+    "servings": 2,
+    "ingredients": [
+      {
+        "id": "oeuf",
+        "qty": 5,
+        "unit": "piece"
+      },
+      {
+        "id": "courgette",
+        "qty": 1,
+        "unit": "piece",
+        "note": "en fines rondelles"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1,
+        "unit": "piece",
+        "note": "égouttée, en dés"
+      },
+      {
+        "id": "parmesan",
+        "qty": 20,
+        "unit": "g",
+        "note": "râpé"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 2,
+        "unit": "cas"
+      },
+      {
+        "id": "basilic",
+        "qty": 6,
+        "unit": "feuille"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "poivre",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Allumez le gril du four. Chauffez l’huile d’olive dans une poêle allant au four et faites sauter la courgette 4 min à feu vif, jusqu’à ce qu’elle soit dorée. Salez.",
+      "Battez les œufs avec le parmesan et le poivre, versez sur les courgettes à feu moyen et laissez prendre 3 min en soulevant les bords.",
+      "Parsemez de mozzarella et glissez sous le gril 3 min, jusqu’à ce que le dessus soit pris et doré.",
+      "Ajoutez le basilic déchiré et servez en parts, chaud ou tiède."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "œufs"
+    ],
+    "seasons": [
+      "ete"
+    ],
+    "technique": "poele",
+    "flavors": [
+      "herbace",
+      "umami",
+      "cremeux"
+    ]
+  },
+  {
+    "id": "pdjx-bol-cottage-avocat-oeuf-mollet",
+    "name": "Bol salé cottage cheese, avocat, tomates cerises et œuf mollet",
+    "description": "Un bol frais et nourrissant : cottage cheese poivré, avocat en dés, tomates cerises, un œuf mollet au jaune coulant et un filet d’huile d’olive au piment d’Espelette.",
+    "emoji": "🥑",
+    "category": "petit-dejeuner",
+    "mealTypes": [
+      "petit-dejeuner"
+    ],
+    "cuisine": "americaine",
+    "prepTime": 6,
+    "cookTime": 6,
+    "difficulty": "tres-facile",
+    "servings": 1,
+    "ingredients": [
+      {
+        "id": "cottage",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "id": "oeuf",
+        "qty": 2,
+        "unit": "piece"
+      },
+      {
+        "id": "avocat",
+        "qty": 0.5,
+        "unit": "piece"
+      },
+      {
+        "id": "tomate-cerise",
+        "qty": 8,
+        "unit": "piece"
+      },
+      {
+        "id": "huile-olive",
+        "qty": 1,
+        "unit": "cas"
+      },
+      {
+        "id": "piment-espelette",
+        "qty": 1,
+        "unit": "pincee"
+      },
+      {
+        "id": "ciboulette",
+        "qty": 5,
+        "unit": "g"
+      },
+      {
+        "id": "sel",
+        "qty": 1,
+        "unit": "pincee"
+      }
+    ],
+    "steps": [
+      "Plongez les œufs dans l’eau bouillante et cuisez exactement 6 min, puis rafraîchissez-les 1 min sous l’eau froide et écalez-les.",
+      "Pendant ce temps, coupez l’avocat en dés et les tomates cerises en deux, salez-les légèrement.",
+      "Versez le cottage cheese dans un bol, ajoutez l’avocat et les tomates, puis les œufs coupés en deux.",
+      "Arrosez d’huile d’olive, saupoudrez de piment d’Espelette et de ciboulette ciselée."
+    ],
+    "tags": [
+      "rapide",
+      "sans gluten",
+      "riche en protéines"
+    ],
+    "seasons": [
+      "ete",
+      "automne"
+    ],
+    "technique": "bouilli",
+    "flavors": [
+      "frais",
+      "cremeux",
+      "umami"
+    ]
+  }
+]
