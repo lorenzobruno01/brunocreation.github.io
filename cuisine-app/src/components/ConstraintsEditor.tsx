@@ -110,6 +110,23 @@ export function ConstraintsEditor({ value, onChange }: { value: PlannerConstrain
             </Chip>
           ))}
         </Row>
+        <Row label="🌅 Petit-déjeuner">
+          {(
+            [
+              ['tous', '🔀 Sucré ou salé'],
+              ['sucre', '🍯 Sucré'],
+              ['sale', '🍳 Salé'],
+              ['tradition', '🐟 Salé traditionnel (poisson, abats permis)'],
+            ] as const
+          ).map(([k, l]) => (
+            <Chip key={k} on={(value.breakfast ?? 'tous') === k} onClick={() => set({ breakfast: k })}>
+              {l}
+            </Chip>
+          ))}
+          <Chip on={!!value.breakfastExpress} onClick={() => set({ breakfastExpress: !value.breakfastExpress })}>
+            ⚡ Express (15 min max le matin)
+          </Chip>
+        </Row>
         <Row label="Autres">
           <Chip on={!!value.seasonOnly} onClick={() => set({ seasonOnly: !value.seasonOnly })}>🍂 Uniquement de saison</Chip>
           <Chip on={!!value.favoritesOnly} onClick={() => set({ favoritesOnly: !value.favoritesOnly })}>❤️ Uniquement mes favoris</Chip>

@@ -189,3 +189,26 @@ describe('gabarit de semaine', () => {
     expect(early).toBe(true);
   });
 });
+
+import { breakfastOk, isSweetBreakfast } from '../src/domain/planner';
+
+describe('petits-déjeuners', () => {
+  const dates = ['2026-10-12', '2026-10-13', '2026-10-14', '2026-10-15', '2026-10-16', '2026-10-17', '2026-10-18'];
+  const slots: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+  const gen = (constraints: Record<string, unknown>) =>
+    generateNutriWeek({ recipes: library, favorites: new Set(), lastCooked: new Map(), available: new Set(), locked: [], dates, slots, servings: 2, seed: 8, eaters: householdEaters([lui, elle]), lookup, constraints }, (id) => lookup(id)?.category);
+  const morning = (plan: ReturnType<typeof gen>) => plan.filter((e) => e.slot === 'matin').map((e) => byId.get(e.recipeId)!);
+  it('par défaut : ni poisson ni abats le matin', () => {
+    for (const r of morning(gen({}))) expect(r.proteins.some((p) => ['abats', 'poisson-gras', 'poisson-blanc', 'fruits-de-mer'].includes(p)), r.name).toBe(false);
+  });
+  it('sucré et express : uniquement des petits-déjeuners sucrés prêts en 15 min', () => {
+    const c = { breakfast: 'sucre', breakfastExpress: true } as const;
+    const m = morning(gen(c));
+    expect(m.length).toBe(7);
+    for (const r of m) {
+      expect(isSweetBreakfast(r), r.name).toBe(true);
+      expect(r.prepTime + r.cookTime, r.name).toBeLessThanOrEqual(15);
+      expect(breakfastOk(r, c)).toBe(true);
+    }
+  });
+});

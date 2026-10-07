@@ -25,6 +25,29 @@ export interface PlannerConstraints {
   maxAbats?: number;
   /** collations (et petits-déjeuners si possible) tout simples en semaine — activé par défaut */
   simpleSnacks?: boolean;
+  /** petit-déjeuner : sucré, salé, ou les deux (par défaut, sans poisson ni abats le matin) */
+  breakfast?: 'tous' | 'sucre' | 'sale' | 'tradition';
+  /** petit-déjeuner express : 15 min maximum le matin (un trempage la veille reste possible) */
+  breakfastExpress?: boolean;
+}
+
+const HEAVY_MORNING = new Set(['abats', 'poisson-gras', 'poisson-blanc', 'fruits-de-mer']);
+const SAVORY_PROTEIN = new Set(['boeuf', 'veau', 'agneau', 'porc', 'poulet', 'dinde', 'canard', 'abats', 'poisson-gras', 'poisson-blanc', 'fruits-de-mer']);
+
+/** Petit-déjeuner sucré : saveur sucrée, ou fruits sans viande ni poisson */
+export function isSweetBreakfast(r: IndexedRecipe): boolean {
+  if (r.flavors.includes('sucre')) return true;
+  return r.fruits.length > 0 && !r.proteins.some((p) => SAVORY_PROTEIN.has(p) || p === 'oeufs');
+}
+
+/** Le petit-déjeuner respecte-t-il les préférences (sucré/salé, express, pas de poisson ni d'abats) ? */
+export function breakfastOk(r: IndexedRecipe, c: PlannerConstraints): boolean {
+  const style = c.breakfast ?? 'tous';
+  if (style !== 'tradition' && r.proteins.some((p) => HEAVY_MORNING.has(p))) return false;
+  if (style === 'sucre' && !isSweetBreakfast(r)) return false;
+  if (style === 'sale' && isSweetBreakfast(r)) return false;
+  if (c.breakfastExpress && r.prepTime + r.cookTime > 15) return false;
+  return true;
 }
 
 /** Recette « tout simple » : prête en 10 minutes, sans vraie cuisine */
@@ -131,6 +154,7 @@ export function generateWeek(ctx: PlannerContext, categoryOf: (id: string) => st
       for (let pass = 0; pass < 2 && !best; pass++)
       for (const r of ctx.recipes) {
         if (!isMainMeal(r, slot)) continue;
+        if (slot === 'matin' && !breakfastOk(r, ctx.constraints ?? {})) continue;
         if (chosen.some((c) => c.id === r.id)) continue;
         if (pass === 0 && !passesConstraints(r, c, weekend, ctx.favorites, season)) continue;
         if (c.maxAbats != null && r.mainProtein === 'abats' && abatsSoFar >= c.maxAbats) continue;

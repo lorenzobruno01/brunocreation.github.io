@@ -9,7 +9,7 @@
 // ─────────────────────────────────────────────────────────────
 import type { Feedback, IndexedRecipe, PlanEntry, Slot, SlotMode } from './types';
 import { dailyRef, NUTRIENTS, type NutritionProfile } from './micronutrients';
-import { generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
+import { breakfastOk, generateWeek, isMainMeal, isSimple, passesConstraints, type PlannerContext } from './planner';
 import { currentSeason } from './season';
 import type { IngredientLookup } from './indexing';
 import { dayKcal, needs } from './profile';
@@ -226,6 +226,7 @@ function candidatesFor(slot: Slot, weekend: boolean, ctx: NutriPlanContext): Ind
   return ctx.recipes.filter((r) => {
     if (!isMainMeal(r, slot) || !r.micros) return false;
     if (slot === 'midi' || slot === 'soir') return passesConstraints(r, c, weekend, ctx.favorites, season);
+    if (slot === 'matin' && !breakfastOk(r, c)) return false;
     // petit-déjeuner / collation : rapide en semaine sauf préparation à l'avance
     if (!weekend && r.totalTime > 25 && !r.tags.includes('préparation à l’avance')) return false;
     // goûters de semaine tout simples (fruit + laitage, œufs durs…), sauf si l'option est désactivée

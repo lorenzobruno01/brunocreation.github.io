@@ -366,6 +366,16 @@ function subscribeRealtime(hid: string) {
   channel = ch.subscribe((status) => set({ live: status === 'SUBSCRIBED' }));
 }
 
+/** Mon nom affiché aux autres membres du foyer */
+export async function setDisplayName(name: string) {
+  const hid = state.household?.id;
+  const clean = name.trim().slice(0, 40);
+  if (!user || !hid || !clean) return;
+  const { error } = await supabase().from('household_members').update({ display_name: clean }).eq('household_id', hid).eq('user_id', user.id);
+  if (error) throw new Error(friendly(error));
+  await loadMembers(hid);
+}
+
 async function loadMembers(hid: string) {
   const { data } = await supabase().from('household_members').select('user_id, display_name, role').eq('household_id', hid);
   set({ members: (data ?? []).map((m) => ({ userId: m.user_id, name: m.display_name ?? 'Membre', role: m.role })) });
@@ -462,6 +472,9 @@ export async function setMyProfile(id: string) {
       .filter((p) => (p.id === id && p.userId !== user!.id) || (p.id !== id && p.userId === user!.id))
       .map((p) => ({ ...p, userId: p.id === id ? user!.id : undefined, updatedAt: now }));
     if (changes.length) await db.profiles.bulkPut(changes);
+    // le nom affiché dans le foyer suit le profil choisi
+    const mine = all.find((p) => p.id === id);
+    if (mine?.name && state.household) await setDisplayName(mine.name).catch(() => undefined);
   }
   set({ carry: undefined });
 }
@@ -677,6 +690,15 @@ export async function signUp(email: string, password: string): Promise<{ needsCo
 export async function signIn(email: string, password: string) {
   const { error } = await supabase().auth.signInWithPassword({ email, password });
   if (error) throw new Error(tr(error.message));
+}
+
+/** Connexion avec le code à 6 chiffres reçu par e-mail (utile dans l'appli installée, où le lien s'ouvre dans le navigateur) */
+export async function verifyEmailCode(email: string, code: string) {
+  const token = code.replace(/\s/g, '');
+  let { error } = await supabase().auth.verifyOtp({ email, token, type: 'email' });
+  // premier envoi à une nouvelle adresse : le code est un code d'inscription
+  if (error) ({ error } = await supabase().auth.verifyOtp({ email, token, type: 'signup' }));
+  if (error) throw new Error(/expired|invalid/i.test(error.message) ? 'Code incorrect ou expiré : demandez-en un nouveau.' : tr(error.message));
 }
 
 /** Connexion avec Google (facultatif : fournisseur à activer dans Supabase, voir docs/SUPABASE.md) */
