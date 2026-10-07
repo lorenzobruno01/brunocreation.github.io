@@ -5,7 +5,7 @@ import { db, saveSettings } from '../db/db';
 import { useLibrary, useProfiles, useUserData } from '../hooks/library';
 import { DAY_NAMES, isoDate, mondayOf, weekDates } from '../domain/season';
 import { generateWeek, type PlannerConstraints } from '../domain/planner';
-import { generateNutriWeek, dayReport, bestSourcesOf, householdEaters, soloEater, type DayReport, type Eater } from '../domain/nutriPlanner';
+import { generateNutriWeek, recentPlanned, dayReport, bestSourcesOf, householdEaters, soloEater, type DayReport, type Eater } from '../domain/nutriPlanner';
 import { GROUP_LABELS, NUTRIENTS } from '../domain/micronutrients';
 import { RecipePicker } from '../components/RecipePicker';
 import { Sheet, ServingsControl, useToast } from '../components/ui';
@@ -150,6 +150,9 @@ export function Planner() {
       useSoon: new Set([...(await db.fridge.toArray()).filter((f) => f.useSoon).map((f) => f.ingredientId), ...(await db.leftovers.toArray()).flatMap((l) => l.ingredientIds)]),
       costOf: (r: IndexedRecipe) => recipeCost(r, lookup),
       budget: settings.weeklyBudget,
+      // 4 semaines précédentes : on évite de reproposer les mêmes plats
+      recent: recentPlanned(await db.plan.where('date').between(new Date(new Date(dates[0] + 'T12:00:00').getTime() - 28 * 86400000).toISOString().slice(0, 10), dates[0], true, false).toArray(), dates[0]),
+      seed: Date.now(),
     };
     const generated = opts.mode === 'nutri' ? generateNutriWeek(ctx, (id) => lookup(id)?.category) : applyTemplate(generateWeek(ctx, (id) => lookup(id)?.category), dates, slots, template);
     // quantité à cuisiner = somme des parts du jour (+ restes) : courses au plus juste

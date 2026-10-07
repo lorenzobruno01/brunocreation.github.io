@@ -108,6 +108,25 @@ export interface NutriPlanContext extends PlannerContext {
   /** coût estimé d'une portion (€) et budget de la semaine */
   costOf?: (r: IndexedRecipe) => number;
   budget?: number;
+  /** recettes des semaines précédentes : recipeId → poids (1 = semaine dernière) */
+  recent?: Map<string, number>;
+}
+
+/**
+ * Historique des 4 semaines avant `start` : plus c'est récent, plus le poids
+ * est fort (1 la semaine dernière, puis 0,6 / 0,35 / 0,2). Les restes ne comptent pas.
+ */
+export function recentPlanned(plan: PlanEntry[], start: string): Map<string, number> {
+  const W = [1, 0.6, 0.35, 0.2];
+  const t0 = new Date(start + 'T12:00:00').getTime();
+  const out = new Map<string, number>();
+  for (const e of plan) {
+    if (e.leftoverOf || e.date >= start) continue;
+    const ago = Math.floor((t0 - new Date(e.date + 'T12:00:00').getTime()) / (7 * 86400000));
+    if (ago < 0 || ago >= W.length) continue;
+    out.set(e.recipeId, (out.get(e.recipeId) ?? 0) + W[ago]);
+  }
+  return out;
 }
 
 /** Applique le gabarit à un planning déjà fait (mode « variété ») : dehors retirés, restes liés */
@@ -154,6 +173,12 @@ function eatersOf(ctx: NutriPlanContext): Eater[] {
   throw new Error('Profil nutritionnel manquant');
 }
 
+/** pénalité d'un plat déjà proposé la semaine dernière (≈ 1 % de couverture = 7 points) */
+const RECENT_MAIN = 20;
+const RECENT_SIDE = 8;
+/** petit tirage par recette et par génération : deux semaines équivalentes ne sortent pas toujours dans le même ordre */
+const JITTER = 1.5;
+
 const FISH = new Set(['poisson-gras', 'poisson-blanc', 'fruits-de-mer']);
 
 /** Pénalités de variété sur la semaine (plus bas = mieux) */
@@ -192,6 +217,9 @@ function varietyPenalty(entries: Array<{ slot: Slot; r: IndexedRecipe; day: numb
       cuisines.set(r.cuisine, (cuisines.get(r.cuisine) ?? 0) + 1);
     }
     if (ctx.favorites.has(r.id)) p -= 2;
+    // déjà au menu les semaines précédentes : on change, surtout pour les plats
+    const rec = ctx.recent?.get(r.id);
+    if (rec) p += rec * (slot === 'midi' || slot === 'soir' ? RECENT_MAIN : RECENT_SIDE);
     const last = ctx.lastCooked.get(r.id);
     if (last && Date.now() - new Date(last).getTime() < 7 * 86400000) p += 12;
   }
@@ -266,6 +294,13 @@ interface DayEval {
   vec: Float64Array[];
   /** pénalités du jour (énergie, protéines) par personne */
   pen: number[];
+}
+
+/** hachage FNV-1a 32 bits */
+function hash(s: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 0x01000193);
+  return h >>> 0;
 }
 
 function microVec(r: IndexedRecipe): Float64Array {
@@ -451,7 +486,8 @@ export function generateNutriWeek(input: NutriPlanContext, categoryOf: (id: stri
   let dayPen = evals.reduce((s, ev) => s + combine(ev.pen), 0);
   const soon = ctx.useSoon ?? new Set<string>();
   /** bonus : goûts, apprentissage, ingrédients à utiliser vite en début de semaine */
-  const cellBonus = (r: IndexedRecipe, d: number) => bonus(r) + (soon.size && d < 3 ? r.ingredients.filter((i) => soon.has(i.id)).length * (6 - d * 2) : 0);
+  const jitter = ctx.seed == null ? () => 0 : (r: IndexedRecipe) => (hash(`${ctx.seed}|${r.id}`) / 4294967296) * JITTER;
+  const cellBonus = (r: IndexedRecipe, d: number) => bonus(r) + jitter(r) + (soon.size && d < 3 ? r.ingredients.filter((i) => soon.has(i.id)).length * (6 - d * 2) : 0);
   let prefs = 0;
   cur.forEach((row, d) => row.forEach((r, si) => r && !isDep(d, si) && (prefs += cellBonus(r, d))));
   const objective = (weekScores: number[], days: number, pen: number, pr: number) => days * combine(weekScores) - pen + pr;
