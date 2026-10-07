@@ -1,13 +1,13 @@
 // Un ami crée son profil complet en moins de 2 minutes, voit ses besoins,
 // les ajuste, masque les chiffres ; un second membre ; profil actif.
-import { check, phone, wait } from '../helpers.mjs';
+import { check, phone, wait, startProfile } from '../helpers.mjs';
 
 export default async function ({ browser, base }) {
   const A = await phone(browser, null, 'ami');
   const p = A.p;
   const t0 = Date.now();
   await p.goto(base + '#/');
-  await p.getByText('Créer mon profil').click({ timeout: 15000 });
+  await startProfile(p);
   await p.getByPlaceholder('Votre prénom').fill('Karim');
   await p.getByLabel('Âge').fill('27');
   await p.getByLabel('Taille').fill('182');

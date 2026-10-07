@@ -1,11 +1,33 @@
 {
-  "name": "Notre Cuisine",
-  "short_name": "Cuisine",
-  "description": "Bibliothèque culinaire personnelle : recettes, ingrédients, menus et courses.",
+  "name": "Bien Nourris",
+  "short_name": "Bien Nourris",
+  "description": "Des repas de vraie cuisine qui couvrent 100 % de vos besoins, la bonne part pour chacun et des courses au format réel.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#faf5ec",
   "theme_color": "#c2552d",
   "lang": "fr",
-  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
 }

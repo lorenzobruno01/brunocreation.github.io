@@ -19,6 +19,43 @@ const STEPS = [
   { key: 'besoins', title: '✅ Vos besoins', other: '✅ Les besoins de chacun' },
 ] as const;
 
+const INTRO = [
+  {
+    art: (
+      <span className="art-ring">
+        <b>100 %</b>
+        <i>🥩</i>
+        <i>🥦</i>
+        <i>🐟</i>
+        <i>🥚</i>
+      </span>
+    ),
+    title: 'Des repas qui couvrent 100 % de vos besoins',
+    text: 'Vitamines, minéraux, oméga-3, protéines : l’appli compose votre semaine avec de vrais plats de cuisine traditionnelle, sans compléments ni poudres.',
+  },
+  {
+    art: (
+      <span className="art-plates">
+        <i style={{ fontSize: '4.2rem' }}>🍲</i>
+        <i style={{ fontSize: '3.2rem' }}>🍲</i>
+      </span>
+    ),
+    title: 'La bonne part pour chacun',
+    text: 'Un seul plat pour toute la tablée, une part adaptée à chacun (plus les jours de sport), et une liste de courses au format réel, partagée en direct.',
+  },
+  {
+    art: (
+      <span className="art-plates">
+        <i>😋</i>
+        <i>📈</i>
+        <i>❤️</i>
+      </span>
+    ),
+    title: 'Elle apprend vos goûts',
+    text: 'Vos avis après les repas, votre poids, vos allergies : les menus s’ajustent à vous, semaine après semaine. Gratuit, et vos données restent les vôtres.',
+  },
+];
+
 /** Premier lancement : qui mange, avec quels besoins ; ou connexion à un compte existant */
 export function Onboarding() {
   const row = useLiveQuery(async () => (await db.settings.get('settings')) ?? null, []);
@@ -30,6 +67,7 @@ export function Onboarding() {
   const [step, setStep] = useState(cloud.email ? 0 : -1);
   const [list, setList] = useState<NutritionProfile[] | null>(null);
   const [idx, setIdx] = useState(0);
+  const [slide, setSlide] = useState(0);
   // connecté avec un profil créé sur un autre appareil : l'accueil est terminé
   useEffect(() => {
     document.querySelector('.sheet-body')?.scrollTo(0, 0);
@@ -58,14 +96,29 @@ export function Onboarding() {
 
   if (step < 0)
     return (
-      <Sheet title="👋 Bienvenue dans Notre Cuisine" onClose={() => setLater(true)}>
-        <div className="stack">
-          <p style={{ margin: 0 }}>
-            L’application compose pour vous une semaine de repas qui couvre <strong>100 % de vos besoins</strong> en vitamines, minéraux et protéines, avec des recettes que vous aimez. Quelques questions suffisent (moins de 2 minutes).
-          </p>
-          <button className="btn primary lg" onClick={() => setStep(0)}>
-            Créer mon profil
-          </button>
+      <div className="intro" role="dialog" aria-modal="true" aria-label="Présentation">
+        <div className="intro-slide" key={slide}>
+          <div className="intro-art" aria-hidden="true">
+            {INTRO[slide].art}
+          </div>
+          <h2>{INTRO[slide].title}</h2>
+          <p>{INTRO[slide].text}</p>
+        </div>
+        <div className="wizard-dots" aria-hidden="true">
+          {INTRO.map((_, i) => (
+            <span key={i} className={i === slide ? 'on' : ''} />
+          ))}
+        </div>
+        <div className="stack" style={{ gap: 8, width: '100%', maxWidth: 420 }}>
+          {slide < INTRO.length - 1 ? (
+            <button className="btn primary lg" onClick={() => setSlide(slide + 1)}>
+              Suivant ›
+            </button>
+          ) : (
+            <button className="btn primary lg" onClick={() => setStep(0)}>
+              Créer mon profil (2 minutes)
+            </button>
+          )}
           {cloudEnabled && !cloud.email && (
             <button
               className="btn"
@@ -74,14 +127,14 @@ export function Onboarding() {
                 navigate('/compte');
               }}
             >
-              🔑 J’ai déjà un compte : me connecter
+              🔑 J’ai déjà un compte
             </button>
           )}
           <button className="btn ghost sm" onClick={() => setLater(true)}>
-            Plus tard
+            Découvrir d’abord les recettes
           </button>
         </div>
-      </Sheet>
+      </div>
     );
 
   const s = STEPS[step];

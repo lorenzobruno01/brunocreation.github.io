@@ -16,7 +16,7 @@ import { checkPhilosophy } from '../domain/philosophy';
 import { AddToPlanSheet } from '../components/AddToPlanSheet';
 import { FeedbackSheet } from '../components/FeedbackSheet';
 import { addLeftover } from '../components/Leftovers';
-import { NutritionPanel } from '../components/NutritionPanel';
+import { NutritionPanel, WhyGood } from '../components/NutritionPanel';
 import { DigestionPanel } from '../components/DigestionPanel';
 import { DIET_BY_ID, type DietProfileId } from '../domain/digestion';
 import type { IndexedRecipe } from '../domain/types';
@@ -166,6 +166,7 @@ export function RecipeDetail() {
               </ul>
             </div>
           )}
+          <WhyGood recipe={recipe} />
           <section className="card pad">
             <div className="row between" style={{ marginBottom: 8 }}>
               <h2 style={{ margin: 0 }}>Ingrédients</h2>

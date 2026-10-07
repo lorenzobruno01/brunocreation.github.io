@@ -44,7 +44,7 @@ export function MyWeek() {
           ‹
         </button>
         <div style={{ textAlign: 'center' }}>
-          <h1 style={{ margin: 0 }}>{offset === 0 ? 'Ma semaine' : 'Semaine'}</h1>
+          <h1 style={{ margin: 0 }}>{offset === 0 ? 'Mon bilan de la semaine' : 'Bilan de la semaine'}</h1>
           <div className="small muted">
             du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}
           </div>

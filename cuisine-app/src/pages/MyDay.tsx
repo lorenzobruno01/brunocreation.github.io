@@ -178,7 +178,7 @@ export function MyDay() {
               </div>
             )}
             <Link to="/ma-semaine" className="btn">
-              📅 Voir ma semaine
+              📊 Voir mon bilan de la semaine
             </Link>
           </section>
         </>

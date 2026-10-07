@@ -14,12 +14,12 @@ const seedModules = import.meta.glob<{ default: Recipe[] }>('../data/recipes/*.j
 
 async function loadSeed(): Promise<Recipe[]> {
   const [mods, photos] = await Promise.all([Promise.all(Object.values(seedModules).map((load) => load())), import('../data/photos.json')]);
-  // photos libres de droits vérifiées une à une (public/photos, crédits dans src/data/photos.json)
-  const P = photos.default as Record<string, { file: string } & PhotoCredit>;
+  // photos libres de droits (Wikimedia Commons), chargées par le navigateur ; crédits dans src/data/photos.json
+  const P = photos.default as Record<string, { url?: string } & PhotoCredit>;
   return mods.flatMap((m) =>
     m.default.map((r) => {
       const ph = P[r.id];
-      return { ...r, source: 'seed' as const, createdAt: r.createdAt ?? '2026-10-01T00:00:00.000Z', ...(ph && !r.photo ? { photo: `photos/${ph.file}`, photoCredit: { author: ph.author, license: ph.license, source: ph.source } } : {}) };
+      return { ...r, source: 'seed' as const, createdAt: r.createdAt ?? '2026-10-01T00:00:00.000Z', ...(ph?.url && !r.photo ? { photo: ph.url, photoCredit: { author: ph.author, license: ph.license, source: ph.source } } : {}) };
     }),
   );
 }

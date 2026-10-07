@@ -1,4 +1,4 @@
-import { StrictMode, useEffect } from 'react';
+import { lazy, StrictMode, Suspense, useEffect, type ComponentType } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import './styles/app.css';
@@ -6,32 +6,51 @@ import { LibraryProvider, UserDataProvider, useLibrary } from './hooks/library';
 import { ToastProvider } from './components/ui';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
-import { Recipes } from './pages/Recipes';
-import { RecipeDetail } from './pages/RecipeDetail';
-import { CookMode } from './pages/CookMode';
-import { Fridge } from './pages/Fridge';
-import { Pantry } from './pages/Pantry';
-import { Planner } from './pages/Planner';
-import { Shopping } from './pages/Shopping';
-import { Favorites } from './pages/Favorites';
-import { RecipeForm } from './pages/RecipeForm';
-import { Stats } from './pages/Stats';
-import { Settings } from './pages/Settings';
-import { Sources } from './pages/Sources';
-import { Needs } from './pages/Needs';
-import { MyDay } from './pages/MyDay';
-import { Learned } from './pages/Learned';
-import { Weight } from './pages/Weight';
-import { Batch } from './pages/Batch';
+const Recipes = lazyPage(() => import('./pages/Recipes').then((m) => ({ default: m.Recipes })));
+const RecipeDetail = lazyPage(() => import('./pages/RecipeDetail').then((m) => ({ default: m.RecipeDetail })));
+const CookMode = lazyPage(() => import('./pages/CookMode').then((m) => ({ default: m.CookMode })));
+const Fridge = lazyPage(() => import('./pages/Fridge').then((m) => ({ default: m.Fridge })));
+const Pantry = lazyPage(() => import('./pages/Pantry').then((m) => ({ default: m.Pantry })));
+const Planner = lazyPage(() => import('./pages/Planner').then((m) => ({ default: m.Planner })));
+const Shopping = lazyPage(() => import('./pages/Shopping').then((m) => ({ default: m.Shopping })));
+const Favorites = lazyPage(() => import('./pages/Favorites').then((m) => ({ default: m.Favorites })));
+const RecipeForm = lazyPage(() => import('./pages/RecipeForm').then((m) => ({ default: m.RecipeForm })));
+const Stats = lazyPage(() => import('./pages/Stats').then((m) => ({ default: m.Stats })));
+const Settings = lazyPage(() => import('./pages/Settings').then((m) => ({ default: m.Settings })));
+const Sources = lazyPage(() => import('./pages/Sources').then((m) => ({ default: m.Sources })));
+const Needs = lazyPage(() => import('./pages/Needs').then((m) => ({ default: m.Needs })));
+const Me = lazyPage(() => import('./pages/Me').then((m) => ({ default: m.Me })));
+const MyDay = lazyPage(() => import('./pages/MyDay').then((m) => ({ default: m.MyDay })));
+const Learned = lazyPage(() => import('./pages/Learned').then((m) => ({ default: m.Learned })));
+const Weight = lazyPage(() => import('./pages/Weight').then((m) => ({ default: m.Weight })));
+const Batch = lazyPage(() => import('./pages/Batch').then((m) => ({ default: m.Batch })));
 import { StravaReturn } from './components/StravaReturn';
 import { WhoAmI } from './components/WhoAmI';
-import { MyWeek } from './pages/MyWeek';
-import { Account, JoinHousehold } from './pages/Account';
+const MyWeek = lazyPage(() => import('./pages/MyWeek').then((m) => ({ default: m.MyWeek })));
+const Account = lazyPage(() => import('./pages/Account').then((m) => ({ default: m.Account })));
+const JoinHousehold = lazyPage(() => import('./pages/Account').then((m) => ({ default: m.JoinHousehold })));
 import { Onboarding } from './components/Onboarding';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initCloud } from './cloud/sync';
 import { removeComposedRecipes } from './db/db';
 import { installDomGuard, logIncident } from './domGuard';
+
+/**
+ * Pages chargées à la demande (première ouverture plus rapide). Après une mise
+ * à jour du site, un ancien morceau peut avoir disparu : on recharge une fois.
+ */
+function lazyPage<T extends ComponentType<object>>(load: () => Promise<{ default: T }>) {
+  return lazy(() =>
+    load().catch((e) => {
+      const KEY = 'cuisine.chunkReload';
+      if (!sessionStorage.getItem(KEY)) {
+        sessionStorage.setItem(KEY, '1');
+        location.reload();
+      }
+      throw e;
+    }),
+  );
+}
 
 // Extensions de navigateur qui modifient la page : éviter le plantage au changement de page
 installDomGuard();
@@ -73,6 +92,7 @@ function Shell() {
       </div>
     );
   return (
+    <Suspense fallback={<div className="page center muted">Chargement…</div>}>
     <Routes>
       <Route path="/recette/:id/cuisine" element={<CookMode />} />
       <Route
@@ -93,6 +113,7 @@ function Shell() {
                 <Route path="/modifier/:id" element={<RecipeForm />} />
                 <Route path="/stats" element={<Stats />} />
                 <Route path="/reglages" element={<Settings />} />
+                <Route path="/moi" element={<Me />} />
                 <Route path="/besoins" element={<Needs />} />
                 <Route path="/ma-journee" element={<MyDay />} />
                 <Route path="/appris" element={<Learned />} />
@@ -114,6 +135,7 @@ function Shell() {
         }
       />
     </Routes>
+    </Suspense>
   );
 }
 

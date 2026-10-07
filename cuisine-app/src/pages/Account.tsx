@@ -23,6 +23,7 @@ import {
 } from '../cloud/sync';
 import { useToast } from '../components/ui';
 import { FEATURES } from '../cloud/config';
+import { BRAND } from '../config/brand';
 
 const STATUS: Record<string, string> = {
   syncing: '🔄 Synchronisation…',
@@ -182,9 +183,9 @@ function HouseholdCard() {
   };
   const share = async (c: string) => {
     const url = inviteLink(c);
-    const text = `Rejoins notre foyer sur Notre Cuisine : ${url} (code ${c})`;
+    const text = `Rejoins notre foyer sur ${BRAND.name} : ${url} (code ${c})`;
     try {
-      if (navigator.share) await navigator.share({ title: 'Notre Cuisine', text, url });
+      if (navigator.share) await navigator.share({ title: BRAND.name, text, url });
       else {
         await navigator.clipboard.writeText(text);
         toast('Lien copié ✅');
