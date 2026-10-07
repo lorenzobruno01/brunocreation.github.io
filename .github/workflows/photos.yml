@@ -1,4 +1,4 @@
-# Recherche de photos de plats (Wikimedia Commons) : voir photos-work/fetch.py
+# Recherche de photos de plats (Wikimedia Commons + Openverse) : voir photos-work/fetch.py
 name: photos
 on:
   push:
@@ -11,7 +11,14 @@ concurrency: photos
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      SHARD: ${{ matrix.shard }}
+      NSHARDS: 8
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -23,6 +30,12 @@ jobs:
         run: |
           git config user.name "photos-bot"
           git config user.email "photos-bot@users.noreply.github.com"
-          mkdir -p cuisine-app/public/photos && git add -A photos-work cuisine-app/public
-          git diff --cached --quiet || git commit -m "Photos : candidates / sélection depuis Wikimedia Commons"
-          git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }}
+          mkdir -p cuisine-app/public/photos
+          git add -A photos-work cuisine-app/public
+          git diff --cached --quiet && exit 0
+          git commit -m "Photos : lot ${{ matrix.shard }}"
+          for i in 1 2 3 4 5 6 7 8; do
+            git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }} && exit 0
+            sleep $((i * 7))
+          done
+          exit 1
