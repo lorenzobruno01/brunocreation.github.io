@@ -23,6 +23,8 @@ export const FEATURES = {
   strava: import.meta.env.VITE_FEATURE_STRAVA === '1',
   /** bouton « Continuer avec Google » */
   google: import.meta.env.VITE_FEATURE_GOOGLE === '1',
+  /** l'e-mail de connexion contient un code à 6 chiffres (modèle d'e-mail modifié, ce qui demande un SMTP personnalisé) */
+  emailCode: import.meta.env.VITE_FEATURE_EMAIL_CODE === '1',
 };
 /** identifiant d'application Strava : public (le secret reste dans la fonction serveur) */
 export const STRAVA_CLIENT_ID: string = import.meta.env.VITE_STRAVA_CLIENT_ID || '';

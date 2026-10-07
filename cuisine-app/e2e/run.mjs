@@ -17,7 +17,7 @@ const site = join(here, '.site');
 execSync(`npx vite build --outDir ${join(site, 'cuisine')} --emptyOutDir`, {
   cwd: join(here, '..'),
   stdio: 'ignore',
-  env: { ...process.env, VITE_SUPABASE_URL: 'https://fake.supabase.co', VITE_SUPABASE_KEY: 'fakekey' },
+  env: { ...process.env, VITE_SUPABASE_URL: 'https://fake.supabase.co', VITE_SUPABASE_KEY: 'fakekey', VITE_FEATURE_EMAIL_CODE: '1' },
 });
 
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json', '.webmanifest': 'application/manifest+json' };

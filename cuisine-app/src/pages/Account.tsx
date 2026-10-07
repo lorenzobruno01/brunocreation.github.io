@@ -66,7 +66,14 @@ export function LoginForm({ intro }: { intro?: string }) {
         } else {
           await sendMagicLink(email.trim());
           setSent(true);
-          setMsg({ ok: true, text: isInstalledApp() ? '📧 E-mail envoyé ! Recopiez ici le code à 6 chiffres qu’il contient (le lien, lui, s’ouvrirait dans le navigateur).' : '📧 E-mail envoyé ! Touchez le lien qu’il contient, ou recopiez ici le code à 6 chiffres.' });
+          setMsg({
+            ok: true,
+            text: FEATURES.emailCode
+              ? isInstalledApp()
+                ? '📧 E-mail envoyé ! Recopiez ici le code à 6 chiffres qu’il contient (le lien, lui, s’ouvrirait dans le navigateur).'
+                : '📧 E-mail envoyé ! Touchez le lien qu’il contient, ou recopiez ici le code à 6 chiffres.'
+              : '📧 Lien envoyé ! Touchez-le depuis cet appareil. Une fois connecté·e, choisissez un mot de passe dans « Mon compte ».',
+          });
         }
       } else if (mode === 'signup') {
         const { needsConfirmation } = await signUp(email.trim(), password);
@@ -98,13 +105,13 @@ export function LoginForm({ intro }: { intro?: string }) {
           <span className="cnt">recommandé</span>
         </button>
         <button className={mode === 'magic' ? 'on' : ''} onClick={() => setMode('magic')}>
-          ✉️ Code par e-mail
+          ✉️ {FEATURES.emailCode ? 'Code par e-mail' : 'Lien par e-mail'}
           <span className="cnt">sans mot de passe</span>
         </button>
       </div>
       {isInstalledApp() && mode === 'magic' && (
         <div className="callout info small" style={{ margin: 0 }}>
-          📱 Dans l’appli installée, le lien de l’e-mail s’ouvre dans le navigateur : recopiez plutôt le code à 6 chiffres, ou utilisez un mot de passe.
+          📱 Dans l’appli installée, le lien de l’e-mail s’ouvre dans le navigateur et vous y connecte, pas ici. {FEATURES.emailCode ? 'Recopiez plutôt le code à 6 chiffres, ou utilisez un mot de passe.' : 'Utilisez plutôt votre mot de passe (onglet 🔑). Pas encore de mot de passe ? « Mot de passe oublié » vous permet d’en choisir un.'}
         </div>
       )}
       {mode !== 'magic' && (
@@ -134,7 +141,7 @@ export function LoginForm({ intro }: { intro?: string }) {
             <input className="input" type="password" autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} required minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
         )}
-        {mode === 'magic' && sent && (
+        {mode === 'magic' && sent && FEATURES.emailCode && (
           <div className="field">
             <label>Code reçu par e-mail</label>
             <input className="input" inputMode="numeric" aria-label="Code reçu par e-mail" autoComplete="one-time-code" placeholder="123456" maxLength={8} value={otp} onChange={(e) => setOtp(e.target.value)} />
@@ -142,7 +149,7 @@ export function LoginForm({ intro }: { intro?: string }) {
         )}
         {msg && <div className={`callout small ${msg.ok ? 'ok' : 'danger'}`}>{msg.text}</div>}
         <button className="btn primary lg" type="submit" disabled={busy}>
-          {busy ? '…' : mode === 'magic' ? (sent && otp.trim() ? 'Me connecter avec ce code' : sent ? 'Renvoyer un e-mail' : 'Recevoir mon code de connexion') : mode === 'signup' ? 'Créer mon compte' : mode === 'login' ? 'Se connecter' : 'Recevoir le lien'}
+          {busy ? '…' : mode === 'magic' ? (sent && otp.trim() ? 'Me connecter avec ce code' : sent ? 'Renvoyer un e-mail' : FEATURES.emailCode ? 'Recevoir mon code de connexion' : 'Recevoir mon lien de connexion') : mode === 'signup' ? 'Créer mon compte' : mode === 'login' ? 'Se connecter' : 'Recevoir le lien'}
         </button>
       </form>
       {mode === 'login' && (
