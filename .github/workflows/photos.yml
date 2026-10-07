@@ -1,0 +1,28 @@
+# Recherche de photos de plats (Wikimedia Commons) : voir photos-work/fetch.py
+name: photos
+on:
+  push:
+    branches: [claude/cuisine-app-web-w2te96]
+    paths: [photos-work/request.json, photos-work/chosen.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: photos
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - run: python photos-work/fetch.py
+      - name: Enregistrer
+        run: |
+          git config user.name "photos-bot"
+          git config user.email "photos-bot@users.noreply.github.com"
+          git add photos-work cuisine-app/public/photos
+          git diff --cached --quiet || git commit -m "Photos : candidates / sélection depuis Wikimedia Commons"
+          git pull --rebase origin ${{ github.ref_name }} && git push origin HEAD:${{ github.ref_name }}
