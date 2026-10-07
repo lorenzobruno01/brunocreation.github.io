@@ -26,7 +26,7 @@ export async function onboard(d, base, prenom) {
 }
 export async function signup(d, base, email, { from = '#/compte' } = {}) {
   if (from) await d.p.goto(base + from);
-  await d.p.getByRole('button', { name: /Mot de passe/ }).click();
+  await d.p.getByRole('button', { name: /🔑 Mot de passe/ }).click();
   await d.p.getByRole('button', { name: 'Créer un compte' }).click();
   await d.p.locator('input[type=email]').fill(email);
   await d.p.locator('input[type=password]').fill('secret123');
@@ -35,7 +35,7 @@ export async function signup(d, base, email, { from = '#/compte' } = {}) {
 }
 export async function login(d, base, email) {
   await d.p.goto(base + '#/compte');
-  await d.p.getByRole('button', { name: /Mot de passe/ }).click();
+  await d.p.getByRole('button', { name: /🔑 Mot de passe/ }).click();
   await d.p.locator('input[type=email]').fill(email);
   await d.p.locator('input[type=password]').fill('secret123');
   await d.p.getByRole('button', { name: 'Se connecter' }).last().click();

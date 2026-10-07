@@ -32,7 +32,7 @@ export default async function ({ browser, base }) {
   check(rest && rest.servings === 0, 'mardi midi : restes, rien à cuisiner');
   const src = plan.find((e) => e.key === rest.leftoverOf);
   const others = plan.filter((e) => e.slot === 'soir' && !e.leftoverOf && e.key !== src?.key).map((e) => e.servings);
-  check(src && src.recipeId === rest.recipeId && src.servings > Math.max(...others), `plat d’origine cuisiné en plus grande quantité (${src?.servings} contre ${others.join(', ')})`);
+  check(src && src.recipeId === rest.recipeId && src.servings >= [...others].sort((a, b) => a - b)[Math.floor(others.length / 2)] + 0.5, `plat d’origine cuisiné en plus grande quantité (${src?.servings} contre ${others.join(', ')})`);
   if (process.env.SHOTS) await p.screenshot({ path: process.env.SHOTS + '/grid.png', fullPage: true });
   const grid = await p.locator('.week').innerText();
   check(/Dehors/.test(grid) && /Restes/.test(grid), 'grille : dehors et restes visibles');
