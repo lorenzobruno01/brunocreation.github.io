@@ -154,6 +154,7 @@ def do_chosen():
     for f in sorted(glob.glob(os.path.join(HERE, 'chosen-meta*.json'))):
         meta.update(json.load(open(f)))
     done = set(meta)
+    new = {}
     for i, (rid, pick) in enumerate(chosen.items()):
         if not mine(rid):
             continue
@@ -183,13 +184,13 @@ def do_chosen():
         im = Image.open(io.BytesIO(raw)).convert('RGB')
         im.thumbnail((800, 800))
         im.save(target, 'WEBP', quality=72)
-        meta[rid] = info
+        new[rid] = info
         print(i, rid, os.path.getsize(target) // 1024, 'ko', flush=True)
         time.sleep(0.3)
-    mine_meta = {k: v for k, v in meta.items() if k not in done or not os.path.exists(os.path.join(out_dir, f'{k}.webp')) or k in chosen and mine(k)}
+    # chaque lot n'écrit que ce qu'il vient de télécharger, dans son propre fichier
     path = os.path.join(HERE, f'chosen-meta-{SHARD}.json')
     old = json.load(open(path)) if os.path.exists(path) else {}
-    old.update({k: v for k, v in mine_meta.items() if mine(k)})
+    old.update(new)
     json.dump(old, open(path, 'w'), ensure_ascii=False, indent=1)
 
 
