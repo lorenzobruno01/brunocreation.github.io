@@ -111,36 +111,41 @@ export function RecipeDetail() {
           <Link to={`/recette/${recipe.id}/cuisine?p=${n}`} className="btn primary lg block">
             👨‍🍳 Commencer à cuisiner
           </Link>
-          <div className="action-bar">
-            <button className={`btn ${inBasket ? 'olive' : ''}`} onClick={() => toggleBasket(recipe.id, n).then(() => toast(inBasket ? 'Retirée de la sélection' : `Ajoutée à la sélection courses (${n} pers.)`))}>
-              {inBasket ? '✓ Dans la sélection' : '🛒 Ajouter aux courses'}
-            </button>
+          <div className="action-bar three">
             <button className="btn" onClick={() => setPlanOpen(true)}>
               📅 Planifier
             </button>
-            <button
-              className="btn"
-              onClick={async () => {
-                const e = await markCooked(recipe.id, household.map((p) => p.id), n);
-                toast('Ajoutée à l’historique 🕒');
-                setFeedbackFor({ cookedId: e.id, date: e.date });
-              }}
-            >
-              ✅ J’ai cuisiné ce plat
+            <button className={`btn ${inBasket ? 'olive' : ''}`} onClick={() => toggleBasket(recipe.id, n).then(() => toast(inBasket ? 'Retirée des courses' : `Ajoutée aux courses (${n} pers.)`))}>
+              {inBasket ? '✓ Courses' : '🛒 Courses'}
             </button>
-            <button
-              className="btn"
-              onClick={async () => {
-                await addLeftover({ label: recipe.name, recipeId: recipe.id, ingredientIds: [] });
-                toast('Restes notés : à placer au menu depuis « Frigo » ♻️');
-              }}
-            >
-              ♻️ Il en reste
-            </button>
-            <button className="btn" onClick={() => toggleFavorite(recipe.id)}>
-              {fav ? '💔 Retirer' : '❤️ Favori'}
+            <button className={`btn ${fav ? 'olive' : ''}`} onClick={() => toggleFavorite(recipe.id)} aria-label={fav ? 'Retirer des favoris' : 'Ajouter aux favoris'}>
+              {fav ? '❤️ Favori' : '🤍 Favori'}
             </button>
           </div>
+          <details className="more-actions">
+            <summary className="small">Déjà cuisiné ? Il en reste ?</summary>
+            <div className="action-bar" style={{ marginTop: 8 }}>
+              <button
+                className="btn"
+                onClick={async () => {
+                  const e = await markCooked(recipe.id, household.map((p) => p.id), n);
+                  toast('Ajoutée à l’historique 🕒');
+                  setFeedbackFor({ cookedId: e.id, date: e.date });
+                }}
+              >
+                ✅ J’ai cuisiné ce plat
+              </button>
+              <button
+                className="btn"
+                onClick={async () => {
+                  await addLeftover({ label: recipe.name, recipeId: recipe.id, ingredientIds: [] });
+                  toast('Restes notés : à placer au menu depuis « Frigo » ♻️');
+                }}
+              >
+                ♻️ Il en reste
+              </button>
+            </div>
+          </details>
           {history.length > 0 && (
             <div className="small muted">🕒 Cuisinée {history.length} fois — dernière fois {relativeDays(history[0].date)}.</div>
           )}

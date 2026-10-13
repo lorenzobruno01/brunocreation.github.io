@@ -20,6 +20,7 @@ export default async function ({ browser, base }) {
   check(!(await p.getByText(/attend(ent)? votre avis/).count()), 'pas d’avis demandé pour des repas ajoutés après coup');
 
   // demande locale
+  await p.getByText('💡 Une envie particulière ?').click();
   await p.getByLabel('Votre demande').fill('combler mon manque de fer');
   await p.getByRole('button', { name: 'Chercher' }).click();
   await wait(500);
@@ -27,7 +28,7 @@ export default async function ({ browser, base }) {
   const ans = await p.getByLabel('Demander').innerText();
   check(/Compris : riche en fer/.test(ans), 'demande comprise : ' + ans.slice(0, 300));
   check((await p.getByLabel('Demander').locator('.rcard').count()) >= 3, 'plats proposés');
-  await p.getByRole('button', { name: 'Une recette pour deux ce soir en 30 min' }).click();
+  await p.getByRole('button', { name: 'Un plat rapide ce soir' }).click();
   await wait(400);
   check(/prêt en 30 min maximum/.test(await p.getByLabel('Demander').innerText()), 'deuxième demande');
   check(!A.errors.length, A.errors.join('\n'));

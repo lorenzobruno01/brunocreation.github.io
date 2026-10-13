@@ -117,4 +117,4 @@ export function answerRequest(
   return { parsed: p, understood, recipes, foods };
 }
 
-export const REQUEST_EXAMPLES = ['Combler mon manque de fer', 'Plus d’oméga-3 cette semaine', 'Une recette pour deux ce soir en 30 min', 'Utiliser ce qui doit partir vite', 'Un petit-déjeuner riche en protéines'];
+export const REQUEST_EXAMPLES = ['Un plat rapide ce soir', 'Utiliser ce qui doit partir vite', 'Un petit-déjeuner riche en protéines', 'Plus d’oméga-3 cette semaine', 'Combler mon manque de fer'];
