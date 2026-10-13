@@ -49,8 +49,7 @@ export async function login(d, base, email) {
 }
 export async function generateWeek(d, base) {
   await d.p.goto(base + '#/semaine');
-  await d.p.getByText('Générer ma semaine').first().click();
-  await d.p.getByText('Optimiser ma semaine').click();
+  await composeMenu(d.p);
   await d.p.locator('.slot-name').first().waitFor({ timeout: 30000 });
   await wait(500);
 }
@@ -67,4 +66,20 @@ export function idb(p, store) {
       }),
     store,
   );
+}
+
+/** Planning : compose le menu (bouton en un clic si la semaine est vide, sinon « Refaire le menu ») */
+export async function composeMenu(p, { replaceAll = false } = {}) {
+  const first = p.getByRole('button', { name: /Créer mon menu de la semaine/ });
+  await p.locator('h1', { hasText: 'Planning' }).waitFor();
+  await wait(300);
+  if (await first.isVisible()) return first.click();
+  await p.getByRole('button', { name: /Refaire le menu|Créer le menu/ }).click();
+  if (replaceAll) await p.getByLabel(/Tout refaire/).check();
+  await p.getByRole('button', { name: '✨ Composer le menu' }).click();
+}
+/** Planning : ouvre le volet « Réglages » */
+export async function openPlanSettings(p) {
+  const d = p.locator('details', { hasText: '⚙️ Réglages' });
+  if (!(await d.evaluate((x) => x.open))) await d.locator('summary').click();
 }

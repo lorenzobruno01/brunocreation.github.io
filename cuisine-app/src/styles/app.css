@@ -1864,3 +1864,89 @@ details.fold[open] > summary::after {
   display: block;
   font-size: 1.05rem;
 }
+
+/* ── Prise en main : fiche, accueil, planning ─────────────── */
+.action-bar.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.action-bar.three .btn {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+details.more-actions > summary {
+  cursor: pointer;
+  color: var(--ink-2);
+  font-weight: 700;
+  list-style: none;
+  text-align: center;
+  padding: 4px 0;
+}
+details.more-actions > summary::-webkit-details-marker {
+  display: none;
+}
+details.more-actions > summary::after {
+  content: ' ▾';
+}
+details.more-actions[open] > summary::after {
+  content: ' ▴';
+}
+.start-card {
+  border: 2px solid var(--primary);
+}
+.start-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.start-steps li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  opacity: 0.7;
+}
+.start-steps li.current,
+.start-steps li.done {
+  opacity: 1;
+}
+.start-steps .num {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: var(--bg-2);
+  color: var(--ink);
+}
+.start-steps li.current .num {
+  background: var(--primary);
+  color: #fff;
+}
+.start-steps li.done .num {
+  background: var(--ok);
+  color: #fff;
+}
+.start-steps li.done strong {
+  text-decoration: line-through;
+  color: var(--ink-3);
+}
+.start-steps .txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.empty-plan {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.empty-plan .btn.lg {
+  width: 100%;
+}
+.login-btn {
+  white-space: nowrap;
+  text-decoration: none;
+}

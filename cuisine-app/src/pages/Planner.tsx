@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, saveSettings } from '../db/db';
 import { useLibrary, useProfiles, useUserData } from '../hooks/library';
@@ -22,6 +22,7 @@ import { shareImage, weekMenuImage } from '../components/shareMenu';
 import { useHideNumbers } from '../hooks/activeProfile';
 import { recipeConflict } from '../domain/allergens';
 import { WeekVerdict } from '../components/WeekVerdict';
+import { analyzeWeek } from '../domain/week';
 
 const ALL_SLOTS: Slot[] = ['matin', 'midi', 'collation', 'soir'];
 const SLOTS_KEY = 'cuisine.planSlots';
@@ -56,6 +57,8 @@ export function Planner() {
   const [dragOver, setDragOver] = useState<string | null>(null);
   const [genOpen, setGenOpen] = useState(false);
   const [tplOpen, setTplOpen] = useState(false);
+  const [manual, setManual] = useState(false);
+  const [params, setParams] = useSearchParams();
   const template = useWeekTemplate();
   const hideNumbers = useHideNumbers();
   const weekday = (date: string) => (new Date(date + 'T12:00:00').getDay() + 6) % 7;
@@ -84,7 +87,8 @@ export function Planner() {
   monday.setDate(monday.getDate() + offset * 7);
   const dates = weekDates(monday);
   const today = isoDate(new Date());
-  const plan = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]) ?? [];
+  const planRaw = useLiveQuery(() => db.plan.where('date').between(dates[0], dates[6], true, true).toArray(), [dates[0]]);
+  const plan = planRaw ?? [];
   const byKey = new Map(plan.map((p) => [p.key, p]));
 
   /** parts de chacun, jour par jour (selon l'énergie du jour de chaque personne) */
@@ -168,10 +172,20 @@ export function Planner() {
     toast(opts.mode === 'nutri' ? `Semaine optimisée pour ${forName} 🎯` : 'Menu de la semaine généré ✨');
   };
 
-  const weekCoverage = reports.map((rs) => {
-    const filled = rs.filter(Boolean) as DayReport[];
-    return filled.length ? Math.round(filled.reduce((s, r) => s + r.coverage, 0) / filled.length) : 0;
-  });
+  /** Menu en un clic : réglages par défaut (densité nutritionnelle, anti-gaspillage, critères enregistrés) */
+  const quickGenerate = () => generate({ replaceAll: true, share: true, constraints: loadConstraints(), mode: 'nutri' });
+  // depuis l'accueil (« Créer mon menu ») : on compose directement si la semaine est vide
+  const autoDone = useRef(false);
+  useEffect(() => {
+    if (params.get('creer') !== '1' || planRaw === undefined || autoDone.current) return;
+    autoDone.current = true;
+    setParams({}, { replace: true });
+    if (!planRaw.length) quickGenerate();
+  }, [planRaw]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // même calcul que l'accueil et « Mon bilan » : moyenne de la semaine, un jour léger est compensé par les autres
+  const weeks = useMemo(() => analyzeWeek(plan, byId, eaters.map((e) => e.profile), lookup), [plan, byId, lookup, JSON.stringify(eaters)]); // eslint-disable-line react-hooks/exhaustive-deps
+  const weekCoverage = eaters.map((e) => Math.round(weeks.find((w) => w.profile.id === e.profile.id)?.coverage ?? 0));
   const hasDays = reports[0].some(Boolean);
   const icon = (e: Eater) => (e.profile.sex === 'homme' ? '👨' : '👩');
 
@@ -192,94 +206,120 @@ export function Planner() {
         </div>
       </div>
       <p className="muted" style={{ margin: '4px 0 12px' }}>
-        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}. Objectif : 100 % des besoins en vitamines, minéraux et acides aminés en moyenne sur la semaine. Un jour un peu plus léger est compensé par les autres, comme le fait le corps avec ses réserves.
+        Du {formatDateFr(dates[0], { day: 'numeric', month: 'long' })} au {formatDateFr(dates[6], { day: 'numeric', month: 'long' })}
       </p>
 
-      <div className="row" style={{ marginBottom: 10 }}>
-        <span className="label">Repas pour :</span>
-        {profiles.length > 1 && (
-          <button className={`chip ${together ? 'on' : ''}`} onClick={() => saveSettings({ planFor: 'nous' })}>
-            👫 {profiles.length === 2 ? 'Nous deux' : `Tout le foyer (${profiles.length})`}
+      {!plan.length && !manual ? (
+        <section className="card pad stack empty-plan">
+          <div style={{ fontSize: '2.6rem', lineHeight: 1 }}>🍽️</div>
+          <h2 style={{ margin: 0 }}>Votre menu de la semaine n’est pas encore prêt</h2>
+          <p className="muted" style={{ margin: 0 }}>
+            En un clic, l’appli compose {slots.length === 4 ? 'tous les repas de la semaine' : 'les repas de la semaine'} pour {forName} : variés, de saison, et qui couvrent 100 % des besoins. Vous pourrez ensuite changer n’importe quel plat.
+          </p>
+          <button className="btn primary lg" onClick={quickGenerate} disabled={busy}>
+            {busy ? <><span className="spinner" style={{ width: 18, height: 18 }} /> Composition du menu…</> : '✨ Créer mon menu de la semaine'}
           </button>
-        )}
-        {profiles.map((p) => (
-          <button key={p.id} className={`chip ${!together && p.id === eaters[0].profile.id ? 'on' : ''}`} onClick={() => saveSettings({ planFor: p.id })}>
-            {p.sex === 'homme' ? '👨' : '👩'} {profiles.length > 1 ? `${p.name} seul${p.sex === 'femme' ? 'e' : ''}` : p.name}
+          <button className="btn ghost sm" onClick={() => setManual(true)}>
+            ou choisir les plats moi-même
           </button>
-        ))}
-      </div>
-      {together && (
-        <p className="small muted" style={{ margin: '0 0 10px' }}>
-          Mêmes plats pour {profiles.length === 2 ? 'vous deux' : 'tout le foyer'}, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son énergie du jour (plus les jours d’entraînement) :{' '}
-          {eaters.map((e, i) => (
-            <span key={e.profile.id}>
-              {i > 0 && ' · '}
-              {icon(e)} <strong>{e.profile.name}</strong> ≈ {e.portions.toFixed(2).replace('.', ',')} portion{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal/jour)`}
-            </span>
+        </section>
+      ) : (
+        <div className="row" style={{ marginBottom: 14 }}>
+          <button className="btn primary" disabled={!plan.length} onClick={() => navigate(`/courses?source=semaine&du=${dates[0]}`)}>
+            🛒 Faire mes courses
+          </button>
+          <button className="btn" onClick={() => setGenOpen(true)} disabled={busy}>
+            {busy ? <><span className="spinner" style={{ width: 18, height: 18 }} /> Composition…</> : plan.length ? '🔄 Refaire le menu' : '✨ Créer le menu'}
+          </button>
+          {plan.length > 0 && (
+            <button
+              className="btn"
+              onClick={async () => {
+                try {
+                  const blob = await weekMenuImage(dates, plan, byId, slots, reports.every((rs) => rs.filter(Boolean).every((r) => r!.coverage >= 99.5)));
+                  const how = await shareImage(blob, `menu-${dates[0]}.png`, 'Notre menu de la semaine 🍽️');
+                  if (how === 'downloaded') toast('Image du menu téléchargée');
+                } catch {
+                  /* partage annulé */
+                }
+              }}
+            >
+              📤 Partager
+            </button>
+          )}
+        </div>
+      )}
+      {plan.length > 0 && <p className="small muted" style={{ margin: '-6px 0 12px' }}>Touchez un plat pour le voir, le changer ou le déplacer.</p>}
+
+      <details className="card pad stack fold" style={{ marginBottom: 14 }}>
+        <summary>
+          <strong>⚙️ Réglages</strong> <span className="small muted">· pour qui, quels repas, semaine type, batch cooking</span>
+        </summary>
+        <p className="small muted" style={{ margin: 0 }}>
+          Objectif : 100 % des besoins en vitamines, minéraux et acides aminés en moyenne sur la semaine. Un jour un peu plus léger est compensé par les autres, comme le fait le corps avec ses réserves.
+        </p>
+        <div className="row">
+          <span className="label">Repas pour :</span>
+          {profiles.length > 1 && (
+            <button className={`chip ${together ? 'on' : ''}`} onClick={() => saveSettings({ planFor: 'nous' })}>
+              👫 {profiles.length === 2 ? 'Nous deux' : `Tout le foyer (${profiles.length})`}
+            </button>
+          )}
+          {profiles.map((p) => (
+            <button key={p.id} className={`chip ${!together && p.id === eaters[0].profile.id ? 'on' : ''}`} onClick={() => saveSettings({ planFor: p.id })}>
+              {p.sex === 'homme' ? '👨' : '👩'} {profiles.length > 1 ? `${p.name} seul${p.sex === 'femme' ? 'e' : ''}` : p.name}
+            </button>
           ))}
-          . Le planning vise 100 % des besoins de chacun. <Link to="/ma-journee">Voir ma part du jour</Link>
-        </p>
-      )}
-      {!together && (
-        <p className="small muted" style={{ margin: '0 0 10px' }}>
-          {eaters[0].profile.hideNumbers ? `Part de ${eaters[0].profile.name} :` : `Objectif de ${eaters[0].profile.name} : ${eaters[0].profile.kcal} kcal/jour, soit`} environ {eaters[0].portions.toFixed(2).replace('.', ',')} portion de chaque plat. <Link to="/besoins">Voir mes besoins</Link>
-        </p>
-      )}
-
-      <div className="row" style={{ marginBottom: 10 }}>
-        <span className="label">Repas :</span>
-        {ALL_SLOTS.map((s) => (
-          <button key={s} className={`chip ${slots.includes(s) ? 'on' : ''}`} onClick={() => setSlots(slots.includes(s) ? slots.filter((x) => x !== s) : [...slots, s])} disabled={slots.length === 1 && slots.includes(s)}>
-            {SLOT_LABELS[s]}
-          </button>
-        ))}
-      </div>
-
-      <div className="row" style={{ marginBottom: 14 }}>
-        <button className="btn" onClick={() => setTplOpen(true)}>
-          🗓 Ma semaine type
-        </button>
-        {plan.length > 0 && (
-          <button
-            className="btn"
-            onClick={async () => {
-              try {
-                const blob = await weekMenuImage(dates, plan, byId, slots, reports.every((rs) => rs.filter(Boolean).every((r) => r!.coverage >= 99.5)));
-                const how = await shareImage(blob, `menu-${dates[0]}.png`, 'Notre menu de la semaine 🍽️');
-                if (how === 'downloaded') toast('Image du menu téléchargée');
-              } catch {
-                /* partage annulé */
-              }
-            }}
-          >
-            📤 Partager le menu
-          </button>
+        </div>
+        {together && (
+          <p className="small muted" style={{ margin: 0 }}>
+            Mêmes plats pour {profiles.length === 2 ? 'vous deux' : 'tout le foyer'}, cuisinés pour {Math.max(settings.defaultServings, profiles.length)}. Chacun prend une part adaptée à son énergie du jour :{' '}
+            {eaters.map((e, i) => (
+              <span key={e.profile.id}>
+                {i > 0 && ' · '}
+                {icon(e)} <strong>{e.profile.name}</strong> ≈ {e.portions.toFixed(2).replace('.', ',')} portion{e.profile.hideNumbers ? '' : ` (${e.profile.kcal} kcal/jour)`}
+              </span>
+            ))}
+            . <Link to="/ma-journee">Voir ma part du jour</Link>
+          </p>
         )}
-        <Link className="btn" to={`/batch?du=${dates[0]}`}>
-          📦 Batch cooking
-        </Link>
-        <button className="btn primary" onClick={() => setGenOpen(true)} disabled={busy}>
-          {busy ? <><span className="spinner" style={{ width: 18, height: 18 }} /> Optimisation en cours…</> : '🎯 Générer ma semaine'}
-        </button>
-        <button className="btn olive" disabled={!plan.length} onClick={() => navigate(`/courses?source=semaine&du=${dates[0]}`)}>
-          🛒 Générer ma liste de courses
-        </button>
-        {plan.length > 0 && (
-          <button
-            className="btn ghost sm danger"
-            onClick={async () => {
-              if (confirm('Vider le planning de cette semaine ?')) await db.plan.bulkDelete(plan.map((p) => p.key));
-            }}
-          >
-            Vider
-          </button>
+        {!together && (
+          <p className="small muted" style={{ margin: 0 }}>
+            {eaters[0].profile.hideNumbers ? `Part de ${eaters[0].profile.name} :` : `Objectif de ${eaters[0].profile.name} : ${eaters[0].profile.kcal} kcal/jour, soit`} environ {eaters[0].portions.toFixed(2).replace('.', ',')} portion de chaque plat. <Link to="/besoins">Voir mes besoins</Link>
+          </p>
         )}
-      </div>
+        <div className="row">
+          <span className="label">Repas :</span>
+          {ALL_SLOTS.map((s) => (
+            <button key={s} className={`chip ${slots.includes(s) ? 'on' : ''}`} onClick={() => setSlots(slots.includes(s) ? slots.filter((x) => x !== s) : [...slots, s])} disabled={slots.length === 1 && slots.includes(s)}>
+              {SLOT_LABELS[s]}
+            </button>
+          ))}
+        </div>
+        <div className="row">
+          <button className="btn sm" onClick={() => setTplOpen(true)}>
+            🗓 Ma semaine type
+          </button>
+          <Link className="btn sm" to={`/batch?du=${dates[0]}`}>
+            📦 Batch cooking
+          </Link>
+          {plan.length > 0 && (
+            <button
+              className="btn ghost sm danger"
+              onClick={async () => {
+                if (confirm('Vider le planning de cette semaine ?')) await db.plan.bulkDelete(plan.map((p) => p.key));
+              }}
+            >
+              🗑 Vider la semaine
+            </button>
+          )}
+        </div>
+      </details>
 
       {hasDays && (
         <div className="card pad row between" style={{ marginBottom: 14 }}>
           <div>
-            <div className="label">🎯 Couverture moyenne des besoins</div>
+            <div className="label">🎯 Besoins couverts sur la semaine</div>
             <div className="small muted">vitamines, minéraux, électrolytes, acides aminés, oméga-3, fibres</div>
           </div>
           <div className="row nowrap" style={{ gap: 14 }}>
@@ -302,7 +342,7 @@ export function Planner() {
         </div>
       )}
 
-      <div className="week">
+      {(plan.length > 0 || manual) && <div className="week">
         {dates.map((d, i) => {
           return (
             <div key={d} className={`card day ${d === today ? 'today' : ''}`}>
@@ -386,7 +426,7 @@ export function Planner() {
             </div>
           );
         })}
-      </div>
+      </div>}
 
       {hasDays && <WeekVerdict dates={dates} slots={slots} />}
       {hasDays && <CoveragePanel dates={dates} reports={reports} eaters={eaters} recipes={recipes} />}
@@ -634,7 +674,7 @@ function GenerateSheet({
   const [constraints, setConstraints] = useState<PlannerConstraints>(loadConstraints);
   const fullDay = slots.length === 4;
   return (
-    <Sheet title="🎯 Générer ma semaine" onClose={onClose}>
+    <Sheet title={hasPlan ? '🔄 Refaire le menu' : '✨ Composer le menu'} onClose={onClose}>
       <div className="stack">
         <div className="segmented">
           <button className={mode === 'nutri' ? 'on' : ''} onClick={() => setMode('nutri')}>
@@ -659,15 +699,24 @@ function GenerateSheet({
             {!fullDay && <strong> Astuce : activez les 4 repas (petit-déjeuner, midi, collation, soir) pour atteindre plus facilement 100 %.</strong>}
           </p>
         )}
-        <ConstraintsEditor value={constraints} onChange={setConstraints} />
-        <label className="row nowrap">
-          <input type="checkbox" checked={replaceAll} onChange={(e) => setReplaceAll(e.target.checked)} /> Tout regénérer (sinon : garder les plats déjà placés)
-        </label>
-        <label className="row nowrap">
-          <input type="checkbox" checked={share} onChange={(e) => setShare(e.target.checked)} /> ♻️ Anti-gaspillage : réutiliser les mêmes produits frais
-        </label>
+        {hasPlan && (
+          <label className="row nowrap">
+            <input type="checkbox" checked={replaceAll} onChange={(e) => setReplaceAll(e.target.checked)} /> Tout refaire (sinon : garder les plats déjà placés)
+          </label>
+        )}
+        <details className="fold">
+          <summary>
+            <strong>Critères</strong> <span className="small muted">· temps, budget, poisson, abats… (facultatif)</span>
+          </summary>
+          <div className="stack" style={{ marginTop: 10 }}>
+            <ConstraintsEditor value={constraints} onChange={setConstraints} />
+            <label className="row nowrap">
+              <input type="checkbox" checked={share} onChange={(e) => setShare(e.target.checked)} /> ♻️ Anti-gaspillage : réutiliser les mêmes produits frais
+            </label>
+          </div>
+        </details>
         <button className="btn primary lg" onClick={() => onGenerate({ replaceAll, share, constraints, mode })}>
-          {mode === 'nutri' ? '🎯 Optimiser ma semaine' : '🎲 Générer'}
+          {mode === 'nutri' ? '✨ Composer le menu' : '🎲 Composer au hasard'}
         </button>
       </div>
     </Sheet>

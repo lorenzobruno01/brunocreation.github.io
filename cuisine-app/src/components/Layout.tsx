@@ -37,19 +37,22 @@ export function Layout({ children }: { children: ReactNode }) {
             <NavLink to="/favoris">❤️ Favoris</NavLink>
           </nav>
           <div className="topbar-actions">
-            <Link to="/recettes?focus=1" className="icon-btn" aria-label="Rechercher" style={{ textDecoration: 'none' }}>
-              🔎
-            </Link>
             {profiles.length > 1 && (
               <button className="who-btn" onClick={() => setWho(true)} aria-label={`Profil actif : ${active.name}. Changer`} title="Qui regarde ?">
                 {active.sex === 'homme' ? '👨' : '👩'} <span>{active.name}</span>
               </button>
             )}
             {cloudEnabled && (
-              <Link to="/compte" className="icon-btn" aria-label={cloud.email ? `Compte : ${cloud.email}` : 'Se connecter'} title={cloud.email ?? 'Se connecter'} style={{ textDecoration: 'none', position: 'relative' }}>
-                {cloud.email ? '☁️' : '🔑'}
-                {cloud.email && <span className={`sync-dot ${cloud.status}`} />}
-              </Link>
+              cloud.email ? (
+                <Link to="/compte" className="icon-btn" aria-label={`Compte : ${cloud.email}`} title={cloud.email} style={{ textDecoration: 'none', position: 'relative' }}>
+                  ☁️
+                  <span className={`sync-dot ${cloud.status}`} />
+                </Link>
+              ) : (
+                <Link to="/compte" className="btn sm login-btn" aria-label="Se connecter" title="Retrouver mes données sur tous mes appareils">
+                  Se connecter
+                </Link>
+              )
             )}
 
           </div>

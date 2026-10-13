@@ -1,6 +1,6 @@
 // Semaine type (dehors, restes, soirs rapides), batch cooking, restes du frigo,
 // courses en formats de vente réels, budget, tri par commerce.
-import { check, idb, onboard, phone, wait } from '../helpers.mjs';
+import { check, composeMenu, idb, onboard, openPlanSettings, phone, wait } from '../helpers.mjs';
 
 export default async function ({ browser, base }) {
   const A = await phone(browser, null, 'gabarit');
@@ -9,6 +9,7 @@ export default async function ({ browser, base }) {
 
   // 1. semaine type
   await p.goto(base + '#/semaine');
+  await openPlanSettings(p);
   await p.getByRole('button', { name: '🗓 Ma semaine type' }).click();
   await p.getByLabel('Lundi ☀️ Midi').selectOption('dehors');
   await p.getByLabel('Mardi ☀️ Midi').selectOption('restes');
@@ -21,8 +22,7 @@ export default async function ({ browser, base }) {
   check(tpl?.slots['0|midi'] === 'dehors' && tpl.slots['1|midi'] === 'restes', 'semaine type enregistrée');
 
   // 2. génération
-  await p.getByText('Générer ma semaine').first().click();
-  await p.getByText('Optimiser ma semaine').click();
+  await composeMenu(p);
   await p.locator('.slot-name').first().waitFor({ timeout: 30000 });
   await wait(500);
   const plan = await idb(p, 'plan');
@@ -38,6 +38,7 @@ export default async function ({ browser, base }) {
   check(/Dehors/.test(grid) && /Restes/.test(grid), 'grille : dehors et restes visibles');
 
   // 3. batch cooking
+  await openPlanSettings(p);
   await p.getByRole('link', { name: '📦 Batch cooking' }).click();
   await p.getByText('Dans quel ordre').waitFor();
   check(/Conservation/.test(await p.locator('main').innerText()), 'mode batch');

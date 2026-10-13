@@ -20,6 +20,7 @@ import { deName } from './format';
 import type { Slot } from '../domain/types';
 
 const ORDER: Slot[] = ['matin', 'midi', 'collation', 'soir'];
+const START_KEY = 'cuisine.startDone';
 const fr = (v: number, d = 2) => v.toLocaleString('fr-FR', { maximumFractionDigits: d });
 
 /** Accueil personnel : repas du jour et part de chacun, semaine, à utiliser vite, avis, demandes */
@@ -30,7 +31,16 @@ export function HomeToday() {
   const today = isoDate(new Date());
   const { byId, recipes, ingredients, lookup } = useLibrary();
   const { favorites } = useUserData();
-  const { weeks, eaters } = usePlanAnalysis(dates);
+  const [startHidden, setStartHidden] = useState(() => {
+    try {
+      return localStorage.getItem(START_KEY) === '1';
+    } catch {
+      return false;
+    }
+  });
+  const { weeks, eaters, plan, loaded } = usePlanAnalysis(dates);
+  const shoppingCount = useLiveQuery(() => db.shopping.count(), []) ?? 0;
+  const { lastCooked } = useUserData();
   const pending = usePendingFeedback(me.id);
   const fridgeRows = useLiveQuery(() => db.fridge.toArray(), []) ?? [];
   const leftovers = useLiveQuery(() => db.leftovers.toArray(), []) ?? [];
@@ -47,7 +57,8 @@ export function HomeToday() {
   const todayShares = weeks.map((x) => ({ p: x.profile, day: x.days.find((d) => d.date === today) }));
   const entries = todayShares.find((x) => x.day)?.day?.entries ?? [];
   const soon = [...fridgeRows.filter((f) => f.useSoon).map((f) => lookup(f.ingredientId)?.name).filter(Boolean), ...leftovers.map((l) => l.label)] as string[];
-  const gap = w?.gaps[0];
+  // un manque n'a de sens qu'avec une semaine déjà bien remplie
+  const gap = w && w.days.length >= 4 ? w.gaps[0] : undefined;
   const food = gap ? foodSourcesFor(gap, w.profile, ingredients, 1, common)[0] : undefined;
   const review = logs && !me.hideNumbers ? reviewWeight(me, logs) : null;
   const showReview = review?.proposal && !(me.reviewSnoozedUntil && me.reviewSnoozedUntil > today);
@@ -68,8 +79,50 @@ export function HomeToday() {
     }
   };
 
+  const steps = [
+    { done: plan.length > 0, label: 'Créer mon menu de la semaine', hint: 'en un clic, des repas qui couvrent 100 % de vos besoins', to: '/semaine?creer=1', cta: '✨ Créer mon menu' },
+    { done: shoppingCount > 0, label: 'Faire mes courses', hint: 'la liste se remplit toute seule à partir du menu', to: plan.length ? `/courses?source=semaine&du=${dates[0]}` : '/courses', cta: '🛒 Faire mes courses' },
+    { done: lastCooked.size > 0, label: 'Cuisiner un premier plat', hint: 'pas à pas, avec la bonne quantité pour chacun', to: '/semaine', cta: '👩‍🍳 Voir mon menu' },
+  ];
+  const next = steps.findIndex((x) => !x.done);
+  const showStart = loaded && !startHidden && next >= 0;
+
   return (
     <div className="stack" style={{ marginBottom: 18 }}>
+      {showStart && (
+        <section className="card pad stack start-card" aria-label="Pour bien démarrer">
+          <div className="row between nowrap">
+            <h2 style={{ margin: 0 }}>🚀 Pour bien démarrer</h2>
+            <button
+              className="btn ghost sm"
+              onClick={() => {
+                setStartHidden(true);
+                try {
+                  localStorage.setItem(START_KEY, '1');
+                } catch {
+                  /* indisponible */
+                }
+              }}
+            >
+              Masquer
+            </button>
+          </div>
+          <ol className="start-steps">
+            {steps.map((x, i) => (
+              <li key={x.label} className={x.done ? 'done' : i === next ? 'current' : ''}>
+                <span className="num">{x.done ? '✓' : i + 1}</span>
+                <span className="txt">
+                  <strong>{x.label}</strong>
+                  {!x.done && <span className="small muted">{x.hint}</span>}
+                </span>
+              </li>
+            ))}
+          </ol>
+          <Link className="btn primary lg" to={steps[next].to}>
+            {steps[next].cta}
+          </Link>
+        </section>
+      )}
       <section className="card pad stack" aria-label="Aujourd’hui">
         <div className="row between">
           <h2 style={{ margin: 0 }}>☀️ Aujourd’hui</h2>
@@ -109,7 +162,7 @@ export function HomeToday() {
           })
         ) : (
           <p className="small muted" style={{ margin: 0 }}>
-            Rien de prévu aujourd’hui. <Link to="/semaine">Planifier la semaine</Link>
+            Rien de prévu aujourd’hui. <Link to={plan.length ? '/semaine' : '/semaine?creer=1'}>{plan.length ? 'Voir le planning' : 'Créer mon menu de la semaine'}</Link>
           </p>
         )}
         {entries.length > 0 && (
@@ -148,8 +201,10 @@ export function HomeToday() {
         </section>
       )}
 
-      <section className="card pad stack" aria-label="Demander">
-        <h2 style={{ margin: 0 }}>💡 Une envie, un besoin ?</h2>
+      <details className="card pad stack fold" aria-label="Demander">
+        <summary>
+          <strong>💡 Une envie particulière ?</strong> <span className="small muted">· « rapide ce soir », « plus de fer »…</span>
+        </summary>
         <form
           className="row nowrap"
           style={{ gap: 8 }}
@@ -200,7 +255,7 @@ export function HomeToday() {
             {ai?.error && <div className="callout small" style={{ margin: 0 }}>{ai.error}</div>}
           </div>
         )}
-      </section>
+      </details>
     </div>
   );
 }

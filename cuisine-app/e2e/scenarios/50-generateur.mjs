@@ -1,6 +1,6 @@
 // Générateur : allergies et goûts respectés, 100 % sur la semaine annoncé,
 // et message honnête quand ce n'est pas possible (repas non planifiés).
-import { check, generateWeek, idb, onboard, phone, wait } from '../helpers.mjs';
+import { check, composeMenu, generateWeek, idb, onboard, openPlanSettings, phone, wait } from '../helpers.mjs';
 
 export default async function ({ browser, base }) {
   const A = await phone(browser, null, 'allergique');
@@ -42,11 +42,10 @@ export default async function ({ browser, base }) {
 
   // seulement midi et soir : le bilan l'explique et propose des ajouts
   await p.goto(base + '#/semaine');
+  await openPlanSettings(p);
   await p.locator('button.chip', { hasText: 'Matin' }).click();
   await p.locator('button.chip', { hasText: 'Collation' }).click();
-  await p.getByText('Générer ma semaine').first().click();
-  await p.getByLabel(/Tout regénérer/).check();
-  await p.getByText('Optimiser ma semaine').click();
+  await composeMenu(p, { replaceAll: true });
   await wait(1500);
   const after = await p.getByLabel('Bilan de la semaine').innerText();
   if (process.env.SHOTS) await p.getByLabel('Bilan de la semaine').screenshot({ path: process.env.SHOTS + '/verdict.png' });

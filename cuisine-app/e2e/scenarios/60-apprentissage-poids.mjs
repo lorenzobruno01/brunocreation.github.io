@@ -28,6 +28,7 @@ export default async function ({ browser, base }) {
   // 1. avis après un plat cuisiné
   await p.goto(base + '#/recettes');
   await p.locator('.rcard a').first().click();
+  await p.getByText('Déjà cuisiné ? Il en reste ?').click();
   await p.getByText('J’ai cuisiné ce plat').click();
   await p.getByText('Comment c’était ?').waitFor();
   await p.getByLabel('5 sur 5').click();

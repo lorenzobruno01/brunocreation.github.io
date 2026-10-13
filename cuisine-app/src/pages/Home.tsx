@@ -68,18 +68,7 @@ export function Home() {
       8,
       (r) => noise.get(r.id)! * 40 + seasonScore(r) - recentPenalty(r),
     );
-    const breakfast = pickVaried(
-      recipes.filter((r) => r.mealTypes.includes('petit-dejeuner')),
-      8,
-      (r) => noise.get(r.id)! * 40 + seasonScore(r) * 0.4,
-    );
- const dense = pickVaried(
-      mains.filter((r) => (r.density ?? 0) >= 55),
-      8,
-      (r) => (r.density ?? 0) + noise.get(r.id)! * 25 + seasonScore(r) * 0.5 - recentPenalty(r),
-    );
-    const newest = [...recipes].sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? '') || (noise.get(b.id)! - noise.get(a.id)!)).slice(0, 8);
-    return { moment, quick, weekend, breakfast, newest, dense };
+    return { moment, quick, weekend };
   }, [recipes, favorites, lastCooked, fridge, pantry, season]);
 
   const s = SEASONS[season];
@@ -105,12 +94,9 @@ export function Home() {
 
       <HomeToday />
 
-      <Row title={`${s.emoji} Idées du moment`} subtitle={`Sélection de ${s.label.toLowerCase()} — renouvelée chaque jour`} items={sections.moment} link="/recettes" />
-      <Row title="🌿 Les plus denses en nutriments" subtitle="Vitamines, minéraux, oméga-3 : le meilleur pour la santé" items={sections.dense} link="/recettes?sort=densite" />
+      <Row title={`${s.emoji} Idées du moment`} subtitle={`De saison, renouvelées chaque jour`} items={sections.moment} link="/recettes" />
       <Row title="⚡ Rapide ce soir" subtitle="Moins de 30 minutes" items={sections.quick} link="/recettes?q=dîner%20rapide" />
       <Row title="🍲 Cuisine du week-end" subtitle="Mijotés, rôtis, plats familiaux" items={sections.weekend} link="/recettes?q=week-end" />
-      <Row title="🌅 Pour demain matin" items={sections.breakfast} link="/recettes?q=petit-déjeuner" />
-      <Row title="🆕 Nouvelles recettes" subtitle="Dernières ajoutées à la bibliothèque" items={sections.newest} link="/recettes?sort=recent" />
 
     </div>
   );

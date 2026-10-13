@@ -6,6 +6,7 @@ import { toggleBasket, toggleFavorite } from '../db/db';
 import { useUserData } from '../hooks/library';
 import { formatDuration } from './format';
 import { useHideNumbers } from '../hooks/activeProfile';
+import { densityLabel } from '../domain/micronutrients';
 
 export function RecipeCard({
   recipe,
@@ -60,7 +61,7 @@ export function RecipeCard({
           <div className="rcard-meta">
             {!hideNumbers && <span>🔥 {recipe.nutrition.kcal} kcal</span>}
             <span>🥩 {recipe.nutrition.protein} g prot.</span>
-            {recipe.density != null && <span title="Indice de densité nutritionnelle (0–100)">🌿 {recipe.density}</span>}
+            {recipe.density != null && recipe.density >= 50 && <span title={`Densité nutritionnelle ${recipe.density}/100`}>🌿 {densityLabel(recipe.density).label.toLowerCase()} en nutriments</span>}
           </div>
           {!compact && (
             <div className="rcard-tags">
