@@ -9,6 +9,8 @@
   --ink: #2b211a;
   --ink-2: #5d4e42;
   --ink-3: #8c7b6c;
+  --hero-a: #f2b47a;
+  --hero-b: #c8d9a3;
   --line: #e6d9c6;
   --primary: #c2552d; /* terracotta */
   --primary-2: #a8441f;
@@ -40,6 +42,8 @@
     --surface-2: #322a23;
     --ink: #f4ebe0;
     --ink-2: #d2c4b5;
+    --hero-a: rgba(226, 115, 74, 0.35);
+    --hero-b: rgba(140, 170, 90, 0.22);
     --ink-3: #a29383;
     --line: #3d342c;
     --primary: #e2734a;
@@ -64,6 +68,8 @@
   --surface-2: #322a23;
   --ink: #f4ebe0;
   --ink-2: #d2c4b5;
+  --hero-a: rgba(226, 115, 74, 0.35);
+  --hero-b: rgba(140, 170, 90, 0.22);
   --ink-3: #a29383;
   --line: #3d342c;
   --primary: #e2734a;
@@ -322,6 +328,7 @@ img {
   border-radius: 999px;
   border: 1.5px solid var(--line);
   background: var(--surface);
+  color: var(--ink);
   font-weight: 800;
   font-size: 0.95rem;
   cursor: pointer;
@@ -715,8 +722,8 @@ img {
   overflow: hidden;
   border-radius: 26px;
   padding: 26px 20px 22px;
-  background: radial-gradient(120% 140% at 100% 0%, #f2b47a 0%, transparent 55%), radial-gradient(120% 120% at 0% 100%, #c8d9a3 0%, transparent 50%), var(--primary-soft);
-  color: #2b211a;
+  background: radial-gradient(120% 140% at 100% 0%, var(--hero-a) 0%, transparent 55%), radial-gradient(120% 120% at 0% 100%, var(--hero-b) 0%, transparent 50%), var(--primary-soft);
+  color: var(--ink);
 }
 .hero h1,
 .hero p {
@@ -726,7 +733,7 @@ img {
 }
 .hero p {
   margin: 0 0 16px;
-  color: #5d4e42;
+  color: var(--ink-2);
   font-weight: 600;
 }
 .hero .deco {
